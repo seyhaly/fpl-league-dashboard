@@ -136,6 +136,14 @@
   // ===================== #8 COLLAPSIBLE SECTIONS =====================
   function initCollapsibles() {
     document.querySelectorAll('.collapse-btn').forEach(btn => {
+      const targetId = btn.dataset.target;
+      const content = document.getElementById(targetId);
+      if (content && content.classList.contains('collapsed')) {
+        btn.textContent = '▼ Expand';
+      } else {
+        btn.textContent = '▲ Collapse';
+      }
+
       btn.addEventListener('click', () => {
         const targetId = btn.dataset.target;
         const content = document.getElementById(targetId);
