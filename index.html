@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clash of Elite Fantasy League — Admin Dashboard</title>
+  <meta name="description" content="Professional Gameweek Standings, Transfer Deductions, and Chip Usage Tracker for Fantasy Premier League Private Leagues.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+
+  <!-- ===================== PREMIUM HEADER ===================== -->
+  <!-- ===================== LEAGUE BRANDING ===================== -->
+  <div class="league-brand-header">
+    <div class="brand-text">
+      <div class="brand-eyebrow">FANTASY PREMIER LEAGUE &middot; PRIVATE LEAGUE</div>
+      <h1 class="brand-name" id="leagueNameHeader">Clash of Elite Fantasy League</h1>
+    </div>
+  </div>
+
+  <!-- Hidden elements to preserve JS bindings -->
+  <div style="display:none;">
+    <span id="memberCountBadge"></span>
+    <span id="syncStatusTag"></span>
+  </div>
+
+  <!-- ===================== DASHBOARD CONTROLS ===================== -->
+  <div class="glass-panel dashboard-toolbar">
+    
+    <!-- Group 1: My Leagues -->
+    <div class="toolbar-group">
+      <span class="toolbar-label">My Leagues</span>
+      <div class="pill-group">
+        <button class="league-pill active" data-league-code="8d70fl" data-league-name="Clash of Elite Fantasy League">Clash of Elite</button>
+        <button class="league-pill" data-league-code="0m27ty" data-league-name="Fantasy with Heng">Fantasy with Heng</button>
+      </div>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Group 2: Live Sync -->
+    <div class="toolbar-group">
+      <div class="live-sync-compact">
+        <span class="sync-icon">⟳</span>
+        <input type="text" id="leagueIdInput" class="live-sync-input" placeholder="League ID" value="8d70fl">
+        <button id="syncFplBtn" class="btn-sync">Sync</button>
+      </div>
+    </div>
+
+    <div class="toolbar-spacer"></div>
+
+    <!-- Group 3: Admin Toggles -->
+    <div class="toolbar-group">
+      <span class="toolbar-label">Admin Controls</span>
+      <div class="pill-toggle-group">
+        <button id="toggleMotmBtn" class="pill-btn">MOTM</button>
+        <button id="toggleMotsBtn" class="pill-btn">MOTS</button>
+      </div>
+    </div>
+
+    <div class="toolbar-divider"></div>
+
+    <!-- Group 4: Theme -->
+    <div class="toolbar-group">
+      <span class="toolbar-label">Theme</span>
+      <div class="pill-toggle-group">
+        <button class="pill-btn active" data-theme-btn="dark">Dark</button>
+        <button class="pill-btn" data-theme-btn="light">Light</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ===================== GW NAVIGATION ===================== -->
+  <div class="gw-selector-bar">
+    
+    <!-- LEFT: Main Nav -->
+    <div class="gw-nav-wrapper" style="display: flex; flex-direction: row; align-items: center; gap: 16px;">
+      <span class="gw-nav-label" style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; color: var(--pl-cyan); text-transform: uppercase;">Official Standings</span>
+      <div class="gw-nav-main">
+        <button id="prevGwBtn" class="gw-nav-btn">‹</button>
+        <div class="gw-badge-display" style="position: relative; cursor: pointer;">
+          <select id="gwSelect" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer;"></select>
+          <h2 id="gwDisplay">Gameweek 10</h2>
+        </div>
+        <button id="nextGwBtn" class="gw-nav-btn" disabled>›</button>
+      </div>
+    </div>
+
+    <!-- MIDDLE: Spacer -->
+    <div class="gw-spacer" style="flex-grow: 1;"></div>
+
+    <!-- RIGHT: Quick Jump -->
+    <div class="gw-nav-controls">
+      <button id="goToCurrentGwBtn" class="gw-now-btn">▶ Latest GW</button>
+    </div>
+
+  </div>
+
+  <!-- ===================== STANDINGS ===================== -->
+  <section class="glass-panel">
+    <div class="section-title">
+      <h3>Gameweek Standings &amp; Weekly Payouts</h3>
+      <div style="display:flex;align-items:center;gap:10px;">
+        <span id="standingsGwBadge" class="standings-gw-badge">Gameweek 10</span>
+      </div>
+    </div>
+    <div id="standingsCollapse" class="collapsible-content">
+      <div class="standings-table-wrapper table-responsive">
+        <table class="custom-table sticky-header" id="standingsTable">
+          <thead>
+            <tr>
+              <th class="text-center" style="width:50px;">Pos</th>
+              <th>Manager &amp; Team</th>
+              <th class="text-center">Gross</th>
+              <th class="text-center">Deducted</th>
+              <th class="text-center">Net Pts</th>
+              <th class="text-center">Bench</th>
+              <th class="text-center">Season Pts</th>
+              <th class="text-center">Chip Used</th>
+              <th class="text-center">Form (Last 5)</th>
+              <th class="text-right">GW Payout</th>
+            </tr>
+          </thead>
+          <tbody id="standingsBody"></tbody>
+        </table>
+      </div>
+      <div id="mobileCards" class="mobile-cards"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PERFORMANCE & CHIPS ===================== -->
+  <section class="glass-panel">
+    <div class="section-title">
+      <h3>Manager Performance &amp; Chip Tracker</h3>
+      <button class="collapse-btn" data-target="performanceCollapse">▲ Collapse</button>
+    </div>
+    <div id="performanceCollapse" class="collapsible-content">
+      <div id="winLossTableContainer" class="table-responsive" style="margin-bottom:24px;"></div>
+      
+      <div style="height: 300px; width: 100%; margin-bottom: 32px; padding: 0 10px;">
+        <canvas id="performanceChart"></canvas>
+      </div>
+
+      <div id="chipTrackerContainer" class="chip-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== RANK TRAJECTORY ===================== -->
+  <section class="glass-panel">
+    <div class="section-title">
+      <h3>Rank Trajectory</h3>
+      <button class="collapse-btn" data-target="chartCollapse">▲ Collapse</button>
+    </div>
+    <div id="chartCollapse" class="collapsible-content">
+      <div style="position:relative;height:320px;width:100%;">
+        <canvas id="rankChart"></canvas>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script src="demoData.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
