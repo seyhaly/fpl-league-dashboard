@@ -538,6 +538,15 @@
 
   // ===================== RENDER ALL =====================
   function renderAll() {
+    const hasData = state.dataset.managers && state.dataset.managers.length > 0;
+    
+    document.getElementById('section-standings').style.display = hasData ? 'block' : 'none';
+    document.getElementById('section-performance').style.display = hasData ? 'block' : 'none';
+    document.getElementById('section-trajectory').style.display = hasData ? 'block' : 'none';
+    document.getElementById('section-empty').style.display = hasData ? 'none' : 'block';
+
+    if (!hasData) return;
+
     renderStandingsTable();
     renderWinLossSummaryTable();
     renderChipTracker();

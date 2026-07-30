@@ -109,8 +109,14 @@
 
   </div>
 
+  <!-- ===================== EMPTY STATE ===================== -->
+  <section class="glass-panel" id="section-empty" style="display: none; text-align: center; padding: 48px;">
+    <h2 style="color: var(--text-muted); margin-bottom: 16px;">No Data Available</h2>
+    <p style="color: var(--text-muted);">Please sync a valid Live League or switch to the Demo League to view stats.</p>
+  </section>
+
   <!-- ===================== STANDINGS ===================== -->
-  <section class="glass-panel">
+  <section class="glass-panel" id="section-standings">
     <div class="section-title">
       <h3>Gameweek Standings &amp; Weekly Payouts</h3>
       <div style="display:flex;align-items:center;gap:10px;">
@@ -142,7 +148,7 @@
   </section>
 
   <!-- ===================== PERFORMANCE & CHIPS ===================== -->
-  <section class="glass-panel">
+  <section class="glass-panel" id="section-performance">
     <div class="section-title">
       <h3>Manager Performance &amp; Chip Tracker</h3>
       <button class="collapse-btn" data-target="performanceCollapse">▲ Collapse</button>
@@ -159,7 +165,7 @@
   </section>
 
   <!-- ===================== RANK TRAJECTORY ===================== -->
-  <section class="glass-panel">
+  <section class="glass-panel" id="section-trajectory">
     <div class="section-title">
       <h3>Rank Trajectory</h3>
       <button class="collapse-btn" data-target="chartCollapse">▲ Collapse</button>
