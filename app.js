@@ -619,10 +619,6 @@
                 <span class="mots-winner-names">${names}</span>
               </div>
             </div>
-            <div class="mots-prize-tag">
-              <span class="prize-label">PRIZE POT</span>
-              <span class="prize-value">$${state.motsPrizePool.toFixed(2)}</span>
-            </div>
           </div>
         `;
       } else {
