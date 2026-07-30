@@ -233,6 +233,17 @@
           avatar: r.player_name.split(' ').map(n => n[0]).join('')
         }));
 
+        // Clear demo gameweek data for live leagues
+        state.dataset.gameweeks = state.dataset.gameweeks.map(gw => ({
+          gw: gw.gw,
+          scores: {},
+          hits: {},
+          transfers: {},
+          benchPoints: {},
+          captainPoints: {},
+          chipsUsed: {}
+        }));
+
         updateMemberCountBadge();
         renderAll();
       } else {
