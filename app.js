@@ -9,7 +9,7 @@
     showMotmBadge: false,
     showMotsBadge: false,
     theme: localStorage.getItem('fpl_admin_theme') || 'dark',
-    dataset: window.DEMO_DATA,
+    dataset: JSON.parse(JSON.stringify(window.DEMO_DATA)),
     chartInstance: null,
     perfChartInstance: null
   };
@@ -160,16 +160,25 @@
       pill.addEventListener('click', () => {
         const code = pill.dataset.leagueCode;
         const name = pill.dataset.leagueName;
-        elements.leagueIdInput.value = code;
-        // Update header name immediately
-        if (name && elements.leagueNameHeader) {
-          elements.leagueNameHeader.textContent = name;
-        }
+        
         // Update active state
         document.querySelectorAll('.league-pill').forEach(p => p.classList.remove('active'));
         pill.classList.add('active');
-        // Auto-sync
-        syncLiveFplLeague();
+
+        if (code === 'demo') {
+          elements.leagueIdInput.value = '';
+          if (name && elements.leagueNameHeader) elements.leagueNameHeader.textContent = name;
+          state.dataset = JSON.parse(JSON.stringify(window.DEMO_DATA));
+          elements.syncStatusTag.className = 'sync-status-tag live';
+          elements.syncStatusTag.textContent = 'DEMO MODE';
+          updateMemberCountBadge();
+          renderAll();
+        } else {
+          elements.leagueIdInput.value = code;
+          if (name && elements.leagueNameHeader) elements.leagueNameHeader.textContent = name;
+          // Auto-sync
+          syncLiveFplLeague();
+        }
       });
     });
 
