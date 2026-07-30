@@ -35,7 +35,8 @@
     syncStatusTag:          document.getElementById('syncStatusTag'),
     memberCountBadge:       document.getElementById('memberCountBadge'),
     standingsGwBadge:       document.getElementById('standingsGwBadge'),
-    viewModeSelect:         document.getElementById('viewModeSelect')
+    viewModeSelect:         document.getElementById('viewModeSelect'),
+    leagueNameDisplay:      document.getElementById('leagueNameDisplay')
   };
 
   // ===================== INITIALIZATION =====================
@@ -169,6 +170,7 @@
         if (code === 'demo') {
           elements.leagueIdInput.value = '';
           if (name && elements.leagueNameHeader) elements.leagueNameHeader.textContent = name;
+          if (name && elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = name;
           state.dataset = JSON.parse(JSON.stringify(window.DEMO_DATA));
           elements.syncStatusTag.className = 'sync-status-tag live';
           elements.syncStatusTag.textContent = 'DEMO MODE';
@@ -233,6 +235,7 @@
 
         if (data.league && data.league.name) {
           elements.leagueNameHeader.textContent = data.league.name;
+          if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = data.league.name;
         }
 
         state.dataset.managers = data.standings.results.map(r => ({
