@@ -9,6 +9,7 @@
     showMotmBadge: false,
     showMotsBadge: false,
     theme: localStorage.getItem('fpl_admin_theme') || 'dark',
+    motsPrizePool: 50,
     dataset: JSON.parse(JSON.stringify(window.DEMO_DATA)),
     chartInstance: null,
     perfChartInstance: null
@@ -314,8 +315,10 @@
     return { activeMonth, leader: totals[0], totals, isFinalized, startGw, endGw };
   }
 
-  function getSeasonLeader(gw) {
+  function getSeasonLeaders(gw) {
     const managers = state.dataset.managers;
+    if (!managers || managers.length === 0) return [];
+    
     const totals = managers.map(m => {
       let totalNetPts = 0;
       for (let g = 1; g <= gw; g++) {
@@ -325,7 +328,9 @@
       return { id: m.id, name: m.name, totalNetPts };
     });
     totals.sort((a, b) => b.totalNetPts - a.totalNetPts);
-    return totals[0];
+    
+    const maxPts = totals[0].totalNetPts;
+    return totals.filter(t => t.totalNetPts === maxPts);
   }
 
   function getManagerSeasonNetUpToGw(managerId, upToGw) {
@@ -569,8 +574,10 @@
     const motmInfo = getMonthlyMotmLeader(targetGwForMotm);
     const motmLeaderId = motmInfo.leader ? motmInfo.leader.id : null;
     const activeMonthName = motmInfo.activeMonth.name;
-    const motsLeader = getSeasonLeader(state.currentGw);
-    const motsLeaderId = motsLeader ? motsLeader.id : null;
+    const motsLeaders = getSeasonLeaders(state.currentGw);
+    const motsLeaderIds = motsLeaders.map(m => m.id);
+    const isMotsTied = motsLeaders.length > 1;
+    const motsPrizePerWinner = state.motsPrizePool / Math.max(1, motsLeaders.length);
 
     // Update GW/Standings Badge
     if (elements.standingsGwBadge) {
@@ -594,6 +601,32 @@
         `;
       } else {
         motmBannerContainer.innerHTML = '';
+      }
+    }
+
+    // Render MOTS Banner
+    const motsBannerContainer = document.getElementById('motsBannerContainer');
+    if (motsBannerContainer) {
+      if (state.showMotsBadge && motsLeaders.length > 0) {
+        const names = motsLeaders.map(l => l.name).join(' & ');
+        const tiedText = isMotsTied ? ' (Tied)' : '';
+        motsBannerContainer.innerHTML = `
+          <div class="mots-banner">
+            <div class="mots-banner-content">
+              <span class="mots-icon">🏆</span>
+              <div class="mots-text-wrapper">
+                <span class="mots-title">MANAGER OF THE SEASON${tiedText}</span>
+                <span class="mots-winner-names">${names}</span>
+              </div>
+            </div>
+            <div class="mots-prize-tag">
+              <span class="prize-label">PRIZE POT</span>
+              <span class="prize-value">$${state.motsPrizePool.toFixed(2)}</span>
+            </div>
+          </div>
+        `;
+      } else {
+        motsBannerContainer.innerHTML = '';
       }
     }
 
@@ -622,8 +655,8 @@
         ? `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span> <span class="hit-tag has-hit">(-${m.hitCost})</span>`
         : `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span>`;
 
-      const motsPayoutNote = (state.showMotsBadge && m.id === motsLeaderId)
-        ? `<span class="mots-payout-note">Manager of the Season Winner</span>` : '';
+      const motsPayoutNote = (state.showMotsBadge && motsLeaderIds.includes(m.id))
+        ? `<span class="mots-payout-note">Manager of the Season Winner (+$${motsPrizePerWinner.toFixed(2)})</span>` : '';
 
       const formHtml = getFormGuide(m.id).map(code => {
         const cls = code === 'W' ? 'form-w' : code === 'L' ? 'form-l' : 'form-n';

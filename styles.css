@@ -818,6 +818,49 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 [data-theme="light"] .mots-payout-note { background: #e0f2fe; color: #0369a1; border-color: #bae6fd; }
 
+/* MOTS Grand Banner */
+.mots-banner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 24px; margin-bottom: 20px; border-radius: var(--radius-lg);
+  font-family: 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #0ea5e9, #4f46e5);
+  color: #fff; border: 1px solid #38bdf8;
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.4);
+  animation: pulseGlow 2s infinite alternate;
+}
+.mots-banner-content {
+  display: flex; align-items: center; gap: 16px;
+}
+.mots-icon {
+  font-size: 32px;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+.mots-text-wrapper {
+  display: flex; flex-direction: column;
+}
+.mots-title {
+  font-size: 12px; font-weight: 800; letter-spacing: 1.5px; opacity: 0.9; text-transform: uppercase;
+}
+.mots-winner-names {
+  font-size: 24px; font-weight: 900; letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.mots-prize-tag {
+  display: flex; flex-direction: column; align-items: flex-end;
+  background: rgba(0,0,0,0.25); padding: 8px 16px; border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.mots-prize-tag .prize-label {
+  font-size: 11px; font-weight: 800; opacity: 0.8; letter-spacing: 1px;
+}
+.mots-prize-tag .prize-value {
+  font-size: 22px; font-weight: 900; color: #fcd34d;
+}
+
+@keyframes pulseGlow {
+  from { box-shadow: 0 4px 16px rgba(14, 165, 233, 0.3); }
+  to { box-shadow: 0 8px 24px rgba(14, 165, 233, 0.6); }
+}
 /* Stat Summary Badges */
 .stat-pill {
   display: inline-flex; align-items: center;
