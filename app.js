@@ -211,6 +211,14 @@
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
+    // Clear demo data immediately so it doesn't persist if fetch fails
+    state.dataset.managers = [];
+    state.dataset.gameweeks = state.dataset.gameweeks.map(gw => ({
+      gw: gw.gw,
+      scores: {}, hits: {}, transfers: {}, benchPoints: {}, captainPoints: {}, chipsUsed: {}
+    }));
+    renderAll();
+
     try {
       const proxyUrl = `https://corsproxy.io/?https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
       const resp = await fetch(proxyUrl);
@@ -231,17 +239,6 @@
           name: r.player_name,
           teamName: r.entry_name,
           avatar: r.player_name.split(' ').map(n => n[0]).join('')
-        }));
-
-        // Clear demo gameweek data for live leagues
-        state.dataset.gameweeks = state.dataset.gameweeks.map(gw => ({
-          gw: gw.gw,
-          scores: {},
-          hits: {},
-          transfers: {},
-          benchPoints: {},
-          captainPoints: {},
-          chipsUsed: {}
         }));
 
         updateMemberCountBadge();
