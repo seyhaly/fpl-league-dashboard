@@ -651,9 +651,6 @@
         ? `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span> <span class="hit-tag has-hit">(-${m.hitCost})</span>`
         : `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span>`;
 
-      const motsPayoutNote = (state.showMotsBadge && motsLeaderIds.includes(m.id))
-        ? `<span class="mots-payout-note">Manager of the Season Winner (+$${motsPrizePerWinner.toFixed(2)})</span>` : '';
-
       const formHtml = getFormGuide(m.id).map(code => {
         const cls = code === 'W' ? 'form-w' : code === 'L' ? 'form-l' : 'form-n';
         return `<span class="form-pill ${cls}">${code}</span>`;
@@ -700,7 +697,6 @@
           <div class="payout-container">
             ${payoutBadge}
             <span class="payout-note">${m.payoutNote}</span>
-            ${motsPayoutNote}
           </div>
         </td>
       `;
