@@ -2,6 +2,7 @@
 (function () {
   // App State
   const state = {
+    viewMode: 'overall',
     currentGw: 10,
     maxGw: 10,
     entryFee: 3,
@@ -32,13 +33,15 @@
     syncFplBtn:             document.getElementById('syncFplBtn'),
     syncStatusTag:          document.getElementById('syncStatusTag'),
     memberCountBadge:       document.getElementById('memberCountBadge'),
-    standingsGwBadge:       document.getElementById('standingsGwBadge')
+    standingsGwBadge:       document.getElementById('standingsGwBadge'),
+    viewModeSelect:         document.getElementById('viewModeSelect')
   };
 
   // ===================== INITIALIZATION =====================
   function init() {
     applyTheme(state.theme);
     populateGwSelect();
+    populateViewModeSelect();
     bindEvents();
     renderAll();
     initChart();
@@ -67,7 +70,7 @@
     }
   }
 
-  // ===================== GW SELECTOR =====================
+  // ===================== GW & VIEW MODE SELECTOR =====================
   function populateGwSelect() {
     elements.gwSelect.innerHTML = '';
     for (let i = 1; i <= state.maxGw; i++) {
@@ -79,11 +82,50 @@
     }
   }
 
+  function populateViewModeSelect() {
+    if (!elements.viewModeSelect) return;
+    elements.viewModeSelect.innerHTML = '<option value="overall">Overall Standings</option>';
+    if (state.dataset.months) {
+      state.dataset.months.forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m.name.toLowerCase();
+        opt.textContent = m.name; // Clean month name e.g. "August"
+        elements.viewModeSelect.appendChild(opt);
+      });
+    }
+  }
+
   // ===================== EVENTS =====================
   function bindEvents() {
-    elements.prevGwBtn.addEventListener('click', () => changeGw(state.currentGw - 1));
-    elements.nextGwBtn.addEventListener('click', () => changeGw(state.currentGw + 1));
-    elements.gwSelect.addEventListener('change', e => changeGw(parseInt(e.target.value)));
+    elements.prevGwBtn.addEventListener('click', () => {
+      state.viewMode = 'overall';
+      if (elements.viewModeSelect) elements.viewModeSelect.value = 'overall';
+      changeGw(state.currentGw - 1);
+    });
+    elements.nextGwBtn.addEventListener('click', () => {
+      state.viewMode = 'overall';
+      if (elements.viewModeSelect) elements.viewModeSelect.value = 'overall';
+      changeGw(state.currentGw + 1);
+    });
+    elements.gwSelect.addEventListener('change', e => {
+      state.viewMode = 'overall';
+      if (elements.viewModeSelect) elements.viewModeSelect.value = 'overall';
+      changeGw(parseInt(e.target.value));
+    });
+
+    if (elements.viewModeSelect) {
+      elements.viewModeSelect.addEventListener('change', e => {
+        state.viewMode = e.target.value;
+        if (state.viewMode === 'overall') {
+          state.showMotmBadge = false;
+          if (elements.toggleMotmBtn) elements.toggleMotmBtn.classList.remove('active');
+        } else {
+          state.showMotmBadge = true;
+          if (elements.toggleMotmBtn) elements.toggleMotmBtn.classList.add('active');
+        }
+        renderStandingsTable();
+      });
+    }
 
     // #7 — "Latest GW" Quick Jump
     if (elements.goToCurrentGwBtn) {
@@ -94,6 +136,9 @@
       elements.toggleMotmBtn.addEventListener('click', () => {
         state.showMotmBadge = !state.showMotmBadge;
         elements.toggleMotmBtn.classList.toggle('active', state.showMotmBadge);
+        if (!state.showMotmBadge && elements.viewModeSelect) {
+          elements.viewModeSelect.value = 'overall';
+        }
         renderStandingsTable();
       });
     }
@@ -136,14 +181,6 @@
   // ===================== #8 COLLAPSIBLE SECTIONS =====================
   function initCollapsibles() {
     document.querySelectorAll('.collapse-btn').forEach(btn => {
-      const targetId = btn.dataset.target;
-      const content = document.getElementById(targetId);
-      if (content && content.classList.contains('collapsed')) {
-        btn.textContent = '▼ Expand';
-      } else {
-        btn.textContent = '▲ Collapse';
-      }
-
       btn.addEventListener('click', () => {
         const targetId = btn.dataset.target;
         const content = document.getElementById(targetId);
@@ -222,23 +259,42 @@
 
   function getMonthlyMotmLeader(gw) {
     const activeMonth = getCurrentGwMonth(gw);
-    const monthGws = activeMonth.gws.filter(g => g <= gw);
+    const monthGws = activeMonth.gws;
+    const startGw = Math.min(...monthGws);
+    const endGw = Math.max(...monthGws);
+
+    const datasetMaxGw = Math.max(...state.dataset.gameweeks.map(g => g.gw));
+    const isFinalized = datasetMaxGw > endGw || gw > endGw;
+
+    const gwsToCalculate = isFinalized ? monthGws : monthGws.filter(g => g <= gw);
     const managers = state.dataset.managers;
 
     const totals = managers.map(m => {
-      let netPts = 0, benchPts = 0;
-      monthGws.forEach(g => {
+      let netPts = 0, benchPts = 0, captainPts = 0, hitCost = 0;
+      gwsToCalculate.forEach(g => {
         const gwData = state.dataset.gameweeks.find(x => x.gw === g);
         if (gwData) {
-          netPts += (gwData.scores[m.id] || 0) - (gwData.hits ? (gwData.hits[m.id] || 0) : 0);
+          const hCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
+          netPts += (gwData.scores[m.id] || 0) - hCost;
           benchPts += (gwData.benchPoints[m.id] || 0);
+          captainPts += gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
+          hitCost += hCost;
         }
       });
-      return { id: m.id, name: m.name, netPts, benchPts };
+      const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, isFinalized ? endGw : gw);
+      return { id: m.id, name: m.name, netPts, benchPts, captainPts, hitCost, seasonTotalNet };
     });
 
-    totals.sort((a, b) => b.netPts - a.netPts || b.benchPts - a.benchPts);
-    return { activeMonth, leader: totals[0], totals };
+    // 4-Layer Custom Tiebreaker Sort (matching Gameweek tiebreaker rule)
+    totals.sort((a, b) => {
+      if (b.netPts      !== a.netPts)      return b.netPts - a.netPts;
+      if (b.benchPts    !== a.benchPts)    return b.benchPts - a.benchPts;         // Layer 1: Bench Pts
+      if (b.captainPts  !== a.captainPts)  return b.captainPts - a.captainPts;     // Layer 2: Captain Pts
+      if (a.hitCost     !== b.hitCost)     return a.hitCost - b.hitCost;           // Layer 3: Hits
+      return b.seasonTotalNet - a.seasonTotalNet;                                  // Layer 4: Season Net Pts
+    });
+
+    return { activeMonth, leader: totals[0], totals, isFinalized, startGw, endGw };
   }
 
   function getSeasonLeader(gw) {
@@ -297,12 +353,13 @@
     let managers = activeManagers.map(m => {
       const grossScore    = gwData.scores[m.id] || 0;
       const hitCost       = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
+      const transfers     = gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
       const netScore      = grossScore - hitCost;
       const bench         = gwData.benchPoints[m.id] || 0;
       const captain       = gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
       const chip          = gwData.chipsUsed[m.id] || null;
       const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, gw);
-      return { ...m, grossScore, hitCost, netScore, bench, captain, chip, seasonTotalNet };
+      return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, chip, seasonTotalNet };
     });
 
     // 4-Layer Custom Tiebreaker Sort
@@ -349,15 +406,105 @@
       let note = '';
       if (rank <= splitSize) {
         const payer = managers[total - rank];
-        note = `Gets $${state.entryFee}.00 from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
+        note = `Gets from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
       } else if (hasNeutral && rank === neutralRank) {
-        note = 'Neutral ($0.00)';
+        note = 'Neutral';
       } else {
         const receiver = managers[total - rank];
-        note = `Pays $${state.entryFee}.00 to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
+        note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
       }
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
+    });
+  }
+
+  // ===================== MONTHLY STANDINGS ENGINE =====================
+  function getMonthlyStandings(monthName) {
+    const monthObj = state.dataset.months.find(m => m.name.toLowerCase() === monthName.toLowerCase()) || state.dataset.months[0];
+    const monthGws = monthObj.gws;
+    const startGw = Math.min(...monthGws);
+    const endGw = Math.max(...monthGws);
+
+    const datasetMaxGw = Math.max(...state.dataset.gameweeks.map(g => g.gw));
+    const isFinalized = datasetMaxGw > endGw || state.currentGw > endGw;
+    const gwsToCalculate = isFinalized ? monthGws : monthGws.filter(g => g <= state.currentGw);
+    
+    const activeManagers = state.dataset.managers;
+    const total = activeManagers.length;
+
+    let managers = activeManagers.map(m => {
+      let grossScore = 0, hitCost = 0, transfers = 0, bench = 0, captain = 0, chips = [];
+
+      gwsToCalculate.forEach(g => {
+        const gwData = state.dataset.gameweeks.find(x => x.gw === g);
+        if (gwData) {
+          const gScore = gwData.scores[m.id] || 0;
+          const hCost  = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
+          const tMade  = gwData.transfers ? (gwData.transfers[m.id] ?? (hCost > 0 ? Math.floor(hCost / 4) + 1 : 0)) : (hCost > 0 ? Math.floor(hCost / 4) + 1 : 0);
+          
+          grossScore += gScore;
+          hitCost += hCost;
+          transfers += tMade;
+          bench += (gwData.benchPoints[m.id] || 0);
+          captain += gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
+          if (gwData.chipsUsed && gwData.chipsUsed[m.id]) {
+            chips.push(gwData.chipsUsed[m.id]);
+          }
+        }
+      });
+
+      const netScore = grossScore - hitCost;
+      const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, isFinalized ? endGw : state.currentGw);
+      const chip = chips.length > 0 ? chips.join(', ') : null;
+
+      return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, chip, seasonTotalNet };
+    });
+
+    managers.sort((a, b) => {
+      if (b.netScore   !== a.netScore)   return b.netScore - a.netScore;
+      if (b.bench      !== a.bench)      return b.bench - a.bench;
+      if (b.captain    !== a.captain)    return b.captain - a.captain;
+      if (a.hitCost    !== b.hitCost)    return a.hitCost - b.hitCost;
+      return b.seasonTotalNet - a.seasonTotalNet;
+    });
+
+    const splitSize  = Math.floor(total / 2);
+    const hasNeutral = total % 2 === 1;
+    const neutralRank = hasNeutral ? splitSize + 1 : null;
+
+    return managers.map((m, idx) => {
+      const rank = idx + 1;
+      let payout = 0, statusClass = '', outcomeCode = 'N';
+
+      if (rank <= splitSize) {
+        payout = state.entryFee; statusClass = 'tr-top-3'; outcomeCode = 'W';
+      } else if (hasNeutral && rank === neutralRank) {
+        payout = 0; statusClass = 'tr-neutral'; outcomeCode = 'N';
+      } else {
+        payout = -state.entryFee; statusClass = 'tr-bottom-3'; outcomeCode = 'L';
+      }
+
+      const lastWinScore    = managers[splitSize - 1]?.netScore;
+      const firstOtherScore = managers[splitSize]?.netScore;
+      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
+      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
+
+      const atTopBoundary = (rank === splitSize || rank === splitSize + 1) && lastWinScore === firstOtherScore;
+      const atBottomBoundary = hasNeutral && (rank === neutralRank || rank === neutralRank + 1) && lastNeutralScore === firstLoserScore;
+      const isTied = atTopBoundary || atBottomBoundary;
+
+      let note = '';
+      if (rank <= splitSize) {
+        const payer = managers[total - rank];
+        note = `Gets from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
+      } else if (hasNeutral && rank === neutralRank) {
+        note = 'Neutral';
+      } else {
+        const receiver = managers[total - rank];
+        note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
+      }
+
+      return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note, monthObj };
     });
   }
 
@@ -383,15 +530,46 @@
 
   // ===================== STANDINGS TABLE =====================
   function renderStandingsTable() {
-    const standings = getGameweekStandings(state.currentGw);
+    const isMonthlyView = state.viewMode && state.viewMode !== 'overall';
+    const standings = isMonthlyView ? getMonthlyStandings(state.viewMode) : getGameweekStandings(state.currentGw);
+    
     elements.standingsBody.innerHTML = '';
     if (elements.mobileCards) elements.mobileCards.innerHTML = '';
 
-    const motmInfo = getMonthlyMotmLeader(state.currentGw);
+    const targetGwForMotm = isMonthlyView
+      ? Math.min(...(state.dataset.months.find(m => m.name.toLowerCase() === state.viewMode.toLowerCase())?.gws || [state.currentGw]))
+      : state.currentGw;
+
+    const motmInfo = getMonthlyMotmLeader(targetGwForMotm);
     const motmLeaderId = motmInfo.leader ? motmInfo.leader.id : null;
     const activeMonthName = motmInfo.activeMonth.name;
     const motsLeader = getSeasonLeader(state.currentGw);
     const motsLeaderId = motsLeader ? motsLeader.id : null;
+
+    // Update GW/Standings Badge
+    if (elements.standingsGwBadge) {
+      if (isMonthlyView) {
+        elements.standingsGwBadge.textContent = `${activeMonthName} Standings`;
+      } else {
+        elements.standingsGwBadge.textContent = `Gameweek ${state.currentGw}`;
+      }
+    }
+
+    // Render MOTM Banner
+    const motmBannerContainer = document.getElementById('motmBannerContainer');
+    if (motmBannerContainer) {
+      if ((state.showMotmBadge || isMonthlyView) && motmInfo.leader) {
+        const icon = motmInfo.isFinalized ? '🏆' : '⏳';
+        
+        motmBannerContainer.innerHTML = `
+          <div class="motm-banner">
+            <span>${icon} <strong>${activeMonthName} Manager of the Month</strong>: <span class="motm-winner-name">${motmInfo.leader.name}</span></span>
+          </div>
+        `;
+      } else {
+        motmBannerContainer.innerHTML = '';
+      }
+    }
 
     // Find highest season total net points for the glow highlight
     const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
@@ -414,12 +592,10 @@
         ? `<span class="chip-tag ${chipColorCls}">${getChipLabel(m.chip)}</span>`
         : `<span style="color:var(--text-muted);font-size:13px;">-</span>`;
 
-      const hitDisplay = m.hitCost > 0
-        ? `<span class="hit-tag has-hit">-${m.hitCost}</span>`
-        : `<span class="hit-tag no-hit">0</span>`;
+      const transferDisplay = m.hitCost > 0
+        ? `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span> <span class="hit-tag has-hit">(-${m.hitCost})</span>`
+        : `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span>`;
 
-      const motmPayoutNote = (state.showMotmBadge && m.id === motmLeaderId)
-        ? `<span class="motm-payout-note">${activeMonthName} MOTM Winner</span>` : '';
       const motsPayoutNote = (state.showMotsBadge && m.id === motsLeaderId)
         ? `<span class="mots-payout-note">Manager of the Season Winner</span>` : '';
 
@@ -454,12 +630,9 @@
         <td class="text-center">
           <span style="font-weight:700;color:var(--text-secondary);">${m.grossScore}</span>
         </td>
-        <td class="text-center">${hitDisplay}</td>
+        <td class="text-center">${transferDisplay}</td>
         <td class="text-center">
           <span class="gw-score">${m.netScore}</span>
-        </td>
-        <td class="text-center">
-          <span style="font-size:13px;color:var(--text-secondary);font-weight:700;">${m.bench}</span>
         </td>
         <td class="text-center">
           <span class="season-pts${m.seasonTotalNet === maxSeasonPts ? ' season-pts-top' : ''}">${m.seasonTotalNet}</span>
@@ -472,7 +645,6 @@
           <div class="payout-container">
             ${payoutBadge}
             <span class="payout-note">${m.payoutNote}</span>
-            ${motmPayoutNote}
             ${motsPayoutNote}
           </div>
         </td>
@@ -500,12 +672,8 @@
               <span class="mobile-stat-value" style="color:var(--pl-green);">${m.netScore}</span>
             </div>
             <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Deducted</span>
-              <span class="mobile-stat-value" style="color:${m.hitCost > 0 ? '#ef4444' : 'var(--text-muted)'};">${m.hitCost > 0 ? '-'+m.hitCost : '0'}</span>
-            </div>
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Bench</span>
-              <span class="mobile-stat-value">${m.bench}</span>
+              <span class="mobile-stat-label">Transfers</span>
+              <span class="mobile-stat-value">${m.transfers}${m.hitCost > 0 ? ` <span class="hit-tag has-hit">(-${m.hitCost})</span>` : ''}</span>
             </div>
             <div class="mobile-stat-item">
               <span class="mobile-stat-label">Season</span>
@@ -655,10 +823,6 @@
           <div>
             <div class="manager-name">${m.name}</div>
             <div class="team-name">${m.teamName}</div>
-          </div>
-          <div>
-            <span style="color:var(--pos-top-text);">${m.wins} Win${m.wins !== 1 ? 's' : ''}</span> / 
-            <span style="color:var(--pos-bot-text);">${m.losses} Loss${m.losses !== 1 ? 'es' : ''}</span>
           </div>
         </div>
         <div class="chip-pills-row">${chipListHtml}</div>

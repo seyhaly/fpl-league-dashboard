@@ -17,16 +17,16 @@
   --pl-pink: #ff2882;
   --gold-accent: #eab308;
 
-  --pos-top-bg: rgba(16, 185, 129, 0.1);
-  --pos-top-border: rgba(16, 185, 129, 0.2);
+  --pos-top-bg: rgba(16, 185, 129, 0.08);
+  --pos-top-border: rgba(16, 185, 129, 0.25);
   --pos-top-text: #10b981;
 
-  --pos-bot-bg: rgba(239, 68, 68, 0.1);
-  --pos-bot-border: rgba(239, 68, 68, 0.2);
+  --pos-bot-bg: rgba(239, 68, 68, 0.08);
+  --pos-bot-border: rgba(239, 68, 68, 0.25);
   --pos-bot-text: #ef4444;
 
-  --pos-neu-bg: rgba(99, 102, 241, 0.1);
-  --pos-neu-border: rgba(99, 102, 241, 0.2);
+  --pos-neu-bg: rgba(99, 102, 241, 0.08);
+  --pos-neu-border: rgba(99, 102, 241, 0.25);
   --pos-neu-text: #818cf8;
 
   --radius-lg: 12px;
@@ -54,15 +54,15 @@
   --pl-pink: #be185d;
   --gold-accent: #b45309;
 
-  --pos-top-bg: #dcfce7;
+  --pos-top-bg: rgba(220, 252, 231, 0.55);
   --pos-top-border: #86efac;
   --pos-top-text: #15803d;
 
-  --pos-bot-bg: #fee2e2;
+  --pos-bot-bg: rgba(254, 226, 226, 0.55);
   --pos-bot-border: #fca5a5;
   --pos-bot-text: #b91c1c;
 
-  --pos-neu-bg: #e0e7ff;
+  --pos-neu-bg: rgba(224, 231, 255, 0.55);
   --pos-neu-border: #c7d2fe;
   --pos-neu-text: #4f46e5;
 
@@ -551,10 +551,14 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .custom-table td:first-child { border-top-left-radius: var(--radius-md); border-bottom-left-radius: var(--radius-md); }
 .custom-table td:last-child { border-top-right-radius: var(--radius-md); border-bottom-right-radius: var(--radius-md); }
 
-/* Position Highlights */
-.tr-top-3 { background: var(--pos-top-bg) !important; border-left: 3px solid var(--pos-top-text) !important; }
-.tr-bottom-3 { background: var(--pos-bot-bg) !important; border-left: 3px solid var(--pos-bot-text) !important; }
-.tr-neutral { background: var(--pos-neu-bg) !important; border-left: 3px solid var(--pos-neu-text) !important; }
+/* Position Highlights & Zone Accents */
+.tr-top-3 { background: var(--pos-top-bg) !important; border-left: 4px solid var(--pos-top-text) !important; }
+.tr-bottom-3 { background: var(--pos-bot-bg) !important; border-left: 4px solid var(--pos-bot-text) !important; }
+.tr-neutral { background: var(--pos-neu-bg) !important; border-left: 4px solid var(--pos-neu-text) !important; }
+
+.custom-table td {
+  font-variant-numeric: tabular-nums;
+}
 
 /* #6 — Tied Managers Highlight */
 .tr-tied {
@@ -636,13 +640,14 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 /* Hits Tag */
 .hit-tag {
-  display: inline-block; padding: 2px 6px;
+  display: inline-block; padding: 2px 7px;
   border-radius: 4px; font-size: 12px;
   font-weight: 800; font-family: 'Outfit', sans-serif;
+  vertical-align: middle;
 }
 
-.hit-tag.has-hit { background: rgba(239,68,68,0.2); color: #ef4444; border: 1px solid rgba(239,68,68,0.4); }
-[data-theme="light"] .hit-tag.has-hit { background: #ffe4e6; color: #991b1b; border-color: #fca5a5; }
+.hit-tag.has-hit { background: rgba(239,68,68,0.25); color: #fca5a5; border: 1px solid rgba(239,68,68,0.5); }
+[data-theme="light"] .hit-tag.has-hit { background: #ffffff; color: #b91c1c; border: 1px solid #fca5a5; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
 .hit-tag.no-hit { color: var(--text-muted); }
 
 /* Chip Tags */
@@ -669,10 +674,11 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .form-pill-container { display: inline-flex; gap: 4px; }
 
 .form-pill {
-  width: 20px; height: 20px; border-radius: 3px;
+  width: 22px; height: 22px; border-radius: 50%;
   font-size: 11px; font-weight: 800;
-  display: flex; align-items: center; justify-content: center;
+  display: inline-flex; align-items: center; justify-content: center;
   font-family: 'Outfit', sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .form-w { background: #10b981; color: #ffffff; }
@@ -706,7 +712,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   padding: 2px 10px; border-radius: 20px;
   animation: season-pts-pulse 2.5s ease-in-out infinite;
 }
-[data-theme="light"] .season-pts-top { animation: none; color: #ffffff; background: var(--pl-purple); }
+[data-theme="light"] .season-pts-top { animation: none; color: #451a03; background: linear-gradient(135deg, #fcd34d, #f59e0b); border: 1px solid #f59e0b; box-shadow: 0 2px 6px rgba(245, 158, 11, 0.25); }
 
 .payout-win {
   background: rgba(16,185,129,0.15);
@@ -730,6 +736,69 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 .payout-note { font-size: 11px; color: var(--text-secondary); font-weight: 600; white-space: nowrap; }
+
+/* View Mode Dropdown */
+.view-mode-select {
+  background: var(--bg-card);
+  color: var(--pl-cyan);
+  border: 1.5px solid var(--pl-cyan);
+  height: 38px; padding: 0 14px;
+  border-radius: var(--radius-md);
+  font-weight: 800; font-size: 13px;
+  font-family: 'Outfit', sans-serif;
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition);
+}
+
+.view-mode-select:hover {
+  background: rgba(4, 245, 255, 0.1);
+  box-shadow: 0 0 12px rgba(4, 245, 255, 0.25);
+}
+
+.view-mode-select option {
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-weight: 700;
+  padding: 6px 12px;
+}
+
+[data-theme="light"] .view-mode-select option {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+/* MOTM Prominent Gold Banner */
+.motm-banner {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 18px; margin-bottom: 16px; border-radius: var(--radius-md);
+  font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 700;
+  background: linear-gradient(135deg, #fcd34d, #f59e0b);
+  color: #3b1700; border: 1px solid #eab308;
+  box-shadow: 0 4px 16px rgba(234, 179, 8, 0.3);
+  transition: var(--transition);
+}
+
+[data-theme="light"] .motm-banner {
+  background: linear-gradient(135deg, #fcd34d, #f59e0b);
+  color: #451a03; border: 1px solid #f59e0b;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+}
+
+.motm-winner-name {
+  font-size: 15px; font-weight: 900;
+  padding: 2px 10px; border-radius: 6px;
+  background: #3b1700; color: #fcd34d;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  margin: 0 4px; display: inline-block;
+  letter-spacing: 0.3px;
+}
+
+.motm-banner-status {
+  font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.6px;
+  padding: 4px 12px; border-radius: 20px;
+  background: #3b1700; color: #fcd34d;
+}
 
 .motm-payout-note {
   font-size: 11px; font-weight: 800; color: #eab308;
