@@ -11,6 +11,8 @@
     theme: localStorage.getItem('fpl_admin_theme') || 'dark',
     motsPrizePool: 50,
     dataset: JSON.parse(JSON.stringify(window.DEMO_DATA)),
+    eventStatuses: {},
+    statusFilter: 'recent',
     chartInstance: null,
     perfChartInstance: null
   };
@@ -26,6 +28,10 @@
     mobileCards:            document.getElementById('mobileCards'),
     winLossTableContainer:  document.getElementById('winLossTableContainer'),
     chipTrackerContainer:   document.getElementById('chipTrackerContainer'),
+    gwSpotlightContainer:   document.getElementById('gwSpotlightContainer'),
+    gwStatusMatrix:         document.getElementById('gwStatusMatrix'),
+    statusCounters:         document.getElementById('statusCounters'),
+    statusTabs:             document.getElementById('statusTabs'),
     toggleMotmBtn:          document.getElementById('toggleMotmBtn'),
     toggleMotsBtn:          document.getElementById('toggleMotsBtn'),
     themeToggleBtns:        document.querySelectorAll('[data-theme-btn]'),
@@ -188,6 +194,165 @@
     if (elements.syncFplBtn) {
       elements.syncFplBtn.addEventListener('click', syncLiveFplLeague);
     }
+
+    initExportImageHandlers();
+  }
+
+  // ===================== TOAST & EXPORT IMAGE HELPERS =====================
+  function showToast(msg) {
+    let toast = document.querySelector('.fpl-toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'fpl-toast';
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 3000);
+  }
+
+  function initExportImageHandlers() {
+    const copyBtn = document.getElementById('copyStandingsImgBtn');
+    const downloadBtn = document.getElementById('downloadStandingsImgBtn');
+    const targetElement = document.getElementById('section-standings');
+
+    if (!targetElement) return;
+
+    const capturePngUrl = async () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const isDark = currentTheme !== 'light';
+      const bgColor = isDark ? '#060913' : '#ffffff';
+
+      const rect = targetElement.getBoundingClientRect();
+      const h3 = targetElement.querySelector('.section-title h3');
+      let originalH3Html = '';
+      let originalH3Style = '';
+
+      try {
+        if (h3) {
+          originalH3Html = h3.innerHTML;
+          originalH3Style = h3.getAttribute('style') || '';
+          
+          const text = h3.innerText.toUpperCase();
+          const computed = window.getComputedStyle(h3);
+          
+          const canvas = document.createElement('canvas');
+          const ctx = canvas.getContext('2d');
+          const scale = 2;
+          
+          const fontSize = parseFloat(computed.fontSize) || 18;
+          const fontWeight = computed.fontWeight || '800';
+          const fontFamily = computed.fontFamily || 'Outfit, sans-serif';
+          
+          ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
+          if ('letterSpacing' in ctx) ctx.letterSpacing = computed.letterSpacing;
+          
+          const textWidth = ctx.measureText(text).width;
+          const canvasWidth = Math.ceil(textWidth + 20);
+          const canvasHeight = Math.ceil(fontSize * 1.5);
+          
+          canvas.width = canvasWidth * scale;
+          canvas.height = canvasHeight * scale;
+          canvas.style.width = canvasWidth + 'px';
+          canvas.style.height = canvasHeight + 'px';
+          
+          ctx.scale(scale, scale);
+          ctx.font = `${fontWeight} ${fontSize}px ${fontFamily}`;
+          if ('letterSpacing' in ctx) ctx.letterSpacing = computed.letterSpacing;
+          ctx.textBaseline = 'middle';
+          
+          const gradient = ctx.createLinearGradient(0, 0, textWidth, 0);
+          if (isDark) {
+            gradient.addColorStop(0, '#ffffff');
+            gradient.addColorStop(1, '#a5b4fc');
+          } else {
+            gradient.addColorStop(0, '#0f172a');
+            gradient.addColorStop(1, '#4338ca');
+          }
+          ctx.fillStyle = gradient;
+          ctx.fillText(text, 0, canvasHeight / 2);
+          
+          h3.innerHTML = '';
+          h3.appendChild(canvas);
+          h3.style.background = 'none';
+          h3.style.webkitBackgroundClip = 'unset';
+          h3.style.webkitTextFillColor = 'initial';
+        }
+
+        await document.fonts.ready;
+        
+        if (typeof htmlToImage !== 'undefined') {
+          targetElement.setAttribute('data-theme', document.documentElement.getAttribute('data-theme'));
+          
+          const dataUrl = await htmlToImage.toPng(targetElement, {
+            quality: 1.0,
+            pixelRatio: 2,
+            backgroundColor: bgColor,
+            width: Math.round(rect.width),
+            height: Math.round(rect.height),
+            style: {
+              borderRadius: '12px',
+              transform: 'none',
+              margin: '0'
+            }
+          });
+          return dataUrl;
+        }
+      } catch (err) {
+        console.warn('htmlToImage capture failed:', err);
+      } finally {
+        targetElement.removeAttribute('data-theme');
+        if (h3) {
+          h3.innerHTML = originalH3Html;
+          if (originalH3Style) {
+            h3.setAttribute('style', originalH3Style);
+          } else {
+            h3.removeAttribute('style');
+          }
+        }
+      }
+      return null;
+    };
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', async () => {
+        downloadBtn.textContent = '⏳ Generating...';
+        const dataUrl = await capturePngUrl();
+        downloadBtn.textContent = '📥 Download PNG';
+        if (dataUrl) {
+          const link = document.createElement('a');
+          link.download = `GW${state.currentGw}_Standings_Payouts.png`;
+          link.href = dataUrl;
+          link.click();
+          showToast('Image downloaded successfully!');
+        } else {
+          showToast('Failed to generate image');
+        }
+      });
+    }
+
+    if (copyBtn) {
+      copyBtn.addEventListener('click', async () => {
+        copyBtn.textContent = '⏳ Generating...';
+        const dataUrl = await capturePngUrl();
+        copyBtn.textContent = '📋 Copy Image';
+        if (dataUrl) {
+          try {
+            const res = await fetch(dataUrl);
+            const blob = await res.blob();
+            await navigator.clipboard.write([
+              new ClipboardItem({ 'image/png': blob })
+            ]);
+            showToast('📋 Copied image to clipboard! Ready to paste into WhatsApp / Telegram.');
+          } catch (err) {
+            console.warn('Clipboard write error:', err);
+            showToast('Clipboard direct write restricted. Use "Download PNG" instead!');
+          }
+        } else {
+          showToast('Failed to generate image');
+        }
+      });
+    }
   }
 
   // ===================== #8 COLLAPSIBLE SECTIONS =====================
@@ -244,6 +409,59 @@
           teamName: r.entry_name,
           avatar: r.player_name.split(' ').map(n => n[0]).join('')
         }));
+
+        // Fetch Live FPL Gameweek & Event Status
+        try {
+          const bsResp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/bootstrap-static/`);
+          if (bsResp.ok) {
+            const bsData = await bsResp.json();
+            if (bsData && bsData.events) {
+              bsData.events.forEach(ev => {
+                state.eventStatuses[ev.id] = {
+                  gw: ev.id,
+                  finished: ev.finished,
+                  data_checked: ev.data_checked,
+                  is_current: ev.is_current,
+                  is_previous: ev.is_previous,
+                  is_next: ev.is_next,
+                  deadline_time: ev.deadline_time,
+                  bonus_added: ev.finished || ev.data_checked,
+                  leagues: ev.data_checked ? 'Updated' : 'Updating'
+                };
+              });
+              const activeEv = bsData.events.find(e => e.is_current);
+              if (activeEv) {
+                state.maxGw = Math.max(state.maxGw, activeEv.id);
+              }
+            }
+          }
+
+          const stResp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/event-status/`);
+          if (stResp.ok) {
+            const stData = await stResp.json();
+            const curGw = state.currentGw;
+            
+            if (stData && stData.status) {
+              stData.status.forEach(st => {
+                if (state.eventStatuses[st.event]) {
+                  state.eventStatuses[st.event].bonus_added = st.bonus_added;
+                  state.eventStatuses[st.event].points = st.points;
+                }
+              });
+              
+              if (state.eventStatuses[curGw]) {
+                 state.eventStatuses[curGw].daily_status = stData.status.filter(s => s.event === curGw);
+              }
+            }
+            if (stData && stData.leagues) {
+              if (state.eventStatuses[curGw]) {
+                state.eventStatuses[curGw].leagues = stData.leagues;
+              }
+            }
+          }
+        } catch (stErr) {
+          console.warn('FPL Event Status fetch notice:', stErr);
+        }
 
         updateMemberCountBadge();
         renderAll();
@@ -548,6 +766,9 @@
   function renderAll() {
     const hasData = state.dataset.managers && state.dataset.managers.length > 0;
     
+    if (document.getElementById('section-gw-status')) {
+      document.getElementById('section-gw-status').style.display = hasData ? 'block' : 'none';
+    }
     document.getElementById('section-standings').style.display = hasData ? 'block' : 'none';
     document.getElementById('section-performance').style.display = hasData ? 'block' : 'none';
     document.getElementById('section-trajectory').style.display = hasData ? 'block' : 'none';
@@ -556,6 +777,7 @@
     if (!hasData) return;
 
     renderStandingsTable();
+    renderGwStatus();
     renderWinLossSummaryTable();
     renderChipTracker();
     updateChart();
@@ -884,6 +1106,178 @@
 
       elements.chipTrackerContainer.appendChild(card);
     });
+  }
+
+  function renderGwStatus() {
+    const spotlightContainer = document.getElementById('gwSpotlightContainer');
+    if (!spotlightContainer) return;
+
+    const gw = state.currentGw || 10;
+    let statusObj = state.eventStatuses[gw];
+
+    if (!statusObj) {
+      const gwDataset = state.dataset.gameweeks ? state.dataset.gameweeks.find(g => g.gw === gw) : null;
+      statusObj = {
+        gw: gw,
+        finished: gwDataset ? (gwDataset.finished !== undefined ? gwDataset.finished : true) : (gw <= state.currentGw),
+        data_checked: gwDataset ? (gwDataset.data_checked !== undefined ? gwDataset.data_checked : true) : (gw <= state.currentGw),
+        bonus_added: gwDataset ? (gwDataset.bonus_added !== undefined ? gwDataset.bonus_added : true) : (gw <= state.currentGw),
+        leagues: gwDataset ? (gwDataset.leagues || 'Updated') : 'Updated',
+        daily_status: gwDataset ? gwDataset.daily_status : [],
+        is_current: gw === state.currentGw
+      };
+    } else {
+      if (statusObj.is_current === undefined) statusObj.is_current = (gw === state.currentGw);
+      if (!statusObj.leagues) statusObj.leagues = 'Updated';
+    }
+
+    // Determine daily_status for current/past/future GWs
+    let dailyStatus = (statusObj && statusObj.daily_status && statusObj.daily_status.length > 0)
+      ? statusObj.daily_status
+      : null;
+
+    if (!dailyStatus) {
+      const isPast = gw < state.currentGw || (statusObj && statusObj.finished && !statusObj.is_current);
+      const isCurrent = gw === state.currentGw;
+      
+      // Calculate realistic dates for GW n
+      const startDate = new Date(2023, 7, 11); // Aug 11 2023
+      const gwStart = new Date(startDate.getTime() + (gw - 1) * 7 * 86400000);
+      const gwSat = new Date(gwStart.getTime() + 1 * 86400000);
+      const gwSun = new Date(gwStart.getTime() + 2 * 86400000);
+
+      const d1Str = gwSat.toISOString().split('T')[0];
+      const d2Str = gwSun.toISOString().split('T')[0];
+
+      if (isPast) {
+        dailyStatus = [
+          { date: d1Str, points: 'r', bonus_added: true },
+          { date: d2Str, points: 'r', bonus_added: true }
+        ];
+      } else if (isCurrent) {
+        dailyStatus = [
+          { date: d1Str, points: 'r', bonus_added: true },
+          { date: d2Str, points: (statusObj.finished ? 'r' : 'p'), bonus_added: !!statusObj.bonus_added }
+        ];
+      } else {
+        // Future GW
+        dailyStatus = [
+          { date: d1Str, points: 'p', bonus_added: false },
+          { date: d2Str, points: 'p', bonus_added: false }
+        ];
+      }
+    }
+
+    // Determine overall status label
+    let overallStatusLabel = 'Upcoming';
+    let overallStatusClass = 'pipe-badge-muted';
+
+    if (gw < state.currentGw || (statusObj.finished && statusObj.data_checked)) {
+      overallStatusLabel = 'Finalized';
+      overallStatusClass = 'pipe-badge-success';
+    } else if (gw === state.currentGw) {
+      overallStatusLabel = statusObj.data_checked ? 'Finalized' : 'In Progress';
+      overallStatusClass = statusObj.data_checked ? 'pipe-badge-success' : 'pipe-badge-live';
+    }
+
+    // ── Compute progress bar ──────────────────────────────
+    const doneDays    = dailyStatus.filter(d => d.points === 'r' && d.bonus_added).length;
+    const activeDays  = dailyStatus.filter(d => d.points === 'r' && !d.bonus_added).length;
+    const totalDays   = dailyStatus.length;
+    const progressPct = totalDays > 0 ? Math.round((doneDays / totalDays) * 100) : 0;
+    const progressLabel = `${doneDays} of ${totalDays} day${totalDays !== 1 ? 's' : ''} finalized`;
+
+    // ── Helpers ───────────────────────────────────────────
+    const CHECK  = `<svg width="10" height="10" viewBox="0 0 10 10" fill="none" style="margin-right:4px;vertical-align:middle"><path d="M1.5 5L3.8 7.5L8.5 2.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    const SPIN   = `<svg width="10" height="10" viewBox="0 0 10 10" fill="none" style="margin-right:4px;vertical-align:middle"><path d="M5 1A4 4 0 1 1 1 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+    const CLOCK  = `<span style="margin-right:4px;font-size:9px;vertical-align:middle">○</span>`;
+
+    const makeTag = (type, label) => {
+      const icon = type === 'done' ? CHECK : (type === 'active' ? SPIN : CLOCK);
+      return `<span class="day-tag tag-${type}">${icon}${label}</span>`;
+    };
+
+    // ── Build rows ────────────────────────────────────────
+    const tableRows = dailyStatus.map((day, idx, arr) => {
+      const dateObj = new Date(day.date);
+      const weekday = dateObj.toLocaleDateString('en-GB', { weekday: 'long' });
+      const dateFmt = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+
+      const ptsType   = day.points === 'r' ? 'done' : 'pending';
+      const bonusType = day.bonus_added ? 'done' : (day.points === 'r' ? 'active' : 'pending');
+
+      const leaguesDone = day.points === 'r' && day.bonus_added;
+      const isLastProcessedDay = day.bonus_added && (idx === arr.length - 1 || !arr[idx+1].bonus_added);
+      const leaguesUpdating = isLastProcessedDay && (statusObj.leagues || '').toLowerCase() === 'updating';
+      const leaguesType = leaguesDone ? (leaguesUpdating ? 'active' : 'done') : (day.points === 'r' && day.bonus_added ? 'done' : 'pending');
+      const leaguesLabel = leaguesDone ? (leaguesUpdating ? 'Updating…' : 'Updated') : 'Pending';
+      const leaguesTagType = leaguesUpdating ? 'active' : leaguesType;
+
+      // Row state: done / active / pending
+      const isDone    = day.points === 'r' && day.bonus_added && !leaguesUpdating;
+      const isActive  = !isDone && (day.points === 'r' || day.bonus_added || leaguesUpdating);
+      const rowClass  = isDone ? 'row-done' : (isActive ? 'row-active' : 'row-pending');
+
+      return `
+        <tr class="daily-row ${rowClass}">
+          <td class="daily-td-date">
+            <span class="date-weekday">${weekday}</span>
+            <span class="date-short">${dateFmt}</span>
+          </td>
+          <td>${makeTag(ptsType, ptsType === 'done' ? 'Updated' : 'Pending')}</td>
+          <td>${makeTag(bonusType, bonusType === 'done' ? 'Added' : (bonusType === 'active' ? 'Processing' : 'Pending'))}</td>
+          <td>${makeTag(leaguesTagType, leaguesLabel)}</td>
+        </tr>
+      `;
+    }).join('');
+
+    // ── Last-synced timestamp ─────────────────────────────
+    const now = new Date();
+    const syncTime = now.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+    const syncDate = now.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+
+    const tableHtml = `
+      <div class="tracker-progress-bar-wrap">
+        <div class="tracker-progress-bar-track">
+          <div class="tracker-progress-bar-fill" style="width:${progressPct}%"></div>
+        </div>
+        <span class="tracker-progress-label">${progressLabel}</span>
+      </div>
+      <div class="premium-table-container">
+        <table class="daily-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match Points</th>
+              <th>Bonus Points</th>
+              <th>League Standings</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      </div>
+      <div class="tracker-footer">
+        <span class="tracker-sync-label">Last synced: ${syncDate}, ${syncTime}</span>
+      </div>
+    `;
+
+    spotlightContainer.innerHTML = `
+      <div class="pipe-card-premium">
+        <div class="pipe-card-top">
+          <div class="pipe-card-title-area">
+            <div class="pipe-card-gw">Gameweek ${gw}</div>
+            <div class="pipe-card-subtitle">Daily Processing Tracker</div>
+          </div>
+          <div class="pipe-card-right">
+            <span class="pipe-badge ${overallStatusClass}">${overallStatusLabel}</span>
+          </div>
+        </div>
+        ${tableHtml}
+      </div>
+    `;
+
   }
 
   // ===================== CHART =====================

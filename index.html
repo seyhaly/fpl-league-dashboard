@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clash of Elite Fantasy League — Admin Dashboard</title>
   <meta name="description" content="Professional Gameweek Standings, Transfer Deductions, and Chip Usage Tracker for Fantasy Premier League Private Leagues.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Outfit:wght@400;500;800&display=swap" rel="stylesheet">
+  <style>
+    body, html { font-family: 'Outfit', sans-serif; }
+    h3, .pipeline-gw-title { font-family: 'Inter', sans-serif; }
+  </style>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -102,8 +107,10 @@
     <!-- MIDDLE: Spacer -->
     <div class="gw-spacer" style="flex-grow: 1;"></div>
 
-    <!-- RIGHT: Quick Jump -->
-    <div class="gw-nav-controls">
+    <!-- RIGHT: Quick Jump & Export -->
+    <div class="gw-nav-controls" style="display:flex;align-items:center;gap:8px;">
+      <button id="copyStandingsImgBtn" class="export-btn" title="Copy Image to Clipboard">📋 Copy Image</button>
+      <button id="downloadStandingsImgBtn" class="export-btn" title="Download Image PNG">📥 Download PNG</button>
       <button id="goToCurrentGwBtn" class="gw-now-btn">▶ Latest GW</button>
     </div>
 
@@ -148,6 +155,18 @@
     </div>
   </section>
 
+  <!-- ===================== GAMEWEEK STATUS TRACKER ===================== -->
+  <section class="glass-panel" id="section-gw-status">
+    <div class="section-title">
+      <h3>Gameweek Status &amp; Processing Tracker</h3>
+      <button class="collapse-btn" data-target="statusCollapse">▲ Collapse</button>
+    </div>
+    <div id="statusCollapse" class="collapsible-content">
+      <!-- Active GW Pipeline Card -->
+      <div id="gwSpotlightContainer" class="pipeline-wrapper"></div>
+    </div>
+  </section>
+
   <!-- ===================== PERFORMANCE & CHIPS ===================== -->
   <section class="glass-panel" id="section-performance">
     <div class="section-title">
@@ -180,6 +199,7 @@
 
 </div>
 
+<script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
 <script src="app.js"></script>
 </body>

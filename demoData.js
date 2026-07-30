@@ -33,6 +33,10 @@ window.DEMO_DATA = {
   gameweeks: [
     {
       gw: 1,
+      finished: true,
+      data_checked: true,
+      bonus_added: true,
+      leagues: "Updated",
       scores: { 1: 78, 2: 65, 3: 82, 4: 54, 5: 60, 6: 71, 7: 48 },
       hits: { 1: 0, 2: 0, 3: 4, 4: 0, 5: 0, 6: 0, 7: 4 },
       transfers: { 1: 0, 2: 0, 3: 2, 4: 0, 5: 0, 6: 0, 7: 2 },
@@ -114,6 +118,15 @@ window.DEMO_DATA = {
     },
     {
       gw: 10,
+      finished: true,
+      data_checked: false,
+      bonus_added: true,
+      leagues: "Updating",
+      daily_status: [
+        { date: "2023-10-27", points: "r", bonus_added: true },
+        { date: "2023-10-28", points: "r", bonus_added: true },
+        { date: "2023-10-29", points: "p", bonus_added: false }
+      ],
       scores: { 1: 70, 2: 85, 3: 66, 4: 72, 5: 70, 6: 68, 7: 61 },
       hits: { 1: 0, 2: 0, 3: 0, 4: 0, 5: 4, 6: 0, 7: 0 },
       transfers: { 1: 1, 2: 0, 3: 1, 4: 1, 5: 2, 6: 1, 7: 0 },
