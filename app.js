@@ -928,18 +928,16 @@
         }
       }
 
-      // Tiebreaker indicator — only at zone boundaries where payout changes
-      const lastWinScore    = managers[splitSize - 1]?.netScore;           // last winner
-      const firstOtherScore = managers[splitSize]?.netScore;               // first neutral or loser
-      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
-      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
+      // Tiebreaker indicator — applies to ALL managers sharing a boundary score when a boundary tie occurs
+      const topBoundaryScore = splitSize > 0 ? managers[splitSize - 1]?.netScore : null;
+      const isTopBoundaryTie = splitSize > 0 && managers[splitSize]?.netScore === topBoundaryScore;
 
-      const atTopBoundary = (rank === splitSize || rank === splitSize + 1)
-        && lastWinScore === firstOtherScore;
-      const atBottomBoundary = hasNeutral
-        && (rank === neutralRank || rank === neutralRank + 1)
-        && lastNeutralScore === firstLoserScore;
-      const isTied = hasPlayedMatches && (atTopBoundary || atBottomBoundary);
+      const bottomBoundaryScore = (hasNeutral && neutralRank) ? managers[neutralRank - 1]?.netScore : null;
+      const isBottomBoundaryTie = (hasNeutral && neutralRank) && managers[neutralRank]?.netScore === bottomBoundaryScore;
+
+      const tiedAtTop = isTopBoundaryTie && (m.netScore === topBoundaryScore);
+      const tiedAtBottom = isBottomBoundaryTie && (m.netScore === bottomBoundaryScore);
+      const isTied = hasPlayedMatches && (tiedAtTop || tiedAtBottom);
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
     });
@@ -1011,14 +1009,15 @@
         payout = -state.entryFee; statusClass = 'tr-bottom-3'; outcomeCode = 'L';
       }
 
-      const lastWinScore    = managers[splitSize - 1]?.netScore;
-      const firstOtherScore = managers[splitSize]?.netScore;
-      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
-      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
+      const topBoundaryScore = splitSize > 0 ? managers[splitSize - 1]?.netScore : null;
+      const isTopBoundaryTie = splitSize > 0 && managers[splitSize]?.netScore === topBoundaryScore;
 
-      const atTopBoundary = (rank === splitSize || rank === splitSize + 1) && lastWinScore === firstOtherScore;
-      const atBottomBoundary = hasNeutral && (rank === neutralRank || rank === neutralRank + 1) && lastNeutralScore === firstLoserScore;
-      const isTied = atTopBoundary || atBottomBoundary;
+      const bottomBoundaryScore = (hasNeutral && neutralRank) ? managers[neutralRank - 1]?.netScore : null;
+      const isBottomBoundaryTie = (hasNeutral && neutralRank) && managers[neutralRank]?.netScore === bottomBoundaryScore;
+
+      const tiedAtTop = isTopBoundaryTie && (m.netScore === topBoundaryScore);
+      const tiedAtBottom = isBottomBoundaryTie && (m.netScore === bottomBoundaryScore);
+      const isTied = tiedAtTop || tiedAtBottom;
 
       let note = '';
       if (rank <= splitSize) {
