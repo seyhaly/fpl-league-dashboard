@@ -568,8 +568,13 @@
 
         // Populate gameweek scores (pre-season preview mapping to real managers)
         const hasLiveScores = fetchedResults.some(r => r.event_total !== undefined && r.event_total > 0);
-        const demoGws = (window.demoData && window.demoData.gameweeks) ? window.demoData.gameweeks : [];
-        const demoMgrs = (window.demoData && window.demoData.managers) ? window.demoData.managers : [];
+        const demo = window.DEMO_DATA;
+        const demoGws = demo ? (demo.gameweeks || []) : [];
+        const demoMgrs = demo ? (demo.managers || []) : [];
+
+        if (demo && demo.months) {
+          state.dataset.months = demo.months;
+        }
 
         state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
           const gwNum = i + 1;
@@ -577,6 +582,8 @@
           const scores = {};
           const hits = {};
           const transfers = {};
+          const benchPoints = {};
+          const captainPoints = {};
           const chipsUsed = {};
 
           state.dataset.managers.forEach((m, idx) => {
@@ -585,14 +592,16 @@
               scores[m.id] = liveRes ? (liveRes.event_total || 0) : 0;
             } else if (demoGw && demoMgrs.length > 0) {
               const demoMgrId = demoMgrs[idx % demoMgrs.length]?.id;
-              scores[m.id] = demoGw.scores[demoMgrId] || 0;
+              scores[m.id] = demoGw.scores ? (demoGw.scores[demoMgrId] || 0) : 0;
               hits[m.id] = demoGw.hits ? (demoGw.hits[demoMgrId] || 0) : 0;
               transfers[m.id] = demoGw.transfers ? (demoGw.transfers[demoMgrId] || 0) : 0;
+              benchPoints[m.id] = demoGw.benchPoints ? (demoGw.benchPoints[demoMgrId] || 0) : 0;
+              captainPoints[m.id] = demoGw.captainPoints ? (demoGw.captainPoints[demoMgrId] || 0) : 0;
               chipsUsed[m.id] = demoGw.chipsUsed ? (demoGw.chipsUsed[demoMgrId] || null) : null;
             }
           });
 
-          return { gw: gwNum, scores, hits, transfers, chipsUsed };
+          return { gw: gwNum, scores, hits, transfers, benchPoints, captainPoints, chipsUsed };
         });
 
         // Fetch Live FPL Gameweek & Event Status
