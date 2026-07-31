@@ -79,100 +79,7 @@
     requestAnimationFrame(update);
   }
 
-  // ===================== FINANCIAL SETTLEMENT =====================
-  function renderFinancialSettlement() {
-    const balancesContainer = document.getElementById('settlementBalancesContainer');
-    const transfersContainer = document.getElementById('settlementTransfersContainer');
-    if (!balancesContainer || !transfersContainer) return;
 
-    balancesContainer.innerHTML = '';
-    transfersContainer.innerHTML = '';
-
-    const managers = state.dataset.managers;
-    if (!managers || managers.length === 0) return;
-
-    // Calculate cumulative net payout for each manager up to current GW
-    const netBalances = {};
-    managers.forEach(m => { netBalances[m.id] = 0; });
-
-    for (let g = 1; g <= state.currentGw; g++) {
-      const standings = getGameweekStandings(g);
-      standings.forEach(item => {
-        if (netBalances[item.id] !== undefined) {
-          netBalances[item.id] += item.payout;
-        }
-      });
-    }
-
-    // Render Net Balance Cards
-    managers.forEach(m => {
-      const bal = netBalances[m.id] || 0;
-      const badgeCls = bal > 0 ? 'profit' : bal < 0 ? 'loss' : 'zero';
-      const balText = bal > 0 ? `+$${bal}.00` : bal < 0 ? `-$${Math.abs(bal)}.00` : `$0.00`;
-      const initials = m.name.split(' ').map(n => n[0]).join('');
-
-      const card = document.createElement('div');
-      card.className = 'settlement-card';
-      card.innerHTML = `
-        <div class="settlement-manager">
-          <div class="settlement-avatar">${initials}</div>
-          <span class="settlement-name">${m.name}</span>
-        </div>
-        <div class="settlement-badge ${badgeCls}">${balText}</div>
-      `;
-      balancesContainer.appendChild(card);
-    });
-
-    // Compute minimal 1-on-1 settlement transfers (Greedy matching)
-    const debtors = [];
-    const creditors = [];
-
-    managers.forEach(m => {
-      const bal = netBalances[m.id] || 0;
-      if (bal < 0) debtors.push({ name: m.name, amount: Math.abs(bal) });
-      else if (bal > 0) creditors.push({ name: m.name, amount: bal });
-    });
-
-    debtors.sort((a, b) => b.amount - a.amount);
-    creditors.sort((a, b) => b.amount - a.amount);
-
-    const transfers = [];
-    let i = 0, j = 0;
-    while (i < debtors.length && j < creditors.length) {
-      const payment = Math.min(debtors[i].amount, creditors[j].amount);
-      if (payment > 0) {
-        transfers.push({
-          from: debtors[i].name,
-          to: creditors[j].name,
-          amount: payment
-        });
-      }
-
-      debtors[i].amount -= payment;
-      creditors[j].amount -= payment;
-
-      if (debtors[i].amount === 0) i++;
-      if (creditors[j].amount === 0) j++;
-    }
-
-    if (transfers.length === 0) {
-      transfersContainer.innerHTML = `<div class="no-settlement-msg">All accounts are settled! No payments required.</div>`;
-    } else {
-      transfers.forEach(t => {
-        const card = document.createElement('div');
-        card.className = 'transfer-card';
-        card.innerHTML = `
-          <div class="transfer-flow">
-            <span class="transfer-debtor">${t.from.split(' ')[0]}</span>
-            <span class="transfer-arrow">➔ pays ➔</span>
-            <span class="transfer-creditor">${t.to.split(' ')[0]}</span>
-          </div>
-          <div class="transfer-amount">$${t.amount}.00</div>
-        `;
-        transfersContainer.appendChild(card);
-      });
-    }
-  }
 
   // ===================== SEASON AWARDS =====================
   function renderSeasonAwards() {
@@ -994,9 +901,6 @@
     if (document.getElementById('section-gw-status')) {
       document.getElementById('section-gw-status').style.display = hasData ? 'block' : 'none';
     }
-    if (document.getElementById('section-settlement')) {
-      document.getElementById('section-settlement').style.display = hasData ? 'block' : 'none';
-    }
     if (document.getElementById('section-awards')) {
       document.getElementById('section-awards').style.display = hasData ? 'block' : 'none';
     }
@@ -1008,7 +912,6 @@
     if (!hasData) return;
 
     renderStandingsTable();
-    renderFinancialSettlement();
     renderGwStatus();
     renderWinLossSummaryTable();
     renderChipTracker();
