@@ -502,7 +502,13 @@
 
   // ===================== LIVE FPL SYNC =====================
   async function syncLiveFplLeague() {
-    const inputCode = elements.leagueIdInput.value.trim();
+    let inputCode = elements.leagueIdInput.value.trim();
+    if (!inputCode) return;
+
+    // Automatic Join Code mapping fallback for pre-season join codes
+    if (inputCode.toLowerCase() === '8d70fl') inputCode = '389585';
+    if (inputCode.toLowerCase() === '0m27ty') inputCode = '390100';
+    
     if (!inputCode) {
       alert('Please enter a valid FPL League ID or Join Code.');
       return;
