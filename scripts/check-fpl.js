@@ -37,6 +37,19 @@ async function run() {
   let gameweeks = [];
   let months = [];
   let isPreSeasonMode = false;
+  let isGwFinished = false;
+
+  // State File Tracking to avoid duplicate emails
+  const stateFilePath = path.join(__dirname, '../.last_sent_gw.json');
+  let lastSentGw = 0;
+  if (fs.existsSync(stateFilePath)) {
+    try {
+      const stateData = JSON.parse(fs.readFileSync(stateFilePath, 'utf8'));
+      lastSentGw = stateData.lastSentGw || 0;
+    } catch (e) {}
+  }
+
+  const isManualRun = process.env.GITHUB_EVENT_NAME === 'workflow_dispatch';
 
   // Exact pre-season mapping for League #389585
   const realManagerMap = {
@@ -71,7 +84,10 @@ async function run() {
           if (bootResp.ok) {
             const bootData = await bootResp.json();
             const currentEvent = bootData.events.find(e => e.is_current) || bootData.events.find(e => e.is_next);
-            if (currentEvent) currentGw = currentEvent.id;
+            if (currentEvent) {
+              currentGw = currentEvent.id;
+              isGwFinished = currentEvent.finished || currentEvent.data_checked;
+            }
           }
         } 
         // 2. Pre-season: Extract REAL joined managers from new_entries.results!
@@ -102,6 +118,12 @@ async function run() {
     }
   }
 
+  // Check duplicate prevention for automated scheduled runs
+  if (!isPreSeasonMode && !isManualRun && currentGw === lastSentGw) {
+    console.log(`ℹ️ Gameweek ${currentGw} notification already sent previously. Skipping duplicate email.`);
+    process.exit(0);
+  }
+
   // Fallback to Demo Data ONLY if no live managers exist at all
   if (managers.length === 0 && demoData) {
     console.log('📌 Using Demo dataset fallback...');
@@ -113,7 +135,7 @@ async function run() {
   } else if (demoData) {
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
-    currentGw = 10;
+    if (isPreSeasonMode) currentGw = 10;
   }
 
   if (managers.length === 0) {
@@ -419,6 +441,14 @@ async function run() {
   if (resendResp.ok) {
     const resData = await resendResp.json();
     console.log('✅ Email sent successfully! ID:', resData.id);
+
+    // Save state so we don't send duplicate emails for the same live GW on cron schedule
+    if (!isPreSeasonMode) {
+      try {
+        fs.writeFileSync(stateFilePath, JSON.stringify({ lastSentGw: currentGw, updatedAt: new Date().toISOString() }, null, 2));
+        console.log(`💾 Saved lastSentGw = ${currentGw} to state tracking file.`);
+      } catch (e) {}
+    }
   } else {
     const errText = await resendResp.text();
     console.error('❌ Failed to send email via Resend:', errText);
