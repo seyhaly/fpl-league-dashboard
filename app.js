@@ -897,12 +897,12 @@
       let note = '';
       if (rank <= splitSize) {
         const payer = managers[total - rank];
-        note = `Gets from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
+        note = `Gets from ${payer ? payer.name : 'Bottom'}`;
       } else if (hasNeutral && rank === neutralRank) {
         note = 'Neutral';
       } else {
         const receiver = managers[total - rank];
-        note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
+        note = `Pays to ${receiver ? receiver.name : 'Top'}`;
       }
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
@@ -987,12 +987,12 @@
       let note = '';
       if (rank <= splitSize) {
         const payer = managers[total - rank];
-        note = `Gets from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
+        note = `Gets from ${payer ? payer.name : 'Bottom'}`;
       } else if (hasNeutral && rank === neutralRank) {
         note = 'Neutral';
       } else {
         const receiver = managers[total - rank];
-        note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
+        note = `Pays to ${receiver ? receiver.name : 'Top'}`;
       }
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note, monthObj };
@@ -1190,7 +1190,7 @@
         <td class="text-center">
           <div class="form-pill-container">${formHtml}</div>
         </td>
-        <td class="text-right">
+        <td class="text-center">
           <div class="payout-container">
             ${payoutBadge}
             <span class="payout-note">${m.payoutNote}</span>

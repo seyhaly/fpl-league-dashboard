@@ -782,7 +782,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 [data-theme="light"] .form-n { background: #64748b; }
 
 /* ===================== PAYOUT SECTION ===================== */
-.payout-container { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+.payout-container { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 3px; }
 
 .payout-badge {
   display: inline-flex; align-items: center;
