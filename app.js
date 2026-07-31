@@ -899,21 +899,33 @@
     });
 
     // Dynamic zone sizes:
-    // winners = losers = floor(N/2) — neutral only when N is odd (1 middle manager)
     const splitSize  = Math.floor(total / 2);
     const hasNeutral = total % 2 === 1; // true only when N is odd
     const neutralRank = hasNeutral ? splitSize + 1 : null; // exact middle rank
+    const hasPlayedMatches = managers.some(m => m.grossScore > 0 || m.hitCost > 0);
 
     return managers.map((m, idx) => {
       const rank = idx + 1;
-      let payout = 0, statusClass = '', outcomeCode = 'N';
+      let payout = 0, statusClass = '', outcomeCode = 'N', note = '';
 
-      if (rank <= splitSize) {
-        payout = state.entryFee; statusClass = 'tr-top-3'; outcomeCode = 'W';
-      } else if (hasNeutral && rank === neutralRank) {
-        payout = 0; statusClass = 'tr-neutral'; outcomeCode = 'N';
+      if (!hasPlayedMatches) {
+        payout = 0;
+        statusClass = 'tr-neutral';
+        outcomeCode = '-';
+        note = 'Neutral';
       } else {
-        payout = -state.entryFee; statusClass = 'tr-bottom-3'; outcomeCode = 'L';
+        if (rank <= splitSize) {
+          payout = state.entryFee; statusClass = 'tr-top-3'; outcomeCode = 'W';
+          const payer = managers[total - rank];
+          note = `Gets from ${payer ? payer.name : 'Bottom'}`;
+        } else if (hasNeutral && rank === neutralRank) {
+          payout = 0; statusClass = 'tr-neutral'; outcomeCode = 'N';
+          note = 'Neutral';
+        } else {
+          payout = -state.entryFee; statusClass = 'tr-bottom-3'; outcomeCode = 'L';
+          const receiver = managers[total - rank];
+          note = `Pays to ${receiver ? receiver.name : 'Top'}`;
+        }
       }
 
       // Tiebreaker indicator — only at zone boundaries where payout changes
@@ -927,19 +939,7 @@
       const atBottomBoundary = hasNeutral
         && (rank === neutralRank || rank === neutralRank + 1)
         && lastNeutralScore === firstLoserScore;
-      const isTied = atTopBoundary || atBottomBoundary;
-
-      // Payout note — mirrors the split size
-      let note = '';
-      if (rank <= splitSize) {
-        const payer = managers[total - rank];
-        note = `Gets from ${payer ? payer.name : 'Bottom'}`;
-      } else if (hasNeutral && rank === neutralRank) {
-        note = 'Neutral';
-      } else {
-        const receiver = managers[total - rank];
-        note = `Pays to ${receiver ? receiver.name : 'Top'}`;
-      }
+      const isTied = hasPlayedMatches && (atTopBoundary || atBottomBoundary);
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
     });
@@ -1036,6 +1036,14 @@
   }
 
   function getFormGuide(managerId) {
+    const activeManagers = state.dataset.managers;
+    const currentGwData = state.dataset.gameweeks ? state.dataset.gameweeks.find(g => g.gw === state.currentGw) : null;
+    const hasPlayedMatches = activeManagers && currentGwData && activeManagers.some(m => (currentGwData.scores[m.id] || 0) > 0 || (currentGwData.hits && currentGwData.hits[m.id] > 0));
+
+    if (!hasPlayedMatches) {
+      return ['-', '-', '-', '-', '-'];
+    }
+
     const form = [];
     const startGw = Math.max(1, state.currentGw - 4);
     for (let gw = startGw; gw <= state.currentGw; gw++) {
@@ -1043,7 +1051,7 @@
       const m = standings.find(x => x.id === managerId);
       if (m) form.push(m.outcomeCode);
     }
-    return form;
+    return form.length > 0 ? form : ['-', '-', '-', '-', '-'];
   }
 
   // ===================== RENDER ALL =====================
@@ -1185,6 +1193,7 @@
         : `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span>`;
 
       const formHtml = getFormGuide(m.id).map(code => {
+        if (code === '-') return `<span style="color:var(--text-muted);font-weight:700;margin:0 2px;">-</span>`;
         const cls = code === 'W' ? 'form-w' : code === 'L' ? 'form-l' : 'form-n';
         return `<span class="form-pill ${cls}">${code}</span>`;
       }).join('');
