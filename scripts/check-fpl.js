@@ -173,16 +173,12 @@ async function run() {
 
   const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
 
-  // Determine Banners: MOTM and MOTS (NO points displayed in banners)
+  // Determine Banners: MOTM and MOTS (STRICT RULE: MOTM ONLY appears on 1st GW of the new month)
   let bannerHtml = '';
 
   // 1. Manager of the Month Check
-  let targetMotmMonth = months.find(m => Math.max(...m.gws) + 1 === currentGw);
-
-  // In Demo Mode preview (GW 10), show October MOTM so user can test the banner
-  if (!targetMotmMonth && isDemoMode && currentGw === 10) {
-    targetMotmMonth = months.find(m => m.name === "October") || months[months.length - 1];
-  }
+  // ONLY triggers when currentGw === prevMonth.endGw + 1
+  const targetMotmMonth = months.find(m => Math.max(...m.gws) + 1 === currentGw);
 
   if (targetMotmMonth) {
     const monthTotals = managers.map(m => {
@@ -201,7 +197,7 @@ async function run() {
     if (motmLeader) {
       bannerHtml = `
         <div class="motm-banner">
-          <span>⌛ <strong>${targetMotmMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name}</span></span>
+          <span>🏆 <strong>${targetMotmMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name}</span></span>
         </div>
       `;
     }
@@ -266,11 +262,12 @@ async function run() {
         .form-l { background: #ef4444; }
         .form-n { background: #64748b; }
 
+        .payout-container { display: inline-block; text-align: right; width: 100%; }
         .payout-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: center; min-width: 60px; }
         .payout-win { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
         .payout-loss { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
         .payout-neutral { background: rgba(148, 163, 184, 0.2); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.4); }
-        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: right; padding-right: 4px; }
+        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; }
 
         .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; margin-bottom: 6px; }
       </style>
@@ -324,7 +321,7 @@ async function run() {
                 <td style="text-align:center;">
                   ${m.seasonTotalNet === maxSeasonPts
                     ? `<span style="background:#00ff87;color:#060913;font-weight:900;padding:3px 8px;border-radius:12px;font-size:12px;display:inline-block;box-shadow:0 0 10px rgba(0,255,135,0.4);">${m.seasonTotalNet}</span>`
-                    : `<span style="color:#04f5ff;font-weight:800;">${m.seasonTotalNet}</span>`}
+                    : `<span style="color:#f8fafc;font-weight:700;">${m.seasonTotalNet}</span>`}
                 </td>
                 <td style="text-align:center;">
                   ${m.chip ? `<span class="chip-tag">${getChipLabel(m.chip)}</span>` : '<span style="color:#64748b;">-</span>'}
@@ -333,10 +330,12 @@ async function run() {
                   ${m.form.map(c => `<span class="form-pill ${c === 'W' ? 'form-w' : c === 'L' ? 'form-l' : 'form-n'}">${c}</span>`).join('')}
                 </td>
                 <td style="text-align:right;padding-right:18px;border-top-right-radius:6px;border-bottom-right-radius:6px;">
-                  <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
-                    ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
-                  </span>
-                  <span class="payout-note">${m.note}</span>
+                  <div class="payout-container">
+                    <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
+                      ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
+                    </span>
+                    <span class="payout-note" style="text-align:${m.payout === 0 ? 'center' : 'right'};width:${m.payout === 0 ? '60px' : 'auto'};margin-left:${m.payout === 0 ? 'auto' : '0'};margin-right:${m.payout === 0 ? 'auto' : '0'};">${m.note}</span>
+                  </div>
                 </td>
               </tr>
             `).join('')}
