@@ -543,6 +543,7 @@
         elements.syncStatusTag.textContent = `LIVE (${count} Members)`;
 
         const realManagerMap = {
+          145847: { name: "Hokheng Ker", teamName: "Undefeated" },
           2019453: { name: "Seyha ly", teamName: "The Red Devil" },
           2067578: { name: "Kun Phaktra", teamName: "The Blue Warriors" },
           2026160: { name: "Piseth Nhim", teamName: "DESSTRo" },
