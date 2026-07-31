@@ -3,8 +3,8 @@
   // App State
   const state = {
     viewMode: 'overall',
-    currentGw: 1,
-    maxGw: 1,
+    currentGw: 10,
+    maxGw: 10,
     entryFee: 3,
     showMotmBadge: false,
     showMotsBadge: false,
@@ -689,14 +689,7 @@
       elements.syncStatusTag.className = 'sync-status-tag live';
       elements.syncStatusTag.textContent = `PRE-SEASON (${inputCode})`;
 
-      if (inputCode === '390100' || inputCode === '0m27ty' || leagueId === '390100') {
-        elements.leagueNameHeader.textContent = "Fantasy with Heng";
-        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
-        state.dataset.managers = [
-          { id: 145847, name: "Hokheng Ker", teamName: "Undefeated", avatar: "HK" },
-          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" }
-        ];
-      } else {
+      if (inputCode === '389585') {
         elements.leagueNameHeader.textContent = "Clash of Elite 2026-2027";
         if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Clash of Elite 2026-2027";
         state.dataset.managers = [
@@ -707,6 +700,13 @@
           { id: 2024611, name: "Vibol Dang", teamName: "The White Emperor", avatar: "VD" },
           { id: 2023789, name: "Monor Noem", teamName: "NORA FC", avatar: "MN" },
           { id: 2023013, name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T", avatar: "NK" }
+        ];
+      } else if (inputCode === '390100') {
+        elements.leagueNameHeader.textContent = "Fantasy with Heng";
+        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
+        state.dataset.managers = [
+          { id: 145847, name: "Hokheng Ker", teamName: "Undefeated", avatar: "HK" },
+          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" }
         ];
       }
 
@@ -777,38 +777,25 @@
 
   // ===================== DATA HELPERS =====================
   function getCurrentGwMonth(gw) {
-    const months = state.dataset.months || [
-      { name: "August", gws: [1, 2, 3] },
-      { name: "September", gws: [4, 5, 6] },
-      { name: "October", gws: [7, 8, 9, 10] },
-      { name: "November", gws: [11, 12, 13, 14] },
-      { name: "December", gws: [15, 16, 17, 18, 19, 20] },
-      { name: "January", gws: [21, 22, 23, 24] },
-      { name: "February", gws: [25, 26, 27] },
-      { name: "March", gws: [28, 29, 30] },
-      { name: "April", gws: [31, 32, 33, 34] },
-      { name: "May", gws: [35, 36, 37, 38] }
-    ];
-    return months.find(m => m.gws && m.gws.includes(gw)) || months[0];
+    return state.dataset.months.find(m => m.gws.includes(gw)) || state.dataset.months[0];
   }
 
   function getMonthlyMotmLeader(gw) {
     const activeMonth = getCurrentGwMonth(gw);
-    const monthGws = activeMonth ? activeMonth.gws : [1];
+    const monthGws = activeMonth.gws;
     const startGw = Math.min(...monthGws);
     const endGw = Math.max(...monthGws);
 
-    const gameweeks = state.dataset.gameweeks || [];
-    const datasetMaxGw = gameweeks.length > 0 ? Math.max(...gameweeks.map(g => g.gw)) : 1;
+    const datasetMaxGw = Math.max(...state.dataset.gameweeks.map(g => g.gw));
     const isFinalized = datasetMaxGw > endGw || gw > endGw;
 
     const gwsToCalculate = isFinalized ? monthGws : monthGws.filter(g => g <= gw);
-    const managers = state.dataset.managers || [];
+    const managers = state.dataset.managers;
 
     const totals = managers.map(m => {
       let netPts = 0, benchPts = 0, captainPts = 0, hitCost = 0;
       gwsToCalculate.forEach(g => {
-        const gwData = gameweeks.find(x => x.gw === g);
+        const gwData = state.dataset.gameweeks.find(x => x.gw === g);
         if (gwData) {
           const hCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
           netPts += (gwData.scores[m.id] || 0) - hCost;
@@ -821,35 +808,32 @@
       return { id: m.id, name: m.name, netPts, benchPts, captainPts, hitCost, seasonTotalNet };
     });
 
+    // 4-Layer Custom Tiebreaker Sort (matching Gameweek tiebreaker rule)
     totals.sort((a, b) => {
       if (b.netPts      !== a.netPts)      return b.netPts - a.netPts;
-      if (b.benchPts    !== a.benchPts)    return b.benchPts - a.benchPts;
-      if (b.captainPts  !== a.captainPts)  return b.captainPts - a.captainPts;
-      if (a.hitCost     !== b.hitCost)     return a.hitCost - b.hitCost;
-      return b.seasonTotalNet - a.seasonTotalNet;
+      if (b.benchPts    !== a.benchPts)    return b.benchPts - a.benchPts;         // Layer 1: Bench Pts
+      if (b.captainPts  !== a.captainPts)  return b.captainPts - a.captainPts;     // Layer 2: Captain Pts
+      if (a.hitCost     !== b.hitCost)     return a.hitCost - b.hitCost;           // Layer 3: Hits
+      return b.seasonTotalNet - a.seasonTotalNet;                                  // Layer 4: Season Net Pts
     });
 
-    return { activeMonth, leader: totals[0] || null, totals, isFinalized, startGw, endGw };
+    return { activeMonth, leader: totals[0], totals, isFinalized, startGw, endGw };
   }
 
   function getSeasonLeaders(gw) {
-    const managers = state.dataset.managers || [];
-    const gameweeks = state.dataset.gameweeks || [];
+    const managers = state.dataset.managers;
     if (!managers || managers.length === 0) return [];
     
     const totals = managers.map(m => {
       let totalNetPts = 0;
       for (let g = 1; g <= gw; g++) {
-        const gwData = gameweeks.find(x => x.gw === g);
-        if (gwData) {
-          totalNetPts += (gwData.scores[m.id] || 0) - (gwData.hits ? (gwData.hits[m.id] || 0) : 0);
-        }
+        const gwData = state.dataset.gameweeks.find(x => x.gw === g);
+        if (gwData) totalNetPts += (gwData.scores[m.id] || 0) - (gwData.hits ? (gwData.hits[m.id] || 0) : 0);
       }
-      return { ...m, totalNetPts };
+      return { id: m.id, name: m.name, totalNetPts };
     });
     totals.sort((a, b) => b.totalNetPts - a.totalNetPts);
     
-    if (totals.length === 0) return [];
     const maxPts = totals[0].totalNetPts;
     return totals.filter(t => t.totalNetPts === maxPts);
   }
@@ -887,9 +871,7 @@
 
   // ===================== STANDINGS ENGINE =====================
   function getGameweekStandings(gw) {
-    if (!state.dataset.gameweeks || state.dataset.gameweeks.length === 0) return [];
-    let gwData = state.dataset.gameweeks.find(g => g.gw === gw);
-    if (!gwData) gwData = state.dataset.gameweeks[0];
+    const gwData = state.dataset.gameweeks.find(g => g.gw === gw);
     if (!gwData) return [];
 
     const activeManagers = state.dataset.managers;
@@ -920,12 +902,7 @@
     const splitSize  = Math.floor(total / 2);
     const hasNeutral = total % 2 === 1; // true only when N is odd
     const neutralRank = hasNeutral ? splitSize + 1 : null; // exact middle rank
-    // Tiebreaker indicator — applies to ALL managers sharing a boundary score when a boundary tie occurs
-    const topBoundaryScore = managers[splitSize - 1]?.netScore;
-    const isTopBoundaryCrossed = splitSize > 0 && managers[splitSize]?.netScore === topBoundaryScore;
-
-    const bottomBoundaryScore = hasNeutral ? managers[splitSize]?.netScore : null;
-    const isBottomBoundaryCrossed = hasNeutral && managers[splitSize + 1]?.netScore === bottomBoundaryScore;
+    const hasPlayedMatches = managers.some(m => m.grossScore > 0 || m.hitCost > 0);
 
     return managers.map((m, idx) => {
       const rank = idx + 1;
@@ -951,9 +928,18 @@
         }
       }
 
-      const tiedAtTop = isTopBoundaryCrossed && m.netScore === topBoundaryScore;
-      const tiedAtBottom = isBottomBoundaryCrossed && m.netScore === bottomBoundaryScore;
-      const isTied = hasPlayedMatches && (tiedAtTop || tiedAtBottom);
+      // Tiebreaker indicator — only at zone boundaries where payout changes
+      const lastWinScore    = managers[splitSize - 1]?.netScore;           // last winner
+      const firstOtherScore = managers[splitSize]?.netScore;               // first neutral or loser
+      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
+      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
+
+      const atTopBoundary = (rank === splitSize || rank === splitSize + 1)
+        && lastWinScore === firstOtherScore;
+      const atBottomBoundary = hasNeutral
+        && (rank === neutralRank || rank === neutralRank + 1)
+        && lastNeutralScore === firstLoserScore;
+      const isTied = hasPlayedMatches && (atTopBoundary || atBottomBoundary);
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
     });
@@ -1013,12 +999,6 @@
     const hasNeutral = total % 2 === 1;
     const neutralRank = hasNeutral ? splitSize + 1 : null;
 
-    const topBoundaryScore = managers[splitSize - 1]?.netScore;
-    const isTopBoundaryCrossed = splitSize > 0 && managers[splitSize]?.netScore === topBoundaryScore;
-
-    const bottomBoundaryScore = hasNeutral ? managers[splitSize]?.netScore : null;
-    const isBottomBoundaryCrossed = hasNeutral && managers[splitSize + 1]?.netScore === bottomBoundaryScore;
-
     return managers.map((m, idx) => {
       const rank = idx + 1;
       let payout = 0, statusClass = '', outcomeCode = 'N';
@@ -1031,9 +1011,14 @@
         payout = -state.entryFee; statusClass = 'tr-bottom-3'; outcomeCode = 'L';
       }
 
-      const tiedAtTop = isTopBoundaryCrossed && m.netScore === topBoundaryScore;
-      const tiedAtBottom = isBottomBoundaryCrossed && m.netScore === bottomBoundaryScore;
-      const isTied = tiedAtTop || tiedAtBottom;
+      const lastWinScore    = managers[splitSize - 1]?.netScore;
+      const firstOtherScore = managers[splitSize]?.netScore;
+      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
+      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
+
+      const atTopBoundary = (rank === splitSize || rank === splitSize + 1) && lastWinScore === firstOtherScore;
+      const atBottomBoundary = hasNeutral && (rank === neutralRank || rank === neutralRank + 1) && lastNeutralScore === firstLoserScore;
+      const isTied = atTopBoundary || atBottomBoundary;
 
       let note = '';
       if (rank <= splitSize) {
