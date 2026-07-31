@@ -155,6 +155,26 @@
     </div>
   </section>
 
+  <!-- ===================== FINANCIAL SETTLEMENT ===================== -->
+  <section class="glass-panel" id="section-settlement">
+    <div class="section-title">
+      <h3>Financial Settlement &amp; Payout Calculator</h3>
+      <button class="collapse-btn" data-target="settlementCollapse">▲ Collapse</button>
+    </div>
+    <div id="settlementCollapse" class="collapsible-content">
+      <div class="settlement-layout">
+        <div class="settlement-column">
+          <h4 class="settlement-subtitle">Cumulative Net Balance</h4>
+          <div id="settlementBalancesContainer" class="settlement-balances-grid"></div>
+        </div>
+        <div class="settlement-column">
+          <h4 class="settlement-subtitle">Who Owes Who (Optimal Transfers)</h4>
+          <div id="settlementTransfersContainer" class="settlement-transfers-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== GAMEWEEK STATUS TRACKER ===================== -->
   <section class="glass-panel" id="section-gw-status">
     <div class="section-title">
@@ -194,6 +214,17 @@
       <div style="position:relative;height:320px;width:100%;">
         <canvas id="rankChart"></canvas>
       </div>
+    </div>
+  </section>
+
+  <!-- ===================== SEASON AWARDS ===================== -->
+  <section class="glass-panel" id="section-awards">
+    <div class="section-title">
+      <h3>Season Awards &amp; Hall of Stats</h3>
+      <button class="collapse-btn" data-target="awardsCollapse">▲ Collapse</button>
+    </div>
+    <div id="awardsCollapse" class="collapsible-content">
+      <div id="seasonAwardsContainer" class="awards-grid"></div>
     </div>
   </section>
 

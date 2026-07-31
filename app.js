@@ -47,7 +47,214 @@
     leagueNameDisplay:      document.getElementById('leagueNameDisplay')
   };
 
-  // ===================== INITIALIZATION =====================
+  // ===================== ANIMATED NUMBER COUNTER =====================
+  function animateNumber(element, endVal, duration = 400, prefix = '', suffix = '') {
+    if (!element) return;
+    const startVal = parseFloat(element.dataset.curVal || '0');
+    if (isNaN(startVal) || startVal === endVal) {
+      element.dataset.curVal = endVal;
+      element.textContent = `${prefix}${endVal}${suffix}`;
+      return;
+    }
+
+    const startTime = performance.now();
+    element.dataset.curVal = endVal;
+
+    function update(now) {
+      const elapsed = now - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+      const current = startVal + (endVal - startVal) * ease;
+      
+      const formatted = Number.isInteger(endVal) ? Math.round(current) : current.toFixed(2);
+      element.textContent = `${prefix}${formatted}${suffix}`;
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else {
+        const finalFormatted = Number.isInteger(endVal) ? endVal : endVal.toFixed(2);
+        element.textContent = `${prefix}${finalFormatted}${suffix}`;
+      }
+    }
+    requestAnimationFrame(update);
+  }
+
+  // ===================== FINANCIAL SETTLEMENT =====================
+  function renderFinancialSettlement() {
+    const balancesContainer = document.getElementById('settlementBalancesContainer');
+    const transfersContainer = document.getElementById('settlementTransfersContainer');
+    if (!balancesContainer || !transfersContainer) return;
+
+    balancesContainer.innerHTML = '';
+    transfersContainer.innerHTML = '';
+
+    const managers = state.dataset.managers;
+    if (!managers || managers.length === 0) return;
+
+    // Calculate cumulative net payout for each manager up to current GW
+    const netBalances = {};
+    managers.forEach(m => { netBalances[m.id] = 0; });
+
+    for (let g = 1; g <= state.currentGw; g++) {
+      const standings = getGameweekStandings(g);
+      standings.forEach(item => {
+        if (netBalances[item.id] !== undefined) {
+          netBalances[item.id] += item.payout;
+        }
+      });
+    }
+
+    // Render Net Balance Cards
+    managers.forEach(m => {
+      const bal = netBalances[m.id] || 0;
+      const badgeCls = bal > 0 ? 'profit' : bal < 0 ? 'loss' : 'zero';
+      const balText = bal > 0 ? `+$${bal}.00` : bal < 0 ? `-$${Math.abs(bal)}.00` : `$0.00`;
+      const initials = m.name.split(' ').map(n => n[0]).join('');
+
+      const card = document.createElement('div');
+      card.className = 'settlement-card';
+      card.innerHTML = `
+        <div class="settlement-manager">
+          <div class="settlement-avatar">${initials}</div>
+          <span class="settlement-name">${m.name}</span>
+        </div>
+        <div class="settlement-badge ${badgeCls}">${balText}</div>
+      `;
+      balancesContainer.appendChild(card);
+    });
+
+    // Compute minimal 1-on-1 settlement transfers (Greedy matching)
+    const debtors = [];
+    const creditors = [];
+
+    managers.forEach(m => {
+      const bal = netBalances[m.id] || 0;
+      if (bal < 0) debtors.push({ name: m.name, amount: Math.abs(bal) });
+      else if (bal > 0) creditors.push({ name: m.name, amount: bal });
+    });
+
+    debtors.sort((a, b) => b.amount - a.amount);
+    creditors.sort((a, b) => b.amount - a.amount);
+
+    const transfers = [];
+    let i = 0, j = 0;
+    while (i < debtors.length && j < creditors.length) {
+      const payment = Math.min(debtors[i].amount, creditors[j].amount);
+      if (payment > 0) {
+        transfers.push({
+          from: debtors[i].name,
+          to: creditors[j].name,
+          amount: payment
+        });
+      }
+
+      debtors[i].amount -= payment;
+      creditors[j].amount -= payment;
+
+      if (debtors[i].amount === 0) i++;
+      if (creditors[j].amount === 0) j++;
+    }
+
+    if (transfers.length === 0) {
+      transfersContainer.innerHTML = `<div class="no-settlement-msg">All accounts are settled! No payments required.</div>`;
+    } else {
+      transfers.forEach(t => {
+        const card = document.createElement('div');
+        card.className = 'transfer-card';
+        card.innerHTML = `
+          <div class="transfer-flow">
+            <span class="transfer-debtor">${t.from.split(' ')[0]}</span>
+            <span class="transfer-arrow">➔ pays ➔</span>
+            <span class="transfer-creditor">${t.to.split(' ')[0]}</span>
+          </div>
+          <div class="transfer-amount">$${t.amount}.00</div>
+        `;
+        transfersContainer.appendChild(card);
+      });
+    }
+  }
+
+  // ===================== SEASON AWARDS =====================
+  function renderSeasonAwards() {
+    const container = document.getElementById('seasonAwardsContainer');
+    if (!container) return;
+    container.innerHTML = '';
+
+    const managers = state.dataset.managers;
+    if (!managers || managers.length === 0) return;
+
+    // Calculate totals across GW 1..currentGw
+    const stats = managers.map(m => {
+      let benchPts = 0;
+      let hitCost = 0;
+      let captainPts = 0;
+      let grossPts = 0;
+      let payouts = 0;
+
+      for (let g = 1; g <= state.currentGw; g++) {
+        const standings = getGameweekStandings(g);
+        const item = standings.find(x => x.id === m.id);
+        if (item) {
+          benchPts += item.bench;
+          hitCost += item.hitCost;
+          captainPts += item.captain;
+          grossPts += item.grossScore;
+          payouts += item.payout;
+        }
+      }
+      return { id: m.id, name: m.name, benchPts, hitCost, captainPts, grossPts, payouts };
+    });
+
+    const benchKing = [...stats].sort((a, b) => b.benchPts - a.benchPts)[0];
+    const bigSpender = [...stats].sort((a, b) => b.hitCost - a.hitCost)[0];
+    const captainAmerica = [...stats].sort((a, b) => b.captainPts - a.captainPts)[0];
+    const unluckiest = [...stats].sort((a, b) => (b.grossPts - b.payouts * 10) - (a.grossPts - a.payouts * 10))[0];
+
+    const awards = [
+      {
+        cls: 'bench',
+        icon: '👑',
+        title: 'King of Bench',
+        winner: benchKing?.name || '-',
+        stat: `${benchKing?.benchPts || 0} Bench Pts Left`
+      },
+      {
+        cls: 'spender',
+        icon: '💸',
+        title: 'Big Spender',
+        winner: bigSpender?.name || '-',
+        stat: `-${bigSpender?.hitCost || 0} Pts Spent on Hits`
+      },
+      {
+        cls: 'captain',
+        icon: '🎯',
+        title: 'Captain America',
+        winner: captainAmerica?.name || '-',
+        stat: `${captainAmerica?.captainPts || 0} Captain Pts Scored`
+      },
+      {
+        cls: 'unlucky',
+        icon: '⚡',
+        title: 'Unluckiest Manager',
+        winner: unluckiest?.name || '-',
+        stat: `${unluckiest?.grossPts || 0} Gross Pts (${unluckiest?.payouts >= 0 ? '+' : ''}$${unluckiest?.payouts || 0})`
+      }
+    ];
+
+    awards.forEach(a => {
+      const card = document.createElement('div');
+      card.className = `award-card ${a.cls}`;
+      card.innerHTML = `
+        <div class="award-icon-box">${a.icon}</div>
+        <div class="award-title">${a.title}</div>
+        <div class="award-winner-name">${a.winner}</div>
+        <div class="award-stat-badge">${a.stat}</div>
+      `;
+      container.appendChild(card);
+    });
+  }
+
+  // ===================== INITIALIZE APPLICATION =====================
   function init() {
     applyTheme(state.theme);
     populateGwSelect();
@@ -787,6 +994,12 @@
     if (document.getElementById('section-gw-status')) {
       document.getElementById('section-gw-status').style.display = hasData ? 'block' : 'none';
     }
+    if (document.getElementById('section-settlement')) {
+      document.getElementById('section-settlement').style.display = hasData ? 'block' : 'none';
+    }
+    if (document.getElementById('section-awards')) {
+      document.getElementById('section-awards').style.display = hasData ? 'block' : 'none';
+    }
     document.getElementById('section-standings').style.display = hasData ? 'block' : 'none';
     document.getElementById('section-performance').style.display = hasData ? 'block' : 'none';
     document.getElementById('section-trajectory').style.display = hasData ? 'block' : 'none';
@@ -795,11 +1008,13 @@
     if (!hasData) return;
 
     renderStandingsTable();
+    renderFinancialSettlement();
     renderGwStatus();
     renderWinLossSummaryTable();
     renderChipTracker();
     updateChart();
     updatePerformanceChart();
+    renderSeasonAwards();
   }
 
   // ===================== STANDINGS TABLE =====================
@@ -947,10 +1162,10 @@
         </td>
         <td class="text-center">${transferDisplay}</td>
         <td class="text-center">
-          <span class="gw-score">${m.netScore}</span>
+          <span class="gw-score" data-cur-val="${m.netScore}">${m.netScore}</span>
         </td>
         <td class="text-center">
-          <span class="season-pts${m.seasonTotalNet === maxSeasonPts ? ' season-pts-top' : ''}">${m.seasonTotalNet}</span>
+          <span class="season-pts${m.seasonTotalNet === maxSeasonPts ? ' season-pts-top' : ''}" data-cur-val="${m.seasonTotalNet}">${m.seasonTotalNet}</span>
         </td>
         <td class="text-center">${chipColumnContent}</td>
         <td class="text-center">
@@ -964,6 +1179,11 @@
         </td>
       `;
       elements.standingsBody.appendChild(tr);
+
+      const gwScoreEl = tr.querySelector('.gw-score');
+      const seasonPtsEl = tr.querySelector('.season-pts');
+      if (gwScoreEl) animateNumber(gwScoreEl, m.netScore, 400);
+      if (seasonPtsEl) animateNumber(seasonPtsEl, m.seasonTotalNet, 400);
 
       // =========== #10 MOBILE CARD ===========
       if (elements.mobileCards) {

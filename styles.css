@@ -1449,3 +1449,215 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .sortable-header.active-sort .sort-icon {
   opacity: 1;
 }
+
+/* ===================== FINANCIAL SETTLEMENT ===================== */
+.settlement-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 850px) {
+  .settlement-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.settlement-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.settlement-balances-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.settlement-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  transition: var(--transition);
+}
+.settlement-card:hover {
+  border-color: var(--border-accent);
+}
+
+.settlement-manager {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.settlement-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+}
+
+.settlement-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.settlement-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.settlement-badge.profit {
+  background: rgba(16, 185, 129, 0.15);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+.settlement-badge.loss {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+.settlement-badge.zero {
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.settlement-transfers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.transfer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.08), rgba(99, 102, 241, 0.08));
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.transfer-flow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+.transfer-debtor {
+  color: #ef4444;
+  font-weight: 800;
+}
+.transfer-arrow {
+  color: var(--pl-cyan);
+  font-size: 14px;
+}
+.transfer-creditor {
+  color: #10b981;
+  font-weight: 800;
+}
+.transfer-amount {
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fcd34d;
+  background: rgba(0,0,0,0.3);
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(252, 211, 77, 0.3);
+}
+
+.no-settlement-msg {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-style: italic;
+  padding: 12px 0;
+}
+
+/* ===================== SEASON AWARDS ===================== */
+.awards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
+}
+
+.award-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 20px 16px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+.award-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+  border-color: var(--border-accent);
+}
+
+.award-icon-box {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.award-card.bench .award-icon-box { background: linear-gradient(135deg, #f59e0b, #d97706); }
+.award-card.spender .award-icon-box { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.award-card.captain .award-icon-box { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+.award-card.unlucky .award-icon-box { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+
+.award-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.award-winner-name {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--pl-cyan);
+  margin-bottom: 8px;
+}
+
+.award-stat-badge {
+  display: inline-block;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
