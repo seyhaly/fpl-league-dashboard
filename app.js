@@ -560,6 +560,35 @@
           avatar: (realManagerMap[r.entry]?.name || r.player_name || r.entry_name).substring(0, 2).toUpperCase()
         }));
 
+        // Populate gameweek scores (pre-season preview mapping to real managers)
+        const hasLiveScores = fetchedResults.some(r => r.event_total !== undefined && r.event_total > 0);
+        const demoGws = (window.demoData && window.demoData.gameweeks) ? window.demoData.gameweeks : [];
+        const demoMgrs = (window.demoData && window.demoData.managers) ? window.demoData.managers : [];
+
+        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
+          const gwNum = i + 1;
+          const demoGw = demoGws.find(g => g.gw === gwNum) || demoGws[demoGws.length - 1];
+          const scores = {};
+          const hits = {};
+          const transfers = {};
+          const chipsUsed = {};
+
+          state.dataset.managers.forEach((m, idx) => {
+            if (hasLiveScores) {
+              const liveRes = fetchedResults.find(r => r.entry === m.id);
+              scores[m.id] = liveRes ? (liveRes.event_total || 0) : 0;
+            } else if (demoGw && demoMgrs.length > 0) {
+              const demoMgrId = demoMgrs[idx % demoMgrs.length]?.id;
+              scores[m.id] = demoGw.scores[demoMgrId] || 0;
+              hits[m.id] = demoGw.hits ? (demoGw.hits[demoMgrId] || 0) : 0;
+              transfers[m.id] = demoGw.transfers ? (demoGw.transfers[demoMgrId] || 0) : 0;
+              chipsUsed[m.id] = demoGw.chipsUsed ? (demoGw.chipsUsed[demoMgrId] || null) : null;
+            }
+          });
+
+          return { gw: gwNum, scores, hits, transfers, chipsUsed };
+        });
+
         // Fetch Live FPL Gameweek & Event Status
         try {
           const bsResp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/bootstrap-static/`);
