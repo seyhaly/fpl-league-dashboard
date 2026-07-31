@@ -136,3 +136,7 @@ window.DEMO_DATA = {
     }
   ]
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = typeof window !== 'undefined' ? window.DEMO_DATA : DEMO_DATA;
+}
