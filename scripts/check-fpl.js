@@ -253,7 +253,7 @@ async function run() {
         .manager-name { font-weight: 800; color: #f8fafc; font-size: 13px; white-space: nowrap; }
         .team-name { font-size: 11px; color: #94a3b8; margin-top: 2px; white-space: nowrap; }
         
-        .net-pts { font-weight: 900; color: #04f5ff; font-size: 15px; text-align: center; }
+        .net-pts { font-weight: 900; color: #f8fafc; font-size: 15px; text-align: center; }
 
         .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
         
@@ -262,7 +262,6 @@ async function run() {
         .form-l { background: #ef4444; }
         .form-n { background: #64748b; }
 
-        .payout-container { display: inline-block; text-align: right; width: 100%; }
         .payout-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: center; min-width: 60px; }
         .payout-win { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
         .payout-loss { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
@@ -321,7 +320,7 @@ async function run() {
                 <td style="text-align:center;">
                   ${m.seasonTotalNet === maxSeasonPts
                     ? `<span style="background:#00ff87;color:#060913;font-weight:900;padding:3px 8px;border-radius:12px;font-size:12px;display:inline-block;box-shadow:0 0 10px rgba(0,255,135,0.4);">${m.seasonTotalNet}</span>`
-                    : `<span style="color:#f8fafc;font-weight:700;">${m.seasonTotalNet}</span>`}
+                    : `<span style="color:#04f5ff;font-weight:800;">${m.seasonTotalNet}</span>`}
                 </td>
                 <td style="text-align:center;">
                   ${m.chip ? `<span class="chip-tag">${getChipLabel(m.chip)}</span>` : '<span style="color:#64748b;">-</span>'}
@@ -330,11 +329,11 @@ async function run() {
                   ${m.form.map(c => `<span class="form-pill ${c === 'W' ? 'form-w' : c === 'L' ? 'form-l' : 'form-n'}">${c}</span>`).join('')}
                 </td>
                 <td style="text-align:right;padding-right:18px;border-top-right-radius:6px;border-bottom-right-radius:6px;">
-                  <div class="payout-container">
+                  <div style="display:inline-block;text-align:center;">
                     <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
                       ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
                     </span>
-                    <span class="payout-note" style="text-align:${m.payout === 0 ? 'center' : 'right'};width:${m.payout === 0 ? '60px' : 'auto'};margin-left:${m.payout === 0 ? 'auto' : '0'};margin-right:${m.payout === 0 ? 'auto' : '0'};">${m.note}</span>
+                    <span class="payout-note" style="text-align:${m.payout === 0 ? 'center' : 'right'};">${m.note}</span>
                   </div>
                 </td>
               </tr>
