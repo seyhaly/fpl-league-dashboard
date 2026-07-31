@@ -172,6 +172,12 @@
     initPerformanceChart();
     initCollapsibles();
     updateMemberCountBadge();
+
+    // Default to real league Clash of Elite 2026-2027 (389585) on load
+    if (elements.leagueIdInput) {
+      elements.leagueIdInput.value = '389585';
+      syncLiveFplLeague();
+    }
   }
 
   // ===================== THEME =====================
@@ -576,6 +582,13 @@
           state.dataset.months = demo.months;
         }
 
+        if (!hasLiveScores) {
+          state.currentGw = 1;
+          if (elements.gwSelect) elements.gwSelect.value = 1;
+          if (elements.gwDisplay) elements.gwDisplay.textContent = 'Gameweek 1';
+          if (elements.standingsGwBadge) elements.standingsGwBadge.textContent = 'Gameweek 1';
+        }
+
         state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
           const gwNum = i + 1;
           const demoGw = demoGws.find(g => g.gw === gwNum) || demoGws[demoGws.length - 1];
@@ -689,6 +702,11 @@
       }
 
       if (state.dataset.managers && state.dataset.managers.length > 0) {
+        state.currentGw = 1;
+        if (elements.gwSelect) elements.gwSelect.value = 1;
+        if (elements.gwDisplay) elements.gwDisplay.textContent = 'Gameweek 1';
+        if (elements.standingsGwBadge) elements.standingsGwBadge.textContent = 'Gameweek 1';
+
         const demo = window.DEMO_DATA;
         const demoGws = demo ? (demo.gameweeks || []) : [];
         const demoMgrs = demo ? (demo.managers || []) : [];
