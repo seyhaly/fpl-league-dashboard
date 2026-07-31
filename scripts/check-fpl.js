@@ -145,6 +145,7 @@ async function run() {
     let payout = 0;
     let note = '';
     let rankBg = '#334155';
+    let rowBg = 'transparent';
 
     if (rank === 1) { rankBg = 'linear-gradient(135deg, #f59e0b, #d97706)'; }
     else if (rank === 2) { rankBg = 'linear-gradient(135deg, #94a3b8, #64748b)'; }
@@ -155,16 +156,19 @@ async function run() {
       payout = entryFee;
       const payer = standings[total - rank];
       note = `Gets from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
+      rowBg = 'rgba(16, 185, 129, 0.08)'; // Soft green background for top winners
     } else if (hasNeutral && rank === neutralRank) {
       payout = 0;
       note = 'Neutral';
+      rowBg = 'rgba(99, 102, 241, 0.05)'; // Soft blue/neutral background
     } else {
       payout = -entryFee;
       const receiver = standings[total - rank];
       note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
+      rowBg = 'rgba(239, 68, 68, 0.08)'; // Soft red background for bottom losers
     }
 
-    return { ...m, rank, payout, note, rankBg };
+    return { ...m, rank, payout, note, rankBg, rowBg };
   });
 
   const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
@@ -173,7 +177,6 @@ async function run() {
   let bannerHtml = '';
 
   // 1. Manager of the Month Check
-  // Released in the 1st GW of the NEW month (i.e. currentGw === prevMonth.endGw + 1)
   let targetMotmMonth = months.find(m => Math.max(...m.gws) + 1 === currentGw);
 
   // In Demo Mode preview (GW 10), show October MOTM so user can test the banner
@@ -198,7 +201,7 @@ async function run() {
     if (motmLeader) {
       bannerHtml = `
         <div class="motm-banner">
-          <span>🏆 <strong>${targetMotmMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name}</span></span>
+          <span>⌛ <strong>${targetMotmMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name}</span></span>
         </div>
       `;
     }
@@ -220,6 +223,8 @@ async function run() {
     ` + bannerHtml;
   }
 
+  const timestamp = Date.now();
+
   // Build High-Fidelity Landscape HTML Email Template
   const emailHtml = `
     <!DOCTYPE html>
@@ -229,7 +234,7 @@ async function run() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #060913; color: #f8fafc; margin: 0; padding: 20px 10px; }
-        .card-wrapper { max-width: 940px; margin: 0 auto; background: #131b2e; border-radius: 16px; padding: 24px 28px; border: 1px solid #1e293b; box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
+        .card-wrapper { max-width: 940px; margin: 0 auto; background: #0c1222; border-radius: 16px; padding: 24px 28px; border: 1px solid #1e293b; border-top: 3px solid #00ff87; box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
         
         .header-table { width: 100%; border-collapse: collapse; border-bottom: 1px solid #1e293b; margin-bottom: 16px; }
         .header-title { font-size: 18px; font-weight: 800; color: #ffffff; margin: 0; line-height: 1.3; }
@@ -242,21 +247,19 @@ async function run() {
         .mots-banner { padding: 14px 20px; margin-bottom: 20px; border-radius: 8px; font-size: 15px; font-weight: 800; background: linear-gradient(135deg, #00ff87, #0ea5e9); color: #060913; border: 1px solid #00ff87; box-shadow: 0 4px 20px rgba(0, 255, 135, 0.3); }
         .mots-name { font-size: 16px; font-weight: 900; padding: 3px 12px; border-radius: 6px; background: #060913; color: #00ff87; margin-left: 6px; display: inline-block; }
 
-        .standings-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
-        .standings-table th { background: #0b0f19; color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 8px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
+        .standings-table { width: 100%; border-collapse: separate; border-spacing: 0 4px; margin-top: 8px; }
+        .standings-table th { background: #060913; color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 8px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
         .standings-table th.text-left { text-align: left; }
         .standings-table th.text-right { text-align: right; padding-right: 18px; }
-        .standings-table td { padding: 12px 8px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 13px; vertical-align: middle; white-space: nowrap; }
+        .standings-table td { padding: 12px 8px; font-size: 13px; vertical-align: middle; white-space: nowrap; }
 
         .rank-circle { width: 28px; height: 28px; border-radius: 50%; display: inline-block; line-height: 28px; font-weight: 900; font-size: 12px; text-align: center; color: #fff; }
         .manager-name { font-weight: 800; color: #f8fafc; font-size: 13px; white-space: nowrap; }
         .team-name { font-size: 11px; color: #94a3b8; margin-top: 2px; white-space: nowrap; }
         
         .net-pts { font-weight: 900; color: #04f5ff; font-size: 15px; text-align: center; }
-        .season-pts { font-weight: 800; color: #e2e8f0; text-align: center; }
-        .season-top { color: #f59e0b; font-weight: 900; text-shadow: 0 0 8px rgba(245,158,11,0.4); }
 
-        .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(99,102,241,0.25); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.4); }
+        .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
         
         .form-pill { display: inline-block; width: 17px; height: 17px; line-height: 17px; border-radius: 50%; font-size: 10px; font-weight: 900; text-align: center; margin: 0 1px; color: #fff; }
         .form-w { background: #10b981; }
@@ -264,16 +267,16 @@ async function run() {
         .form-n { background: #64748b; }
 
         .payout-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: center; min-width: 60px; }
-        .payout-win { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
-        .payout-loss { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
-        .payout-neutral { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+        .payout-win { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
+        .payout-loss { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+        .payout-neutral { background: rgba(148, 163, 184, 0.2); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.4); }
         .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: right; padding-right: 4px; }
 
-        .footer { text-align: center; margin-top: 24px; font-size: 11px; color: #64748b; }
         .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; margin-bottom: 6px; }
       </style>
     </head>
     <body>
+      <div style="display:none;max-height:0;overflow:hidden;">Gameweek ${currentGw} Results for ${leagueName} - Ref ${timestamp}</div>
       <div class="card-wrapper">
         <table class="header-table">
           <tr>
@@ -305,27 +308,31 @@ async function run() {
           </thead>
           <tbody>
             ${standings.map(m => `
-              <tr>
-                <td style="text-align:center;">
+              <tr style="background:${m.rowBg};">
+                <td style="text-align:center;border-top-left-radius:6px;border-bottom-left-radius:6px;">
                   <div class="rank-circle" style="background:${m.rankBg};">${m.rank}</div>
                 </td>
                 <td class="text-left">
                   <div class="manager-name">${m.name}</div>
                   <div class="team-name">${m.teamName}</div>
                 </td>
-                <td style="text-align:center;font-weight:700;color:#94a3b8;">${m.grossScore}</td>
+                <td style="text-align:center;font-weight:700;color:#cbd5e1;">${m.grossScore}</td>
                 <td style="text-align:center;font-weight:700;color:#cbd5e1;">
                   ${m.transfers}${m.hitCost > 0 ? ` <span style="color:#ef4444;font-size:11px;">(-${m.hitCost})</span>` : ''}
                 </td>
                 <td class="net-pts">${m.netScore}</td>
-                <td class="season-pts ${m.seasonTotalNet === maxSeasonPts ? 'season-top' : ''}">${m.seasonTotalNet}</td>
+                <td style="text-align:center;">
+                  ${m.seasonTotalNet === maxSeasonPts
+                    ? `<span style="background:#00ff87;color:#060913;font-weight:900;padding:3px 8px;border-radius:12px;font-size:12px;display:inline-block;box-shadow:0 0 10px rgba(0,255,135,0.4);">${m.seasonTotalNet}</span>`
+                    : `<span style="color:#04f5ff;font-weight:800;">${m.seasonTotalNet}</span>`}
+                </td>
                 <td style="text-align:center;">
                   ${m.chip ? `<span class="chip-tag">${getChipLabel(m.chip)}</span>` : '<span style="color:#64748b;">-</span>'}
                 </td>
                 <td style="text-align:center;">
                   ${m.form.map(c => `<span class="form-pill ${c === 'W' ? 'form-w' : c === 'L' ? 'form-l' : 'form-n'}">${c}</span>`).join('')}
                 </td>
-                <td style="text-align:right;padding-right:18px;">
+                <td style="text-align:right;padding-right:18px;border-top-right-radius:6px;border-bottom-right-radius:6px;">
                   <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
                     ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
                   </span>
@@ -335,14 +342,12 @@ async function run() {
             `).join('')}
           </tbody>
         </table>
-
-        <div class="footer">
-          <p>Automated Email Report generated by FPL League Dashboard Notifier</p>
-        </div>
       </div>
     </body>
     </html>
   `;
+
+  const uniqueSubject = `🏆 Gameweek ${currentGw} Results: ${leagueName} [GW${currentGw}-${timestamp.toString().slice(-4)}]`;
 
   // Send Email via Resend API
   console.log(`📧 Sending email notification to ${NOTIFICATION_EMAIL}...`);
@@ -355,7 +360,7 @@ async function run() {
     body: JSON.stringify({
       from: 'FPL Dashboard <onboarding@resend.dev>',
       to: [NOTIFICATION_EMAIL],
-      subject: `🏆 Gameweek ${currentGw} Results: ${leagueName}`,
+      subject: uniqueSubject,
       html: emailHtml
     })
   });
