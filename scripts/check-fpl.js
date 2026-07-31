@@ -35,6 +35,7 @@ async function run() {
   let managers = [];
   let currentGw = 10;
   let gameweeks = [];
+  let months = [];
   let isDemoMode = false;
 
   // Try fetching live FPL API if numeric league ID
@@ -72,6 +73,7 @@ async function run() {
     managers = demoData.managers;
     currentGw = 10;
     gameweeks = demoData.gameweeks;
+    months = demoData.months || [];
   }
 
   if (managers.length === 0) {
@@ -87,7 +89,6 @@ async function run() {
   const hasNeutral = total % 2 === 1;
   const neutralRank = hasNeutral ? splitSize + 1 : null;
 
-  // Function to compute season net up to gw
   function getSeasonNetUpToGw(mId, upToGw) {
     let sum = 0;
     for (let g = 1; g <= upToGw; g++) {
@@ -99,7 +100,6 @@ async function run() {
     return sum;
   }
 
-  // Compute form for last 5 GWs
   function getFormGuide(mId) {
     const form = [];
     const startGw = Math.max(1, currentGw - 4);
@@ -145,12 +145,11 @@ async function run() {
     let payout = 0;
     let note = '';
     let rankBg = '#334155';
-    let rankColor = '#f8fafc';
 
-    if (rank === 1) { rankBg = 'linear-gradient(135deg, #f59e0b, #d97706)'; rankColor = '#ffffff'; }
-    else if (rank === 2) { rankBg = 'linear-gradient(135deg, #94a3b8, #64748b)'; rankColor = '#ffffff'; }
-    else if (rank === 3) { rankBg = 'linear-gradient(135deg, #d97706, #b45309)'; rankColor = '#ffffff'; }
-    else if (rank > splitSize && (!hasNeutral || rank !== neutralRank)) { rankBg = 'linear-gradient(135deg, #ef4444, #b91c1c)'; rankColor = '#ffffff'; }
+    if (rank === 1) { rankBg = 'linear-gradient(135deg, #f59e0b, #d97706)'; }
+    else if (rank === 2) { rankBg = 'linear-gradient(135deg, #94a3b8, #64748b)'; }
+    else if (rank === 3) { rankBg = 'linear-gradient(135deg, #d97706, #b45309)'; }
+    else if (rank > splitSize && (!hasNeutral || rank !== neutralRank)) { rankBg = 'linear-gradient(135deg, #ef4444, #b91c1c)'; }
 
     if (rank <= splitSize) {
       payout = entryFee;
@@ -165,14 +164,59 @@ async function run() {
       note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
     }
 
-    return { ...m, rank, payout, note, rankBg, rankColor };
+    return { ...m, rank, payout, note, rankBg };
   });
 
   const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
-  const winnerName = standings[0] ? standings[0].name : "N/A";
-  const topScore = standings[0] ? standings[0].netScore : 0;
 
-  // Build High-Fidelity Landscape HTML Email Template matching Web App Dashboard Card
+  // Determine Banners: MOTM and MOTS
+  let bannerHtml = '';
+
+  // 1. Manager of the Month Check
+  const activeMonth = months.find(m => m.gws.includes(currentGw));
+  if (activeMonth) {
+    const monthMaxGw = Math.max(...activeMonth.gws);
+    // Display MOTM banner if this is the final GW of the calendar month
+    if (currentGw === monthMaxGw) {
+      // Calculate month leader
+      const monthTotals = managers.map(m => {
+        let mNet = 0;
+        activeMonth.gws.forEach(g => {
+          const gD = gameweeks.find(x => x.gw === g);
+          if (gD && gD.scores) {
+            mNet += (gD.scores[m.id] || 0) - (gD.hits ? (gD.hits[m.id] || 0) : 0);
+          }
+        });
+        return { name: m.name, netPts: mNet };
+      });
+      monthTotals.sort((a, b) => b.netPts - a.netPts);
+      const motmLeader = monthTotals[0];
+
+      bannerHtml = `
+        <div class="motm-banner">
+          <span>🏆 <strong>${activeMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name} (${motmLeader.netPts} pts)</span></span>
+        </div>
+      `;
+    }
+  }
+
+  // 2. Manager of the Season Check (GW 38 / End of Season)
+  if (currentGw === 38 || currentGw === Math.max(...gameweeks.map(g => g.gw))) {
+    const motsLeaders = [...managers].map(m => ({
+      name: m.name,
+      pts: getSeasonNetUpToGw(m.id, currentGw)
+    })).sort((a, b) => b.pts - a.pts);
+    const topPts = motsLeaders[0]?.pts;
+    const motsWinners = motsLeaders.filter(l => l.pts === topPts).map(l => l.name).join(' & ');
+
+    bannerHtml = `
+      <div class="mots-banner">
+        <span>🏆 <strong>MANAGER OF THE SEASON</strong>: <span class="mots-name">${motsWinners} (${topPts} pts)</span></span>
+      </div>
+    ` + bannerHtml;
+  }
+
+  // Build High-Fidelity Landscape HTML Email Template
   const emailHtml = `
     <!DOCTYPE html>
     <html>
@@ -191,10 +235,13 @@ async function run() {
         .motm-banner { padding: 12px 18px; margin-bottom: 20px; border-radius: 8px; font-size: 14px; font-weight: 700; background: linear-gradient(135deg, #fcd34d, #f59e0b); color: #3b1700; border: 1px solid #eab308; box-shadow: 0 4px 16px rgba(234, 179, 8, 0.3); }
         .motm-name { font-size: 15px; font-weight: 900; padding: 3px 10px; border-radius: 6px; background: #3b1700; color: #fcd34d; margin-left: 6px; display: inline-block; }
 
+        .mots-banner { padding: 14px 20px; margin-bottom: 20px; border-radius: 8px; font-size: 15px; font-weight: 800; background: linear-gradient(135deg, #00ff87, #0ea5e9); color: #060913; border: 1px solid #00ff87; box-shadow: 0 4px 20px rgba(0, 255, 135, 0.3); }
+        .mots-name { font-size: 16px; font-weight: 900; padding: 3px 12px; border-radius: 6px; background: #060913; color: #00ff87; margin-left: 6px; display: inline-block; }
+
         .standings-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
         .standings-table th { background: #0b0f19; color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 8px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
         .standings-table th.text-left { text-align: left; }
-        .standings-table th.text-right { text-align: right; }
+        .standings-table th.text-right { text-align: right; padding-right: 18px; }
         .standings-table td { padding: 12px 8px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 13px; vertical-align: middle; white-space: nowrap; }
 
         .rank-circle { width: 28px; height: 28px; border-radius: 50%; display: inline-block; line-height: 28px; font-weight: 900; font-size: 12px; text-align: center; color: #fff; }
@@ -212,11 +259,11 @@ async function run() {
         .form-l { background: #ef4444; }
         .form-n { background: #64748b; }
 
-        .payout-badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: right; }
+        .payout-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: center; min-width: 60px; }
         .payout-win { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
         .payout-loss { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
         .payout-neutral { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
-        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: right; }
+        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: right; padding-right: 4px; }
 
         .footer { text-align: center; margin-top: 24px; font-size: 11px; color: #64748b; }
         .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; margin-bottom: 6px; }
@@ -236,9 +283,7 @@ async function run() {
           </tr>
         </table>
 
-        <div class="motm-banner">
-          <span>🏆 <strong>Gameweek ${currentGw} Winner</strong>: <span class="motm-name">${winnerName} (${topScore} pts)</span></span>
-        </div>
+        ${bannerHtml}
 
         <table class="standings-table">
           <thead>
@@ -251,7 +296,7 @@ async function run() {
               <th style="width:75px;">Season Pts</th>
               <th style="width:80px;">Chip Used</th>
               <th style="width:110px;">Form (Last 5)</th>
-              <th class="text-right" style="width:110px;">GW Payout</th>
+              <th class="text-right" style="width:130px;">GW Payout</th>
             </tr>
           </thead>
           <tbody>
@@ -276,7 +321,7 @@ async function run() {
                 <td style="text-align:center;">
                   ${m.form.map(c => `<span class="form-pill ${c === 'W' ? 'form-w' : c === 'L' ? 'form-l' : 'form-n'}">${c}</span>`).join('')}
                 </td>
-                <td class="text-right">
+                <td style="text-align:right;padding-right:18px;">
                   <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
                     ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
                   </span>
