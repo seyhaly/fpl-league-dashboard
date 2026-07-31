@@ -3,8 +3,8 @@
   // App State
   const state = {
     viewMode: 'overall',
-    currentGw: 10,
-    maxGw: 10,
+    currentGw: 1,
+    maxGw: 1,
     entryFee: 3,
     showMotmBadge: false,
     showMotsBadge: false,
@@ -871,7 +871,9 @@
 
   // ===================== STANDINGS ENGINE =====================
   function getGameweekStandings(gw) {
-    const gwData = state.dataset.gameweeks.find(g => g.gw === gw);
+    if (!state.dataset.gameweeks || state.dataset.gameweeks.length === 0) return [];
+    let gwData = state.dataset.gameweeks.find(g => g.gw === gw);
+    if (!gwData) gwData = state.dataset.gameweeks[0];
     if (!gwData) return [];
 
     const activeManagers = state.dataset.managers;
