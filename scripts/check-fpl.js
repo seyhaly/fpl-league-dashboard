@@ -169,39 +169,43 @@ async function run() {
 
   const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
 
-  // Determine Banners: MOTM and MOTS
+  // Determine Banners: MOTM and MOTS (NO points displayed in banners)
   let bannerHtml = '';
 
   // 1. Manager of the Month Check
-  const activeMonth = months.find(m => m.gws.includes(currentGw));
-  if (activeMonth) {
-    const monthMaxGw = Math.max(...activeMonth.gws);
-    // Display MOTM banner if this is the final GW of the calendar month
-    if (currentGw === monthMaxGw) {
-      // Calculate month leader
-      const monthTotals = managers.map(m => {
-        let mNet = 0;
-        activeMonth.gws.forEach(g => {
-          const gD = gameweeks.find(x => x.gw === g);
-          if (gD && gD.scores) {
-            mNet += (gD.scores[m.id] || 0) - (gD.hits ? (gD.hits[m.id] || 0) : 0);
-          }
-        });
-        return { name: m.name, netPts: mNet };
-      });
-      monthTotals.sort((a, b) => b.netPts - a.netPts);
-      const motmLeader = monthTotals[0];
+  // Released in the 1st GW of the NEW month (i.e. currentGw === prevMonth.endGw + 1)
+  let targetMotmMonth = months.find(m => Math.max(...m.gws) + 1 === currentGw);
 
+  // In Demo Mode preview (GW 10), show October MOTM so user can test the banner
+  if (!targetMotmMonth && isDemoMode && currentGw === 10) {
+    targetMotmMonth = months.find(m => m.name === "October") || months[months.length - 1];
+  }
+
+  if (targetMotmMonth) {
+    const monthTotals = managers.map(m => {
+      let mNet = 0;
+      targetMotmMonth.gws.forEach(g => {
+        const gD = gameweeks.find(x => x.gw === g);
+        if (gD && gD.scores) {
+          mNet += (gD.scores[m.id] || 0) - (gD.hits ? (gD.hits[m.id] || 0) : 0);
+        }
+      });
+      return { name: m.name, netPts: mNet };
+    });
+    monthTotals.sort((a, b) => b.netPts - a.netPts);
+    const motmLeader = monthTotals[0];
+
+    if (motmLeader) {
       bannerHtml = `
         <div class="motm-banner">
-          <span>🏆 <strong>${activeMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name} (${motmLeader.netPts} pts)</span></span>
+          <span>🏆 <strong>${targetMotmMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name}</span></span>
         </div>
       `;
     }
   }
 
   // 2. Manager of the Season Check (GW 38 / End of Season)
-  if (currentGw === 38 || currentGw === Math.max(...gameweeks.map(g => g.gw))) {
+  if (currentGw === 38) {
     const motsLeaders = [...managers].map(m => ({
       name: m.name,
       pts: getSeasonNetUpToGw(m.id, currentGw)
@@ -211,7 +215,7 @@ async function run() {
 
     bannerHtml = `
       <div class="mots-banner">
-        <span>🏆 <strong>MANAGER OF THE SEASON</strong>: <span class="mots-name">${motsWinners} (${topPts} pts)</span></span>
+        <span>🏆 <strong>MANAGER OF THE SEASON</strong>: <span class="mots-name">${motsWinners}</span></span>
       </div>
     ` + bannerHtml;
   }
@@ -296,7 +300,7 @@ async function run() {
               <th style="width:75px;">Season Pts</th>
               <th style="width:80px;">Chip Used</th>
               <th style="width:110px;">Form (Last 5)</th>
-              <th class="text-right" style="width:130px;">GW Payout</th>
+              <th class="text-right" style="width:130px;padding-right:18px;">GW Payout</th>
             </tr>
           </thead>
           <tbody>
