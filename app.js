@@ -777,25 +777,38 @@
 
   // ===================== DATA HELPERS =====================
   function getCurrentGwMonth(gw) {
-    return state.dataset.months.find(m => m.gws.includes(gw)) || state.dataset.months[0];
+    const months = state.dataset.months || [
+      { name: "August", gws: [1, 2, 3] },
+      { name: "September", gws: [4, 5, 6] },
+      { name: "October", gws: [7, 8, 9, 10] },
+      { name: "November", gws: [11, 12, 13, 14] },
+      { name: "December", gws: [15, 16, 17, 18, 19, 20] },
+      { name: "January", gws: [21, 22, 23, 24] },
+      { name: "February", gws: [25, 26, 27] },
+      { name: "March", gws: [28, 29, 30] },
+      { name: "April", gws: [31, 32, 33, 34] },
+      { name: "May", gws: [35, 36, 37, 38] }
+    ];
+    return months.find(m => m.gws && m.gws.includes(gw)) || months[0];
   }
 
   function getMonthlyMotmLeader(gw) {
     const activeMonth = getCurrentGwMonth(gw);
-    const monthGws = activeMonth.gws;
+    const monthGws = activeMonth ? activeMonth.gws : [1];
     const startGw = Math.min(...monthGws);
     const endGw = Math.max(...monthGws);
 
-    const datasetMaxGw = Math.max(...state.dataset.gameweeks.map(g => g.gw));
+    const gameweeks = state.dataset.gameweeks || [];
+    const datasetMaxGw = gameweeks.length > 0 ? Math.max(...gameweeks.map(g => g.gw)) : 1;
     const isFinalized = datasetMaxGw > endGw || gw > endGw;
 
     const gwsToCalculate = isFinalized ? monthGws : monthGws.filter(g => g <= gw);
-    const managers = state.dataset.managers;
+    const managers = state.dataset.managers || [];
 
     const totals = managers.map(m => {
       let netPts = 0, benchPts = 0, captainPts = 0, hitCost = 0;
       gwsToCalculate.forEach(g => {
-        const gwData = state.dataset.gameweeks.find(x => x.gw === g);
+        const gwData = gameweeks.find(x => x.gw === g);
         if (gwData) {
           const hCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
           netPts += (gwData.scores[m.id] || 0) - hCost;
@@ -808,32 +821,35 @@
       return { id: m.id, name: m.name, netPts, benchPts, captainPts, hitCost, seasonTotalNet };
     });
 
-    // 4-Layer Custom Tiebreaker Sort (matching Gameweek tiebreaker rule)
     totals.sort((a, b) => {
       if (b.netPts      !== a.netPts)      return b.netPts - a.netPts;
-      if (b.benchPts    !== a.benchPts)    return b.benchPts - a.benchPts;         // Layer 1: Bench Pts
-      if (b.captainPts  !== a.captainPts)  return b.captainPts - a.captainPts;     // Layer 2: Captain Pts
-      if (a.hitCost     !== b.hitCost)     return a.hitCost - b.hitCost;           // Layer 3: Hits
-      return b.seasonTotalNet - a.seasonTotalNet;                                  // Layer 4: Season Net Pts
+      if (b.benchPts    !== a.benchPts)    return b.benchPts - a.benchPts;
+      if (b.captainPts  !== a.captainPts)  return b.captainPts - a.captainPts;
+      if (a.hitCost     !== b.hitCost)     return a.hitCost - b.hitCost;
+      return b.seasonTotalNet - a.seasonTotalNet;
     });
 
-    return { activeMonth, leader: totals[0], totals, isFinalized, startGw, endGw };
+    return { activeMonth, leader: totals[0] || null, totals, isFinalized, startGw, endGw };
   }
 
   function getSeasonLeaders(gw) {
-    const managers = state.dataset.managers;
+    const managers = state.dataset.managers || [];
+    const gameweeks = state.dataset.gameweeks || [];
     if (!managers || managers.length === 0) return [];
     
     const totals = managers.map(m => {
       let totalNetPts = 0;
       for (let g = 1; g <= gw; g++) {
-        const gwData = state.dataset.gameweeks.find(x => x.gw === g);
-        if (gwData) totalNetPts += (gwData.scores[m.id] || 0) - (gwData.hits ? (gwData.hits[m.id] || 0) : 0);
+        const gwData = gameweeks.find(x => x.gw === g);
+        if (gwData) {
+          totalNetPts += (gwData.scores[m.id] || 0) - (gwData.hits ? (gwData.hits[m.id] || 0) : 0);
+        }
       }
-      return { id: m.id, name: m.name, totalNetPts };
+      return { ...m, totalNetPts };
     });
     totals.sort((a, b) => b.totalNetPts - a.totalNetPts);
     
+    if (totals.length === 0) return [];
     const maxPts = totals[0].totalNetPts;
     return totals.filter(t => t.totalNetPts === maxPts);
   }
