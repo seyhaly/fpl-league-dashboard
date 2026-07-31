@@ -300,8 +300,12 @@
           if (name && elements.leagueNameHeader) elements.leagueNameHeader.textContent = name;
           if (name && elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = name;
           state.dataset = JSON.parse(JSON.stringify(window.DEMO_DATA));
+          state.maxGw = 10;
+          state.currentGw = 10;
           elements.syncStatusTag.className = 'sync-status-tag live';
           elements.syncStatusTag.textContent = 'DEMO MODE';
+          populateGwSelect();
+          changeGw(10);
           updateMemberCountBadge();
           renderAll();
         } else {
@@ -589,10 +593,8 @@
         ];
 
         if (!hasLiveScores) {
+          state.maxGw = 1;
           state.currentGw = 1;
-          if (elements.gwSelect) elements.gwSelect.value = 1;
-          if (elements.gwDisplay) elements.gwDisplay.textContent = 'Gameweek 1';
-          if (elements.standingsGwBadge) elements.standingsGwBadge.textContent = 'Gameweek 1';
         }
 
         state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
@@ -609,7 +611,6 @@
               const liveRes = fetchedResults.find(r => r.entry === m.id);
               scores[m.id] = liveRes ? (liveRes.event_total || 0) : 0;
             } else {
-              // Pure reality: GW 1 has not kicked off yet, so scores/hits are 0
               scores[m.id] = 0;
               hits[m.id] = 0;
               transfers[m.id] = 0;
@@ -643,7 +644,8 @@
               });
               const activeEv = bsData.events.find(e => e.is_current);
               if (activeEv) {
-                state.maxGw = Math.max(state.maxGw, activeEv.id);
+                state.maxGw = activeEv.id;
+                state.currentGw = activeEv.id;
               }
             }
           }
@@ -675,6 +677,8 @@
           console.warn('FPL Event Status fetch notice:', stErr);
         }
 
+        populateGwSelect();
+        changeGw(state.currentGw);
         updateMemberCountBadge();
         renderAll();
       } else {
@@ -746,6 +750,9 @@
           return { gw: gwNum, scores, hits, transfers, benchPoints, captainPoints, chipsUsed };
         });
 
+        state.maxGw = 1;
+        populateGwSelect();
+        changeGw(1);
         updateMemberCountBadge();
         renderAll();
       }
