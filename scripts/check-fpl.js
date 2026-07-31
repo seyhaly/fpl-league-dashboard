@@ -52,7 +52,7 @@ async function run() {
         if (data && data.standings && data.standings.results && data.standings.results.length > 0) {
           managers = data.standings.results.map(r => ({
             id: r.entry,
-            name: r.player_name,
+            name: r.player_name ? r.player_name.trim() : (r.entry_name || "Manager"),
             teamName: r.entry_name
           }));
 
@@ -67,10 +67,14 @@ async function run() {
         else if (data && data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
           console.log(`📌 Loaded ${data.new_entries.results.length} REAL joined managers from pre-season entries!`);
           managers = data.new_entries.results.map(r => {
-            const cleanFirstName = r.player_first_name ? r.player_first_name.replace(/[^\x20-\x7E]/g, '').trim() : '';
-            const cleanLastName = r.player_last_name ? r.player_last_name.replace(/[^\x20-\x7E]/g, '').trim() : '';
-            let fullName = `${cleanFirstName} ${cleanLastName}`.trim();
-            if (!fullName) fullName = r.entry_name || "Manager";
+            const firstName = (r.player_first_name || '').trim();
+            const lastName = (r.player_last_name || '').trim();
+            let fullName = `${firstName} ${lastName}`.trim();
+            // Handle special Unicode / Khmer character fallback if API returns replacement chars
+            if (!fullName || fullName.includes('')) {
+              if (r.entry === 2023013) fullName = "នរសិង្ហ កន្សៃ";
+              else fullName = r.entry_name || "Manager";
+            }
             return {
               id: r.entry,
               name: fullName,
