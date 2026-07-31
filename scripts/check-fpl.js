@@ -36,7 +36,7 @@ async function run() {
   let currentGw = 1;
   let gameweeks = [];
   let months = [];
-  let isDemoMode = false;
+  let isPreSeasonMode = false;
 
   // Exact pre-season mapping for League #389585
   const realManagerMap = {
@@ -77,6 +77,7 @@ async function run() {
         // 2. Pre-season: Extract REAL joined managers from new_entries.results!
         else if (data && data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
           console.log(`📌 Loaded ${data.new_entries.results.length} REAL joined managers from pre-season entries!`);
+          isPreSeasonMode = true;
           managers = data.new_entries.results.map(r => {
             if (realManagerMap[r.entry]) {
               return {
@@ -104,16 +105,15 @@ async function run() {
   // Fallback to Demo Data ONLY if no live managers exist at all
   if (managers.length === 0 && demoData) {
     console.log('📌 Using Demo dataset fallback...');
-    isDemoMode = true;
+    isPreSeasonMode = true;
     managers = demoData.managers;
     currentGw = 10;
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
   } else if (demoData) {
-    // Fill gameweek score structures for preview if in pre-season
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
-    currentGw = 10; // Pre-season preview GW
+    currentGw = 10;
   }
 
   if (managers.length === 0) {
@@ -141,6 +141,11 @@ async function run() {
   }
 
   function getFormGuide(mId) {
+    // In pre-season (before GW 1 is played), return neutral dashes
+    if (isPreSeasonMode) {
+      return ['-', '-', '-', '-', '-'];
+    }
+
     const form = [];
     const startGw = Math.max(1, currentGw - 4);
     for (let g = startGw; g <= currentGw; g++) {
@@ -163,7 +168,7 @@ async function run() {
 
       form.push(code);
     }
-    return form;
+    return form.length > 0 ? form : ['-', '-', '-', '-', '-'];
   }
 
   let standings = managers.map(m => {
@@ -192,10 +197,11 @@ async function run() {
     else if (rank === 3) { rankBg = 'linear-gradient(135deg, #d97706, #b45309)'; }
     else if (rank > splitSize && (!hasNeutral || rank !== neutralRank)) { rankBg = 'linear-gradient(135deg, #ef4444, #b91c1c)'; }
 
+    // FULL MANAGER NAME in payout notes (no truncation!)
     if (rank <= splitSize) {
       payout = entryFee;
       const payer = standings[total - rank];
-      note = `Gets from ${payer ? payer.name.split(' ')[0] : 'Bottom'}`;
+      note = `Gets from ${payer ? payer.name : 'Bottom'}`;
       rowBg = 'rgba(16, 185, 129, 0.08)'; // Soft green background for top winners
     } else if (hasNeutral && rank === neutralRank) {
       payout = 0;
@@ -204,7 +210,7 @@ async function run() {
     } else {
       payout = -entryFee;
       const receiver = standings[total - rank];
-      note = `Pays to ${receiver ? receiver.name.split(' ')[0] : 'Top'}`;
+      note = `Pays to ${receiver ? receiver.name : 'Top'}`;
       rowBg = 'rgba(239, 68, 68, 0.08)'; // Soft red background for bottom losers
     }
 
@@ -318,7 +324,7 @@ async function run() {
         <table class="header-table">
           <tr>
             <td style="border:none;padding:0 0 14px 0;vertical-align:middle;">
-              ${isDemoMode ? '<span class="demo-tag">PRE-SEASON PREVIEW</span><br>' : ''}
+              ${isPreSeasonMode ? '<span class="demo-tag">PRE-SEASON PREVIEW</span><br>' : ''}
               <h1 class="header-title">Gameweek Standings &amp; Weekly Payouts — <span class="league-name-highlight">${leagueName}</span></h1>
             </td>
             <td style="border:none;padding:0 0 14px 0;text-align:right;vertical-align:middle;white-space:nowrap;width:120px;">
@@ -340,7 +346,7 @@ async function run() {
               <th style="width:75px;">Season Pts</th>
               <th style="width:80px;">Chip Used</th>
               <th style="width:110px;">Form (Last 5)</th>
-              <th class="text-right" style="width:130px;padding-right:18px;">GW Payout</th>
+              <th class="text-right" style="width:140px;padding-right:18px;">GW Payout</th>
             </tr>
           </thead>
           <tbody>
@@ -367,7 +373,13 @@ async function run() {
                   ${m.chip ? `<span class="chip-tag">${getChipLabel(m.chip)}</span>` : '<span style="color:#64748b;">-</span>'}
                 </td>
                 <td style="text-align:center;">
-                  ${m.form.map(c => `<span class="form-pill ${c === 'W' ? 'form-w' : c === 'L' ? 'form-l' : 'form-n'}">${c}</span>`).join('')}
+                  ${m.form.map(c => c === 'W'
+                    ? `<span class="form-pill form-w">W</span>`
+                    : c === 'L'
+                    ? `<span class="form-pill form-l">L</span>`
+                    : c === 'N'
+                    ? `<span class="form-pill form-n">N</span>`
+                    : `<span style="color:#64748b;font-weight:700;margin:0 2px;">-</span>`).join('')}
                 </td>
                 <td style="text-align:right;padding-right:18px;border-top-right-radius:6px;border-bottom-right-radius:6px;">
                   <div style="display:inline-block;text-align:center;">
