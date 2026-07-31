@@ -256,7 +256,8 @@ async function run() {
         .net-pts { font-weight: 900; color: #f8fafc; font-size: 15px; text-align: center; }
 
         .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
-        
+        .hit-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 900; background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); margin-left: 4px; }
+
         .form-pill { display: inline-block; width: 17px; height: 17px; line-height: 17px; border-radius: 50%; font-size: 10px; font-weight: 900; text-align: center; margin: 0 1px; color: #fff; }
         .form-w { background: #10b981; }
         .form-l { background: #ef4444; }
@@ -266,7 +267,7 @@ async function run() {
         .payout-win { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
         .payout-loss { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
         .payout-neutral { background: rgba(148, 163, 184, 0.2); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.4); }
-        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; }
+        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: center; }
 
         .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; margin-bottom: 6px; }
       </style>
@@ -294,7 +295,7 @@ async function run() {
               <th style="width:36px;">Pos</th>
               <th class="text-left">Manager &amp; Team</th>
               <th style="width:50px;">Gross</th>
-              <th style="width:75px;">Transfers</th>
+              <th style="width:85px;">Transfers</th>
               <th style="width:65px;">Net Pts</th>
               <th style="width:75px;">Season Pts</th>
               <th style="width:80px;">Chip Used</th>
@@ -314,7 +315,7 @@ async function run() {
                 </td>
                 <td style="text-align:center;font-weight:700;color:#cbd5e1;">${m.grossScore}</td>
                 <td style="text-align:center;font-weight:700;color:#cbd5e1;">
-                  ${m.transfers}${m.hitCost > 0 ? ` <span style="color:#ef4444;font-size:11px;">(-${m.hitCost})</span>` : ''}
+                  ${m.transfers}${m.hitCost > 0 ? `<span class="hit-badge">-${m.hitCost}</span>` : ''}
                 </td>
                 <td class="net-pts">${m.netScore}</td>
                 <td style="text-align:center;">
@@ -333,7 +334,7 @@ async function run() {
                     <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
                       ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
                     </span>
-                    <span class="payout-note" style="text-align:${m.payout === 0 ? 'center' : 'right'};">${m.note}</span>
+                    <span class="payout-note" style="display:block;text-align:center;margin-top:3px;">${m.note}</span>
                   </div>
                 </td>
               </tr>
