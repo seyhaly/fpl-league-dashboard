@@ -33,7 +33,7 @@ async function run() {
 
   let leagueName = "Clash of Elite 2026-2027";
   let managers = [];
-  let currentGw = 10;
+  let currentGw = 1;
   let gameweeks = [];
   let months = [];
   let isDemoMode = false;
@@ -45,8 +45,10 @@ async function run() {
       if (resp.ok) {
         const data = await resp.json();
         if (data && data.league && data.league.name) {
-          leagueName = data.league.name; // Uses real league name "Clash of Elite 2026-2027"
+          leagueName = data.league.name; // Real league title "Clash of Elite 2026-2027"
         }
+        
+        // 1. Active Season: Fetch managers from standings.results
         if (data && data.standings && data.standings.results && data.standings.results.length > 0) {
           managers = data.standings.results.map(r => ({
             id: r.entry,
@@ -60,21 +62,41 @@ async function run() {
             const currentEvent = bootData.events.find(e => e.is_current) || bootData.events.find(e => e.is_next);
             if (currentEvent) currentGw = currentEvent.id;
           }
+        } 
+        // 2. Pre-season: Extract REAL joined managers from new_entries.results!
+        else if (data && data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
+          console.log(`📌 Loaded ${data.new_entries.results.length} REAL joined managers from pre-season entries!`);
+          managers = data.new_entries.results.map(r => {
+            const cleanFirstName = r.player_first_name ? r.player_first_name.replace(/[^\x20-\x7E]/g, '').trim() : '';
+            const cleanLastName = r.player_last_name ? r.player_last_name.replace(/[^\x20-\x7E]/g, '').trim() : '';
+            let fullName = `${cleanFirstName} ${cleanLastName}`.trim();
+            if (!fullName) fullName = r.entry_name || "Manager";
+            return {
+              id: r.entry,
+              name: fullName,
+              teamName: r.entry_name
+            };
+          });
         }
       }
     } catch (err) {
-      console.warn('⚠️ Could not fetch live FPL API, falling back to Demo dataset:', err.message);
+      console.warn('⚠️ Could not fetch live FPL API:', err.message);
     }
   }
 
-  // Fallback to Demo Data if no live managers found (e.g. pre-season before GW 1 points exist)
+  // Fallback to Demo Data ONLY if no live managers exist at all
   if (managers.length === 0 && demoData) {
-    console.log('📌 Pre-season active: Using Demo dataset for scoring preview while using live league title...');
+    console.log('📌 Using Demo dataset fallback...');
     isDemoMode = true;
     managers = demoData.managers;
     currentGw = 10;
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
+  } else if (demoData) {
+    // Fill gameweek score structures for preview if in pre-season
+    gameweeks = demoData.gameweeks;
+    months = demoData.months || [];
+    currentGw = 10; // Pre-season preview GW
   }
 
   if (managers.length === 0) {
