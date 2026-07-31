@@ -902,7 +902,12 @@
     const splitSize  = Math.floor(total / 2);
     const hasNeutral = total % 2 === 1; // true only when N is odd
     const neutralRank = hasNeutral ? splitSize + 1 : null; // exact middle rank
-    const hasPlayedMatches = managers.some(m => m.grossScore > 0 || m.hitCost > 0);
+    // Tiebreaker indicator — applies to ALL managers sharing a boundary score when a boundary tie occurs
+    const topBoundaryScore = managers[splitSize - 1]?.netScore;
+    const isTopBoundaryCrossed = splitSize > 0 && managers[splitSize]?.netScore === topBoundaryScore;
+
+    const bottomBoundaryScore = hasNeutral ? managers[splitSize]?.netScore : null;
+    const isBottomBoundaryCrossed = hasNeutral && managers[splitSize + 1]?.netScore === bottomBoundaryScore;
 
     return managers.map((m, idx) => {
       const rank = idx + 1;
@@ -928,18 +933,9 @@
         }
       }
 
-      // Tiebreaker indicator — only at zone boundaries where payout changes
-      const lastWinScore    = managers[splitSize - 1]?.netScore;           // last winner
-      const firstOtherScore = managers[splitSize]?.netScore;               // first neutral or loser
-      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
-      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
-
-      const atTopBoundary = (rank === splitSize || rank === splitSize + 1)
-        && lastWinScore === firstOtherScore;
-      const atBottomBoundary = hasNeutral
-        && (rank === neutralRank || rank === neutralRank + 1)
-        && lastNeutralScore === firstLoserScore;
-      const isTied = hasPlayedMatches && (atTopBoundary || atBottomBoundary);
+      const tiedAtTop = isTopBoundaryCrossed && m.netScore === topBoundaryScore;
+      const tiedAtBottom = isBottomBoundaryCrossed && m.netScore === bottomBoundaryScore;
+      const isTied = hasPlayedMatches && (tiedAtTop || tiedAtBottom);
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
     });
@@ -999,6 +995,12 @@
     const hasNeutral = total % 2 === 1;
     const neutralRank = hasNeutral ? splitSize + 1 : null;
 
+    const topBoundaryScore = managers[splitSize - 1]?.netScore;
+    const isTopBoundaryCrossed = splitSize > 0 && managers[splitSize]?.netScore === topBoundaryScore;
+
+    const bottomBoundaryScore = hasNeutral ? managers[splitSize]?.netScore : null;
+    const isBottomBoundaryCrossed = hasNeutral && managers[splitSize + 1]?.netScore === bottomBoundaryScore;
+
     return managers.map((m, idx) => {
       const rank = idx + 1;
       let payout = 0, statusClass = '', outcomeCode = 'N';
@@ -1011,14 +1013,9 @@
         payout = -state.entryFee; statusClass = 'tr-bottom-3'; outcomeCode = 'L';
       }
 
-      const lastWinScore    = managers[splitSize - 1]?.netScore;
-      const firstOtherScore = managers[splitSize]?.netScore;
-      const lastNeutralScore = hasNeutral ? managers[splitSize]?.netScore : null;
-      const firstLoserScore  = hasNeutral ? managers[splitSize + 1]?.netScore : null;
-
-      const atTopBoundary = (rank === splitSize || rank === splitSize + 1) && lastWinScore === firstOtherScore;
-      const atBottomBoundary = hasNeutral && (rank === neutralRank || rank === neutralRank + 1) && lastNeutralScore === firstLoserScore;
-      const isTied = atTopBoundary || atBottomBoundary;
+      const tiedAtTop = isTopBoundaryCrossed && m.netScore === topBoundaryScore;
+      const tiedAtBottom = isBottomBoundaryCrossed && m.netScore === bottomBoundaryScore;
+      const isTied = tiedAtTop || tiedAtBottom;
 
       let note = '';
       if (rank <= splitSize) {
