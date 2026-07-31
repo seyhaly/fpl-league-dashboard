@@ -572,15 +572,21 @@
           avatar: (realManagerMap[r.entry]?.name || r.player_name || r.entry_name).substring(0, 2).toUpperCase()
         }));
 
-        // Populate gameweek scores (pre-season preview mapping to real managers)
+        // Populate gameweek scores (pure live FPL API data — 0s during pre-season)
         const hasLiveScores = fetchedResults.some(r => r.event_total !== undefined && r.event_total > 0);
-        const demo = window.DEMO_DATA;
-        const demoGws = demo ? (demo.gameweeks || []) : [];
-        const demoMgrs = demo ? (demo.managers || []) : [];
 
-        if (demo && demo.months) {
-          state.dataset.months = demo.months;
-        }
+        state.dataset.months = [
+          { name: "August", gws: [1, 2, 3] },
+          { name: "September", gws: [4, 5, 6] },
+          { name: "October", gws: [7, 8, 9, 10] },
+          { name: "November", gws: [11, 12, 13, 14] },
+          { name: "December", gws: [15, 16, 17, 18, 19, 20] },
+          { name: "January", gws: [21, 22, 23, 24] },
+          { name: "February", gws: [25, 26, 27] },
+          { name: "March", gws: [28, 29, 30] },
+          { name: "April", gws: [31, 32, 33, 34] },
+          { name: "May", gws: [35, 36, 37, 38] }
+        ];
 
         if (!hasLiveScores) {
           state.currentGw = 1;
@@ -591,7 +597,6 @@
 
         state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
           const gwNum = i + 1;
-          const demoGw = demoGws.find(g => g.gw === gwNum) || demoGws[demoGws.length - 1];
           const scores = {};
           const hits = {};
           const transfers = {};
@@ -599,18 +604,18 @@
           const captainPoints = {};
           const chipsUsed = {};
 
-          state.dataset.managers.forEach((m, idx) => {
+          state.dataset.managers.forEach((m) => {
             if (hasLiveScores) {
               const liveRes = fetchedResults.find(r => r.entry === m.id);
               scores[m.id] = liveRes ? (liveRes.event_total || 0) : 0;
-            } else if (demoGw && demoMgrs.length > 0) {
-              const demoMgrId = demoMgrs[idx % demoMgrs.length]?.id;
-              scores[m.id] = demoGw.scores ? (demoGw.scores[demoMgrId] || 0) : 0;
-              hits[m.id] = demoGw.hits ? (demoGw.hits[demoMgrId] || 0) : 0;
-              transfers[m.id] = demoGw.transfers ? (demoGw.transfers[demoMgrId] || 0) : 0;
-              benchPoints[m.id] = demoGw.benchPoints ? (demoGw.benchPoints[demoMgrId] || 0) : 0;
-              captainPoints[m.id] = demoGw.captainPoints ? (demoGw.captainPoints[demoMgrId] || 0) : 0;
-              chipsUsed[m.id] = demoGw.chipsUsed ? (demoGw.chipsUsed[demoMgrId] || null) : null;
+            } else {
+              // Pure reality: GW 1 has not kicked off yet, so scores/hits are 0
+              scores[m.id] = 0;
+              hits[m.id] = 0;
+              transfers[m.id] = 0;
+              benchPoints[m.id] = 0;
+              captainPoints[m.id] = 0;
+              chipsUsed[m.id] = null;
             }
           });
 
@@ -707,14 +712,21 @@
         if (elements.gwDisplay) elements.gwDisplay.textContent = 'Gameweek 1';
         if (elements.standingsGwBadge) elements.standingsGwBadge.textContent = 'Gameweek 1';
 
-        const demo = window.DEMO_DATA;
-        const demoGws = demo ? (demo.gameweeks || []) : [];
-        const demoMgrs = demo ? (demo.managers || []) : [];
-        if (demo && demo.months) state.dataset.months = demo.months;
+        state.dataset.months = [
+          { name: "August", gws: [1, 2, 3] },
+          { name: "September", gws: [4, 5, 6] },
+          { name: "October", gws: [7, 8, 9, 10] },
+          { name: "November", gws: [11, 12, 13, 14] },
+          { name: "December", gws: [15, 16, 17, 18, 19, 20] },
+          { name: "January", gws: [21, 22, 23, 24] },
+          { name: "February", gws: [25, 26, 27] },
+          { name: "March", gws: [28, 29, 30] },
+          { name: "April", gws: [31, 32, 33, 34] },
+          { name: "May", gws: [35, 36, 37, 38] }
+        ];
 
         state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
           const gwNum = i + 1;
-          const demoGw = demoGws.find(g => g.gw === gwNum) || demoGws[demoGws.length - 1];
           const scores = {};
           const hits = {};
           const transfers = {};
@@ -722,14 +734,13 @@
           const captainPoints = {};
           const chipsUsed = {};
 
-          state.dataset.managers.forEach((m, idx) => {
-            const demoMgrId = demoMgrs[idx % demoMgrs.length]?.id;
-            scores[m.id] = demoGw.scores ? (demoGw.scores[demoMgrId] || 0) : 0;
-            hits[m.id] = demoGw.hits ? (demoGw.hits[demoMgrId] || 0) : 0;
-            transfers[m.id] = demoGw.transfers ? (demoGw.transfers[demoMgrId] || 0) : 0;
-            benchPoints[m.id] = demoGw.benchPoints ? (demoGw.benchPoints[demoMgrId] || 0) : 0;
-            captainPoints[m.id] = demoGw.captainPoints ? (demoGw.captainPoints[demoMgrId] || 0) : 0;
-            chipsUsed[m.id] = demoGw.chipsUsed ? (demoGw.chipsUsed[demoMgrId] || null) : null;
+          state.dataset.managers.forEach((m) => {
+            scores[m.id] = 0;
+            hits[m.id] = 0;
+            transfers[m.id] = 0;
+            benchPoints[m.id] = 0;
+            captainPoints[m.id] = 0;
+            chipsUsed[m.id] = null;
           });
 
           return { gw: gwNum, scores, hits, transfers, benchPoints, captainPoints, chipsUsed };
