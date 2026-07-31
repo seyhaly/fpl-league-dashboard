@@ -1424,3 +1424,28 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   .pipe-card-right { align-self: flex-end; }
   .tracker-progress-bar-wrap { margin: 16px 0 12px; }
 }
+
+/* Sortable Table Header */
+.sortable-header {
+  cursor: pointer !important;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+.sortable-header:hover {
+  color: var(--pl-cyan) !important;
+  background: rgba(0, 245, 255, 0.08);
+}
+.sort-icon {
+  font-size: 11px;
+  margin-left: 4px;
+  opacity: 0.6;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.sortable-header.active-sort {
+  color: var(--pl-cyan) !important;
+  font-weight: 800;
+}
+.sortable-header.active-sort .sort-icon {
+  opacity: 1;
+}

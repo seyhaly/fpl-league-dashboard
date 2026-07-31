@@ -14,7 +14,9 @@
     eventStatuses: {},
     statusFilter: 'recent',
     chartInstance: null,
-    perfChartInstance: null
+    perfChartInstance: null,
+    standingsSortColumn: null,
+    standingsSortDir: 'desc'
   };
 
   // DOM Elements
@@ -193,6 +195,22 @@
 
     if (elements.syncFplBtn) {
       elements.syncFplBtn.addEventListener('click', syncLiveFplLeague);
+    }
+
+    const thSeasonPts = document.getElementById('thSeasonPts');
+    if (thSeasonPts) {
+      thSeasonPts.addEventListener('click', () => {
+        if (state.standingsSortColumn !== 'seasonTotalNet') {
+          state.standingsSortColumn = 'seasonTotalNet';
+          state.standingsSortDir = 'desc';
+        } else if (state.standingsSortDir === 'desc') {
+          state.standingsSortDir = 'asc';
+        } else {
+          state.standingsSortColumn = null;
+          state.standingsSortDir = 'desc';
+        }
+        renderStandingsTable();
+      });
     }
 
     initExportImageHandlers();
@@ -787,7 +805,27 @@
   // ===================== STANDINGS TABLE =====================
   function renderStandingsTable() {
     const isMonthlyView = state.viewMode && state.viewMode !== 'overall';
-    const standings = isMonthlyView ? getMonthlyStandings(state.viewMode) : getGameweekStandings(state.currentGw);
+    let standings = isMonthlyView ? getMonthlyStandings(state.viewMode) : getGameweekStandings(state.currentGw);
+    
+    if (state.standingsSortColumn === 'seasonTotalNet') {
+      standings = [...standings].sort((a, b) => {
+        return state.standingsSortDir === 'desc'
+          ? b.seasonTotalNet - a.seasonTotalNet
+          : a.seasonTotalNet - b.seasonTotalNet;
+      });
+    }
+
+    const thSeasonPts = document.getElementById('thSeasonPts');
+    const sortIcon = document.getElementById('seasonPtsSortIcon');
+    if (thSeasonPts && sortIcon) {
+      if (state.standingsSortColumn === 'seasonTotalNet') {
+        thSeasonPts.classList.add('active-sort');
+        sortIcon.textContent = state.standingsSortDir === 'desc' ? '▼' : '▲';
+      } else {
+        thSeasonPts.classList.remove('active-sort');
+        sortIcon.textContent = '⇅';
+      }
+    }
     
     elements.standingsBody.innerHTML = '';
     if (elements.mobileCards) elements.mobileCards.innerHTML = '';
