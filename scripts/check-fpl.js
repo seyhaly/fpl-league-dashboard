@@ -172,82 +172,86 @@ async function run() {
   const winnerName = standings[0] ? standings[0].name : "N/A";
   const topScore = standings[0] ? standings[0].netScore : 0;
 
-  // Build High-Fidelity HTML Email Template matching the Web App Dashboard Card
+  // Build High-Fidelity Landscape HTML Email Template matching Web App Dashboard Card
   const emailHtml = `
     <!DOCTYPE html>
     <html>
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
-        body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background-color: #060913; color: #f8fafc; margin: 0; padding: 20px; }
-        .card-wrapper { max-width: 800px; margin: 0 auto; background: rgba(19, 27, 46, 0.95); border-radius: 16px; padding: 24px; border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
-        .card-header { display: flex; justify-content: space-between; align-items: center; padding-bottom: 16px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 16px; }
-        .header-title { font-size: 18px; font-weight: 800; color: #ffffff; margin: 0; }
-        .league-name-highlight { color: #04f5ff; }
-        .gw-badge { background: #04f5ff; color: #060913; font-weight: 900; font-size: 12px; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #060913; color: #f8fafc; margin: 0; padding: 20px 10px; }
+        .card-wrapper { max-width: 940px; margin: 0 auto; background: #131b2e; border-radius: 16px; padding: 24px 28px; border: 1px solid #1e293b; box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
         
-        .motm-banner { display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; margin-bottom: 16px; border-radius: 8px; font-size: 14px; font-weight: 700; background: linear-gradient(135deg, #fcd34d, #f59e0b); color: #3b1700; border: 1px solid #eab308; box-shadow: 0 4px 16px rgba(234, 179, 8, 0.3); }
-        .motm-name { font-size: 15px; font-weight: 900; padding: 2px 10px; border-radius: 6px; background: #3b1700; color: #fcd34d; margin-left: 6px; }
+        .header-table { width: 100%; border-collapse: collapse; border-bottom: 1px solid #1e293b; margin-bottom: 16px; }
+        .header-title { font-size: 18px; font-weight: 800; color: #ffffff; margin: 0; line-height: 1.3; }
+        .league-name-highlight { color: #04f5ff; }
+        .gw-badge { background: #04f5ff; color: #060913; font-weight: 900; font-size: 11px; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; display: inline-block; }
+        
+        .motm-banner { padding: 12px 18px; margin-bottom: 20px; border-radius: 8px; font-size: 14px; font-weight: 700; background: linear-gradient(135deg, #fcd34d, #f59e0b); color: #3b1700; border: 1px solid #eab308; box-shadow: 0 4px 16px rgba(234, 179, 8, 0.3); }
+        .motm-name { font-size: 15px; font-weight: 900; padding: 3px 10px; border-radius: 6px; background: #3b1700; color: #fcd34d; margin-left: 6px; display: inline-block; }
 
-        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
-        th { background: rgba(6, 9, 19, 0.6); color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 10px; text-align: center; border-bottom: 1px solid rgba(255,255,255,0.1); }
-        th.text-left { text-align: left; }
-        th.text-right { text-align: right; }
-        td { padding: 14px 10px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 14px; vertical-align: middle; }
+        .standings-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+        .standings-table th { background: #0b0f19; color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 8px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
+        .standings-table th.text-left { text-align: left; }
+        .standings-table th.text-right { text-align: right; }
+        .standings-table td { padding: 12px 8px; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 13px; vertical-align: middle; white-space: nowrap; }
 
-        .rank-circle { width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 900; font-size: 13px; margin: 0 auto; color: #fff; }
-        .manager-name { font-weight: 800; color: #f8fafc; font-size: 14px; }
-        .team-name { font-size: 12px; color: #94a3b8; margin-top: 2px; }
+        .rank-circle { width: 28px; height: 28px; border-radius: 50%; display: inline-block; line-height: 28px; font-weight: 900; font-size: 12px; text-align: center; color: #fff; }
+        .manager-name { font-weight: 800; color: #f8fafc; font-size: 13px; white-space: nowrap; }
+        .team-name { font-size: 11px; color: #94a3b8; margin-top: 2px; white-space: nowrap; }
         
         .net-pts { font-weight: 900; color: #04f5ff; font-size: 15px; text-align: center; }
         .season-pts { font-weight: 800; color: #e2e8f0; text-align: center; }
         .season-top { color: #f59e0b; font-weight: 900; text-shadow: 0 0 8px rgba(245,158,11,0.4); }
 
-        .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(99,102,241,0.2); color: #818cf8; border: 1px solid rgba(99,102,241,0.4); }
+        .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(99,102,241,0.25); color: #a5b4fc; border: 1px solid rgba(99,102,241,0.4); }
         
-        .form-pill { display: inline-block; width: 18px; height: 18px; line-height: 18px; border-radius: 50%; font-size: 10px; font-weight: 900; text-align: center; margin: 0 1px; color: #fff; }
+        .form-pill { display: inline-block; width: 17px; height: 17px; line-height: 17px; border-radius: 50%; font-size: 10px; font-weight: 900; text-align: center; margin: 0 1px; color: #fff; }
         .form-w { background: #10b981; }
         .form-l { background: #ef4444; }
         .form-n { background: #64748b; }
 
-        .payout-badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 13px; font-weight: 900; text-align: right; }
+        .payout-badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: right; }
         .payout-win { background: rgba(16, 185, 129, 0.15); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.3); }
         .payout-loss { background: rgba(239, 68, 68, 0.15); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.3); }
         .payout-neutral { background: rgba(148, 163, 184, 0.15); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
-        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; }
+        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: right; }
 
-        .footer { text-align: center; margin-top: 20px; font-size: 11px; color: #64748b; font-family: sans-serif; }
-        .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; }
+        .footer { text-align: center; margin-top: 24px; font-size: 11px; color: #64748b; }
+        .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; margin-bottom: 6px; }
       </style>
     </head>
     <body>
       <div class="card-wrapper">
-        <div class="card-header">
-          <div>
-            ${isDemoMode ? '<div class="demo-tag">DEMO PREVIEW DATA</div><br>' : ''}
-            <h1 class="header-title">Gameweek Standings &amp; Weekly Payouts — <span class="league-name-highlight">${leagueName}</span></h1>
-          </div>
-          <div>
-            <span class="gw-badge">Gameweek ${currentGw}</span>
-          </div>
-        </div>
+        <table class="header-table">
+          <tr>
+            <td style="border:none;padding:0 0 14px 0;vertical-align:middle;">
+              ${isDemoMode ? '<span class="demo-tag">DEMO PREVIEW DATA</span><br>' : ''}
+              <h1 class="header-title">Gameweek Standings &amp; Weekly Payouts — <span class="league-name-highlight">${leagueName}</span></h1>
+            </td>
+            <td style="border:none;padding:0 0 14px 0;text-align:right;vertical-align:middle;white-space:nowrap;width:120px;">
+              <span class="gw-badge">Gameweek ${currentGw}</span>
+            </td>
+          </tr>
+        </table>
 
         <div class="motm-banner">
           <span>🏆 <strong>Gameweek ${currentGw} Winner</strong>: <span class="motm-name">${winnerName} (${topScore} pts)</span></span>
         </div>
 
-        <table>
+        <table class="standings-table">
           <thead>
             <tr>
-              <th style="width:40px;">Pos</th>
+              <th style="width:36px;">Pos</th>
               <th class="text-left">Manager &amp; Team</th>
-              <th>Gross</th>
-              <th>Transfers</th>
-              <th>Net Pts</th>
-              <th>Season Pts</th>
-              <th>Chip Used</th>
-              <th>Form (Last 5)</th>
-              <th class="text-right">GW Payout</th>
+              <th style="width:50px;">Gross</th>
+              <th style="width:75px;">Transfers</th>
+              <th style="width:65px;">Net Pts</th>
+              <th style="width:75px;">Season Pts</th>
+              <th style="width:80px;">Chip Used</th>
+              <th style="width:110px;">Form (Last 5)</th>
+              <th class="text-right" style="width:110px;">GW Payout</th>
             </tr>
           </thead>
           <tbody>
