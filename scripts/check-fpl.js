@@ -197,7 +197,7 @@ async function run() {
     else if (rank === 3) { rankBg = 'linear-gradient(135deg, #d97706, #b45309)'; }
     else if (rank > splitSize && (!hasNeutral || rank !== neutralRank)) { rankBg = 'linear-gradient(135deg, #ef4444, #b91c1c)'; }
 
-    // FULL MANAGER NAME in payout notes (no truncation!)
+    // FULL MANAGER NAME in payout notes
     if (rank <= splitSize) {
       payout = entryFee;
       const payer = standings[total - rank];
@@ -292,7 +292,7 @@ async function run() {
         .standings-table { width: 100%; border-collapse: separate; border-spacing: 0 4px; margin-top: 8px; }
         .standings-table th { background: #060913; color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 8px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
         .standings-table th.text-left { text-align: left; }
-        .standings-table th.text-right { text-align: right; padding-right: 18px; }
+        .standings-table th.text-center { text-align: center; }
         .standings-table td { padding: 12px 8px; font-size: 13px; vertical-align: middle; white-space: nowrap; }
 
         .rank-circle { width: 28px; height: 28px; border-radius: 50%; display: inline-block; line-height: 28px; font-weight: 900; font-size: 12px; text-align: center; color: #fff; }
@@ -346,7 +346,7 @@ async function run() {
               <th style="width:75px;">Season Pts</th>
               <th style="width:80px;">Chip Used</th>
               <th style="width:110px;">Form (Last 5)</th>
-              <th class="text-right" style="width:140px;padding-right:18px;">GW Payout</th>
+              <th class="text-center" style="width:160px;">GW Payout</th>
             </tr>
           </thead>
           <tbody>
@@ -381,7 +381,7 @@ async function run() {
                     ? `<span class="form-pill form-n">N</span>`
                     : `<span style="color:#64748b;font-weight:700;margin:0 2px;">-</span>`).join('')}
                 </td>
-                <td style="text-align:right;padding-right:18px;border-top-right-radius:6px;border-bottom-right-radius:6px;">
+                <td style="text-align:center;border-top-right-radius:6px;border-bottom-right-radius:6px;">
                   <div style="display:inline-block;text-align:center;">
                     <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
                       ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
