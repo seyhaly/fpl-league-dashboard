@@ -31,7 +31,7 @@ function getChipLabel(chipName) {
 async function run() {
   console.log(`🔍 Checking FPL status for League: ${FPL_LEAGUE_ID}...`);
 
-  let leagueName = "Clash of Elite Fantasy League";
+  let leagueName = "Clash of Elite 2026-2027";
   let managers = [];
   let currentGw = 10;
   let gameweeks = [];
@@ -44,8 +44,10 @@ async function run() {
       const resp = await fetch(`https://fantasy.premierleague.com/api/leagues-classic/${FPL_LEAGUE_ID.trim()}/standings/`);
       if (resp.ok) {
         const data = await resp.json();
+        if (data && data.league && data.league.name) {
+          leagueName = data.league.name; // Uses real league name "Clash of Elite 2026-2027"
+        }
         if (data && data.standings && data.standings.results && data.standings.results.length > 0) {
-          leagueName = data.league?.name || `League #${FPL_LEAGUE_ID}`;
           managers = data.standings.results.map(r => ({
             id: r.entry,
             name: r.player_name,
@@ -65,11 +67,10 @@ async function run() {
     }
   }
 
-  // Fallback to Demo Data if no live managers found (e.g. pre-season or join code like 8d70fl)
+  // Fallback to Demo Data if no live managers found (e.g. pre-season before GW 1 points exist)
   if (managers.length === 0 && demoData) {
-    console.log('📌 Using Demo League dataset for email preview...');
+    console.log('📌 Pre-season active: Using Demo dataset for scoring preview while using live league title...');
     isDemoMode = true;
-    leagueName = demoData.leagueName || "Clash of Elite Fantasy League";
     managers = demoData.managers;
     currentGw = 10;
     gameweeks = demoData.gameweeks;
@@ -278,7 +279,7 @@ async function run() {
         <table class="header-table">
           <tr>
             <td style="border:none;padding:0 0 14px 0;vertical-align:middle;">
-              ${isDemoMode ? '<span class="demo-tag">DEMO PREVIEW DATA</span><br>' : ''}
+              ${isDemoMode ? '<span class="demo-tag">PRE-SEASON PREVIEW</span><br>' : ''}
               <h1 class="header-title">Gameweek Standings &amp; Weekly Payouts — <span class="league-name-highlight">${leagueName}</span></h1>
             </td>
             <td style="border:none;padding:0 0 14px 0;text-align:right;vertical-align:middle;white-space:nowrap;width:120px;">
