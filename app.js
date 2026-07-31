@@ -689,7 +689,14 @@
       elements.syncStatusTag.className = 'sync-status-tag live';
       elements.syncStatusTag.textContent = `PRE-SEASON (${inputCode})`;
 
-      if (inputCode === '389585') {
+      if (inputCode === '390100' || inputCode === '0m27ty' || leagueId === '390100') {
+        elements.leagueNameHeader.textContent = "Fantasy with Heng";
+        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
+        state.dataset.managers = [
+          { id: 145847, name: "Hokheng Ker", teamName: "Undefeated", avatar: "HK" },
+          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" }
+        ];
+      } else {
         elements.leagueNameHeader.textContent = "Clash of Elite 2026-2027";
         if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Clash of Elite 2026-2027";
         state.dataset.managers = [
@@ -700,13 +707,6 @@
           { id: 2024611, name: "Vibol Dang", teamName: "The White Emperor", avatar: "VD" },
           { id: 2023789, name: "Monor Noem", teamName: "NORA FC", avatar: "MN" },
           { id: 2023013, name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T", avatar: "NK" }
-        ];
-      } else if (inputCode === '390100') {
-        elements.leagueNameHeader.textContent = "Fantasy with Heng";
-        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
-        state.dataset.managers = [
-          { id: 145847, name: "Hokheng Ker", teamName: "Undefeated", avatar: "HK" },
-          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" }
         ];
       }
 
