@@ -525,21 +525,38 @@
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
 
       const data = await resp.json();
+      if (data && data.league && data.league.name) {
+        elements.leagueNameHeader.textContent = data.league.name;
+        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = data.league.name;
+      }
+
+      let fetchedResults = [];
       if (data && data.standings && data.standings.results && data.standings.results.length > 0) {
-        const count = data.standings.results.length;
+        fetchedResults = data.standings.results;
+      } else if (data && data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
+        fetchedResults = data.new_entries.results;
+      }
+
+      if (fetchedResults.length > 0) {
+        const count = fetchedResults.length;
         elements.syncStatusTag.className = 'sync-status-tag live';
         elements.syncStatusTag.textContent = `LIVE (${count} Members)`;
 
-        if (data.league && data.league.name) {
-          elements.leagueNameHeader.textContent = data.league.name;
-          if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = data.league.name;
-        }
+        const realManagerMap = {
+          2019453: { name: "Seyha ly", teamName: "The Red Devil" },
+          2067578: { name: "Kun Phaktra", teamName: "The Blue Warriors" },
+          2026160: { name: "Piseth Nhim", teamName: "DESSTRo" },
+          2026484: { name: "Bora Chhe", teamName: "Bora's Team" },
+          2024611: { name: "Vibol Dang", teamName: "The White Emperor" },
+          2023789: { name: "Monor Noem", teamName: "NORA FC" },
+          2023013: { name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T" }
+        };
 
-        state.dataset.managers = data.standings.results.map(r => ({
+        state.dataset.managers = fetchedResults.map(r => ({
           id: r.entry,
-          name: r.player_name,
-          teamName: r.entry_name,
-          avatar: r.player_name.split(' ').map(n => n[0]).join('')
+          name: realManagerMap[r.entry]?.name || (r.player_name ? r.player_name : `${r.player_first_name || ''} ${r.player_last_name || ''}`.trim() || r.entry_name),
+          teamName: realManagerMap[r.entry]?.teamName || r.entry_name,
+          avatar: (realManagerMap[r.entry]?.name || r.player_name || r.entry_name).substring(0, 2).toUpperCase()
         }));
 
         // Fetch Live FPL Gameweek & Event Status
