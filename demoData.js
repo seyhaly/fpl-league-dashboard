@@ -1,4 +1,7 @@
 // FPL Private League Demo Dataset with 2 Sets of Chips per Season (Official 8 Chips System)
+if (typeof window === 'undefined') {
+  global.window = {};
+}
 window.DEMO_DATA = {
   leagueName: "Clash of Elite Fantasy League",
   entryFee: 3.00,
