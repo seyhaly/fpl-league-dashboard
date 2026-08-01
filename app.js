@@ -1390,37 +1390,48 @@
       }
     }
 
-    // Demo Mode default stats generator if stats missing
+    // Demo Mode or Real League fallback
     if (fixtures.length === 0) {
       const demoList = DEMO_FIXTURE_SCHEDULES[state.currentGw] || DEMO_FIXTURE_SCHEDULES[1];
-      fixtures = demoList.map(f => ({
-        ...f,
-        stats: f.stats || {
-          home: {
-            goals: f.homeScore > 0 ? [`${f.home} Goalscorer 1`, f.homeScore > 1 ? `${f.home} Goalscorer 2` : null].filter(Boolean) : [],
-            assists: f.homeScore > 0 ? [`${f.home} Playmaker`] : [],
-            bonus: f.homeScore >= f.awayScore ? [`${f.home} Star (3 pts)`, `${f.home} Defender (2 pts)`] : [],
-            cards: [`${f.home} Defender 🟨`]
-          },
-          away: {
-            goals: f.awayScore > 0 ? [`${f.away} Striker 1`, f.awayScore > 1 ? `${f.away} Winger 1` : null].filter(Boolean) : [],
-            assists: f.awayScore > 0 ? [`${f.away} Midfielder`] : [],
-            bonus: f.awayScore >= f.homeScore ? [`${f.away} Star (3 pts)`] : [`${f.away} Keeper (1 pt)`],
-            cards: [`${f.away} Midfielder 🟨`]
+      if (isLiveLeague) {
+        fixtures = demoList.map(f => ({
+          ...f,
+          homeScore: null,
+          awayScore: null,
+          finished: false,
+          started: false,
+          stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
+        }));
+      } else {
+        fixtures = demoList.map(f => ({
+          ...f,
+          stats: f.stats || {
+            home: {
+              goals: f.homeScore > 0 ? [`${f.home} Goalscorer 1`, f.homeScore > 1 ? `${f.home} Goalscorer 2` : null].filter(Boolean) : [],
+              assists: f.homeScore > 0 ? [`${f.home} Playmaker`] : [],
+              bonus: f.homeScore >= f.awayScore ? [`${f.home} Star (3 pts)`, `${f.home} Defender (2 pts)`] : [],
+              cards: [`${f.home} Defender 🟨`]
+            },
+            away: {
+              goals: f.awayScore > 0 ? [`${f.away} Striker 1`, f.awayScore > 1 ? `${f.away} Winger 1` : null].filter(Boolean) : [],
+              assists: f.awayScore > 0 ? [`${f.away} Midfielder`] : [],
+              bonus: f.awayScore >= f.homeScore ? [`${f.away} Star (3 pts)`] : [`${f.away} Keeper (1 pt)`],
+              cards: [`${f.away} Midfielder 🟨`]
+            }
           }
-        }
-      }));
+        }));
+      }
     }
 
     container.innerHTML = fixtures.map(f => {
-      let scoreText = 'vs';
+      let scoreText = '-';
       let scoreClass = 'fixture-score';
       let statusText = f.time || 'Scheduled';
 
-      if (f.finished) {
+      if (f.finished && f.homeScore !== null && f.awayScore !== null) {
         scoreText = `${f.homeScore} - ${f.awayScore}`;
         statusText = 'FT (Finished)';
-      } else if (f.started) {
+      } else if (f.started && f.homeScore !== null && f.awayScore !== null) {
         scoreText = `${f.homeScore} - ${f.awayScore}`;
         scoreClass = 'fixture-score live';
         statusText = '🔴 Live Match';
