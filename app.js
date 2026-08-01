@@ -1083,25 +1083,41 @@
     renderSeasonAwards();
   }
 
-  // Premier League 2026-2027 Official Team Names Mapping
+  // Premier League 2026-2027 Official Team Names & Badges Mapping
   const PL_TEAMS = {
-    1: "Arsenal", 2: "Aston Villa", 3: "Bournemouth", 4: "Brentford", 5: "Brighton",
-    6: "Chelsea", 7: "Coventry City", 8: "Crystal Palace", 9: "Everton", 10: "Fulham",
-    11: "Hull City", 12: "Ipswich Town", 13: "Leeds", 14: "Liverpool", 15: "Man City",
-    16: "Man Utd", 17: "Newcastle", 18: "Nott'm Forest", 19: "Spurs", 20: "Sunderland"
+    1: { name: "Arsenal", badge: "https://resources.premierleague.com/premierleague/badges/70/t3.png" },
+    2: { name: "Aston Villa", badge: "https://resources.premierleague.com/premierleague/badges/70/t7.png" },
+    3: { name: "Bournemouth", badge: "https://resources.premierleague.com/premierleague/badges/70/t91.png" },
+    4: { name: "Brentford", badge: "https://resources.premierleague.com/premierleague/badges/70/t94.png" },
+    5: { name: "Brighton", badge: "https://resources.premierleague.com/premierleague/badges/70/t36.png" },
+    6: { name: "Chelsea", badge: "https://resources.premierleague.com/premierleague/badges/70/t8.png" },
+    7: { name: "Coventry City", badge: "https://resources.premierleague.com/premierleague/badges/70/t9.png" },
+    8: { name: "Crystal Palace", badge: "https://resources.premierleague.com/premierleague/badges/70/t31.png" },
+    9: { name: "Everton", badge: "https://resources.premierleague.com/premierleague/badges/70/t11.png" },
+    10: { name: "Fulham", badge: "https://resources.premierleague.com/premierleague/badges/70/t54.png" },
+    11: { name: "Hull City", badge: "https://resources.premierleague.com/premierleague/badges/70/t88.png" },
+    12: { name: "Ipswich Town", badge: "https://resources.premierleague.com/premierleague/badges/70/t40.png" },
+    13: { name: "Leeds", badge: "https://resources.premierleague.com/premierleague/badges/70/t2.png" },
+    14: { name: "Liverpool", badge: "https://resources.premierleague.com/premierleague/badges/70/t14.png" },
+    15: { name: "Man City", badge: "https://resources.premierleague.com/premierleague/badges/70/t43.png" },
+    16: { name: "Man Utd", badge: "https://resources.premierleague.com/premierleague/badges/70/t1.png" },
+    17: { name: "Newcastle", badge: "https://resources.premierleague.com/premierleague/badges/70/t4.png" },
+    18: { name: "Nott'm Forest", badge: "https://resources.premierleague.com/premierleague/badges/70/t17.png" },
+    19: { name: "Spurs", badge: "https://resources.premierleague.com/premierleague/badges/70/t6.png" },
+    20: { name: "Sunderland", badge: "https://resources.premierleague.com/premierleague/badges/70/t56.png" }
   };
 
   const SAMPLE_FIXTURES = [
-    { home: "Arsenal", away: "Crystal Palace", homeScore: null, awayScore: null, finished: false, time: "Fri 21 Aug 20:00" },
-    { home: "Aston Villa", away: "Newcastle", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 12:30" },
-    { home: "Chelsea", away: "Fulham", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
-    { home: "Everton", away: "Brighton", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
-    { home: "Man City", away: "Bournemouth", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
-    { home: "Nott'm Forest", away: "Brentford", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 17:30" },
-    { home: "Liverpool", away: "Ipswich Town", homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 14:00" },
-    { home: "Man Utd", away: "Spurs", homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 16:30" },
-    { home: "Leeds", away: "Coventry City", homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" },
-    { home: "Sunderland", away: "Hull City", homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" }
+    { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: null, awayScore: null, finished: false, time: "Fri 21 Aug 20:00" },
+    { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 12:30" },
+    { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
+    { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
+    { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
+    { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 17:30" },
+    { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 14:00" },
+    { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 16:30" },
+    { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Coventry City", awayBadge: PL_TEAMS[7].badge, homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" },
+    { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Hull City", awayBadge: PL_TEAMS[11].badge, homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" }
   ];
 
   async function renderFixtures() {
@@ -1125,15 +1141,21 @@
         if (resp.ok) {
           const rawFixtures = await resp.json();
           if (Array.isArray(rawFixtures) && rawFixtures.length > 0) {
-            fixtures = rawFixtures.map(f => ({
-              home: PL_TEAMS[f.team_h] || `Team ${f.team_h}`,
-              away: PL_TEAMS[f.team_a] || `Team ${f.team_a}`,
-              homeScore: f.team_h_score,
-              awayScore: f.team_a_score,
-              started: f.started,
-              finished: f.finished,
-              time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
-            }));
+            fixtures = rawFixtures.map(f => {
+              const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
+              const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
+              return {
+                home: homeData.name,
+                homeBadge: homeData.badge,
+                away: awayData.name,
+                awayBadge: awayData.badge,
+                homeScore: f.team_h_score,
+                awayScore: f.team_a_score,
+                started: f.started,
+                finished: f.finished,
+                time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
+              };
+            });
             break;
           }
         }
@@ -1158,14 +1180,23 @@
         statusText = '🔴 Live Match';
       }
 
+      const homeImg = f.homeBadge ? `<img src="${f.homeBadge}" class="fixture-team-badge" alt="${f.home}">` : '';
+      const awayImg = f.awayBadge ? `<img src="${f.awayBadge}" class="fixture-team-badge" alt="${f.away}">` : '';
+
       return `
         <div class="fixture-card">
-          <div class="fixture-team home">${f.home}</div>
+          <div class="fixture-team home">
+            <span>${f.home}</span>
+            ${homeImg}
+          </div>
           <div class="fixture-score-wrapper">
             <div class="${scoreClass}">${scoreText}</div>
             <div class="fixture-status">${statusText}</div>
           </div>
-          <div class="fixture-team away">${f.away}</div>
+          <div class="fixture-team away">
+            ${awayImg}
+            <span>${f.away}</span>
+          </div>
         </div>
       `;
     }).join('');

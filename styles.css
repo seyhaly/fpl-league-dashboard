@@ -1546,13 +1546,24 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .fixture-team {
   font-family: 'Outfit', sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--text-primary);
   width: 38%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.fixture-team.home { text-align: right; }
-.fixture-team.away { text-align: left; }
+.fixture-team-badge {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  flex-shrink: 0;
+}
+
+.fixture-team.home { justify-content: flex-end; text-align: right; }
+.fixture-team.away { justify-content: flex-start; text-align: left; }
 
 .fixture-score-wrapper {
   display: flex;
