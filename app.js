@@ -1352,7 +1352,7 @@
 
     // Check if in Demo Mode vs Real League
     const inputVal = (state.leagueIdInput ? state.leagueIdInput.value.trim().toLowerCase() : '');
-    const isDemoMode = inputVal === 'demo' || inputVal === '' || state.isDemoMode === true;
+    const isDemoMode = inputVal === 'demo' || state.isDemoMode === true;
     const isRealLeague = !isDemoMode;
 
     if (isRealLeague) {
@@ -1372,15 +1372,17 @@
                 const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
                 const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
                 const parsedStats = parseLiveFixtureStats(f.stats, window.PL_PLAYER_MAP || {});
+                const isLiveOrFinished = Boolean(f.started || f.finished) && f.team_h_score !== null;
+
                 return {
                   home: homeData.name,
                   homeBadge: homeData.badge,
                   away: awayData.name,
                   awayBadge: awayData.badge,
-                  homeScore: f.finished || f.started ? f.team_h_score : null,
-                  awayScore: f.finished || f.started ? f.team_a_score : null,
-                  started: Boolean(f.started),
-                  finished: Boolean(f.finished),
+                  homeScore: isLiveOrFinished ? f.team_h_score : null,
+                  awayScore: isLiveOrFinished ? f.team_a_score : null,
+                  started: isLiveOrFinished ? Boolean(f.started) : false,
+                  finished: isLiveOrFinished ? Boolean(f.finished) : false,
                   time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '',
                   stats: parsedStats
                 };
@@ -1425,22 +1427,21 @@
       }
     }
 
-    // Force real leagues in pre-season (managers have 0 pts for current GW) to display unplayed (-) state
-    const isPreSeasonLeague = isRealLeague && (
-      !state.dataset.managers ||
-      state.dataset.managers.length === 0 ||
-      state.dataset.managers.every(m => !m.gwScores || !m.gwScores[state.currentGw] || m.gwScores[state.currentGw] === 0)
-    );
-
-    if (isPreSeasonLeague) {
-      fixtures = fixtures.map(f => ({
-        ...f,
-        homeScore: null,
-        awayScore: null,
-        finished: false,
-        started: false,
-        stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
-      }));
+    // Unplayed match protection for Real Leagues in pre-season
+    if (isRealLeague) {
+      fixtures = fixtures.map(f => {
+        if (!f.started && !f.finished) {
+          return {
+            ...f,
+            homeScore: null,
+            awayScore: null,
+            finished: false,
+            started: false,
+            stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
+          };
+        }
+        return f;
+      });
     }
 
     container.innerHTML = fixtures.map(f => {
