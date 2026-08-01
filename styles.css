@@ -1519,9 +1519,76 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 /* ===================== MATCH FIXTURES GRID & EXPANDABLE DRAWER ===================== */
+/* Independent Fixture Gameweek Navigation */
+.fixtures-header-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.fixtures-gw-nav {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+
+.btn-gw-step {
+  background: transparent;
+  border: none;
+  color: var(--pl-cyan);
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0 6px;
+  line-height: 1;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.btn-gw-step:hover:not(:disabled) {
+  color: #ffffff;
+  transform: scale(1.2);
+}
+
+.btn-gw-step:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.fixtures-gw-badge {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--pl-cyan);
+  letter-spacing: 0.5px;
+  min-width: 90px;
+  text-align: center;
+}
+
+[data-theme="light"] .fixtures-gw-nav {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+[data-theme="light"] .btn-gw-step {
+  color: #0284c7;
+}
+
+[data-theme="light"] .btn-gw-step:hover:not(:disabled) {
+  color: #0369a1;
+}
+
+[data-theme="light"] .fixtures-gw-badge {
+  color: #0284c7;
+}
+
 .fixtures-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 14px;
   margin-top: 10px;
 }

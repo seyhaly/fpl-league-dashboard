@@ -1341,12 +1341,25 @@
     return { home, away };
   }
 
+  window.changeFixturesGw = function(delta) {
+    const current = state.fixturesGw || state.currentGw || 1;
+    const nextGw = Math.max(1, Math.min(38, current + delta));
+    state.fixturesGw = nextGw;
+    renderFixtures();
+  };
+
   async function renderFixtures() {
     const container = document.getElementById('fixturesContainer');
     const badge = document.getElementById('fixturesGwBadge');
+    const prevBtn = document.getElementById('fixturesPrevGwBtn');
+    const nextBtn = document.getElementById('fixturesNextGwBtn');
     if (!container) return;
 
-    if (badge) badge.textContent = `Gameweek ${state.currentGw}`;
+    const targetGw = state.fixturesGw || state.currentGw || 1;
+
+    if (badge) badge.textContent = `Gameweek ${targetGw}`;
+    if (prevBtn) prevBtn.disabled = targetGw <= 1;
+    if (nextBtn) nextBtn.disabled = targetGw >= 38;
 
     let fixtures = [];
 
@@ -1356,7 +1369,7 @@
     const isRealLeague = !isDemoMode;
 
     if (isRealLeague) {
-      const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`;
+      const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${targetGw}`;
       const proxies = [
         `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
         `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`
@@ -1396,7 +1409,7 @@
 
     // Demo Mode or Real League fallback
     if (fixtures.length === 0) {
-      const demoList = DEMO_FIXTURE_SCHEDULES[state.currentGw] || DEMO_FIXTURE_SCHEDULES[1];
+      const demoList = DEMO_FIXTURE_SCHEDULES[targetGw] || DEMO_FIXTURE_SCHEDULES[1];
       if (isRealLeague) {
         fixtures = demoList.map(f => ({
           ...f,
