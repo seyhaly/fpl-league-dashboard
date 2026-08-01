@@ -1889,11 +1889,45 @@
     });
   }
 
+  function populateStatusGwDropdown(activeGw) {
+    const select = document.getElementById('statusGwSelect');
+    const prevBtn = document.getElementById('statusPrevGwBtn');
+    const nextBtn = document.getElementById('statusNextGwBtn');
+    if (!select) return;
+    let html = '';
+    for (let gw = 1; gw <= 38; gw++) {
+      const isCurrentMark = (gw === (state.currentGw || 1)) ? ' (Current)' : '';
+      const selected = (gw === activeGw) ? 'selected' : '';
+      html += `<option value="${gw}" ${selected}>Gameweek ${gw}${isCurrentMark}</option>`;
+    }
+    select.innerHTML = html;
+    if (prevBtn) prevBtn.disabled = activeGw <= 1;
+    if (nextBtn) nextBtn.disabled = activeGw >= 38;
+  }
+
+  window.selectStatusGw = function(val) {
+    state.statusGw = parseInt(val, 10) || 1;
+    renderGwStatus();
+  };
+
+  window.jumpToCurrentStatusGw = function() {
+    state.statusGw = state.currentGw || 1;
+    renderGwStatus();
+  };
+
+  window.changeStatusGw = function(delta) {
+    const current = state.statusGw || state.currentGw || 1;
+    const nextGw = Math.max(1, Math.min(38, current + delta));
+    state.statusGw = nextGw;
+    renderGwStatus();
+  };
+
   function renderGwStatus() {
     const spotlightContainer = document.getElementById('gwSpotlightContainer');
     if (!spotlightContainer) return;
 
-    const gw = state.currentGw || 10;
+    const gw = state.statusGw || state.currentGw || 1;
+    populateStatusGwDropdown(gw);
     let statusObj = state.eventStatuses[gw];
 
     if (!statusObj) {
@@ -1921,9 +1955,14 @@
       const isPast = gw < state.currentGw || (statusObj && statusObj.finished && !statusObj.is_current);
       const isCurrent = gw === state.currentGw;
       
-      // Calculate realistic dates for GW n
-      const startDate = new Date(2023, 7, 11); // Aug 11 2023
-      const gwStart = new Date(startDate.getTime() + (gw - 1) * 7 * 86400000);
+      // Calculate realistic dates for GW n based on deadline_time or August 2026 season start
+      let gwStart = new Date(2026, 7, 21); // Aug 21 2026
+      if (statusObj && statusObj.deadline_time) {
+        gwStart = new Date(statusObj.deadline_time);
+      } else {
+        gwStart = new Date(gwStart.getTime() + (gw - 1) * 7 * 86400000);
+      }
+
       const gwSat = new Date(gwStart.getTime() + 1 * 86400000);
       const gwSun = new Date(gwStart.getTime() + 2 * 86400000);
 
@@ -1941,7 +1980,7 @@
           { date: d2Str, points: (statusObj.finished ? 'r' : 'p'), bonus_added: !!statusObj.bonus_added }
         ];
       } else {
-        // Future GW
+        // Future / Pre-season GW
         dailyStatus = [
           { date: d1Str, points: 'p', bonus_added: false },
           { date: d2Str, points: 'p', bonus_added: false }
