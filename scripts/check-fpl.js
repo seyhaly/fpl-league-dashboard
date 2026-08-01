@@ -118,9 +118,21 @@ async function run() {
     }
   }
 
-  // Check duplicate prevention for automated scheduled runs
-  if (!isPreSeasonMode && !isManualRun && currentGw === lastSentGw) {
-    console.log(`ℹ️ Gameweek ${currentGw} notification already sent previously. Skipping duplicate email.`);
+  // 1. Pre-season guard: DO NOT send automated scheduled emails during pre-season!
+  if (isPreSeasonMode && !isManualRun) {
+    console.log(`ℹ️ Pre-season mode active (Gameweek 1 has not started/finished on FPL yet). Skipping automated scheduled email.`);
+    process.exit(0);
+  }
+
+  // 2. Active season guard: Only send automated emails when Gameweek is officially finished!
+  if (!isPreSeasonMode && !isGwFinished && !isManualRun) {
+    console.log(`ℹ️ Gameweek ${currentGw} is still in progress. Waiting until GW matches & points are finalized.`);
+    process.exit(0);
+  }
+
+  // 3. Duplicate prevention: Skip if email for this Gameweek was already sent!
+  if (!isManualRun && currentGw === lastSentGw) {
+    console.log(`ℹ️ Gameweek ${currentGw} notification already sent previously (lastSentGw: ${lastSentGw}). Skipping duplicate email.`);
     process.exit(0);
   }
 
@@ -135,7 +147,6 @@ async function run() {
   } else if (demoData) {
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
-    if (isPreSeasonMode) currentGw = 10;
   }
 
   if (managers.length === 0) {
