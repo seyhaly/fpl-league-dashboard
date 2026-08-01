@@ -664,11 +664,30 @@
               });
             }
 
+            let detectedGw = 1;
             const activeEv = bsData.events.find(e => e.is_current);
+            const nextEv = bsData.events.find(e => e.is_next);
+            const prevEv = bsData.events.filter(e => e.finished).pop();
+
             if (activeEv) {
-              state.maxGw = activeEv.id;
-              state.currentGw = activeEv.id;
+              detectedGw = activeEv.id;
+            } else if (nextEv) {
+              if (nextEv.deadline_time && new Date() >= new Date(nextEv.deadline_time)) {
+                detectedGw = nextEv.id;
+              } else if (prevEv) {
+                detectedGw = prevEv.id;
+              } else {
+                detectedGw = nextEv.id;
+              }
+            } else if (prevEv) {
+              detectedGw = prevEv.id;
             }
+
+            state.currentGw = detectedGw;
+            state.maxGw = detectedGw;
+            if (!state.fixturesGw) state.fixturesGw = state.currentGw;
+            if (!state.weeklyGw) state.weeklyGw = state.currentGw;
+            if (!state.statusGw) state.statusGw = state.currentGw;
           }
 
           const stResp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/event-status/`);
