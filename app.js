@@ -511,6 +511,27 @@
   }
 
   // ===================== LIVE FPL SYNC =====================
+  async function fetchFplWithTimeout(targetUrl, timeoutMs = 2500) {
+    const proxies = [
+      `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`
+    ];
+
+    for (const proxyUrl of proxies) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+        const resp = await fetch(proxyUrl, { signal: controller.signal });
+        clearTimeout(timeoutId);
+        if (resp.ok) {
+          const data = await resp.json();
+          if (data) return data;
+        }
+      } catch (e) {}
+    }
+    return null;
+  }
+
   async function syncLiveFplLeague() {
     let inputCode = elements.leagueIdInput.value.trim();
     if (!inputCode) return;
@@ -521,6 +542,17 @@
     
     if (!inputCode) {
       alert('Please enter a valid FPL League ID or Join Code.');
+      return;
+    }
+
+    await fetchLeagueData(inputCode);
+  }
+
+  async function fetchLeagueData(inputCode) {
+    if (!inputCode) return;
+
+    if (inputCode.toLowerCase() === 'demo') {
+      loadDemoData();
       return;
     }
 
@@ -536,11 +568,10 @@
     renderAll();
 
     try {
-      const proxyUrl = `https://corsproxy.io/?https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
-      const resp = await fetch(proxyUrl);
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
+      const data = await fetchFplWithTimeout(standingsUrl, 3000);
+      if (!data) throw new Error(`Failed to fetch league standings for #${inputCode}`);
 
-      const data = await resp.json();
       if (data && data.league && data.league.name) {
         elements.leagueNameHeader.textContent = data.league.name;
         if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = data.league.name;
@@ -626,21 +657,7 @@
         // Fetch Live FPL Gameweek & Event Status with Multi-Proxy Fallback
         try {
           const bsTargetUrl = 'https://fantasy.premierleague.com/api/bootstrap-static/';
-          const bsProxies = [
-            `https://api.allorigins.win/raw?url=${encodeURIComponent(bsTargetUrl)}`,
-            `https://corsproxy.io/?${encodeURIComponent(bsTargetUrl)}`
-          ];
-
-          let bsData = null;
-          for (const pUrl of bsProxies) {
-            try {
-              const res = await fetch(pUrl);
-              if (res.ok) {
-                bsData = await res.json();
-                if (bsData && bsData.events) break;
-              }
-            } catch (e) {}
-          }
+          const bsData = await fetchFplWithTimeout(bsTargetUrl, 3000);
 
           if (bsData && bsData.events) {
             bsData.events.forEach(ev => {
@@ -690,12 +707,10 @@
             if (!state.statusGw) state.statusGw = state.currentGw;
           }
 
-          const stResp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/event-status/`);
-          if (stResp.ok) {
-            const stData = await stResp.json();
+          const stData = await fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 2500);
+          if (stData) {
             const curGw = state.currentGw;
-            
-            if (stData && stData.status) {
+            if (stData.status) {
               stData.status.forEach(st => {
                 if (state.eventStatuses[st.event]) {
                   state.eventStatuses[st.event].bonus_added = st.bonus_added;
@@ -707,10 +722,8 @@
                  state.eventStatuses[curGw].daily_status = stData.status.filter(s => s.event === curGw);
               }
             }
-            if (stData && stData.leagues) {
-              if (state.eventStatuses[curGw]) {
-                state.eventStatuses[curGw].leagues = stData.leagues;
-              }
+            if (stData.leagues && state.eventStatuses[curGw]) {
+              state.eventStatuses[curGw].leagues = stData.leagues;
             }
           }
         } catch (stErr) {
