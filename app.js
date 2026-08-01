@@ -1083,25 +1083,25 @@
     renderSeasonAwards();
   }
 
-  // ===================== MATCH FIXTURES & RESULTS =====================
+  // Premier League 2026-2027 Official Team Names Mapping
   const PL_TEAMS = {
     1: "Arsenal", 2: "Aston Villa", 3: "Bournemouth", 4: "Brentford", 5: "Brighton",
-    6: "Chelsea", 7: "Crystal Palace", 8: "Everton", 9: "Fulham", 10: "Ipswich",
-    11: "Leicester", 12: "Liverpool", 13: "Man City", 14: "Man Utd", 15: "Newcastle",
-    16: "Nott'm Forest", 17: "Southampton", 18: "Spurs", 19: "West Ham", 20: "Wolves"
+    6: "Chelsea", 7: "Coventry City", 8: "Crystal Palace", 9: "Everton", 10: "Fulham",
+    11: "Hull City", 12: "Ipswich Town", 13: "Leeds", 14: "Liverpool", 15: "Man City",
+    16: "Man Utd", 17: "Newcastle", 18: "Nott'm Forest", 19: "Spurs", 20: "Sunderland"
   };
 
   const SAMPLE_FIXTURES = [
-    { home: "Arsenal", away: "Chelsea", homeScore: 2, awayScore: 1, finished: true },
-    { home: "Man City", away: "Liverpool", homeScore: 1, awayScore: 1, finished: true },
-    { home: "Man Utd", away: "Tottenham", homeScore: 3, awayScore: 2, finished: true },
-    { home: "Aston Villa", away: "Newcastle", homeScore: 0, awayScore: 0, finished: true },
-    { home: "Brighton", away: "West Ham", homeScore: 2, awayScore: 0, finished: true },
-    { home: "Brentford", away: "Fulham", homeScore: 1, awayScore: 2, finished: true },
-    { home: "Everton", away: "Bournemouth", homeScore: 0, awayScore: 1, finished: true },
-    { home: "Crystal Palace", away: "Wolves", homeScore: 1, awayScore: 0, finished: true },
-    { home: "Leicester", away: "Nott'm Forest", homeScore: 2, awayScore: 2, finished: true },
-    { home: "Ipswich", away: "Southampton", homeScore: 1, awayScore: 0, finished: true }
+    { home: "Arsenal", away: "Crystal Palace", homeScore: null, awayScore: null, finished: false, time: "Fri 21 Aug 20:00" },
+    { home: "Aston Villa", away: "Newcastle", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 12:30" },
+    { home: "Chelsea", away: "Fulham", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
+    { home: "Everton", away: "Brighton", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
+    { home: "Man City", away: "Bournemouth", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
+    { home: "Nott'm Forest", away: "Brentford", homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 17:30" },
+    { home: "Liverpool", away: "Ipswich Town", homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 14:00" },
+    { home: "Man Utd", away: "Spurs", homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 16:30" },
+    { home: "Leeds", away: "Coventry City", homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" },
+    { home: "Sunderland", away: "Hull City", homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" }
   ];
 
   async function renderFixtures() {
@@ -1113,24 +1113,31 @@
 
     let fixtures = [];
 
-    try {
-      const resp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`);
-      if (resp.ok) {
-        const rawFixtures = await resp.json();
-        if (rawFixtures && rawFixtures.length > 0) {
-          fixtures = rawFixtures.map(f => ({
-            home: PL_TEAMS[f.team_h] || `Team ${f.team_h}`,
-            away: PL_TEAMS[f.team_a] || `Team ${f.team_a}`,
-            homeScore: f.team_h_score,
-            awayScore: f.team_a_score,
-            started: f.started,
-            finished: f.finished,
-            time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : ''
-          }));
+    const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`;
+    const proxies = [
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
+      `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`
+    ];
+
+    for (const proxyUrl of proxies) {
+      try {
+        const resp = await fetch(proxyUrl);
+        if (resp.ok) {
+          const rawFixtures = await resp.json();
+          if (Array.isArray(rawFixtures) && rawFixtures.length > 0) {
+            fixtures = rawFixtures.map(f => ({
+              home: PL_TEAMS[f.team_h] || `Team ${f.team_h}`,
+              away: PL_TEAMS[f.team_a] || `Team ${f.team_a}`,
+              homeScore: f.team_h_score,
+              awayScore: f.team_a_score,
+              started: f.started,
+              finished: f.finished,
+              time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
+            }));
+            break;
+          }
         }
-      }
-    } catch (e) {
-      // Fallback
+      } catch (e) {}
     }
 
     if (fixtures.length === 0) {
