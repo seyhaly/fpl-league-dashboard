@@ -1425,6 +1425,21 @@
       }
     }
 
+    // Force real leagues in pre-season to display unplayed (-) state
+    const currentEv = state.eventStatuses ? state.eventStatuses[state.currentGw] : null;
+    const isGwFinished = currentEv ? currentEv.finished : false;
+
+    if (isRealLeague && !isGwFinished) {
+      fixtures = fixtures.map(f => ({
+        ...f,
+        homeScore: null,
+        awayScore: null,
+        finished: false,
+        started: false,
+        stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
+      }));
+    }
+
     container.innerHTML = fixtures.map(f => {
       let scoreText = '-';
       let scoreClass = 'fixture-score';
