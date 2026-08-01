@@ -1425,11 +1425,14 @@
       }
     }
 
-    // Force real leagues in pre-season to display unplayed (-) state
-    const currentEv = state.eventStatuses ? state.eventStatuses[state.currentGw] : null;
-    const isGwFinished = currentEv ? currentEv.finished : false;
+    // Force real leagues in pre-season (managers have 0 pts for current GW) to display unplayed (-) state
+    const isPreSeasonLeague = isRealLeague && (
+      !state.dataset.managers ||
+      state.dataset.managers.length === 0 ||
+      state.dataset.managers.every(m => !m.gwScores || !m.gwScores[state.currentGw] || m.gwScores[state.currentGw] === 0)
+    );
 
-    if (isRealLeague && !isGwFinished) {
+    if (isPreSeasonLeague) {
       fixtures = fixtures.map(f => ({
         ...f,
         homeScore: null,
