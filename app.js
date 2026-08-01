@@ -1107,18 +1107,128 @@
     20: { name: "Sunderland", badge: "https://resources.premierleague.com/premierleague/badges/70/t56.png" }
   };
 
-  const SAMPLE_FIXTURES = [
-    { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: null, awayScore: null, finished: false, time: "Fri 21 Aug 20:00" },
-    { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 12:30" },
-    { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
-    { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
-    { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 15:00" },
-    { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: null, awayScore: null, finished: false, time: "Sat 22 Aug 17:30" },
-    { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 14:00" },
-    { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: null, awayScore: null, finished: false, time: "Sun 23 Aug 16:30" },
-    { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Coventry City", awayBadge: PL_TEAMS[7].badge, homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" },
-    { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Hull City", awayBadge: PL_TEAMS[11].badge, homeScore: null, awayScore: null, finished: false, time: "Mon 24 Aug 20:00" }
-  ];
+  const DEMO_FIXTURE_SCHEDULES = {
+    1: [
+      { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: 1, awayScore: 0, finished: true },
+      { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: 3, awayScore: 1, finished: true },
+      { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: 0, awayScore: 2, finished: true },
+      { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: 4, awayScore: 0, finished: true },
+      { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 2, awayScore: 0, finished: true },
+      { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: 3, awayScore: 2, finished: true },
+      { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Coventry City", awayBadge: PL_TEAMS[7].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Hull City", awayBadge: PL_TEAMS[11].badge, homeScore: 2, awayScore: 0, finished: true }
+    ],
+    2: [
+      { home: "Brighton", homeBadge: PL_TEAMS[5].badge, away: "Man Utd", awayBadge: PL_TEAMS[16].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Crystal Palace", homeBadge: PL_TEAMS[8].badge, away: "Nott'm Forest", awayBadge: PL_TEAMS[18].badge, homeScore: 0, awayScore: 2, finished: true },
+      { home: "Fulham", homeBadge: PL_TEAMS[10].badge, away: "Leicester", awayBadge: PL_TEAMS[2].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 4, awayScore: 1, finished: true },
+      { home: "Spurs", homeBadge: PL_TEAMS[19].badge, away: "Everton", awayBadge: PL_TEAMS[9].badge, homeScore: 4, awayScore: 0, finished: true },
+      { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Arsenal", awayBadge: PL_TEAMS[1].badge, homeScore: 0, awayScore: 2, finished: true },
+      { home: "Bournemouth", homeBadge: PL_TEAMS[3].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Brentford", homeBadge: PL_TEAMS[4].badge, away: "Chelsea", awayBadge: PL_TEAMS[6].badge, homeScore: 2, awayScore: 6, finished: true },
+      { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Sunderland", awayBadge: PL_TEAMS[20].badge, homeScore: 2, awayScore: 0, finished: true },
+      { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Hull City", awayBadge: PL_TEAMS[11].badge, homeScore: 1, awayScore: 1, finished: true }
+    ],
+    3: [
+      { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Brentford", homeBadge: PL_TEAMS[4].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 3, awayScore: 1, finished: true },
+      { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: 2, awayScore: 3, finished: true },
+      { home: "Leicester", homeBadge: PL_TEAMS[2].badge, away: "Aston Villa", awayBadge: PL_TEAMS[2].badge, homeScore: 1, awayScore: 2, finished: true },
+      { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Wolves", awayBadge: PL_TEAMS[4].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Man City", awayBadge: PL_TEAMS[15].badge, homeScore: 1, awayScore: 3, finished: true },
+      { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Newcastle", homeBadge: PL_TEAMS[17].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Liverpool", awayBadge: PL_TEAMS[14].badge, homeScore: 0, awayScore: 3, finished: true },
+      { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: 2, awayScore: 1, finished: true }
+    ],
+    4: [
+      { home: "Southampton", homeBadge: PL_TEAMS[12].badge, away: "Man Utd", awayBadge: PL_TEAMS[16].badge, homeScore: 0, awayScore: 3, finished: true },
+      { home: "Brighton", homeBadge: PL_TEAMS[5].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 0, awayScore: 0, finished: true },
+      { home: "Crystal Palace", homeBadge: PL_TEAMS[8].badge, away: "Leicester", awayBadge: PL_TEAMS[2].badge, homeScore: 2, awayScore: 2, finished: true },
+      { home: "Fulham", homeBadge: PL_TEAMS[10].badge, away: "Nott'm Forest", awayBadge: PL_TEAMS[18].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Sunderland", awayBadge: PL_TEAMS[20].badge, homeScore: 0, awayScore: 1, finished: true },
+      { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Everton", awayBadge: PL_TEAMS[9].badge, homeScore: 3, awayScore: 2, finished: true },
+      { home: "Bournemouth", homeBadge: PL_TEAMS[3].badge, away: "Chelsea", awayBadge: PL_TEAMS[6].badge, homeScore: 0, awayScore: 1, finished: true },
+      { home: "Spurs", homeBadge: PL_TEAMS[19].badge, away: "Arsenal", awayBadge: PL_TEAMS[1].badge, homeScore: 0, awayScore: 1, finished: true },
+      { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: 1, awayScore: 2, finished: true }
+    ],
+    5: [
+      { home: "Hull City", homeBadge: PL_TEAMS[11].badge, away: "Chelsea", awayBadge: PL_TEAMS[6].badge, homeScore: 0, awayScore: 3, finished: true },
+      { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Sunderland", awayBadge: PL_TEAMS[20].badge, homeScore: 3, awayScore: 1, finished: true },
+      { home: "Fulham", homeBadge: PL_TEAMS[10].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: 3, awayScore: 1, finished: true },
+      { home: "Leicester", homeBadge: PL_TEAMS[2].badge, away: "Everton", awayBadge: PL_TEAMS[9].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: 3, awayScore: 0, finished: true },
+      { home: "Southampton", homeBadge: PL_TEAMS[12].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Spurs", homeBadge: PL_TEAMS[19].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: 3, awayScore: 1, finished: true },
+      { home: "Crystal Palace", homeBadge: PL_TEAMS[8].badge, away: "Man Utd", awayBadge: PL_TEAMS[16].badge, homeScore: 0, awayScore: 0, finished: true },
+      { home: "Brighton", homeBadge: PL_TEAMS[5].badge, away: "Nott'm Forest", awayBadge: PL_TEAMS[18].badge, homeScore: 2, awayScore: 2, finished: true },
+      { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Arsenal", awayBadge: PL_TEAMS[1].badge, homeScore: 2, awayScore: 2, finished: true }
+    ],
+    6: [
+      { home: "Newcastle", homeBadge: PL_TEAMS[17].badge, away: "Man City", awayBadge: PL_TEAMS[15].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Leicester", awayBadge: PL_TEAMS[2].badge, homeScore: 4, awayScore: 2, finished: true },
+      { home: "Brentford", homeBadge: PL_TEAMS[4].badge, away: "Coventry City", awayBadge: PL_TEAMS[7].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: 4, awayScore: 2, finished: true },
+      { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: 0, awayScore: 1, finished: true },
+      { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Liverpool", awayBadge: PL_TEAMS[14].badge, homeScore: 1, awayScore: 2, finished: true },
+      { home: "Ipswich Town", homeBadge: PL_TEAMS[12].badge, away: "Aston Villa", awayBadge: PL_TEAMS[2].badge, homeScore: 2, awayScore: 2, finished: true },
+      { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: 0, awayScore: 3, finished: true },
+      { home: "Bournemouth", homeBadge: PL_TEAMS[3].badge, away: "Leeds", awayBadge: PL_TEAMS[13].badge, homeScore: 3, awayScore: 1, finished: true }
+    ],
+    7: [
+      { home: "Crystal Palace", homeBadge: PL_TEAMS[8].badge, away: "Liverpool", awayBadge: PL_TEAMS[14].badge, homeScore: 0, awayScore: 1, finished: true },
+      { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Sunderland", awayBadge: PL_TEAMS[20].badge, homeScore: 3, awayScore: 1, finished: true },
+      { home: "Brentford", homeBadge: PL_TEAMS[4].badge, away: "Leeds", awayBadge: PL_TEAMS[13].badge, homeScore: 5, awayScore: 3, finished: true },
+      { home: "Leicester", homeBadge: PL_TEAMS[2].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: 1, awayScore: 0, finished: true },
+      { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: 3, awayScore: 2, finished: true },
+      { home: "Coventry City", homeBadge: PL_TEAMS[7].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 4, awayScore: 1, finished: true },
+      { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: 0, awayScore: 0, finished: true },
+      { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Man Utd", awayBadge: PL_TEAMS[16].badge, homeScore: 0, awayScore: 0, finished: true },
+      { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Nott'm Forest", awayBadge: PL_TEAMS[18].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Brighton", homeBadge: PL_TEAMS[5].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: 3, awayScore: 2, finished: true }
+    ],
+    8: [
+      { home: "Spurs", homeBadge: PL_TEAMS[19].badge, away: "Coventry City", awayBadge: PL_TEAMS[7].badge, homeScore: 4, awayScore: 1, finished: true },
+      { home: "Fulham", homeBadge: PL_TEAMS[10].badge, away: "Aston Villa", awayBadge: PL_TEAMS[2].badge, homeScore: 1, awayScore: 3, finished: true },
+      { home: "Ipswich Town", homeBadge: PL_TEAMS[12].badge, away: "Everton", awayBadge: PL_TEAMS[9].badge, homeScore: 0, awayScore: 2, finished: true },
+      { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Newcastle", homeBadge: PL_TEAMS[17].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: 0, awayScore: 1, finished: true },
+      { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Leicester", awayBadge: PL_TEAMS[2].badge, homeScore: 2, awayScore: 3, finished: true },
+      { home: "Bournemouth", homeBadge: PL_TEAMS[3].badge, away: "Arsenal", awayBadge: PL_TEAMS[1].badge, homeScore: 2, awayScore: 0, finished: true },
+      { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Man City", awayBadge: PL_TEAMS[15].badge, homeScore: 1, awayScore: 2, finished: true },
+      { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Chelsea", awayBadge: PL_TEAMS[6].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: 1, awayScore: 0, finished: true }
+    ],
+    9: [
+      { home: "Leicester", homeBadge: PL_TEAMS[2].badge, away: "Nott'm Forest", awayBadge: PL_TEAMS[18].badge, homeScore: 1, awayScore: 3, finished: true },
+      { home: "Aston Villa", homeBadge: PL_TEAMS[2].badge, away: "Bournemouth", awayBadge: PL_TEAMS[3].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Brentford", homeBadge: PL_TEAMS[4].badge, away: "Ipswich Town", awayBadge: PL_TEAMS[12].badge, homeScore: 4, awayScore: 3, finished: true },
+      { home: "Brighton", homeBadge: PL_TEAMS[5].badge, away: "Hull City", awayBadge: PL_TEAMS[11].badge, homeScore: 2, awayScore: 2, finished: true },
+      { home: "Man City", homeBadge: PL_TEAMS[15].badge, away: "Sunderland", awayBadge: PL_TEAMS[20].badge, homeScore: 1, awayScore: 0, finished: true },
+      { home: "Everton", homeBadge: PL_TEAMS[9].badge, away: "Fulham", awayBadge: PL_TEAMS[10].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Chelsea", homeBadge: PL_TEAMS[6].badge, away: "Newcastle", awayBadge: PL_TEAMS[17].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Crystal Palace", homeBadge: PL_TEAMS[8].badge, away: "Spurs", awayBadge: PL_TEAMS[19].badge, homeScore: 1, awayScore: 0, finished: true },
+      { home: "Coventry City", homeBadge: PL_TEAMS[7].badge, away: "Man Utd", awayBadge: PL_TEAMS[16].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Arsenal", homeBadge: PL_TEAMS[1].badge, away: "Liverpool", awayBadge: PL_TEAMS[14].badge, homeScore: 2, awayScore: 2, finished: true }
+    ],
+    10: [
+      { home: "Newcastle", homeBadge: PL_TEAMS[17].badge, away: "Arsenal", awayBadge: PL_TEAMS[1].badge, homeScore: 1, awayScore: 0, finished: true },
+      { home: "Bournemouth", homeBadge: PL_TEAMS[3].badge, away: "Man City", awayBadge: PL_TEAMS[15].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Ipswich Town", homeBadge: PL_TEAMS[12].badge, away: "Leicester", awayBadge: PL_TEAMS[2].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Liverpool", homeBadge: PL_TEAMS[14].badge, away: "Brighton", awayBadge: PL_TEAMS[5].badge, homeScore: 2, awayScore: 1, finished: true },
+      { home: "Nott'm Forest", homeBadge: PL_TEAMS[18].badge, away: "Hull City", awayBadge: PL_TEAMS[11].badge, homeScore: 3, awayScore: 0, finished: true },
+      { home: "Sunderland", homeBadge: PL_TEAMS[20].badge, away: "Everton", awayBadge: PL_TEAMS[9].badge, homeScore: 1, awayScore: 0, finished: true },
+      { home: "Leeds", homeBadge: PL_TEAMS[13].badge, away: "Crystal Palace", awayBadge: PL_TEAMS[8].badge, homeScore: 2, awayScore: 2, finished: true },
+      { home: "Spurs", homeBadge: PL_TEAMS[19].badge, away: "Aston Villa", awayBadge: PL_TEAMS[2].badge, homeScore: 4, awayScore: 1, finished: true },
+      { home: "Man Utd", homeBadge: PL_TEAMS[16].badge, away: "Chelsea", awayBadge: PL_TEAMS[6].badge, homeScore: 1, awayScore: 1, finished: true },
+      { home: "Fulham", homeBadge: PL_TEAMS[10].badge, away: "Brentford", awayBadge: PL_TEAMS[4].badge, homeScore: 2, awayScore: 1, finished: true }
+    ]
+  };
 
   async function renderFixtures() {
     const container = document.getElementById('fixturesContainer');
@@ -1129,41 +1239,46 @@
 
     let fixtures = [];
 
-    const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`;
-    const proxies = [
-      `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
-      `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`
-    ];
+    // Check if live FPL league or pre-season mode
+    const isLiveLeague = Boolean(state.leagueIdInput && state.leagueIdInput.value.trim() !== '');
 
-    for (const proxyUrl of proxies) {
-      try {
-        const resp = await fetch(proxyUrl);
-        if (resp.ok) {
-          const rawFixtures = await resp.json();
-          if (Array.isArray(rawFixtures) && rawFixtures.length > 0) {
-            fixtures = rawFixtures.map(f => {
-              const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
-              const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
-              return {
-                home: homeData.name,
-                homeBadge: homeData.badge,
-                away: awayData.name,
-                awayBadge: awayData.badge,
-                homeScore: f.team_h_score,
-                awayScore: f.team_a_score,
-                started: f.started,
-                finished: f.finished,
-                time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
-              };
-            });
-            break;
+    if (isLiveLeague) {
+      const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`;
+      const proxies = [
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
+        `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`
+      ];
+
+      for (const proxyUrl of proxies) {
+        try {
+          const resp = await fetch(proxyUrl);
+          if (resp.ok) {
+            const rawFixtures = await resp.json();
+            if (Array.isArray(rawFixtures) && rawFixtures.length > 0) {
+              fixtures = rawFixtures.map(f => {
+                const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
+                const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
+                return {
+                  home: homeData.name,
+                  homeBadge: homeData.badge,
+                  away: awayData.name,
+                  awayBadge: awayData.badge,
+                  homeScore: f.team_h_score,
+                  awayScore: f.team_a_score,
+                  started: f.started,
+                  finished: f.finished,
+                  time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
+                };
+              });
+              break;
+            }
           }
-        }
-      } catch (e) {}
+        } catch (e) {}
+      }
     }
 
     if (fixtures.length === 0) {
-      fixtures = SAMPLE_FIXTURES;
+      fixtures = DEMO_FIXTURE_SCHEDULES[state.currentGw] || DEMO_FIXTURE_SCHEDULES[1];
     }
 
     container.innerHTML = fixtures.map(f => {
