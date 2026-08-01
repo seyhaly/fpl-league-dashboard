@@ -623,30 +623,51 @@
           return { gw: gwNum, scores, hits, transfers, benchPoints, captainPoints, chipsUsed };
         });
 
-        // Fetch Live FPL Gameweek & Event Status
+        // Fetch Live FPL Gameweek & Event Status with Multi-Proxy Fallback
         try {
-          const bsResp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/bootstrap-static/`);
-          if (bsResp.ok) {
-            const bsData = await bsResp.json();
-            if (bsData && bsData.events) {
-              bsData.events.forEach(ev => {
-                state.eventStatuses[ev.id] = {
-                  gw: ev.id,
-                  finished: ev.finished,
-                  data_checked: ev.data_checked,
-                  is_current: ev.is_current,
-                  is_previous: ev.is_previous,
-                  is_next: ev.is_next,
-                  deadline_time: ev.deadline_time,
-                  bonus_added: ev.finished || ev.data_checked,
-                  leagues: ev.data_checked ? 'Updated' : 'Updating'
-                };
-              });
-              const activeEv = bsData.events.find(e => e.is_current);
-              if (activeEv) {
-                state.maxGw = activeEv.id;
-                state.currentGw = activeEv.id;
+          const bsTargetUrl = 'https://fantasy.premierleague.com/api/bootstrap-static/';
+          const bsProxies = [
+            `https://api.allorigins.win/raw?url=${encodeURIComponent(bsTargetUrl)}`,
+            `https://corsproxy.io/?${encodeURIComponent(bsTargetUrl)}`
+          ];
+
+          let bsData = null;
+          for (const pUrl of bsProxies) {
+            try {
+              const res = await fetch(pUrl);
+              if (res.ok) {
+                bsData = await res.json();
+                if (bsData && bsData.events) break;
               }
+            } catch (e) {}
+          }
+
+          if (bsData && bsData.events) {
+            bsData.events.forEach(ev => {
+              state.eventStatuses[ev.id] = {
+                gw: ev.id,
+                finished: ev.finished,
+                data_checked: ev.data_checked,
+                is_current: ev.is_current,
+                is_previous: ev.is_previous,
+                is_next: ev.is_next,
+                deadline_time: ev.deadline_time,
+                bonus_added: ev.finished || ev.data_checked,
+                leagues: ev.data_checked ? 'Updated' : 'Updating'
+              };
+            });
+
+            if (bsData.elements && Array.isArray(bsData.elements)) {
+              window.PL_PLAYER_MAP = {};
+              bsData.elements.forEach(el => {
+                window.PL_PLAYER_MAP[el.id] = el.web_name || `${el.first_name} ${el.second_name}`;
+              });
+            }
+
+            const activeEv = bsData.events.find(e => e.is_current);
+            if (activeEv) {
+              state.maxGw = activeEv.id;
+              state.currentGw = activeEv.id;
             }
           }
 
