@@ -1926,24 +1926,31 @@
     const spotlightContainer = document.getElementById('gwSpotlightContainer');
     if (!spotlightContainer) return;
 
-    const gw = state.statusGw || state.currentGw || 1;
-    populateStatusGwDropdown(gw);
+    const gw = state.currentGw || 1;
     let statusObj = state.eventStatuses[gw];
+
+    const inputVal = (state.leagueIdInput ? state.leagueIdInput.value.trim().toLowerCase() : '');
+    const isDemoMode = inputVal === 'demo' || state.isDemoMode === true;
+    const isRealLeague = !isDemoMode;
 
     if (!statusObj) {
       const gwDataset = state.dataset.gameweeks ? state.dataset.gameweeks.find(g => g.gw === gw) : null;
       statusObj = {
         gw: gw,
-        finished: gwDataset ? (gwDataset.finished !== undefined ? gwDataset.finished : true) : (gw <= state.currentGw),
-        data_checked: gwDataset ? (gwDataset.data_checked !== undefined ? gwDataset.data_checked : true) : (gw <= state.currentGw),
-        bonus_added: gwDataset ? (gwDataset.bonus_added !== undefined ? gwDataset.bonus_added : true) : (gw <= state.currentGw),
-        leagues: gwDataset ? (gwDataset.leagues || 'Updated') : 'Updated',
+        finished: isDemoMode ? (gwDataset ? (gwDataset.finished !== undefined ? gwDataset.finished : true) : true) : false,
+        data_checked: isDemoMode ? (gwDataset ? (gwDataset.data_checked !== undefined ? gwDataset.data_checked : true) : true) : false,
+        bonus_added: isDemoMode ? (gwDataset ? (gwDataset.bonus_added !== undefined ? gwDataset.bonus_added : true) : true) : false,
+        leagues: isDemoMode ? 'Updated' : 'Pending',
         daily_status: gwDataset ? gwDataset.daily_status : [],
-        is_current: gw === state.currentGw
+        is_current: true
       };
     } else {
       if (statusObj.is_current === undefined) statusObj.is_current = (gw === state.currentGw);
-      if (!statusObj.leagues) statusObj.leagues = 'Updated';
+      if (!isDemoMode && (!statusObj.finished || !statusObj.data_checked)) {
+        statusObj.leagues = 'Pending';
+      } else if (!statusObj.leagues) {
+        statusObj.leagues = 'Updated';
+      }
     }
 
     // Determine daily_status for current/past/future GWs
@@ -1952,9 +1959,6 @@
       : null;
 
     if (!dailyStatus) {
-      const isPast = gw < state.currentGw || (statusObj && statusObj.finished && !statusObj.is_current);
-      const isCurrent = gw === state.currentGw;
-      
       // Calculate realistic dates for GW n based on deadline_time or August 2026 season start
       let gwStart = new Date(2026, 7, 21); // Aug 21 2026
       if (statusObj && statusObj.deadline_time) {
@@ -1969,21 +1973,16 @@
       const d1Str = gwSat.toISOString().split('T')[0];
       const d2Str = gwSun.toISOString().split('T')[0];
 
-      if (isPast) {
+      if (isDemoMode) {
         dailyStatus = [
           { date: d1Str, points: 'r', bonus_added: true },
           { date: d2Str, points: 'r', bonus_added: true }
         ];
-      } else if (isCurrent) {
-        dailyStatus = [
-          { date: d1Str, points: 'r', bonus_added: true },
-          { date: d2Str, points: (statusObj.finished ? 'r' : 'p'), bonus_added: !!statusObj.bonus_added }
-        ];
       } else {
-        // Future / Pre-season GW
+        const isFinished = Boolean(statusObj.finished && statusObj.data_checked);
         dailyStatus = [
-          { date: d1Str, points: 'p', bonus_added: false },
-          { date: d2Str, points: 'p', bonus_added: false }
+          { date: d1Str, points: isFinished ? 'r' : 'p', bonus_added: isFinished },
+          { date: d2Str, points: isFinished ? 'r' : 'p', bonus_added: isFinished }
         ];
       }
     }
@@ -1992,12 +1991,17 @@
     let overallStatusLabel = 'Upcoming';
     let overallStatusClass = 'pipe-badge-muted';
 
-    if (gw < state.currentGw || (statusObj.finished && statusObj.data_checked)) {
+    if (isDemoMode || (statusObj.finished && statusObj.data_checked)) {
       overallStatusLabel = 'Finalized';
       overallStatusClass = 'pipe-badge-success';
-    } else if (gw === state.currentGw) {
-      overallStatusLabel = statusObj.data_checked ? 'Finalized' : 'In Progress';
-      overallStatusClass = statusObj.data_checked ? 'pipe-badge-success' : 'pipe-badge-live';
+    } else if (statusObj.finished || statusObj.is_current) {
+      if (!isDemoMode && (!statusObj.finished && !statusObj.data_checked)) {
+        overallStatusLabel = 'Upcoming';
+        overallStatusClass = 'pipe-badge-muted';
+      } else {
+        overallStatusLabel = statusObj.data_checked ? 'Finalized' : 'In Progress';
+        overallStatusClass = statusObj.data_checked ? 'pipe-badge-success' : 'pipe-badge-live';
+      }
     }
 
     // ── Compute progress bar ──────────────────────────────
