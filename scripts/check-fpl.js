@@ -426,6 +426,59 @@ async function run() {
             `).join('')}
           </tbody>
         </table>
+
+        <!-- Fetch Premier League Match Schedules & Results for currentGw -->
+        ${(() => {
+          let fixturesEmailHtml = '';
+          return (async () => {
+            try {
+              const fixResp = await fetch(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGw}`);
+              if (fixResp.ok) {
+                const rawFix = await fixResp.json();
+                const bootResp = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/');
+                let teamMap = {};
+                if (bootResp.ok) {
+                  const bootData = await bootResp.json();
+                  if (bootData && bootData.teams) {
+                    bootData.teams.forEach(t => { teamMap[t.id] = t.name; });
+                  }
+                }
+
+                if (rawFix && rawFix.length > 0) {
+                  const rows = rawFix.map(f => {
+                    const home = teamMap[f.team_h] || `Team ${f.team_h}`;
+                    const away = teamMap[f.team_a] || `Team ${f.team_a}`;
+                    const score = f.finished ? `${f.team_h_score} - ${f.team_a_score}` : (f.started ? `LIVE ${f.team_h_score}-${f.team_a_score}` : 'vs');
+                    const status = f.finished ? 'FT' : (f.started ? 'LIVE 🔴' : (f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : 'Scheduled'));
+                    return `
+                      <tr style="border-bottom:1px solid #1e293b;">
+                        <td style="padding:8px 12px;text-align:right;font-weight:700;color:#f8fafc;width:40%;">${home}</td>
+                        <td style="padding:8px;text-align:center;width:20%;">
+                          <span style="display:inline-block;padding:3px 10px;border-radius:6px;background:rgba(255,255,255,0.06);color:#00ff87;font-weight:800;font-size:12px;">${score}</span>
+                          <span style="display:block;font-size:9px;color:#94a3b8;margin-top:2px;font-weight:700;">${status}</span>
+                        </td>
+                        <td style="padding:8px 12px;text-align:left;font-weight:700;color:#f8fafc;width:40%;">${away}</td>
+                      </tr>
+                    `;
+                  }).join('');
+
+                  fixturesEmailHtml = `
+                    <div style="margin-top:28px;background:#0f172a;border-radius:12px;padding:16px;border:1px solid #1e293b;">
+                      <h3 style="margin:0 0 14px 0;color:#00ff87;font-family:'Outfit',sans-serif;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;">⚽ Premier League Gameweek ${currentGw} Match Results</h3>
+                      <table style="width:100%;border-collapse:collapse;font-size:13px;">
+                        ${rows}
+                      </table>
+                    </div>
+                  `;
+                }
+              }
+            } catch (err) {
+              console.warn('⚠️ Fixture fetch for email failed:', err);
+            }
+            return fixturesEmailHtml;
+          })();
+        })()}
+
       </div>
     </body>
     </html>

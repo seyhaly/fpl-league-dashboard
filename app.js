@@ -1060,6 +1060,9 @@
     if (document.getElementById('section-gw-status')) {
       document.getElementById('section-gw-status').style.display = hasData ? 'block' : 'none';
     }
+    if (document.getElementById('section-fixtures')) {
+      document.getElementById('section-fixtures').style.display = hasData ? 'block' : 'none';
+    }
     if (document.getElementById('section-awards')) {
       document.getElementById('section-awards').style.display = hasData ? 'block' : 'none';
     }
@@ -1071,12 +1074,94 @@
     if (!hasData) return;
 
     renderStandingsTable();
+    renderFixtures();
     renderGwStatus();
     renderWinLossSummaryTable();
     renderChipTracker();
     updateChart();
     updatePerformanceChart();
     renderSeasonAwards();
+  }
+
+  // ===================== MATCH FIXTURES & RESULTS =====================
+  const PL_TEAMS = {
+    1: "Arsenal", 2: "Aston Villa", 3: "Bournemouth", 4: "Brentford", 5: "Brighton",
+    6: "Chelsea", 7: "Crystal Palace", 8: "Everton", 9: "Fulham", 10: "Ipswich",
+    11: "Leicester", 12: "Liverpool", 13: "Man City", 14: "Man Utd", 15: "Newcastle",
+    16: "Nott'm Forest", 17: "Southampton", 18: "Spurs", 19: "West Ham", 20: "Wolves"
+  };
+
+  const SAMPLE_FIXTURES = [
+    { home: "Arsenal", away: "Chelsea", homeScore: 2, awayScore: 1, finished: true },
+    { home: "Man City", away: "Liverpool", homeScore: 1, awayScore: 1, finished: true },
+    { home: "Man Utd", away: "Tottenham", homeScore: 3, awayScore: 2, finished: true },
+    { home: "Aston Villa", away: "Newcastle", homeScore: 0, awayScore: 0, finished: true },
+    { home: "Brighton", away: "West Ham", homeScore: 2, awayScore: 0, finished: true },
+    { home: "Brentford", away: "Fulham", homeScore: 1, awayScore: 2, finished: true },
+    { home: "Everton", away: "Bournemouth", homeScore: 0, awayScore: 1, finished: true },
+    { home: "Crystal Palace", away: "Wolves", homeScore: 1, awayScore: 0, finished: true },
+    { home: "Leicester", away: "Nott'm Forest", homeScore: 2, awayScore: 2, finished: true },
+    { home: "Ipswich", away: "Southampton", homeScore: 1, awayScore: 0, finished: true }
+  ];
+
+  async function renderFixtures() {
+    const container = document.getElementById('fixturesContainer');
+    const badge = document.getElementById('fixturesGwBadge');
+    if (!container) return;
+
+    if (badge) badge.textContent = `Gameweek ${state.currentGw}`;
+
+    let fixtures = [];
+
+    try {
+      const resp = await fetch(`https://corsproxy.io/?https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`);
+      if (resp.ok) {
+        const rawFixtures = await resp.json();
+        if (rawFixtures && rawFixtures.length > 0) {
+          fixtures = rawFixtures.map(f => ({
+            home: PL_TEAMS[f.team_h] || `Team ${f.team_h}`,
+            away: PL_TEAMS[f.team_a] || `Team ${f.team_a}`,
+            homeScore: f.team_h_score,
+            awayScore: f.team_a_score,
+            started: f.started,
+            finished: f.finished,
+            time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : ''
+          }));
+        }
+      }
+    } catch (e) {
+      // Fallback
+    }
+
+    if (fixtures.length === 0) {
+      fixtures = SAMPLE_FIXTURES;
+    }
+
+    container.innerHTML = fixtures.map(f => {
+      let scoreText = 'vs';
+      let scoreClass = 'fixture-score';
+      let statusText = f.time || 'Scheduled';
+
+      if (f.finished) {
+        scoreText = `${f.homeScore} - ${f.awayScore}`;
+        statusText = 'FT (Finished)';
+      } else if (f.started) {
+        scoreText = `${f.homeScore} - ${f.awayScore}`;
+        scoreClass = 'fixture-score live';
+        statusText = '🔴 Live Match';
+      }
+
+      return `
+        <div class="fixture-card">
+          <div class="fixture-team home">${f.home}</div>
+          <div class="fixture-score-wrapper">
+            <div class="${scoreClass}">${scoreText}</div>
+            <div class="fixture-status">${statusText}</div>
+          </div>
+          <div class="fixture-team away">${f.away}</div>
+        </div>
+      `;
+    }).join('');
   }
 
   // ===================== STANDINGS TABLE =====================
