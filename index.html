@@ -162,8 +162,9 @@
         <h3>Premier League Match Schedule &amp; Results</h3>
         <div class="fixtures-gw-nav">
           <button class="btn-gw-step" id="fixturesPrevGwBtn" onclick="changeFixturesGw(-1)" title="Previous Gameweek">‹</button>
-          <span id="fixturesGwBadge" class="fixtures-gw-badge">Gameweek 1</span>
+          <select id="fixturesGwSelect" class="fixtures-gw-select" onchange="selectFixturesGw(this.value)"></select>
           <button class="btn-gw-step" id="fixturesNextGwBtn" onclick="changeFixturesGw(1)" title="Next Gameweek">›</button>
+          <button class="btn-fixtures-current-gw" onclick="jumpToCurrentFixturesGw()">Current GW</button>
         </div>
       </div>
       <button class="collapse-btn" data-target="fixturesCollapse">▲ Collapse</button>
@@ -230,6 +231,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
-<script src="app.js?v=19.0"></script>
+<script src="app.js?v=20.0"></script>
 </body>
 </html>

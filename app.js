@@ -1341,6 +1341,57 @@
     return { home, away };
   }
 
+  function getFixturesForGameweek(gw) {
+    if (DEMO_FIXTURE_SCHEDULES[gw]) return DEMO_FIXTURE_SCHEDULES[gw];
+
+    // Algorithmic 10-match Premier League pairing for Gameweeks 1-38
+    const teamIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+    const offset = (gw - 1) % 19;
+    const rotated = [teamIds[0], ...teamIds.slice(1 + offset), ...teamIds.slice(1, 1 + offset)];
+    
+    const matches = [];
+    for (let i = 0; i < 10; i++) {
+      const hId = (gw % 2 === 0) ? rotated[i] : rotated[19 - i];
+      const aId = (gw % 2 === 0) ? rotated[19 - i] : rotated[i];
+      const homeTeam = PL_TEAMS[hId] || { name: `Team ${hId}`, badge: '' };
+      const awayTeam = PL_TEAMS[aId] || { name: `Team ${aId}`, badge: '' };
+      matches.push({
+        home: homeTeam.name,
+        homeBadge: homeTeam.badge,
+        away: awayTeam.name,
+        awayBadge: awayTeam.badge,
+        homeScore: null,
+        awayScore: null,
+        finished: false,
+        started: false,
+        time: `Gameweek ${gw} Fixture`
+      });
+    }
+    return matches;
+  }
+
+  function populateFixturesGwDropdown(activeGw) {
+    const select = document.getElementById('fixturesGwSelect');
+    if (!select) return;
+    let html = '';
+    for (let gw = 1; gw <= 38; gw++) {
+      const isCurrentMark = (gw === (state.currentGw || 1)) ? ' (Current)' : '';
+      const selected = (gw === activeGw) ? 'selected' : '';
+      html += `<option value="${gw}" ${selected}>Gameweek ${gw}${isCurrentMark}</option>`;
+    }
+    select.innerHTML = html;
+  }
+
+  window.selectFixturesGw = function(val) {
+    state.fixturesGw = parseInt(val, 10) || 1;
+    renderFixtures();
+  };
+
+  window.jumpToCurrentFixturesGw = function() {
+    state.fixturesGw = state.currentGw || 1;
+    renderFixtures();
+  };
+
   window.changeFixturesGw = function(delta) {
     const current = state.fixturesGw || state.currentGw || 1;
     const nextGw = Math.max(1, Math.min(38, current + delta));
@@ -1350,14 +1401,13 @@
 
   async function renderFixtures() {
     const container = document.getElementById('fixturesContainer');
-    const badge = document.getElementById('fixturesGwBadge');
     const prevBtn = document.getElementById('fixturesPrevGwBtn');
     const nextBtn = document.getElementById('fixturesNextGwBtn');
     if (!container) return;
 
     const targetGw = state.fixturesGw || state.currentGw || 1;
 
-    if (badge) badge.textContent = `Gameweek ${targetGw}`;
+    populateFixturesGwDropdown(targetGw);
     if (prevBtn) prevBtn.disabled = targetGw <= 1;
     if (nextBtn) nextBtn.disabled = targetGw >= 38;
 
@@ -1409,7 +1459,7 @@
 
     // Demo Mode or Real League fallback
     if (fixtures.length === 0) {
-      const demoList = DEMO_FIXTURE_SCHEDULES[targetGw] || DEMO_FIXTURE_SCHEDULES[1];
+      const demoList = getFixturesForGameweek(targetGw);
       if (isRealLeague) {
         fixtures = demoList.map(f => ({
           ...f,
