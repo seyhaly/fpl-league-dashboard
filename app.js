@@ -1350,10 +1350,12 @@
 
     let fixtures = [];
 
-    // Check if live FPL league or pre-season mode
-    const isLiveLeague = Boolean(state.leagueIdInput && state.leagueIdInput.value.trim() !== '');
+    // Check if in Demo Mode vs Real League
+    const inputVal = (state.leagueIdInput ? state.leagueIdInput.value.trim().toLowerCase() : '');
+    const isDemoMode = inputVal === 'demo' || inputVal === '' || state.isDemoMode === true;
+    const isRealLeague = !isDemoMode;
 
-    if (isLiveLeague) {
+    if (isRealLeague) {
       const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${state.currentGw}`;
       const proxies = [
         `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
@@ -1375,10 +1377,10 @@
                   homeBadge: homeData.badge,
                   away: awayData.name,
                   awayBadge: awayData.badge,
-                  homeScore: f.team_h_score,
-                  awayScore: f.team_a_score,
-                  started: f.started,
-                  finished: f.finished,
+                  homeScore: f.finished || f.started ? f.team_h_score : null,
+                  awayScore: f.finished || f.started ? f.team_a_score : null,
+                  started: Boolean(f.started),
+                  finished: Boolean(f.finished),
                   time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '',
                   stats: parsedStats
                 };
@@ -1393,7 +1395,7 @@
     // Demo Mode or Real League fallback
     if (fixtures.length === 0) {
       const demoList = DEMO_FIXTURE_SCHEDULES[state.currentGw] || DEMO_FIXTURE_SCHEDULES[1];
-      if (isLiveLeague) {
+      if (isRealLeague) {
         fixtures = demoList.map(f => ({
           ...f,
           homeScore: null,
