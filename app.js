@@ -1230,28 +1230,60 @@
     ]
   };
 
-  function renderTeamStatsHtml(s) {
-    if (!s) return `<div class="no-stats-text">No match stats recorded yet</div>`;
-    
-    let html = '';
-    if (s.goals && s.goals.length > 0) {
-      html += `<div class="fixture-stat-row"><span class="stat-icon">⚽</span> <span class="stat-tag">${s.goals.join(', ')}</span></div>`;
-    }
-    if (s.assists && s.assists.length > 0) {
-      html += `<div class="fixture-stat-row"><span class="stat-icon">🅰️</span> <span>${s.assists.join(', ')}</span></div>`;
-    }
-    if (s.bonus && s.bonus.length > 0) {
-      html += `<div class="fixture-stat-row"><span class="stat-icon">🌟</span> <span>${s.bonus.join(', ')}</span></div>`;
-    }
-    if (s.cards && s.cards.length > 0) {
-      html += `<div class="fixture-stat-row"><span class="stat-icon">🟨</span> <span>${s.cards.join(', ')}</span></div>`;
-    }
-    if (s.saves && s.saves.length > 0) {
-      html += `<div class="fixture-stat-row"><span class="stat-icon">🧤</span> <span>${s.saves.join(', ')}</span></div>`;
+  function renderMatchTimelineDrawer(stats) {
+    if (!stats || (!stats.home && !stats.away)) {
+      return `<div class="no-events-muted" style="text-align:center;">No match statistics recorded yet.</div>`;
     }
 
-    if (!html) html = `<div class="no-stats-text">No fantasy events recorded</div>`;
-    return html;
+    const home = stats.home || { goals: [], assists: [], bonus: [], cards: [], saves: [] };
+    const away = stats.away || { goals: [], assists: [], bonus: [], cards: [], saves: [] };
+
+    // 1. Goals & Assists
+    const hasGoals = (home.goals && home.goals.length > 0) || (away.goals && away.goals.length > 0);
+    const homeGoalsHtml = (home.goals || []).map(g => `<div class="stat-event-item">⚽ ${g}</div>`).join('') +
+                          (home.assists || []).map(a => `<div class="stat-event-sub">🅰️ ${a}</div>`).join('');
+    const awayGoalsHtml = (away.goals || []).map(g => `<div class="stat-event-item">⚽ ${g}</div>`).join('') +
+                          (away.assists || []).map(a => `<div class="stat-event-sub">🅰️ ${a}</div>`).join('');
+
+    // 2. Bonus Points
+    const bonusList = [];
+    (home.bonus || []).forEach(b => bonusList.push({ team: 'home', text: b }));
+    (away.bonus || []).forEach(b => bonusList.push({ team: 'away', text: b }));
+
+    const bonusPillsHtml = bonusList.length > 0 ?
+      bonusList.map(b => `<span class="bonus-pill">🌟 ${b.text}</span>`).join('') :
+      `<span class="no-events-muted">No bonus awarded</span>`;
+
+    // 3. Cards
+    const hasCards = (home.cards && home.cards.length > 0) || (away.cards && away.cards.length > 0);
+    const homeCardsHtml = (home.cards || []).map(c => `<div class="stat-event-item">${c}</div>`).join('');
+    const awayCardsHtml = (away.cards || []).map(c => `<div class="stat-event-item">${c}</div>`).join('');
+
+    return `
+      <div class="stat-category-block">
+        <div class="stat-category-title">⚽ Goals &amp; Assists</div>
+        <div class="stat-timeline-grid">
+          <div class="stat-side home">${homeGoalsHtml || '<span class="no-events-muted">-</span>'}</div>
+          <div class="stat-divider"></div>
+          <div class="stat-side away">${awayGoalsHtml || '<span class="no-events-muted">-</span>'}</div>
+        </div>
+      </div>
+
+      <div class="stat-category-block">
+        <div class="stat-category-title">🌟 Bonus Points (FPL)</div>
+        <div class="bonus-pills-row">${bonusPillsHtml}</div>
+      </div>
+
+      ${hasCards ? `
+      <div class="stat-category-block">
+        <div class="stat-category-title">🟨 Cards &amp; Discipline</div>
+        <div class="stat-timeline-grid">
+          <div class="stat-side home">${homeCardsHtml || '<span class="no-events-muted">-</span>'}</div>
+          <div class="stat-divider"></div>
+          <div class="stat-side away">${awayCardsHtml || '<span class="no-events-muted">-</span>'}</div>
+        </div>
+      </div>` : ''}
+    `;
   }
 
   function parseLiveFixtureStats(statsArray, playerMap = {}) {
@@ -1397,15 +1429,7 @@
           </div>
 
           <div class="fixture-details-drawer">
-            <div class="fixture-stats-header">Match Overview &amp; FPL Statistics</div>
-            <div class="fixture-stats-grid">
-              <div class="fixture-team-stats home">
-                ${renderTeamStatsHtml(f.stats ? f.stats.home : null)}
-              </div>
-              <div class="fixture-team-stats away">
-                ${renderTeamStatsHtml(f.stats ? f.stats.away : null)}
-              </div>
-            </div>
+            ${renderMatchTimelineDrawer(f.stats)}
           </div>
         </div>
       `;
