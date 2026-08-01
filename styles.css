@@ -1733,3 +1733,63 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   color: var(--text-muted);
   font-style: italic;
 }
+
+/* Light Theme Overrides for Match Cards & Timeline Drawer */
+[data-theme="light"] .fixture-card-wrapper {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="light"] .fixture-card-wrapper:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .fixture-score {
+  background: #f1f5f9;
+  color: #0284c7;
+  border-color: #cbd5e1;
+}
+
+[data-theme="light"] .fixture-status {
+  color: #64748b;
+}
+
+[data-theme="light"] .fixture-expand-hint {
+  color: #0284c7;
+}
+
+[data-theme="light"] .fixture-details-drawer {
+  background: #f8fafc;
+  border-top-color: #e2e8f0;
+  color: #334155;
+}
+
+[data-theme="light"] .stat-category-block {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="light"] .stat-category-title {
+  color: #0284c7;
+}
+
+[data-theme="light"] .stat-event-item {
+  color: #0f172a;
+}
+
+[data-theme="light"] .stat-event-sub {
+  color: #64748b;
+}
+
+[data-theme="light"] .bonus-pill {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+[data-theme="light"] .no-events-muted {
+  color: #94a3b8;
+}
