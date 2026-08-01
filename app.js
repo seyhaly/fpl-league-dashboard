@@ -1230,13 +1230,6 @@
     ]
   };
 
-  async function renderFixtures() {
-    const container = document.getElementById('fixturesContainer');
-    const badge = document.getElementById('fixturesGwBadge');
-    if (!container) return;
-
-    if (badge) badge.textContent = `Gameweek ${state.currentGw}`;
-
   function renderTeamStatsHtml(s) {
     if (!s) return `<div class="no-stats-text">No match stats recorded yet</div>`;
     
