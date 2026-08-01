@@ -1518,29 +1518,36 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border: 1px solid var(--border-subtle);
 }
 
-/* ===================== MATCH FIXTURES GRID ===================== */
+/* ===================== MATCH FIXTURES GRID & EXPANDABLE DRAWER ===================== */
 .fixtures-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   gap: 14px;
   margin-top: 10px;
 }
 
-.fixture-card {
+.fixture-card-wrapper {
+  display: flex;
+  flex-direction: column;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.fixture-card-wrapper:hover {
+  border-color: var(--pl-purple);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.fixture-card {
   padding: 12px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: all 0.2s ease;
-}
-
-.fixture-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--pl-purple);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  cursor: pointer;
+  user-select: none;
 }
 
 .fixture-team {
@@ -1588,14 +1595,111 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .fixture-score.live {
   background: rgba(239, 68, 68, 0.15);
   color: #ef4444;
-  border-color: rgba(239, 68, 68, 0.4);
+  border-color: rgba(239, 68, 68, 0.3);
 }
 
 .fixture-status {
   font-size: 10px;
-  font-weight: 800;
   color: var(--text-muted);
-  margin-top: 3px;
+  margin-top: 4px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.fixture-expand-hint {
+  font-size: 10px;
+  color: var(--pl-cyan);
+  margin-top: 2px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.fixture-expand-icon {
+  display: inline-block;
+  transition: transform 0.25s ease;
+  font-size: 8px;
+}
+
+.fixture-card-wrapper.open .fixture-expand-icon {
+  transform: rotate(180deg);
+}
+
+/* Match Details Drawer */
+.fixture-details-drawer {
+  display: none;
+  background: rgba(15, 23, 42, 0.55);
+  border-top: 1px dashed var(--border-subtle);
+  padding: 12px 14px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.fixture-card-wrapper.open .fixture-details-drawer {
+  display: block;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.fixture-stats-header {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  color: var(--pl-cyan);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.fixture-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.fixture-team-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fixture-team-stats.home {
+  text-align: right;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  padding-right: 10px;
+}
+
+.fixture-team-stats.away {
+  text-align: left;
+  padding-left: 4px;
+}
+
+.fixture-stat-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.fixture-team-stats.home .fixture-stat-row { justify-content: flex-end; }
+.fixture-team-stats.away .fixture-stat-row { justify-content: flex-start; }
+
+.stat-tag {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-icon {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.no-stats-text {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 4px 0;
 }

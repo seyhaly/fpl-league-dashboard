@@ -1237,6 +1237,71 @@
 
     if (badge) badge.textContent = `Gameweek ${state.currentGw}`;
 
+  function renderTeamStatsHtml(s) {
+    if (!s) return `<div class="no-stats-text">No match stats recorded yet</div>`;
+    
+    let html = '';
+    if (s.goals && s.goals.length > 0) {
+      html += `<div class="fixture-stat-row"><span class="stat-icon">⚽</span> <span class="stat-tag">${s.goals.join(', ')}</span></div>`;
+    }
+    if (s.assists && s.assists.length > 0) {
+      html += `<div class="fixture-stat-row"><span class="stat-icon">🅰️</span> <span>${s.assists.join(', ')}</span></div>`;
+    }
+    if (s.bonus && s.bonus.length > 0) {
+      html += `<div class="fixture-stat-row"><span class="stat-icon">🌟</span> <span>${s.bonus.join(', ')}</span></div>`;
+    }
+    if (s.cards && s.cards.length > 0) {
+      html += `<div class="fixture-stat-row"><span class="stat-icon">🟨</span> <span>${s.cards.join(', ')}</span></div>`;
+    }
+    if (s.saves && s.saves.length > 0) {
+      html += `<div class="fixture-stat-row"><span class="stat-icon">🧤</span> <span>${s.saves.join(', ')}</span></div>`;
+    }
+
+    if (!html) html = `<div class="no-stats-text">No fantasy events recorded</div>`;
+    return html;
+  }
+
+  function parseLiveFixtureStats(statsArray, playerMap = {}) {
+    const home = { goals: [], assists: [], bonus: [], cards: [], saves: [] };
+    const away = { goals: [], assists: [], bonus: [], cards: [], saves: [] };
+
+    if (!Array.isArray(statsArray)) return { home, away };
+
+    statsArray.forEach(st => {
+      const id = st.identifier;
+      (st.h || []).forEach(item => {
+        const name = playerMap[item.element] || `Player #${item.element}`;
+        const count = item.value > 1 ? ` (${item.value})` : '';
+        if (id === 'goals_scored') home.goals.push(`${name}${count}`);
+        if (id === 'assists') home.assists.push(`${name}${count}`);
+        if (id === 'bonus') home.bonus.push(`${name} (${item.value} pts)`);
+        if (id === 'yellow_cards') home.cards.push(`${name} 🟨`);
+        if (id === 'red_cards') home.cards.push(`${name} 🟥`);
+        if (id === 'penalties_saved') home.saves.push(`${name} (Pen Saved)`);
+      });
+
+      (st.a || []).forEach(item => {
+        const name = playerMap[item.element] || `Player #${item.element}`;
+        const count = item.value > 1 ? ` (${item.value})` : '';
+        if (id === 'goals_scored') away.goals.push(`${name}${count}`);
+        if (id === 'assists') away.assists.push(`${name}${count}`);
+        if (id === 'bonus') away.bonus.push(`${name} (${item.value} pts)`);
+        if (id === 'yellow_cards') away.cards.push(`${name} 🟨`);
+        if (id === 'red_cards') away.cards.push(`${name} 🟥`);
+        if (id === 'penalties_saved') away.saves.push(`${name} (Pen Saved)`);
+      });
+    });
+
+    return { home, away };
+  }
+
+  async function renderFixtures() {
+    const container = document.getElementById('fixturesContainer');
+    const badge = document.getElementById('fixturesGwBadge');
+    if (!container) return;
+
+    if (badge) badge.textContent = `Gameweek ${state.currentGw}`;
+
     let fixtures = [];
 
     // Check if live FPL league or pre-season mode
@@ -1258,6 +1323,7 @@
               fixtures = rawFixtures.map(f => {
                 const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
                 const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
+                const parsedStats = parseLiveFixtureStats(f.stats, window.PL_PLAYER_MAP || {});
                 return {
                   home: homeData.name,
                   homeBadge: homeData.badge,
@@ -1267,7 +1333,8 @@
                   awayScore: f.team_a_score,
                   started: f.started,
                   finished: f.finished,
-                  time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : ''
+                  time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '',
+                  stats: parsedStats
                 };
               });
               break;
@@ -1277,8 +1344,26 @@
       }
     }
 
+    // Demo Mode default stats generator if stats missing
     if (fixtures.length === 0) {
-      fixtures = DEMO_FIXTURE_SCHEDULES[state.currentGw] || DEMO_FIXTURE_SCHEDULES[1];
+      const demoList = DEMO_FIXTURE_SCHEDULES[state.currentGw] || DEMO_FIXTURE_SCHEDULES[1];
+      fixtures = demoList.map(f => ({
+        ...f,
+        stats: f.stats || {
+          home: {
+            goals: f.homeScore > 0 ? [`${f.home} Goalscorer 1`, f.homeScore > 1 ? `${f.home} Goalscorer 2` : null].filter(Boolean) : [],
+            assists: f.homeScore > 0 ? [`${f.home} Playmaker`] : [],
+            bonus: f.homeScore >= f.awayScore ? [`${f.home} Star (3 pts)`, `${f.home} Defender (2 pts)`] : [],
+            cards: [`${f.home} Defender 🟨`]
+          },
+          away: {
+            goals: f.awayScore > 0 ? [`${f.away} Striker 1`, f.awayScore > 1 ? `${f.away} Winger 1` : null].filter(Boolean) : [],
+            assists: f.awayScore > 0 ? [`${f.away} Midfielder`] : [],
+            bonus: f.awayScore >= f.homeScore ? [`${f.away} Star (3 pts)`] : [`${f.away} Keeper (1 pt)`],
+            cards: [`${f.away} Midfielder 🟨`]
+          }
+        }
+      }));
     }
 
     container.innerHTML = fixtures.map(f => {
@@ -1299,18 +1384,35 @@
       const awayImg = f.awayBadge ? `<img src="${f.awayBadge}" class="fixture-team-badge" alt="${f.away}">` : '';
 
       return `
-        <div class="fixture-card">
-          <div class="fixture-team home">
-            <span>${f.home}</span>
-            ${homeImg}
+        <div class="fixture-card-wrapper" onclick="this.classList.toggle('open')">
+          <div class="fixture-card">
+            <div class="fixture-team home">
+              <span>${f.home}</span>
+              ${homeImg}
+            </div>
+            <div class="fixture-score-wrapper">
+              <div class="${scoreClass}">${scoreText}</div>
+              <div class="fixture-status">${statusText}</div>
+              <div class="fixture-expand-hint">
+                <span>Details</span> <span class="fixture-expand-icon">▼</span>
+              </div>
+            </div>
+            <div class="fixture-team away">
+              ${awayImg}
+              <span>${f.away}</span>
+            </div>
           </div>
-          <div class="fixture-score-wrapper">
-            <div class="${scoreClass}">${scoreText}</div>
-            <div class="fixture-status">${statusText}</div>
-          </div>
-          <div class="fixture-team away">
-            ${awayImg}
-            <span>${f.away}</span>
+
+          <div class="fixture-details-drawer">
+            <div class="fixture-stats-header">Match Overview &amp; FPL Statistics</div>
+            <div class="fixture-stats-grid">
+              <div class="fixture-team-stats home">
+                ${renderTeamStatsHtml(f.stats ? f.stats.home : null)}
+              </div>
+              <div class="fixture-team-stats away">
+                ${renderTeamStatsHtml(f.stats ? f.stats.away : null)}
+              </div>
+            </div>
           </div>
         </div>
       `;
