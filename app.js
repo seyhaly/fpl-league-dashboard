@@ -1399,115 +1399,9 @@
     renderFixtures();
   };
 
-  async function renderFixtures() {
-    const container = document.getElementById('fixturesContainer');
-    const prevBtn = document.getElementById('fixturesPrevGwBtn');
-    const nextBtn = document.getElementById('fixturesNextGwBtn');
-    if (!container) return;
-
-    const targetGw = state.fixturesGw || state.currentGw || 1;
-
-    populateFixturesGwDropdown(targetGw);
-    if (prevBtn) prevBtn.disabled = targetGw <= 1;
-    if (nextBtn) nextBtn.disabled = targetGw >= 38;
-
-    let fixtures = [];
-
-    // Check if in Demo Mode vs Real League
-    const inputVal = (state.leagueIdInput ? state.leagueIdInput.value.trim().toLowerCase() : '');
-    const isDemoMode = inputVal === 'demo' || state.isDemoMode === true;
-    const isRealLeague = !isDemoMode;
-
-    if (isRealLeague) {
-      const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${targetGw}`;
-      const proxies = [
-        `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
-        `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`
-      ];
-
-      for (const proxyUrl of proxies) {
-        try {
-          const resp = await fetch(proxyUrl);
-          if (resp.ok) {
-            const rawFixtures = await resp.json();
-            if (Array.isArray(rawFixtures) && rawFixtures.length > 0) {
-              fixtures = rawFixtures.map(f => {
-                const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
-                const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
-                const parsedStats = parseLiveFixtureStats(f.stats, window.PL_PLAYER_MAP || {});
-                const isLiveOrFinished = Boolean(f.started || f.finished) && f.team_h_score !== null;
-
-                return {
-                  home: homeData.name,
-                  homeBadge: homeData.badge,
-                  away: awayData.name,
-                  awayBadge: awayData.badge,
-                  homeScore: isLiveOrFinished ? f.team_h_score : null,
-                  awayScore: isLiveOrFinished ? f.team_a_score : null,
-                  started: isLiveOrFinished ? Boolean(f.started) : false,
-                  finished: isLiveOrFinished ? Boolean(f.finished) : false,
-                  time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '',
-                  stats: parsedStats
-                };
-              });
-              break;
-            }
-          }
-        } catch (e) {}
-      }
-    }
-
-    // Demo Mode or Real League fallback
-    if (fixtures.length === 0) {
-      const demoList = getFixturesForGameweek(targetGw);
-      if (isRealLeague) {
-        fixtures = demoList.map(f => ({
-          ...f,
-          homeScore: null,
-          awayScore: null,
-          finished: false,
-          started: false,
-          stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
-        }));
-      } else {
-        fixtures = demoList.map(f => ({
-          ...f,
-          stats: f.stats || {
-            home: {
-              goals: f.homeScore > 0 ? [`${f.home} Goalscorer 1`, f.homeScore > 1 ? `${f.home} Goalscorer 2` : null].filter(Boolean) : [],
-              assists: f.homeScore > 0 ? [`${f.home} Playmaker`] : [],
-              bonus: f.homeScore >= f.awayScore ? [`${f.home} Star (3 pts)`, `${f.home} Defender (2 pts)`] : [],
-              cards: [`${f.home} Defender 🟨`]
-            },
-            away: {
-              goals: f.awayScore > 0 ? [`${f.away} Striker 1`, f.awayScore > 1 ? `${f.away} Winger 1` : null].filter(Boolean) : [],
-              assists: f.awayScore > 0 ? [`${f.away} Midfielder`] : [],
-              bonus: f.awayScore >= f.homeScore ? [`${f.away} Star (3 pts)`] : [`${f.away} Keeper (1 pt)`],
-              cards: [`${f.away} Midfielder 🟨`]
-            }
-          }
-        }));
-      }
-    }
-
-    // Unplayed match protection for Real Leagues in pre-season
-    if (isRealLeague) {
-      fixtures = fixtures.map(f => {
-        if (!f.started && !f.finished) {
-          return {
-            ...f,
-            homeScore: null,
-            awayScore: null,
-            finished: false,
-            started: false,
-            stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
-          };
-        }
-        return f;
-      });
-    }
-
-    container.innerHTML = fixtures.map(f => {
+  function drawFixturesCards(container, fixturesList) {
+    if (!container || !Array.isArray(fixturesList)) return;
+    container.innerHTML = fixturesList.map(f => {
       let scoreText = '-';
       let scoreClass = 'fixture-score';
       let statusText = f.time || 'Scheduled';
@@ -1550,6 +1444,97 @@
         </div>
       `;
     }).join('');
+  }
+
+  async function renderFixtures() {
+    const container = document.getElementById('fixturesContainer');
+    const prevBtn = document.getElementById('fixturesPrevGwBtn');
+    const nextBtn = document.getElementById('fixturesNextGwBtn');
+    if (!container) return;
+
+    const targetGw = state.fixturesGw || state.currentGw || 1;
+
+    populateFixturesGwDropdown(targetGw);
+    if (prevBtn) prevBtn.disabled = targetGw <= 1;
+    if (nextBtn) nextBtn.disabled = targetGw >= 38;
+
+    // Check if in Demo Mode vs Real League
+    const inputVal = (state.leagueIdInput ? state.leagueIdInput.value.trim().toLowerCase() : '');
+    const isDemoMode = inputVal === 'demo' || state.isDemoMode === true;
+    const isRealLeague = !isDemoMode;
+
+    // ⚡ INSTANT 0ms RENDERING from local schedule map
+    const defaultList = getFixturesForGameweek(targetGw);
+    const initialList = isRealLeague
+      ? defaultList.map(f => ({
+          ...f,
+          homeScore: null,
+          awayScore: null,
+          finished: false,
+          started: false,
+          stats: { home: { goals: [], assists: [], bonus: [], cards: [] }, away: { goals: [], assists: [], bonus: [], cards: [] } }
+        }))
+      : defaultList.map(f => ({
+          ...f,
+          stats: f.stats || {
+            home: {
+              goals: f.homeScore > 0 ? [`${f.home} Goalscorer 1`, f.homeScore > 1 ? `${f.home} Goalscorer 2` : null].filter(Boolean) : [],
+              assists: f.homeScore > 0 ? [`${f.home} Playmaker`] : [],
+              bonus: f.homeScore >= f.awayScore ? [`${f.home} Star (3 pts)`, `${f.home} Defender (2 pts)`] : [],
+              cards: [`${f.home} Defender 🟨`]
+            },
+            away: {
+              goals: f.awayScore > 0 ? [`${f.away} Striker 1`, f.awayScore > 1 ? `${f.away} Winger 1` : null].filter(Boolean) : [],
+              assists: f.awayScore > 0 ? [`${f.away} Midfielder`] : [],
+              bonus: f.awayScore >= f.homeScore ? [`${f.away} Star (3 pts)`] : [`${f.away} Keeper (1 pt)`],
+              cards: [`${f.away} Midfielder 🟨`]
+            }
+          }
+        }));
+
+    drawFixturesCards(container, initialList);
+
+    // Background fetch for real leagues
+    if (isRealLeague) {
+      const targetUrl = `https://fantasy.premierleague.com/api/fixtures/?event=${targetGw}`;
+      const proxies = [
+        `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
+        `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`
+      ];
+
+      for (const proxyUrl of proxies) {
+        try {
+          const resp = await fetch(proxyUrl);
+          if (resp.ok) {
+            const rawFixtures = await resp.json();
+            if (Array.isArray(rawFixtures) && rawFixtures.length > 0) {
+              const liveFixtures = rawFixtures.map(f => {
+                const homeData = PL_TEAMS[f.team_h] || { name: `Team ${f.team_h}`, badge: '' };
+                const awayData = PL_TEAMS[f.team_a] || { name: `Team ${f.team_a}`, badge: '' };
+                const parsedStats = parseLiveFixtureStats(f.stats, window.PL_PLAYER_MAP || {});
+                const isLiveOrFinished = Boolean(f.started || f.finished) && f.team_h_score !== null;
+
+                return {
+                  home: homeData.name,
+                  homeBadge: homeData.badge,
+                  away: awayData.name,
+                  awayBadge: awayData.badge,
+                  homeScore: isLiveOrFinished ? f.team_h_score : null,
+                  awayScore: isLiveOrFinished ? f.team_a_score : null,
+                  started: isLiveOrFinished ? Boolean(f.started) : false,
+                  finished: isLiveOrFinished ? Boolean(f.finished) : false,
+                  time: f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : '',
+                  stats: parsedStats
+                };
+              });
+
+              drawFixturesCards(container, liveFixtures);
+              break;
+            }
+          }
+        } catch (e) {}
+      }
+    }
   }
 
   // ===================== STANDINGS TABLE =====================
