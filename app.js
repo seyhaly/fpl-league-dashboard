@@ -1421,20 +1421,22 @@
       return `
         <div class="fixture-card-wrapper" onclick="this.classList.toggle('open')">
           <div class="fixture-card">
-            <div class="fixture-team home">
-              <span>${f.home}</span>
-              ${homeImg}
-            </div>
-            <div class="fixture-score-wrapper">
+            <div class="fixture-main-row">
+              <div class="fixture-team home">
+                <span>${f.home}</span>
+                ${homeImg}
+              </div>
               <div class="${scoreClass}">${scoreText}</div>
+              <div class="fixture-team away">
+                ${awayImg}
+                <span>${f.away}</span>
+              </div>
+            </div>
+            <div class="fixture-sub-row">
               <div class="fixture-status">${statusText}</div>
               <div class="fixture-expand-hint">
                 <span>Details</span> <span class="fixture-expand-icon">▼</span>
               </div>
-            </div>
-            <div class="fixture-team away">
-              ${awayImg}
-              <span>${f.away}</span>
             </div>
           </div>
 
