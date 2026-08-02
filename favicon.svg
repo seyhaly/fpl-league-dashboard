@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38003c"/>
+      <stop offset="100%" stop-color="#05f0ff"/>
+    </linearGradient>
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff87"/>
+      <stop offset="100%" stop-color="#05f0ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle Container -->
+  <circle cx="32" cy="32" r="30" fill="url(#bgGrad)" stroke="#00ff87" stroke-width="2"/>
+  <!-- Crown Icon -->
+  <path d="M16 42 L20 22 L27 31 L32 18 L37 31 L44 22 L48 42 Z" fill="url(#crownGrad)" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Crown Jewels / Dots -->
+  <circle cx="20" cy="19" r="2.5" fill="#ffffff"/>
+  <circle cx="32" cy="15" r="3" fill="#00ff87"/>
+  <circle cx="44" cy="19" r="2.5" fill="#ffffff"/>
+  <!-- Bottom Base Line -->
+  <rect x="15" y="43" width="34" height="4" rx="2" fill="#ffffff"/>
+</svg>
