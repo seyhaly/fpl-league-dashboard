@@ -28,6 +28,28 @@ function getChipLabel(chipName) {
   return chipName;
 }
 
+async function fetchFplJson(targetUrl, timeoutMs = 5000) {
+  const directAndProxies = [
+    targetUrl,
+    `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`
+  ];
+
+  for (const url of directAndProxies) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), timeoutMs);
+      const resp = await fetch(url, { signal: controller.signal });
+      clearTimeout(timer);
+      if (resp.ok) {
+        const data = await resp.json();
+        if (data) return data;
+      }
+    } catch (e) {}
+  }
+  return null;
+}
+
 async function run() {
   console.log(`🔍 Checking FPL status for League: ${FPL_LEAGUE_ID}...`);
 
@@ -65,9 +87,10 @@ async function run() {
   // Try fetching live FPL API if numeric league ID
   if (/^\d+$/.test(FPL_LEAGUE_ID.trim())) {
     try {
-      const resp = await fetch(`https://fantasy.premierleague.com/api/leagues-classic/${FPL_LEAGUE_ID.trim()}/standings/`);
-      if (resp.ok) {
-        const data = await resp.json();
+      const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${FPL_LEAGUE_ID.trim()}/standings/`;
+      const data = await fetchFplJson(standingsUrl, 5000);
+
+      if (data) {
         if (data && data.league && data.league.name) {
           leagueName = data.league.name; // Real league title "Clash of Elite 2026-2027"
         }
@@ -80,9 +103,8 @@ async function run() {
             teamName: realManagerMap[r.entry]?.teamName || r.entry_name
           }));
 
-          const bootResp = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/');
-          if (bootResp.ok) {
-            const bootData = await bootResp.json();
+          const bootData = await fetchFplJson('https://fantasy.premierleague.com/api/bootstrap-static/', 5000);
+          if (bootData && bootData.events) {
             const currentEvent = bootData.events.find(e => e.is_current) || bootData.events.find(e => e.is_next);
             if (currentEvent) {
               currentGw = currentEvent.id;
