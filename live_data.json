@@ -1,0 +1,1520 @@
+{
+  "lastUpdated": "2026-08-22T14:38:00Z",
+  "currentGw": 1,
+  "eventStatuses": {
+    "1": {
+      "gw": 1,
+      "finished": false,
+      "data_checked": false,
+      "is_current": true,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-08-21T17:30:00Z",
+      "bonus_added": false,
+      "leagues": "",
+      "points": "",
+      "daily_status": [
+        {
+          "bonus_added": false,
+          "date": "2026-08-21",
+          "event": 1,
+          "points": "p"
+        },
+        {
+          "bonus_added": false,
+          "date": "2026-08-22",
+          "event": 1,
+          "points": "l"
+        },
+        {
+          "bonus_added": false,
+          "date": "2026-08-23",
+          "event": 1,
+          "points": ""
+        },
+        {
+          "bonus_added": false,
+          "date": "2026-08-24",
+          "event": 1,
+          "points": ""
+        }
+      ]
+    },
+    "2": {
+      "gw": 2,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": true,
+      "deadline_time": "2026-08-28T17:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "3": {
+      "gw": 3,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-09-04T17:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "4": {
+      "gw": 4,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-09-12T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "5": {
+      "gw": 5,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-09-18T17:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "6": {
+      "gw": 6,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-10-10T10:00:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "7": {
+      "gw": 7,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-10-17T10:00:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "8": {
+      "gw": 8,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-10-23T17:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "9": {
+      "gw": 9,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-10-31T11:00:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "10": {
+      "gw": 10,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-11-07T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "11": {
+      "gw": 11,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-11-21T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "12": {
+      "gw": 12,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-11-28T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "13": {
+      "gw": 13,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-12-02T18:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "14": {
+      "gw": 14,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-12-05T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "15": {
+      "gw": 15,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-12-12T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "16": {
+      "gw": 16,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-12-19T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "17": {
+      "gw": 17,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-12-26T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "18": {
+      "gw": 18,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2026-12-30T18:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "19": {
+      "gw": 19,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-01-02T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "20": {
+      "gw": 20,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-01-06T18:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "21": {
+      "gw": 21,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-01-16T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "22": {
+      "gw": 22,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-01-23T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "23": {
+      "gw": 23,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-01-30T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "24": {
+      "gw": 24,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-02-06T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "25": {
+      "gw": 25,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-02-10T18:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "26": {
+      "gw": 26,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-02-20T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "27": {
+      "gw": 27,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-02-27T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "28": {
+      "gw": 28,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-03-03T18:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "29": {
+      "gw": 29,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-03-13T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "30": {
+      "gw": 30,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-03-20T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "31": {
+      "gw": 31,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-04-10T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "32": {
+      "gw": 32,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-04-17T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "33": {
+      "gw": 33,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-04-24T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "34": {
+      "gw": 34,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-05-01T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "35": {
+      "gw": 35,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-05-08T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "36": {
+      "gw": 36,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-05-15T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "37": {
+      "gw": 37,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-05-23T12:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    },
+    "38": {
+      "gw": 38,
+      "finished": false,
+      "data_checked": false,
+      "is_current": false,
+      "is_previous": false,
+      "is_next": false,
+      "deadline_time": "2027-05-30T13:30:00Z",
+      "bonus_added": false,
+      "leagues": "Updating"
+    }
+  },
+  "leagues": {
+    "389585": {
+      "leagueName": "Clash of Elite 2026-2027",
+      "managers": [
+        {
+          "id": 2026484,
+          "name": "Bora Chhe",
+          "teamName": "Bora's Team",
+          "avatar": "BO"
+        },
+        {
+          "id": 2067578,
+          "name": "Kun Phaktra",
+          "teamName": "The Blue Warriors",
+          "avatar": "KU"
+        },
+        {
+          "id": 2019453,
+          "name": "Seyha ly",
+          "teamName": "The Red Devil",
+          "avatar": "SE"
+        },
+        {
+          "id": 2023013,
+          "name": "នរ សិង្ហ កន្សៃ",
+          "teamName": "G.O.A.T",
+          "avatar": "នរ"
+        },
+        {
+          "id": 2026160,
+          "name": "Piseth Nhim",
+          "teamName": "DESSTRo",
+          "avatar": "PI"
+        },
+        {
+          "id": 2023789,
+          "name": "Monor Noem",
+          "teamName": "NORA FC",
+          "avatar": "MO"
+        },
+        {
+          "id": 2024611,
+          "name": "Vibol Dang",
+          "teamName": "The White Emperor",
+          "avatar": "VI"
+        }
+      ],
+      "gameweeks": [
+        {
+          "gw": 1,
+          "scores": {
+            "2026484": 20,
+            "2067578": 21,
+            "2019453": 15,
+            "2023013": 15,
+            "2026160": 10,
+            "2023789": 15,
+            "2024611": 6
+          },
+          "hits": {
+            "2026484": 0,
+            "2067578": 0,
+            "2019453": 0,
+            "2023013": 0,
+            "2026160": 0,
+            "2023789": 0,
+            "2024611": 0
+          },
+          "transfers": {
+            "2026484": 0,
+            "2067578": 0,
+            "2019453": 0,
+            "2023013": 0,
+            "2026160": 0,
+            "2023789": 0,
+            "2024611": 0
+          },
+          "benchPoints": {
+            "2026484": 1,
+            "2067578": 0,
+            "2019453": 6,
+            "2023013": 0,
+            "2026160": 0,
+            "2023789": 0,
+            "2024611": 0
+          },
+          "captainPoints": {},
+          "chipsUsed": {
+            "2026160": "bboost"
+          },
+          "seasonTotals": {
+            "2026484": 20,
+            "2067578": 21,
+            "2019453": 15,
+            "2023013": 15,
+            "2026160": 10,
+            "2023789": 15,
+            "2024611": 6
+          }
+        },
+        {
+          "gw": 2,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 3,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 4,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 5,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 6,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 7,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 8,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 9,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 10,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 11,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 12,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 13,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 14,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 15,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 16,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 17,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 18,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 19,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 20,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 21,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 22,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 23,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 24,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 25,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 26,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 27,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 28,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 29,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 30,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 31,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 32,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 33,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 34,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 35,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 36,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 37,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 38,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        }
+      ],
+      "months": [
+        {
+          "name": "August",
+          "gws": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "September",
+          "gws": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "October",
+          "gws": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "November",
+          "gws": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "name": "December",
+          "gws": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "name": "January",
+          "gws": [
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "name": "February",
+          "gws": [
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "name": "March",
+          "gws": [
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "name": "April",
+          "gws": [
+            31,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "name": "May",
+          "gws": [
+            35,
+            36,
+            37,
+            38
+          ]
+        }
+      ],
+      "currentGw": 1
+    },
+    "390100": {
+      "leagueName": "Fantasy with Heng",
+      "managers": [
+        {
+          "id": 2019453,
+          "name": "Seyha ly",
+          "teamName": "The Red Devil",
+          "avatar": "SE"
+        },
+        {
+          "id": 145847,
+          "name": "Hokheng Ker",
+          "teamName": "Undefeated",
+          "avatar": "HO"
+        }
+      ],
+      "gameweeks": [
+        {
+          "gw": 1,
+          "scores": {
+            "2019453": 15,
+            "145847": 15
+          },
+          "hits": {
+            "2019453": 0,
+            "145847": 0
+          },
+          "transfers": {
+            "2019453": 0,
+            "145847": 0
+          },
+          "benchPoints": {
+            "2019453": 6,
+            "145847": 1
+          },
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {
+            "2019453": 15,
+            "145847": 15
+          }
+        },
+        {
+          "gw": 2,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 3,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 4,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 5,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 6,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 7,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 8,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 9,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 10,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 11,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 12,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 13,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 14,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 15,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 16,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 17,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 18,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 19,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 20,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 21,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 22,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 23,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 24,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 25,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 26,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 27,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 28,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 29,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 30,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 31,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 32,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 33,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 34,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 35,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 36,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 37,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        },
+        {
+          "gw": 38,
+          "scores": {},
+          "hits": {},
+          "transfers": {},
+          "benchPoints": {},
+          "captainPoints": {},
+          "chipsUsed": {},
+          "seasonTotals": {}
+        }
+      ],
+      "months": [
+        {
+          "name": "August",
+          "gws": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "name": "September",
+          "gws": [
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "name": "October",
+          "gws": [
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        {
+          "name": "November",
+          "gws": [
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        {
+          "name": "December",
+          "gws": [
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        },
+        {
+          "name": "January",
+          "gws": [
+            21,
+            22,
+            23,
+            24
+          ]
+        },
+        {
+          "name": "February",
+          "gws": [
+            25,
+            26,
+            27
+          ]
+        },
+        {
+          "name": "March",
+          "gws": [
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "name": "April",
+          "gws": [
+            31,
+            32,
+            33,
+            34
+          ]
+        },
+        {
+          "name": "May",
+          "gws": [
+            35,
+            36,
+            37,
+            38
+          ]
+        }
+      ],
+      "currentGw": 1
+    }
+  }
+}

@@ -605,7 +605,42 @@
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
-    // Instant switch: Check local cache first for 0ms transition
+    // 1. Try loading direct from automated live_data.json (Zero CORS, 100% 24/7 reliable)
+    try {
+      const resp = await fetch(`./live_data.json?t=${Date.now()}`);
+      if (resp.ok) {
+        const liveJson = await resp.json();
+        if (liveJson && liveJson.leagues && liveJson.leagues[inputCode]) {
+          if (fetchId !== state.fetchCounter) return;
+          const lData = liveJson.leagues[inputCode];
+          state.dataset.managers = lData.managers;
+          state.dataset.gameweeks = lData.gameweeks;
+          if (lData.months) state.dataset.months = lData.months;
+          if (lData.leagueName) {
+            if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = lData.leagueName;
+            if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = lData.leagueName;
+          }
+          if (lData.currentGw) {
+            state.currentGw = lData.currentGw;
+            state.maxGw = lData.currentGw;
+          }
+          if (liveJson.eventStatuses) {
+            state.eventStatuses = liveJson.eventStatuses;
+          }
+
+          elements.syncStatusTag.className = 'sync-status-tag live';
+          elements.syncStatusTag.textContent = `LIVE (${lData.managers.length} Members)`;
+
+          populateGwSelect();
+          changeGw(state.currentGw);
+          updateMemberCountBadge();
+          renderAll();
+          return;
+        }
+      }
+    } catch (e) {}
+
+    // 2. Instant switch: Check local cache first for 0ms transition
     let loadedFromCache = false;
     try {
       const cached = localStorage.getItem(`fpl_live_cache_${inputCode}`);

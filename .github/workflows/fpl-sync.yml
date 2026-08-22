@@ -1,0 +1,35 @@
+name: Automated 24/7 FPL Live Sync
+
+on:
+  schedule:
+    - cron: '*/15 * * * *' # Automatically runs every 15 minutes 24/7
+  workflow_dispatch: # Allows manual 1-click trigger from GitHub Actions
+
+concurrency:
+  group: fpl-sync-group
+  cancel-in-progress: false
+
+jobs:
+  sync-live-data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run FPL Live Data Direct Sync
+        run: node scripts/sync-fpl-data.js
+
+      - name: Commit and Push live_data.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add live_data.json
+          git commit -m "chore(sync): automated FPL live data update [skip ci]" || exit 0
+          git push
