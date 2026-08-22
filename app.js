@@ -628,33 +628,20 @@
           state.currentGw = 1;
         }
 
-        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
-          const gwNum = i + 1;
-          const scores = {};
-          const hits = {};
-          const transfers = {};
-          const benchPoints = {};
-          const captainPoints = {};
-          const chipsUsed = {};
-
-          state.dataset.managers.forEach((m) => {
-            if (hasLiveScores) {
-              const liveRes = fetchedResults.find(r => r.entry === m.id);
-              scores[m.id] = liveRes ? (liveRes.event_total || 0) : 0;
-            } else {
-              scores[m.id] = 0;
-              hits[m.id] = 0;
-              transfers[m.id] = 0;
-              benchPoints[m.id] = 0;
-              captainPoints[m.id] = 0;
-              chipsUsed[m.id] = null;
-            }
-          });
-
-          return { gw: gwNum, scores, hits, transfers, benchPoints, captainPoints, chipsUsed };
-        });
+        // Initialize 38 gameweek slots with clean empty data (not duplicating current scores to future GWs)
+        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => ({
+          gw: i + 1,
+          scores: {},
+          hits: {},
+          transfers: {},
+          benchPoints: {},
+          captainPoints: {},
+          chipsUsed: {},
+          seasonTotals: {}
+        }));
 
         // Fetch Live FPL Gameweek & Event Status with Multi-Proxy Fallback
+        let detectedGw = 1;
         try {
           const bsTargetUrl = 'https://fantasy.premierleague.com/api/bootstrap-static/';
           const bsData = await fetchFplWithTimeout(bsTargetUrl, 3000);
@@ -681,54 +668,114 @@
               });
             }
 
-            let detectedGw = 1;
             const activeEv = bsData.events.find(e => e.is_current);
             const nextEv = bsData.events.find(e => e.is_next);
             const prevEv = bsData.events.filter(e => e.finished).pop();
 
             if (activeEv) {
               detectedGw = activeEv.id;
-            } else if (nextEv) {
-              if (nextEv.deadline_time && new Date() >= new Date(nextEv.deadline_time)) {
-                detectedGw = nextEv.id;
-              } else if (prevEv) {
-                detectedGw = prevEv.id;
-              } else {
-                detectedGw = nextEv.id;
-              }
             } else if (prevEv) {
               detectedGw = prevEv.id;
+            } else if (nextEv) {
+              detectedGw = Math.max(1, nextEv.id - 1);
             }
-
-            state.currentGw = detectedGw;
-            state.maxGw = detectedGw;
-            if (!state.fixturesGw) state.fixturesGw = state.currentGw;
-            if (!state.weeklyGw) state.weeklyGw = state.currentGw;
-            if (!state.statusGw) state.statusGw = state.currentGw;
           }
 
           const stData = await fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 2500);
-          if (stData) {
-            const curGw = state.currentGw;
-            if (stData.status) {
-              stData.status.forEach(st => {
-                if (state.eventStatuses[st.event]) {
-                  state.eventStatuses[st.event].bonus_added = st.bonus_added;
-                  state.eventStatuses[st.event].points = st.points;
-                }
-              });
-              
-              if (state.eventStatuses[curGw]) {
-                 state.eventStatuses[curGw].daily_status = stData.status.filter(s => s.event === curGw);
+          if (stData && stData.status) {
+            stData.status.forEach(st => {
+              if (state.eventStatuses[st.event]) {
+                state.eventStatuses[st.event].bonus_added = st.bonus_added;
+                state.eventStatuses[st.event].points = st.points;
               }
-            }
-            if (stData.leagues && state.eventStatuses[curGw]) {
-              state.eventStatuses[curGw].leagues = stData.leagues;
+            });
+            if (state.eventStatuses[detectedGw]) {
+              state.eventStatuses[detectedGw].daily_status = stData.status.filter(s => s.event === detectedGw);
             }
           }
         } catch (stErr) {
           console.warn('FPL Event Status fetch notice:', stErr);
         }
+
+        state.currentGw = detectedGw;
+        state.maxGw = detectedGw;
+        if (!state.fixturesGw) state.fixturesGw = state.currentGw;
+        if (!state.weeklyGw) state.weeklyGw = state.currentGw;
+        if (!state.statusGw) state.statusGw = state.currentGw;
+
+        // Fetch detailed manager history & picks in parallel to sync chips, hits, bench points, and season totals
+        try {
+          elements.syncStatusTag.textContent = `Syncing Details...`;
+          const managerPromises = state.dataset.managers.map(async (m) => {
+            try {
+              const histUrl = `https://fantasy.premierleague.com/api/entry/${m.id}/history/`;
+              const histData = await fetchFplWithTimeout(histUrl, 3000);
+
+              const picksUrl = `https://fantasy.premierleague.com/api/entry/${m.id}/event/${detectedGw}/picks/`;
+              const picksData = await fetchFplWithTimeout(picksUrl, 3000);
+
+              return { id: m.id, histData, picksData };
+            } catch (e) {
+              return { id: m.id, histData: null, picksData: null };
+            }
+          });
+
+          const managerDetails = await Promise.all(managerPromises);
+
+          managerDetails.forEach(({ id, histData, picksData }) => {
+            const liveRes = fetchedResults.find(r => r.entry === id);
+
+            if (histData && histData.current && Array.isArray(histData.current) && histData.current.length > 0) {
+              histData.current.forEach(h => {
+                const gNum = h.event;
+                if (gNum >= 1 && gNum <= 38) {
+                  const gwObj = state.dataset.gameweeks[gNum - 1];
+                  gwObj.scores[id] = h.points || 0;
+                  gwObj.hits[id] = h.event_transfers_cost || 0;
+                  gwObj.transfers[id] = h.event_transfers || 0;
+                  gwObj.benchPoints[id] = h.points_on_bench || 0;
+                  gwObj.seasonTotals[id] = h.total_points || 0;
+                }
+              });
+            } else {
+              const gwObj = state.dataset.gameweeks[detectedGw - 1];
+              if (gwObj && liveRes) {
+                gwObj.scores[id] = liveRes.event_total || 0;
+                gwObj.seasonTotals[id] = liveRes.total || liveRes.event_total || 0;
+              }
+            }
+
+            if (histData && histData.chips && Array.isArray(histData.chips)) {
+              histData.chips.forEach(c => {
+                const gNum = c.event;
+                if (gNum >= 1 && gNum <= 38) {
+                  state.dataset.gameweeks[gNum - 1].chipsUsed[id] = c.name;
+                }
+              });
+            }
+
+            if (picksData) {
+              const currGwObj = state.dataset.gameweeks[detectedGw - 1];
+              if (currGwObj) {
+                if (picksData.active_chip) {
+                  currGwObj.chipsUsed[id] = picksData.active_chip;
+                }
+                if (picksData.entry_history) {
+                  if (picksData.entry_history.points !== undefined) currGwObj.scores[id] = picksData.entry_history.points;
+                  if (picksData.entry_history.event_transfers_cost !== undefined) currGwObj.hits[id] = picksData.entry_history.event_transfers_cost;
+                  if (picksData.entry_history.event_transfers !== undefined) currGwObj.transfers[id] = picksData.entry_history.event_transfers;
+                  if (picksData.entry_history.points_on_bench !== undefined) currGwObj.benchPoints[id] = picksData.entry_history.points_on_bench;
+                  if (picksData.entry_history.total_points !== undefined) currGwObj.seasonTotals[id] = picksData.entry_history.total_points;
+                }
+              }
+            }
+          });
+        } catch (detailErr) {
+          console.warn('Manager detail sync notice:', detailErr);
+        }
+
+        elements.syncStatusTag.className = 'sync-status-tag live';
+        elements.syncStatusTag.textContent = `LIVE (${count} Members)`;
 
         populateGwSelect();
         changeGw(state.currentGw);
@@ -892,6 +939,10 @@
   }
 
   function getManagerSeasonNetUpToGw(managerId, upToGw) {
+    const targetGwData = state.dataset.gameweeks.find(x => x.gw === upToGw);
+    if (targetGwData && targetGwData.seasonTotals && targetGwData.seasonTotals[managerId] !== undefined && targetGwData.seasonTotals[managerId] > 0) {
+      return targetGwData.seasonTotals[managerId] - (targetGwData.hits ? (targetGwData.hits[managerId] || 0) : 0);
+    }
     let sum = 0;
     for (let g = 1; g <= upToGw; g++) {
       const gwData = state.dataset.gameweeks.find(x => x.gw === g);
@@ -903,10 +954,10 @@
   function getChipColorClass(chipName) {
     if (!chipName) return '';
     const n = chipName.toLowerCase();
-    if (n.includes('wildcard'))       return 'chip-wildcard';
-    if (n.includes('free hit'))       return 'chip-free-hit';
-    if (n.includes('bench boost'))    return 'chip-bench-boost';
-    if (n.includes('triple captain')) return 'chip-triple-captain';
+    if (n.includes('wildcard') || n.includes('wc')) return 'chip-wildcard';
+    if (n.includes('free hit') || n.includes('freehit') || n.includes('fh')) return 'chip-free-hit';
+    if (n.includes('bench boost') || n.includes('bboost') || n.includes('bb')) return 'chip-bench-boost';
+    if (n.includes('triple captain') || n.includes('3xc') || n.includes('tc')) return 'chip-triple-captain';
     return '';
   }
 
@@ -914,12 +965,12 @@
   function getChipLabel(chipName) {
     if (!chipName) return '';
     const n = chipName.toLowerCase();
-    const num = chipName.match(/\d+/)?.[0] || '';
-    if (n.includes('wildcard'))       return `WC ${num}`;
-    if (n.includes('free hit'))       return `FH ${num}`;
-    if (n.includes('bench boost'))    return `BB ${num}`;
-    if (n.includes('triple captain')) return `TC ${num}`;
-    return chipName;
+    const num = chipName.match(/\d+/)?.[0] || '1';
+    if (n.includes('wildcard') || n.includes('wc')) return `WC ${num}`;
+    if (n.includes('free hit') || n.includes('freehit') || n.includes('fh')) return `FH ${num}`;
+    if (n.includes('bench boost') || n.includes('bboost') || n.includes('bb')) return `BB ${num}`;
+    if (n.includes('triple captain') || n.includes('3xc') || n.includes('tc')) return `TC ${num}`;
+    return chipName.toUpperCase();
   }
 
   // ===================== STANDINGS ENGINE =====================
