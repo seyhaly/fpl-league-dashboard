@@ -511,7 +511,7 @@
   }
 
   // ===================== LIVE FPL SYNC =====================
-  async function fetchFplWithTimeout(targetUrl, timeoutMs = 7500) {
+  async function fetchFplWithTimeout(targetUrl, timeoutMs = 5000) {
     const proxies = [
       `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
       `https://corsproxy.io/?${targetUrl}`,
@@ -519,24 +519,31 @@
       `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`
     ];
 
-    for (const proxyUrl of proxies) {
+    const fetchSingleProxy = async (proxyUrl) => {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
       try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
         const resp = await fetch(proxyUrl, { signal: controller.signal });
         clearTimeout(timeoutId);
         if (resp.ok) {
           const text = await resp.text();
           if (text) {
-            try {
-              const data = JSON.parse(text);
-              if (data) return data;
-            } catch (jsonErr) {}
+            const data = JSON.parse(text);
+            if (data) return data;
           }
         }
-      } catch (e) {}
+      } catch (e) {
+        clearTimeout(timeoutId);
+      }
+      throw new Error('Proxy failed');
+    };
+
+    try {
+      // Race all proxies simultaneously — fastest successful proxy wins!
+      return await Promise.any(proxies.map(p => fetchSingleProxy(p)));
+    } catch (allErr) {
+      return null;
     }
-    return null;
   }
 
   async function syncLiveFplLeague() {
@@ -566,7 +573,8 @@
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
-    // Try loading cached live data first to prevent flash of 0s
+    // Instant switch: Check local cache first for 0ms transition
+    let loadedFromCache = false;
     try {
       const cached = localStorage.getItem(`fpl_live_cache_${inputCode}`);
       if (cached) {
@@ -582,14 +590,40 @@
             state.currentGw = parsed.currentGw;
             state.maxGw = parsed.currentGw;
           }
+          populateGwSelect();
+          changeGw(state.currentGw);
+          updateMemberCountBadge();
           renderAll();
+          loadedFromCache = true;
         }
       }
     } catch (cErr) {}
 
+    // If not in cache, clear previous league's managers immediately so it doesn't show wrong data
+    if (!loadedFromCache) {
+      if (inputCode === '390100') {
+        if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = "Fantasy with Heng";
+        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
+        state.dataset.managers = [
+          { id: 145847, name: "Hokheng Ker", teamName: "Undefeated", avatar: "HK" },
+          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" }
+        ];
+      } else if (inputCode === '389585') {
+        if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = "Clash of Elite 2026-2027";
+        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Clash of Elite 2026-2027";
+      } else {
+        state.dataset.managers = [];
+      }
+      state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => ({
+        gw: i + 1, scores: {}, hits: {}, transfers: {}, benchPoints: {}, captainPoints: {}, chipsUsed: {}, seasonTotals: {}
+      }));
+      updateMemberCountBadge();
+      renderAll();
+    }
+
     try {
       const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
-      const data = await fetchFplWithTimeout(standingsUrl, 7500);
+      const data = await fetchFplWithTimeout(standingsUrl, 5000);
       if (!data) throw new Error(`Failed to fetch league standings for #${inputCode}`);
 
       if (data && data.league && data.league.name) {
