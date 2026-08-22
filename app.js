@@ -511,10 +511,12 @@
   }
 
   // ===================== LIVE FPL SYNC =====================
-  async function fetchFplWithTimeout(targetUrl, timeoutMs = 2500) {
+  async function fetchFplWithTimeout(targetUrl, timeoutMs = 7500) {
     const proxies = [
       `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
-      `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`
+      `https://corsproxy.io/?${targetUrl}`,
+      `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
+      `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`
     ];
 
     for (const proxyUrl of proxies) {
@@ -524,8 +526,13 @@
         const resp = await fetch(proxyUrl, { signal: controller.signal });
         clearTimeout(timeoutId);
         if (resp.ok) {
-          const data = await resp.json();
-          if (data) return data;
+          const text = await resp.text();
+          if (text) {
+            try {
+              const data = JSON.parse(text);
+              if (data) return data;
+            } catch (jsonErr) {}
+          }
         }
       } catch (e) {}
     }
@@ -559,17 +566,30 @@
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
-    // Clear demo data immediately so it doesn't persist if fetch fails
-    state.dataset.managers = [];
-    state.dataset.gameweeks = state.dataset.gameweeks.map(gw => ({
-      gw: gw.gw,
-      scores: {}, hits: {}, transfers: {}, benchPoints: {}, captainPoints: {}, chipsUsed: {}
-    }));
-    renderAll();
+    // Try loading cached live data first to prevent flash of 0s
+    try {
+      const cached = localStorage.getItem(`fpl_live_cache_${inputCode}`);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed && parsed.managers && parsed.managers.length > 0) {
+          state.dataset.managers = parsed.managers;
+          if (parsed.gameweeks) state.dataset.gameweeks = parsed.gameweeks;
+          if (parsed.leagueName) {
+            if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = parsed.leagueName;
+            if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = parsed.leagueName;
+          }
+          if (parsed.currentGw) {
+            state.currentGw = parsed.currentGw;
+            state.maxGw = parsed.currentGw;
+          }
+          renderAll();
+        }
+      }
+    } catch (cErr) {}
 
     try {
       const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
-      const data = await fetchFplWithTimeout(standingsUrl, 3000);
+      const data = await fetchFplWithTimeout(standingsUrl, 7500);
       if (!data) throw new Error(`Failed to fetch league standings for #${inputCode}`);
 
       if (data && data.league && data.league.name) {
@@ -607,9 +627,6 @@
           avatar: (realManagerMap[r.entry]?.name || r.player_name || r.entry_name).substring(0, 2).toUpperCase()
         }));
 
-        // Populate gameweek scores (pure live FPL API data — 0s during pre-season)
-        const hasLiveScores = fetchedResults.some(r => r.event_total !== undefined && r.event_total > 0);
-
         state.dataset.months = [
           { name: "August", gws: [1, 2, 3] },
           { name: "September", gws: [4, 5, 6] },
@@ -623,28 +640,32 @@
           { name: "May", gws: [35, 36, 37, 38] }
         ];
 
-        if (!hasLiveScores) {
-          state.maxGw = 1;
-          state.currentGw = 1;
-        }
-
-        // Initialize 38 gameweek slots with clean empty data (not duplicating current scores to future GWs)
-        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => ({
-          gw: i + 1,
-          scores: {},
-          hits: {},
-          transfers: {},
-          benchPoints: {},
-          captainPoints: {},
-          chipsUsed: {},
-          seasonTotals: {}
-        }));
+        // Initialize 38 gameweek slots and immediately populate latest scores from standings
+        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
+          const gwObj = {
+            gw: i + 1,
+            scores: {},
+            hits: {},
+            transfers: {},
+            benchPoints: {},
+            captainPoints: {},
+            chipsUsed: {},
+            seasonTotals: {}
+          };
+          if (i === 0) {
+            fetchedResults.forEach(r => {
+              gwObj.scores[r.entry] = r.event_total !== undefined ? r.event_total : 0;
+              gwObj.seasonTotals[r.entry] = r.total !== undefined ? r.total : (r.event_total || 0);
+            });
+          }
+          return gwObj;
+        });
 
         // Fetch Live FPL Gameweek & Event Status with Multi-Proxy Fallback
         let detectedGw = 1;
         try {
           const bsTargetUrl = 'https://fantasy.premierleague.com/api/bootstrap-static/';
-          const bsData = await fetchFplWithTimeout(bsTargetUrl, 3000);
+          const bsData = await fetchFplWithTimeout(bsTargetUrl, 5000);
 
           if (bsData && bsData.events) {
             bsData.events.forEach(ev => {
@@ -774,8 +795,14 @@
           console.warn('Manager detail sync notice:', detailErr);
         }
 
-        elements.syncStatusTag.className = 'sync-status-tag live';
-        elements.syncStatusTag.textContent = `LIVE (${count} Members)`;
+        try {
+          localStorage.setItem(`fpl_live_cache_${inputCode}`, JSON.stringify({
+            leagueName: (data && data.league && data.league.name) ? data.league.name : "Clash of Elite 2026-2027",
+            managers: state.dataset.managers,
+            gameweeks: state.dataset.gameweeks,
+            currentGw: state.currentGw
+          }));
+        } catch (saveErr) {}
 
         populateGwSelect();
         changeGw(state.currentGw);
