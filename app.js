@@ -16,7 +16,9 @@
     chartInstance: null,
     perfChartInstance: null,
     standingsSortColumn: null,
-    standingsSortDir: 'desc'
+    standingsSortDir: 'desc',
+    activeLeagueId: '389585',
+    fetchCounter: 0
   };
 
   // DOM Elements
@@ -560,6 +562,14 @@
       return;
     }
 
+    state.activeLeagueId = String(inputCode);
+    const fetchId = ++state.fetchCounter;
+
+    // Highlight active pill
+    document.querySelectorAll('.league-pill').forEach(p => {
+      p.classList.toggle('active', p.dataset.leagueCode === String(inputCode));
+    });
+
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
@@ -604,6 +614,15 @@
       } else if (inputCode === '389585') {
         if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = "Clash of Elite 2026-2027";
         if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Clash of Elite 2026-2027";
+        state.dataset.managers = [
+          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" },
+          { id: 2067578, name: "Kun Phaktra", teamName: "The Blue Warriors", avatar: "KP" },
+          { id: 2026160, name: "Piseth Nhim", teamName: "DESSTRo", avatar: "PN" },
+          { id: 2026484, name: "Bora Chhe", teamName: "Bora's Team", avatar: "BC" },
+          { id: 2024611, name: "Vibol Dang", teamName: "The White Emperor", avatar: "VD" },
+          { id: 2023789, name: "Monor Noem", teamName: "NORA FC", avatar: "MN" },
+          { id: 2023013, name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T", avatar: "NK" }
+        ];
       } else {
         state.dataset.managers = [];
       }
@@ -617,6 +636,7 @@
     try {
       const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
       const data = await fetchFplWithTimeout(standingsUrl, 5000);
+      if (fetchId !== state.fetchCounter) return;
       if (!data) throw new Error(`Failed to fetch league standings for #${inputCode}`);
 
       if (data && data.league && data.league.name) {
@@ -821,6 +841,8 @@
         } catch (detailErr) {
           console.warn('Manager detail sync notice:', detailErr);
         }
+
+        if (fetchId !== state.fetchCounter) return;
 
         try {
           localStorage.setItem(`fpl_live_cache_${inputCode}`, JSON.stringify({
