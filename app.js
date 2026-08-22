@@ -1166,22 +1166,22 @@
   }
 
   function getFormGuide(managerId) {
-    const activeManagers = state.dataset.managers;
-    const currentGwData = state.dataset.gameweeks ? state.dataset.gameweeks.find(g => g.gw === state.currentGw) : null;
-    const hasPlayedMatches = activeManagers && currentGwData && activeManagers.some(m => (currentGwData.scores[m.id] || 0) > 0 || (currentGwData.hits && currentGwData.hits[m.id] > 0));
-
-    if (!hasPlayedMatches) {
-      return ['-', '-', '-', '-', '-'];
+    // Option 1: Strictly previous gameweeks only (excluding the current active/viewed GW)
+    if (state.currentGw <= 1) {
+      return ['-'];
     }
 
     const form = [];
-    const startGw = Math.max(1, state.currentGw - 4);
-    for (let gw = startGw; gw <= state.currentGw; gw++) {
+    const endGw = state.currentGw - 1;
+    const startGw = Math.max(1, endGw - 4);
+    for (let gw = startGw; gw <= endGw; gw++) {
       const standings = getGameweekStandings(gw);
       const m = standings.find(x => x.id === managerId);
-      if (m) form.push(m.outcomeCode);
+      if (m && m.outcomeCode && m.outcomeCode !== '-') {
+        form.push(m.outcomeCode);
+      }
     }
-    return form.length > 0 ? form : ['-', '-', '-', '-', '-'];
+    return form.length > 0 ? form : ['-'];
   }
 
   // ===================== RENDER ALL =====================
