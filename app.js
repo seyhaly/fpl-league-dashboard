@@ -246,13 +246,6 @@
     if (elements.viewModeSelect) {
       elements.viewModeSelect.addEventListener('change', e => {
         state.viewMode = e.target.value;
-        if (state.viewMode === 'overall') {
-          state.showMotmBadge = false;
-          if (elements.toggleMotmBtn) elements.toggleMotmBtn.classList.remove('active');
-        } else {
-          state.showMotmBadge = true;
-          if (elements.toggleMotmBtn) elements.toggleMotmBtn.classList.add('active');
-        }
         renderStandingsTable();
       });
     }
@@ -266,9 +259,6 @@
       elements.toggleMotmBtn.addEventListener('click', () => {
         state.showMotmBadge = !state.showMotmBadge;
         elements.toggleMotmBtn.classList.toggle('active', state.showMotmBadge);
-        if (!state.showMotmBadge && elements.viewModeSelect) {
-          elements.viewModeSelect.value = 'overall';
-        }
         renderStandingsTable();
       });
     }
@@ -1300,10 +1290,10 @@
       }
     }
 
-    // Render MOTM Banner
+    // Render MOTM Banner (Only when explicitly toggled on via MOTM button)
     const motmBannerContainer = document.getElementById('motmBannerContainer');
     if (motmBannerContainer) {
-      if ((state.showMotmBadge || isMonthlyView) && motmInfo.leader) {
+      if (state.showMotmBadge && motmInfo && motmInfo.leader) {
         const icon = motmInfo.isFinalized ? '🏆' : '⏳';
         
         motmBannerContainer.innerHTML = `
