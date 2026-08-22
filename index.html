@@ -120,6 +120,7 @@
 
   </div>
 
+
   <!-- ===================== EMPTY STATE ===================== -->
   <section class="glass-panel" id="section-empty" style="display: none; text-align: center; padding: 48px;">
     <h2 style="color: var(--text-muted); margin-bottom: 16px;">No Data Available</h2>
@@ -156,25 +157,6 @@
         </table>
       </div>
       <div id="mobileCards" class="mobile-cards"></div>
-    </div>
-  </section>
-
-  <!-- ===================== MATCH SCHEDULES & FIXTURES ===================== -->
-  <section class="glass-panel" id="section-fixtures">
-    <div class="section-title">
-      <div class="fixtures-header-left">
-        <h3>Premier League Match Schedule &amp; Results</h3>
-        <div class="fixtures-gw-nav">
-          <button class="btn-gw-step" id="fixturesPrevGwBtn" onclick="changeFixturesGw(-1)" title="Previous Gameweek">‹</button>
-          <select id="fixturesGwSelect" class="fixtures-gw-select" onchange="selectFixturesGw(this.value)"></select>
-          <button class="btn-gw-step" id="fixturesNextGwBtn" onclick="changeFixturesGw(1)" title="Next Gameweek">›</button>
-          <button class="btn-fixtures-current-gw" onclick="jumpToCurrentFixturesGw()">Current GW</button>
-        </div>
-      </div>
-      <button class="collapse-btn" data-target="fixturesCollapse">▲ Collapse</button>
-    </div>
-    <div id="fixturesCollapse" class="collapsible-content">
-      <div id="fixturesContainer" class="fixtures-grid"></div>
     </div>
   </section>
 
