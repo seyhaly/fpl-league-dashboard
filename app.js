@@ -180,6 +180,14 @@
       elements.leagueIdInput.value = '389585';
       syncLiveFplLeague();
     }
+
+    // Auto-sync live scores every 60 seconds while on a live league
+    setInterval(() => {
+      const code = elements.leagueIdInput ? elements.leagueIdInput.value.trim() : '';
+      if (code && code.toLowerCase() !== 'demo' && !document.hidden) {
+        fetchLeagueData(code);
+      }
+    }, 60000);
   }
 
   // ===================== THEME =====================
