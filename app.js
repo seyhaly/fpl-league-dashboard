@@ -1431,8 +1431,15 @@
 
   // ===================== WIN/LOSS TABLE =====================
   function getManagerSeasonSummary() {
-    const managers = state.dataset.managers;
-    const chipTypes = state.dataset.chipTypes;
+    const managers = state.dataset.managers || [];
+    const chipTypes = (state.dataset.chipTypes && state.dataset.chipTypes.length > 0)
+      ? state.dataset.chipTypes
+      : [
+          "Wildcard 1", "Wildcard 2",
+          "Free Hit 1", "Free Hit 2",
+          "Bench Boost 1", "Bench Boost 2",
+          "Triple Captain 1", "Triple Captain 2"
+        ];
 
     const summary = managers.map(m => {
       let wins = 0, losses = 0, neutrals = 0, netEarnings = 0, totalNetPoints = 0;
@@ -1446,8 +1453,36 @@
           if (item.payout > 0) { wins++; netEarnings += item.payout; }
           else if (item.payout < 0) { losses++; netEarnings += item.payout; }
           else { neutrals++; }
-          if (item.chip) chipsUsedMap[item.chip] = gw;
         }
+      }
+
+      // Check all 38 gameweek slots for recorded chip usage
+      if (state.dataset.gameweeks && Array.isArray(state.dataset.gameweeks)) {
+        state.dataset.gameweeks.forEach(gwObj => {
+          if (gwObj && gwObj.chipsUsed && gwObj.chipsUsed[m.id]) {
+            const raw = String(gwObj.chipsUsed[m.id]).toLowerCase();
+            const gNum = gwObj.gw;
+            if (raw.includes('wildcard') || raw.includes('wc')) {
+              if (gNum <= 19) chipsUsedMap['Wildcard 1'] = gNum;
+              else chipsUsedMap['Wildcard 2'] = gNum;
+              chipsUsedMap['Wildcard'] = gNum;
+            } else if (raw.includes('freehit') || raw.includes('free hit') || raw.includes('fh')) {
+              if (gNum <= 19) chipsUsedMap['Free Hit 1'] = gNum;
+              else chipsUsedMap['Free Hit 2'] = gNum;
+              chipsUsedMap['Free Hit'] = gNum;
+            } else if (raw.includes('bboost') || raw.includes('bench boost') || raw.includes('bb')) {
+              if (gNum <= 19) chipsUsedMap['Bench Boost 1'] = gNum;
+              else chipsUsedMap['Bench Boost 2'] = gNum;
+              chipsUsedMap['Bench Boost'] = gNum;
+            } else if (raw.includes('3xc') || raw.includes('triple captain') || raw.includes('tc')) {
+              if (gNum <= 19) chipsUsedMap['Triple Captain 1'] = gNum;
+              else chipsUsedMap['Triple Captain 2'] = gNum;
+              chipsUsedMap['Triple Captain'] = gNum;
+            } else {
+              chipsUsedMap[gwObj.chipsUsed[m.id]] = gNum;
+            }
+          }
+        });
       }
 
       const winRate = state.currentGw > 0 ? ((wins / state.currentGw) * 100).toFixed(1) : '0.0';
