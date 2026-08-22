@@ -511,35 +511,59 @@
   }
 
   // ===================== LIVE FPL SYNC =====================
-  async function fetchFplWithTimeout(targetUrl, timeoutMs = 5000) {
+  async function fetchFplWithTimeout(targetUrl, timeoutMs = 6000) {
     const proxies = [
       `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
       `https://corsproxy.io/?${targetUrl}`,
       `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
-      `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`
+      `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`,
+      targetUrl // direct attempt
     ];
+
+    function isValidFplPayload(data) {
+      if (!data || typeof data !== 'object') return false;
+      if (data.error || data.message === 'Not found') return false;
+      // Real FPL responses have one of these structures:
+      return Boolean(
+        data.standings ||
+        data.league ||
+        data.events ||
+        data.elements ||
+        data.entry_history ||
+        data.picks ||
+        data.current ||
+        data.status ||
+        data.chips ||
+        Array.isArray(data)
+      );
+    }
 
     const fetchSingleProxy = async (proxyUrl) => {
       const controller = new AbortController();
       const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
       try {
-        const resp = await fetch(proxyUrl, { signal: controller.signal });
+        const resp = await fetch(proxyUrl, {
+          signal: controller.signal,
+          headers: { 'Accept': 'application/json' }
+        });
         clearTimeout(timeoutId);
         if (resp.ok) {
           const text = await resp.text();
           if (text) {
             const data = JSON.parse(text);
-            if (data) return data;
+            if (isValidFplPayload(data)) {
+              return data;
+            }
           }
         }
       } catch (e) {
         clearTimeout(timeoutId);
       }
-      throw new Error('Proxy failed');
+      throw new Error('Proxy failed or returned invalid data');
     };
 
     try {
-      // Race all proxies simultaneously — fastest successful proxy wins!
+      // Race all proxies simultaneously — fastest valid proxy wins!
       return await Promise.any(proxies.map(p => fetchSingleProxy(p)));
     } catch (allErr) {
       return null;
