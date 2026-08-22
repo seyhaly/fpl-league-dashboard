@@ -1711,11 +1711,11 @@
           { date: '2026-08-23', points: 'r', bonus_added: true }
         ];
       } else if (gw === 1) {
-        // GW1 Live reality: Friday match finished & bonus processed, weekend matches in progress
+        // GW1: Friday match finished, Saturday and Sunday matches are upcoming / pending
         const isFinished = Boolean(statusObj.finished && statusObj.data_checked);
         dailyStatus = [
           { date: '2026-08-21', points: 'r', bonus_added: true },
-          { date: '2026-08-22', points: isFinished ? 'r' : (hasLiveScores ? 'r' : 'p'), bonus_added: isFinished },
+          { date: '2026-08-22', points: isFinished ? 'r' : 'p', bonus_added: isFinished },
           { date: '2026-08-23', points: isFinished ? 'r' : 'p', bonus_added: isFinished }
         ];
       } else {
