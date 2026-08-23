@@ -1891,11 +1891,11 @@
       return `<span class="day-tag tag-${type}">${icon}${label}</span>`;
     };
 
-    // ── Build rows ────────────────────────────────────────
+    // ── Build rows in user's local timezone ──────────────
     const tableRows = normalizedDailyStatus.map((day, idx, arr) => {
-      const dateObj = new Date(day.date);
-      const weekday = dateObj.toLocaleDateString('en-GB', { weekday: 'long' });
-      const dateFmt = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+      const dateObj = new Date(`${day.date}T19:30:00Z`);
+      const weekday = dateObj.toLocaleDateString(undefined, { weekday: 'long' });
+      const dateFmt = dateObj.toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
 
       const ptsType   = day.points === 'r' ? 'done' : 'pending';
       const bonusType = day.bonus_added ? 'done' : (day.points === 'r' ? 'active' : 'pending');
