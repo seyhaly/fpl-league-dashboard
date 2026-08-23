@@ -2376,7 +2376,7 @@
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">⚡ Active Chip</span>
-          <span class="stat-val" style="color:var(--pl-purple);">${activeChip}</span>
+          <span class="stat-val" style="color:${activeChip !== 'None' ? '#a855f7' : 'var(--text-primary)'};">${activeChip}</span>
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">👑 Captain</span>
