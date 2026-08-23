@@ -2220,17 +2220,40 @@
   window.closeManagerModal = function() {
     const modal = document.getElementById('managerDetailModal');
     const backdrop = document.getElementById('managerModalBackdrop');
+    const btnPrev = document.getElementById('btnModalPrevManager');
+    const btnNext = document.getElementById('btnModalNextManager');
+
     if (modal) {
       modal.classList.remove('open');
       modal.setAttribute('aria-hidden', 'true');
     }
     if (backdrop) backdrop.classList.remove('open');
+    if (btnPrev) btnPrev.classList.remove('open');
+    if (btnNext) btnNext.classList.remove('open');
+    state.activeModalManagerId = null;
     document.body.style.overflow = '';
+  };
+
+  window.navigateManagerModal = function(direction) {
+    const managers = state.dataset.managers || [];
+    if (!managers || managers.length <= 1) return;
+
+    const currentId = state.activeModalManagerId;
+    let currentIdx = managers.findIndex(m => m.id === currentId);
+    if (currentIdx === -1) currentIdx = 0;
+
+    const targetIdx = (currentIdx + direction + managers.length) % managers.length;
+    const targetManager = managers[targetIdx];
+    if (targetManager) {
+      openManagerModal(targetManager.id);
+    }
   };
 
   window.openManagerModal = function(managerId) {
     const modal = document.getElementById('managerDetailModal');
     const backdrop = document.getElementById('managerModalBackdrop');
+    const btnPrev = document.getElementById('btnModalPrevManager');
+    const btnNext = document.getElementById('btnModalNextManager');
     const modalAvatar = document.getElementById('modalManagerAvatar');
     const modalName = document.getElementById('modalManagerName');
     const modalTeam = document.getElementById('modalTeamName');
@@ -2240,6 +2263,8 @@
     const modalBody = document.getElementById('modalContentBody');
 
     if (!modal || !modalBody) return;
+
+    state.activeModalManagerId = Number(managerId);
 
     const gw = state.currentGw || 1;
     const manager = (state.dataset.managers || []).find(m => m.id === Number(managerId));
@@ -2255,6 +2280,8 @@
 
     modal.classList.add('open');
     if (backdrop) backdrop.classList.add('open');
+    if (btnPrev) btnPrev.classList.add('open');
+    if (btnNext) btnNext.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
@@ -2527,7 +2554,18 @@
   };
 
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeManagerModal();
+    const modal = document.getElementById('managerDetailModal');
+    const isModalOpen = modal && modal.classList.contains('open');
+
+    if (e.key === 'Escape') {
+      closeManagerModal();
+    } else if (isModalOpen && e.key === 'ArrowLeft') {
+      e.preventDefault();
+      navigateManagerModal(-1);
+    } else if (isModalOpen && e.key === 'ArrowRight') {
+      e.preventDefault();
+      navigateManagerModal(1);
+    }
   });
 
   document.addEventListener('DOMContentLoaded', init);

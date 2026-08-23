@@ -2055,6 +2055,67 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   visibility: visible;
 }
 
+/* Floating Manager Navigation Arrows Outside Panel */
+.modal-nav-arrow {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) scale(0.9);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease, visibility 0.25s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.modal-nav-arrow.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-50%) scale(1);
+}
+
+.modal-nav-arrow.prev {
+  left: max(14px, calc((100vw - 1040px) / 2 - 68px));
+}
+
+.modal-nav-arrow.next {
+  right: max(14px, calc((100vw - 1040px) / 2 - 68px));
+}
+
+.modal-nav-arrow:hover {
+  background: linear-gradient(135deg, var(--pl-purple), #2b043a);
+  color: var(--pl-cyan);
+  border-color: var(--pl-cyan);
+  transform: translateY(-50%) scale(1.12);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.6), 0 0 18px rgba(0, 255, 135, 0.35);
+}
+
+.modal-nav-arrow:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+@media (max-width: 1190px) {
+  .modal-nav-arrow.prev {
+    left: 10px;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(10px);
+  }
+  .modal-nav-arrow.next {
+    right: 10px;
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(10px);
+  }
+}
+
 .manager-detail-modal {
   position: fixed;
   top: 50%;
