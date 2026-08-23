@@ -2211,13 +2211,6 @@
     if (modalGwBadge) modalGwBadge.textContent = `Gameweek ${gw} Squad & Team Details`;
     if (modalDirectLink) modalDirectLink.href = `https://fantasy.premierleague.com/entry/${manager.id}/event/${gw}`;
 
-    modalBody.innerHTML = `
-      <div style="text-align:center;padding:30px;color:var(--text-muted);">
-        <div class="sync-spinner" style="margin:0 auto 12px;border-top-color:var(--pl-cyan);width:28px;height:28px;border-width:3px;"></div>
-        <div>Loading squad details for ${manager.name}...</div>
-      </div>
-    `;
-
     modal.classList.add('open');
     if (backdrop) backdrop.classList.add('open');
     modal.setAttribute('aria-hidden', 'false');
@@ -2230,6 +2223,13 @@
     }
 
     if (!squadData) {
+      modalBody.innerHTML = `
+        <div style="text-align:center;padding:30px;color:var(--text-muted);">
+          <div class="sync-spinner" style="margin:0 auto 12px;border-top-color:var(--pl-cyan);width:28px;height:28px;border-width:3px;"></div>
+          <div>Loading squad details for ${manager.name}...</div>
+        </div>
+      `;
+
       try {
         const resp = await fetch(`./live_data.json?t=${Date.now()}`);
         if (resp.ok) {
