@@ -2223,21 +2223,24 @@
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-    // Retrieve squad picks from dataset or live API
+    // Retrieve squad picks from dataset or direct live_data.json
     let squadData = null;
     if (state.dataset.squadPicks && state.dataset.squadPicks[String(manager.id)] && state.dataset.squadPicks[String(manager.id)][String(gw)]) {
       squadData = state.dataset.squadPicks[String(manager.id)][String(gw)];
     }
 
-    // If not in state, attempt live fetch
     if (!squadData) {
       try {
-        const livePicks = await fetchFplWithTimeout(`https://fantasy.premierleague.com/api/entry/${manager.id}/event/${gw}/picks/`, 5000);
-        if (livePicks && livePicks.picks) {
-          squadData = livePicks;
-          if (!state.dataset.squadPicks) state.dataset.squadPicks = {};
-          if (!state.dataset.squadPicks[String(manager.id)]) state.dataset.squadPicks[String(manager.id)] = {};
-          state.dataset.squadPicks[String(manager.id)][String(gw)] = livePicks;
+        const resp = await fetch(`./live_data.json?t=${Date.now()}`);
+        if (resp.ok) {
+          const liveJson = await resp.json();
+          if (liveJson.squadPicks) state.dataset.squadPicks = liveJson.squadPicks;
+          if (liveJson.players) state.dataset.players = liveJson.players;
+          if (liveJson.transfersHistory) state.dataset.transfersHistory = liveJson.transfersHistory;
+          if (liveJson.teams) state.dataset.teams = liveJson.teams;
+          if (liveJson.squadPicks && liveJson.squadPicks[String(manager.id)]) {
+            squadData = liveJson.squadPicks[String(manager.id)][String(gw)];
+          }
         }
       } catch (e) {}
     }
