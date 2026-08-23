@@ -13,10 +13,14 @@ jobs:
   sync-live-data:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout repository code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,5 +35,9 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add live_data.json
-          git commit -m "chore(sync): automated FPL live data update [skip ci]" || exit 0
-          git push
+          if git diff --staged --quiet; then
+            echo "No changes in live_data.json to commit."
+          else
+            git commit -m "chore(sync): automated FPL live data update [skip ci]"
+            git push origin main
+          fi
