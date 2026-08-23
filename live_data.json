@@ -571,8 +571,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "3": {
@@ -583,8 +583,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "4": {
@@ -607,8 +607,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.5"
     },
     "6": {
@@ -619,8 +619,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.0"
     },
     "7": {
@@ -763,8 +763,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.5"
     },
     "19": {
@@ -787,8 +787,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "22": {
@@ -799,8 +799,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "23": {
@@ -811,8 +811,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "24": {
@@ -823,8 +823,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "25": {
@@ -835,8 +835,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "7.5"
     },
     "26": {
@@ -859,8 +859,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.0"
     },
     "31": {
@@ -871,8 +871,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "452": {
@@ -883,8 +883,8 @@
       "team_name": "Arsenal",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "7.0"
     },
     "557": {
@@ -1591,8 +1591,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "84": {
@@ -1615,8 +1615,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "86": {
@@ -1663,8 +1663,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "90": {
@@ -1687,8 +1687,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "92": {
@@ -1699,8 +1699,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "93": {
@@ -1711,8 +1711,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "94": {
@@ -1783,8 +1783,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "100": {
@@ -1795,8 +1795,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "102": {
@@ -1819,8 +1819,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "105": {
@@ -1855,8 +1855,8 @@
       "team_name": "Brentford",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "108": {
@@ -2755,8 +2755,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "172": {
@@ -2767,8 +2767,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "173": {
@@ -2791,8 +2791,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "175": {
@@ -2827,8 +2827,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "178": {
@@ -2839,8 +2839,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "179": {
@@ -2851,8 +2851,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "180": {
@@ -2863,8 +2863,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "181": {
@@ -2875,8 +2875,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "182": {
@@ -2923,8 +2923,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "186": {
@@ -2935,8 +2935,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "187": {
@@ -2947,8 +2947,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "188": {
@@ -2971,8 +2971,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "190": {
@@ -2995,8 +2995,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "192": {
@@ -3007,8 +3007,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "193": {
@@ -3019,8 +3019,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "194": {
@@ -3055,8 +3055,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "197": {
@@ -3067,8 +3067,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "492": {
@@ -3115,8 +3115,8 @@
       "team_name": "Coventry City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "42": {
@@ -3151,8 +3151,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "201": {
@@ -3211,8 +3211,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "206": {
@@ -3235,8 +3235,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "208": {
@@ -3247,8 +3247,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.5"
     },
     "210": {
@@ -3283,8 +3283,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "213": {
@@ -3295,8 +3295,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "214": {
@@ -3319,8 +3319,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "216": {
@@ -3331,8 +3331,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "217": {
@@ -3343,8 +3343,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "218": {
@@ -3355,8 +3355,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "219": {
@@ -3367,8 +3367,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "220": {
@@ -3379,8 +3379,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "221": {
@@ -3391,8 +3391,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "222": {
@@ -3439,8 +3439,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "241": {
@@ -3463,8 +3463,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "577": {
@@ -3499,8 +3499,8 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "21": {
@@ -3511,8 +3511,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "209": {
@@ -3547,8 +3547,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "228": {
@@ -3559,8 +3559,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "229": {
@@ -3595,8 +3595,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "232": {
@@ -3607,8 +3607,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "233": {
@@ -3631,8 +3631,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "235": {
@@ -3643,8 +3643,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "236": {
@@ -3691,8 +3691,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "242": {
@@ -3739,8 +3739,8 @@
       "team_name": "Everton",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "246": {
@@ -4075,8 +4075,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "274": {
@@ -4087,8 +4087,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "275": {
@@ -4099,8 +4099,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "276": {
@@ -4111,8 +4111,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "277": {
@@ -4135,8 +4135,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "279": {
@@ -4195,8 +4195,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "284": {
@@ -4207,8 +4207,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "285": {
@@ -4255,8 +4255,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "289": {
@@ -4291,8 +4291,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "292": {
@@ -4303,8 +4303,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "293": {
@@ -4315,8 +4315,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "294": {
@@ -4327,8 +4327,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "295": {
@@ -4351,8 +4351,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "297": {
@@ -4363,8 +4363,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "298": {
@@ -4375,8 +4375,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "299": {
@@ -4387,8 +4387,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "340": {
@@ -4399,8 +4399,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "556": {
@@ -4423,8 +4423,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "572": {
@@ -4447,8 +4447,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "576": {
@@ -4495,8 +4495,8 @@
       "team_name": "Hull City",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "259": {
@@ -4531,8 +4531,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "301": {
@@ -4543,8 +4543,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "302": {
@@ -4555,8 +4555,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "303": {
@@ -4567,8 +4567,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "304": {
@@ -4615,8 +4615,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "308": {
@@ -4627,8 +4627,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "309": {
@@ -4651,8 +4651,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "311": {
@@ -4663,8 +4663,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "312": {
@@ -4675,8 +4675,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "313": {
@@ -4699,8 +4699,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "315": {
@@ -4735,8 +4735,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "318": {
@@ -4747,8 +4747,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "319": {
@@ -4759,8 +4759,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "320": {
@@ -4795,8 +4795,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "323": {
@@ -4819,8 +4819,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "554": {
@@ -4831,8 +4831,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "562": {
@@ -4867,8 +4867,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "591": {
@@ -4903,8 +4903,8 @@
       "team_name": "Ipswich Town",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "260": {
@@ -4927,8 +4927,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "327": {
@@ -4975,8 +4975,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "332": {
@@ -4999,8 +4999,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "334": {
@@ -5083,8 +5083,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "342": {
@@ -5095,8 +5095,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "343": {
@@ -5107,8 +5107,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "344": {
@@ -5119,8 +5119,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "345": {
@@ -5131,8 +5131,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "346": {
@@ -5155,8 +5155,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "348": {
@@ -5167,8 +5167,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "349": {
@@ -5179,8 +5179,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "385": {
@@ -5203,8 +5203,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "603": {
@@ -5215,8 +5215,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "604": {
@@ -5227,8 +5227,8 @@
       "team_name": "Leeds",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "350": {
@@ -6043,8 +6043,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "412": {
@@ -6067,8 +6067,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "414": {
@@ -6079,8 +6079,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "415": {
@@ -6103,8 +6103,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "417": {
@@ -6139,8 +6139,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "420": {
@@ -6151,8 +6151,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "421": {
@@ -6199,8 +6199,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "425": {
@@ -6211,8 +6211,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "426": {
@@ -6271,8 +6271,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "431": {
@@ -6283,8 +6283,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.0"
     },
     "432": {
@@ -6307,8 +6307,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "434": {
@@ -6319,8 +6319,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "435": {
@@ -6343,8 +6343,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "437": {
@@ -6355,8 +6355,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "438": {
@@ -6367,8 +6367,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "439": {
@@ -6391,8 +6391,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "441": {
@@ -6403,8 +6403,8 @@
       "team_name": "Man Utd",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "442": {
@@ -6739,8 +6739,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "469": {
@@ -6763,8 +6763,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "471": {
@@ -6823,8 +6823,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "476": {
@@ -6835,8 +6835,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "477": {
@@ -6847,8 +6847,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "478": {
@@ -6871,8 +6871,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "480": {
@@ -6895,8 +6895,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.0"
     },
     "483": {
@@ -6919,8 +6919,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "485": {
@@ -6931,8 +6931,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "486": {
@@ -6955,8 +6955,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "488": {
@@ -6979,8 +6979,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "490": {
@@ -7039,8 +7039,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "590": {
@@ -7051,8 +7051,8 @@
       "team_name": "Nott'm Forest",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "112": {
@@ -7087,8 +7087,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "495": {
@@ -7099,8 +7099,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "496": {
@@ -7123,8 +7123,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "498": {
@@ -7147,8 +7147,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "500": {
@@ -7159,8 +7159,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "501": {
@@ -7171,8 +7171,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "502": {
@@ -7195,8 +7195,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "505": {
@@ -7207,8 +7207,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "506": {
@@ -7231,8 +7231,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "508": {
@@ -7243,8 +7243,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "509": {
@@ -7255,8 +7255,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "510": {
@@ -7267,8 +7267,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "511": {
@@ -7279,8 +7279,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "512": {
@@ -7291,8 +7291,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.5"
     },
     "513": {
@@ -7303,8 +7303,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.0"
     },
     "514": {
@@ -7351,8 +7351,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "518": {
@@ -7363,8 +7363,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "519": {
@@ -7399,8 +7399,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "6.5"
     },
     "522": {
@@ -7435,8 +7435,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "525": {
@@ -7483,8 +7483,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "601": {
@@ -7495,8 +7495,8 @@
       "team_name": "Spurs",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "529": {
@@ -7519,8 +7519,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "531": {
@@ -7531,8 +7531,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "532": {
@@ -7555,8 +7555,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.5"
     },
     "534": {
@@ -7603,8 +7603,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.5"
     },
     "538": {
@@ -7615,8 +7615,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "539": {
@@ -7639,8 +7639,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "4.0"
     },
     "541": {
@@ -7711,8 +7711,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "547": {
@@ -7723,8 +7723,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "548": {
@@ -7759,8 +7759,8 @@
       "team_name": "Sunderland",
       "event_points": 0,
       "minutes": 0,
-      "match_status": "played",
-      "status_label": "✓ Played",
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)",
       "now_cost": "5.0"
     },
     "551": {

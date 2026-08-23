@@ -833,11 +833,21 @@
             }
           }
 
-          // Fetch Event Status & Fixtures to update player live match status
-          const [stData, fixData] = await Promise.all([
+          // Fetch Event Status, Fixtures & Live Player Stats to accurately determine match status
+          const [stData, fixData, liveEventData] = await Promise.all([
             fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 2500),
-            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/fixtures/?event=${detectedGw}`, 2500)
+            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/fixtures/?event=${detectedGw}`, 2500),
+            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/event/${detectedGw}/live/`, 2500)
           ]);
+
+          const elStatsMap = {};
+          if (liveEventData && liveEventData.elements && Array.isArray(liveEventData.elements)) {
+            liveEventData.elements.forEach(el => {
+              if (el && el.id && el.stats) {
+                elStatsMap[el.id] = el.stats;
+              }
+            });
+          }
 
           if (fixData && Array.isArray(fixData) && state.dataset.players) {
             const teamFixMap = {};
@@ -846,18 +856,46 @@
               teamFixMap[f.team_a] = f;
             });
 
+            // Also map by team short name if team_id not present
+            const teamsMap = state.dataset.teams || (window.FPL_LIVE_STATIC && window.FPL_LIVE_STATIC.teams) || {};
+            const teamCodeMap = {};
+            Object.entries(teamsMap).forEach(([tId, tObj]) => {
+              if (tObj && tObj.short_name) teamCodeMap[tObj.short_name] = Number(tId);
+            });
+
             Object.values(state.dataset.players).forEach(pl => {
-              if (pl.team_id || pl.team) {
-                const fix = teamFixMap[pl.team_id] || {};
-                if (fix.started === false) {
-                  pl.match_status = 'yet_to_play';
-                  pl.status_label = '⏳ Yet to Play';
-                } else if (fix.started === true && fix.finished === false && (fix.minutes || 0) < 90) {
-                  pl.match_status = 'live';
-                  pl.status_label = `🟢 Live (${fix.minutes}')`;
+              const teamId = pl.team_id || teamCodeMap[pl.team] || pl.team;
+              const fix = teamFixMap[teamId] || {};
+              const st = elStatsMap[pl.id] || {};
+
+              const fixStarted = fix.started === true;
+              const fixFinished = fix.finished === true || (fix.minutes || 0) >= 90;
+              const minutesPlayed = st.minutes !== undefined ? st.minutes : (pl.minutes || 0);
+              const playedFlag = st.played === true || minutesPlayed > 0;
+
+              if (st.total_points !== undefined) {
+                pl.event_points = st.total_points;
+              }
+              pl.minutes = minutesPlayed;
+
+              if (!fixStarted) {
+                pl.match_status = 'yet_to_play';
+                pl.status_label = '⏳ Yet to Play';
+              } else if (playedFlag || minutesPlayed > 0) {
+                if (fixFinished) {
+                  pl.match_status = 'played';
+                  pl.status_label = '✓ Played';
                 } else {
-                  pl.match_status = (pl.event_points > 0 || fix.finished) ? 'played' : 'yet_to_play';
-                  pl.status_label = pl.match_status === 'played' ? '✓ Played' : '⏳ Yet to Play';
+                  pl.match_status = 'live';
+                  pl.status_label = `🟢 Live (${fix.minutes || 0}')`;
+                }
+              } else {
+                if (fixFinished) {
+                  pl.match_status = 'dnp';
+                  pl.status_label = '✕ DNP (0m)';
+                } else {
+                  pl.match_status = 'live';
+                  pl.status_label = `🟢 Live (${fix.minutes || 0}')`;
                 }
               }
             });
@@ -2347,7 +2385,7 @@
         const multiplier = p.multiplier || 1;
         const pts = (pl.event_points || 0) * (p.position <= 11 ? multiplier : 1);
 
-        const isYetToPlay = pl.match_status === 'yet_to_play' || (!pl.match_status && pl.event_points === 0);
+        const isYetToPlay = pl.match_status === 'yet_to_play';
 
         if (p.is_captain) {
           captainName = `${pl.web_name} (${pts} pts)${isYetToPlay ? ' ⏳' : ''}`;
