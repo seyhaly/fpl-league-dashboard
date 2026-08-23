@@ -133,6 +133,17 @@ async function syncAll() {
     leagues: {}
   };
 
+  // Preserve historical gameweek squad picks across new gameweeks
+  const outPath = path.join(__dirname, '..', 'live_data.json');
+  if (fs.existsSync(outPath)) {
+    try {
+      const prevData = JSON.parse(fs.readFileSync(outPath, 'utf-8'));
+      if (prevData && prevData.squadPicks) {
+        outputData.squadPicks = prevData.squadPicks;
+      }
+    } catch (e) {}
+  }
+
   // 3. Process each league
   for (const leagueId of LEAGUES) {
     console.log(`📥 Syncing League #${leagueId}...`);
