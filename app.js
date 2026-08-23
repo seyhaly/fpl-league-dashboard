@@ -2260,11 +2260,18 @@
 
     // Retrieve squad picks from memory (state or pre-bundled FPL_LIVE_STATIC)
     const staticData = window.FPL_LIVE_STATIC || {};
-    const squadPicksMap = state.dataset.squadPicks || staticData.squadPicks || {};
-    const playersMap = state.dataset.players || staticData.players || {};
-    const transfersHistoryMap = state.dataset.transfersHistory || staticData.transfersHistory || {};
+    const squadPicksMap = (state.dataset.squadPicks && Object.keys(state.dataset.squadPicks).length > 0) 
+      ? state.dataset.squadPicks 
+      : (staticData.squadPicks || {});
+    const playersMap = (state.dataset.players && Object.keys(state.dataset.players).length > 0)
+      ? state.dataset.players
+      : (staticData.players || {});
+    const transfersHistoryMap = (state.dataset.transfersHistory && Object.keys(state.dataset.transfersHistory).length > 0)
+      ? state.dataset.transfersHistory
+      : (staticData.transfersHistory || {});
 
-    let squadData = (squadPicksMap[String(manager.id)] && squadPicksMap[String(manager.id)][String(gw)]) || null;
+    const mgrPicks = squadPicksMap[String(manager.id)] || squadPicksMap[Number(manager.id)] || (staticData.squadPicks && (staticData.squadPicks[String(manager.id)] || staticData.squadPicks[Number(manager.id)]));
+    let squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
 
     const posNames = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' };
     const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
@@ -2275,6 +2282,7 @@
     let benchPts = 0;
     let activeChip = 'None';
     let captainName = '-';
+    let hist = {};
 
     let startingRows = '';
     let benchRows = '';
@@ -2284,7 +2292,7 @@
     let isBenchBoostActive = false;
 
     if (squadData && squadData.picks && squadData.picks.length > 0) {
-      const hist = squadData.entry_history || {};
+      hist = squadData.entry_history || {};
       if (hist.overall_rank) overallRank = Number(hist.overall_rank).toLocaleString();
       if (hist.event_transfers !== undefined) transfersCount = hist.event_transfers;
       if (hist.event_transfers_cost !== undefined) {
