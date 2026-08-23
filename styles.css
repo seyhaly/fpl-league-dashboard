@@ -1401,6 +1401,78 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 [data-theme="light"] .tag-active  { background: #e0e7ff; color: #4338ca; }
 [data-theme="light"] .tag-pending { background: #f8fafc; color: #64748b; }
 
+/* Official FPL Day Status Badges */
+.fpl-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  letter-spacing: 0.6px;
+  line-height: 1;
+}
+
+.fpl-badge-provisional {
+  background: rgba(245, 158, 11, 0.14);
+  color: #f59e0b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.fpl-badge-in-progress {
+  background: rgba(6, 182, 212, 0.14);
+  color: #06b6d4;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  animation: pulseLive 2s infinite ease-in-out;
+}
+
+.fpl-badge-upcoming {
+  background: rgba(148, 163, 184, 0.1);
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+}
+
+.fpl-badge-final {
+  background: rgba(16, 185, 129, 0.14);
+  color: #10b981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+[data-theme="light"] .fpl-badge-provisional {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
+[data-theme="light"] .fpl-badge-in-progress {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+
+[data-theme="light"] .fpl-badge-upcoming {
+  background: #f1f5f9;
+  color: #64748b;
+  border-color: #e2e8f0;
+}
+
+[data-theme="light"] .fpl-badge-final {
+  background: #dcfce7;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+/* Fixtures count badge */
+.fixtures-count-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
 /* Footer sync label */
 .tracker-footer {
   display: flex;

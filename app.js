@@ -1890,6 +1890,13 @@
     };
 
     // ── Build rows matching official matchday calendar ──────────────
+    const FIXTURES_MAP = {
+      '2026-08-21': '1 Match (FT)',
+      '2026-08-22': '6 Matches (FT)',
+      '2026-08-23': '3 Matches',
+      '2026-08-24': '1 Match'
+    };
+
     const tableRows = normalizedDailyStatus.map((day, idx, arr) => {
       const [y, m, d] = day.date.split('-').map(Number);
       const dateObj = new Date(Date.UTC(y, m - 1, d, 12, 0, 0));
@@ -1911,14 +1918,34 @@
       const isActive  = !isDone && (day.points === 'r' || day.bonus_added || leaguesUpdating);
       const rowClass  = isDone ? 'row-done' : (isActive ? 'row-active' : 'row-pending');
 
+      // Day Status Badge
+      let dayStatusBadge = '';
+      if (isFinished) {
+        dayStatusBadge = `<span class="fpl-status-badge fpl-badge-final">FINAL</span>`;
+      } else if (isDone) {
+        dayStatusBadge = `<span class="fpl-status-badge fpl-badge-provisional">PROVISIONAL</span>`;
+      } else if (isActive) {
+        dayStatusBadge = `<span class="fpl-status-badge fpl-badge-in-progress">IN PROGRESS</span>`;
+      } else {
+        dayStatusBadge = `<span class="fpl-status-badge fpl-badge-upcoming">NOT STARTED</span>`;
+      }
+
+      const fixturesLabel = FIXTURES_MAP[day.date] || 'Matches';
+      const autoSubsTag = isFinished 
+        ? `<span class="day-tag tag-done">${CHECK}Applied</span>`
+        : `<span class="day-tag tag-pending">${CLOCK}End of GW</span>`;
+
       return `
         <tr class="daily-row ${rowClass}">
           <td class="daily-td-date">
             <span class="date-weekday">${weekday}</span>
             <span class="date-short">${dateFmt}</span>
           </td>
+          <td>${dayStatusBadge}</td>
+          <td><span class="fixtures-count-badge">${fixturesLabel}</span></td>
           <td>${makeTag(ptsType, ptsType === 'done' ? 'Updated' : 'Pending')}</td>
           <td>${makeTag(bonusType, bonusType === 'done' ? 'Added' : (bonusType === 'active' ? 'Processing' : 'Pending'))}</td>
+          <td>${autoSubsTag}</td>
           <td>${makeTag(leaguesTagType, leaguesLabel)}</td>
         </tr>
       `;
@@ -1941,8 +1968,11 @@
           <thead>
             <tr>
               <th>Date</th>
+              <th>Day Status</th>
+              <th>Fixtures</th>
               <th>Match Points</th>
               <th>Bonus Points</th>
+              <th>Auto-Subs</th>
               <th>League Standings</th>
             </tr>
           </thead>
