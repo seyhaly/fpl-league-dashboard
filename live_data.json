@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-23T05:00:00Z",
+  "lastUpdated": "2026-08-23T05:12:39.370Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -11,7 +11,7 @@
       "is_next": false,
       "deadline_time": "2026-08-21T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updated",
       "points": "",
       "daily_status": [
         {
@@ -791,6 +791,17 @@
       "event_points": 0,
       "now_cost": "5.5"
     },
+    "21": {
+      "id": 21,
+      "web_name": "Nørgaard",
+      "first_name": "Christian",
+      "second_name": "Nørgaard",
+      "element_type": 3,
+      "team": "EVE",
+      "team_name": "Everton",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
     "22": {
       "id": 22,
       "web_name": "Nwaneri",
@@ -857,39 +868,6 @@
       "event_points": 0,
       "now_cost": "6.0"
     },
-    "31": {
-      "id": 31,
-      "web_name": "Konsa",
-      "first_name": "Ezri",
-      "second_name": "Konsa Ngoyo",
-      "element_type": 2,
-      "team": "ARS",
-      "team_name": "Arsenal",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "452": {
-      "id": 452,
-      "web_name": "Bruno G.",
-      "first_name": "Bruno",
-      "second_name": "Guimarães Rodriguez Moura",
-      "element_type": 3,
-      "team": "ARS",
-      "team_name": "Arsenal",
-      "event_points": 0,
-      "now_cost": "7.0"
-    },
-    "557": {
-      "id": 557,
-      "web_name": "Tzolis",
-      "first_name": "Christos",
-      "second_name": "Tzolis",
-      "element_type": 3,
-      "team": "ARS",
-      "team_name": "Arsenal",
-      "event_points": 6,
-      "now_cost": "6.5"
-    },
     "28": {
       "id": 28,
       "web_name": "Martinez",
@@ -920,6 +898,17 @@
       "element_type": 2,
       "team": "AVL",
       "team_name": "Aston Villa",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "31": {
+      "id": 31,
+      "web_name": "Konsa",
+      "first_name": "Ezri",
+      "second_name": "Konsa Ngoyo",
+      "element_type": 2,
+      "team": "ARS",
+      "team_name": "Arsenal",
       "event_points": 0,
       "now_cost": "4.5"
     },
@@ -1011,6 +1000,17 @@
       "event_points": 0,
       "now_cost": "4.0"
     },
+    "40": {
+      "id": 40,
+      "web_name": "Rogers",
+      "first_name": "Morgan",
+      "second_name": "Rogers",
+      "element_type": 3,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "7.5"
+    },
     "41": {
       "id": 41,
       "web_name": "Buendía",
@@ -1020,6 +1020,28 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "event_points": 0,
+      "now_cost": "6.0"
+    },
+    "42": {
+      "id": 42,
+      "web_name": "Guessand",
+      "first_name": "Evann",
+      "second_name": "Guessand",
+      "element_type": 3,
+      "team": "CRY",
+      "team_name": "Crystal Palace",
+      "event_points": 1,
+      "now_cost": "5.5"
+    },
+    "43": {
+      "id": 43,
+      "web_name": "Tielemans",
+      "first_name": "Youri",
+      "second_name": "Tielemans",
+      "element_type": 3,
+      "team": "MUN",
+      "team_name": "Man Utd",
+      "event_points": 2,
       "now_cost": "6.0"
     },
     "44": {
@@ -1164,50 +1186,6 @@
       "team_name": "Aston Villa",
       "event_points": 0,
       "now_cost": "5.5"
-    },
-    "160": {
-      "id": 160,
-      "web_name": "Garnacho",
-      "first_name": "Alejandro",
-      "second_name": "Garnacho Ferreyra",
-      "element_type": 3,
-      "team": "AVL",
-      "team_name": "Aston Villa",
-      "event_points": 0,
-      "now_cost": "6.0"
-    },
-    "582": {
-      "id": 582,
-      "web_name": "Madjo",
-      "first_name": "Brian",
-      "second_name": "Madjo",
-      "element_type": 4,
-      "team": "AVL",
-      "team_name": "Aston Villa",
-      "event_points": 0,
-      "now_cost": "5.5"
-    },
-    "596": {
-      "id": 596,
-      "web_name": "Ruggeri",
-      "first_name": "Matteo",
-      "second_name": "Ruggeri",
-      "element_type": 2,
-      "team": "AVL",
-      "team_name": "Aston Villa",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "597": {
-      "id": 597,
-      "web_name": "Suzuki",
-      "first_name": "Zion",
-      "second_name": "Suzuki",
-      "element_type": 1,
-      "team": "AVL",
-      "team_name": "Aston Villa",
-      "event_points": 0,
-      "now_cost": "5.0"
     },
     "57": {
       "id": 57,
@@ -1484,28 +1462,6 @@
       "event_points": 0,
       "now_cost": "6.0"
     },
-    "566": {
-      "id": 566,
-      "web_name": "Silva",
-      "first_name": "António João",
-      "second_name": "Pereira de Albuquerque Tavares da Silva",
-      "element_type": 2,
-      "team": "BOU",
-      "team_name": "Bournemouth",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "573": {
-      "id": 573,
-      "web_name": "Sanchez",
-      "first_name": "Juanlu",
-      "second_name": "Sánchez",
-      "element_type": 2,
-      "team": "BOU",
-      "team_name": "Bournemouth",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
     "82": {
       "id": 82,
       "web_name": "Kelleher",
@@ -1715,6 +1671,17 @@
       "event_points": 0,
       "now_cost": "5.0"
     },
+    "101": {
+      "id": 101,
+      "web_name": "Henderson",
+      "first_name": "Jordan",
+      "second_name": "Henderson",
+      "element_type": 3,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
     "102": {
       "id": 102,
       "web_name": "Yarmoliuk",
@@ -1735,6 +1702,17 @@
       "team": "BRE",
       "team_name": "Brentford",
       "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "104": {
+      "id": 104,
+      "web_name": "Onyeka",
+      "first_name": "Frank",
+      "second_name": "Onyeka",
+      "element_type": 3,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "event_points": 2,
       "now_cost": "5.0"
     },
     "105": {
@@ -1781,17 +1759,6 @@
       "event_points": 1,
       "now_cost": "5.5"
     },
-    "565": {
-      "id": 565,
-      "web_name": "M.Sangaré",
-      "first_name": "Mamadou",
-      "second_name": "Sangaré",
-      "element_type": 3,
-      "team": "BRE",
-      "team_name": "Brentford",
-      "event_points": 14,
-      "now_cost": "5.5"
-    },
     "109": {
       "id": 109,
       "web_name": "Verbruggen",
@@ -1801,6 +1768,17 @@
       "team": "BHA",
       "team_name": "Brighton",
       "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "110": {
+      "id": 110,
+      "web_name": "Rushworth",
+      "first_name": "Carl",
+      "second_name": "Rushworth",
+      "element_type": 1,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "event_points": 1,
       "now_cost": "4.5"
     },
     "111": {
@@ -1813,6 +1791,17 @@
       "team_name": "Brighton",
       "event_points": 0,
       "now_cost": "4.0"
+    },
+    "112": {
+      "id": 112,
+      "web_name": "Van Hecke",
+      "first_name": "Jan Paul",
+      "second_name": "van Hecke",
+      "element_type": 2,
+      "team": "TOT",
+      "team_name": "Spurs",
+      "event_points": 1,
+      "now_cost": "5.0"
     },
     "113": {
       "id": 113,
@@ -2067,6 +2056,17 @@
       "event_points": 0,
       "now_cost": "5.0"
     },
+    "136": {
+      "id": 136,
+      "web_name": "Welbeck",
+      "first_name": "Danny",
+      "second_name": "Welbeck",
+      "element_type": 4,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "6.0"
+    },
     "137": {
       "id": 137,
       "web_name": "Tzimas",
@@ -2099,83 +2099,6 @@
       "team_name": "Brighton",
       "event_points": 0,
       "now_cost": "5.0"
-    },
-    "328": {
-      "id": 328,
-      "web_name": "Struijk",
-      "first_name": "Pascal",
-      "second_name": "Struijk",
-      "element_type": 2,
-      "team": "BHA",
-      "team_name": "Brighton",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "504": {
-      "id": 504,
-      "web_name": "Vuskovic",
-      "first_name": "Luka",
-      "second_name": "Vušković",
-      "element_type": 2,
-      "team": "BHA",
-      "team_name": "Brighton",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "594": {
-      "id": 594,
-      "web_name": "David",
-      "first_name": "Promise",
-      "second_name": "David",
-      "element_type": 4,
-      "team": "BHA",
-      "team_name": "Brighton",
-      "event_points": 0,
-      "now_cost": "6.0"
-    },
-    "600": {
-      "id": 600,
-      "web_name": "Osman",
-      "first_name": "Ibrahim",
-      "second_name": "Osman",
-      "element_type": 3,
-      "team": "BHA",
-      "team_name": "Brighton",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "40": {
-      "id": 40,
-      "web_name": "Rogers",
-      "first_name": "Morgan",
-      "second_name": "Rogers",
-      "element_type": 3,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "7.5"
-    },
-    "101": {
-      "id": 101,
-      "web_name": "Henderson",
-      "first_name": "Jordan",
-      "second_name": "Henderson",
-      "element_type": 3,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "136": {
-      "id": 136,
-      "web_name": "Welbeck",
-      "first_name": "Danny",
-      "second_name": "Welbeck",
-      "element_type": 4,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "6.0"
     },
     "140": {
       "id": 140,
@@ -2397,6 +2320,17 @@
       "event_points": 0,
       "now_cost": "5.5"
     },
+    "160": {
+      "id": 160,
+      "web_name": "Garnacho",
+      "first_name": "Alejandro",
+      "second_name": "Garnacho Ferreyra",
+      "element_type": 3,
+      "team": "AVL",
+      "team_name": "Aston Villa",
+      "event_points": 0,
+      "now_cost": "6.0"
+    },
     "161": {
       "id": 161,
       "web_name": "Lavia",
@@ -2406,6 +2340,17 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "162": {
+      "id": 162,
+      "web_name": "Andrey Santos",
+      "first_name": "Andrey",
+      "second_name": "Nascimento dos Santos",
+      "element_type": 3,
+      "team": "MUN",
+      "team_name": "Man Utd",
+      "event_points": 2,
       "now_cost": "5.0"
     },
     "163": {
@@ -2495,94 +2440,6 @@
       "team_name": "Chelsea",
       "event_points": 0,
       "now_cost": "5.0"
-    },
-    "200": {
-      "id": 200,
-      "web_name": "Lacroix",
-      "first_name": "Maxence",
-      "second_name": "Lacroix",
-      "element_type": 2,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "6.0"
-    },
-    "560": {
-      "id": 560,
-      "web_name": "Penders",
-      "first_name": "Mike",
-      "second_name": "Penders",
-      "element_type": 1,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "561": {
-      "id": 561,
-      "web_name": "Anselmino",
-      "first_name": "Aaron",
-      "second_name": "Anselmino",
-      "element_type": 2,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "568": {
-      "id": 568,
-      "web_name": "Barco",
-      "first_name": "Valentín",
-      "second_name": "Barco",
-      "element_type": 3,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "5.5"
-    },
-    "578": {
-      "id": 578,
-      "web_name": "Mudryk",
-      "first_name": "Mykhailo",
-      "second_name": "Mudryk",
-      "element_type": 3,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "5.5"
-    },
-    "583": {
-      "id": 583,
-      "web_name": "Chavarria",
-      "first_name": "Pep",
-      "second_name": "Chavarría",
-      "element_type": 2,
-      "team": "CHE",
-      "team_name": "Chelsea",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "104": {
-      "id": 104,
-      "web_name": "Onyeka",
-      "first_name": "Frank",
-      "second_name": "Onyeka",
-      "element_type": 3,
-      "team": "COV",
-      "team_name": "Coventry City",
-      "event_points": 2,
-      "now_cost": "5.0"
-    },
-    "110": {
-      "id": 110,
-      "web_name": "Rushworth",
-      "first_name": "Carl",
-      "second_name": "Rushworth",
-      "element_type": 1,
-      "team": "COV",
-      "team_name": "Coventry City",
-      "event_points": 1,
-      "now_cost": "4.5"
     },
     "171": {
       "id": 171,
@@ -2881,61 +2738,6 @@
       "event_points": 0,
       "now_cost": "4.5"
     },
-    "492": {
-      "id": 492,
-      "web_name": "Awoniyi",
-      "first_name": "Taiwo",
-      "second_name": "Awoniyi",
-      "element_type": 4,
-      "team": "COV",
-      "team_name": "Coventry City",
-      "event_points": 1,
-      "now_cost": "5.5"
-    },
-    "575": {
-      "id": 575,
-      "web_name": "Yirenkyi",
-      "first_name": "Caleb",
-      "second_name": "Yirenkyi",
-      "element_type": 3,
-      "team": "COV",
-      "team_name": "Coventry City",
-      "event_points": 1,
-      "now_cost": "5.0"
-    },
-    "584": {
-      "id": 584,
-      "web_name": "Hamer",
-      "first_name": "Gustavo",
-      "second_name": "Hamer",
-      "element_type": 3,
-      "team": "COV",
-      "team_name": "Coventry City",
-      "event_points": 1,
-      "now_cost": "5.5"
-    },
-    "599": {
-      "id": 599,
-      "web_name": "Cherif",
-      "first_name": "Sidiki",
-      "second_name": "Cherif",
-      "element_type": 4,
-      "team": "COV",
-      "team_name": "Coventry City",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "42": {
-      "id": 42,
-      "web_name": "Guessand",
-      "first_name": "Evann",
-      "second_name": "Guessand",
-      "element_type": 3,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "event_points": 1,
-      "now_cost": "5.5"
-    },
     "198": {
       "id": 198,
       "web_name": "Henderson",
@@ -2957,6 +2759,17 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "now_cost": "4.5"
+    },
+    "200": {
+      "id": 200,
+      "web_name": "Lacroix",
+      "first_name": "Maxence",
+      "second_name": "Lacroix",
+      "element_type": 2,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "6.0"
     },
     "201": {
       "id": 201,
@@ -3045,6 +2858,17 @@
       "team_name": "Crystal Palace",
       "event_points": 0,
       "now_cost": "6.5"
+    },
+    "209": {
+      "id": 209,
+      "web_name": "Johnson",
+      "first_name": "Brennan",
+      "second_name": "Johnson",
+      "element_type": 3,
+      "team": "EVE",
+      "team_name": "Everton",
+      "event_points": 1,
+      "now_cost": "6.0"
     },
     "210": {
       "id": 210,
@@ -3222,83 +3046,6 @@
       "event_points": 0,
       "now_cost": "5.0"
     },
-    "241": {
-      "id": 241,
-      "web_name": "McNeil",
-      "first_name": "Dwight",
-      "second_name": "McNeil",
-      "element_type": 3,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "event_points": 2,
-      "now_cost": "5.5"
-    },
-    "555": {
-      "id": 555,
-      "web_name": "Matthews",
-      "first_name": "Remi",
-      "second_name": "Matthews",
-      "element_type": 1,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "event_points": 0,
-      "now_cost": "4.0"
-    },
-    "577": {
-      "id": 577,
-      "web_name": "Tomiyasu",
-      "first_name": "Takehiro",
-      "second_name": "Tomiyasu",
-      "element_type": 2,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "event_points": 1,
-      "now_cost": "4.5"
-    },
-    "588": {
-      "id": 588,
-      "web_name": "Khalaili",
-      "first_name": "Anan",
-      "second_name": "Khalaili",
-      "element_type": 2,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "event_points": 1,
-      "now_cost": "5.0"
-    },
-    "595": {
-      "id": 595,
-      "web_name": "Gozo",
-      "first_name": "Zavier",
-      "second_name": "Gozo",
-      "element_type": 3,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "21": {
-      "id": 21,
-      "web_name": "Nørgaard",
-      "first_name": "Christian",
-      "second_name": "Nørgaard",
-      "element_type": 3,
-      "team": "EVE",
-      "team_name": "Everton",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "209": {
-      "id": 209,
-      "web_name": "Johnson",
-      "first_name": "Brennan",
-      "second_name": "Johnson",
-      "element_type": 3,
-      "team": "EVE",
-      "team_name": "Everton",
-      "event_points": 1,
-      "now_cost": "6.0"
-    },
     "226": {
       "id": 226,
       "web_name": "Pickford",
@@ -3431,6 +3178,17 @@
       "event_points": 9,
       "now_cost": "6.0"
     },
+    "238": {
+      "id": 238,
+      "web_name": "Grealish",
+      "first_name": "Jack",
+      "second_name": "Grealish",
+      "element_type": 3,
+      "team": "MCI",
+      "team_name": "Man City",
+      "event_points": 0,
+      "now_cost": "6.5"
+    },
     "239": {
       "id": 239,
       "web_name": "Garner",
@@ -3452,6 +3210,17 @@
       "team_name": "Everton",
       "event_points": 0,
       "now_cost": "5.0"
+    },
+    "241": {
+      "id": 241,
+      "web_name": "McNeil",
+      "first_name": "Dwight",
+      "second_name": "McNeil",
+      "element_type": 3,
+      "team": "CRY",
+      "team_name": "Crystal Palace",
+      "event_points": 2,
+      "now_cost": "5.5"
     },
     "242": {
       "id": 242,
@@ -3640,6 +3409,28 @@
       "event_points": 0,
       "now_cost": "4.5"
     },
+    "259": {
+      "id": 259,
+      "web_name": "Diop",
+      "first_name": "Issa",
+      "second_name": "Diop",
+      "element_type": 2,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 2,
+      "now_cost": "4.0"
+    },
+    "260": {
+      "id": 260,
+      "web_name": "Wilson",
+      "first_name": "Harry",
+      "second_name": "Wilson",
+      "element_type": 3,
+      "team": "LEE",
+      "team_name": "Leeds",
+      "event_points": 3,
+      "now_cost": "6.5"
+    },
     "261": {
       "id": 261,
       "web_name": "Iwobi",
@@ -3706,6 +3497,17 @@
       "event_points": 0,
       "now_cost": "5.0"
     },
+    "267": {
+      "id": 267,
+      "web_name": "Lukić",
+      "first_name": "Saša",
+      "second_name": "Lukić",
+      "element_type": 3,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 5,
+      "now_cost": "5.0"
+    },
     "268": {
       "id": 268,
       "web_name": "King",
@@ -3760,39 +3562,6 @@
       "team_name": "Fulham",
       "event_points": 0,
       "now_cost": "4.5"
-    },
-    "569": {
-      "id": 569,
-      "web_name": "Gonzalo",
-      "first_name": "Gonzalo",
-      "second_name": "García",
-      "element_type": 4,
-      "team": "FUL",
-      "team_name": "Fulham",
-      "event_points": 0,
-      "now_cost": "6.0"
-    },
-    "570": {
-      "id": 570,
-      "web_name": "Palacios",
-      "first_name": "César",
-      "second_name": "Palacios",
-      "element_type": 3,
-      "team": "FUL",
-      "team_name": "Fulham",
-      "event_points": 0,
-      "now_cost": "5.5"
-    },
-    "580": {
-      "id": 580,
-      "web_name": "Charles",
-      "first_name": "Shea",
-      "second_name": "Charles",
-      "element_type": 3,
-      "team": "FUL",
-      "team_name": "Fulham",
-      "event_points": 0,
-      "now_cost": "5.0"
     },
     "273": {
       "id": 273,
@@ -4091,127 +3860,6 @@
       "event_points": 0,
       "now_cost": "4.5"
     },
-    "340": {
-      "id": 340,
-      "web_name": "Gelhardt",
-      "first_name": "Joe",
-      "second_name": "Gelhardt",
-      "element_type": 3,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "556": {
-      "id": 556,
-      "web_name": "Targett",
-      "first_name": "Matt",
-      "second_name": "Targett",
-      "element_type": 2,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 1,
-      "now_cost": "4.0"
-    },
-    "563": {
-      "id": 563,
-      "web_name": "Morita",
-      "first_name": "Hidemasa",
-      "second_name": "Morita",
-      "element_type": 3,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "572": {
-      "id": 572,
-      "web_name": "Tzolakis",
-      "first_name": "Konstantinos",
-      "second_name": "Tzolakis",
-      "element_type": 1,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 10,
-      "now_cost": "4.5"
-    },
-    "574": {
-      "id": 574,
-      "web_name": "Hjertø-Dahl",
-      "first_name": "Jens",
-      "second_name": "Hjertø-Dahl",
-      "element_type": 3,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "576": {
-      "id": 576,
-      "web_name": "Stroud",
-      "first_name": "Elliot",
-      "second_name": "Stroud",
-      "element_type": 3,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 3,
-      "now_cost": "5.0"
-    },
-    "585": {
-      "id": 585,
-      "web_name": "Herrington",
-      "first_name": "Lucas",
-      "second_name": "Herrington",
-      "element_type": 2,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 1,
-      "now_cost": "4.0"
-    },
-    "586": {
-      "id": 586,
-      "web_name": "Mendy",
-      "first_name": "Nobel",
-      "second_name": "Mendy",
-      "element_type": 2,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 15,
-      "now_cost": "4.0"
-    },
-    "589": {
-      "id": 589,
-      "web_name": "Gourna-Douath",
-      "first_name": "Lucas",
-      "second_name": "Gourna-Douath",
-      "element_type": 3,
-      "team": "HUL",
-      "team_name": "Hull City",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "259": {
-      "id": 259,
-      "web_name": "Diop",
-      "first_name": "Issa",
-      "second_name": "Diop",
-      "element_type": 2,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 2,
-      "now_cost": "4.0"
-    },
-    "267": {
-      "id": 267,
-      "web_name": "Lukić",
-      "first_name": "Saša",
-      "second_name": "Lukić",
-      "element_type": 3,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 5,
-      "now_cost": "5.0"
-    },
     "300": {
       "id": 300,
       "web_name": "Walton",
@@ -4487,93 +4135,16 @@
       "event_points": 0,
       "now_cost": "5.0"
     },
-    "554": {
-      "id": 554,
-      "web_name": "Van Oevelen",
-      "first_name": "Kayne",
-      "second_name": "van Oevelen",
+    "325": {
+      "id": 325,
+      "web_name": "Darlow",
+      "first_name": "Karl",
+      "second_name": "Darlow",
       "element_type": 1,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
+      "team": "MUN",
+      "team_name": "Man Utd",
       "event_points": 0,
       "now_cost": "4.5"
-    },
-    "562": {
-      "id": 562,
-      "web_name": "Maeda",
-      "first_name": "Daizen",
-      "second_name": "Maeda",
-      "element_type": 3,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 2,
-      "now_cost": "5.5"
-    },
-    "564": {
-      "id": 564,
-      "web_name": "Scherpen",
-      "first_name": "Kjell",
-      "second_name": "Scherpen",
-      "element_type": 1,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 2,
-      "now_cost": "4.5"
-    },
-    "571": {
-      "id": 571,
-      "web_name": "Florentino",
-      "first_name": "Florentino Ibrain",
-      "second_name": "Morris Luís",
-      "element_type": 3,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "591": {
-      "id": 591,
-      "web_name": "Enciso",
-      "first_name": "Julio",
-      "second_name": "Enciso",
-      "element_type": 3,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 5,
-      "now_cost": "5.5"
-    },
-    "592": {
-      "id": 592,
-      "web_name": "Ouattara",
-      "first_name": "Abdoul",
-      "second_name": "Ouattara",
-      "element_type": 2,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 1,
-      "now_cost": "4.0"
-    },
-    "602": {
-      "id": 602,
-      "web_name": "Humphreys",
-      "first_name": "Cameron",
-      "second_name": "Humphreys",
-      "element_type": 3,
-      "team": "IPS",
-      "team_name": "Ipswich Town",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "260": {
-      "id": 260,
-      "web_name": "Wilson",
-      "first_name": "Harry",
-      "second_name": "Wilson",
-      "element_type": 3,
-      "team": "LEE",
-      "team_name": "Leeds",
-      "event_points": 3,
-      "now_cost": "6.5"
     },
     "326": {
       "id": 326,
@@ -4595,6 +4166,17 @@
       "team": "LEE",
       "team_name": "Leeds",
       "event_points": 10,
+      "now_cost": "5.0"
+    },
+    "328": {
+      "id": 328,
+      "web_name": "Struijk",
+      "first_name": "Pascal",
+      "second_name": "Struijk",
+      "element_type": 2,
+      "team": "BHA",
+      "team_name": "Brighton",
+      "event_points": 0,
       "now_cost": "5.0"
     },
     "329": {
@@ -4718,6 +4300,17 @@
       "event_points": 1,
       "now_cost": "5.0"
     },
+    "340": {
+      "id": 340,
+      "web_name": "Gelhardt",
+      "first_name": "Joe",
+      "second_name": "Gelhardt",
+      "element_type": 3,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
     "341": {
       "id": 341,
       "web_name": "Gnonto",
@@ -4812,50 +4405,6 @@
       "first_name": "Mateo",
       "second_name": "Joseph Fernández-Regatillo",
       "element_type": 4,
-      "team": "LEE",
-      "team_name": "Leeds",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "385": {
-      "id": 385,
-      "web_name": "Trafford",
-      "first_name": "James",
-      "second_name": "Trafford",
-      "element_type": 1,
-      "team": "LEE",
-      "team_name": "Leeds",
-      "event_points": 9,
-      "now_cost": "5.0"
-    },
-    "598": {
-      "id": 598,
-      "web_name": "Elvedi",
-      "first_name": "Nico",
-      "second_name": "Elvedi",
-      "element_type": 2,
-      "team": "LEE",
-      "team_name": "Leeds",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "603": {
-      "id": 603,
-      "web_name": "Lienou",
-      "first_name": "Jayden",
-      "second_name": "Lienou",
-      "element_type": 2,
-      "team": "LEE",
-      "team_name": "Leeds",
-      "event_points": 0,
-      "now_cost": "4.0"
-    },
-    "604": {
-      "id": 604,
-      "web_name": "Cresswell",
-      "first_name": "Alfie",
-      "second_name": "Cresswell",
-      "element_type": 3,
       "team": "LEE",
       "team_name": "Leeds",
       "event_points": 0,
@@ -5235,28 +4784,6 @@
       "event_points": 0,
       "now_cost": "5.5"
     },
-    "579": {
-      "id": 579,
-      "web_name": "Araujo",
-      "first_name": "Ronald",
-      "second_name": "Araujo",
-      "element_type": 2,
-      "team": "LIV",
-      "team_name": "Liverpool",
-      "event_points": 0,
-      "now_cost": "5.5"
-    },
-    "238": {
-      "id": 238,
-      "web_name": "Grealish",
-      "first_name": "Jack",
-      "second_name": "Grealish",
-      "element_type": 3,
-      "team": "MCI",
-      "team_name": "Man City",
-      "event_points": 0,
-      "now_cost": "6.5"
-    },
     "384": {
       "id": 384,
       "web_name": "Donnarumma",
@@ -5267,6 +4794,17 @@
       "team_name": "Man City",
       "event_points": 0,
       "now_cost": "5.5"
+    },
+    "385": {
+      "id": 385,
+      "web_name": "Trafford",
+      "first_name": "James",
+      "second_name": "Trafford",
+      "element_type": 1,
+      "team": "LEE",
+      "team_name": "Leeds",
+      "event_points": 9,
+      "now_cost": "5.0"
     },
     "386": {
       "id": 386,
@@ -5553,61 +5091,6 @@
       "team_name": "Man City",
       "event_points": 0,
       "now_cost": "15.5"
-    },
-    "481": {
-      "id": 481,
-      "web_name": "Anderson",
-      "first_name": "Elliot",
-      "second_name": "Anderson",
-      "element_type": 3,
-      "team": "MCI",
-      "team_name": "Man City",
-      "event_points": 0,
-      "now_cost": "6.5"
-    },
-    "587": {
-      "id": 587,
-      "web_name": "Rulli",
-      "first_name": "Gerónimo",
-      "second_name": "Rulli",
-      "element_type": 1,
-      "team": "MCI",
-      "team_name": "Man City",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "43": {
-      "id": 43,
-      "web_name": "Tielemans",
-      "first_name": "Youri",
-      "second_name": "Tielemans",
-      "element_type": 3,
-      "team": "MUN",
-      "team_name": "Man Utd",
-      "event_points": 2,
-      "now_cost": "6.0"
-    },
-    "162": {
-      "id": 162,
-      "web_name": "Andrey Santos",
-      "first_name": "Andrey",
-      "second_name": "Nascimento dos Santos",
-      "element_type": 3,
-      "team": "MUN",
-      "team_name": "Man Utd",
-      "event_points": 2,
-      "now_cost": "5.0"
-    },
-    "325": {
-      "id": 325,
-      "web_name": "Darlow",
-      "first_name": "Karl",
-      "second_name": "Darlow",
-      "element_type": 1,
-      "team": "MUN",
-      "team_name": "Man Utd",
-      "event_points": 0,
-      "now_cost": "4.5"
     },
     "412": {
       "id": 412,
@@ -6049,6 +5532,17 @@
       "event_points": 0,
       "now_cost": "4.0"
     },
+    "452": {
+      "id": 452,
+      "web_name": "Bruno G.",
+      "first_name": "Bruno",
+      "second_name": "Guimarães Rodriguez Moura",
+      "element_type": 3,
+      "team": "ARS",
+      "team_name": "Arsenal",
+      "event_points": 0,
+      "now_cost": "7.0"
+    },
     "453": {
       "id": 453,
       "web_name": "Barnes",
@@ -6070,6 +5564,17 @@
       "team_name": "Newcastle",
       "event_points": 0,
       "now_cost": "6.0"
+    },
+    "455": {
+      "id": 455,
+      "web_name": "Tonali",
+      "first_name": "Sandro",
+      "second_name": "Tonali",
+      "element_type": 3,
+      "team": "TOT",
+      "team_name": "Spurs",
+      "event_points": 2,
+      "now_cost": "5.5"
     },
     "456": {
       "id": 456,
@@ -6187,39 +5692,6 @@
       "first_name": "Sean",
       "second_name": "Neave",
       "element_type": 4,
-      "team": "NEW",
-      "team_name": "Newcastle",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "559": {
-      "id": 559,
-      "web_name": "Bamba",
-      "first_name": "Aladji",
-      "second_name": "Bamba",
-      "element_type": 3,
-      "team": "NEW",
-      "team_name": "Newcastle",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "567": {
-      "id": 567,
-      "web_name": "Horníček",
-      "first_name": "Lukás",
-      "second_name": "Hornícek",
-      "element_type": 1,
-      "team": "NEW",
-      "team_name": "Newcastle",
-      "event_points": 0,
-      "now_cost": "5.0"
-    },
-    "593": {
-      "id": 593,
-      "web_name": "Dedić",
-      "first_name": "Amar",
-      "second_name": "Dedic",
-      "element_type": 2,
       "team": "NEW",
       "team_name": "Newcastle",
       "event_points": 0,
@@ -6379,6 +5851,17 @@
       "event_points": 2,
       "now_cost": "8.0"
     },
+    "481": {
+      "id": 481,
+      "web_name": "Anderson",
+      "first_name": "Elliot",
+      "second_name": "Anderson",
+      "element_type": 3,
+      "team": "MCI",
+      "team_name": "Man City",
+      "event_points": 0,
+      "now_cost": "6.5"
+    },
     "482": {
       "id": 482,
       "web_name": "Hudson-Odoi",
@@ -6489,6 +5972,17 @@
       "event_points": 2,
       "now_cost": "6.0"
     },
+    "492": {
+      "id": 492,
+      "web_name": "Awoniyi",
+      "first_name": "Taiwo",
+      "second_name": "Awoniyi",
+      "element_type": 4,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "event_points": 1,
+      "now_cost": "5.5"
+    },
     "493": {
       "id": 493,
       "web_name": "Kalimuendo",
@@ -6498,61 +5992,6 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "event_points": 1,
-      "now_cost": "5.5"
-    },
-    "558": {
-      "id": 558,
-      "web_name": "Schlager",
-      "first_name": "Xaver",
-      "second_name": "Schlager",
-      "element_type": 3,
-      "team": "NFO",
-      "team_name": "Nott'm Forest",
-      "event_points": 1,
-      "now_cost": "5.0"
-    },
-    "581": {
-      "id": 581,
-      "web_name": "Diomande",
-      "first_name": "Ousmane",
-      "second_name": "Diomande",
-      "element_type": 2,
-      "team": "NFO",
-      "team_name": "Nott'm Forest",
-      "event_points": 0,
-      "now_cost": "5.5"
-    },
-    "590": {
-      "id": 590,
-      "web_name": "Benda",
-      "first_name": "Steven",
-      "second_name": "Benda",
-      "element_type": 1,
-      "team": "NFO",
-      "team_name": "Nott'm Forest",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "112": {
-      "id": 112,
-      "web_name": "Van Hecke",
-      "first_name": "Jan Paul",
-      "second_name": "van Hecke",
-      "element_type": 2,
-      "team": "TOT",
-      "team_name": "Spurs",
-      "event_points": 1,
-      "now_cost": "5.0"
-    },
-    "455": {
-      "id": 455,
-      "web_name": "Tonali",
-      "first_name": "Sandro",
-      "second_name": "Tonali",
-      "element_type": 3,
-      "team": "TOT",
-      "team_name": "Spurs",
-      "event_points": 2,
       "now_cost": "5.5"
     },
     "494": {
@@ -6662,6 +6101,17 @@
       "element_type": 2,
       "team": "TOT",
       "team_name": "Spurs",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "504": {
+      "id": 504,
+      "web_name": "Vuskovic",
+      "first_name": "Luka",
+      "second_name": "Vušković",
+      "element_type": 2,
+      "team": "BHA",
+      "team_name": "Brighton",
       "event_points": 0,
       "now_cost": "5.0"
     },
@@ -6924,17 +6374,6 @@
       "first_name": "Dane",
       "second_name": "Scarlett",
       "element_type": 4,
-      "team": "TOT",
-      "team_name": "Spurs",
-      "event_points": 0,
-      "now_cost": "4.5"
-    },
-    "601": {
-      "id": 601,
-      "web_name": "Williams-Barnett",
-      "first_name": "Luca",
-      "second_name": "Williams-Barnett",
-      "element_type": 3,
       "team": "TOT",
       "team_name": "Spurs",
       "event_points": 0,
@@ -7214,14 +6653,861 @@
       "team_name": "Sunderland",
       "event_points": 1,
       "now_cost": "5.5"
+    },
+    "554": {
+      "id": 554,
+      "web_name": "Van Oevelen",
+      "first_name": "Kayne",
+      "second_name": "van Oevelen",
+      "element_type": 1,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "555": {
+      "id": 555,
+      "web_name": "Matthews",
+      "first_name": "Remi",
+      "second_name": "Matthews",
+      "element_type": 1,
+      "team": "CRY",
+      "team_name": "Crystal Palace",
+      "event_points": 0,
+      "now_cost": "4.0"
+    },
+    "556": {
+      "id": 556,
+      "web_name": "Targett",
+      "first_name": "Matt",
+      "second_name": "Targett",
+      "element_type": 2,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 1,
+      "now_cost": "4.0"
+    },
+    "557": {
+      "id": 557,
+      "web_name": "Tzolis",
+      "first_name": "Christos",
+      "second_name": "Tzolis",
+      "element_type": 3,
+      "team": "ARS",
+      "team_name": "Arsenal",
+      "event_points": 6,
+      "now_cost": "6.5"
+    },
+    "558": {
+      "id": 558,
+      "web_name": "Schlager",
+      "first_name": "Xaver",
+      "second_name": "Schlager",
+      "element_type": 3,
+      "team": "NFO",
+      "team_name": "Nott'm Forest",
+      "event_points": 1,
+      "now_cost": "5.0"
+    },
+    "559": {
+      "id": 559,
+      "web_name": "Bamba",
+      "first_name": "Aladji",
+      "second_name": "Bamba",
+      "element_type": 3,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "560": {
+      "id": 560,
+      "web_name": "Penders",
+      "first_name": "Mike",
+      "second_name": "Penders",
+      "element_type": 1,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "561": {
+      "id": 561,
+      "web_name": "Anselmino",
+      "first_name": "Aaron",
+      "second_name": "Anselmino",
+      "element_type": 2,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "562": {
+      "id": 562,
+      "web_name": "Maeda",
+      "first_name": "Daizen",
+      "second_name": "Maeda",
+      "element_type": 3,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 2,
+      "now_cost": "5.5"
+    },
+    "563": {
+      "id": 563,
+      "web_name": "Morita",
+      "first_name": "Hidemasa",
+      "second_name": "Morita",
+      "element_type": 3,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "564": {
+      "id": 564,
+      "web_name": "Scherpen",
+      "first_name": "Kjell",
+      "second_name": "Scherpen",
+      "element_type": 1,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 2,
+      "now_cost": "4.5"
+    },
+    "565": {
+      "id": 565,
+      "web_name": "M.Sangaré",
+      "first_name": "Mamadou",
+      "second_name": "Sangaré",
+      "element_type": 3,
+      "team": "BRE",
+      "team_name": "Brentford",
+      "event_points": 14,
+      "now_cost": "5.5"
+    },
+    "566": {
+      "id": 566,
+      "web_name": "Silva",
+      "first_name": "António João",
+      "second_name": "Pereira de Albuquerque Tavares da Silva",
+      "element_type": 2,
+      "team": "BOU",
+      "team_name": "Bournemouth",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "567": {
+      "id": 567,
+      "web_name": "Horníček",
+      "first_name": "Lukás",
+      "second_name": "Hornícek",
+      "element_type": 1,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "568": {
+      "id": 568,
+      "web_name": "Barco",
+      "first_name": "Valentín",
+      "second_name": "Barco",
+      "element_type": 3,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "5.5"
+    },
+    "569": {
+      "id": 569,
+      "web_name": "Gonzalo",
+      "first_name": "Gonzalo",
+      "second_name": "García",
+      "element_type": 4,
+      "team": "FUL",
+      "team_name": "Fulham",
+      "event_points": 0,
+      "now_cost": "6.0"
+    },
+    "570": {
+      "id": 570,
+      "web_name": "Palacios",
+      "first_name": "César",
+      "second_name": "Palacios",
+      "element_type": 3,
+      "team": "FUL",
+      "team_name": "Fulham",
+      "event_points": 0,
+      "now_cost": "5.5"
+    },
+    "571": {
+      "id": 571,
+      "web_name": "Florentino",
+      "first_name": "Florentino Ibrain",
+      "second_name": "Morris Luís",
+      "element_type": 3,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "572": {
+      "id": 572,
+      "web_name": "Tzolakis",
+      "first_name": "Konstantinos",
+      "second_name": "Tzolakis",
+      "element_type": 1,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 10,
+      "now_cost": "4.5"
+    },
+    "573": {
+      "id": 573,
+      "web_name": "Sanchez",
+      "first_name": "Juanlu",
+      "second_name": "Sánchez",
+      "element_type": 2,
+      "team": "BOU",
+      "team_name": "Bournemouth",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "574": {
+      "id": 574,
+      "web_name": "Hjertø-Dahl",
+      "first_name": "Jens",
+      "second_name": "Hjertø-Dahl",
+      "element_type": 3,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "575": {
+      "id": 575,
+      "web_name": "Yirenkyi",
+      "first_name": "Caleb",
+      "second_name": "Yirenkyi",
+      "element_type": 3,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "event_points": 1,
+      "now_cost": "5.0"
+    },
+    "576": {
+      "id": 576,
+      "web_name": "Stroud",
+      "first_name": "Elliot",
+      "second_name": "Stroud",
+      "element_type": 3,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 3,
+      "now_cost": "5.0"
+    },
+    "577": {
+      "id": 577,
+      "web_name": "Tomiyasu",
+      "first_name": "Takehiro",
+      "second_name": "Tomiyasu",
+      "element_type": 2,
+      "team": "CRY",
+      "team_name": "Crystal Palace",
+      "event_points": 1,
+      "now_cost": "4.5"
+    },
+    "578": {
+      "id": 578,
+      "web_name": "Mudryk",
+      "first_name": "Mykhailo",
+      "second_name": "Mudryk",
+      "element_type": 3,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "5.5"
+    },
+    "579": {
+      "id": 579,
+      "web_name": "Araujo",
+      "first_name": "Ronald",
+      "second_name": "Araujo",
+      "element_type": 2,
+      "team": "LIV",
+      "team_name": "Liverpool",
+      "event_points": 0,
+      "now_cost": "5.5"
+    },
+    "580": {
+      "id": 580,
+      "web_name": "Charles",
+      "first_name": "Shea",
+      "second_name": "Charles",
+      "element_type": 3,
+      "team": "FUL",
+      "team_name": "Fulham",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "581": {
+      "id": 581,
+      "web_name": "Diomande",
+      "first_name": "Ousmane",
+      "second_name": "Diomande",
+      "element_type": 2,
+      "team": "NFO",
+      "team_name": "Nott'm Forest",
+      "event_points": 0,
+      "now_cost": "5.5"
+    },
+    "582": {
+      "id": 582,
+      "web_name": "Madjo",
+      "first_name": "Brian",
+      "second_name": "Madjo",
+      "element_type": 4,
+      "team": "AVL",
+      "team_name": "Aston Villa",
+      "event_points": 0,
+      "now_cost": "5.5"
+    },
+    "583": {
+      "id": 583,
+      "web_name": "Chavarria",
+      "first_name": "Pep",
+      "second_name": "Chavarría",
+      "element_type": 2,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "584": {
+      "id": 584,
+      "web_name": "Hamer",
+      "first_name": "Gustavo",
+      "second_name": "Hamer",
+      "element_type": 3,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "event_points": 1,
+      "now_cost": "5.5"
+    },
+    "585": {
+      "id": 585,
+      "web_name": "Herrington",
+      "first_name": "Lucas",
+      "second_name": "Herrington",
+      "element_type": 2,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 1,
+      "now_cost": "4.0"
+    },
+    "586": {
+      "id": 586,
+      "web_name": "Mendy",
+      "first_name": "Nobel",
+      "second_name": "Mendy",
+      "element_type": 2,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 15,
+      "now_cost": "4.0"
+    },
+    "587": {
+      "id": 587,
+      "web_name": "Rulli",
+      "first_name": "Gerónimo",
+      "second_name": "Rulli",
+      "element_type": 1,
+      "team": "MCI",
+      "team_name": "Man City",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "588": {
+      "id": 588,
+      "web_name": "Khalaili",
+      "first_name": "Anan",
+      "second_name": "Khalaili",
+      "element_type": 2,
+      "team": "CRY",
+      "team_name": "Crystal Palace",
+      "event_points": 1,
+      "now_cost": "5.0"
+    },
+    "589": {
+      "id": 589,
+      "web_name": "Gourna-Douath",
+      "first_name": "Lucas",
+      "second_name": "Gourna-Douath",
+      "element_type": 3,
+      "team": "HUL",
+      "team_name": "Hull City",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "590": {
+      "id": 590,
+      "web_name": "Benda",
+      "first_name": "Steven",
+      "second_name": "Benda",
+      "element_type": 1,
+      "team": "NFO",
+      "team_name": "Nott'm Forest",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "591": {
+      "id": 591,
+      "web_name": "Enciso",
+      "first_name": "Julio",
+      "second_name": "Enciso",
+      "element_type": 3,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 5,
+      "now_cost": "5.5"
+    },
+    "592": {
+      "id": 592,
+      "web_name": "Ouattara",
+      "first_name": "Abdoul",
+      "second_name": "Ouattara",
+      "element_type": 2,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 1,
+      "now_cost": "4.0"
+    },
+    "593": {
+      "id": 593,
+      "web_name": "Dedić",
+      "first_name": "Amar",
+      "second_name": "Dedic",
+      "element_type": 2,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "594": {
+      "id": 594,
+      "web_name": "David",
+      "first_name": "Promise",
+      "second_name": "David",
+      "element_type": 4,
+      "team": "BHA",
+      "team_name": "Brighton",
+      "event_points": 0,
+      "now_cost": "6.0"
+    },
+    "595": {
+      "id": 595,
+      "web_name": "Gozo",
+      "first_name": "Zavier",
+      "second_name": "Gozo",
+      "element_type": 3,
+      "team": "CRY",
+      "team_name": "Crystal Palace",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "596": {
+      "id": 596,
+      "web_name": "Ruggeri",
+      "first_name": "Matteo",
+      "second_name": "Ruggeri",
+      "element_type": 2,
+      "team": "AVL",
+      "team_name": "Aston Villa",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "597": {
+      "id": 597,
+      "web_name": "Suzuki",
+      "first_name": "Zion",
+      "second_name": "Suzuki",
+      "element_type": 1,
+      "team": "AVL",
+      "team_name": "Aston Villa",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "598": {
+      "id": 598,
+      "web_name": "Elvedi",
+      "first_name": "Nico",
+      "second_name": "Elvedi",
+      "element_type": 2,
+      "team": "LEE",
+      "team_name": "Leeds",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "599": {
+      "id": 599,
+      "web_name": "Cherif",
+      "first_name": "Sidiki",
+      "second_name": "Cherif",
+      "element_type": 4,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "600": {
+      "id": 600,
+      "web_name": "Osman",
+      "first_name": "Ibrahim",
+      "second_name": "Osman",
+      "element_type": 3,
+      "team": "BHA",
+      "team_name": "Brighton",
+      "event_points": 0,
+      "now_cost": "5.0"
+    },
+    "601": {
+      "id": 601,
+      "web_name": "Williams-Barnett",
+      "first_name": "Luca",
+      "second_name": "Williams-Barnett",
+      "element_type": 3,
+      "team": "TOT",
+      "team_name": "Spurs",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "602": {
+      "id": 602,
+      "web_name": "Humphreys",
+      "first_name": "Cameron",
+      "second_name": "Humphreys",
+      "element_type": 3,
+      "team": "IPS",
+      "team_name": "Ipswich Town",
+      "event_points": 0,
+      "now_cost": "4.5"
+    },
+    "603": {
+      "id": 603,
+      "web_name": "Lienou",
+      "first_name": "Jayden",
+      "second_name": "Lienou",
+      "element_type": 2,
+      "team": "LEE",
+      "team_name": "Leeds",
+      "event_points": 0,
+      "now_cost": "4.0"
+    },
+    "604": {
+      "id": 604,
+      "web_name": "Cresswell",
+      "first_name": "Alfie",
+      "second_name": "Cresswell",
+      "element_type": 3,
+      "team": "LEE",
+      "team_name": "Leeds",
+      "event_points": 0,
+      "now_cost": "4.5"
     }
   },
   "squadPicks": {
-    "2026160": {
+    "145847": {
       "1": {
         "picks": [
           {
-            "element": 529,
+            "element": 412,
+            "position": 1,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 152,
+            "position": 2,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 502,
+            "position": 3,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 8,
+            "position": 4,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 426,
+            "position": 5,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": true,
+            "element_type": 3
+          },
+          {
+            "element": 124,
+            "position": 6,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 366,
+            "position": 7,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 557,
+            "position": 8,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 542,
+            "position": 9,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 165,
+            "position": 10,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 411,
+            "position": 11,
+            "multiplier": 2,
+            "is_captain": true,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 111,
+            "position": 12,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 346,
+            "position": 13,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 362,
+            "position": 14,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 175,
+            "position": 15,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          }
+        ],
+        "active_chip": null,
+        "entry_history": {
+          "event": 1,
+          "points": 23,
+          "total_points": 23,
+          "rank": 4091855,
+          "rank_sort": 4096789,
+          "overall_rank": 4091852,
+          "percentile_rank": 50,
+          "overall_rank_percentage": "46",
+          "bank": 0,
+          "value": 1000,
+          "event_transfers": 0,
+          "event_transfers_cost": 0,
+          "points_on_bench": 2
+        },
+        "automatic_subs": []
+      }
+    },
+    "2019453": {
+      "1": {
+        "picks": [
+          {
+            "element": 1,
+            "position": 1,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 387,
+            "position": 2,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 8,
+            "position": 3,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 469,
+            "position": 4,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 201,
+            "position": 5,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 427,
+            "position": 6,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": true,
+            "element_type": 3
+          },
+          {
+            "element": 542,
+            "position": 7,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 397,
+            "position": 8,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 165,
+            "position": 9,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 411,
+            "position": 10,
+            "multiplier": 2,
+            "is_captain": true,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 346,
+            "position": 11,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 301,
+            "position": 12,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 557,
+            "position": 13,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 337,
+            "position": 14,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 259,
+            "position": 15,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          }
+        ],
+        "active_chip": null,
+        "entry_history": {
+          "event": 1,
+          "points": 22,
+          "total_points": 22,
+          "rank": 4468370,
+          "rank_sort": 4544137,
+          "overall_rank": 4468366,
+          "percentile_rank": 55,
+          "overall_rank_percentage": "50",
+          "bank": 0,
+          "value": 1000,
+          "event_transfers": 0,
+          "event_transfers_cost": 0,
+          "points_on_bench": 11
+        },
+        "automatic_subs": []
+      }
+    },
+    "2023013": {
+      "1": {
+        "picks": [
+          {
+            "element": 1,
             "position": 1,
             "multiplier": 1,
             "is_captain": false,
@@ -7237,7 +7523,7 @@
             "element_type": 2
           },
           {
-            "element": 112,
+            "element": 388,
             "position": 3,
             "multiplier": 1,
             "is_captain": false,
@@ -7245,7 +7531,7 @@
             "element_type": 2
           },
           {
-            "element": 418,
+            "element": 356,
             "position": 4,
             "multiplier": 1,
             "is_captain": false,
@@ -7253,15 +7539,15 @@
             "element_type": 2
           },
           {
-            "element": 427,
+            "element": 481,
             "position": 5,
             "multiplier": 1,
             "is_captain": false,
-            "is_vice_captain": true,
+            "is_vice_captain": false,
             "element_type": 3
           },
           {
-            "element": 397,
+            "element": 427,
             "position": 6,
             "multiplier": 1,
             "is_captain": false,
@@ -7269,7 +7555,7 @@
             "element_type": 3
           },
           {
-            "element": 237,
+            "element": 367,
             "position": 7,
             "multiplier": 1,
             "is_captain": false,
@@ -7277,7 +7563,7 @@
             "element_type": 3
           },
           {
-            "element": 14,
+            "element": 260,
             "position": 8,
             "multiplier": 1,
             "is_captain": false,
@@ -7285,77 +7571,77 @@
             "element_type": 3
           },
           {
-            "element": 411,
+            "element": 552,
             "position": 9,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 411,
+            "position": 10,
             "multiplier": 2,
             "is_captain": true,
             "is_vice_captain": false,
             "element_type": 4
           },
           {
-            "element": 165,
-            "position": 10,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 553,
+            "element": 25,
             "position": 11,
             "multiplier": 1,
             "is_captain": false,
-            "is_vice_captain": false,
+            "is_vice_captain": true,
             "element_type": 4
           },
           {
-            "element": 412,
+            "element": 494,
             "position": 12,
-            "multiplier": 1,
+            "multiplier": 0,
             "is_captain": false,
             "is_vice_captain": false,
             "element_type": 1
           },
           {
-            "element": 445,
+            "element": 174,
             "position": 13,
-            "multiplier": 1,
+            "multiplier": 0,
             "is_captain": false,
             "is_vice_captain": false,
             "element_type": 2
           },
           {
-            "element": 260,
+            "element": 287,
             "position": 14,
-            "multiplier": 1,
+            "multiplier": 0,
             "is_captain": false,
             "is_vice_captain": false,
             "element_type": 3
           },
           {
-            "element": 231,
+            "element": 304,
             "position": 15,
-            "multiplier": 1,
+            "multiplier": 0,
             "is_captain": false,
             "is_vice_captain": false,
             "element_type": 2
           }
         ],
-        "active_chip": "bboost",
+        "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 29,
-          "total_points": 29,
-          "rank": 2175629,
-          "rank_sort": 2240086,
-          "overall_rank": 2175624,
-          "percentile_rank": 25,
-          "overall_rank_percentage": "24",
-          "bank": 5,
+          "points": 22,
+          "total_points": 22,
+          "rank": 4468370,
+          "rank_sort": 4544279,
+          "overall_rank": 4468366,
+          "percentile_rank": 55,
+          "overall_rank_percentage": "50",
+          "bank": 15,
           "value": 1000,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 4
         },
         "automatic_subs": []
       }
@@ -7499,6 +7785,292 @@
           "event_transfers": 0,
           "event_transfers_cost": 0,
           "points_on_bench": 1
+        },
+        "automatic_subs": []
+      }
+    },
+    "2024611": {
+      "1": {
+        "picks": [
+          {
+            "element": 1,
+            "position": 1,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 387,
+            "position": 2,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 200,
+            "position": 3,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 498,
+            "position": 4,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 481,
+            "position": 5,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 40,
+            "position": 6,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": true,
+            "element_type": 3
+          },
+          {
+            "element": 480,
+            "position": 7,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 368,
+            "position": 8,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 411,
+            "position": 9,
+            "multiplier": 2,
+            "is_captain": true,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 223,
+            "position": 10,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 165,
+            "position": 11,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 497,
+            "position": 12,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 423,
+            "position": 13,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 212,
+            "position": 14,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 259,
+            "position": 15,
+            "multiplier": 0,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          }
+        ],
+        "active_chip": null,
+        "entry_history": {
+          "event": 1,
+          "points": 13,
+          "total_points": 13,
+          "rank": 7459490,
+          "rank_sort": 7506751,
+          "overall_rank": 7459483,
+          "percentile_rank": 85,
+          "overall_rank_percentage": "84",
+          "bank": 0,
+          "value": 1000,
+          "event_transfers": 0,
+          "event_transfers_cost": 0,
+          "points_on_bench": 3
+        },
+        "automatic_subs": []
+      }
+    },
+    "2026160": {
+      "1": {
+        "picks": [
+          {
+            "element": 529,
+            "position": 1,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 8,
+            "position": 2,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 112,
+            "position": 3,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 418,
+            "position": 4,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 427,
+            "position": 5,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": true,
+            "element_type": 3
+          },
+          {
+            "element": 397,
+            "position": 6,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 237,
+            "position": 7,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 14,
+            "position": 8,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 411,
+            "position": 9,
+            "multiplier": 2,
+            "is_captain": true,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 165,
+            "position": 10,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 553,
+            "position": 11,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 4
+          },
+          {
+            "element": 412,
+            "position": 12,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 1
+          },
+          {
+            "element": 445,
+            "position": 13,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          },
+          {
+            "element": 260,
+            "position": 14,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 3
+          },
+          {
+            "element": 231,
+            "position": 15,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
+            "element_type": 2
+          }
+        ],
+        "active_chip": "bboost",
+        "entry_history": {
+          "event": 1,
+          "points": 29,
+          "total_points": 29,
+          "rank": 2175629,
+          "rank_sort": 2240086,
+          "overall_rank": 2175624,
+          "percentile_rank": 25,
+          "overall_rank_percentage": "24",
+          "bank": 5,
+          "value": 1000,
+          "event_transfers": 0,
+          "event_transfers_cost": 0,
+          "points_on_bench": 0
         },
         "automatic_subs": []
       }
@@ -7788,581 +8360,18 @@
         },
         "automatic_subs": []
       }
-    },
-    "2023013": {
-      "1": {
-        "picks": [
-          {
-            "element": 1,
-            "position": 1,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 8,
-            "position": 2,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 388,
-            "position": 3,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 356,
-            "position": 4,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 481,
-            "position": 5,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 427,
-            "position": 6,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 367,
-            "position": 7,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 260,
-            "position": 8,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 552,
-            "position": 9,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 411,
-            "position": 10,
-            "multiplier": 2,
-            "is_captain": true,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 25,
-            "position": 11,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": true,
-            "element_type": 4
-          },
-          {
-            "element": 494,
-            "position": 12,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 174,
-            "position": 13,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 287,
-            "position": 14,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 304,
-            "position": 15,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          }
-        ],
-        "active_chip": null,
-        "entry_history": {
-          "event": 1,
-          "points": 22,
-          "total_points": 22,
-          "rank": 4468370,
-          "rank_sort": 4544279,
-          "overall_rank": 4468366,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "50",
-          "bank": 15,
-          "value": 1000,
-          "event_transfers": 0,
-          "event_transfers_cost": 0,
-          "points_on_bench": 4
-        },
-        "automatic_subs": []
-      }
-    },
-    "2019453": {
-      "1": {
-        "picks": [
-          {
-            "element": 1,
-            "position": 1,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 387,
-            "position": 2,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 8,
-            "position": 3,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 469,
-            "position": 4,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 201,
-            "position": 5,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 427,
-            "position": 6,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": true,
-            "element_type": 3
-          },
-          {
-            "element": 542,
-            "position": 7,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 397,
-            "position": 8,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 165,
-            "position": 9,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 411,
-            "position": 10,
-            "multiplier": 2,
-            "is_captain": true,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 346,
-            "position": 11,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 301,
-            "position": 12,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 557,
-            "position": 13,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 337,
-            "position": 14,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 259,
-            "position": 15,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          }
-        ],
-        "active_chip": null,
-        "entry_history": {
-          "event": 1,
-          "points": 22,
-          "total_points": 22,
-          "rank": 4468370,
-          "rank_sort": 4544137,
-          "overall_rank": 4468366,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "50",
-          "bank": 0,
-          "value": 1000,
-          "event_transfers": 0,
-          "event_transfers_cost": 0,
-          "points_on_bench": 11
-        },
-        "automatic_subs": []
-      }
-    },
-    "2024611": {
-      "1": {
-        "picks": [
-          {
-            "element": 1,
-            "position": 1,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 387,
-            "position": 2,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 200,
-            "position": 3,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 498,
-            "position": 4,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 481,
-            "position": 5,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 40,
-            "position": 6,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": true,
-            "element_type": 3
-          },
-          {
-            "element": 480,
-            "position": 7,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 368,
-            "position": 8,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 411,
-            "position": 9,
-            "multiplier": 2,
-            "is_captain": true,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 223,
-            "position": 10,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 165,
-            "position": 11,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 497,
-            "position": 12,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 423,
-            "position": 13,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 212,
-            "position": 14,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 259,
-            "position": 15,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          }
-        ],
-        "active_chip": null,
-        "entry_history": {
-          "event": 1,
-          "points": 13,
-          "total_points": 13,
-          "rank": 7459490,
-          "rank_sort": 7506751,
-          "overall_rank": 7459483,
-          "percentile_rank": 85,
-          "overall_rank_percentage": "84",
-          "bank": 0,
-          "value": 1000,
-          "event_transfers": 0,
-          "event_transfers_cost": 0,
-          "points_on_bench": 3
-        },
-        "automatic_subs": []
-      }
-    },
-    "145847": {
-      "1": {
-        "picks": [
-          {
-            "element": 412,
-            "position": 1,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 152,
-            "position": 2,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 502,
-            "position": 3,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 8,
-            "position": 4,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 426,
-            "position": 5,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": true,
-            "element_type": 3
-          },
-          {
-            "element": 124,
-            "position": 6,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 366,
-            "position": 7,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 557,
-            "position": 8,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 542,
-            "position": 9,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 3
-          },
-          {
-            "element": 165,
-            "position": 10,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 411,
-            "position": 11,
-            "multiplier": 2,
-            "is_captain": true,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 111,
-            "position": 12,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 1
-          },
-          {
-            "element": 346,
-            "position": 13,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
-            "element": 362,
-            "position": 14,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          },
-          {
-            "element": 175,
-            "position": 15,
-            "multiplier": 0,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 2
-          }
-        ],
-        "active_chip": null,
-        "entry_history": {
-          "event": 1,
-          "points": 23,
-          "total_points": 23,
-          "rank": 4091855,
-          "rank_sort": 4096789,
-          "overall_rank": 4091852,
-          "percentile_rank": 50,
-          "overall_rank_percentage": "46",
-          "bank": 0,
-          "value": 1000,
-          "event_transfers": 0,
-          "event_transfers_cost": 0,
-          "points_on_bench": 2
-        },
-        "automatic_subs": []
-      }
     }
   },
-  "transfersHistory": {},
+  "transfersHistory": {
+    "145847": [],
+    "2019453": [],
+    "2023013": [],
+    "2023789": [],
+    "2024611": [],
+    "2026160": [],
+    "2026484": [],
+    "2067578": []
+  },
   "leagues": {
     "389585": {
       "leagueName": "Clash of Elite 2026-2027",
@@ -8374,16 +8383,16 @@
           "avatar": "PI"
         },
         {
-          "id": 2023789,
-          "name": "Monor Noem",
-          "teamName": "NORA FC",
-          "avatar": "MO"
-        },
-        {
           "id": 2026484,
           "name": "Bora Chhe",
           "teamName": "Bora's Team",
           "avatar": "BO"
+        },
+        {
+          "id": 2023789,
+          "name": "Monor Noem",
+          "teamName": "NORA FC",
+          "avatar": "MO"
         },
         {
           "id": 2067578,
@@ -8414,53 +8423,53 @@
         {
           "gw": 1,
           "scores": {
-            "2026160": 29,
-            "2023789": 27,
-            "2026484": 27,
-            "2067578": 24,
-            "2023013": 22,
             "2019453": 22,
-            "2024611": 13
+            "2023013": 22,
+            "2023789": 27,
+            "2024611": 13,
+            "2026160": 29,
+            "2026484": 27,
+            "2067578": 24
           },
           "hits": {
-            "2026160": 0,
-            "2023789": 0,
-            "2026484": 0,
-            "2067578": 0,
-            "2023013": 0,
             "2019453": 0,
-            "2024611": 0
+            "2023013": 0,
+            "2023789": 0,
+            "2024611": 0,
+            "2026160": 0,
+            "2026484": 0,
+            "2067578": 0
           },
           "transfers": {
-            "2026160": 0,
-            "2023789": 0,
-            "2026484": 0,
-            "2067578": 0,
-            "2023013": 0,
             "2019453": 0,
-            "2024611": 0
+            "2023013": 0,
+            "2023789": 0,
+            "2024611": 0,
+            "2026160": 0,
+            "2026484": 0,
+            "2067578": 0
           },
           "benchPoints": {
-            "2026160": 0,
-            "2023789": 1,
-            "2026484": 3,
-            "2067578": 1,
-            "2023013": 4,
             "2019453": 11,
-            "2024611": 3
+            "2023013": 4,
+            "2023789": 1,
+            "2024611": 3,
+            "2026160": 0,
+            "2026484": 3,
+            "2067578": 1
           },
           "captainPoints": {},
           "chipsUsed": {
             "2026160": "bboost"
           },
           "seasonTotals": {
-            "2026160": 29,
-            "2023789": 27,
-            "2026484": 27,
-            "2067578": 24,
-            "2023013": 22,
             "2019453": 22,
-            "2024611": 13
+            "2023013": 22,
+            "2023789": 27,
+            "2024611": 13,
+            "2026160": 29,
+            "2026484": 27,
+            "2067578": 24
           }
         },
         {
