@@ -2281,6 +2281,7 @@
     let startingPtsTotal = 0;
     let playedCount = 0;
     let yetToPlayCount = 0;
+    let isBenchBoostActive = false;
 
     if (squadData && squadData.picks && squadData.picks.length > 0) {
       const hist = squadData.entry_history || {};
@@ -2291,6 +2292,11 @@
       }
       if (hist.points_on_bench !== undefined) benchPts = hist.points_on_bench;
       if (squadData.active_chip) activeChip = getChipLabel(squadData.active_chip);
+
+      isBenchBoostActive = Boolean(
+        activeChip && 
+        (activeChip.toLowerCase().includes('bboost') || activeChip.toLowerCase().includes('bench boost') || activeChip.toUpperCase().includes('BB'))
+      );
 
       squadData.picks.forEach(p => {
         const pl = playersMap[p.element] || {
@@ -2353,6 +2359,14 @@
           `;
           startingPtsTotal += pts;
         } else {
+          if (isBenchBoostActive) {
+            if (isYetToPlay) {
+              yetToPlayCount++;
+            } else {
+              playedCount++;
+            }
+          }
+
           const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
           benchRows += `
             <tr>
@@ -2365,12 +2379,15 @@
                 </div>
               </td>
               <td>${statusPill}</td>
-              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="color:var(--text-muted);">${pts} pts</span></td>
+              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
             </tr>
           `;
         }
       });
     }
+
+    const maxSquadCount = isBenchBoostActive ? 15 : 11;
+    const squadScopeLabel = isBenchBoostActive ? '15 Players (BB Active ⚡)' : '11 Players';
 
     // ── Build Transfers This GW Section ─────────────────────
     const allTransfers = transfersHistoryMap[String(manager.id)] || [];
@@ -2425,11 +2442,11 @@
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">⚽ Played</span>
-          <span class="stat-val" style="color:#10b981;">${playedCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ 11</span></span>
+          <span class="stat-val" style="color:#10b981;">${playedCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">⏳ Yet to Play</span>
-          <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ 11</span></span>
+          <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">🔄 Transfers</span>
@@ -2449,7 +2466,7 @@
       <div>
         <div class="modal-section-header">
           <span>⚽ Starting XI (${startingPtsTotal} pts)</span>
-          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">11 Players (${playedCount} Played · ${yetToPlayCount} Remaining)</span>
+          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${squadScopeLabel} (${playedCount} Played · ${yetToPlayCount} Remaining)</span>
         </div>
         <table class="modal-squad-table">
           <thead>
@@ -2470,7 +2487,7 @@
       <!-- Bench Table -->
       <div>
         <div class="modal-section-header">
-          <span>🪑 Substitutes Bench (${benchPts} pts)</span>
+          <span>🪑 Substitutes Bench (${benchPts} pts)${isBenchBoostActive ? ' <span style="font-size:10px;color:#a855f7;font-weight:800;background:rgba(168,85,247,0.12);padding:2px 6px;border-radius:4px;margin-left:6px;">⚡ ACTIVE IN BENCH BOOST</span>' : ''}</span>
           <span style="font-size:11px;font-weight:600;color:var(--text-muted);">4 Players</span>
         </div>
         <table class="modal-squad-table">
