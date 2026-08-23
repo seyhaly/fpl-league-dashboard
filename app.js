@@ -1859,10 +1859,25 @@
       overallStatusClass = 'pipe-badge-live';
     }
 
+    // Normalize dailyStatus so past matchdays are 'done', today is 'active', and future days are 'pending'
+    const todayIso = new Date().toISOString().split('T')[0];
+    const isFinished = Boolean(statusObj.finished && statusObj.data_checked);
+
+    const normalizedDailyStatus = dailyStatus.map(day => {
+      const dateStr = day.date;
+      if (isDemoMode || isFinished || dateStr < todayIso) {
+        return { ...day, points: 'r', bonus_added: true };
+      } else if (dateStr === todayIso) {
+        return { ...day, points: 'r', bonus_added: false };
+      } else {
+        return { ...day, points: 'p', bonus_added: false };
+      }
+    });
+
     // ── Compute progress bar ──────────────────────────────
-    const doneDays    = dailyStatus.filter(d => d.points === 'r' && d.bonus_added).length;
-    const activeDays  = dailyStatus.filter(d => d.points === 'r' && !d.bonus_added).length;
-    const totalDays   = dailyStatus.length;
+    const doneDays    = normalizedDailyStatus.filter(d => d.points === 'r' && d.bonus_added).length;
+    const activeDays  = normalizedDailyStatus.filter(d => d.points === 'r' && !d.bonus_added).length;
+    const totalDays   = normalizedDailyStatus.length;
     const progressPct = totalDays > 0 ? Math.round((doneDays / totalDays) * 100) : 0;
     const progressLabel = `${doneDays} of ${totalDays} day${totalDays !== 1 ? 's' : ''} finalized`;
 
@@ -1877,7 +1892,7 @@
     };
 
     // ── Build rows ────────────────────────────────────────
-    const tableRows = dailyStatus.map((day, idx, arr) => {
+    const tableRows = normalizedDailyStatus.map((day, idx, arr) => {
       const dateObj = new Date(day.date);
       const weekday = dateObj.toLocaleDateString('en-GB', { weekday: 'long' });
       const dateFmt = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
