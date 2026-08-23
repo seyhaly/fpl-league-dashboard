@@ -804,8 +804,19 @@
 
             if (bsData.elements && Array.isArray(bsData.elements)) {
               window.PL_PLAYER_MAP = {};
+              if (!state.dataset.players) state.dataset.players = {};
               bsData.elements.forEach(el => {
                 window.PL_PLAYER_MAP[el.id] = el.web_name || `${el.first_name} ${el.second_name}`;
+                if (!state.dataset.players[el.id]) {
+                  state.dataset.players[el.id] = {
+                    id: el.id,
+                    web_name: el.web_name,
+                    element_type: el.element_type,
+                    event_points: el.event_points || 0
+                  };
+                } else {
+                  state.dataset.players[el.id].event_points = el.event_points || 0;
+                }
               });
             }
 
@@ -822,7 +833,36 @@
             }
           }
 
-          const stData = await fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 2500);
+          // Fetch Event Status & Fixtures to update player live match status
+          const [stData, fixData] = await Promise.all([
+            fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 2500),
+            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/fixtures/?event=${detectedGw}`, 2500)
+          ]);
+
+          if (fixData && Array.isArray(fixData) && state.dataset.players) {
+            const teamFixMap = {};
+            fixData.forEach(f => {
+              teamFixMap[f.team_h] = f;
+              teamFixMap[f.team_a] = f;
+            });
+
+            Object.values(state.dataset.players).forEach(pl => {
+              if (pl.team_id || pl.team) {
+                const fix = teamFixMap[pl.team_id] || {};
+                if (fix.started === false) {
+                  pl.match_status = 'yet_to_play';
+                  pl.status_label = '⏳ Yet to Play';
+                } else if (fix.started === true && fix.finished === false && (fix.minutes || 0) < 90) {
+                  pl.match_status = 'live';
+                  pl.status_label = `🟢 Live (${fix.minutes}')`;
+                } else {
+                  pl.match_status = (pl.event_points > 0 || fix.finished) ? 'played' : 'yet_to_play';
+                  pl.status_label = pl.match_status === 'played' ? '✓ Played' : '⏳ Yet to Play';
+                }
+              }
+            });
+          }
+
           if (stData && stData.status) {
             stData.status.forEach(st => {
               if (state.eventStatuses[st.event]) {
@@ -2230,8 +2270,6 @@
     const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
 
     let overallRank = '-';
-    let teamValue = '£100.0M';
-    let bankVal = '£0.0M';
     let transfersCount = 0;
     let transferHits = '(0 hits)';
     let benchPts = 0;
@@ -2241,12 +2279,12 @@
     let startingRows = '';
     let benchRows = '';
     let startingPtsTotal = 0;
+    let playedCount = 0;
+    let yetToPlayCount = 0;
 
     if (squadData && squadData.picks && squadData.picks.length > 0) {
       const hist = squadData.entry_history || {};
       if (hist.overall_rank) overallRank = Number(hist.overall_rank).toLocaleString();
-      if (hist.value) teamValue = `£${(hist.value / 10).toFixed(1)}M`;
-      if (hist.bank !== undefined) bankVal = `£${(hist.bank / 10).toFixed(1)}M`;
       if (hist.event_transfers !== undefined) transfersCount = hist.event_transfers;
       if (hist.event_transfers_cost !== undefined) {
         transferHits = hist.event_transfers_cost > 0 ? `(-${hist.event_transfers_cost} pts)` : '(0 hits)';
@@ -2259,15 +2297,19 @@
           web_name: `Player #${p.element}`,
           element_type: p.element_type || (p.position === 1 ? 1 : 2),
           team: '-',
-          event_points: 0
+          event_points: 0,
+          match_status: 'yet_to_play',
+          status_label: '⏳ Yet to Play'
         };
         const posName = posNames[pl.element_type] || 'DEF';
         const posClass = posClasses[pl.element_type] || 'pos-def';
         const multiplier = p.multiplier || 1;
         const pts = (pl.event_points || 0) * (p.position <= 11 ? multiplier : 1);
 
+        const isYetToPlay = pl.match_status === 'yet_to_play' || (!pl.match_status && pl.event_points === 0);
+
         if (p.is_captain) {
-          captainName = `${pl.web_name} (${pts} pts)`;
+          captainName = `${pl.web_name} (${pts} pts)${isYetToPlay ? ' ⏳' : ''}`;
         }
 
         let roleTag = '';
@@ -2277,22 +2319,38 @@
           roleTag = `<span class="vice-role-badge">🛡️ VICE</span>`;
         }
 
-        const trHtml = `
-          <tr>
-            <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
-            <td>
-              <div class="player-name-cell">
-                <span style="font-weight:700;">${pl.web_name}</span>
-                <span class="player-team-pill">${pl.team}</span>
-              </div>
-            </td>
-            <td>${roleTag}</td>
-            <td class="text-center" style="width:70px;"><span class="player-points-badge">${pts} pts</span></td>
-          </tr>
-        `;
+        let statusPill = '';
+        if (pl.match_status === 'yet_to_play') {
+          statusPill = `<span class="status-pill-yet-to-play">⏳ Yet to Play</span>`;
+        } else if (pl.match_status === 'live') {
+          statusPill = `<span class="status-pill-live">🟢 Live (${pl.minutes || 0}')</span>`;
+        } else if (pl.match_status === 'dnp') {
+          statusPill = `<span class="status-pill-dnp">✕ DNP</span>`;
+        } else {
+          statusPill = `<span class="status-pill-played">✓ Played</span>`;
+        }
 
         if (p.position <= 11) {
-          startingRows += trHtml;
+          if (isYetToPlay) {
+            yetToPlayCount++;
+          } else {
+            playedCount++;
+          }
+
+          startingRows += `
+            <tr>
+              <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td>
+                <div class="player-name-cell">
+                  <span style="font-weight:700;">${pl.web_name}</span>
+                  <span class="player-team-pill">${pl.team}</span>
+                </div>
+              </td>
+              <td>${statusPill}</td>
+              <td>${roleTag}</td>
+              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : ''}">${pts} pts</span></td>
+            </tr>
+          `;
           startingPtsTotal += pts;
         } else {
           const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
@@ -2306,6 +2364,7 @@
                   <span class="player-team-pill">${pl.team}</span>
                 </div>
               </td>
+              <td>${statusPill}</td>
               <td class="text-center" style="width:70px;"><span class="player-points-badge" style="color:var(--text-muted);">${pts} pts</span></td>
             </tr>
           `;
@@ -2365,12 +2424,12 @@
           <span class="stat-val" style="color:var(--pl-cyan);">${overallRank}</span>
         </div>
         <div class="modal-stat-card">
-          <span class="stat-label">💰 Team Value</span>
-          <span class="stat-val">${teamValue}</span>
+          <span class="stat-label">⚽ Played</span>
+          <span class="stat-val" style="color:#10b981;">${playedCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ 11</span></span>
         </div>
         <div class="modal-stat-card">
-          <span class="stat-label">🏦 In the Bank</span>
-          <span class="stat-val">${bankVal}</span>
+          <span class="stat-label">⏳ Yet to Play</span>
+          <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ 11</span></span>
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">🔄 Transfers</span>
@@ -2390,19 +2449,20 @@
       <div>
         <div class="modal-section-header">
           <span>⚽ Starting XI (${startingPtsTotal} pts)</span>
-          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">11 Players</span>
+          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">11 Players (${playedCount} Played · ${yetToPlayCount} Remaining)</span>
         </div>
         <table class="modal-squad-table">
           <thead>
             <tr>
               <th>Pos</th>
               <th>Player</th>
+              <th>Status</th>
               <th>Role</th>
               <th class="text-center">Points</th>
             </tr>
           </thead>
           <tbody>
-            ${startingRows || '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
+            ${startingRows || '<tr><td colspan="5" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
           </tbody>
         </table>
       </div>
@@ -2419,11 +2479,12 @@
               <th>Order</th>
               <th>Pos</th>
               <th>Player</th>
+              <th>Status</th>
               <th class="text-center">Points</th>
             </tr>
           </thead>
           <tbody>
-            ${benchRows || '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
+            ${benchRows || '<tr><td colspan="5" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
           </tbody>
         </table>
       </div>
