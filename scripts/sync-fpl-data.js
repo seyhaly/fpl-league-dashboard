@@ -55,29 +55,55 @@ async function syncAll() {
   const bsData = await directFetchJson('https://fantasy.premierleague.com/api/bootstrap-static/');
   let detectedGw = 1;
   const eventStatuses = {};
+  const teamsMap = {};
+  const playersMap = {};
 
-  if (bsData && bsData.events) {
-    bsData.events.forEach(ev => {
-      eventStatuses[ev.id] = {
-        gw: ev.id,
-        finished: ev.finished,
-        data_checked: ev.data_checked,
-        is_current: ev.is_current,
-        is_previous: ev.is_previous,
-        is_next: ev.is_next,
-        deadline_time: ev.deadline_time,
-        bonus_added: ev.finished || ev.data_checked,
-        leagues: ev.data_checked ? 'Updated' : 'Updating'
-      };
-    });
+  if (bsData) {
+    if (bsData.teams) {
+      bsData.teams.forEach(t => {
+        teamsMap[t.id] = { id: t.id, name: t.name, short_name: t.short_name, code: t.code };
+      });
+    }
 
-    const activeEv = bsData.events.find(e => e.is_current);
-    const nextEv = bsData.events.find(e => e.is_next);
-    const prevEv = bsData.events.filter(e => e.finished).pop();
+    if (bsData.elements) {
+      bsData.elements.forEach(p => {
+        playersMap[p.id] = {
+          id: p.id,
+          web_name: p.web_name,
+          first_name: p.first_name || '',
+          second_name: p.second_name || '',
+          element_type: p.element_type, // 1: GK, 2: DEF, 3: MID, 4: FWD
+          team: teamsMap[p.team]?.short_name || '',
+          team_name: teamsMap[p.team]?.name || '',
+          event_points: p.event_points || 0,
+          now_cost: p.now_cost ? (p.now_cost / 10).toFixed(1) : '0.0'
+        };
+      });
+    }
 
-    if (activeEv) detectedGw = activeEv.id;
-    else if (prevEv) detectedGw = prevEv.id;
-    else if (nextEv) detectedGw = Math.max(1, nextEv.id - 1);
+    if (bsData.events) {
+      bsData.events.forEach(ev => {
+        eventStatuses[ev.id] = {
+          gw: ev.id,
+          finished: ev.finished,
+          data_checked: ev.data_checked,
+          is_current: ev.is_current,
+          is_previous: ev.is_previous,
+          is_next: ev.is_next,
+          deadline_time: ev.deadline_time,
+          bonus_added: ev.finished || ev.data_checked,
+          leagues: ev.data_checked ? 'Updated' : 'Updating'
+        };
+      });
+
+      const activeEv = bsData.events.find(e => e.is_current);
+      const nextEv = bsData.events.find(e => e.is_next);
+      const prevEv = bsData.events.filter(e => e.finished).pop();
+
+      if (activeEv) detectedGw = activeEv.id;
+      else if (prevEv) detectedGw = prevEv.id;
+      else if (nextEv) detectedGw = Math.max(1, nextEv.id - 1);
+    }
   }
 
   // 2. Fetch Event Status
@@ -100,6 +126,9 @@ async function syncAll() {
     lastUpdated: new Date().toISOString(),
     currentGw: detectedGw,
     eventStatuses: eventStatuses,
+    teams: teamsMap,
+    players: playersMap,
+    squadPicks: {},
     leagues: {}
   };
 
@@ -154,10 +183,22 @@ async function syncAll() {
     });
 
     // Fetch individual manager details
-    console.log(`📥 Fetching detailed history for ${managers.length} managers in League #${leagueId}...`);
+    console.log(`📥 Fetching detailed history & picks for ${managers.length} managers in League #${leagueId}...`);
     for (const m of managers) {
       const histData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/history/`);
       const picksData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/event/${detectedGw}/picks/`);
+
+      if (picksData) {
+        if (!outputData.squadPicks[String(m.id)]) {
+          outputData.squadPicks[String(m.id)] = {};
+        }
+        outputData.squadPicks[String(m.id)][String(detectedGw)] = {
+          picks: picksData.picks || [],
+          active_chip: picksData.active_chip || null,
+          entry_history: picksData.entry_history || {},
+          automatic_subs: picksData.automatic_subs || []
+        };
+      }
 
       if (histData && histData.current && Array.isArray(histData.current)) {
         histData.current.forEach(h => {
@@ -209,7 +250,7 @@ async function syncAll() {
 
   const outPath = path.join(__dirname, '..', 'live_data.json');
   fs.writeFileSync(outPath, JSON.stringify(outputData, null, 2), 'utf-8');
-  console.log(`✅ Automated FPL sync complete! Saved live data to ${outPath}`);
+  console.log(`✅ Automated FPL sync complete! Saved live data with squad picks to ${outPath}`);
 }
 
 syncAll().catch(err => {

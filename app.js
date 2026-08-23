@@ -624,6 +624,9 @@
             state.currentGw = lData.currentGw;
             state.maxGw = lData.currentGw;
           }
+          if (liveJson.players) state.dataset.players = liveJson.players;
+          if (liveJson.squadPicks) state.dataset.squadPicks = liveJson.squadPicks;
+          if (liveJson.teams) state.dataset.teams = liveJson.teams;
           if (liveJson.eventStatuses) {
             state.eventStatuses = liveJson.eventStatuses;
           }
@@ -1528,10 +1531,14 @@
       if (gwScoreEl) animateNumber(gwScoreEl, m.netScore, 400);
       if (seasonPtsEl) animateNumber(seasonPtsEl, m.seasonTotalNet, 400);
 
+      tr.addEventListener('click', () => openManagerModal(m.id));
+      tr.setAttribute('title', `Click to view ${m.name}'s squad details & stats`);
+
       // =========== #10 MOBILE CARD ===========
       if (elements.mobileCards) {
         const card = document.createElement('div');
         card.className = `mobile-manager-card ${m.statusClass}${m.isTied ? ' tr-tied' : ''}`;
+        card.addEventListener('click', () => openManagerModal(m.id));
         card.innerHTML = `
           <div class="mobile-card-top">
             <div class="mobile-card-rank-name">
@@ -2165,6 +2172,239 @@
     
     updatePerformanceChartTheme();
   }
+
+  // ===================== MANAGER SQUAD DETAIL MODAL =====================
+  window.closeManagerModal = function() {
+    const modal = document.getElementById('managerDetailModal');
+    const backdrop = document.getElementById('managerModalBackdrop');
+    if (modal) {
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+    }
+    if (backdrop) backdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+
+  window.openManagerModal = async function(managerId) {
+    const modal = document.getElementById('managerDetailModal');
+    const backdrop = document.getElementById('managerModalBackdrop');
+    const modalAvatar = document.getElementById('modalManagerAvatar');
+    const modalName = document.getElementById('modalManagerName');
+    const modalTeam = document.getElementById('modalTeamName');
+    const modalFplId = document.getElementById('modalFplId');
+    const modalGwBadge = document.getElementById('modalGwBadge');
+    const modalDirectLink = document.getElementById('modalFplDirectLink');
+    const modalBody = document.getElementById('modalContentBody');
+
+    if (!modal || !modalBody) return;
+
+    const gw = state.currentGw || 1;
+    const manager = (state.dataset.managers || []).find(m => m.id === Number(managerId));
+    if (!manager) return;
+
+    // Header info
+    if (modalAvatar) modalAvatar.textContent = manager.avatar || manager.name.substring(0, 2).toUpperCase();
+    if (modalName) modalName.textContent = manager.name;
+    if (modalTeam) modalTeam.textContent = `— ${manager.teamName}`;
+    if (modalFplId) modalFplId.textContent = `(#${manager.id})`;
+    if (modalGwBadge) modalGwBadge.textContent = `Gameweek ${gw} Squad & Team Details`;
+    if (modalDirectLink) modalDirectLink.href = `https://fantasy.premierleague.com/entry/${manager.id}/event/${gw}`;
+
+    modalBody.innerHTML = `
+      <div style="text-align:center;padding:30px;color:var(--text-muted);">
+        <div class="sync-spinner" style="margin:0 auto 12px;border-top-color:var(--pl-cyan);width:28px;height:28px;border-width:3px;"></div>
+        <div>Loading squad details for ${manager.name}...</div>
+      </div>
+    `;
+
+    modal.classList.add('open');
+    if (backdrop) backdrop.classList.add('open');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+
+    // Retrieve squad picks from dataset or live API
+    let squadData = null;
+    if (state.dataset.squadPicks && state.dataset.squadPicks[String(manager.id)] && state.dataset.squadPicks[String(manager.id)][String(gw)]) {
+      squadData = state.dataset.squadPicks[String(manager.id)][String(gw)];
+    }
+
+    // If not in state, attempt live fetch
+    if (!squadData) {
+      try {
+        const livePicks = await fetchFplWithTimeout(`https://fantasy.premierleague.com/api/entry/${manager.id}/event/${gw}/picks/`, 5000);
+        if (livePicks && livePicks.picks) {
+          squadData = livePicks;
+          if (!state.dataset.squadPicks) state.dataset.squadPicks = {};
+          if (!state.dataset.squadPicks[String(manager.id)]) state.dataset.squadPicks[String(manager.id)] = {};
+          state.dataset.squadPicks[String(manager.id)][String(gw)] = livePicks;
+        }
+      } catch (e) {}
+    }
+
+    const playersMap = state.dataset.players || {};
+    const posNames = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' };
+    const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
+
+    let overallRank = '-';
+    let teamValue = '£100.0M';
+    let bankVal = '£0.0M';
+    let transfersCount = 0;
+    let transferHits = '(0 hits)';
+    let benchPts = 0;
+    let activeChip = 'None';
+    let captainName = '-';
+
+    let startingRows = '';
+    let benchRows = '';
+    let startingPtsTotal = 0;
+
+    if (squadData && squadData.picks && squadData.picks.length > 0) {
+      const hist = squadData.entry_history || {};
+      if (hist.overall_rank) overallRank = Number(hist.overall_rank).toLocaleString();
+      if (hist.value) teamValue = `£${(hist.value / 10).toFixed(1)}M`;
+      if (hist.bank !== undefined) bankVal = `£${(hist.bank / 10).toFixed(1)}M`;
+      if (hist.event_transfers !== undefined) transfersCount = hist.event_transfers;
+      if (hist.event_transfers_cost !== undefined) {
+        transferHits = hist.event_transfers_cost > 0 ? `(-${hist.event_transfers_cost} pts)` : '(0 hits)';
+      }
+      if (hist.points_on_bench !== undefined) benchPts = hist.points_on_bench;
+      if (squadData.active_chip) activeChip = getChipLabel(squadData.active_chip);
+
+      squadData.picks.forEach(p => {
+        const pl = playersMap[p.element] || {
+          web_name: `Player #${p.element}`,
+          element_type: p.element_type || 2,
+          team: '-',
+          event_points: 0
+        };
+        const posName = posNames[pl.element_type] || 'DEF';
+        const posClass = posClasses[pl.element_type] || 'pos-def';
+        const multiplier = p.multiplier || 1;
+        const pts = (pl.event_points || 0) * (p.position <= 11 ? multiplier : 1);
+
+        if (p.is_captain) {
+          captainName = `${pl.web_name} (${pts} pts)`;
+        }
+
+        let roleTag = '';
+        if (p.is_captain) {
+          roleTag = `<span class="captain-role-badge">👑 CAPTAIN (${multiplier}x)</span>`;
+        } else if (p.is_vice_captain) {
+          roleTag = `<span class="vice-role-badge">🛡️ VICE</span>`;
+        }
+
+        const trHtml = `
+          <tr>
+            <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+            <td>
+              <div class="player-name-cell">
+                <span>${pl.web_name}</span>
+                <span class="player-team-pill">${pl.team}</span>
+              </div>
+            </td>
+            <td>${roleTag}</td>
+            <td class="text-center" style="width:70px;"><span class="player-points-badge">${pts}</span></td>
+          </tr>
+        `;
+
+        if (p.position <= 11) {
+          startingRows += trHtml;
+          startingPtsTotal += pts;
+        } else {
+          const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
+          benchRows += `
+            <tr>
+              <td style="width:70px;"><span style="font-weight:700;color:var(--text-muted);font-size:11px;">[${subOrder}]</span></td>
+              <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td>
+                <div class="player-name-cell">
+                  <span>${pl.web_name}</span>
+                  <span class="player-team-pill">${pl.team}</span>
+                </div>
+              </td>
+              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="color:var(--text-muted);">${pts}</span></td>
+            </tr>
+          `;
+        }
+      });
+    }
+
+    modalBody.innerHTML = `
+      <!-- Vital Stats Ribbon -->
+      <div class="modal-stats-grid">
+        <div class="modal-stat-card">
+          <span class="stat-label">🏆 Overall Rank</span>
+          <span class="stat-val" style="color:var(--pl-cyan);">${overallRank}</span>
+        </div>
+        <div class="modal-stat-card">
+          <span class="stat-label">💰 Team Value</span>
+          <span class="stat-val">${teamValue}</span>
+        </div>
+        <div class="modal-stat-card">
+          <span class="stat-label">🏦 In the Bank</span>
+          <span class="stat-val">${bankVal}</span>
+        </div>
+        <div class="modal-stat-card">
+          <span class="stat-label">🔄 Transfers</span>
+          <span class="stat-val">${transfersCount} <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${transferHits}</span></span>
+        </div>
+        <div class="modal-stat-card">
+          <span class="stat-label">⚡ Active Chip</span>
+          <span class="stat-val" style="color:var(--pl-purple);">${activeChip}</span>
+        </div>
+        <div class="modal-stat-card">
+          <span class="stat-label">👑 Captain</span>
+          <span class="stat-val" style="color:#facc15;">${captainName}</span>
+        </div>
+      </div>
+
+      <!-- Starting XI Table -->
+      <div>
+        <div class="modal-section-header">
+          <span>⚽ Starting XI (${startingPtsTotal} pts)</span>
+          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">11 Players</span>
+        </div>
+        <table class="modal-squad-table">
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Player</th>
+              <th>Role</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${startingRows || '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bench Table -->
+      <div>
+        <div class="modal-section-header">
+          <span>🪑 Substitutes Bench (${benchPts} pts)</span>
+          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">4 Players</span>
+        </div>
+        <table class="modal-squad-table">
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>Pos</th>
+              <th>Player</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${benchRows || '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
+          </tbody>
+        </table>
+      </div>
+    `;
+  };
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeManagerModal();
+  });
 
   document.addEventListener('DOMContentLoaded', init);
 })();

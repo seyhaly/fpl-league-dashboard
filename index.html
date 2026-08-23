@@ -14,7 +14,7 @@
     body, html { font-family: 'Outfit', sans-serif; }
     h3, .pipeline-gw-title { font-family: 'Inter', sans-serif; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=41.0">
+  <link rel="stylesheet" href="styles.css?v=43.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -215,8 +215,37 @@
 
 </div>
 
+<!-- ===================== MANAGER SQUAD DETAIL MODAL ===================== -->
+<div id="managerModalBackdrop" class="manager-modal-backdrop" onclick="closeManagerModal()"></div>
+<div id="managerDetailModal" class="manager-detail-modal" role="dialog" aria-modal="true" aria-hidden="true">
+  <div class="manager-modal-header">
+    <div class="manager-modal-user-info">
+      <div class="manager-modal-avatar" id="modalManagerAvatar">SL</div>
+      <div>
+        <div class="manager-modal-title">
+          <span id="modalManagerName">Seyha ly</span>
+          <span class="manager-modal-team" id="modalTeamName">— The Red Devil</span>
+          <span class="manager-modal-fpl-id" id="modalFplId">(#2019453)</span>
+        </div>
+        <div class="manager-modal-sub" id="modalGwBadge">Gameweek 1 Squad Details</div>
+      </div>
+    </div>
+    <div class="manager-modal-actions">
+      <a id="modalFplDirectLink" href="#" target="_blank" rel="noopener" class="btn-modal-fpl-link">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        Open in Official FPL
+      </a>
+      <button class="btn-modal-close" onclick="closeManagerModal()" aria-label="Close modal">✕</button>
+    </div>
+  </div>
+
+  <div class="manager-modal-body" id="modalContentBody">
+    <!-- Dynamic Squad & Stats Table injected by JS -->
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
-<script src="app.js?v=41.0"></script>
+<script src="app.js?v=43.0"></script>
 </body>
 </html>
