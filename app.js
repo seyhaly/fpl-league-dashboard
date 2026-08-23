@@ -605,13 +605,19 @@
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
-    // 1. Try loading direct from automated live_data.json (Zero CORS, 100% 24/7 reliable)
+    // 1. Load initial cached/bundled data for 0ms instant UI rendering
     try {
+      if (window.FPL_LIVE_STATIC) {
+        state.dataset.players = window.FPL_LIVE_STATIC.players || {};
+        state.dataset.squadPicks = window.FPL_LIVE_STATIC.squadPicks || {};
+        state.dataset.transfersHistory = window.FPL_LIVE_STATIC.transfersHistory || {};
+        state.dataset.teams = window.FPL_LIVE_STATIC.teams || {};
+      }
+
       const resp = await fetch(`./live_data.json?t=${Date.now()}`);
       if (resp.ok) {
         const liveJson = await resp.json();
         if (liveJson && liveJson.leagues && liveJson.leagues[inputCode]) {
-          if (fetchId !== state.fetchCounter) return;
           const lData = liveJson.leagues[inputCode];
           state.dataset.managers = lData.managers;
           state.dataset.gameweeks = lData.gameweeks;
@@ -632,14 +638,10 @@
             state.eventStatuses = liveJson.eventStatuses;
           }
 
-          elements.syncStatusTag.className = 'sync-status-tag live';
-          elements.syncStatusTag.textContent = `LIVE (${lData.managers.length} Members)`;
-
           populateGwSelect();
           changeGw(state.currentGw);
           updateMemberCountBadge();
           renderAll();
-          return;
         }
       }
     } catch (e) {}
