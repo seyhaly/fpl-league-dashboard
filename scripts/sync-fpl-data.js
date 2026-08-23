@@ -129,6 +129,7 @@ async function syncAll() {
     teams: teamsMap,
     players: playersMap,
     squadPicks: {},
+    transfersHistory: {},
     leagues: {}
   };
 
@@ -183,10 +184,15 @@ async function syncAll() {
     });
 
     // Fetch individual manager details
-    console.log(`📥 Fetching detailed history & picks for ${managers.length} managers in League #${leagueId}...`);
+    console.log(`📥 Fetching detailed history, picks & transfers for ${managers.length} managers in League #${leagueId}...`);
     for (const m of managers) {
       const histData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/history/`);
       const picksData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/event/${detectedGw}/picks/`);
+      const transData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/transfers/`);
+
+      if (transData && Array.isArray(transData)) {
+        outputData.transfersHistory[String(m.id)] = transData;
+      }
 
       if (picksData) {
         if (!outputData.squadPicks[String(m.id)]) {
@@ -250,7 +256,7 @@ async function syncAll() {
 
   const outPath = path.join(__dirname, '..', 'live_data.json');
   fs.writeFileSync(outPath, JSON.stringify(outputData, null, 2), 'utf-8');
-  console.log(`✅ Automated FPL sync complete! Saved live data with squad picks to ${outPath}`);
+  console.log(`✅ Automated FPL sync complete! Saved live data with squad picks & transfers to ${outPath}`);
 }
 
 syncAll().catch(err => {

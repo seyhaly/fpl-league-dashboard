@@ -626,6 +626,7 @@
           }
           if (liveJson.players) state.dataset.players = liveJson.players;
           if (liveJson.squadPicks) state.dataset.squadPicks = liveJson.squadPicks;
+          if (liveJson.transfersHistory) state.dataset.transfersHistory = liveJson.transfersHistory;
           if (liveJson.teams) state.dataset.teams = liveJson.teams;
           if (liveJson.eventStatuses) {
             state.eventStatuses = liveJson.eventStatuses;
@@ -2329,6 +2330,50 @@
       });
     }
 
+    // ── Build Transfers This GW Section ─────────────────────
+    const allTransfers = (state.dataset.transfersHistory && state.dataset.transfersHistory[String(manager.id)]) || [];
+    const gwTransfers = allTransfers.filter(t => t.event === gw);
+    let transfersHtml = '';
+
+    if (gwTransfers.length > 0) {
+      const transferItems = gwTransfers.map(t => {
+        const pIn = playersMap[t.element_in] || { web_name: 'Player #' + t.element_in, team: '' };
+        const pOut = playersMap[t.element_out] || { web_name: 'Player #' + t.element_out, team: '' };
+        const costIn = t.element_in_cost ? `£${(t.element_in_cost / 10).toFixed(1)}M` : '';
+        const costOut = t.element_out_cost ? `£${(t.element_out_cost / 10).toFixed(1)}M` : '';
+
+        return `
+          <div class="transfer-item-row" style="padding:6px 0;border-bottom:1px dashed var(--border-subtle);">
+            <span class="transfer-pill-in">🟢 IN: <strong>${pIn.web_name}</strong> ${costIn ? `(${costIn})` : ''} <span class="player-team-pill">${pIn.team}</span></span>
+            <span style="color:var(--text-muted);font-weight:700;margin:0 8px;">⇄</span>
+            <span class="transfer-pill-out">🔴 OUT: <strong>${pOut.web_name}</strong> ${costOut ? `(${costOut})` : ''} <span class="player-team-pill">${pOut.team}</span></span>
+          </div>
+        `;
+      }).join('');
+
+      transfersHtml = `
+        <div>
+          <div class="modal-section-header">
+            <span>🔄 Transfers This GW (${gwTransfers.length} transfer${gwTransfers.length > 1 ? 's' : ''}${transferHits !== '(0 hits)' ? ` · ${transferHits}` : ''})</span>
+          </div>
+          <div class="modal-transfers-box">
+            ${transferItems}
+          </div>
+        </div>
+      `;
+    } else {
+      transfersHtml = `
+        <div>
+          <div class="modal-section-header">
+            <span>🔄 Transfers This GW</span>
+          </div>
+          <div class="modal-transfers-box" style="color:var(--text-muted);font-style:italic;">
+            None (0 transfers made in Gameweek ${gw})
+          </div>
+        </div>
+      `;
+    }
+
     modalBody.innerHTML = `
       <!-- Vital Stats Ribbon -->
       <div class="modal-stats-grid">
@@ -2399,6 +2444,9 @@
           </tbody>
         </table>
       </div>
+
+      <!-- Transfers This GW Breakdown -->
+      ${transfersHtml}
     `;
   };
 
