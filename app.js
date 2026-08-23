@@ -1859,16 +1859,14 @@
       overallStatusClass = 'pipe-badge-live';
     }
 
-    // Normalize dailyStatus so past matchdays are 'done', today is 'active', and future days are 'pending'
-    const todayIso = new Date().toISOString().split('T')[0];
+    // Normalize dailyStatus based on UTC matchday dates: Friday & Saturday done, Sunday & Monday upcoming
+    const todayIso = new Date().toISOString().split('T')[0]; // '2026-08-23'
     const isFinished = Boolean(statusObj.finished && statusObj.data_checked);
 
     const normalizedDailyStatus = dailyStatus.map(day => {
       const dateStr = day.date;
       if (isDemoMode || isFinished || dateStr < todayIso) {
         return { ...day, points: 'r', bonus_added: true };
-      } else if (dateStr === todayIso) {
-        return { ...day, points: 'r', bonus_added: false };
       } else {
         return { ...day, points: 'p', bonus_added: false };
       }
@@ -1891,11 +1889,12 @@
       return `<span class="day-tag tag-${type}">${icon}${label}</span>`;
     };
 
-    // ── Build rows in user's local timezone ──────────────
+    // ── Build rows matching official matchday calendar ──────────────
     const tableRows = normalizedDailyStatus.map((day, idx, arr) => {
-      const dateObj = new Date(`${day.date}T19:30:00Z`);
-      const weekday = dateObj.toLocaleDateString(undefined, { weekday: 'long' });
-      const dateFmt = dateObj.toLocaleDateString(undefined, { day: 'numeric', month: 'short' });
+      const [y, m, d] = day.date.split('-').map(Number);
+      const dateObj = new Date(Date.UTC(y, m - 1, d, 12, 0, 0));
+      const weekday = dateObj.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' });
+      const dateFmt = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
 
       const ptsType   = day.points === 'r' ? 'done' : 'pending';
       const bonusType = day.bonus_added ? 'done' : (day.points === 'r' ? 'active' : 'pending');
