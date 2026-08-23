@@ -2186,7 +2186,7 @@
     document.body.style.overflow = '';
   };
 
-  window.openManagerModal = async function(managerId) {
+  window.openManagerModal = function(managerId) {
     const modal = document.getElementById('managerDetailModal');
     const backdrop = document.getElementById('managerModalBackdrop');
     const modalAvatar = document.getElementById('modalManagerAvatar');
@@ -2216,36 +2216,14 @@
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-    // Retrieve squad picks from dataset or direct live_data.json
-    let squadData = null;
-    if (state.dataset.squadPicks && state.dataset.squadPicks[String(manager.id)] && state.dataset.squadPicks[String(manager.id)][String(gw)]) {
-      squadData = state.dataset.squadPicks[String(manager.id)][String(gw)];
-    }
+    // Retrieve squad picks from memory (state or pre-bundled FPL_LIVE_STATIC)
+    const staticData = window.FPL_LIVE_STATIC || {};
+    const squadPicksMap = state.dataset.squadPicks || staticData.squadPicks || {};
+    const playersMap = state.dataset.players || staticData.players || {};
+    const transfersHistoryMap = state.dataset.transfersHistory || staticData.transfersHistory || {};
 
-    if (!squadData) {
-      modalBody.innerHTML = `
-        <div style="text-align:center;padding:30px;color:var(--text-muted);">
-          <div class="sync-spinner" style="margin:0 auto 12px;border-top-color:var(--pl-cyan);width:28px;height:28px;border-width:3px;"></div>
-          <div>Loading squad details for ${manager.name}...</div>
-        </div>
-      `;
+    let squadData = (squadPicksMap[String(manager.id)] && squadPicksMap[String(manager.id)][String(gw)]) || null;
 
-      try {
-        const resp = await fetch(`./live_data.json?t=${Date.now()}`);
-        if (resp.ok) {
-          const liveJson = await resp.json();
-          if (liveJson.squadPicks) state.dataset.squadPicks = liveJson.squadPicks;
-          if (liveJson.players) state.dataset.players = liveJson.players;
-          if (liveJson.transfersHistory) state.dataset.transfersHistory = liveJson.transfersHistory;
-          if (liveJson.teams) state.dataset.teams = liveJson.teams;
-          if (liveJson.squadPicks && liveJson.squadPicks[String(manager.id)]) {
-            squadData = liveJson.squadPicks[String(manager.id)][String(gw)];
-          }
-        }
-      } catch (e) {}
-    }
-
-    const playersMap = state.dataset.players || {};
     const posNames = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' };
     const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
 
@@ -2258,11 +2236,9 @@
     let activeChip = 'None';
     let captainName = '-';
 
-    const gks = [];
-    const defs = [];
-    const mids = [];
-    const fwds = [];
-    const bench = [];
+    let startingRows = '';
+    let benchRows = '';
+    let startingPtsTotal = 0;
 
     if (squadData && squadData.picks && squadData.picks.length > 0) {
       const hist = squadData.entry_history || {};
@@ -2279,10 +2255,12 @@
       squadData.picks.forEach(p => {
         const pl = playersMap[p.element] || {
           web_name: `Player #${p.element}`,
-          element_type: p.element_type || 2,
+          element_type: p.element_type || (p.position === 1 ? 1 : 2),
           team: '-',
           event_points: 0
         };
+        const posName = posNames[pl.element_type] || 'DEF';
+        const posClass = posClasses[pl.element_type] || 'pos-def';
         const multiplier = p.multiplier || 1;
         const pts = (pl.event_points || 0) * (p.position <= 11 ? multiplier : 1);
 
@@ -2290,92 +2268,51 @@
           captainName = `${pl.web_name} (${pts} pts)`;
         }
 
-        const playerObj = {
-          element: p.element,
-          position: p.position,
-          web_name: pl.web_name,
-          team: pl.team,
-          element_type: pl.element_type || (p.position === 1 ? 1 : 2),
-          multiplier: multiplier,
-          is_captain: p.is_captain,
-          is_vice_captain: p.is_vice_captain,
-          pts: pts
-        };
+        let roleTag = '';
+        if (p.is_captain) {
+          roleTag = `<span class="captain-role-badge">👑 CAPTAIN (${multiplier}x)</span>`;
+        } else if (p.is_vice_captain) {
+          roleTag = `<span class="vice-role-badge">🛡️ VICE</span>`;
+        }
+
+        const trHtml = `
+          <tr>
+            <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+            <td>
+              <div class="player-name-cell">
+                <span style="font-weight:700;">${pl.web_name}</span>
+                <span class="player-team-pill">${pl.team}</span>
+              </div>
+            </td>
+            <td>${roleTag}</td>
+            <td class="text-center" style="width:70px;"><span class="player-points-badge">${pts} pts</span></td>
+          </tr>
+        `;
 
         if (p.position <= 11) {
+          startingRows += trHtml;
           startingPtsTotal += pts;
-          if (playerObj.element_type === 1) gks.push(playerObj);
-          else if (playerObj.element_type === 2) defs.push(playerObj);
-          else if (playerObj.element_type === 3) mids.push(playerObj);
-          else if (playerObj.element_type === 4) fwds.push(playerObj);
-          else defs.push(playerObj);
         } else {
-          bench.push(playerObj);
+          const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
+          benchRows += `
+            <tr>
+              <td style="width:70px;"><span style="font-weight:700;color:var(--text-muted);font-size:11px;">[${subOrder}]</span></td>
+              <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td>
+                <div class="player-name-cell">
+                  <span style="font-weight:700;">${pl.web_name}</span>
+                  <span class="player-team-pill">${pl.team}</span>
+                </div>
+              </td>
+              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="color:var(--text-muted);">${pts} pts</span></td>
+            </tr>
+          `;
         }
       });
     }
 
-    const formationStr = `${defs.length}-${mids.length}-${fwds.length}`;
-
-    const makePitchPlayerHtml = (p) => {
-      let roleBadge = '';
-      if (p.is_captain) {
-        roleBadge = `<span class="pitch-badge-captain">C${p.multiplier > 1 ? ` (${p.multiplier}x)` : ''}</span>`;
-      } else if (p.is_vice_captain) {
-        roleBadge = `<span class="pitch-badge-vice">V</span>`;
-      }
-
-      return `
-        <div class="pitch-player-card">
-          <div class="pitch-shirt-wrap">
-            <span class="pitch-shirt-icon">👕</span>
-            ${roleBadge}
-          </div>
-          <div class="pitch-player-name-tag">
-            <span class="pitch-player-name">${p.web_name}</span>
-            <span class="pitch-player-sub-info">${p.team}</span>
-          </div>
-          <span class="pitch-player-pts-pill">${p.pts} pts</span>
-        </div>
-      `;
-    };
-
-    const pitchHtml = (gks.length + defs.length + mids.length + fwds.length > 0) ? `
-      <div class="pitch-container">
-        <div class="pitch-markings">
-          <div class="pitch-penalty-top"></div>
-          <div class="pitch-halfway-line"></div>
-          <div class="pitch-center-circle"></div>
-          <div class="pitch-penalty-bottom"></div>
-        </div>
-        <div class="pitch-line-row">${gks.map(makePitchPlayerHtml).join('')}</div>
-        <div class="pitch-line-row">${defs.map(makePitchPlayerHtml).join('')}</div>
-        <div class="pitch-line-row">${mids.map(makePitchPlayerHtml).join('')}</div>
-        <div class="pitch-line-row">${fwds.map(makePitchPlayerHtml).join('')}</div>
-      </div>
-    ` : `<div style="text-align:center;padding:24px;color:var(--text-muted);">Squad data not available for this Gameweek.</div>`;
-
-    // Bench Dugout Cards
-    const benchCardsHtml = bench.length > 0 ? bench.map((p, bIdx) => {
-      const subLabel = bIdx === 0 ? 'GK' : `Sub ${bIdx}`;
-      const posNames = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' };
-      const posClass = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
-
-      return `
-        <div class="bench-player-card">
-          <span class="bench-order-tag">[${subLabel}]</span>
-          <span class="pos-pill ${posClass[p.element_type] || 'pos-def'}">${posNames[p.element_type] || 'DEF'}</span>
-          <div style="width:100%;margin:2px 0;">
-            <span style="font-family:'Outfit',sans-serif;font-size:11.5px;font-weight:800;color:var(--text-primary);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${p.web_name}</span>
-            <span style="font-size:10px;color:var(--text-muted);font-weight:600;">${p.team}</span>
-          </div>
-          <span class="player-points-badge" style="font-size:12px;color:var(--text-muted);">${p.pts} pts</span>
-        </div>
-      `;
-    }).join('') : '<div style="color:var(--text-muted);padding:10px;text-align:center;grid-column:1/-1;">Bench data not available.</div>';
-
     // ── Build Transfers This GW Section ─────────────────────
-    const allTransfers = (state.dataset.transfersHistory && state.dataset.transfersHistory[String(manager.id)]) || [];
+    const allTransfers = transfersHistoryMap[String(manager.id)] || [];
     const gwTransfers = allTransfers.filter(t => t.event === gw);
     let transfersHtml = '';
 
@@ -2447,26 +2384,46 @@
         </div>
       </div>
 
-      <!-- Starting XI Mini Football Pitch -->
+      <!-- Starting XI Table -->
       <div>
         <div class="modal-section-header">
           <span>⚽ Starting XI (${startingPtsTotal} pts)</span>
-          <span style="font-size:11.5px;font-weight:700;color:var(--pl-cyan);background:rgba(6,182,212,0.1);padding:2px 8px;border-radius:12px;border:1px solid rgba(6,182,212,0.25);">Formation: ${formationStr}</span>
+          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">11 Players</span>
         </div>
-        ${pitchHtml}
+        <table class="modal-squad-table">
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Player</th>
+              <th>Role</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${startingRows || '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
+          </tbody>
+        </table>
       </div>
 
-      <!-- Substitutes Bench Dugout -->
+      <!-- Bench Table -->
       <div>
         <div class="modal-section-header">
           <span>🪑 Substitutes Bench (${benchPts} pts)</span>
           <span style="font-size:11px;font-weight:600;color:var(--text-muted);">4 Players</span>
         </div>
-        <div class="bench-dugout-container">
-          <div class="bench-players-grid">
-            ${benchCardsHtml}
-          </div>
-        </div>
+        <table class="modal-squad-table">
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>Pos</th>
+              <th>Player</th>
+              <th class="text-center">Points</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${benchRows || '<tr><td colspan="4" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
+          </tbody>
+        </table>
       </div>
 
       <!-- Transfers This GW Breakdown -->
