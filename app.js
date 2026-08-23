@@ -2433,12 +2433,19 @@
       `;
     }
 
+    const transferCost = (hist.event_transfers_cost !== undefined) 
+      ? hist.event_transfers_cost 
+      : ((state.dataset.gameweeks && state.dataset.gameweeks[gw - 1] && state.dataset.gameweeks[gw - 1].hits && state.dataset.gameweeks[gw - 1].hits[manager.id]) || 0);
+
+    const grossPoints = startingPtsTotal + (isBenchBoostActive ? benchPts : 0);
+    const netGwPoints = grossPoints - transferCost;
+
     modalBody.innerHTML = `
       <!-- Vital Stats Ribbon -->
       <div class="modal-stats-grid">
         <div class="modal-stat-card">
-          <span class="stat-label">🏆 Overall Rank</span>
-          <span class="stat-val" style="color:var(--pl-cyan);">${overallRank}</span>
+          <span class="stat-label">🎯 GW${gw} Net Points</span>
+          <span class="stat-val" style="color:var(--pl-cyan);">${netGwPoints} pts ${transferCost > 0 ? `<span style="font-size:10.5px;color:#f87171;font-weight:700;">(-${transferCost})</span>` : ''}</span>
         </div>
         <div class="modal-stat-card">
           <span class="stat-label">⚽ Played</span>
