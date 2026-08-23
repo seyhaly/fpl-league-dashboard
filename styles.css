@@ -2060,8 +2060,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   top: 50%;
   left: 50%;
   transform: translate(-50%, -46%) scale(0.96);
-  width: 92%;
-  max-width: 820px;
+  width: 95%;
+  max-width: 1040px;
   max-height: 88vh;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
@@ -2194,11 +2194,23 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   gap: 20px;
 }
 
-/* Vital Stats Cards in Modal */
+/* Vital Stats Cards in Modal - 1 Single Horizontal Row on Desktop */
 .modal-stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
   gap: 10px;
+}
+
+@media (max-width: 900px) {
+  .modal-stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .modal-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .modal-stat-card {
