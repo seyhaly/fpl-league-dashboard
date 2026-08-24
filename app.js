@@ -1707,30 +1707,27 @@
         if (isPast) {
           const standings = gwStandingsMap[gw] || [];
           const item = standings.find(x => x.id === m.id);
-          if (item) {
-            let formCode = 'N';
+          if (item && item.netScore !== undefined) {
             let pillClass = 'form-n';
 
             if (item.payout > 0) {
-              formCode = 'W';
               pillClass = 'form-w';
             } else if (item.payout < 0) {
-              formCode = 'L';
               pillClass = 'form-l';
             }
 
             gwCells += `
               <td class="matrix-gw-td ${cellClass}">
-                <span class="matrix-pill ${pillClass}">${formCode}</span>
+                <span class="matrix-score-tile ${pillClass}">${item.netScore}</span>
               </td>
             `;
           } else {
-            gwCells += `<td class="matrix-gw-td ${cellClass}"><span class="matrix-pill-future">-</span></td>`;
+            gwCells += `<td class="matrix-gw-td ${cellClass}"><span class="matrix-score-future">-</span></td>`;
           }
         } else {
           gwCells += `
             <td class="matrix-gw-td matrix-td-future">
-              <span class="matrix-pill-future">·</span>
+              <span class="matrix-score-future">-</span>
             </td>
           `;
         }
