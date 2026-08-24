@@ -1749,10 +1749,6 @@
             </div>
           </td>
           ${gwCells}
-          <td class="matrix-stat-td text-center"><span class="stat-pill win">${m.wins}W</span></td>
-          <td class="matrix-stat-td text-center"><span class="stat-pill loss">${m.losses}L</span></td>
-          <td class="matrix-stat-td text-center"><span class="stat-pill neu">${m.neutrals}N</span></td>
-          <td class="matrix-stat-td text-center"><span style="font-weight:700;font-family:'Outfit',sans-serif;font-size:12px;">${m.winRate}%</span></td>
         </tr>
       `;
     });
@@ -1764,10 +1760,6 @@
             <th class="sticky-col-pos text-center" style="width:45px;">Pos</th>
             <th class="sticky-col-manager" style="min-width:180px;">Manager & Team</th>
             ${theadGwCols}
-            <th class="matrix-stat-th text-center" style="min-width:55px;">W</th>
-            <th class="matrix-stat-th text-center" style="min-width:55px;">L</th>
-            <th class="matrix-stat-th text-center" style="min-width:55px;">N</th>
-            <th class="matrix-stat-th text-center" style="min-width:65px;">Win %</th>
           </tr>
         </thead>
         <tbody>
