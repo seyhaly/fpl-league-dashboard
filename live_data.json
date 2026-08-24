@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T19:28:23Z",
+  "lastUpdated": "2026-08-24T19:53:40Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -3226,14 +3226,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 1,
+      "event_points": 9,
       "now_cost": "7.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "101": {
       "id": 101,
@@ -3251,7 +3251,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "136": {
       "id": 136,
@@ -3269,7 +3269,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "140": {
       "id": 140,
@@ -3285,9 +3285,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "141": {
       "id": 141,
@@ -3305,7 +3305,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "142": {
       "id": 142,
@@ -3321,9 +3321,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "143": {
       "id": 143,
@@ -3341,7 +3341,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "144": {
       "id": 144,
@@ -3357,9 +3357,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "145": {
       "id": 145,
@@ -3377,7 +3377,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "146": {
       "id": 146,
@@ -3395,7 +3395,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "147": {
       "id": 147,
@@ -3413,7 +3413,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "148": {
       "id": 148,
@@ -3429,9 +3429,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "149": {
       "id": 149,
@@ -3447,9 +3447,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "150": {
       "id": 150,
@@ -3467,7 +3467,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "151": {
       "id": 151,
@@ -3483,9 +3483,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "152": {
       "id": 152,
@@ -3503,7 +3503,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "153": {
       "id": 153,
@@ -3521,7 +3521,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "154": {
       "id": 154,
@@ -3532,14 +3532,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 5,
+      "event_points": 4,
       "now_cost": "9.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "155": {
       "id": 155,
@@ -3557,7 +3557,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "156": {
       "id": 156,
@@ -3575,7 +3575,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "157": {
       "id": 157,
@@ -3593,7 +3593,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "158": {
       "id": 158,
@@ -3611,7 +3611,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "159": {
       "id": 159,
@@ -3629,7 +3629,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "161": {
       "id": 161,
@@ -3645,9 +3645,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "163": {
       "id": 163,
@@ -3665,7 +3665,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "164": {
       "id": 164,
@@ -3683,7 +3683,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "165": {
       "id": 165,
@@ -3694,14 +3694,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 8,
+      "event_points": 7,
       "now_cost": "7.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "166": {
       "id": 166,
@@ -3719,7 +3719,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "167": {
       "id": 167,
@@ -3737,7 +3737,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "168": {
       "id": 168,
@@ -3755,7 +3755,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "169": {
       "id": 169,
@@ -3773,7 +3773,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "170": {
       "id": 170,
@@ -3791,7 +3791,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "200": {
       "id": 200,
@@ -3802,14 +3802,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 1,
+      "event_points": 4,
       "now_cost": "6.0",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "560": {
       "id": 560,
@@ -3827,7 +3827,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "561": {
       "id": 561,
@@ -3845,7 +3845,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "568": {
       "id": 568,
@@ -3863,7 +3863,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "578": {
       "id": 578,
@@ -3881,7 +3881,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "583": {
       "id": 583,
@@ -3899,7 +3899,7 @@
       "difficulty": 3,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "104": {
       "id": 104,
@@ -5517,9 +5517,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "251": {
       "id": 251,
@@ -5537,7 +5537,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "252": {
       "id": 252,
@@ -5555,7 +5555,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "253": {
       "id": 253,
@@ -5573,7 +5573,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "254": {
       "id": 254,
@@ -5584,14 +5584,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 1,
+      "event_points": 0,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "255": {
       "id": 255,
@@ -5602,14 +5602,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 1,
+      "event_points": 0,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "256": {
       "id": 256,
@@ -5627,7 +5627,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "257": {
       "id": 257,
@@ -5638,14 +5638,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 1,
+      "event_points": 0,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "258": {
       "id": 258,
@@ -5656,14 +5656,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 4,
+      "event_points": 3,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "261": {
       "id": 261,
@@ -5679,9 +5679,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "262": {
       "id": 262,
@@ -5699,7 +5699,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "263": {
       "id": 263,
@@ -5717,7 +5717,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "264": {
       "id": 264,
@@ -5733,9 +5733,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "265": {
       "id": 265,
@@ -5751,9 +5751,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "266": {
       "id": 266,
@@ -5771,7 +5771,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "268": {
       "id": 268,
@@ -5782,14 +5782,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 8,
+      "event_points": 7,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "269": {
       "id": 269,
@@ -5807,7 +5807,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "270": {
       "id": 270,
@@ -5825,7 +5825,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "271": {
       "id": 271,
@@ -5843,7 +5843,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "272": {
       "id": 272,
@@ -5861,7 +5861,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "569": {
       "id": 569,
@@ -5877,9 +5877,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "570": {
       "id": 570,
@@ -5895,9 +5895,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 25,
+      "minutes": 45,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "580": {
       "id": 580,
@@ -5915,7 +5915,7 @@
       "difficulty": 4,
       "minutes": 0,
       "match_status": "live",
-      "status_label": "🟢 Live (25')"
+      "status_label": "🟢 Live (45')"
     },
     "273": {
       "id": 273,
@@ -12692,16 +12692,16 @@
           "avatar": "MO"
         },
         {
-          "id": 2026484,
-          "name": "Bora Chhe",
-          "teamName": "Bora's Team",
-          "avatar": "BO"
-        },
-        {
           "id": 2067578,
           "name": "Kun Phaktra",
           "teamName": "The Blue Warriors",
           "avatar": "KU"
+        },
+        {
+          "id": 2026484,
+          "name": "Bora Chhe",
+          "teamName": "Bora's Team",
+          "avatar": "BO"
         },
         {
           "id": 2023013,
@@ -12710,16 +12710,16 @@
           "avatar": "នរ"
         },
         {
-          "id": 2026160,
-          "name": "Piseth Nhim",
-          "teamName": "DESSTRo",
-          "avatar": "PI"
-        },
-        {
           "id": 2024611,
           "name": "Vibol Dang",
           "teamName": "The White Emperor",
           "avatar": "VI"
+        },
+        {
+          "id": 2026160,
+          "name": "Piseth Nhim",
+          "teamName": "DESSTRo",
+          "avatar": "PI"
         },
         {
           "id": 2019453,
@@ -12733,38 +12733,38 @@
           "gw": 1,
           "scores": {
             "2023789": 59,
-            "2026484": 50,
             "2067578": 46,
+            "2026484": 50,
             "2023013": 50,
-            "2026160": 38,
             "2024611": 29,
+            "2026160": 38,
             "2019453": 30
           },
           "hits": {
             "2023789": 0,
-            "2026484": 0,
             "2067578": 0,
+            "2026484": 0,
             "2023013": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2019453": 0
           },
           "transfers": {
             "2023789": 0,
-            "2026484": 0,
             "2067578": 0,
+            "2026484": 0,
             "2023013": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2019453": 0
           },
           "benchPoints": {
             "2023789": 0,
-            "2026484": 9,
             "2067578": 12,
+            "2026484": 9,
             "2023013": 4,
-            "2026160": 0,
             "2024611": 3,
+            "2026160": 0,
             "2019453": 11
           },
           "captainPoints": {},
@@ -12773,11 +12773,11 @@
           },
           "seasonTotals": {
             "2023789": 59,
-            "2026484": 50,
             "2067578": 46,
+            "2026484": 50,
             "2023013": 50,
-            "2026160": 38,
             "2024611": 29,
+            "2026160": 38,
             "2019453": 30
           }
         },
