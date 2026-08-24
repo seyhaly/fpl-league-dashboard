@@ -1528,7 +1528,7 @@
             ${tiebreakerDetail}
           </div>
         </td>
-        <td class="td-aba text-left">
+        <td class="text-center">
           ${abaDisplay}
         </td>
         <td class="text-center">
