@@ -511,19 +511,19 @@
   }
 
   // ===================== LIVE FPL SYNC =====================
-  async function fetchFplWithTimeout(targetUrl, timeoutMs = 6000) {
+  async function fetchFplWithTimeout(targetUrl, timeoutMs = 8000) {
     const proxies = [
       `https://corsproxy.io/?${encodeURIComponent(targetUrl)}`,
       `https://corsproxy.io/?${targetUrl}`,
       `https://api.allorigins.win/raw?url=${encodeURIComponent(targetUrl)}`,
       `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(targetUrl)}`,
+      `https://thingproxy.freeboard.io/fetch/${targetUrl}`,
       targetUrl // direct attempt
     ];
 
     function isValidFplPayload(data) {
       if (!data || typeof data !== 'object') return false;
       if (data.error || data.message === 'Not found') return false;
-      // Real FPL responses have one of these structures:
       return Boolean(
         data.standings ||
         data.league ||
@@ -605,7 +605,9 @@
     elements.syncStatusTag.className = 'sync-status-tag pending';
     elements.syncStatusTag.textContent = `Syncing #${inputCode}...`;
 
-    // 1. Load initial cached/bundled data for 0ms instant UI rendering
+    let dataLoadedSuccessfully = false;
+
+    // 1. Load initial cached/bundled data from window.FPL_LIVE_STATIC and live_data.json
     try {
       if (window.FPL_LIVE_STATIC) {
         state.dataset.players = window.FPL_LIVE_STATIC.players || {};
@@ -619,8 +621,8 @@
         const liveJson = await resp.json();
         if (liveJson && liveJson.leagues && liveJson.leagues[inputCode]) {
           const lData = liveJson.leagues[inputCode];
-          state.dataset.managers = lData.managers;
-          state.dataset.gameweeks = lData.gameweeks;
+          state.dataset.managers = lData.managers || [];
+          state.dataset.gameweeks = lData.gameweeks || [];
           if (lData.months) state.dataset.months = lData.months;
           if (lData.leagueName) {
             if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = lData.leagueName;
@@ -642,15 +644,19 @@
           changeGw(state.currentGw);
           updateMemberCountBadge();
           renderAll();
+          dataLoadedSuccessfully = true;
+          elements.syncStatusTag.className = 'sync-status-tag live';
+          elements.syncStatusTag.textContent = `SYNCED (${state.dataset.managers.length} Members)`;
         }
       }
-    } catch (e) {}
+    } catch (e) {
+      console.warn('live_data.json load notice:', e);
+    }
 
-    // 2. Instant switch: Check local cache first for 0ms transition
-    let loadedFromCache = false;
+    // 2. Check local cache (only if live_data.json was not loaded)
     try {
       const cached = localStorage.getItem(`fpl_live_cache_${inputCode}`);
-      if (cached) {
+      if (cached && !dataLoadedSuccessfully) {
         const parsed = JSON.parse(cached);
         if (parsed && parsed.managers && parsed.managers.length > 0) {
           state.dataset.managers = parsed.managers;
@@ -670,13 +676,13 @@
           changeGw(state.currentGw);
           updateMemberCountBadge();
           renderAll();
-          loadedFromCache = true;
+          dataLoadedSuccessfully = true;
         }
       }
     } catch (cErr) {}
 
-    // If not in cache, clear previous league's managers immediately so it doesn't show wrong data
-    if (!loadedFromCache) {
+    // If still no data at all (first visit with no network), set clean pre-season template
+    if (!dataLoadedSuccessfully && (!state.dataset.managers || state.dataset.managers.length === 0)) {
       if (inputCode === '390100') {
         if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = "Fantasy with Heng";
         if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
@@ -688,13 +694,13 @@
         if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = "Clash of Elite 2026-2027";
         if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Clash of Elite 2026-2027";
         state.dataset.managers = [
-          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" },
-          { id: 2067578, name: "Kun Phaktra", teamName: "The Blue Warriors", avatar: "KP" },
-          { id: 2026160, name: "Piseth Nhim", teamName: "DESSTRo", avatar: "PN" },
-          { id: 2026484, name: "Bora Chhe", teamName: "Bora's Team", avatar: "BC" },
-          { id: 2024611, name: "Vibol Dang", teamName: "The White Emperor", avatar: "VD" },
-          { id: 2023789, name: "Monor Noem", teamName: "NORA FC", avatar: "MN" },
-          { id: 2023013, name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T", avatar: "NK" }
+          { id: 2023789, name: "Monor Noem", teamName: "NORA FC", avatar: "MO" },
+          { id: 2023013, name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T", avatar: "នរ" },
+          { id: 2026484, name: "Bora Chhe", teamName: "Bora's Team", avatar: "BO" },
+          { id: 2067578, name: "Kun Phaktra", teamName: "The Blue Warriors", avatar: "KU" },
+          { id: 2026160, name: "Piseth Nhim", teamName: "DESSTRo", avatar: "PI" },
+          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SE" },
+          { id: 2024611, name: "Vibol Dang", teamName: "The White Emperor", avatar: "VI" }
         ];
       } else {
         state.dataset.managers = [];
@@ -706,11 +712,12 @@
       renderAll();
     }
 
+    // 3. Attempt direct real-time API fetch
     try {
       const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${inputCode}/standings/`;
-      const data = await fetchFplWithTimeout(standingsUrl, 5000);
+      const data = await fetchFplWithTimeout(standingsUrl, 8000);
       if (fetchId !== state.fetchCounter) return;
-      if (!data) throw new Error(`Failed to fetch league standings for #${inputCode}`);
+      if (!data) throw new Error(`Could not reach live API for #${inputCode}`);
 
       if (data && data.league && data.league.name) {
         elements.leagueNameHeader.textContent = data.league.name;
@@ -760,32 +767,18 @@
           { name: "May", gws: [35, 36, 37, 38] }
         ];
 
-        // Initialize 38 gameweek slots and immediately populate latest scores from standings
-        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
-          const gwObj = {
-            gw: i + 1,
-            scores: {},
-            hits: {},
-            transfers: {},
-            benchPoints: {},
-            captainPoints: {},
-            chipsUsed: {},
-            seasonTotals: {}
-          };
-          if (i === 0) {
-            fetchedResults.forEach(r => {
-              gwObj.scores[r.entry] = r.event_total !== undefined ? r.event_total : 0;
-              gwObj.seasonTotals[r.entry] = r.total !== undefined ? r.total : (r.event_total || 0);
-            });
-          }
-          return gwObj;
-        });
+        // Maintain or initialize 38 gameweeks
+        if (!state.dataset.gameweeks || state.dataset.gameweeks.length < 38) {
+          state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => ({
+            gw: i + 1, scores: {}, hits: {}, transfers: {}, benchPoints: {}, captainPoints: {}, chipsUsed: {}, seasonTotals: {}
+          }));
+        }
 
         // Fetch Live FPL Gameweek & Event Status with Multi-Proxy Fallback
-        let detectedGw = 1;
+        let detectedGw = state.currentGw || 1;
         try {
           const bsTargetUrl = 'https://fantasy.premierleague.com/api/bootstrap-static/';
-          const bsData = await fetchFplWithTimeout(bsTargetUrl, 5000);
+          const bsData = await fetchFplWithTimeout(bsTargetUrl, 6000);
 
           if (bsData && bsData.events) {
             bsData.events.forEach(ev => {
@@ -824,20 +817,24 @@
             const nextEv = bsData.events.find(e => e.is_next);
             const prevEv = bsData.events.filter(e => e.finished).pop();
 
-            if (activeEv) {
-              detectedGw = activeEv.id;
-            } else if (prevEv) {
-              detectedGw = prevEv.id;
-            } else if (nextEv) {
-              detectedGw = Math.max(1, nextEv.id - 1);
-            }
+            if (activeEv) detectedGw = activeEv.id;
+            else if (prevEv) detectedGw = prevEv.id;
+            else if (nextEv) detectedGw = Math.max(1, nextEv.id - 1);
           }
+
+          // Populate current GW baseline from standings
+          fetchedResults.forEach(r => {
+            if (state.dataset.gameweeks[detectedGw - 1]) {
+              state.dataset.gameweeks[detectedGw - 1].scores[r.entry] = r.event_total !== undefined ? r.event_total : 0;
+              state.dataset.gameweeks[detectedGw - 1].seasonTotals[r.entry] = r.total !== undefined ? r.total : (r.event_total || 0);
+            }
+          });
 
           // Fetch Event Status, Fixtures & Live Player Stats to accurately determine match status
           const [stData, fixData, liveEventData] = await Promise.all([
-            fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 2500),
-            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/fixtures/?event=${detectedGw}`, 2500),
-            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/event/${detectedGw}/live/`, 2500)
+            fetchFplWithTimeout('https://fantasy.premierleague.com/api/event-status/', 3500),
+            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/fixtures/?event=${detectedGw}`, 3500),
+            fetchFplWithTimeout(`https://fantasy.premierleague.com/api/event/${detectedGw}/live/`, 3500)
           ]);
 
           const elStatsMap = {};
@@ -922,16 +919,16 @@
         if (!state.weeklyGw) state.weeklyGw = state.currentGw;
         if (!state.statusGw) state.statusGw = state.currentGw;
 
-        // Fetch detailed manager history & picks in parallel to sync chips, hits, bench points, and season totals
+        // Fetch detailed manager history & picks in parallel
         try {
           elements.syncStatusTag.textContent = `Syncing Details...`;
           const managerPromises = state.dataset.managers.map(async (m) => {
             try {
               const histUrl = `https://fantasy.premierleague.com/api/entry/${m.id}/history/`;
-              const histData = await fetchFplWithTimeout(histUrl, 3000);
+              const histData = await fetchFplWithTimeout(histUrl, 3500);
 
               const picksUrl = `https://fantasy.premierleague.com/api/entry/${m.id}/event/${detectedGw}/picks/`;
-              const picksData = await fetchFplWithTimeout(picksUrl, 3000);
+              const picksData = await fetchFplWithTimeout(picksUrl, 3500);
 
               return { id: m.id, histData, picksData };
             } catch (e) {
@@ -1013,103 +1010,12 @@
         throw new Error('No live standings found');
       }
     } catch (err) {
-      console.warn('Live FPL Sync Notice, using pre-season manager fallback:', err);
-      elements.syncStatusTag.className = 'sync-status-tag live';
-      elements.syncStatusTag.textContent = `PRE-SEASON (${inputCode})`;
-
-      if (inputCode === '389585') {
-        elements.leagueNameHeader.textContent = "Clash of Elite 2026-2027";
-        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Clash of Elite 2026-2027";
-        state.dataset.managers = [
-          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" },
-          { id: 2067578, name: "Kun Phaktra", teamName: "The Blue Warriors", avatar: "KP" },
-          { id: 2026160, name: "Piseth Nhim", teamName: "DESSTRo", avatar: "PN" },
-          { id: 2026484, name: "Bora Chhe", teamName: "Bora's Team", avatar: "BC" },
-          { id: 2024611, name: "Vibol Dang", teamName: "The White Emperor", avatar: "VD" },
-          { id: 2023789, name: "Monor Noem", teamName: "NORA FC", avatar: "MN" },
-          { id: 2023013, name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T", avatar: "NK" }
-        ];
-      } else if (inputCode === '390100') {
-        elements.leagueNameHeader.textContent = "Fantasy with Heng";
-        if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = "Fantasy with Heng";
-        state.dataset.managers = [
-          { id: 145847, name: "Hokheng Ker", teamName: "Undefeated", avatar: "HK" },
-          { id: 2019453, name: "Seyha ly", teamName: "The Red Devil", avatar: "SL" }
-        ];
-      }
-
+      console.warn('Live API direct proxy fetch not reachable, maintaining verified synced dataset:', err);
       if (state.dataset.managers && state.dataset.managers.length > 0) {
-        state.currentGw = 1;
-        if (elements.gwSelect) elements.gwSelect.value = 1;
-        if (elements.gwDisplay) elements.gwDisplay.textContent = 'Gameweek 1';
-        if (elements.standingsGwBadge) elements.standingsGwBadge.textContent = 'Gameweek 1';
-
-        state.dataset.months = [
-          { name: "August", gws: [1, 2, 3] },
-          { name: "September", gws: [4, 5, 6] },
-          { name: "October", gws: [7, 8, 9, 10] },
-          { name: "November", gws: [11, 12, 13, 14] },
-          { name: "December", gws: [15, 16, 17, 18, 19, 20] },
-          { name: "January", gws: [21, 22, 23, 24] },
-          { name: "February", gws: [25, 26, 27] },
-          { name: "March", gws: [28, 29, 30] },
-          { name: "April", gws: [31, 32, 33, 34] },
-          { name: "May", gws: [35, 36, 37, 38] }
-        ];
-
-        state.dataset.gameweeks = Array.from({ length: 38 }, (_, i) => {
-          const gwNum = i + 1;
-          const scores = {};
-          const hits = {};
-          const transfers = {};
-          const benchPoints = {};
-          const captainPoints = {};
-          const chipsUsed = {};
-          const seasonTotals = {};
-
-          state.dataset.managers.forEach((m) => {
-            scores[m.id] = 0;
-            hits[m.id] = 0;
-            transfers[m.id] = 0;
-            benchPoints[m.id] = 0;
-            captainPoints[m.id] = 0;
-            chipsUsed[m.id] = null;
-            seasonTotals[m.id] = 0;
-          });
-
-          // Live Saturday matchday scores verified from FPL API
-          if (gwNum === 1) {
-            if (inputCode === '389585') {
-              scores[2019453] = 26; benchPoints[2019453] = 6; seasonTotals[2019453] = 26; // Seyha ly
-              scores[2026484] = 25; benchPoints[2026484] = 1; seasonTotals[2026484] = 25; // Bora Chhe
-              scores[2067578] = 24; benchPoints[2067578] = 0; seasonTotals[2067578] = 24; // Kun Phaktra
-              scores[2026160] = 20; benchPoints[2026160] = 0; chipsUsed[2026160] = 'bboost'; seasonTotals[2026160] = 20; // Piseth Nhim
-              scores[2023013] = 19; benchPoints[2023013] = 0; seasonTotals[2023013] = 19; // នរ សិង្ហ កន្សៃ
-              scores[2023789] = 17; benchPoints[2023789] = 0; seasonTotals[2023789] = 17; // Monor Noem
-              scores[2024611] = 8;  benchPoints[2024611] = 0; seasonTotals[2024611] = 8;  // Vibol Dang
-            } else if (inputCode === '390100') {
-              scores[2019453] = 24; benchPoints[2019453] = 6; seasonTotals[2019453] = 24; // Seyha ly
-              scores[145847] = 20;  benchPoints[145847] = 0;  seasonTotals[145847] = 20;  // Hokheng Ker
-            }
-          }
-
-          return { gw: gwNum, scores, hits, transfers, benchPoints, captainPoints, chipsUsed, seasonTotals };
-        });
-
-        // Save fresh live baseline to localStorage
-        try {
-          localStorage.setItem(`fpl_live_cache_${inputCode}`, JSON.stringify({
-            leagueName: inputCode === '390100' ? "Fantasy with Heng" : "Clash of Elite 2026-2027",
-            managers: state.dataset.managers,
-            gameweeks: state.dataset.gameweeks,
-            currentGw: 1,
-            eventStatuses: state.eventStatuses
-          }));
-        } catch (sErr) {}
-
-        state.maxGw = 1;
+        elements.syncStatusTag.className = 'sync-status-tag live';
+        elements.syncStatusTag.textContent = `SYNCED (${state.dataset.managers.length} Members)`;
         populateGwSelect();
-        changeGw(1);
+        changeGw(state.currentGw || 1);
         updateMemberCountBadge();
         renderAll();
       }

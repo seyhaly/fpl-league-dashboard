@@ -4,14 +4,14 @@ const path = require('path');
 const LEAGUES = ['389585', '390100'];
 
 const REAL_MANAGER_MAP = {
-  145847: { name: "Hokheng Ker", teamName: "Undefeated" },
   2019453: { name: "Seyha ly", teamName: "The Red Devil" },
   2067578: { name: "Kun Phaktra", teamName: "The Blue Warriors" },
   2026160: { name: "Piseth Nhim", teamName: "DESSTRo" },
   2026484: { name: "Bora Chhe", teamName: "Bora's Team" },
   2024611: { name: "Vibol Dang", teamName: "The White Emperor" },
   2023789: { name: "Monor Noem", teamName: "NORA FC" },
-  2023013: { name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T" }
+  2023013: { name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T" },
+  145847: { name: "Hokheng Ker", teamName: "Undefeated" }
 };
 
 const MONTHS_CONFIG = [
@@ -75,6 +75,7 @@ async function syncAll() {
           element_type: p.element_type, // 1: GK, 2: DEF, 3: MID, 4: FWD
           team: teamsMap[p.team]?.short_name || '',
           team_name: teamsMap[p.team]?.name || '',
+          team_id: p.team,
           event_points: p.event_points || 0,
           now_cost: p.now_cost ? (p.now_cost / 10).toFixed(1) : '0.0'
         };
@@ -107,7 +108,7 @@ async function syncAll() {
   }
 
   // 2. Fetch Event Status, Fixtures & Live Event Stats
-  console.log('📥 Fetching Event Status, Fixtures & Live Event Stats...');
+  console.log(`📥 Fetching Event Status, Fixtures & Live Event Stats for GW${detectedGw}...`);
   const [stData, fixData, liveEventData] = await Promise.all([
     directFetchJson('https://fantasy.premierleague.com/api/event-status/'),
     directFetchJson(`https://fantasy.premierleague.com/api/fixtures/?event=${detectedGw}`),
@@ -144,9 +145,7 @@ async function syncAll() {
     });
 
     Object.values(playersMap).forEach(pl => {
-      const teamObj = Object.values(teamsMap).find(t => t.short_name === pl.team);
-      const teamId = teamObj ? teamObj.id : null;
-      const fix = teamFixMap[teamId] || {};
+      const fix = teamFixMap[pl.team_id] || {};
       const st = elStatsMap[pl.id] || {};
 
       const fixStarted = fix.started === true;
@@ -227,12 +226,16 @@ async function syncAll() {
       continue;
     }
 
-    const managers = fetchedResults.map(r => ({
-      id: r.entry,
-      name: REAL_MANAGER_MAP[r.entry]?.name || r.player_name || r.entry_name,
-      teamName: REAL_MANAGER_MAP[r.entry]?.teamName || r.entry_name,
-      avatar: (REAL_MANAGER_MAP[r.entry]?.name || r.player_name || r.entry_name).substring(0, 2).toUpperCase()
-    }));
+    const managers = fetchedResults.map(r => {
+      const name = REAL_MANAGER_MAP[r.entry]?.name || r.player_name || r.entry_name;
+      const teamName = REAL_MANAGER_MAP[r.entry]?.teamName || r.entry_name;
+      return {
+        id: r.entry,
+        name: name,
+        teamName: teamName,
+        avatar: name.substring(0, 2).toUpperCase()
+      };
+    });
 
     // Initialize 38 gameweeks
     const gameweeks = Array.from({ length: 38 }, (_, i) => ({
@@ -325,9 +328,6 @@ async function syncAll() {
     };
   }
 
-  const outPath = path.join(__dirname, '..', 'live_data.json');
-  fs.writeFileSync(outPath, JSON.stringify(outputData, null, 2), 'utf-8');
-
   const squadJsPath = path.join(__dirname, '..', 'squadData.js');
   const staticPayload = {
     squadPicks: outputData.squadPicks,
@@ -336,6 +336,7 @@ async function syncAll() {
     teams: outputData.teams
   };
   fs.writeFileSync(squadJsPath, `window.FPL_LIVE_STATIC = ${JSON.stringify(staticPayload)};\n`, 'utf-8');
+  fs.writeFileSync(outPath, JSON.stringify(outputData, null, 2), 'utf-8');
 
   console.log(`✅ Automated FPL sync complete! Saved live data and pre-bundled squadData.js`);
 }
