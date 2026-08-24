@@ -2326,10 +2326,26 @@
           statusPill = `<span class="status-pill-played">✓ Played</span>`;
         }
 
-        const opponentText = pl.opponent || (pl.opponent_short ? `${pl.opponent_short} (${pl.is_home ? 'H' : 'A'})` : '-');
-        const oppBadge = (opponentText && opponentText !== '-') 
-          ? `<span class="opp-badge ${pl.is_home === true ? 'home' : (pl.is_home === false ? 'away' : '')}">${opponentText}</span>`
-          : `<span style="color:var(--text-muted);font-size:11px;">-</span>`;
+        let oppBadge = `<span style="color:var(--text-muted);font-size:11px;">-</span>`;
+        if (pl.opponent && pl.opponent !== '-') {
+          let oppShort = pl.opponent_short;
+          let isH = pl.is_home;
+          if (!oppShort) {
+            const m = String(pl.opponent).match(/^([A-Za-z0-9]+)\s*\(([HA])\)/i);
+            if (m) {
+              oppShort = m[1];
+              isH = m[2].toUpperCase() === 'H';
+            } else {
+              oppShort = pl.opponent;
+            }
+          }
+          oppBadge = `
+            <div class="fixture-opp">
+              <span class="opp-team">${oppShort}</span>
+              <span class="opp-venue ${isH ? 'venue-h' : 'venue-a'}">${isH ? 'H' : 'A'}</span>
+            </div>
+          `;
+        }
 
         if (p.position <= 11) {
           if (isYetToPlay) {
@@ -2340,17 +2356,17 @@
 
           startingRows += `
             <tr>
-              <td style="width:45px;"><span class="pos-pill ${posClass}">${posName}</span></td>
-              <td>
+              <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td class="col-player">
                 <div class="player-name-cell">
                   <span style="font-weight:700;">${pl.web_name}</span>
                   <span class="player-team-pill">${pl.team}</span>
                 </div>
               </td>
-              <td>${oppBadge}</td>
-              <td>${statusPill}</td>
-              <td>${roleTag}</td>
-              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : ''}">${pts} pts</span></td>
+              <td class="col-opp">${oppBadge}</td>
+              <td class="col-status">${statusPill}</td>
+              <td class="col-role">${roleTag}</td>
+              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : ''}">${pts} pts</span></td>
             </tr>
           `;
           startingPtsTotal += pts;
@@ -2364,19 +2380,20 @@
           }
 
           const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
+          const benchOrderTag = `<span class="bench-order-badge">🪑 ${subOrder}</span>`;
           benchRows += `
             <tr>
-              <td style="width:65px;"><span style="font-weight:700;color:var(--text-muted);font-size:11px;">[${subOrder}]</span></td>
-              <td style="width:45px;"><span class="pos-pill ${posClass}">${posName}</span></td>
-              <td>
+              <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td class="col-player">
                 <div class="player-name-cell">
                   <span style="font-weight:700;">${pl.web_name}</span>
                   <span class="player-team-pill">${pl.team}</span>
                 </div>
               </td>
-              <td>${oppBadge}</td>
-              <td>${statusPill}</td>
-              <td class="text-center" style="width:70px;"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
+              <td class="col-opp">${oppBadge}</td>
+              <td class="col-status">${statusPill}</td>
+              <td class="col-role">${benchOrderTag}</td>
+              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
             </tr>
           `;
         }
@@ -2475,12 +2492,12 @@
         <table class="modal-squad-table">
           <thead>
             <tr>
-              <th>Pos</th>
-              <th>Player</th>
-              <th>Opponent</th>
-              <th>Status</th>
-              <th>Role</th>
-              <th class="text-center">Points</th>
+              <th class="col-pos">Pos</th>
+              <th class="col-player">Player</th>
+              <th class="col-opp">Opponent</th>
+              <th class="col-status">Status</th>
+              <th class="col-role">Role</th>
+              <th class="col-pts text-center">Points</th>
             </tr>
           </thead>
           <tbody>
@@ -2498,12 +2515,12 @@
         <table class="modal-squad-table">
           <thead>
             <tr>
-              <th>Order</th>
-              <th>Pos</th>
-              <th>Player</th>
-              <th>Opponent</th>
-              <th>Status</th>
-              <th class="text-center">Points</th>
+              <th class="col-pos">Pos</th>
+              <th class="col-player">Player</th>
+              <th class="col-opp">Opponent</th>
+              <th class="col-status">Status</th>
+              <th class="col-role">Sub Order</th>
+              <th class="col-pts text-center">Points</th>
             </tr>
           </thead>
           <tbody>

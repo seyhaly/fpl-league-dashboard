@@ -2323,10 +2323,35 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-radius: 8px;
   overflow: hidden;
   border: 1px solid var(--border-subtle);
+  table-layout: fixed;
+}
+
+.modal-squad-table .col-pos {
+  width: 60px;
+}
+
+.modal-squad-table .col-player {
+  width: auto;
+}
+
+.modal-squad-table .col-opp {
+  width: 90px;
+}
+
+.modal-squad-table .col-status {
+  width: 125px;
+}
+
+.modal-squad-table .col-role {
+  width: 140px;
+}
+
+.modal-squad-table .col-pts {
+  width: 80px;
 }
 
 .modal-squad-table th {
-  padding: 8px 12px;
+  padding: 9px 12px;
   font-size: 10px;
   font-weight: 800;
   text-transform: uppercase;
@@ -2383,33 +2408,72 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-radius: 4px;
 }
 
-.opp-badge {
-  font-family: 'Outfit', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 4px;
+/* ── Clean, Professional Opponent Fixture Tag ── */
+.fixture-opp {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.opp-team {
+  font-weight: 800;
+  font-size: 12px;
+  color: var(--text-primary);
+  letter-spacing: 0.4px;
+}
+
+.opp-venue {
+  font-size: 9.5px;
+  font-weight: 800;
+  padding: 1.5px 5px;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  line-height: 1.15;
+}
+
+.opp-venue.venue-h {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.opp-venue.venue-a {
+  background: rgba(168, 85, 247, 0.14);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.28);
+}
+
+[data-theme="light"] .opp-venue.venue-h {
+  background: #dcfce7;
+  color: #15803d;
+  border-color: #bbf7d0;
+}
+
+[data-theme="light"] .opp-venue.venue-a {
+  background: #f3e8ff;
+  color: #7e22ce;
+  border-color: #e9d5ff;
+}
+
+.bench-order-badge {
   display: inline-flex;
   align-items: center;
   gap: 3px;
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--text-primary);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
   border: 1px solid var(--border-subtle);
   letter-spacing: 0.3px;
 }
 
-[data-theme="light"] .opp-badge {
+[data-theme="light"] .bench-order-badge {
   background: #f1f5f9;
   border-color: #cbd5e1;
-  color: #1e293b;
-}
-
-.opp-badge.home {
-  border-left: 2.5px solid #10b981;
-}
-
-.opp-badge.away {
-  border-left: 2.5px solid #a855f7;
+  color: #64748b;
 }
 
 .player-points-badge {
