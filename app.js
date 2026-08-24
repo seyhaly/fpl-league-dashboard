@@ -1925,9 +1925,6 @@
       }
 
       const fixturesLabel = FIXTURES_MAP[day.date] || 'Matches';
-      const autoSubsTag = isFinished 
-        ? `<span class="day-tag tag-done">${CHECK}Applied</span>`
-        : `<span class="day-tag tag-pending">${CLOCK}End of GW</span>`;
 
       return `
         <tr class="daily-row ${rowClass}">
@@ -1939,7 +1936,6 @@
           <td><span class="fixtures-count-badge">${fixturesLabel}</span></td>
           <td>${makeTag(ptsType, ptsType === 'done' ? 'Updated' : 'Pending')}</td>
           <td>${makeTag(bonusType, bonusType === 'done' ? 'Added' : (bonusType === 'active' ? 'Processing' : 'Pending'))}</td>
-          <td>${autoSubsTag}</td>
           <td>${makeTag(leaguesTagType, leaguesLabel)}</td>
         </tr>
       `;
@@ -1966,7 +1962,6 @@
               <th>Fixtures</th>
               <th>Match Points</th>
               <th>Bonus Points</th>
-              <th>Auto-Subs</th>
               <th>League Standings</th>
             </tr>
           </thead>
