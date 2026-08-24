@@ -2383,6 +2383,35 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-radius: 4px;
 }
 
+.opp-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  letter-spacing: 0.3px;
+}
+
+[data-theme="light"] .opp-badge {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+.opp-badge.home {
+  border-left: 2.5px solid #10b981;
+}
+
+.opp-badge.away {
+  border-left: 2.5px solid #a855f7;
+}
+
 .player-points-badge {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;

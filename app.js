@@ -870,6 +870,22 @@
               const minutesPlayed = st.minutes !== undefined ? st.minutes : (pl.minutes || 0);
               const playedFlag = st.played === true || minutesPlayed > 0;
 
+              // Determine Opponent
+              let oppLabel = '-';
+              let oppShort = '-';
+              let isHome = null;
+              if (fix && (fix.team_h || fix.team_a)) {
+                isHome = (Number(teamId) === Number(fix.team_h));
+                const oppId = isHome ? fix.team_a : fix.team_h;
+                const oppTeamObj = teamsMap[oppId] || Object.values(teamsMap).find(t => t.id === oppId) || {};
+                oppShort = oppTeamObj.short_name || oppTeamObj.name || (oppId ? `Team #${oppId}` : '-');
+                oppLabel = `${oppShort} (${isHome ? 'H' : 'A'})`;
+              }
+
+              pl.opponent = oppLabel;
+              pl.opponent_short = oppShort;
+              pl.is_home = isHome;
+
               if (st.total_points !== undefined) {
                 pl.event_points = st.total_points;
               }
@@ -2310,6 +2326,11 @@
           statusPill = `<span class="status-pill-played">✓ Played</span>`;
         }
 
+        const opponentText = pl.opponent || (pl.opponent_short ? `${pl.opponent_short} (${pl.is_home ? 'H' : 'A'})` : '-');
+        const oppBadge = (opponentText && opponentText !== '-') 
+          ? `<span class="opp-badge ${pl.is_home === true ? 'home' : (pl.is_home === false ? 'away' : '')}">${opponentText}</span>`
+          : `<span style="color:var(--text-muted);font-size:11px;">-</span>`;
+
         if (p.position <= 11) {
           if (isYetToPlay) {
             yetToPlayCount++;
@@ -2319,13 +2340,14 @@
 
           startingRows += `
             <tr>
-              <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td style="width:45px;"><span class="pos-pill ${posClass}">${posName}</span></td>
               <td>
                 <div class="player-name-cell">
                   <span style="font-weight:700;">${pl.web_name}</span>
                   <span class="player-team-pill">${pl.team}</span>
                 </div>
               </td>
+              <td>${oppBadge}</td>
               <td>${statusPill}</td>
               <td>${roleTag}</td>
               <td class="text-center" style="width:70px;"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : ''}">${pts} pts</span></td>
@@ -2344,14 +2366,15 @@
           const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
           benchRows += `
             <tr>
-              <td style="width:70px;"><span style="font-weight:700;color:var(--text-muted);font-size:11px;">[${subOrder}]</span></td>
-              <td style="width:50px;"><span class="pos-pill ${posClass}">${posName}</span></td>
+              <td style="width:65px;"><span style="font-weight:700;color:var(--text-muted);font-size:11px;">[${subOrder}]</span></td>
+              <td style="width:45px;"><span class="pos-pill ${posClass}">${posName}</span></td>
               <td>
                 <div class="player-name-cell">
                   <span style="font-weight:700;">${pl.web_name}</span>
                   <span class="player-team-pill">${pl.team}</span>
                 </div>
               </td>
+              <td>${oppBadge}</td>
               <td>${statusPill}</td>
               <td class="text-center" style="width:70px;"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
             </tr>
@@ -2454,13 +2477,14 @@
             <tr>
               <th>Pos</th>
               <th>Player</th>
+              <th>Opponent</th>
               <th>Status</th>
               <th>Role</th>
               <th class="text-center">Points</th>
             </tr>
           </thead>
           <tbody>
-            ${startingRows || '<tr><td colspan="5" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
+            ${startingRows || '<tr><td colspan="6" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
           </tbody>
         </table>
       </div>
@@ -2477,12 +2501,13 @@
               <th>Order</th>
               <th>Pos</th>
               <th>Player</th>
+              <th>Opponent</th>
               <th>Status</th>
               <th class="text-center">Points</th>
             </tr>
           </thead>
           <tbody>
-            ${benchRows || '<tr><td colspan="5" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
+            ${benchRows || '<tr><td colspan="6" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
           </tbody>
         </table>
       </div>

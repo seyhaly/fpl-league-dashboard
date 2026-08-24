@@ -153,6 +153,22 @@ async function syncAll() {
       const minutesPlayed = st.minutes !== undefined ? st.minutes : 0;
       const playedFlag = st.played === true || minutesPlayed > 0;
 
+      // Determine Opponent
+      let oppLabel = '-';
+      let oppShort = '-';
+      let isHome = null;
+      if (fix && (fix.team_h || fix.team_a)) {
+        isHome = (pl.team_id === fix.team_h);
+        const oppId = isHome ? fix.team_a : fix.team_h;
+        const oppTeamObj = teamsMap[oppId] || {};
+        oppShort = oppTeamObj.short_name || oppTeamObj.name || `Team #${oppId}`;
+        oppLabel = `${oppShort} (${isHome ? 'H' : 'A'})`;
+      }
+
+      pl.opponent = oppLabel;
+      pl.opponent_short = oppShort;
+      pl.is_home = isHome;
+
       if (st.total_points !== undefined) {
         pl.event_points = st.total_points;
       }

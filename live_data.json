@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T04:49:56Z",
+  "lastUpdated": "2026-08-24T09:07:19Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -582,6 +582,9 @@
       "team_id": 1,
       "event_points": 6,
       "now_cost": "6.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -597,6 +600,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -612,6 +618,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -627,6 +636,9 @@
       "team_id": 1,
       "event_points": 5,
       "now_cost": "8.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -642,6 +654,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -657,6 +672,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -672,6 +690,9 @@
       "team_id": 1,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -687,6 +708,9 @@
       "team_id": 1,
       "event_points": 9,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 80,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -702,6 +726,9 @@
       "team_id": 1,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 9,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -717,6 +744,9 @@
       "team_id": 1,
       "event_points": 11,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -732,6 +762,9 @@
       "team_id": 1,
       "event_points": 6,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -747,6 +780,9 @@
       "team_id": 1,
       "event_points": 9,
       "now_cost": "9.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 67,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -762,6 +798,9 @@
       "team_id": 1,
       "event_points": 3,
       "now_cost": "7.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 67,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -777,6 +816,9 @@
       "team_id": 1,
       "event_points": 1,
       "now_cost": "6.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 14,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -792,6 +834,9 @@
       "team_id": 1,
       "event_points": 11,
       "now_cost": "6.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -807,6 +852,9 @@
       "team_id": 1,
       "event_points": 1,
       "now_cost": "6.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 22,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -822,6 +870,9 @@
       "team_id": 1,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 14,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -837,6 +888,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -852,6 +906,9 @@
       "team_id": 1,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 22,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -867,6 +924,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -882,6 +942,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -897,6 +960,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -912,6 +978,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -927,6 +996,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "7.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -942,6 +1014,9 @@
       "team_id": 1,
       "event_points": 6,
       "now_cost": "7.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -957,6 +1032,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -972,6 +1050,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -987,6 +1068,9 @@
       "team_id": 1,
       "event_points": 0,
       "now_cost": "7.0",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1002,6 +1086,9 @@
       "team_id": 1,
       "event_points": 6,
       "now_cost": "6.5",
+      "opponent": "COV (H)",
+      "opponent_short": "COV",
+      "is_home": true,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1017,6 +1104,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1032,6 +1122,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1047,6 +1140,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1062,6 +1158,9 @@
       "team_id": 2,
       "event_points": -1,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1077,6 +1176,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 16,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1092,6 +1194,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 73,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1107,6 +1212,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 16,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1122,6 +1230,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 81,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1137,6 +1248,9 @@
       "team_id": 2,
       "event_points": -2,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1152,6 +1266,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1167,6 +1284,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1182,6 +1302,9 @@
       "team_id": 2,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 85,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1197,6 +1320,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1212,6 +1338,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 81,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1227,6 +1356,9 @@
       "team_id": 2,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 73,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1242,6 +1374,9 @@
       "team_id": 2,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1257,6 +1392,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1272,6 +1410,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1287,6 +1428,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1302,6 +1446,9 @@
       "team_id": 2,
       "event_points": 2,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1317,6 +1464,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 8,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1332,6 +1482,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1347,6 +1500,9 @@
       "team_id": 2,
       "event_points": -2,
       "now_cost": "5.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 39,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1362,6 +1518,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "8.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1377,6 +1536,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1392,6 +1554,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 4,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1407,6 +1572,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1422,6 +1590,9 @@
       "team_id": 2,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 8,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1437,6 +1608,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1452,6 +1626,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1467,6 +1644,9 @@
       "team_id": 2,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BHA (A)",
+      "opponent_short": "BHA",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1482,6 +1662,9 @@
       "team_id": 3,
       "event_points": 2,
       "now_cost": "4.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1497,6 +1680,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1512,6 +1698,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1527,6 +1716,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1542,6 +1734,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1557,6 +1752,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1572,6 +1770,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1587,6 +1788,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1602,6 +1806,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1617,6 +1824,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1632,6 +1842,9 @@
       "team_id": 3,
       "event_points": 2,
       "now_cost": "6.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 88,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1647,6 +1860,9 @@
       "team_id": 3,
       "event_points": 10,
       "now_cost": "6.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1662,6 +1878,9 @@
       "team_id": 3,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1677,6 +1896,9 @@
       "team_id": 3,
       "event_points": 3,
       "now_cost": "6.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 74,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1692,6 +1914,9 @@
       "team_id": 3,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1707,6 +1932,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 1,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1722,6 +1950,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 15,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1737,6 +1968,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1752,6 +1986,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1767,6 +2004,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 15,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1782,6 +2022,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1797,6 +2040,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "7.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1812,6 +2058,9 @@
       "team_id": 3,
       "event_points": 4,
       "now_cost": "6.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 74,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1827,6 +2076,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1842,6 +2094,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1857,6 +2112,9 @@
       "team_id": 3,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1872,6 +2130,9 @@
       "team_id": 3,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1887,6 +2148,9 @@
       "team_id": 3,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "MCI (A)",
+      "opponent_short": "MCI",
+      "is_home": false,
       "minutes": 15,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1902,6 +2166,9 @@
       "team_id": 4,
       "event_points": 7,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1917,6 +2184,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1932,6 +2202,9 @@
       "team_id": 4,
       "event_points": 6,
       "now_cost": "5.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1947,6 +2220,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -1962,6 +2238,9 @@
       "team_id": 4,
       "event_points": 10,
       "now_cost": "5.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1977,6 +2256,9 @@
       "team_id": 4,
       "event_points": 8,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -1992,6 +2274,9 @@
       "team_id": 4,
       "event_points": 13,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2007,6 +2292,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2022,6 +2310,9 @@
       "team_id": 4,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 14,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2037,6 +2328,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2052,6 +2346,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2067,6 +2364,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2082,6 +2382,9 @@
       "team_id": 4,
       "event_points": 3,
       "now_cost": "6.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2097,6 +2400,9 @@
       "team_id": 4,
       "event_points": 3,
       "now_cost": "6.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 66,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2112,6 +2418,9 @@
       "team_id": 4,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 14,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2127,6 +2436,9 @@
       "team_id": 4,
       "event_points": 6,
       "now_cost": "5.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 66,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2142,6 +2454,9 @@
       "team_id": 4,
       "event_points": 9,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2157,6 +2472,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2172,6 +2490,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2187,6 +2508,9 @@
       "team_id": 4,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2202,6 +2526,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2217,6 +2544,9 @@
       "team_id": 4,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2232,6 +2562,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "8.0",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 82,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2247,6 +2580,9 @@
       "team_id": 4,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2262,6 +2598,9 @@
       "team_id": 4,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 7,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2277,6 +2616,9 @@
       "team_id": 4,
       "event_points": 14,
       "now_cost": "5.5",
+      "opponent": "TOT (H)",
+      "opponent_short": "TOT",
+      "is_home": true,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2292,6 +2634,9 @@
       "team_id": 5,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2307,6 +2652,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2322,6 +2670,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2337,6 +2688,9 @@
       "team_id": 5,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2352,6 +2706,9 @@
       "team_id": 5,
       "event_points": 17,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 77,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2367,6 +2724,9 @@
       "team_id": 5,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2382,6 +2742,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2397,6 +2760,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2412,6 +2778,9 @@
       "team_id": 5,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 26,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2427,6 +2796,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2442,6 +2814,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2457,6 +2832,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2472,6 +2850,9 @@
       "team_id": 5,
       "event_points": 16,
       "now_cost": "6.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 63,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2487,6 +2868,9 @@
       "team_id": 5,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2502,6 +2886,9 @@
       "team_id": 5,
       "event_points": 5,
       "now_cost": "5.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2517,6 +2904,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2532,6 +2922,9 @@
       "team_id": 5,
       "event_points": 6,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 85,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2547,6 +2940,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2562,6 +2958,9 @@
       "team_id": 5,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 63,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2577,6 +2976,9 @@
       "team_id": 5,
       "event_points": 7,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 77,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2592,6 +2994,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2607,6 +3012,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2622,6 +3030,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2637,6 +3048,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2652,6 +3066,9 @@
       "team_id": 5,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 12,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2667,6 +3084,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2682,6 +3102,9 @@
       "team_id": 5,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 26,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2697,6 +3120,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2712,6 +3138,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2727,6 +3156,9 @@
       "team_id": 5,
       "event_points": 6,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2742,6 +3174,9 @@
       "team_id": 5,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -2757,6 +3192,9 @@
       "team_id": 5,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 12,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2772,6 +3210,9 @@
       "team_id": 5,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "AVL (H)",
+      "opponent_short": "AVL",
+      "is_home": true,
       "minutes": 4,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -2787,6 +3228,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "7.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2802,6 +3246,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2817,6 +3264,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2832,6 +3282,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2847,6 +3300,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2862,6 +3318,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2877,6 +3336,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2892,6 +3354,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2907,6 +3372,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2922,6 +3390,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2937,6 +3408,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2952,6 +3426,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2967,6 +3444,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2982,6 +3462,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -2997,6 +3480,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3012,6 +3498,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3027,6 +3516,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3042,6 +3534,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "9.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3057,6 +3552,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "7.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3072,6 +3570,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3087,6 +3588,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3102,6 +3606,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3117,6 +3624,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3132,6 +3642,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3147,6 +3660,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3162,6 +3678,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3177,6 +3696,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "7.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3192,6 +3714,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3207,6 +3732,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3222,6 +3750,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3237,6 +3768,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3252,6 +3786,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3267,6 +3804,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3282,6 +3822,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3297,6 +3840,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3312,6 +3858,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3327,6 +3876,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3342,6 +3894,9 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "FUL (A)",
+      "opponent_short": "FUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -3357,6 +3912,9 @@
       "team_id": 7,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3372,6 +3930,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3387,6 +3948,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3402,6 +3966,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3417,6 +3984,9 @@
       "team_id": 7,
       "event_points": 3,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3432,6 +4002,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3447,6 +4020,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3462,6 +4038,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3477,6 +4056,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3492,6 +4074,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3507,6 +4092,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3522,6 +4110,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3537,6 +4128,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3552,6 +4146,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3567,6 +4164,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 20,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3582,6 +4182,9 @@
       "team_id": 7,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3597,6 +4200,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3612,6 +4218,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3627,6 +4236,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3642,6 +4254,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 28,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3657,6 +4272,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3672,6 +4290,9 @@
       "team_id": 7,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 81,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3687,6 +4308,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3702,6 +4326,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3717,6 +4344,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3732,6 +4362,9 @@
       "team_id": 7,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 69,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3747,6 +4380,9 @@
       "team_id": 7,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 69,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3762,6 +4398,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3777,6 +4416,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3792,6 +4434,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 20,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3807,6 +4452,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 61,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3822,6 +4470,9 @@
       "team_id": 7,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 8,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3837,6 +4488,9 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "ARS (A)",
+      "opponent_short": "ARS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3852,6 +4506,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 27,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3867,6 +4524,9 @@
       "team_id": 8,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3882,6 +4542,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3897,6 +4560,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 54,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3912,6 +4578,9 @@
       "team_id": 8,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3927,6 +4596,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3942,6 +4614,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3957,6 +4632,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3972,6 +4650,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 72,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3987,6 +4668,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4002,6 +4686,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4017,6 +4704,9 @@
       "team_id": 8,
       "event_points": 4,
       "now_cost": "5.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4032,6 +4722,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 35,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4047,6 +4740,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4062,6 +4758,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4077,6 +4776,9 @@
       "team_id": 8,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4092,6 +4794,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4107,6 +4812,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4122,6 +4830,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4137,6 +4848,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4152,6 +4866,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4167,6 +4884,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4182,6 +4902,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4197,6 +4920,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 27,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4212,6 +4938,9 @@
       "team_id": 8,
       "event_points": 2,
       "now_cost": "6.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 62,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4227,6 +4956,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 55,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4242,6 +4974,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4257,6 +4992,9 @@
       "team_id": 8,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 62,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4272,6 +5010,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4287,6 +5028,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 18,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4302,6 +5046,9 @@
       "team_id": 8,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 35,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4317,6 +5064,9 @@
       "team_id": 8,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "EVE (A)",
+      "opponent_short": "EVE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4332,6 +5082,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4347,6 +5100,9 @@
       "team_id": 9,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 6,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4362,6 +5118,9 @@
       "team_id": 9,
       "event_points": 7,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4377,6 +5136,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4392,6 +5154,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4407,6 +5172,9 @@
       "team_id": 9,
       "event_points": 6,
       "now_cost": "6.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4422,6 +5190,9 @@
       "team_id": 9,
       "event_points": 6,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4437,6 +5208,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4452,6 +5226,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4467,6 +5244,9 @@
       "team_id": 9,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4482,6 +5262,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4497,6 +5280,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4512,6 +5298,9 @@
       "team_id": 9,
       "event_points": 11,
       "now_cost": "6.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4527,6 +5316,9 @@
       "team_id": 9,
       "event_points": 9,
       "now_cost": "6.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4542,6 +5334,9 @@
       "team_id": 9,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 11,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4557,6 +5352,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4572,6 +5370,9 @@
       "team_id": 9,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 83,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4587,6 +5388,9 @@
       "team_id": 9,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 1,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4602,6 +5406,9 @@
       "team_id": 9,
       "event_points": 8,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4617,6 +5424,9 @@
       "team_id": 9,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4632,6 +5442,9 @@
       "team_id": 9,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4647,6 +5460,9 @@
       "team_id": 9,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 78,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4662,6 +5478,9 @@
       "team_id": 9,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 11,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4677,6 +5496,9 @@
       "team_id": 9,
       "event_points": 8,
       "now_cost": "5.5",
+      "opponent": "CRY (H)",
+      "opponent_short": "CRY",
+      "is_home": true,
       "minutes": 78,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4692,6 +5514,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4707,6 +5532,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4722,6 +5550,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4737,6 +5568,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4752,6 +5586,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4767,6 +5604,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4782,6 +5622,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4797,6 +5640,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4812,6 +5658,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4827,6 +5676,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4842,6 +5694,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4857,6 +5712,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4872,6 +5730,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4887,6 +5748,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4902,6 +5766,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4917,6 +5784,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4932,6 +5802,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4947,6 +5820,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4962,6 +5838,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4977,6 +5856,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -4992,6 +5874,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -5007,6 +5892,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -5022,6 +5910,9 @@
       "team_id": 10,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "CHE (H)",
+      "opponent_short": "CHE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "yet_to_play",
       "status_label": "⏳ Yet to Play"
@@ -5037,6 +5928,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5052,6 +5946,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5067,6 +5964,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5082,6 +5982,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5097,6 +6000,9 @@
       "team_id": 11,
       "event_points": 8,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5112,6 +6018,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5127,6 +6036,9 @@
       "team_id": 11,
       "event_points": 14,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 63,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5142,6 +6054,9 @@
       "team_id": 11,
       "event_points": 6,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 69,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5157,6 +6072,9 @@
       "team_id": 11,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 20,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5172,6 +6090,9 @@
       "team_id": 11,
       "event_points": 6,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 84,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5187,6 +6108,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5202,6 +6126,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5217,6 +6144,9 @@
       "team_id": 11,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 26,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5232,6 +6162,9 @@
       "team_id": 11,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5247,6 +6180,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 19,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5262,6 +6198,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5277,6 +6216,9 @@
       "team_id": 11,
       "event_points": 2,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5292,6 +6234,9 @@
       "team_id": 11,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5307,6 +6252,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5322,6 +6270,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5337,6 +6288,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5352,6 +6306,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5367,6 +6324,9 @@
       "team_id": 11,
       "event_points": 5,
       "now_cost": "5.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5382,6 +6342,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5397,6 +6360,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5412,6 +6378,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5427,6 +6396,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5442,6 +6414,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5457,6 +6432,9 @@
       "team_id": 11,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 5,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5472,6 +6450,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5487,6 +6468,9 @@
       "team_id": 11,
       "event_points": 10,
       "now_cost": "4.5",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5502,6 +6486,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5517,6 +6504,9 @@
       "team_id": 11,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 70,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5532,6 +6522,9 @@
       "team_id": 11,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 26,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5547,6 +6540,9 @@
       "team_id": 11,
       "event_points": 15,
       "now_cost": "4.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 63,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5562,6 +6558,9 @@
       "team_id": 11,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "MUN (H)",
+      "opponent_short": "MUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5577,6 +6576,9 @@
       "team_id": 12,
       "event_points": 2,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5592,6 +6594,9 @@
       "team_id": 12,
       "event_points": 5,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5607,6 +6612,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5622,6 +6630,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5637,6 +6648,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5652,6 +6666,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5667,6 +6684,9 @@
       "team_id": 12,
       "event_points": 4,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5682,6 +6702,9 @@
       "team_id": 12,
       "event_points": 2,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5697,6 +6720,9 @@
       "team_id": 12,
       "event_points": 2,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5712,6 +6738,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5727,6 +6756,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5742,6 +6774,9 @@
       "team_id": 12,
       "event_points": 4,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 79,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5757,6 +6792,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5772,6 +6810,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5787,6 +6828,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5802,6 +6846,9 @@
       "team_id": 12,
       "event_points": 7,
       "now_cost": "5.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 19,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5817,6 +6864,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5832,6 +6882,9 @@
       "team_id": 12,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 65,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5847,6 +6900,9 @@
       "team_id": 12,
       "event_points": 9,
       "now_cost": "5.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 65,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5862,6 +6918,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5877,6 +6936,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5892,6 +6954,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5907,6 +6972,9 @@
       "team_id": 12,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 24,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5922,6 +6990,9 @@
       "team_id": 12,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 10,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5937,6 +7008,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5952,6 +7026,9 @@
       "team_id": 12,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 24,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -5967,6 +7044,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5982,6 +7062,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -5997,6 +7080,9 @@
       "team_id": 12,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 79,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6012,6 +7098,9 @@
       "team_id": 12,
       "event_points": 2,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6027,6 +7116,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6042,6 +7134,9 @@
       "team_id": 12,
       "event_points": 5,
       "now_cost": "5.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 70,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6057,6 +7152,9 @@
       "team_id": 12,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 10,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6072,6 +7170,9 @@
       "team_id": 12,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "SUN (H)",
+      "opponent_short": "SUN",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6087,6 +7188,9 @@
       "team_id": 13,
       "event_points": 3,
       "now_cost": "6.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 65,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6102,6 +7206,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6117,6 +7224,9 @@
       "team_id": 13,
       "event_points": 10,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6132,6 +7242,9 @@
       "team_id": 13,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6147,6 +7260,9 @@
       "team_id": 13,
       "event_points": 6,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6162,6 +7278,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6177,6 +7296,9 @@
       "team_id": 13,
       "event_points": 10,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6192,6 +7314,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6207,6 +7332,9 @@
       "team_id": 13,
       "event_points": 6,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6222,6 +7350,9 @@
       "team_id": 13,
       "event_points": 13,
       "now_cost": "6.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6237,6 +7368,9 @@
       "team_id": 13,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 24,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6252,6 +7386,9 @@
       "team_id": 13,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 81,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6267,6 +7404,9 @@
       "team_id": 13,
       "event_points": 5,
       "now_cost": "5.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6282,6 +7422,9 @@
       "team_id": 13,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 8,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6297,6 +7440,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6312,6 +7458,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6327,6 +7476,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6342,6 +7494,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6357,6 +7512,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6372,6 +7530,9 @@
       "team_id": 13,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6387,6 +7548,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6402,6 +7566,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6417,6 +7584,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6432,6 +7602,9 @@
       "team_id": 13,
       "event_points": 9,
       "now_cost": "5.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6447,6 +7620,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6462,6 +7638,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6477,6 +7656,9 @@
       "team_id": 13,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NFO (A)",
+      "opponent_short": "NFO",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6492,6 +7674,9 @@
       "team_id": 14,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6507,6 +7692,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6522,6 +7710,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6537,6 +7728,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6552,6 +7746,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6567,6 +7764,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6582,6 +7782,9 @@
       "team_id": 14,
       "event_points": 2,
       "now_cost": "6.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6597,6 +7800,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6612,6 +7818,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6627,6 +7836,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6642,6 +7854,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6657,6 +7872,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6672,6 +7890,9 @@
       "team_id": 14,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 69,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6687,6 +7908,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6702,6 +7926,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6717,6 +7944,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6732,6 +7962,9 @@
       "team_id": 14,
       "event_points": 2,
       "now_cost": "7.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 62,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6747,6 +7980,9 @@
       "team_id": 14,
       "event_points": 12,
       "now_cost": "7.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6762,6 +7998,9 @@
       "team_id": 14,
       "event_points": 8,
       "now_cost": "7.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6777,6 +8016,9 @@
       "team_id": 14,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 62,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6792,6 +8034,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6807,6 +8052,9 @@
       "team_id": 14,
       "event_points": 5,
       "now_cost": "6.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 77,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6822,6 +8070,9 @@
       "team_id": 14,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 27,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6837,6 +8088,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6852,6 +8106,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6867,6 +8124,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6882,6 +8142,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6897,6 +8160,9 @@
       "team_id": 14,
       "event_points": 4,
       "now_cost": "6.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 27,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6912,6 +8178,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6927,6 +8196,9 @@
       "team_id": 14,
       "event_points": 2,
       "now_cost": "9.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6942,6 +8214,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "7.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6957,6 +8232,9 @@
       "team_id": 14,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 12,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -6972,6 +8250,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -6987,6 +8268,9 @@
       "team_id": 14,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7002,6 +8286,9 @@
       "team_id": 14,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "NEW (A)",
+      "opponent_short": "NEW",
+      "is_home": false,
       "minutes": 20,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7017,6 +8304,9 @@
       "team_id": 15,
       "event_points": 1,
       "now_cost": "6.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 8,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7032,6 +8322,9 @@
       "team_id": 15,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7047,6 +8340,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7062,6 +8358,9 @@
       "team_id": 15,
       "event_points": 2,
       "now_cost": "6.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 62,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7077,6 +8376,9 @@
       "team_id": 15,
       "event_points": 10,
       "now_cost": "6.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7092,6 +8394,9 @@
       "team_id": 15,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 33,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7107,6 +8412,9 @@
       "team_id": 15,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7122,6 +8430,9 @@
       "team_id": 15,
       "event_points": 9,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7137,6 +8448,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7152,6 +8466,9 @@
       "team_id": 15,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7167,6 +8484,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7182,6 +8502,9 @@
       "team_id": 15,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 56,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7197,6 +8520,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7212,6 +8538,9 @@
       "team_id": 15,
       "event_points": 2,
       "now_cost": "8.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7227,6 +8556,9 @@
       "team_id": 15,
       "event_points": 1,
       "now_cost": "7.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 81,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7242,6 +8574,9 @@
       "team_id": 15,
       "event_points": 8,
       "now_cost": "7.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 27,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7257,6 +8592,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "7.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7272,6 +8610,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "7.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7287,6 +8628,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7302,6 +8646,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7317,6 +8664,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7332,6 +8682,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7347,6 +8700,9 @@
       "team_id": 15,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 27,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7362,6 +8718,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7377,6 +8736,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7392,6 +8754,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7407,6 +8772,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7422,6 +8790,9 @@
       "team_id": 15,
       "event_points": 2,
       "now_cost": "15.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7437,6 +8808,9 @@
       "team_id": 15,
       "event_points": 2,
       "now_cost": "6.5",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 62,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7452,6 +8826,9 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BOU (H)",
+      "opponent_short": "BOU",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7467,6 +8844,9 @@
       "team_id": 16,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 66,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7482,6 +8862,9 @@
       "team_id": 16,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 66,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7497,6 +8880,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7512,6 +8898,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7527,6 +8916,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7542,6 +8934,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7557,6 +8952,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7572,6 +8970,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7587,6 +8988,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 10,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7602,6 +9006,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7617,6 +9024,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7632,6 +9042,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7647,6 +9060,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7662,6 +9078,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 79,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7677,6 +9096,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7692,6 +9114,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7707,6 +9132,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7722,6 +9150,9 @@
       "team_id": 16,
       "event_points": 2,
       "now_cost": "12.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7737,6 +9168,9 @@
       "team_id": 16,
       "event_points": 2,
       "now_cost": "8.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7752,6 +9186,9 @@
       "team_id": 16,
       "event_points": 2,
       "now_cost": "8.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 79,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7767,6 +9204,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "7.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7782,6 +9222,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7797,6 +9240,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7812,6 +9258,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7827,6 +9276,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7842,6 +9294,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7857,6 +9312,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 10,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7872,6 +9330,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7887,6 +9348,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7902,6 +9366,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7917,6 +9384,9 @@
       "team_id": 16,
       "event_points": 1,
       "now_cost": "7.0",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7932,6 +9402,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7947,6 +9420,9 @@
       "team_id": 16,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "HUL (A)",
+      "opponent_short": "HUL",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7962,6 +9438,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7977,6 +9456,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7992,6 +9474,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8007,6 +9492,9 @@
       "team_id": 17,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8022,6 +9510,9 @@
       "team_id": 17,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 1,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8037,6 +9528,9 @@
       "team_id": 17,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8052,6 +9546,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8067,6 +9564,9 @@
       "team_id": 17,
       "event_points": 3,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8082,6 +9582,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8097,6 +9600,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8112,6 +9618,9 @@
       "team_id": 17,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8127,6 +9636,9 @@
       "team_id": 17,
       "event_points": 9,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8142,6 +9654,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 34,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8157,6 +9672,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 14,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8172,6 +9690,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8187,6 +9708,9 @@
       "team_id": 17,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 75,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8202,6 +9726,9 @@
       "team_id": 17,
       "event_points": 6,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 34,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8217,6 +9744,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8232,6 +9762,9 @@
       "team_id": 17,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 55,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8247,6 +9780,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8262,6 +9798,9 @@
       "team_id": 17,
       "event_points": 4,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8277,6 +9816,9 @@
       "team_id": 17,
       "event_points": 4,
       "now_cost": "6.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 55,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8292,6 +9834,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8307,6 +9852,9 @@
       "team_id": 17,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 14,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8322,6 +9870,9 @@
       "team_id": 17,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8337,6 +9888,9 @@
       "team_id": 17,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8352,6 +9906,9 @@
       "team_id": 17,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "LIV (H)",
+      "opponent_short": "LIV",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8367,6 +9924,9 @@
       "team_id": 18,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8382,6 +9942,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8397,6 +9960,9 @@
       "team_id": 18,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8412,6 +9978,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8427,6 +9996,9 @@
       "team_id": 18,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8442,6 +10014,9 @@
       "team_id": 18,
       "event_points": 4,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8457,6 +10032,9 @@
       "team_id": 18,
       "event_points": 5,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 73,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8472,6 +10050,9 @@
       "team_id": 18,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8487,6 +10068,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8502,6 +10086,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8517,6 +10104,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8532,6 +10122,9 @@
       "team_id": 18,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 16,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8547,6 +10140,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8562,6 +10158,9 @@
       "team_id": 18,
       "event_points": 2,
       "now_cost": "8.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8577,6 +10176,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8592,6 +10194,9 @@
       "team_id": 18,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 61,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8607,6 +10212,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8622,6 +10230,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8637,6 +10248,9 @@
       "team_id": 18,
       "event_points": 3,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 73,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8652,6 +10266,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8667,6 +10284,9 @@
       "team_id": 18,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8682,6 +10302,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8697,6 +10320,9 @@
       "team_id": 18,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 28,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8712,6 +10338,9 @@
       "team_id": 18,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8727,6 +10356,9 @@
       "team_id": 18,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 1,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8742,6 +10374,9 @@
       "team_id": 18,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 16,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8757,6 +10392,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8772,6 +10410,9 @@
       "team_id": 18,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "LEE (H)",
+      "opponent_short": "LEE",
+      "is_home": true,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8787,6 +10428,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8802,6 +10446,9 @@
       "team_id": 19,
       "event_points": 2,
       "now_cost": "5.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8817,6 +10464,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8832,6 +10482,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8847,6 +10500,9 @@
       "team_id": 19,
       "event_points": 2,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8862,6 +10518,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8877,6 +10536,9 @@
       "team_id": 19,
       "event_points": 3,
       "now_cost": "6.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8892,6 +10554,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8907,6 +10572,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8922,6 +10590,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8937,6 +10608,9 @@
       "team_id": 19,
       "event_points": 3,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8952,6 +10626,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8967,6 +10644,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8982,6 +10662,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 4,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8997,6 +10680,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9012,6 +10698,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9027,6 +10716,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9042,6 +10734,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9057,6 +10752,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9072,6 +10770,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9087,6 +10788,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "6.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9102,6 +10806,9 @@
       "team_id": 19,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9117,6 +10824,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "6.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 22,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9132,6 +10842,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9147,6 +10860,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9162,6 +10878,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9177,6 +10896,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9192,6 +10914,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9207,6 +10932,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "6.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9222,6 +10950,9 @@
       "team_id": 19,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 85,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9237,6 +10968,9 @@
       "team_id": 19,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 67,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9252,6 +10986,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9267,6 +11004,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9282,6 +11022,9 @@
       "team_id": 19,
       "event_points": 1,
       "now_cost": "6.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 22,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9297,6 +11040,9 @@
       "team_id": 19,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 67,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9312,6 +11058,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9327,6 +11076,9 @@
       "team_id": 19,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "BRE (A)",
+      "opponent_short": "BRE",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9342,6 +11094,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9357,6 +11112,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9372,6 +11130,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9387,6 +11148,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9402,6 +11166,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9417,6 +11184,9 @@
       "team_id": 20,
       "event_points": 2,
       "now_cost": "4.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 79,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9432,6 +11202,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9447,6 +11220,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9462,6 +11238,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9477,6 +11256,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9492,6 +11274,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "4.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 66,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9507,6 +11292,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9522,6 +11310,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "4.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9537,6 +11328,9 @@
       "team_id": 20,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 79,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9552,6 +11346,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 10,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9567,6 +11364,9 @@
       "team_id": 20,
       "event_points": 9,
       "now_cost": "5.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9582,6 +11382,9 @@
       "team_id": 20,
       "event_points": 2,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9597,6 +11400,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9612,6 +11418,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9627,6 +11436,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 10,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9642,6 +11454,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 31,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9657,6 +11472,9 @@
       "team_id": 20,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9672,6 +11490,9 @@
       "team_id": 20,
       "event_points": 5,
       "now_cost": "5.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 58,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9687,6 +11508,9 @@
       "team_id": 20,
       "event_points": 2,
       "now_cost": "6.0",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 66,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9702,6 +11526,9 @@
       "team_id": 20,
       "event_points": 1,
       "now_cost": "5.5",
+      "opponent": "IPS (A)",
+      "opponent_short": "IPS",
+      "is_home": false,
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"

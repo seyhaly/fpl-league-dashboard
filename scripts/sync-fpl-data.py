@@ -153,6 +153,21 @@ def main():
             minutes_played = st.get('minutes', pl.get('minutes', 0))
             played_flag = st.get('played') is True or minutes_played > 0
 
+            # Determine Opponent
+            opp_label = '-'
+            opp_short = '-'
+            is_home = None
+            if fix and (fix.get('team_h') or fix.get('team_a')):
+                is_home = (team_id == fix.get('team_h'))
+                opp_id = fix.get('team_a') if is_home else fix.get('team_h')
+                opp_team_obj = teams_map.get(str(opp_id), {})
+                opp_short = opp_team_obj.get('short_name') or opp_team_obj.get('name') or f"Team #{opp_id}"
+                opp_label = f"{opp_short} ({'H' if is_home else 'A'})"
+            
+            pl['opponent'] = opp_label
+            pl['opponent_short'] = opp_short
+            pl['is_home'] = is_home
+
             if 'total_points' in st:
                 pl['event_points'] = st['total_points']
             pl['minutes'] = minutes_played
