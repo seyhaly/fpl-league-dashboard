@@ -2977,12 +2977,12 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   background: #f1f5f9;
 }
 
-/* Sticky Manager & Pos columns */
+/* Sticky Manager & Pos columns with 100% Solid Opaque Background */
 .matrix-table .sticky-col-pos {
   position: sticky;
   left: 0;
   z-index: 4;
-  background: var(--bg-surface);
+  background: #0b0f19;
   border-right: 1px solid var(--border-subtle);
   width: 48px;
   min-width: 48px;
@@ -2992,8 +2992,9 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   position: sticky;
   left: 48px;
   z-index: 4;
-  background: var(--bg-surface);
-  border-right: 2px solid var(--border-subtle);
+  background: #0b0f19;
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.5);
   min-width: 185px;
   padding-left: 12px;
   padding-right: 12px;
@@ -3001,32 +3002,40 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 .matrix-table thead th.sticky-col-pos {
   z-index: 6;
-  background: #0d111d;
+  background: #080b14;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .matrix-table thead th.sticky-col-manager {
   z-index: 6;
-  background: #0d111d;
+  background: #080b14;
+  border-bottom: 1px solid var(--border-subtle);
+  border-right: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.matrix-row:hover .sticky-col-pos,
+.matrix-row:hover .sticky-col-manager {
+  background: #141b2d;
+}
+
+[data-theme="light"] .matrix-table .sticky-col-pos,
+[data-theme="light"] .matrix-table .sticky-col-manager {
+  background: #ffffff;
+  border-right-color: #cbd5e1;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .matrix-table thead th.sticky-col-pos,
 [data-theme="light"] .matrix-table thead th.sticky-col-manager {
   background: #f8fafc;
-}
-
-[data-theme="light"] .matrix-table tbody .sticky-col-pos,
-[data-theme="light"] .matrix-table tbody .sticky-col-manager {
-  background: #ffffff;
+  border-right-color: #cbd5e1;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .matrix-row:hover .sticky-col-pos,
 [data-theme="light"] .matrix-row:hover .sticky-col-manager {
   background: #f1f5f9;
-}
-
-.matrix-row:hover .sticky-col-pos,
-.matrix-row:hover .sticky-col-manager {
-  background: #191e2e;
 }
 
 .matrix-gw-th {
