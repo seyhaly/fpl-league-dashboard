@@ -2918,4 +2918,199 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-color: #e2e8f0;
 }
 
+/* ===================== 38-GAMEWEEK FORM MATRIX ===================== */
+.matrix-legend-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 10px 16px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.matrix-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.matrix-table-wrapper {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  position: relative;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.matrix-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: max-content;
+  min-width: 100%;
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: 9px 6px;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.matrix-row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.matrix-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+[data-theme="light"] .matrix-row:hover {
+  background: #f1f5f9;
+}
+
+/* Sticky Manager & Pos columns */
+.matrix-table .sticky-col-pos {
+  position: sticky;
+  left: 0;
+  z-index: 4;
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-subtle);
+  width: 48px;
+  min-width: 48px;
+}
+
+.matrix-table .sticky-col-manager {
+  position: sticky;
+  left: 48px;
+  z-index: 4;
+  background: var(--bg-surface);
+  border-right: 2px solid var(--border-subtle);
+  min-width: 185px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.matrix-table thead th.sticky-col-pos {
+  z-index: 6;
+  background: #0d111d;
+}
+
+.matrix-table thead th.sticky-col-manager {
+  z-index: 6;
+  background: #0d111d;
+}
+
+[data-theme="light"] .matrix-table thead th.sticky-col-pos,
+[data-theme="light"] .matrix-table thead th.sticky-col-manager {
+  background: #f8fafc;
+}
+
+[data-theme="light"] .matrix-table tbody .sticky-col-pos,
+[data-theme="light"] .matrix-table tbody .sticky-col-manager {
+  background: #ffffff;
+}
+
+[data-theme="light"] .matrix-row:hover .sticky-col-pos,
+[data-theme="light"] .matrix-row:hover .sticky-col-manager {
+  background: #f1f5f9;
+}
+
+.matrix-row:hover .sticky-col-pos,
+.matrix-row:hover .sticky-col-manager {
+  background: #191e2e;
+}
+
+.matrix-gw-th {
+  text-align: center;
+  min-width: 44px;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.matrix-th-current {
+  color: var(--pl-cyan);
+  background: rgba(4, 245, 255, 0.08);
+  border-bottom: 2px solid var(--pl-cyan);
+}
+
+[data-theme="light"] .matrix-th-current {
+  color: #0284c7;
+  background: #e0f2fe;
+  border-bottom: 2px solid #0284c7;
+}
+
+.matrix-gw-td {
+  text-align: center;
+  padding: 6px 4px;
+}
+
+.matrix-td-current {
+  background: rgba(4, 245, 255, 0.03);
+}
+
+[data-theme="light"] .matrix-td-current {
+  background: rgba(2, 132, 199, 0.04);
+}
+
+.matrix-pill {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.matrix-row:hover .matrix-pill {
+  transform: scale(1.08);
+}
+
+.matrix-pill-future {
+  font-size: 13px;
+  color: var(--text-muted);
+  opacity: 0.35;
+  display: inline-block;
+  width: 24px;
+  text-align: center;
+}
+
+.matrix-current-indicator {
+  font-size: 10.5px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: rgba(4, 245, 255, 0.15);
+  color: var(--pl-cyan);
+  border: 1px solid rgba(4, 245, 255, 0.3);
+}
+
+[data-theme="light"] .matrix-current-indicator {
+  background: #e0f2fe;
+  color: #0284c7;
+  border-color: #bae6fd;
+}
+
+.matrix-stat-th,
+.matrix-stat-td {
+  border-left: 1px solid var(--border-subtle);
+}
+
 

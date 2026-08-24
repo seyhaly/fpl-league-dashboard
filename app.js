@@ -31,6 +31,8 @@
     standingsBody:          document.getElementById('standingsBody'),
     mobileCards:            document.getElementById('mobileCards'),
     winLossTableContainer:  document.getElementById('winLossTableContainer'),
+    seasonMatrixContainer:  document.getElementById('seasonMatrixContainer'),
+    matrixLegendCurrent:    document.getElementById('matrixLegendCurrent'),
     chipTrackerContainer:   document.getElementById('chipTrackerContainer'),
     gwSpotlightContainer:   document.getElementById('gwSpotlightContainer'),
     gwStatusMatrix:         document.getElementById('gwStatusMatrix'),
@@ -1342,6 +1344,9 @@
     if (document.getElementById('section-gw-status')) {
       document.getElementById('section-gw-status').style.display = hasData ? 'block' : 'none';
     }
+    if (document.getElementById('section-form-matrix')) {
+      document.getElementById('section-form-matrix').style.display = hasData ? 'block' : 'none';
+    }
     if (document.getElementById('section-fixtures')) {
       document.getElementById('section-fixtures').style.display = hasData ? 'block' : 'none';
     }
@@ -1357,6 +1362,7 @@
 
     renderStandingsTable();
     renderGwStatus();
+    renderSeasonMatrixTable();
     renderWinLossSummaryTable();
     renderChipTracker();
     updateChart();
@@ -1652,6 +1658,123 @@
     });
 
     return summary.sort((a, b) => b.netEarnings - a.netEarnings || b.wins - a.wins || b.totalNetPoints - a.totalNetPoints);
+  }
+
+  // ===================== 38-GAMEWEEK FORM MATRIX =====================
+  function renderSeasonMatrixTable() {
+    const container = elements.seasonMatrixContainer || document.getElementById('seasonMatrixContainer');
+    if (!container) return;
+
+    if (elements.matrixLegendCurrent) {
+      elements.matrixLegendCurrent.textContent = `GW${state.currentGw}`;
+    }
+
+    const summary = getManagerSeasonSummary();
+    if (!summary || summary.length === 0) {
+      container.innerHTML = '<div style="text-align:center;padding:20px;color:var(--text-muted);">No season form data available.</div>';
+      return;
+    }
+
+    // Precalculate standings for all played gameweeks up to currentGw
+    const gwStandingsMap = {};
+    for (let gw = 1; gw <= state.currentGw; gw++) {
+      gwStandingsMap[gw] = getGameweekStandings(gw);
+    }
+
+    // Build Table Header
+    let theadGwCols = '';
+    for (let gw = 1; gw <= 38; gw++) {
+      const isCurrent = (gw === state.currentGw);
+      const isPast = (gw < state.currentGw);
+      const headerClass = isCurrent ? 'matrix-th-current' : (isPast ? 'matrix-th-past' : 'matrix-th-future');
+      theadGwCols += `<th class="matrix-gw-th ${headerClass}">${isCurrent ? `GW${gw} ⚡` : `GW${gw}`}</th>`;
+    }
+
+    let tbodyRows = '';
+    summary.forEach((m, idx) => {
+      const pos = idx + 1;
+      let rankClass = 'rank-neutral';
+      if (pos === 1) rankClass = 'rank-1';
+      else if (pos === 2) rankClass = 'rank-2';
+      else if (pos === 3) rankClass = 'rank-3';
+
+      let gwCells = '';
+      for (let gw = 1; gw <= 38; gw++) {
+        const isCurrent = (gw === state.currentGw);
+        const isPast = (gw <= state.currentGw);
+        const cellClass = isCurrent ? 'matrix-td-current' : '';
+
+        if (isPast) {
+          const standings = gwStandingsMap[gw] || [];
+          const item = standings.find(x => x.id === m.id);
+          if (item) {
+            let formCode = 'N';
+            let pillClass = 'form-n';
+            let titleText = `GW${gw}: ${m.name} · Neutral (${item.netScore} pts, Rank #${item.rank})`;
+
+            if (item.payout > 0) {
+              formCode = 'W';
+              pillClass = 'form-w';
+              titleText = `GW${gw}: ${m.name} · Win (+$$${item.payout}, ${item.netScore} pts, Rank #${item.rank})`;
+            } else if (item.payout < 0) {
+              formCode = 'L';
+              pillClass = 'form-l';
+              titleText = `GW${gw}: ${m.name} · Loss (-$$${Math.abs(item.payout)}, ${item.netScore} pts, Rank #${item.rank})`;
+            }
+
+            gwCells += `
+              <td class="matrix-gw-td ${cellClass}">
+                <span class="matrix-pill ${pillClass}" title="${titleText}">${formCode}</span>
+              </td>
+            `;
+          } else {
+            gwCells += `<td class="matrix-gw-td ${cellClass}"><span class="matrix-pill-future">-</span></td>`;
+          }
+        } else {
+          gwCells += `
+            <td class="matrix-gw-td matrix-td-future">
+              <span class="matrix-pill-future" title="GW${gw}: Upcoming">·</span>
+            </td>
+          `;
+        }
+      }
+
+      tbodyRows += `
+        <tr class="matrix-row" onclick="openManagerModal(${m.id})" title="Click to view ${m.name}'s squad details">
+          <td class="sticky-col-pos text-center"><div class="rank-num ${rankClass}">${pos}</div></td>
+          <td class="sticky-col-manager">
+            <div class="manager-info">
+              <span class="manager-name">${m.name}</span>
+              <span class="team-name">${m.teamName}</span>
+            </div>
+          </td>
+          ${gwCells}
+          <td class="matrix-stat-td text-center"><span class="stat-pill win">${m.wins}W</span></td>
+          <td class="matrix-stat-td text-center"><span class="stat-pill loss">${m.losses}L</span></td>
+          <td class="matrix-stat-td text-center"><span class="stat-pill neu">${m.neutrals}N</span></td>
+          <td class="matrix-stat-td text-center"><span style="font-weight:700;font-family:'Outfit',sans-serif;font-size:12px;">${m.winRate}%</span></td>
+        </tr>
+      `;
+    });
+
+    container.innerHTML = `
+      <table class="custom-table matrix-table">
+        <thead>
+          <tr>
+            <th class="sticky-col-pos text-center" style="width:45px;">Pos</th>
+            <th class="sticky-col-manager" style="min-width:180px;">Manager & Team</th>
+            ${theadGwCols}
+            <th class="matrix-stat-th text-center" style="min-width:55px;">W</th>
+            <th class="matrix-stat-th text-center" style="min-width:55px;">L</th>
+            <th class="matrix-stat-th text-center" style="min-width:55px;">N</th>
+            <th class="matrix-stat-th text-center" style="min-width:65px;">Win %</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${tbodyRows}
+        </tbody>
+      </table>
+    `;
   }
 
   function renderWinLossSummaryTable() {

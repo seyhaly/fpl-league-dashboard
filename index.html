@@ -14,7 +14,7 @@
     body, html { font-family: 'Outfit', sans-serif; }
     h3, .pipeline-gw-title { font-family: 'Inter', sans-serif; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=60.0">
+  <link rel="stylesheet" href="styles.css?v=61.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -172,6 +172,23 @@
     </div>
   </section>
 
+  <!-- ===================== 38-GAMEWEEK FORM MATRIX ===================== -->
+  <section class="glass-panel" id="section-form-matrix">
+    <div class="section-title">
+      <h3>38-Gameweek Form Matrix</h3>
+      <button class="collapse-btn" data-target="matrixCollapse">▲ Collapse</button>
+    </div>
+    <div id="matrixCollapse" class="collapsible-content">
+      <div class="matrix-legend-bar">
+        <div class="matrix-legend-item"><span class="matrix-pill form-w">W</span> <span>Win (Top Half)</span></div>
+        <div class="matrix-legend-item"><span class="matrix-pill form-n">N</span> <span>Neutral (Mid)</span></div>
+        <div class="matrix-legend-item"><span class="matrix-pill form-l">L</span> <span>Loss (Bottom Half)</span></div>
+        <div class="matrix-legend-item"><span id="matrixLegendCurrent" class="matrix-current-indicator">GW1</span> <span>Active Gameweek</span></div>
+      </div>
+      <div id="seasonMatrixContainer" class="table-responsive matrix-table-wrapper"></div>
+    </div>
+  </section>
+
   <!-- ===================== PERFORMANCE & CHIPS ===================== -->
   <section class="glass-panel" id="section-performance">
     <div class="section-title">
@@ -256,7 +273,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
-<script src="squadData.js?v=60.0"></script>
-<script src="app.js?v=60.0"></script>
+<script src="squadData.js?v=61.0"></script>
+<script src="app.js?v=61.0"></script>
 </body>
 </html>
