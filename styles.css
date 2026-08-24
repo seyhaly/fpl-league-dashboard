@@ -602,6 +602,17 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   width: 100%;
 }
 
+#standingsTable th:nth-child(2),
+#standingsTable td:nth-child(2) {
+  padding-right: 2px;
+}
+
+#standingsTable th:nth-child(3),
+#standingsTable td:nth-child(3) {
+  padding-left: 2px;
+  padding-right: 4px;
+}
+
 /* #9 — Sticky Table Header */
 .sticky-header thead th {
   position: sticky;
