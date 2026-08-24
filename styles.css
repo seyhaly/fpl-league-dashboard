@@ -2936,8 +2936,16 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .matrix-legend-item {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   font-weight: 600;
+}
+
+.matrix-legend-swatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .matrix-table-wrapper {
