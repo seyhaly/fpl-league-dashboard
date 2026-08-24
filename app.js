@@ -2154,13 +2154,18 @@
         const item = standings.find(x => x.id === m.id);
         rankHistory.push(item ? item.rank : null);
       }
+      const color = CHART_COLORS[idx % CHART_COLORS.length];
       return {
         label: m.name,
         data: rankHistory,
-        borderColor: CHART_COLORS[idx % CHART_COLORS.length],
-        backgroundColor: CHART_COLORS[idx % CHART_COLORS.length],
-        tension: 0.2,
-        borderWidth: 2
+        borderColor: color,
+        backgroundColor: color,
+        tension: 0,
+        borderWidth: 2.5,
+        pointRadius: 4,
+        pointHoverRadius: 7,
+        pointBorderWidth: 2,
+        pointBackgroundColor: color
       };
     });
   }
