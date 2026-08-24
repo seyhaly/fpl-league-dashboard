@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T18:59:49Z",
+  "lastUpdated": "2026-08-24T19:28:23Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -12,7 +12,7 @@
       "deadline_time": "2026-08-21T17:30:00Z",
       "bonus_added": false,
       "leagues": "",
-      "points": "",
+      "points": "l",
       "daily_status": [
         {
           "bonus_added": false,
@@ -36,7 +36,7 @@
           "bonus_added": false,
           "date": "2026-08-24",
           "event": 1,
-          "points": ""
+          "points": "l"
         }
       ]
     },
@@ -3226,14 +3226,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "101": {
       "id": 101,
@@ -3250,8 +3250,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "136": {
       "id": 136,
@@ -3268,8 +3268,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "140": {
       "id": 140,
@@ -3280,14 +3280,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "141": {
       "id": 141,
@@ -3304,8 +3304,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "142": {
       "id": 142,
@@ -3316,14 +3316,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "143": {
       "id": 143,
@@ -3340,8 +3340,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "144": {
       "id": 144,
@@ -3352,14 +3352,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "145": {
       "id": 145,
@@ -3376,8 +3376,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "146": {
       "id": 146,
@@ -3394,8 +3394,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "147": {
       "id": 147,
@@ -3412,8 +3412,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "148": {
       "id": 148,
@@ -3424,14 +3424,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "149": {
       "id": 149,
@@ -3447,9 +3447,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "150": {
       "id": 150,
@@ -3466,8 +3466,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "151": {
       "id": 151,
@@ -3478,14 +3478,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "152": {
       "id": 152,
@@ -3502,8 +3502,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "153": {
       "id": 153,
@@ -3520,8 +3520,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "154": {
       "id": 154,
@@ -3532,14 +3532,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "9.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "155": {
       "id": 155,
@@ -3556,8 +3556,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "156": {
       "id": 156,
@@ -3574,8 +3574,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "157": {
       "id": 157,
@@ -3592,8 +3592,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "158": {
       "id": 158,
@@ -3610,8 +3610,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "159": {
       "id": 159,
@@ -3628,8 +3628,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "161": {
       "id": 161,
@@ -3645,9 +3645,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "163": {
       "id": 163,
@@ -3664,8 +3664,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "164": {
       "id": 164,
@@ -3682,8 +3682,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "165": {
       "id": 165,
@@ -3694,14 +3694,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "7.5",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "166": {
       "id": 166,
@@ -3718,8 +3718,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "167": {
       "id": 167,
@@ -3736,8 +3736,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "168": {
       "id": 168,
@@ -3754,8 +3754,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "169": {
       "id": 169,
@@ -3772,8 +3772,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "170": {
       "id": 170,
@@ -3790,8 +3790,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "200": {
       "id": 200,
@@ -3802,14 +3802,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "560": {
       "id": 560,
@@ -3826,8 +3826,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "561": {
       "id": 561,
@@ -3844,8 +3844,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "568": {
       "id": 568,
@@ -3862,8 +3862,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "578": {
       "id": 578,
@@ -3880,8 +3880,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "583": {
       "id": 583,
@@ -3898,8 +3898,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "104": {
       "id": 104,
@@ -5512,14 +5512,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "251": {
       "id": 251,
@@ -5536,8 +5536,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "252": {
       "id": 252,
@@ -5554,8 +5554,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "253": {
       "id": 253,
@@ -5572,8 +5572,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "254": {
       "id": 254,
@@ -5584,14 +5584,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "255": {
       "id": 255,
@@ -5602,14 +5602,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "256": {
       "id": 256,
@@ -5626,8 +5626,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "257": {
       "id": 257,
@@ -5638,14 +5638,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "258": {
       "id": 258,
@@ -5656,14 +5656,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "261": {
       "id": 261,
@@ -5674,14 +5674,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "262": {
       "id": 262,
@@ -5698,8 +5698,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "263": {
       "id": 263,
@@ -5716,8 +5716,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "264": {
       "id": 264,
@@ -5728,14 +5728,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "265": {
       "id": 265,
@@ -5746,14 +5746,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "266": {
       "id": 266,
@@ -5770,8 +5770,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "268": {
       "id": 268,
@@ -5782,14 +5782,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "269": {
       "id": 269,
@@ -5806,8 +5806,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "270": {
       "id": 270,
@@ -5824,8 +5824,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "271": {
       "id": 271,
@@ -5842,8 +5842,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "272": {
       "id": 272,
@@ -5860,8 +5860,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "569": {
       "id": 569,
@@ -5872,14 +5872,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "570": {
       "id": 570,
@@ -5890,14 +5890,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "580": {
       "id": 580,
@@ -5914,8 +5914,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "273": {
       "id": 273,
@@ -12692,12 +12692,6 @@
           "avatar": "MO"
         },
         {
-          "id": 2023013,
-          "name": "នរ សិង្ហ កន្សៃ",
-          "teamName": "G.O.A.T",
-          "avatar": "នរ"
-        },
-        {
           "id": 2026484,
           "name": "Bora Chhe",
           "teamName": "Bora's Team",
@@ -12710,22 +12704,28 @@
           "avatar": "KU"
         },
         {
+          "id": 2023013,
+          "name": "នរ សិង្ហ កន្សៃ",
+          "teamName": "G.O.A.T",
+          "avatar": "នរ"
+        },
+        {
           "id": 2026160,
           "name": "Piseth Nhim",
           "teamName": "DESSTRo",
           "avatar": "PI"
         },
         {
-          "id": 2019453,
-          "name": "Seyha ly",
-          "teamName": "The Red Devil",
-          "avatar": "SE"
-        },
-        {
           "id": 2024611,
           "name": "Vibol Dang",
           "teamName": "The White Emperor",
           "avatar": "VI"
+        },
+        {
+          "id": 2019453,
+          "name": "Seyha ly",
+          "teamName": "The Red Devil",
+          "avatar": "SE"
         }
       ],
       "gameweeks": [
@@ -12733,39 +12733,39 @@
           "gw": 1,
           "scores": {
             "2023789": 59,
-            "2023013": 50,
             "2026484": 50,
             "2067578": 46,
+            "2023013": 50,
             "2026160": 38,
-            "2019453": 30,
-            "2024611": 29
+            "2024611": 29,
+            "2019453": 30
           },
           "hits": {
             "2023789": 0,
-            "2023013": 0,
             "2026484": 0,
             "2067578": 0,
+            "2023013": 0,
             "2026160": 0,
-            "2019453": 0,
-            "2024611": 0
+            "2024611": 0,
+            "2019453": 0
           },
           "transfers": {
             "2023789": 0,
-            "2023013": 0,
             "2026484": 0,
             "2067578": 0,
+            "2023013": 0,
             "2026160": 0,
-            "2019453": 0,
-            "2024611": 0
+            "2024611": 0,
+            "2019453": 0
           },
           "benchPoints": {
             "2023789": 0,
-            "2023013": 4,
             "2026484": 9,
             "2067578": 12,
+            "2023013": 4,
             "2026160": 0,
-            "2019453": 11,
-            "2024611": 3
+            "2024611": 3,
+            "2019453": 11
           },
           "captainPoints": {},
           "chipsUsed": {
@@ -12773,12 +12773,12 @@
           },
           "seasonTotals": {
             "2023789": 59,
-            "2023013": 50,
             "2026484": 50,
             "2067578": 46,
+            "2023013": 50,
             "2026160": 38,
-            "2019453": 30,
-            "2024611": 29
+            "2024611": 29,
+            "2019453": 30
           }
         },
         {
