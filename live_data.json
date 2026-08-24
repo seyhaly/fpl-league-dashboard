@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T20:48:21Z",
+  "lastUpdated": "2026-08-24T21:13:16Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -12,7 +12,7 @@
       "deadline_time": "2026-08-21T17:30:00Z",
       "bonus_added": false,
       "leagues": "",
-      "points": "l",
+      "points": "p",
       "daily_status": [
         {
           "bonus_added": false,
@@ -36,7 +36,7 @@
           "bonus_added": false,
           "date": "2026-08-24",
           "event": 1,
-          "points": "l"
+          "points": "p"
         }
       ]
     },
@@ -3232,8 +3232,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 81,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "101": {
       "id": 101,
@@ -3250,8 +3250,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "136": {
       "id": 136,
@@ -3268,8 +3268,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "140": {
       "id": 140,
@@ -3285,9 +3285,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "141": {
       "id": 141,
@@ -3304,8 +3304,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "142": {
       "id": 142,
@@ -3321,9 +3321,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "143": {
       "id": 143,
@@ -3340,8 +3340,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "144": {
       "id": 144,
@@ -3358,8 +3358,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 75,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "145": {
       "id": 145,
@@ -3376,8 +3376,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "146": {
       "id": 146,
@@ -3394,8 +3394,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "147": {
       "id": 147,
@@ -3412,8 +3412,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "148": {
       "id": 148,
@@ -3430,8 +3430,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 64,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "149": {
       "id": 149,
@@ -3447,9 +3447,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "150": {
       "id": 150,
@@ -3466,8 +3466,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "151": {
       "id": 151,
@@ -3483,9 +3483,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "152": {
       "id": 152,
@@ -3502,8 +3502,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "153": {
       "id": 153,
@@ -3520,8 +3520,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "154": {
       "id": 154,
@@ -3538,8 +3538,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 82,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "155": {
       "id": 155,
@@ -3555,9 +3555,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 22,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 25,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "156": {
       "id": 156,
@@ -3573,9 +3573,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 11,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 14,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "157": {
       "id": 157,
@@ -3591,9 +3591,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 4,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 7,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "158": {
       "id": 158,
@@ -3610,8 +3610,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "159": {
       "id": 159,
@@ -3628,8 +3628,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "161": {
       "id": 161,
@@ -3646,8 +3646,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 64,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "163": {
       "id": 163,
@@ -3664,8 +3664,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "164": {
       "id": 164,
@@ -3681,9 +3681,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 5,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "165": {
       "id": 165,
@@ -3699,9 +3699,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "166": {
       "id": 166,
@@ -3718,8 +3718,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "167": {
       "id": 167,
@@ -3736,8 +3736,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "168": {
       "id": 168,
@@ -3754,8 +3754,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "169": {
       "id": 169,
@@ -3772,8 +3772,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "170": {
       "id": 170,
@@ -3790,8 +3790,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "200": {
       "id": 200,
@@ -3807,9 +3807,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "560": {
       "id": 560,
@@ -3826,8 +3826,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "561": {
       "id": 561,
@@ -3844,8 +3844,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "568": {
       "id": 568,
@@ -3862,8 +3862,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "578": {
       "id": 578,
@@ -3880,8 +3880,8 @@
       "opponent_short": "FUL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "583": {
       "id": 583,
@@ -3897,9 +3897,9 @@
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
-      "minutes": 22,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 25,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "104": {
       "id": 104,
@@ -5517,9 +5517,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "251": {
       "id": 251,
@@ -5536,8 +5536,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "252": {
       "id": 252,
@@ -5554,8 +5554,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "253": {
       "id": 253,
@@ -5572,8 +5572,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "254": {
       "id": 254,
@@ -5590,8 +5590,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 81,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "255": {
       "id": 255,
@@ -5607,9 +5607,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "256": {
       "id": 256,
@@ -5626,8 +5626,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "257": {
       "id": 257,
@@ -5643,9 +5643,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "258": {
       "id": 258,
@@ -5656,14 +5656,14 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 7,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "261": {
       "id": 261,
@@ -5679,9 +5679,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "262": {
       "id": 262,
@@ -5698,8 +5698,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "263": {
       "id": 263,
@@ -5715,9 +5715,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "264": {
       "id": 264,
@@ -5734,8 +5734,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 66,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "265": {
       "id": 265,
@@ -5752,8 +5752,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 72,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "266": {
       "id": 266,
@@ -5770,8 +5770,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "268": {
       "id": 268,
@@ -5787,9 +5787,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "269": {
       "id": 269,
@@ -5805,9 +5805,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "270": {
       "id": 270,
@@ -5824,8 +5824,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "271": {
       "id": 271,
@@ -5841,9 +5841,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 5,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "272": {
       "id": 272,
@@ -5860,8 +5860,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "569": {
       "id": 569,
@@ -5877,9 +5877,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "570": {
       "id": 570,
@@ -5896,8 +5896,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 72,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "580": {
       "id": 580,
@@ -5913,9 +5913,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 20,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 23,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "273": {
       "id": 273,
