@@ -153,17 +153,20 @@ async function syncAll() {
       const minutesPlayed = st.minutes !== undefined ? st.minutes : 0;
       const playedFlag = st.played === true || minutesPlayed > 0;
 
-      // Determine Opponent
+      // Determine Opponent & Fixture Difficulty Rating (FDR)
       let oppShort = '-';
+      let difficulty = 3;
       if (fix && (fix.team_h || fix.team_a)) {
         const isHome = (pl.team_id === fix.team_h);
         const oppId = isHome ? fix.team_a : fix.team_h;
+        difficulty = isHome ? fix.team_h_difficulty : fix.team_a_difficulty;
         const oppTeamObj = teamsMap[oppId] || {};
         oppShort = oppTeamObj.short_name || oppTeamObj.name || `Team #${oppId}`;
       }
 
       pl.opponent = oppShort;
       pl.opponent_short = oppShort;
+      pl.difficulty = difficulty || 3;
 
       if (st.total_points !== undefined) {
         pl.event_points = st.total_points;

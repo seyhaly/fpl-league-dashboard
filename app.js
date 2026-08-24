@@ -870,21 +870,20 @@
               const minutesPlayed = st.minutes !== undefined ? st.minutes : (pl.minutes || 0);
               const playedFlag = st.played === true || minutesPlayed > 0;
 
-              // Determine Opponent
-              let oppLabel = '-';
+              // Determine Opponent & Fixture Difficulty Rating (FDR)
               let oppShort = '-';
-              let isHome = null;
+              let difficulty = 3;
               if (fix && (fix.team_h || fix.team_a)) {
-                isHome = (Number(teamId) === Number(fix.team_h));
+                const isHome = (Number(teamId) === Number(fix.team_h));
                 const oppId = isHome ? fix.team_a : fix.team_h;
+                difficulty = isHome ? (fix.team_h_difficulty || 3) : (fix.team_a_difficulty || 3);
                 const oppTeamObj = teamsMap[oppId] || Object.values(teamsMap).find(t => t.id === oppId) || {};
                 oppShort = oppTeamObj.short_name || oppTeamObj.name || (oppId ? `Team #${oppId}` : '-');
-                oppLabel = `${oppShort} (${isHome ? 'H' : 'A'})`;
               }
 
-              pl.opponent = oppLabel;
+              pl.opponent = oppShort;
               pl.opponent_short = oppShort;
-              pl.is_home = isHome;
+              pl.difficulty = difficulty || 3;
 
               if (st.total_points !== undefined) {
                 pl.event_points = st.total_points;
@@ -2331,7 +2330,9 @@
           let oppShort = pl.opponent_short || pl.opponent;
           oppShort = String(oppShort).replace(/\s*\([HAha]\)/g, '').trim();
           if (oppShort && oppShort !== '-') {
-            oppBadge = `<span class="opp-pill">${oppShort}</span>`;
+            const diff = pl.difficulty || 3;
+            const diffClass = `fdr-${diff}`;
+            oppBadge = `<span class="opp-pill ${diffClass}">${oppShort}</span>`;
           }
         }
 

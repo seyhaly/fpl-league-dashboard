@@ -153,16 +153,19 @@ def main():
             minutes_played = st.get('minutes', pl.get('minutes', 0))
             played_flag = st.get('played') is True or minutes_played > 0
 
-            # Determine Opponent
+            # Determine Opponent & Fixture Difficulty Rating (FDR)
             opp_short = '-'
+            difficulty = 3
             if fix and (fix.get('team_h') or fix.get('team_a')):
                 is_home = (team_id == fix.get('team_h'))
                 opp_id = fix.get('team_a') if is_home else fix.get('team_h')
+                difficulty = fix.get('team_h_difficulty') if is_home else fix.get('team_a_difficulty')
                 opp_team_obj = teams_map.get(str(opp_id), {})
                 opp_short = opp_team_obj.get('short_name') or opp_team_obj.get('name') or f"Team #{opp_id}"
             
             pl['opponent'] = opp_short
             pl['opponent_short'] = opp_short
+            pl['difficulty'] = difficulty or 3
 
             if 'total_points' in st:
                 pl['event_points'] = st['total_points']
