@@ -2328,23 +2328,11 @@
 
         let oppBadge = `<span style="color:var(--text-muted);font-size:11px;">-</span>`;
         if (pl.opponent && pl.opponent !== '-') {
-          let oppShort = pl.opponent_short;
-          let isH = pl.is_home;
-          if (!oppShort) {
-            const m = String(pl.opponent).match(/^([A-Za-z0-9]+)\s*\(([HA])\)/i);
-            if (m) {
-              oppShort = m[1];
-              isH = m[2].toUpperCase() === 'H';
-            } else {
-              oppShort = pl.opponent;
-            }
+          let oppShort = pl.opponent_short || pl.opponent;
+          oppShort = String(oppShort).replace(/\s*\([HAha]\)/g, '').trim();
+          if (oppShort && oppShort !== '-') {
+            oppBadge = `<span class="opp-pill">${oppShort}</span>`;
           }
-          oppBadge = `
-            <div class="fixture-opp">
-              <span class="opp-team">${oppShort}</span>
-              <span class="opp-venue ${isH ? 'venue-h' : 'venue-a'}">${isH ? 'H' : 'A'}</span>
-            </div>
-          `;
         }
 
         if (p.position <= 11) {
@@ -2490,6 +2478,14 @@
           <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${squadScopeLabel} (${playedCount} Played · ${yetToPlayCount} Remaining)</span>
         </div>
         <table class="modal-squad-table">
+          <colgroup>
+            <col class="col-pos" style="width: 55px;">
+            <col class="col-player" style="width: auto;">
+            <col class="col-opp" style="width: 90px;">
+            <col class="col-status" style="width: 125px;">
+            <col class="col-role" style="width: 135px;">
+            <col class="col-pts" style="width: 75px;">
+          </colgroup>
           <thead>
             <tr>
               <th class="col-pos">Pos</th>
@@ -2513,13 +2509,21 @@
           <span style="font-size:11px;font-weight:600;color:var(--text-muted);">4 Players</span>
         </div>
         <table class="modal-squad-table">
+          <colgroup>
+            <col class="col-pos" style="width: 55px;">
+            <col class="col-player" style="width: auto;">
+            <col class="col-opp" style="width: 90px;">
+            <col class="col-status" style="width: 125px;">
+            <col class="col-role" style="width: 135px;">
+            <col class="col-pts" style="width: 75px;">
+          </colgroup>
           <thead>
             <tr>
               <th class="col-pos">Pos</th>
               <th class="col-player">Player</th>
               <th class="col-opp">Opponent</th>
               <th class="col-status">Status</th>
-              <th class="col-role">Sub Order</th>
+              <th class="col-role">Role</th>
               <th class="col-pts text-center">Points</th>
             </tr>
           </thead>
