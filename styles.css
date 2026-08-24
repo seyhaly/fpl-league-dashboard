@@ -723,7 +723,15 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   color: var(--pl-cyan);
 }
 
-/* ABA Account Pill */
+/* ABA Account Column & Pill */
+.custom-table th.th-aba,
+.custom-table td.td-aba {
+  text-align: left;
+  padding-left: 2px;
+  padding-right: 6px;
+  white-space: nowrap;
+}
+
 .aba-account-pill {
   font-family: 'Outfit', monospace;
   font-weight: 700;
