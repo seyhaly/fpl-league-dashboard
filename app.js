@@ -51,6 +51,18 @@
     leagueNameDisplay:      document.getElementById('leagueNameDisplay')
   };
 
+  // ===================== ABA BANK ACCOUNTS =====================
+  const ABA_ACCOUNTS = {
+    2023789: '001 335 048', // Monor Noem
+    2026484: '000 971 427', // Bora Chhe
+    2023013: '000 790 069', // នរសិង្ហ កន្សៃ
+    2067578: '002 157 778', // Kun Phaktra
+    2024611: '077 767 949', // Vibol Dang
+    2019453: '085 897 968', // Seyha ly
+    2026160: '007 043 391', // Piseth Nhim
+    145847: ''              // Hokheng Ker (blank)
+  };
+
   // ===================== ANIMATED NUMBER COUNTER =====================
   function animateNumber(element, endVal, duration = 400, prefix = '', suffix = '') {
     if (!element) return;
@@ -1497,6 +1509,11 @@
         ? `<span class="tiebreaker-detail">TB → Bench: ${m.bench} · Capt: ${m.captain} · Hits: ${m.hitCost} · Season: ${m.seasonTotalNet}</span>`
         : '';
 
+      const abaAccount = ABA_ACCOUNTS[m.id] || '';
+      const abaDisplay = abaAccount
+        ? `<span class="aba-account-pill">${abaAccount}</span>`
+        : `<span style="color:var(--text-muted);font-size:12px;">-</span>`;
+
       // =========== DESKTOP TABLE ROW ===========
       const tr = document.createElement('tr');
       tr.className = m.statusClass + (m.isTied ? ' tr-tied' : '');
@@ -1510,6 +1527,9 @@
             <span class="team-name">${m.teamName}</span>
             ${tiebreakerDetail}
           </div>
+        </td>
+        <td class="text-center">
+          ${abaDisplay}
         </td>
         <td class="text-center">
           <span style="font-weight:700;color:var(--text-secondary);">${m.grossScore}</span>
@@ -1559,8 +1579,15 @@
             ${payoutBadge}
           </div>
           <div class="mobile-card-stats">
+            ${abaAccount ? `
+            <div class="mobile-stat-item">
+              <span class="mobile-stat-label">ABA</span>
+              <span class="mobile-stat-value" style="font-size:11px;font-weight:700;letter-spacing:0.3px;">${abaAccount}</span>
+            </div>` : ''}
             <div class="mobile-stat-item">
               <span class="mobile-stat-label">Net Pts</span>
+              <span class="mobile-stat-value" style="color:var(--pl-green);">${m.netScore}</span>
+            </div>
               <span class="mobile-stat-value" style="color:var(--pl-green);">${m.netScore}</span>
             </div>
             <div class="mobile-stat-item">
