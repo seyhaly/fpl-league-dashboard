@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24T21:43:47Z",
+  "lastUpdated": "2026-08-24T22:01:36Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -11,7 +11,7 @@
       "is_next": false,
       "deadline_time": "2026-08-21T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "p",
       "daily_status": [
         {
@@ -5917,6 +5917,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "610": {
+      "id": 610,
+      "web_name": "De Fougerolles",
+      "first_name": "Luc",
+      "second_name": "De Fougerolles",
+      "element_type": 2,
+      "team": "FUL",
+      "team_name": "Fulham",
+      "team_id": 10,
+      "event_points": 0,
+      "now_cost": "4.0",
+      "opponent": "CHE",
+      "opponent_short": "CHE",
+      "difficulty": 4,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "273": {
       "id": 273,
       "web_name": "Phillips",
@@ -11662,13 +11680,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 59,
-          "total_points": 59,
-          "rank": 267401,
-          "rank_sort": 282216,
-          "overall_rank": 267401,
+          "points": 72,
+          "total_points": 72,
+          "rank": 325934,
+          "rank_sort": 343481,
+          "overall_rank": 325934,
           "percentile_rank": 5,
-          "overall_rank_percentage": "3",
+          "overall_rank_percentage": "4",
           "bank": 0,
           "value": 1000,
           "event_transfers": 0,
@@ -11805,13 +11823,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 50,
-          "total_points": 50,
-          "rank": 903219,
-          "rank_sort": 935608,
-          "overall_rank": 903220,
-          "percentile_rank": 15,
-          "overall_rank_percentage": "10",
+          "points": 52,
+          "total_points": 52,
+          "rank": 3191655,
+          "rank_sort": 3257982,
+          "overall_rank": 3191655,
+          "percentile_rank": 40,
+          "overall_rank_percentage": "36",
           "bank": 15,
           "value": 1000,
           "event_transfers": 0,
@@ -11948,13 +11966,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 50,
-          "total_points": 50,
-          "rank": 903219,
-          "rank_sort": 935636,
-          "overall_rank": 903220,
+          "points": 61,
+          "total_points": 61,
+          "rank": 1318228,
+          "rank_sort": 1357488,
+          "overall_rank": 1318228,
           "percentile_rank": 15,
-          "overall_rank_percentage": "10",
+          "overall_rank_percentage": "15",
           "bank": 0,
           "value": 1000,
           "event_transfers": 0,
@@ -12091,13 +12109,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 46,
-          "total_points": 46,
-          "rank": 1503021,
-          "rank_sort": 1550355,
-          "overall_rank": 1503022,
-          "percentile_rank": 20,
-          "overall_rank_percentage": "17",
+          "points": 65,
+          "total_points": 65,
+          "rank": 824829,
+          "rank_sort": 854849,
+          "overall_rank": 824829,
+          "percentile_rank": 10,
+          "overall_rank_percentage": "9",
           "bank": 5,
           "value": 1000,
           "event_transfers": 0,
@@ -12234,13 +12252,13 @@
         "active_chip": "bboost",
         "entry_history": {
           "event": 1,
-          "points": 38,
-          "total_points": 38,
-          "rank": 3598165,
-          "rank_sort": 3670479,
-          "overall_rank": 3598164,
-          "percentile_rank": 45,
-          "overall_rank_percentage": "40",
+          "points": 49,
+          "total_points": 49,
+          "rank": 4021109,
+          "rank_sort": 4082492,
+          "overall_rank": 4021109,
+          "percentile_rank": 50,
+          "overall_rank_percentage": "45",
           "bank": 5,
           "value": 1000,
           "event_transfers": 0,
@@ -12377,13 +12395,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 30,
-          "total_points": 30,
-          "rank": 6322276,
-          "rank_sort": 6382584,
-          "overall_rank": 6322267,
-          "percentile_rank": 75,
-          "overall_rank_percentage": "71",
+          "points": 41,
+          "total_points": 41,
+          "rank": 6192243,
+          "rank_sort": 6239387,
+          "overall_rank": 6192243,
+          "percentile_rank": 70,
+          "overall_rank_percentage": "70",
           "bank": 0,
           "value": 1000,
           "event_transfers": 0,
@@ -12520,13 +12538,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 29,
-          "total_points": 29,
-          "rank": 6624271,
-          "rank_sort": 6681027,
-          "overall_rank": 6624262,
-          "percentile_rank": 75,
-          "overall_rank_percentage": "74",
+          "points": 54,
+          "total_points": 54,
+          "rank": 2692384,
+          "rank_sort": 2748078,
+          "overall_rank": 2692384,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "30",
           "bank": 0,
           "value": 1000,
           "event_transfers": 0,
@@ -12663,11 +12681,11 @@
         "active_chip": null,
         "entry_history": {
           "event": 1,
-          "points": 31,
-          "total_points": 31,
-          "rank": 5994589,
-          "rank_sort": 5998631,
-          "overall_rank": 5994582,
+          "points": 42,
+          "total_points": 42,
+          "rank": 5940344,
+          "rank_sort": 5943391,
+          "overall_rank": 5940344,
           "percentile_rank": 70,
           "overall_rank_percentage": "67",
           "bank": 0,
@@ -12732,13 +12750,13 @@
         {
           "gw": 1,
           "scores": {
-            "2023789": 59,
-            "2067578": 46,
-            "2026484": 50,
-            "2024611": 29,
-            "2023013": 50,
-            "2026160": 38,
-            "2019453": 30
+            "2023789": 72,
+            "2067578": 65,
+            "2026484": 61,
+            "2024611": 54,
+            "2023013": 52,
+            "2026160": 49,
+            "2019453": 41
           },
           "hits": {
             "2023789": 0,
@@ -12772,13 +12790,13 @@
             "2026160": "bboost"
           },
           "seasonTotals": {
-            "2023789": 59,
-            "2067578": 46,
-            "2026484": 50,
-            "2024611": 29,
-            "2023013": 50,
-            "2026160": 38,
-            "2019453": 30
+            "2023789": 72,
+            "2067578": 65,
+            "2026484": 61,
+            "2024611": 54,
+            "2023013": 52,
+            "2026160": 49,
+            "2019453": 41
           }
         },
         {
@@ -13264,8 +13282,8 @@
         {
           "gw": 1,
           "scores": {
-            "145847": 31,
-            "2019453": 30
+            "145847": 42,
+            "2019453": 41
           },
           "hits": {
             "145847": 0,
@@ -13282,8 +13300,8 @@
           "captainPoints": {},
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 31,
-            "2019453": 30
+            "145847": 42,
+            "2019453": 41
           }
         },
         {
