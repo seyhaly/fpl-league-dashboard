@@ -1681,13 +1681,13 @@
       gwStandingsMap[gw] = getGameweekStandings(gw);
     }
 
-    // Build Table Header
+    // Build Table Header (Compact 1 to 38)
     let theadGwCols = '';
     for (let gw = 1; gw <= 38; gw++) {
       const isCurrent = (gw === state.currentGw);
       const isPast = (gw < state.currentGw);
       const headerClass = isCurrent ? 'matrix-th-current' : (isPast ? 'matrix-th-past' : 'matrix-th-future');
-      theadGwCols += `<th class="matrix-gw-th ${headerClass}">GW${gw}</th>`;
+      theadGwCols += `<th class="matrix-gw-th ${headerClass}">${gw}</th>`;
     }
 
     let tbodyRows = '';
@@ -1710,21 +1710,18 @@
           if (item) {
             let formCode = 'N';
             let pillClass = 'form-n';
-            let titleText = `GW${gw}: ${m.name} · Neutral (${item.netScore} pts, Rank #${item.rank})`;
 
             if (item.payout > 0) {
               formCode = 'W';
               pillClass = 'form-w';
-              titleText = `GW${gw}: ${m.name} · Win (+$$${item.payout}, ${item.netScore} pts, Rank #${item.rank})`;
             } else if (item.payout < 0) {
               formCode = 'L';
               pillClass = 'form-l';
-              titleText = `GW${gw}: ${m.name} · Loss (-$$${Math.abs(item.payout)}, ${item.netScore} pts, Rank #${item.rank})`;
             }
 
             gwCells += `
               <td class="matrix-gw-td ${cellClass}">
-                <span class="matrix-pill ${pillClass}" title="${titleText}">${formCode}</span>
+                <span class="matrix-pill ${pillClass}">${formCode}</span>
               </td>
             `;
           } else {
@@ -1733,14 +1730,14 @@
         } else {
           gwCells += `
             <td class="matrix-gw-td matrix-td-future">
-              <span class="matrix-pill-future" title="GW${gw}: Upcoming">·</span>
+              <span class="matrix-pill-future">·</span>
             </td>
           `;
         }
       }
 
       tbodyRows += `
-        <tr class="matrix-row" onclick="openManagerModal(${m.id})" title="Click to view ${m.name}'s squad details">
+        <tr class="matrix-row" onclick="openManagerModal(${m.id})">
           <td class="sticky-col-pos text-center"><div class="rank-num ${rankClass}">${pos}</div></td>
           <td class="sticky-col-manager">
             <div class="manager-info">
@@ -1757,8 +1754,8 @@
       <table class="custom-table matrix-table">
         <thead>
           <tr>
-            <th class="sticky-col-pos text-center" style="width:45px;">Pos</th>
-            <th class="sticky-col-manager" style="min-width:180px;">Manager & Team</th>
+            <th class="sticky-col-pos text-center" style="width:38px;">Pos</th>
+            <th class="sticky-col-manager" style="min-width:145px;width:160px;">Manager & Team</th>
             ${theadGwCols}
           </tr>
         </thead>

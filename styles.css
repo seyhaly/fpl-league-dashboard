@@ -2953,15 +2953,16 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .matrix-table {
   border-collapse: separate;
   border-spacing: 0;
-  width: max-content;
-  min-width: 100%;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .matrix-table th,
 .matrix-table td {
-  padding: 9px 6px;
+  padding: 7px 1px;
   white-space: nowrap;
   vertical-align: middle;
+  text-align: center;
 }
 
 .matrix-row {
@@ -2984,20 +2985,23 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   z-index: 4;
   background: #0b0f19;
   border-right: 1px solid var(--border-subtle);
-  width: 48px;
-  min-width: 48px;
+  width: 38px;
+  min-width: 38px;
+  padding: 7px 4px;
 }
 
 .matrix-table .sticky-col-manager {
   position: sticky;
-  left: 48px;
+  left: 38px;
   z-index: 4;
   background: #0b0f19;
-  border-right: 2px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.5);
-  min-width: 185px;
-  padding-left: 12px;
-  padding-right: 12px;
+  border-right: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.45);
+  width: 155px;
+  min-width: 145px;
+  padding-left: 10px;
+  padding-right: 8px;
+  text-align: left;
 }
 
 .matrix-table thead th.sticky-col-pos {
@@ -3010,8 +3014,9 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   z-index: 6;
   background: #080b14;
   border-bottom: 1px solid var(--border-subtle);
-  border-right: 2px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.5);
+  border-right: 2px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.45);
+  text-align: left;
 }
 
 .matrix-row:hover .sticky-col-pos,
@@ -3023,14 +3028,14 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 [data-theme="light"] .matrix-table .sticky-col-manager {
   background: #ffffff;
   border-right-color: #cbd5e1;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .matrix-table thead th.sticky-col-pos,
 [data-theme="light"] .matrix-table thead th.sticky-col-manager {
   background: #f8fafc;
   border-right-color: #cbd5e1;
-  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.05);
 }
 
 [data-theme="light"] .matrix-row:hover .sticky-col-pos,
@@ -3040,18 +3045,18 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 .matrix-gw-th {
   text-align: center;
-  min-width: 44px;
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 800;
-  letter-spacing: 0.5px;
   color: var(--text-muted);
   border-bottom: 1px solid var(--border-subtle);
+  padding: 8px 1px;
 }
 
 .matrix-th-current {
   color: var(--pl-cyan);
-  background: rgba(4, 245, 255, 0.08);
+  background: rgba(4, 245, 255, 0.1);
   border-bottom: 2px solid var(--pl-cyan);
+  font-weight: 900;
 }
 
 [data-theme="light"] .matrix-th-current {
@@ -3062,7 +3067,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 .matrix-gw-td {
   text-align: center;
-  padding: 6px 4px;
+  padding: 5px 1px;
 }
 
 .matrix-td-current {
@@ -3074,10 +3079,10 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 .matrix-pill {
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
-  font-size: 11px;
+  width: 19px;
+  height: 19px;
+  border-radius: 4px;
+  font-size: 10px;
   font-weight: 800;
   display: inline-flex;
   align-items: center;
@@ -3085,26 +3090,21 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-family: 'Outfit', sans-serif;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   line-height: 1;
-  transition: transform 0.15s ease;
-}
-
-.matrix-row:hover .matrix-pill {
-  transform: scale(1.08);
 }
 
 .matrix-pill-future {
-  font-size: 13px;
+  font-size: 11px;
   color: var(--text-muted);
-  opacity: 0.35;
+  opacity: 0.3;
   display: inline-block;
-  width: 24px;
+  width: 19px;
   text-align: center;
 }
 
 .matrix-current-indicator {
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 800;
-  padding: 2px 7px;
+  padding: 2px 6px;
   border-radius: 4px;
   background: rgba(4, 245, 255, 0.15);
   color: var(--pl-cyan);
