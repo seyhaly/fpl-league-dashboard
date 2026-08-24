@@ -1681,13 +1681,13 @@
       gwStandingsMap[gw] = getGameweekStandings(gw);
     }
 
-    // Build Table Header (Compact 1 to 38)
+    // Build Table Header (GW1 to GW38)
     let theadGwCols = '';
     for (let gw = 1; gw <= 38; gw++) {
       const isCurrent = (gw === state.currentGw);
       const isPast = (gw < state.currentGw);
       const headerClass = isCurrent ? 'matrix-th-current' : (isPast ? 'matrix-th-past' : 'matrix-th-future');
-      theadGwCols += `<th class="matrix-gw-th ${headerClass}">${gw}</th>`;
+      theadGwCols += `<th class="matrix-gw-th ${headerClass}">GW${gw}</th>`;
     }
 
     let tbodyRows = '';
@@ -1754,8 +1754,8 @@
       <table class="custom-table matrix-table">
         <thead>
           <tr>
-            <th class="sticky-col-pos text-center" style="width:38px;">Pos</th>
-            <th class="sticky-col-manager" style="min-width:145px;width:160px;">Manager & Team</th>
+            <th class="sticky-col-pos text-center" style="width:48px;">Pos</th>
+            <th class="sticky-col-manager" style="min-width:185px;">Manager & Team</th>
             ${theadGwCols}
           </tr>
         </thead>
