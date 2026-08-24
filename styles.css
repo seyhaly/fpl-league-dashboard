@@ -597,6 +597,11 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-spacing: 0 6px;
 }
 
+#standingsTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
 /* #9 — Sticky Table Header */
 .sticky-header thead th {
   position: sticky;
