@@ -1687,7 +1687,7 @@
       const isCurrent = (gw === state.currentGw);
       const isPast = (gw < state.currentGw);
       const headerClass = isCurrent ? 'matrix-th-current' : (isPast ? 'matrix-th-past' : 'matrix-th-future');
-      theadGwCols += `<th class="matrix-gw-th ${headerClass}">${isCurrent ? `GW${gw} ⚡` : `GW${gw}`}</th>`;
+      theadGwCols += `<th class="matrix-gw-th ${headerClass}">GW${gw}</th>`;
     }
 
     let tbodyRows = '';
