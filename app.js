@@ -2479,12 +2479,12 @@
         </div>
         <table class="modal-squad-table">
           <colgroup>
-            <col class="col-pos" style="width: 55px;">
-            <col class="col-player" style="width: auto;">
-            <col class="col-opp" style="width: 90px;">
-            <col class="col-status" style="width: 125px;">
-            <col class="col-role" style="width: 135px;">
-            <col class="col-pts" style="width: 75px;">
+            <col class="col-pos" style="width: 7%;">
+            <col class="col-player" style="width: 28%;">
+            <col class="col-opp" style="width: 15%;">
+            <col class="col-status" style="width: 18%;">
+            <col class="col-role" style="width: 20%;">
+            <col class="col-pts" style="width: 12%;">
           </colgroup>
           <thead>
             <tr>
@@ -2510,12 +2510,12 @@
         </div>
         <table class="modal-squad-table">
           <colgroup>
-            <col class="col-pos" style="width: 55px;">
-            <col class="col-player" style="width: auto;">
-            <col class="col-opp" style="width: 90px;">
-            <col class="col-status" style="width: 125px;">
-            <col class="col-role" style="width: 135px;">
-            <col class="col-pts" style="width: 75px;">
+            <col class="col-pos" style="width: 7%;">
+            <col class="col-player" style="width: 28%;">
+            <col class="col-opp" style="width: 15%;">
+            <col class="col-status" style="width: 18%;">
+            <col class="col-role" style="width: 20%;">
+            <col class="col-pts" style="width: 12%;">
           </colgroup>
           <thead>
             <tr>

@@ -2327,32 +2327,33 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 .modal-squad-table .col-pos {
-  width: 60px;
+  width: 7%;
 }
 
 .modal-squad-table .col-player {
-  width: auto;
+  width: 28%;
 }
 
 .modal-squad-table .col-opp {
-  width: 90px;
+  width: 15%;
 }
 
 .modal-squad-table .col-status {
-  width: 125px;
+  width: 18%;
 }
 
 .modal-squad-table .col-role {
-  width: 140px;
+  width: 20%;
 }
 
 .modal-squad-table .col-pts {
-  width: 80px;
+  width: 12%;
+  text-align: right;
 }
 
 .modal-squad-table th {
-  padding: 9px 12px;
-  font-size: 10px;
+  padding: 10px 14px;
+  font-size: 10.5px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.8px;
