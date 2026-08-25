@@ -2180,37 +2180,31 @@
       }
     }
 
+    // Normalize dailyStatus from official FPL API status
+    const normalizedDailyStatus = dailyStatus.map(day => {
+      return {
+        ...day,
+        points: day.points || 'r',
+        bonus_added: Boolean(day.bonus_added)
+      };
+    });
+
+    const allDaysDone = normalizedDailyStatus.length > 0 && normalizedDailyStatus.every(d => d.points === 'r' && d.bonus_added);
+
     // Determine overall status label
     let overallStatusLabel = 'Upcoming';
     let overallStatusClass = 'pipe-badge-muted';
 
-    if (isDemoMode || (statusObj.finished && statusObj.data_checked)) {
+    if (isDemoMode || statusObj.finished || allDaysDone) {
       overallStatusLabel = 'Finalized';
       overallStatusClass = 'pipe-badge-success';
     } else if (statusObj.is_current || hasLiveScores || (dailyStatus && dailyStatus.some(d => d.points === 'r'))) {
       overallStatusLabel = 'In Progress';
       overallStatusClass = 'pipe-badge-live';
-    } else if (statusObj.finished) {
-      overallStatusLabel = 'Updating';
-      overallStatusClass = 'pipe-badge-live';
     }
-
-    // Normalize dailyStatus based on UTC matchday dates: Friday & Saturday done, Sunday & Monday upcoming
-    const todayIso = new Date().toISOString().split('T')[0]; // '2026-08-23'
-    const isFinished = Boolean(statusObj.finished && statusObj.data_checked);
-
-    const normalizedDailyStatus = dailyStatus.map(day => {
-      const dateStr = day.date;
-      if (isDemoMode || isFinished || dateStr < todayIso) {
-        return { ...day, points: 'r', bonus_added: true };
-      } else {
-        return { ...day, points: 'p', bonus_added: false };
-      }
-    });
 
     // ── Compute progress bar ──────────────────────────────
     const doneDays    = normalizedDailyStatus.filter(d => d.points === 'r' && d.bonus_added).length;
-    const activeDays  = normalizedDailyStatus.filter(d => d.points === 'r' && !d.bonus_added).length;
     const totalDays   = normalizedDailyStatus.length;
     const progressPct = totalDays > 0 ? Math.round((doneDays / totalDays) * 100) : 0;
     const progressLabel = `${doneDays} of ${totalDays} day${totalDays !== 1 ? 's' : ''} finalized`;
@@ -2229,8 +2223,8 @@
     const FIXTURES_MAP = {
       '2026-08-21': '1 Match (FT)',
       '2026-08-22': '6 Matches (FT)',
-      '2026-08-23': '3 Matches',
-      '2026-08-24': '1 Match'
+      '2026-08-23': '3 Matches (FT)',
+      '2026-08-24': '1 Match (FT)'
     };
 
     const tableRows = normalizedDailyStatus.map((day, idx, arr) => {
@@ -2239,34 +2233,32 @@
       const weekday = dateObj.toLocaleDateString('en-GB', { weekday: 'long', timeZone: 'UTC' });
       const dateFmt = dateObj.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' });
 
+      const isDayConfirmed = day.points === 'r' && day.bonus_added;
       const ptsType   = day.points === 'r' ? 'done' : 'pending';
       const bonusType = day.bonus_added ? 'done' : (day.points === 'r' ? 'active' : 'pending');
 
-      const leaguesDone = day.points === 'r' && day.bonus_added;
-      const isLastProcessedDay = day.bonus_added && (idx === arr.length - 1 || !arr[idx+1].bonus_added);
-      const leaguesUpdating = isLastProcessedDay && (statusObj.leagues || '').toLowerCase() === 'updating';
-      const leaguesType = leaguesDone ? (leaguesUpdating ? 'active' : 'done') : (day.points === 'r' && day.bonus_added ? 'done' : 'pending');
-      const leaguesLabel = leaguesDone ? (leaguesUpdating ? 'Updating…' : 'Updated') : 'Pending';
-      const leaguesTagType = leaguesUpdating ? 'active' : leaguesType;
+      const leaguesUpdating = !allDaysDone && (statusObj.leagues || '').toLowerCase() === 'updating' && !isDayConfirmed;
+      const leaguesLabel = (isDayConfirmed || allDaysDone) ? 'Updated' : (leaguesUpdating ? 'Updating…' : 'Pending');
+      const leaguesTagType = (isDayConfirmed || allDaysDone) ? 'done' : (leaguesUpdating ? 'active' : 'pending');
 
       // Row state: done / active / pending
-      const isDone    = day.points === 'r' && day.bonus_added && !leaguesUpdating;
+      const isDone    = isDayConfirmed || allDaysDone;
       const isActive  = !isDone && (day.points === 'r' || day.bonus_added || leaguesUpdating);
       const rowClass  = isDone ? 'row-done' : (isActive ? 'row-active' : 'row-pending');
 
-      // Day Status Badge
+      // Day Status Badge: matches official FPL website states
       let dayStatusBadge = '';
-      if (isFinished) {
-        dayStatusBadge = `<span class="fpl-status-badge fpl-badge-final">FINAL</span>`;
-      } else if (isDone) {
+      if (isDayConfirmed || allDaysDone) {
+        dayStatusBadge = `<span class="fpl-status-badge fpl-badge-final">CONFIRMED</span>`;
+      } else if (day.points === 'r') {
         dayStatusBadge = `<span class="fpl-status-badge fpl-badge-provisional">PROVISIONAL</span>`;
-      } else if (isActive) {
+      } else if (day.points === 'p') {
         dayStatusBadge = `<span class="fpl-status-badge fpl-badge-in-progress">IN PROGRESS</span>`;
       } else {
         dayStatusBadge = `<span class="fpl-status-badge fpl-badge-upcoming">NOT STARTED</span>`;
       }
 
-      const fixturesLabel = FIXTURES_MAP[day.date] || 'Matches';
+      const fixturesLabel = FIXTURES_MAP[day.date] || 'Matches (FT)';
 
       return `
         <tr class="daily-row ${rowClass}">
