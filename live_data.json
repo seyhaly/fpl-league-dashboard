@@ -1,17 +1,17 @@
 {
-  "lastUpdated": "2026-08-25T10:18:07Z",
+  "lastUpdated": "2026-08-25T10:51:50Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
       "gw": 1,
-      "finished": true,
-      "data_checked": true,
+      "finished": false,
+      "data_checked": false,
       "is_current": true,
       "is_previous": false,
       "is_next": false,
       "deadline_time": "2026-08-21T17:30:00Z",
       "bonus_added": true,
-      "leagues": "Updated",
+      "leagues": "Updating",
       "points": "r",
       "daily_status": [
         {
