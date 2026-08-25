@@ -3312,4 +3312,220 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-left: 1px solid var(--border-subtle);
 }
 
+/* ===================== CLASSIC GOOGLE SHEETS VIEW ===================== */
+.classic-sheet-badge {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+[data-theme="light"] .classic-sheet-badge {
+  background: #f3e8ff;
+  color: #7e22ce;
+  border-color: #d8b4fe;
+}
+
+.classic-sheet-select {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12.5px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+[data-theme="light"] .classic-sheet-select {
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+.btn-export-sheet {
+  background: linear-gradient(135deg, #0284c7, #0369a1);
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.btn-export-sheet:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.classic-sheet-container {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 16px 16px 20px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Purple Google Sheet Header Banner */
+.classic-sheet-header-banner {
+  background: #73679f;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 14px;
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  border: 2px solid #5d5187;
+  border-bottom: none;
+  font-family: 'Outfit', 'Inter', sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.classic-sheet-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #2b6cb0;
+  background: #ffffff;
+  table-layout: auto;
+}
+
+.classic-sheet-table th {
+  background: #ffffff;
+  color: #0b5394;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 8px 10px;
+  text-align: center;
+  border: 1.5px solid #2b6cb0;
+  border-bottom: 2px solid #2b6cb0;
+  white-space: nowrap;
+}
+
+.classic-sheet-table td {
+  border: 1px solid #777777;
+  padding: 7px 10px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #000000;
+  vertical-align: middle;
+  background: #ffffff;
+  white-space: nowrap;
+}
+
+.classic-sheet-table .cs-col-rank {
+  text-align: center;
+  font-weight: 800;
+  font-size: 14px;
+  width: 50px;
+}
+
+.classic-sheet-table .cs-rank-win {
+  border-left: 6px solid #28a745 !important;
+}
+
+.classic-sheet-table .cs-rank-loss {
+  border-left: 6px solid #dc3545 !important;
+}
+
+.classic-sheet-table .cs-rank-neutral {
+  border-left: 6px solid #6c757d !important;
+}
+
+.classic-sheet-table .cs-col-manager {
+  text-align: left;
+  font-weight: 800;
+  color: #000000;
+  padding-left: 10px;
+}
+
+.classic-sheet-table .cs-col-team {
+  text-align: left;
+  font-weight: 800;
+  color: #000000;
+  padding-left: 10px;
+}
+
+.classic-sheet-table .cs-col-aba {
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  color: #000000;
+  font-size: 12.5px;
+}
+
+.classic-sheet-table .cs-col-gw {
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 6px 10px;
+  min-width: 52px;
+}
+
+.classic-sheet-table .cs-cell-win {
+  background: #28a745 !important;
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  font-size: 16px !important;
+}
+
+.classic-sheet-table .cs-cell-loss {
+  background: #dc3545 !important;
+  color: #ffffff !important;
+  font-weight: 900 !important;
+  font-size: 16px !important;
+}
+
+.classic-sheet-table .cs-cell-neutral {
+  background: #6c757d !important;
+  color: #ffffff !important;
+  font-weight: 800 !important;
+  font-size: 15px !important;
+}
+
+.classic-sheet-table .cs-cell-unplayed {
+  background: #ffffff !important;
+  color: #94a3b8 !important;
+  font-weight: 700 !important;
+  font-size: 13px !important;
+}
+
+.classic-sheet-table .cs-col-payment {
+  text-align: center;
+  font-weight: 900;
+  font-size: 13.5px;
+  color: #000000;
+  padding: 6px 12px;
+}
+
+.classic-sheet-mom-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.classic-sheet-mom-pill {
+  background: #2b7a9e;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 6px 20px;
+  border-radius: 4px;
+  display: inline-block;
+  letter-spacing: 0.3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
 

@@ -509,6 +509,44 @@
         }
       });
     }
+
+    const btnExportSheet = document.getElementById('btnExportClassicSheet');
+    if (btnExportSheet) {
+      btnExportSheet.addEventListener('click', async () => {
+        const card = document.getElementById('classicSheetCard');
+        if (!card) return;
+
+        btnExportSheet.disabled = true;
+        btnExportSheet.textContent = '⏳ Generating...';
+
+        try {
+          if (typeof htmlToImage !== 'undefined') {
+            const dataUrl = await htmlToImage.toPng(card, {
+              quality: 1.0,
+              pixelRatio: 2,
+              backgroundColor: '#ffffff',
+              style: {
+                transform: 'none',
+                margin: '0'
+              }
+            });
+            if (dataUrl) {
+              const link = document.createElement('a');
+              link.download = `Classic_Sheet_GW${state.currentGw}_${Date.now()}.png`;
+              link.href = dataUrl;
+              link.click();
+              showToast('📸 Classic Sheet image downloaded!');
+            }
+          }
+        } catch (err) {
+          console.warn('Sheet image export error:', err);
+          showToast('Failed to export sheet image.');
+        } finally {
+          btnExportSheet.disabled = false;
+          btnExportSheet.textContent = '📸 Export Image';
+        }
+      });
+    }
   }
 
   // ===================== #8 COLLAPSIBLE SECTIONS =====================
@@ -1505,6 +1543,9 @@
     if (document.getElementById('section-awards')) {
       document.getElementById('section-awards').style.display = hasData ? 'block' : 'none';
     }
+    if (document.getElementById('section-classic-sheets')) {
+      document.getElementById('section-classic-sheets').style.display = hasData ? 'block' : 'none';
+    }
     document.getElementById('section-standings').style.display = hasData ? 'block' : 'none';
     document.getElementById('section-performance').style.display = hasData ? 'block' : 'none';
     document.getElementById('section-trajectory').style.display = hasData ? 'block' : 'none';
@@ -1520,6 +1561,7 @@
     updateChart();
     updatePerformanceChart();
     renderSeasonAwards();
+    renderClassicSheetView();
   }
 
   // ===================== STANDINGS TABLE =====================
@@ -2449,6 +2491,179 @@
     state.perfChartInstance.data.datasets[2].data = summary.map(s => s.neutrals);
     
     updatePerformanceChartTheme();
+  }
+
+  // ===================== CLASSIC GOOGLE SHEETS VIEW =====================
+  function renderClassicSheetView() {
+    const tableEl = document.getElementById('classicSheetTable');
+    const titleEl = document.getElementById('classicSheetLeagueTitle');
+    const momEl = document.getElementById('classicSheetMoMBanner');
+    const selectEl = document.getElementById('classicSheetMonthSelect');
+    if (!tableEl) return;
+
+    if (titleEl) {
+      titleEl.textContent = state.dataset.leagueName || "Clash of Elite Fantasy League 2026-2027";
+    }
+
+    const months = state.dataset.months || [];
+    const currentGw = state.currentGw || 1;
+
+    // Populate month select if empty
+    if (selectEl && selectEl.options.length === 0) {
+      const optRecent = document.createElement('option');
+      optRecent.value = 'recent';
+      optRecent.textContent = 'Recent 5 Gameweeks';
+      selectEl.appendChild(optRecent);
+
+      months.forEach(m => {
+        const opt = document.createElement('option');
+        opt.value = m.name;
+        opt.textContent = `${m.name} (GW${Math.min(...m.gws)}-${Math.max(...m.gws)})`;
+        selectEl.appendChild(opt);
+      });
+
+      const activeMonth = months.find(m => m.gws && m.gws.includes(currentGw));
+      if (activeMonth) {
+        selectEl.value = activeMonth.name;
+      } else {
+        selectEl.value = 'recent';
+      }
+
+      selectEl.addEventListener('change', () => {
+        renderClassicSheetView();
+      });
+    }
+
+    const selectedVal = selectEl ? selectEl.value : 'recent';
+    let gwsToDisplay = [];
+    let selectedMonthObj = null;
+
+    if (selectedVal === 'recent') {
+      const startGw = Math.max(1, currentGw - 4);
+      for (let g = startGw; g <= currentGw; g++) {
+        gwsToDisplay.push(g);
+      }
+    } else {
+      selectedMonthObj = months.find(m => m.name === selectedVal);
+      if (selectedMonthObj) {
+        gwsToDisplay = [...selectedMonthObj.gws];
+      } else {
+        gwsToDisplay = [currentGw];
+      }
+    }
+
+    const currentStandings = getGameweekStandings(currentGw);
+    const totalManagers = currentStandings.length;
+    const splitSize = Math.floor(totalManagers / 2);
+    const hasNeutral = totalManagers % 2 === 1;
+    const neutralRank = hasNeutral ? splitSize + 1 : null;
+
+    // Table Header
+    let theadHtml = `
+      <thead>
+        <tr>
+          <th class="cs-col-rank">Rank</th>
+          <th class="cs-col-manager">Manager</th>
+          <th class="cs-col-team">Team</th>
+          <th class="cs-col-aba">ABA</th>
+          ${gwsToDisplay.map(g => `<th class="cs-col-gw">GW${g}</th>`).join('')}
+          <th class="cs-col-payment">Payment</th>
+        </tr>
+      </thead>
+    `;
+
+    // Table Body
+    let tbodyHtml = '<tbody>';
+    currentStandings.forEach((m, idx) => {
+      const rank = idx + 1;
+      let rankBorderClass = 'cs-rank-loss';
+      let paymentText = '';
+
+      if (rank <= splitSize) {
+        rankBorderClass = 'cs-rank-win';
+        const payerRank = totalManagers - rank + 1;
+        paymentText = `Get 3$ from ${payerRank}`;
+      } else if (hasNeutral && rank === neutralRank) {
+        rankBorderClass = 'cs-rank-neutral';
+        paymentText = `Neutral (0$)`;
+      } else {
+        rankBorderClass = 'cs-rank-loss';
+        const receiverRank = totalManagers - rank + 1;
+        paymentText = `Pay 3$ to ${receiverRank}`;
+      }
+
+      const abaNum = ABA_ACCOUNTS[m.id] || '';
+
+      // Build GW score cells
+      let gwCellsHtml = '';
+      gwsToDisplay.forEach(g => {
+        if (g > currentGw) {
+          gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
+          return;
+        }
+
+        const gStandings = getGameweekStandings(g);
+        const gManager = gStandings.find(x => x.id === m.id);
+        if (!gManager || (gManager.grossScore === 0 && gManager.hitCost === 0)) {
+          gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
+          return;
+        }
+
+        const gScore = gManager.netScore !== undefined ? gManager.netScore : gManager.grossScore;
+        let cellClass = 'cs-cell-neutral';
+        if (gManager.outcomeCode === 'W' || gManager.rank <= splitSize) {
+          cellClass = 'cs-cell-win';
+        } else if (gManager.outcomeCode === 'L' || (hasNeutral ? gManager.rank > neutralRank : gManager.rank > splitSize)) {
+          cellClass = 'cs-cell-loss';
+        }
+
+        gwCellsHtml += `<td class="cs-col-gw ${cellClass}">${gScore}</td>`;
+      });
+
+      tbodyHtml += `
+        <tr>
+          <td class="cs-col-rank ${rankBorderClass}">${rank}</td>
+          <td class="cs-col-manager">${m.name}</td>
+          <td class="cs-col-team">${m.teamName}</td>
+          <td class="cs-col-aba">${abaNum || '-'}</td>
+          ${gwCellsHtml}
+          <td class="cs-col-payment">${paymentText}</td>
+        </tr>
+      `;
+    });
+    tbodyHtml += '</tbody>';
+
+    tableEl.innerHTML = theadHtml + tbodyHtml;
+
+    // Manager of the Month (MoM) Banner Pill
+    if (momEl) {
+      let motmName = '';
+      const targetMonth = selectedMonthObj || months.find(m => m.gws && m.gws.includes(currentGw)) || months[0];
+      if (targetMonth && targetMonth.gws) {
+        const motmScores = state.dataset.managers.map(mgr => {
+          let pts = 0;
+          targetMonth.gws.forEach(g => {
+            if (g <= currentGw) {
+              const gScore = getManagerLiveScore(mgr.id, g);
+              const gData = state.dataset.gameweeks.find(x => x.gw === g);
+              const hit = (gData && gData.hits) ? (gData.hits[mgr.id] || 0) : 0;
+              pts += (gScore - hit);
+            }
+          });
+          return { name: mgr.name, pts };
+        }).sort((a, b) => b.pts - a.pts);
+
+        if (motmScores[0] && motmScores[0].pts > 0) {
+          motmName = motmScores[0].name;
+        }
+      }
+
+      if (motmName) {
+        momEl.innerHTML = `<div class="classic-sheet-mom-pill">MoM: ${motmName}</div>`;
+      } else {
+        momEl.innerHTML = '';
+      }
+    }
   }
 
   // ===================== MANAGER SQUAD DETAIL MODAL =====================

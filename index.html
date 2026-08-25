@@ -14,7 +14,7 @@
     body, html { font-family: 'Outfit', sans-serif; }
     h3, .pipeline-gw-title { font-family: 'Inter', sans-serif; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=79.0">
+  <link rel="stylesheet" href="styles.css?v=80.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -243,6 +243,43 @@
     </div>
   </section>
 
+  <!-- ===================== CLASSIC GOOGLE SHEETS VIEW ===================== -->
+  <section class="glass-panel" id="section-classic-sheets">
+    <div class="section-title">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <h3>📊 Classic Sheet View (Old Style)</h3>
+        <span class="classic-sheet-badge">Google Sheets Style</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <select id="classicSheetMonthSelect" class="classic-sheet-select" aria-label="Select Month for Sheet View">
+          <!-- Populated dynamically by JS -->
+        </select>
+        <button id="btnExportClassicSheet" class="btn-export-sheet" title="Export as PNG image for Telegram / Chat">
+          📸 Export Image
+        </button>
+        <button class="collapse-btn" data-target="classicSheetCollapse">▲ Collapse</button>
+      </div>
+    </div>
+    <div id="classicSheetCollapse" class="collapsible-content">
+      <div class="table-responsive" style="padding:10px 0;">
+        <div id="classicSheetCard" class="classic-sheet-container">
+          <!-- Purple Header Banner -->
+          <div class="classic-sheet-header-banner">
+            <span id="classicSheetLeagueTitle">Clash of Elite Fantasy League 2026-2027</span>
+          </div>
+          
+          <!-- Classic Sheet Table -->
+          <table class="classic-sheet-table" id="classicSheetTable">
+            <!-- Populated dynamically by JS -->
+          </table>
+
+          <!-- Manager of the Month Banner under table -->
+          <div id="classicSheetMoMBanner" class="classic-sheet-mom-container"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <!-- ===================== MANAGER SQUAD DETAIL MODAL ===================== -->
@@ -286,7 +323,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
-<script src="squadData.js?v=79.0"></script>
-<script src="app.js?v=79.0"></script>
+<script src="squadData.js?v=80.0"></script>
+<script src="app.js?v=80.0"></script>
 </body>
 </html>
