@@ -284,6 +284,7 @@
         state.showMotmBadge = !state.showMotmBadge;
         elements.toggleMotmBtn.classList.toggle('active', state.showMotmBadge);
         renderStandingsTable();
+        renderClassicSheetView();
       });
     }
 
@@ -292,6 +293,7 @@
         state.showMotsBadge = !state.showMotsBadge;
         elements.toggleMotsBtn.classList.toggle('active', state.showMotsBadge);
         renderStandingsTable();
+        renderClassicSheetView();
       });
     }
 
@@ -2497,23 +2499,29 @@
   function renderClassicSheetView() {
     const tableEl = document.getElementById('classicSheetTable');
     const titleEl = document.getElementById('classicSheetLeagueTitle');
-    const momEl = document.getElementById('classicSheetMoMBanner');
     const selectEl = document.getElementById('classicSheetMonthSelect');
     if (!tableEl) return;
 
     if (titleEl) {
-      titleEl.textContent = state.dataset.leagueName || "Clash of Elite Fantasy League 2026-2027";
+      const rawLeague = state.dataset.leagueName || "Clash of Elite";
+      const cleanLeague = rawLeague.replace(/\s*(20\d\d[-–]20\d\d|\d\d\/\d\d)\s*/gi, '').trim();
+      titleEl.textContent = `${cleanLeague} Fantasy League 2026-2027`;
     }
 
     const months = state.dataset.months || [];
     const currentGw = state.currentGw || 1;
 
-    // Populate month select if empty
+    // Populate month / view select dropdown if empty
     if (selectEl && selectEl.options.length === 0) {
       const optRecent = document.createElement('option');
       optRecent.value = 'recent';
       optRecent.textContent = 'Recent 5 Gameweeks';
       selectEl.appendChild(optRecent);
+
+      const optAll = document.createElement('option');
+      optAll.value = 'all';
+      optAll.textContent = 'All 38 Gameweeks (Full Season)';
+      selectEl.appendChild(optAll);
 
       months.forEach(m => {
         const opt = document.createElement('option');
@@ -2538,7 +2546,11 @@
     let gwsToDisplay = [];
     let selectedMonthObj = null;
 
-    if (selectedVal === 'recent') {
+    if (selectedVal === 'all') {
+      for (let g = 1; g <= 38; g++) {
+        gwsToDisplay.push(g);
+      }
+    } else if (selectedVal === 'recent') {
       const startGw = Math.max(1, currentGw - 4);
       for (let g = startGw; g <= currentGw; g++) {
         gwsToDisplay.push(g);
@@ -2558,6 +2570,16 @@
     const hasNeutral = totalManagers % 2 === 1;
     const neutralRank = hasNeutral ? splitSize + 1 : null;
 
+    const showMots = Boolean(state.showMotsBadge);
+    const showMotm = Boolean(state.showMotmBadge);
+
+    // Calculate MOTS (Manager of the Season)
+    let seasonLeader = null;
+    if (showMots && currentStandings.length > 0) {
+      const seasonList = [...currentStandings].sort((a, b) => b.seasonTotalNet - a.seasonTotalNet);
+      seasonLeader = seasonList[0];
+    }
+
     // Table Header
     let theadHtml = `
       <thead>
@@ -2568,6 +2590,7 @@
           <th class="cs-col-aba">ABA</th>
           ${gwsToDisplay.map(g => `<th class="cs-col-gw">GW${g}</th>`).join('')}
           <th class="cs-col-payment">Payment</th>
+          ${showMots ? `<th class="cs-col-seasonal">Seasonal prize</th>` : ''}
         </tr>
       </thead>
     `;
@@ -2620,6 +2643,15 @@
         gwCellsHtml += `<td class="cs-col-gw ${cellClass}">${gScore}</td>`;
       });
 
+      const motsCellHtml = (showMots && idx === 0)
+        ? `<td class="cs-col-seasonal" rowspan="${totalManagers}">
+            <div class="classic-sheet-mots-content">
+              <div>Manager of the Season:</div>
+              <div class="classic-sheet-mots-winner">${seasonLeader ? seasonLeader.name : 'Leader'}</div>
+            </div>
+           </td>`
+        : '';
+
       tbodyHtml += `
         <tr>
           <td class="cs-col-rank ${rankBorderClass}">${rank}</td>
@@ -2628,15 +2660,15 @@
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
           <td class="cs-col-payment">${paymentText}</td>
+          ${motsCellHtml}
         </tr>
       `;
     });
     tbodyHtml += '</tbody>';
 
-    tableEl.innerHTML = theadHtml + tbodyHtml;
-
-    // Manager of the Month (MoM) Banner Pill
-    if (momEl) {
+    // Calculate MOTM (Manager of the Month) to place directly under GW columns
+    let tfootHtml = '';
+    if (showMotm) {
       let motmName = '';
       const targetMonth = selectedMonthObj || months.find(m => m.gws && m.gws.includes(currentGw)) || months[0];
       if (targetMonth && targetMonth.gws) {
@@ -2659,11 +2691,21 @@
       }
 
       if (motmName) {
-        momEl.innerHTML = `<div class="classic-sheet-mom-pill">MoM: ${motmName}</div>`;
-      } else {
-        momEl.innerHTML = '';
+        tfootHtml = `
+          <tfoot>
+            <tr>
+              <td colspan="4" style="border:none;background:transparent;"></td>
+              <td colspan="${gwsToDisplay.length}" style="border:none;background:transparent;text-align:center;padding:10px 0;">
+                <div class="classic-sheet-mom-pill">MoM: ${motmName}</div>
+              </td>
+              <td colspan="${showMots ? 2 : 1}" style="border:none;background:transparent;"></td>
+            </tr>
+          </tfoot>
+        `;
       }
     }
+
+    tableEl.innerHTML = theadHtml + tbodyHtml + tfootHtml;
   }
 
   // ===================== MANAGER SQUAD DETAIL MODAL =====================

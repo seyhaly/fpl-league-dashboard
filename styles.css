@@ -3369,7 +3369,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 .classic-sheet-container {
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
   background: #ffffff;
   padding: 16px 16px 20px 16px;
@@ -3394,12 +3394,25 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+.classic-sheet-table-scroll-wrapper {
+  overflow-x: auto;
+  max-width: 100%;
+  position: relative;
+  border: 2px solid #2b6cb0;
+}
+
 .classic-sheet-table {
   width: 100%;
-  border-collapse: collapse;
-  border: 2px solid #2b6cb0;
+  border-collapse: separate;
+  border-spacing: 0;
   background: #ffffff;
   table-layout: auto;
+}
+
+.classic-sheet-table th,
+.classic-sheet-table td {
+  border-right: 1px solid #777777;
+  border-bottom: 1px solid #777777;
 }
 
 .classic-sheet-table th {
@@ -3409,13 +3422,11 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-weight: 900;
   padding: 8px 10px;
   text-align: center;
-  border: 1.5px solid #2b6cb0;
   border-bottom: 2px solid #2b6cb0;
   white-space: nowrap;
 }
 
 .classic-sheet-table td {
-  border: 1px solid #777777;
   padding: 7px 10px;
   font-size: 13.5px;
   font-weight: 700;
@@ -3425,11 +3436,132 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   white-space: nowrap;
 }
 
+/* Sticky Frozen Left Columns */
 .classic-sheet-table .cs-col-rank {
+  position: sticky;
+  left: 0;
+  z-index: 5;
+  background: #ffffff;
+  min-width: 44px;
+  width: 44px;
+  max-width: 44px;
   text-align: center;
   font-weight: 800;
   font-size: 14px;
-  width: 50px;
+}
+
+.classic-sheet-table .cs-col-manager {
+  position: sticky;
+  left: 44px;
+  z-index: 5;
+  background: #ffffff;
+  min-width: 125px;
+  width: 125px;
+  max-width: 125px;
+  text-align: left;
+  font-weight: 800;
+  color: #000000;
+  padding-left: 10px;
+}
+
+.classic-sheet-table .cs-col-team {
+  position: sticky;
+  left: 169px;
+  z-index: 5;
+  background: #ffffff;
+  min-width: 140px;
+  width: 140px;
+  max-width: 140px;
+  text-align: left;
+  font-weight: 800;
+  color: #000000;
+  padding-left: 10px;
+}
+
+.classic-sheet-table .cs-col-aba {
+  position: sticky;
+  left: 309px;
+  z-index: 5;
+  background: #ffffff;
+  min-width: 105px;
+  width: 105px;
+  max-width: 105px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  color: #000000;
+  font-size: 12.5px;
+  border-right: 2.5px solid #2b6cb0 !important;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.classic-sheet-table th.cs-col-rank,
+.classic-sheet-table th.cs-col-manager,
+.classic-sheet-table th.cs-col-team,
+.classic-sheet-table th.cs-col-aba {
+  z-index: 10;
+  background: #ffffff;
+}
+
+.classic-sheet-table th.cs-col-payment,
+.classic-sheet-table th.cs-col-seasonal {
+  z-index: 10;
+}
+
+/* Sticky Frozen Right Columns */
+.classic-sheet-table .cs-col-payment {
+  position: sticky;
+  right: 0;
+  z-index: 5;
+  background: #ffffff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 13.5px;
+  color: #000000;
+  padding: 6px 12px;
+  min-width: 120px;
+  border-left: 2.5px solid #2b6cb0 !important;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.classic-sheet-table th.cs-col-payment {
+  background: #ffffff;
+}
+
+/* Seasonal Prize Column */
+.classic-sheet-table th.cs-col-seasonal {
+  background: #005a70 !important;
+  color: #ffffff !important;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  border-left: 2px solid #2b6cb0 !important;
+  padding: 8px 16px;
+}
+
+.classic-sheet-table td.cs-col-seasonal {
+  background: #f59e0b !important;
+  color: #ffffff !important;
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  padding: 16px 20px;
+  border-left: 2px solid #2b6cb0 !important;
+  border-bottom: 2px solid #2b6cb0;
+}
+
+.classic-sheet-mots-content {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.classic-sheet-mots-winner {
+  font-size: 21px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-top: 4px;
 }
 
 .classic-sheet-table .cs-rank-win {
@@ -3444,34 +3576,14 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-left: 6px solid #6c757d !important;
 }
 
-.classic-sheet-table .cs-col-manager {
-  text-align: left;
-  font-weight: 800;
-  color: #000000;
-  padding-left: 10px;
-}
-
-.classic-sheet-table .cs-col-team {
-  text-align: left;
-  font-weight: 800;
-  color: #000000;
-  padding-left: 10px;
-}
-
-.classic-sheet-table .cs-col-aba {
-  text-align: center;
-  font-family: monospace;
-  font-weight: 700;
-  color: #000000;
-  font-size: 12.5px;
-}
-
 .classic-sheet-table .cs-col-gw {
   text-align: center;
   font-weight: 900;
   font-size: 16px;
   padding: 6px 10px;
   min-width: 52px;
+  width: 52px;
+  max-width: 52px;
 }
 
 .classic-sheet-table .cs-cell-win {
@@ -3502,30 +3614,17 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-size: 13px !important;
 }
 
-.classic-sheet-table .cs-col-payment {
-  text-align: center;
-  font-weight: 900;
-  font-size: 13.5px;
-  color: #000000;
-  padding: 6px 12px;
-}
-
-.classic-sheet-mom-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
 .classic-sheet-mom-pill {
   background: #2b7a9e;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 900;
-  padding: 6px 20px;
+  padding: 5px 16px;
   border-radius: 4px;
   display: inline-block;
   letter-spacing: 0.3px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  margin-top: 6px;
 }
 
 
