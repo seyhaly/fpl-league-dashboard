@@ -3395,13 +3395,20 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-color: #fde68a;
 }
 
+.classic-sheet-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
 .classic-sheet-color-picker-group {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--border-subtle);
-  padding: 3px 8px;
+  padding: 3px 6px;
   border-radius: 6px;
 }
 

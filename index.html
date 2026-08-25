@@ -14,7 +14,7 @@
     body, html { font-family: 'Outfit', sans-serif; }
     h3, .pipeline-gw-title { font-family: 'Inter', sans-serif; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=92.0">
+  <link rel="stylesheet" href="styles.css?v=93.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -246,11 +246,8 @@
   <!-- ===================== CLASSIC GOOGLE SHEETS VIEW ===================== -->
   <section class="glass-panel" id="section-classic-sheets">
     <div class="section-title">
-      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
-        <h3>📊 Classic Sheet View (Old Style)</h3>
-        <span class="classic-sheet-badge">Google Sheets Style</span>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      <h3>📊 Classic Sheet View (Old Style)</h3>
+      <div class="classic-sheet-toolbar">
         <select id="classicSheetMonthSelect" class="classic-sheet-select" aria-label="Select Month for Sheet View">
           <!-- Populated dynamically by JS (default Recent 5 Gameweeks) -->
         </select>
@@ -261,11 +258,11 @@
         </select>
         <div class="classic-sheet-color-picker-group" title="Customize Header Banner Colors">
           <label for="classicSheetBannerBg" class="classic-sheet-color-label" title="Banner Background Color">
-            <span>🎨 Banner:</span>
+            <span>🎨</span>
             <input type="color" id="classicSheetBannerBg" value="#73679f" class="classic-sheet-color-input">
           </label>
           <label for="classicSheetBannerText" class="classic-sheet-color-label" title="Banner Text Color">
-            <span>🔤 Text:</span>
+            <span>🔤</span>
             <input type="color" id="classicSheetBannerText" value="#ffffff" class="classic-sheet-color-input">
           </label>
         </div>
@@ -340,7 +337,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
-<script src="squadData.js?v=92.0"></script>
-<script src="app.js?v=92.0"></script>
+<script src="squadData.js?v=93.0"></script>
+<script src="app.js?v=93.0"></script>
 </body>
 </html>
