@@ -1,0 +1,47 @@
+name: FPL Gameweek Email Notifier
+
+on:
+  schedule:
+    - cron: '0 * * * *' # Checks every hour automatically
+  workflow_dispatch: # Allows manual 1-click test button from GitHub Actions UI
+
+concurrency:
+  group: fpl-notifier-group
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  check-and-notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run FPL Email Check & Dispatch
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          NOTIFICATION_EMAIL: ${{ secrets.NOTIFICATION_EMAIL }}
+          FPL_LEAGUE_ID: ${{ secrets.FPL_LEAGUE_ID }}
+        run: node scripts/check-fpl.js
+
+      - name: Commit state tracking file
+        if: success()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .last_sent_gw.json || true
+          if git diff --staged --quiet; then
+            echo "No state change to commit."
+          else
+            git commit -m "chore: update last sent gameweek state [skip ci]" || true
+            git push || true
+          fi

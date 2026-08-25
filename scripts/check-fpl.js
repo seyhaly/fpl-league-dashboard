@@ -8,14 +8,33 @@ try {
   demoData = null;
 }
 
+let liveData;
+try {
+  liveData = JSON.parse(fs.readFileSync(path.join(__dirname, '../live_data.json'), 'utf8'));
+} catch (e) {
+  liveData = null;
+}
+
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL;
-const FPL_LEAGUE_ID = process.env.FPL_LEAGUE_ID || 'demo';
+const FPL_LEAGUE_ID = process.env.FPL_LEAGUE_ID || '389585';
 
 if (!RESEND_API_KEY || !NOTIFICATION_EMAIL) {
   console.error('❌ Missing RESEND_API_KEY or NOTIFICATION_EMAIL environment variables.');
   process.exit(1);
 }
+
+// ABA Bank Account numbers mapping
+const ABA_ACCOUNTS = {
+  2023789: '001 335 048', // Monor Noem
+  2026484: '000 971 427', // Bora Chhe
+  2023013: '000 790 069', // នរសិង្ហ កន្សៃ
+  2067578: '002 157 778', // Kun Phaktra
+  2024611: '077 767 949', // Vibol Dang
+  2019453: '085 897 968', // Seyha ly
+  2026160: '007 043 391', // Piseth Nhim
+  145847: ''              // Hokheng Ker (blank)
+};
 
 function getChipLabel(chipName) {
   if (!chipName) return '-';
@@ -73,7 +92,6 @@ async function run() {
 
   const isManualRun = process.env.GITHUB_EVENT_NAME === 'workflow_dispatch';
 
-  // Exact pre-season mapping for League #389585
   const realManagerMap = {
     2019453: { name: "Seyha ly", teamName: "The Red Devil" },
     2067578: { name: "Kun Phaktra", teamName: "The Blue Warriors" },
@@ -84,19 +102,36 @@ async function run() {
     2023013: { name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T" }
   };
 
-  // Try fetching live FPL API if numeric league ID
-  if (/^\d+$/.test(FPL_LEAGUE_ID.trim())) {
+  // 1. First priority: Load from live_data.json if valid
+  if (liveData && liveData.managers && liveData.managers.length > 0) {
+    console.log('📌 Loading data from live_data.json...');
+    managers = liveData.managers.map(m => ({
+      id: m.id,
+      name: realManagerMap[m.id]?.name || m.name,
+      teamName: realManagerMap[m.id]?.teamName || m.teamName
+    }));
+    currentGw = liveData.currentGw || 1;
+    gameweeks = liveData.gameweeks || [];
+    months = liveData.months || [];
+
+    const gwStatus = liveData.eventStatuses ? liveData.eventStatuses[currentGw] : null;
+    if (gwStatus) {
+      isGwFinished = !!(gwStatus.finished || gwStatus.data_checked);
+    }
+  }
+
+  // 2. Try fetching live FPL API if numeric league ID and not already finished
+  if (managers.length === 0 && /^\d+$/.test(FPL_LEAGUE_ID.trim())) {
     try {
       const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${FPL_LEAGUE_ID.trim()}/standings/`;
       const data = await fetchFplJson(standingsUrl, 5000);
 
       if (data) {
-        if (data && data.league && data.league.name) {
-          leagueName = data.league.name; // Real league title "Clash of Elite 2026-2027"
+        if (data.league && data.league.name) {
+          leagueName = data.league.name;
         }
-        
-        // 1. Active Season: Fetch managers from standings.results
-        if (data && data.standings && data.standings.results && data.standings.results.length > 0) {
+
+        if (data.standings && data.standings.results && data.standings.results.length > 0) {
           managers = data.standings.results.map(r => ({
             id: r.entry,
             name: realManagerMap[r.entry]?.name || r.player_name || "Manager",
@@ -111,28 +146,13 @@ async function run() {
               isGwFinished = currentEvent.finished || currentEvent.data_checked;
             }
           }
-        } 
-        // 2. Pre-season: Extract REAL joined managers from new_entries.results!
-        else if (data && data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
-          console.log(`📌 Loaded ${data.new_entries.results.length} REAL joined managers from pre-season entries!`);
+        } else if (data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
           isPreSeasonMode = true;
-          managers = data.new_entries.results.map(r => {
-            if (realManagerMap[r.entry]) {
-              return {
-                id: r.entry,
-                name: realManagerMap[r.entry].name,
-                teamName: realManagerMap[r.entry].teamName
-              };
-            }
-            const firstName = (r.player_first_name || '').trim();
-            const lastName = (r.player_last_name || '').trim();
-            let fullName = `${firstName} ${lastName}`.trim();
-            return {
-              id: r.entry,
-              name: fullName || r.entry_name || "Manager",
-              teamName: r.entry_name
-            };
-          });
+          managers = data.new_entries.results.map(r => ({
+            id: r.entry,
+            name: realManagerMap[r.entry]?.name || r.player_name || `${r.player_first_name || ''} ${r.player_last_name || ''}`.trim() || r.entry_name,
+            teamName: realManagerMap[r.entry]?.teamName || r.entry_name
+          }));
         }
       }
     } catch (err) {
@@ -140,33 +160,12 @@ async function run() {
     }
   }
 
-  // 1. Pre-season guard: DO NOT send automated scheduled emails during pre-season!
-  if (isPreSeasonMode && !isManualRun) {
-    console.log(`ℹ️ Pre-season mode active (Gameweek 1 has not started/finished on FPL yet). Skipping automated scheduled email.`);
-    process.exit(0);
-  }
-
-  // 2. Active season guard: Only send automated emails when Gameweek is officially finished!
-  if (!isPreSeasonMode && !isGwFinished && !isManualRun) {
-    console.log(`ℹ️ Gameweek ${currentGw} is still in progress. Waiting until GW matches & points are finalized.`);
-    process.exit(0);
-  }
-
-  // 3. Duplicate prevention: Skip if email for this Gameweek was already sent!
-  if (!isManualRun && currentGw === lastSentGw) {
-    console.log(`ℹ️ Gameweek ${currentGw} notification already sent previously (lastSentGw: ${lastSentGw}). Skipping duplicate email.`);
-    process.exit(0);
-  }
-
-  // Fallback to Demo Data ONLY if no live managers exist at all
+  // Fallback to Demo Data ONLY if no managers exist
   if (managers.length === 0 && demoData) {
     console.log('📌 Using Demo dataset fallback...');
     isPreSeasonMode = true;
     managers = demoData.managers;
     currentGw = 10;
-    gameweeks = demoData.gameweeks;
-    months = demoData.months || [];
-  } else if (demoData) {
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
   }
@@ -176,8 +175,24 @@ async function run() {
     process.exit(1);
   }
 
+  // Guards for automated scheduled cron triggers
+  if (isPreSeasonMode && !isManualRun) {
+    console.log(`ℹ️ Pre-season mode active. Skipping automated scheduled email.`);
+    process.exit(0);
+  }
+
+  if (!isPreSeasonMode && !isGwFinished && !isManualRun) {
+    console.log(`ℹ️ Gameweek ${currentGw} is still in progress. Waiting until matches & points are finalized.`);
+    process.exit(0);
+  }
+
+  if (!isManualRun && currentGw === lastSentGw) {
+    console.log(`ℹ️ Gameweek ${currentGw} notification already sent previously (lastSentGw: ${lastSentGw}). Skipping duplicate email.`);
+    process.exit(0);
+  }
+
   // Compute Gameweek Standings & Payouts for currentGw
-  const gwData = gameweeks.find(g => g.gw === currentGw) || gameweeks[gameweeks.length - 1];
+  const gwData = gameweeks.find(g => g.gw === currentGw) || gameweeks[gameweeks.length - 1] || {};
   const entryFee = 3.00;
   const total = managers.length;
   const splitSize = Math.floor(total / 2);
@@ -196,11 +211,9 @@ async function run() {
   }
 
   function getFormGuide(mId) {
-    // In pre-season (before GW 1 is played), return neutral dashes
     if (isPreSeasonMode) {
       return ['-', '-', '-', '-', '-'];
     }
-
     const form = [];
     const startGw = Math.max(1, currentGw - 4);
     for (let g = startGw; g <= currentGw; g++) {
@@ -227,18 +240,28 @@ async function run() {
   }
 
   let standings = managers.map(m => {
-    const grossScore = gwData && gwData.scores ? (gwData.scores[m.id] || 0) : 0;
-    const hitCost = gwData && gwData.hits ? (gwData.hits[m.id] || 0) : 0;
-    const transfers = gwData && gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
+    const grossScore = gwData.scores ? (gwData.scores[m.id] || 0) : 0;
+    const hitCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
+    const transfers = gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
     const netScore = grossScore - hitCost;
+    const bench = gwData.benchPoints ? (gwData.benchPoints[m.id] || 0) : 0;
+    const captain = gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
     const seasonTotalNet = getSeasonNetUpToGw(m.id, currentGw);
-    const chip = gwData && gwData.chipsUsed ? (gwData.chipsUsed[m.id] || null) : null;
+    const chip = gwData.chipsUsed ? (gwData.chipsUsed[m.id] || null) : null;
     const form = getFormGuide(m.id);
+    const aba = ABA_ACCOUNTS[m.id] || '';
 
-    return { ...m, grossScore, hitCost, transfers, netScore, seasonTotalNet, chip, form };
+    return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, seasonTotalNet, chip, form, aba };
   });
 
-  standings.sort((a, b) => b.netScore - a.netScore);
+  // 4-Layer Tiebreaker Sort
+  standings.sort((a, b) => {
+    if (b.netScore !== a.netScore) return b.netScore - a.netScore;
+    if (b.bench !== a.bench) return b.bench - a.bench;
+    if (b.captain !== a.captain) return b.captain - a.captain;
+    if (a.hitCost !== b.hitCost) return a.hitCost - b.hitCost;
+    return b.seasonTotalNet - a.seasonTotalNet;
+  });
 
   standings = standings.map((m, idx) => {
     const rank = idx + 1;
@@ -252,21 +275,20 @@ async function run() {
     else if (rank === 3) { rankBg = 'linear-gradient(135deg, #d97706, #b45309)'; }
     else if (rank > splitSize && (!hasNeutral || rank !== neutralRank)) { rankBg = 'linear-gradient(135deg, #ef4444, #b91c1c)'; }
 
-    // FULL MANAGER NAME in payout notes
     if (rank <= splitSize) {
       payout = entryFee;
       const payer = standings[total - rank];
       note = `Gets from ${payer ? payer.name : 'Bottom'}`;
-      rowBg = 'rgba(16, 185, 129, 0.08)'; // Soft green background for top winners
+      rowBg = 'rgba(16, 185, 129, 0.08)';
     } else if (hasNeutral && rank === neutralRank) {
       payout = 0;
       note = 'Neutral';
-      rowBg = 'rgba(99, 102, 241, 0.05)'; // Soft blue/neutral background
+      rowBg = 'transparent';
     } else {
       payout = -entryFee;
       const receiver = standings[total - rank];
       note = `Pays to ${receiver ? receiver.name : 'Top'}`;
-      rowBg = 'rgba(239, 68, 68, 0.08)'; // Soft red background for bottom losers
+      rowBg = 'rgba(239, 68, 68, 0.08)';
     }
 
     return { ...m, rank, payout, note, rankBg, rowBg };
@@ -274,55 +296,82 @@ async function run() {
 
   const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
 
-  // Determine Banners: MOTM and MOTS (STRICT RULE: MOTM ONLY appears on 1st GW of the new month)
+  // MOTM Banner calculation
   let bannerHtml = '';
+  const activeMonth = months.find(m => m.gws && m.gws.includes(currentGw));
+  if (activeMonth) {
+    const monthEndGw = Math.max(...activeMonth.gws);
+    if (currentGw >= monthEndGw) {
+      const motmScores = managers.map(m => {
+        let pts = 0;
+        activeMonth.gws.forEach(g => {
+          const gData = gameweeks.find(x => x.gw === g);
+          if (gData && gData.scores) pts += (gData.scores[m.id] || 0) - (gData.hits ? (gData.hits[m.id] || 0) : 0);
+        });
+        return { name: m.name, pts };
+      }).sort((a, b) => b.pts - a.pts);
 
-  // 1. Manager of the Month Check
-  // ONLY triggers when currentGw === prevMonth.endGw + 1
-  const targetMotmMonth = months.find(m => Math.max(...m.gws) + 1 === currentGw);
-
-  if (targetMotmMonth) {
-    const monthTotals = managers.map(m => {
-      let mNet = 0;
-      targetMotmMonth.gws.forEach(g => {
-        const gD = gameweeks.find(x => x.gw === g);
-        if (gD && gD.scores) {
-          mNet += (gD.scores[m.id] || 0) - (gD.hits ? (gD.hits[m.id] || 0) : 0);
-        }
-      });
-      return { name: m.name, netPts: mNet };
-    });
-    monthTotals.sort((a, b) => b.netPts - a.netPts);
-    const motmLeader = monthTotals[0];
-
-    if (motmLeader) {
-      bannerHtml = `
-        <div class="motm-banner">
-          <span>🏆 <strong>${targetMotmMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name}</span></span>
-        </div>
-      `;
+      const motmLeader = motmScores[0];
+      if (motmLeader) {
+        bannerHtml += `
+          <div class="motm-banner">
+            <span>🏆 <strong>${activeMonth.name} Manager of the Month</strong>: <span class="motm-name">${motmLeader.name} (${motmLeader.pts} pts)</span></span>
+          </div>
+        `;
+      }
     }
   }
 
-  // 2. Manager of the Season Check (GW 38 / End of Season)
-  if (currentGw === 38) {
-    const motsLeaders = [...managers].map(m => ({
-      name: m.name,
-      pts: getSeasonNetUpToGw(m.id, currentGw)
-    })).sort((a, b) => b.pts - a.pts);
-    const topPts = motsLeaders[0]?.pts;
-    const motsWinners = motsLeaders.filter(l => l.pts === topPts).map(l => l.name).join(' & ');
+  // Pre-fetch Premier League fixtures HTML
+  let fixturesEmailHtml = '';
+  try {
+    const fixResp = await fetch(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGw}`);
+    if (fixResp.ok) {
+      const rawFix = await fixResp.json();
+      const bootResp = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/');
+      let teamMap = {};
+      if (bootResp.ok) {
+        const bootData = await bootResp.json();
+        if (bootData && bootData.teams) {
+          bootData.teams.forEach(t => { teamMap[t.id] = t.name; });
+        }
+      }
 
-    bannerHtml = `
-      <div class="mots-banner">
-        <span>🏆 <strong>MANAGER OF THE SEASON</strong>: <span class="mots-name">${motsWinners}</span></span>
-      </div>
-    ` + bannerHtml;
+      if (rawFix && rawFix.length > 0) {
+        const rows = rawFix.map(f => {
+          const home = teamMap[f.team_h] || `Team ${f.team_h}`;
+          const away = teamMap[f.team_a] || `Team ${f.team_a}`;
+          const score = f.finished ? `${f.team_h_score} - ${f.team_a_score}` : (f.started ? `LIVE ${f.team_h_score}-${f.team_a_score}` : 'vs');
+          const status = f.finished ? 'FT' : (f.started ? 'LIVE 🔴' : (f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : 'Scheduled'));
+          return `
+            <tr style="border-bottom:1px solid #1e293b;">
+              <td style="padding:8px 12px;text-align:right;font-weight:700;color:#f8fafc;width:40%;">${home}</td>
+              <td style="padding:8px;text-align:center;width:20%;">
+                <span style="display:inline-block;padding:3px 10px;border-radius:6px;background:rgba(255,255,255,0.06);color:#00ff87;font-weight:800;font-size:12px;">${score}</span>
+                <span style="display:block;font-size:9px;color:#94a3b8;margin-top:2px;font-weight:700;">${status}</span>
+              </td>
+              <td style="padding:8px 12px;text-align:left;font-weight:700;color:#f8fafc;width:40%;">${away}</td>
+            </tr>
+          `;
+        }).join('');
+
+        fixturesEmailHtml = `
+          <div style="margin-top:28px;background:#0f172a;border-radius:12px;padding:16px;border:1px solid #1e293b;">
+            <h3 style="margin:0 0 14px 0;color:#00ff87;font-family:'Outfit',sans-serif;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;">⚽ Premier League Gameweek ${currentGw} Match Results</h3>
+            <table style="width:100%;border-collapse:collapse;font-size:13px;">
+              ${rows}
+            </table>
+          </div>
+        `;
+      }
+    }
+  } catch (err) {
+    console.warn('⚠️ Fixture fetch for email failed:', err.message);
   }
 
   const timestamp = Date.now();
 
-  // Build High-Fidelity Landscape HTML Email Template
+  // Build High-Fidelity HTML Email Template
   const emailHtml = `
     <!DOCTYPE html>
     <html>
@@ -331,7 +380,7 @@ async function run() {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <style>
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #060913; color: #f8fafc; margin: 0; padding: 20px 10px; }
-        .card-wrapper { max-width: 940px; margin: 0 auto; background: #0c1222; border-radius: 16px; padding: 24px 28px; border: 1px solid #1e293b; border-top: 3px solid #00ff87; box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
+        .card-wrapper { max-width: 980px; margin: 0 auto; background: #0c1222; border-radius: 16px; padding: 24px 28px; border: 1px solid #1e293b; border-top: 3px solid #00ff87; box-shadow: 0 16px 40px rgba(0,0,0,0.6); }
         
         .header-table { width: 100%; border-collapse: collapse; border-bottom: 1px solid #1e293b; margin-bottom: 16px; }
         .header-title { font-size: 18px; font-weight: 800; color: #ffffff; margin: 0; line-height: 1.3; }
@@ -341,36 +390,33 @@ async function run() {
         .motm-banner { padding: 12px 18px; margin-bottom: 20px; border-radius: 8px; font-size: 14px; font-weight: 700; background: linear-gradient(135deg, #fcd34d, #f59e0b); color: #3b1700; border: 1px solid #eab308; box-shadow: 0 4px 16px rgba(234, 179, 8, 0.3); }
         .motm-name { font-size: 15px; font-weight: 900; padding: 3px 10px; border-radius: 6px; background: #3b1700; color: #fcd34d; margin-left: 6px; display: inline-block; }
 
-        .mots-banner { padding: 14px 20px; margin-bottom: 20px; border-radius: 8px; font-size: 15px; font-weight: 800; background: linear-gradient(135deg, #00ff87, #0ea5e9); color: #060913; border: 1px solid #00ff87; box-shadow: 0 4px 20px rgba(0, 255, 135, 0.3); }
-        .mots-name { font-size: 16px; font-weight: 900; padding: 3px 12px; border-radius: 6px; background: #060913; color: #00ff87; margin-left: 6px; display: inline-block; }
-
         .standings-table { width: 100%; border-collapse: separate; border-spacing: 0 4px; margin-top: 8px; }
-        .standings-table th { background: #060913; color: #94a3b8; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 12px 8px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
+        .standings-table th { background: #060913; color: #94a3b8; font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.5px; padding: 10px 6px; text-align: center; border-bottom: 1px solid #1e293b; white-space: nowrap; }
         .standings-table th.text-left { text-align: left; }
         .standings-table th.text-center { text-align: center; }
-        .standings-table td { padding: 12px 8px; font-size: 13px; vertical-align: middle; white-space: nowrap; }
+        .standings-table td { padding: 10px 6px; font-size: 12.5px; vertical-align: middle; white-space: nowrap; }
 
-        .rank-circle { width: 28px; height: 28px; border-radius: 50%; display: inline-block; line-height: 28px; font-weight: 900; font-size: 12px; text-align: center; color: #fff; }
-        .manager-name { font-weight: 800; color: #f8fafc; font-size: 13px; white-space: nowrap; }
-        .team-name { font-size: 11px; color: #94a3b8; margin-top: 2px; white-space: nowrap; }
+        .rank-circle { width: 26px; height: 26px; border-radius: 50%; display: inline-block; line-height: 26px; font-weight: 900; font-size: 12px; text-align: center; color: #fff; }
+        .manager-name { font-weight: 800; color: #f8fafc; font-size: 12.5px; white-space: nowrap; }
+        .team-name { font-size: 10.5px; color: #94a3b8; margin-top: 2px; white-space: nowrap; }
         
         .net-pts { font-weight: 900; color: #f8fafc; font-size: 15px; text-align: center; }
 
-        .chip-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 800; text-transform: uppercase; background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
-        .hit-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 900; background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); margin-left: 4px; }
+        .chip-tag { display: inline-block; padding: 2px 7px; border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase; background: rgba(234, 179, 8, 0.15); color: #eab308; border: 1px solid rgba(234, 179, 8, 0.4); }
+        .hit-badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 10px; font-weight: 900; background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); margin-left: 3px; }
 
-        .form-pill { display: inline-block; width: 17px; height: 17px; line-height: 17px; border-radius: 50%; font-size: 10px; font-weight: 900; text-align: center; margin: 0 1px; color: #fff; }
+        .form-pill { display: inline-block; width: 17px; height: 17px; line-height: 17px; border-radius: 50%; font-size: 9.5px; font-weight: 900; text-align: center; margin: 0 1px; color: #fff; }
         .form-w { background: #10b981; }
         .form-l { background: #ef4444; }
         .form-n { background: #64748b; }
 
-        .payout-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 900; text-align: center; min-width: 60px; }
+        .payout-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11.5px; font-weight: 900; text-align: center; min-width: 55px; }
         .payout-win { background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); }
         .payout-loss { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
         .payout-neutral { background: rgba(148, 163, 184, 0.2); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.4); }
-        .payout-note { display: block; font-size: 10px; color: #94a3b8; margin-top: 3px; font-weight: 600; text-align: center; }
+        .payout-note { display: block; font-size: 9.5px; color: #94a3b8; margin-top: 2px; font-weight: 600; text-align: center; }
 
-        .demo-tag { background: #f59e0b; color: #000; font-size: 10px; font-weight: 900; padding: 3px 8px; border-radius: 4px; display: inline-block; letter-spacing: 0.5px; margin-bottom: 6px; }
+        .aba-pill { font-family: monospace; font-size: 11px; font-weight: 700; color: #cbd5e1; background: rgba(255,255,255,0.06); border: 1px solid #334155; padding: 2px 6px; border-radius: 4px; display: inline-block; letter-spacing: 0.3px; }
       </style>
     </head>
     <body>
@@ -379,7 +425,7 @@ async function run() {
         <table class="header-table">
           <tr>
             <td style="border:none;padding:0 0 14px 0;vertical-align:middle;">
-              ${isPreSeasonMode ? '<span class="demo-tag">PRE-SEASON PREVIEW</span><br>' : ''}
+              ${isPreSeasonMode ? '<span style="background:#f59e0b;color:#000;font-size:10px;font-weight:900;padding:3px 8px;border-radius:4px;display:inline-block;letter-spacing:0.5px;margin-bottom:6px;">PRE-SEASON PREVIEW</span><br>' : ''}
               <h1 class="header-title">Gameweek Standings &amp; Weekly Payouts — <span class="league-name-highlight">${leagueName}</span></h1>
             </td>
             <td style="border:none;padding:0 0 14px 0;text-align:right;vertical-align:middle;white-space:nowrap;width:120px;">
@@ -393,15 +439,16 @@ async function run() {
         <table class="standings-table">
           <thead>
             <tr>
-              <th style="width:36px;">Pos</th>
+              <th style="width:34px;">Pos</th>
               <th class="text-left">Manager &amp; Team</th>
-              <th style="width:50px;">Gross</th>
-              <th style="width:85px;">Transfers</th>
-              <th style="width:65px;">Net Pts</th>
-              <th style="width:75px;">Season Pts</th>
-              <th style="width:80px;">Chip Used</th>
-              <th style="width:110px;">Form (Last 5)</th>
-              <th class="text-center" style="width:160px;">GW Payout</th>
+              <th style="width:95px;">ABA</th>
+              <th style="width:46px;">Gross</th>
+              <th style="width:75px;">Transfers</th>
+              <th style="width:60px;">Net Pts</th>
+              <th style="width:70px;">Season Pts</th>
+              <th style="width:70px;">Chip</th>
+              <th style="width:95px;">Form</th>
+              <th class="text-center" style="width:140px;">GW Payout</th>
             </tr>
           </thead>
           <tbody>
@@ -414,6 +461,9 @@ async function run() {
                   <div class="manager-name">${m.name}</div>
                   <div class="team-name">${m.teamName}</div>
                 </td>
+                <td style="text-align:center;">
+                  ${m.aba ? `<span class="aba-pill">${m.aba}</span>` : '<span style="color:#64748b;">-</span>'}
+                </td>
                 <td style="text-align:center;font-weight:700;color:#cbd5e1;">${m.grossScore}</td>
                 <td style="text-align:center;font-weight:700;color:#cbd5e1;">
                   ${m.transfers}${m.hitCost > 0 ? `<span class="hit-badge">-${m.hitCost}</span>` : ''}
@@ -421,7 +471,7 @@ async function run() {
                 <td class="net-pts">${m.netScore}</td>
                 <td style="text-align:center;">
                   ${m.seasonTotalNet === maxSeasonPts
-                    ? `<span style="background:#00ff87;color:#060913;font-weight:900;padding:3px 8px;border-radius:12px;font-size:12px;display:inline-block;box-shadow:0 0 10px rgba(0,255,135,0.4);">${m.seasonTotalNet}</span>`
+                    ? `<span style="background:#00ff87;color:#060913;font-weight:900;padding:2px 7px;border-radius:12px;font-size:11.5px;display:inline-block;box-shadow:0 0 10px rgba(0,255,135,0.4);">${m.seasonTotalNet}</span>`
                     : `<span style="color:#04f5ff;font-weight:800;">${m.seasonTotalNet}</span>`}
                 </td>
                 <td style="text-align:center;">
@@ -441,7 +491,7 @@ async function run() {
                     <span class="payout-badge ${m.payout > 0 ? 'payout-win' : m.payout < 0 ? 'payout-loss' : 'payout-neutral'}">
                       ${m.payout > 0 ? `+$${m.payout}.00` : m.payout < 0 ? `-$${Math.abs(m.payout)}.00` : `$0.00`}
                     </span>
-                    <span class="payout-note" style="display:block;text-align:center;margin-top:3px;">${m.note}</span>
+                    <span class="payout-note">${m.note}</span>
                   </div>
                 </td>
               </tr>
@@ -449,57 +499,7 @@ async function run() {
           </tbody>
         </table>
 
-        <!-- Fetch Premier League Match Schedules & Results for currentGw -->
-        ${(() => {
-          let fixturesEmailHtml = '';
-          return (async () => {
-            try {
-              const fixResp = await fetch(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGw}`);
-              if (fixResp.ok) {
-                const rawFix = await fixResp.json();
-                const bootResp = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/');
-                let teamMap = {};
-                if (bootResp.ok) {
-                  const bootData = await bootResp.json();
-                  if (bootData && bootData.teams) {
-                    bootData.teams.forEach(t => { teamMap[t.id] = t.name; });
-                  }
-                }
-
-                if (rawFix && rawFix.length > 0) {
-                  const rows = rawFix.map(f => {
-                    const home = teamMap[f.team_h] || `Team ${f.team_h}`;
-                    const away = teamMap[f.team_a] || `Team ${f.team_a}`;
-                    const score = f.finished ? `${f.team_h_score} - ${f.team_a_score}` : (f.started ? `LIVE ${f.team_h_score}-${f.team_a_score}` : 'vs');
-                    const status = f.finished ? 'FT' : (f.started ? 'LIVE 🔴' : (f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : 'Scheduled'));
-                    return `
-                      <tr style="border-bottom:1px solid #1e293b;">
-                        <td style="padding:8px 12px;text-align:right;font-weight:700;color:#f8fafc;width:40%;">${home}</td>
-                        <td style="padding:8px;text-align:center;width:20%;">
-                          <span style="display:inline-block;padding:3px 10px;border-radius:6px;background:rgba(255,255,255,0.06);color:#00ff87;font-weight:800;font-size:12px;">${score}</span>
-                          <span style="display:block;font-size:9px;color:#94a3b8;margin-top:2px;font-weight:700;">${status}</span>
-                        </td>
-                        <td style="padding:8px 12px;text-align:left;font-weight:700;color:#f8fafc;width:40%;">${away}</td>
-                      </tr>
-                    `;
-                  }).join('');
-
-                  fixturesEmailHtml = `
-                    <div style="margin-top:28px;background:#0f172a;border-radius:12px;padding:16px;border:1px solid #1e293b;">
-                      <h3 style="margin:0 0 14px 0;color:#00ff87;font-family:'Outfit',sans-serif;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;">⚽ Premier League Gameweek ${currentGw} Match Results</h3>
-                      <table style="width:100%;border-collapse:collapse;font-size:13px;">
-                        ${rows}
-                      </table>
-                    </div>
-                  `;
-                }
-              }
-            } catch (err) {
-              console.warn('⚠️ Fixture fetch for email failed:', err);
-            }
-            return fixturesEmailHtml;
-          })();
-        })()}
+        ${fixturesEmailHtml}
 
       </div>
     </body>
