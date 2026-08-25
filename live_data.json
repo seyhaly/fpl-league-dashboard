@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T13:57:01Z",
+  "lastUpdated": "2026-08-25T14:35:40Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -1639,6 +1639,24 @@
       "first_name": "Luka",
       "second_name": "Lynch",
       "element_type": 3,
+      "team": "AVL",
+      "team_name": "Aston Villa",
+      "team_id": 2,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "BHA",
+      "opponent_short": "BHA",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "611": {
+      "id": 611,
+      "web_name": "Wan-Bissaka",
+      "first_name": "Aaron",
+      "second_name": "Wan-Bissaka",
+      "element_type": 2,
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
@@ -8653,24 +8671,6 @@
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
     },
-    "403": {
-      "id": 403,
-      "web_name": "Savinho",
-      "first_name": "Sávio",
-      "second_name": "Moreira de Oliveira",
-      "element_type": 3,
-      "team": "MCI",
-      "team_name": "Man City",
-      "team_id": 15,
-      "event_points": 0,
-      "now_cost": "6.5",
-      "opponent": "BOU",
-      "opponent_short": "BOU",
-      "difficulty": 3,
-      "minutes": 0,
-      "match_status": "dnp",
-      "status_label": "✕ DNP (0m)"
-    },
     "404": {
       "id": 404,
       "web_name": "Reijnders",
@@ -10453,6 +10453,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "403": {
+      "id": 403,
+      "web_name": "Savinho",
+      "first_name": "Sávio",
+      "second_name": "Moreira de Oliveira",
+      "element_type": 3,
+      "team": "TOT",
+      "team_name": "Spurs",
+      "team_id": 19,
+      "event_points": 0,
+      "now_cost": "6.5",
+      "opponent": "BRE",
+      "opponent_short": "BRE",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "455": {
       "id": 455,
       "web_name": "Tonali",
@@ -11550,6 +11568,24 @@
       "minutes": 23,
       "match_status": "played",
       "status_label": "✓ Played"
+    },
+    "612": {
+      "id": 612,
+      "web_name": "Methalie",
+      "first_name": "Dayann",
+      "second_name": "Méthalie",
+      "element_type": 2,
+      "team": "SUN",
+      "team_name": "Sunderland",
+      "team_id": 20,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "IPS",
+      "opponent_short": "IPS",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     }
   },
   "squadPicks": {
