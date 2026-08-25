@@ -9,6 +9,8 @@
     showMotmBadge: false,
     showMotsBadge: false,
     classicSheetSdChipMode: 'current', // 'current' | 'all' | 'none'
+    classicSheetBannerBg: localStorage.getItem('cs_banner_bg') || '#73679f',
+    classicSheetBannerText: localStorage.getItem('cs_banner_text') || '#ffffff',
     theme: localStorage.getItem('fpl_admin_theme') || 'dark',
     motsPrizePool: 50,
     dataset: JSON.parse(JSON.stringify(window.DEMO_DATA)),
@@ -559,6 +561,37 @@
         renderClassicSheetView();
       });
     }
+
+    const bgPicker = document.getElementById('classicSheetBannerBg');
+    const textPicker = document.getElementById('classicSheetBannerText');
+    const bannerEl = document.getElementById('classicSheetBanner');
+
+    function applyBannerColors() {
+      if (bannerEl) {
+        bannerEl.style.backgroundColor = state.classicSheetBannerBg;
+        bannerEl.style.color = state.classicSheetBannerText;
+      }
+      if (bgPicker) bgPicker.value = state.classicSheetBannerBg;
+      if (textPicker) textPicker.value = state.classicSheetBannerText;
+    }
+
+    if (bgPicker) {
+      bgPicker.addEventListener('input', (e) => {
+        state.classicSheetBannerBg = e.target.value;
+        localStorage.setItem('cs_banner_bg', state.classicSheetBannerBg);
+        applyBannerColors();
+      });
+    }
+
+    if (textPicker) {
+      textPicker.addEventListener('input', (e) => {
+        state.classicSheetBannerText = e.target.value;
+        localStorage.setItem('cs_banner_text', state.classicSheetBannerText);
+        applyBannerColors();
+      });
+    }
+
+    applyBannerColors();
   }
 
   // ===================== #8 COLLAPSIBLE SECTIONS =====================
@@ -2516,6 +2549,12 @@
       const rawLeague = state.dataset.leagueName || "Clash of Elite";
       const cleanLeague = rawLeague.replace(/\s*(fantasy\s*league|20\d\d[-–]20\d\d|\d\d\/\d\d)\s*/gi, ' ').trim();
       titleEl.textContent = `${cleanLeague} Fantasy League 2026-2027`;
+    }
+
+    const bannerEl = document.getElementById('classicSheetBanner');
+    if (bannerEl) {
+      bannerEl.style.backgroundColor = state.classicSheetBannerBg || '#73679f';
+      bannerEl.style.color = state.classicSheetBannerText || '#ffffff';
     }
 
     const months = state.dataset.months || [];
