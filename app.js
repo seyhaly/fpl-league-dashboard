@@ -2522,14 +2522,29 @@
       }
 
       const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
-      const subOutMap = {};
-      const subInMap = {};
+
+      // Create display picks with auto-subs moved: Incoming player ➔ Starting XI, Outgoing DNP starter ➔ Bench
+      const displayPicks = squadData.picks.map(p => ({ ...p }));
       autoSubs.forEach(s => {
-        subOutMap[s.element_out] = s;
-        subInMap[s.element_in] = s;
+        const outIdx = displayPicks.findIndex(p => p.element === s.element_out);
+        const inIdx = displayPicks.findIndex(p => p.element === s.element_in);
+        if (outIdx !== -1 && inIdx !== -1) {
+          const outPos = displayPicks[outIdx].position;
+          const inPos = displayPicks[inIdx].position;
+          displayPicks[outIdx].position = inPos;
+          displayPicks[inIdx].position = outPos;
+          displayPicks[inIdx].was_subbed_in = true;
+          displayPicks[outIdx].was_subbed_out = true;
+          displayPicks[inIdx].subbed_for_id = s.element_out;
+          displayPicks[outIdx].subbed_by_id = s.element_in;
+          displayPicks[outIdx].original_bench_role = inPos === 12 ? 'GK' : `Sub ${inPos - 12}`;
+        }
       });
 
-      squadData.picks.forEach(p => {
+      // Sort so Starting XI (1..11) comes first, followed by Bench (12..15)
+      displayPicks.sort((a, b) => a.position - b.position);
+
+      displayPicks.forEach(p => {
         const pl = playersMap[p.element] || {
           web_name: `Player #${p.element}`,
           element_type: p.element_type || (p.position === 1 ? 1 : 2),
@@ -2585,13 +2600,13 @@
             playedCount++;
           }
 
-          let subOutBadge = '';
+          let subInBadge = '';
           let rowClass = '';
-          if (subOutMap[p.element]) {
-            const subInPl = playersMap[subOutMap[p.element].element_in];
-            const inName = subInPl ? subInPl.web_name : 'Bench';
-            subOutBadge = `<span class="auto-sub-badge sub-out" title="Auto-subbed out for ${inName}">🔄 Subbed Out ➔ ${inName}</span>`;
-            rowClass = 'tr-subbed-out';
+          if (p.was_subbed_in) {
+            const subOutPl = playersMap[p.subbed_for_id];
+            const outName = subOutPl ? subOutPl.web_name : 'Starter';
+            subInBadge = `<span class="auto-sub-badge sub-in" title="Auto-subbed into Starting XI for ${outName}">🔄 Subbed In ➔ ${outName}</span>`;
+            rowClass = 'tr-subbed-in';
           }
 
           startingRows += `
@@ -2605,8 +2620,8 @@
               </td>
               <td class="col-opp">${oppBadge}</td>
               <td class="col-status">${statusPill}</td>
-              <td class="col-role">${roleTag} ${subOutBadge}</td>
-              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : ''}">${pts} pts</span></td>
+              <td class="col-role">${roleTag} ${subInBadge}</td>
+              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (p.was_subbed_in ? 'color:var(--pl-cyan);font-weight:800;' : '')}">${pts} pts</span></td>
             </tr>
           `;
           startingPtsTotal += pts;
@@ -2619,15 +2634,15 @@
             }
           }
 
-          const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
+          const subOrder = p.original_bench_role || (p.position === 12 ? 'GK' : `Sub ${p.position - 12}`);
           let benchOrderTag = `<span class="bench-order-badge">🪑 ${subOrder}</span>`;
           let rowClass = '';
 
-          if (subInMap[p.element]) {
-            const subOutPl = playersMap[subInMap[p.element].element_out];
-            const outName = subOutPl ? subOutPl.web_name : 'Starter';
-            benchOrderTag += ` <span class="auto-sub-badge sub-in" title="Auto-subbed in for ${outName}">🔄 Subbed In (+${pts} pts)</span>`;
-            rowClass = 'tr-subbed-in';
+          if (p.was_subbed_out) {
+            const subInPl = playersMap[p.subbed_by_id];
+            const inName = subInPl ? subInPl.web_name : 'Bench';
+            benchOrderTag += ` <span class="auto-sub-badge sub-out" title="Auto-subbed out to Bench for ${inName}">🔄 Subbed Out ➔ ${inName}</span>`;
+            rowClass = 'tr-subbed-out';
           }
 
           benchRows += `
@@ -2642,7 +2657,7 @@
               <td class="col-opp">${oppBadge}</td>
               <td class="col-status">${statusPill}</td>
               <td class="col-role">${benchOrderTag}</td>
-              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive || subInMap[p.element] ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
+              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
             </tr>
           `;
         }
