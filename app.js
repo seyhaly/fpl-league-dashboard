@@ -515,42 +515,6 @@
       });
     }
 
-    const btnExportSheet = document.getElementById('btnExportClassicSheet');
-    if (btnExportSheet) {
-      btnExportSheet.addEventListener('click', async () => {
-        const card = document.getElementById('classicSheetCard');
-        if (!card) return;
-
-        btnExportSheet.disabled = true;
-        btnExportSheet.textContent = '⏳ Generating...';
-
-        try {
-          if (typeof htmlToImage !== 'undefined') {
-            const dataUrl = await htmlToImage.toPng(card, {
-              quality: 1.0,
-              pixelRatio: 2,
-              backgroundColor: '#ffffff',
-              style: {
-                transform: 'none',
-                margin: '0'
-              }
-            });
-            if (dataUrl) {
-              const link = document.createElement('a');
-              link.download = `Classic_Sheet_GW${state.currentGw}_${Date.now()}.png`;
-              link.href = dataUrl;
-              link.click();
-              showToast('📸 Classic Sheet image downloaded!');
-            }
-          }
-        } catch (err) {
-          console.warn('Sheet image export error:', err);
-          showToast('Failed to export sheet image.');
-        } finally {
-          btnExportSheet.disabled = false;
-          btnExportSheet.textContent = '📸 Export Image';
-        }
-      });
     }
 
     const sdChipSelect = document.getElementById('classicSheetSdChipSelect');
