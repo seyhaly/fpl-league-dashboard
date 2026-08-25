@@ -17,7 +17,7 @@ try {
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
 const NOTIFICATION_EMAIL = process.env.NOTIFICATION_EMAIL;
-const FPL_LEAGUE_ID = process.env.FPL_LEAGUE_ID || '389585';
+const FPL_LEAGUE_ID = (process.env.FPL_LEAGUE_ID || '389585').trim();
 
 if (!RESEND_API_KEY || !NOTIFICATION_EMAIL) {
   console.error('❌ Missing RESEND_API_KEY or NOTIFICATION_EMAIL environment variables.');
@@ -99,31 +99,35 @@ async function run() {
     2026484: { name: "Bora Chhe", teamName: "Bora's Team" },
     2024611: { name: "Vibol Dang", teamName: "The White Emperor" },
     2023789: { name: "Monor Noem", teamName: "NORA FC" },
-    2023013: { name: "នរ សិង្ហ កន្សៃ", teamName: "G.O.A.T" }
+    2023013: { name: "នរសិង្ហ កន្សៃ", teamName: "G.O.A.T" }
   };
 
-  // 1. First priority: Load from live_data.json if valid
-  if (liveData && liveData.managers && liveData.managers.length > 0) {
-    console.log('📌 Loading data from live_data.json...');
-    managers = liveData.managers.map(m => ({
-      id: m.id,
-      name: realManagerMap[m.id]?.name || m.name,
-      teamName: realManagerMap[m.id]?.teamName || m.teamName
-    }));
-    currentGw = liveData.currentGw || 1;
-    gameweeks = liveData.gameweeks || [];
-    months = liveData.months || [];
+  // 1. First priority: Load directly from live_data.json
+  if (liveData) {
+    const targetLeague = (liveData.leagues && (liveData.leagues[FPL_LEAGUE_ID] || Object.values(liveData.leagues)[0])) || null;
+    if (targetLeague && targetLeague.managers && targetLeague.managers.length > 0) {
+      console.log(`📌 Loaded live league data for ${targetLeague.leagueName || leagueName} with ${targetLeague.managers.length} managers!`);
+      leagueName = targetLeague.leagueName || leagueName;
+      managers = targetLeague.managers.map(m => ({
+        id: m.id,
+        name: realManagerMap[m.id]?.name || m.name,
+        teamName: realManagerMap[m.id]?.teamName || m.teamName
+      }));
+      currentGw = liveData.currentGw || targetLeague.currentGw || 1;
+      gameweeks = targetLeague.gameweeks || [];
+      months = targetLeague.months || [];
 
-    const gwStatus = liveData.eventStatuses ? liveData.eventStatuses[currentGw] : null;
-    if (gwStatus) {
-      isGwFinished = !!(gwStatus.finished || gwStatus.data_checked);
+      const gwStatus = liveData.eventStatuses ? liveData.eventStatuses[currentGw] : null;
+      if (gwStatus) {
+        isGwFinished = !!(gwStatus.finished || gwStatus.data_checked);
+      }
     }
   }
 
-  // 2. Try fetching live FPL API if numeric league ID and not already finished
-  if (managers.length === 0 && /^\d+$/.test(FPL_LEAGUE_ID.trim())) {
+  // 2. Fallback to live FPL API if not loaded from live_data.json
+  if (managers.length === 0 && /^\d+$/.test(FPL_LEAGUE_ID)) {
     try {
-      const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${FPL_LEAGUE_ID.trim()}/standings/`;
+      const standingsUrl = `https://fantasy.premierleague.com/api/leagues-classic/${FPL_LEAGUE_ID}/standings/`;
       const data = await fetchFplJson(standingsUrl, 5000);
 
       if (data) {
@@ -146,13 +150,6 @@ async function run() {
               isGwFinished = currentEvent.finished || currentEvent.data_checked;
             }
           }
-        } else if (data.new_entries && data.new_entries.results && data.new_entries.results.length > 0) {
-          isPreSeasonMode = true;
-          managers = data.new_entries.results.map(r => ({
-            id: r.entry,
-            name: realManagerMap[r.entry]?.name || r.player_name || `${r.player_first_name || ''} ${r.player_last_name || ''}`.trim() || r.entry_name,
-            teamName: realManagerMap[r.entry]?.teamName || r.entry_name
-          }));
         }
       }
     } catch (err) {
@@ -160,12 +157,12 @@ async function run() {
     }
   }
 
-  // Fallback to Demo Data ONLY if no managers exist
+  // 3. Fallback to Demo Data ONLY if no managers exist
   if (managers.length === 0 && demoData) {
     console.log('📌 Using Demo dataset fallback...');
     isPreSeasonMode = true;
     managers = demoData.managers;
-    currentGw = 10;
+    currentGw = 1;
     gameweeks = demoData.gameweeks;
     months = demoData.months || [];
   }
@@ -322,56 +319,9 @@ async function run() {
     }
   }
 
-  // Pre-fetch Premier League fixtures HTML
-  let fixturesEmailHtml = '';
-  try {
-    const fixResp = await fetch(`https://fantasy.premierleague.com/api/fixtures/?event=${currentGw}`);
-    if (fixResp.ok) {
-      const rawFix = await fixResp.json();
-      const bootResp = await fetch('https://fantasy.premierleague.com/api/bootstrap-static/');
-      let teamMap = {};
-      if (bootResp.ok) {
-        const bootData = await bootResp.json();
-        if (bootData && bootData.teams) {
-          bootData.teams.forEach(t => { teamMap[t.id] = t.name; });
-        }
-      }
-
-      if (rawFix && rawFix.length > 0) {
-        const rows = rawFix.map(f => {
-          const home = teamMap[f.team_h] || `Team ${f.team_h}`;
-          const away = teamMap[f.team_a] || `Team ${f.team_a}`;
-          const score = f.finished ? `${f.team_h_score} - ${f.team_a_score}` : (f.started ? `LIVE ${f.team_h_score}-${f.team_a_score}` : 'vs');
-          const status = f.finished ? 'FT' : (f.started ? 'LIVE 🔴' : (f.kickoff_time ? new Date(f.kickoff_time).toLocaleDateString('en-GB', { weekday: 'short', hour: '2-digit', minute: '2-digit' }) : 'Scheduled'));
-          return `
-            <tr style="border-bottom:1px solid #1e293b;">
-              <td style="padding:8px 12px;text-align:right;font-weight:700;color:#f8fafc;width:40%;">${home}</td>
-              <td style="padding:8px;text-align:center;width:20%;">
-                <span style="display:inline-block;padding:3px 10px;border-radius:6px;background:rgba(255,255,255,0.06);color:#00ff87;font-weight:800;font-size:12px;">${score}</span>
-                <span style="display:block;font-size:9px;color:#94a3b8;margin-top:2px;font-weight:700;">${status}</span>
-              </td>
-              <td style="padding:8px 12px;text-align:left;font-weight:700;color:#f8fafc;width:40%;">${away}</td>
-            </tr>
-          `;
-        }).join('');
-
-        fixturesEmailHtml = `
-          <div style="margin-top:28px;background:#0f172a;border-radius:12px;padding:16px;border:1px solid #1e293b;">
-            <h3 style="margin:0 0 14px 0;color:#00ff87;font-family:'Outfit',sans-serif;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;">⚽ Premier League Gameweek ${currentGw} Match Results</h3>
-            <table style="width:100%;border-collapse:collapse;font-size:13px;">
-              ${rows}
-            </table>
-          </div>
-        `;
-      }
-    }
-  } catch (err) {
-    console.warn('⚠️ Fixture fetch for email failed:', err.message);
-  }
-
   const timestamp = Date.now();
 
-  // Build High-Fidelity HTML Email Template
+  // Build Clean High-Fidelity HTML Email Template
   const emailHtml = `
     <!DOCTYPE html>
     <html>
@@ -498,8 +448,6 @@ async function run() {
             `).join('')}
           </tbody>
         </table>
-
-        ${fixturesEmailHtml}
 
       </div>
     </body>
