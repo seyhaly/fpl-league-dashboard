@@ -3539,12 +3539,8 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   z-index: 10;
 }
 
-/* Sticky Frozen Right Columns */
+/* Payment Column Styles */
 .classic-sheet-table .cs-col-payment {
-  position: sticky;
-  right: 0;
-  z-index: 5;
-  background: #ffffff;
   text-align: center;
   font-weight: 900;
   font-size: 13.5px;
@@ -3553,12 +3549,40 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   min-width: 125px;
   width: 125px;
   max-width: 135px;
+  background: #ffffff;
+}
+
+.classic-sheet-table .cs-col-payment.cs-payment-sticky {
+  position: sticky;
+  right: 0;
+  z-index: 5;
   border-left: 2.5px solid #2b6cb0 !important;
   box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
 }
 
+.classic-sheet-table .cs-col-payment.cs-payment-inline {
+  position: static;
+  z-index: auto;
+  border-left: 1.5px solid #777777;
+  box-shadow: none;
+}
+
+.classic-sheet-table .cs-col-payment.cs-payment-next-to-gw {
+  position: static;
+  z-index: auto;
+  border-left: 2px solid #2b6cb0 !important;
+  border-right: 2px solid #2b6cb0 !important;
+  box-shadow: none;
+}
+
 .classic-sheet-table th.cs-col-payment {
   background: #ffffff;
+}
+
+.classic-sheet-table th.cs-col-payment.cs-payment-sticky {
+  position: sticky;
+  right: 0;
+  z-index: 10;
 }
 
 .classic-sheet-table th.cs-th-sd {

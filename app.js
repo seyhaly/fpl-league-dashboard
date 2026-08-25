@@ -551,25 +551,20 @@
       });
     }
 
-    const btnToggleSdChip = document.getElementById('btnToggleSdChip');
-    if (btnToggleSdChip) {
-      btnToggleSdChip.addEventListener('click', () => {
-        if (state.classicSheetSdChipMode === 'current') {
-          state.classicSheetSdChipMode = 'all';
-          btnToggleSdChip.className = 'classic-sheet-toggle-btn active';
-          btnToggleSdChip.textContent = '⚡ S.D. & Chips: All GWs';
-          showToast('S.D. & Chips: Displaying for All GWs');
-        } else if (state.classicSheetSdChipMode === 'all') {
-          state.classicSheetSdChipMode = 'none';
-          btnToggleSdChip.className = 'classic-sheet-toggle-btn';
-          btnToggleSdChip.textContent = '⚡ S.D. & Chips: Off';
-          showToast('S.D. & Chips: Hidden');
-        } else {
-          state.classicSheetSdChipMode = 'current';
-          btnToggleSdChip.className = 'classic-sheet-toggle-btn active';
-          btnToggleSdChip.textContent = '⚡ S.D. & Chips: Current GW';
-          showToast('S.D. & Chips: Displaying for Current GW');
-        }
+    const sdChipSelect = document.getElementById('classicSheetSdChipSelect');
+    if (sdChipSelect) {
+      sdChipSelect.value = state.classicSheetSdChipMode || 'current';
+      sdChipSelect.addEventListener('change', (e) => {
+        state.classicSheetSdChipMode = e.target.value;
+        renderClassicSheetView();
+      });
+    }
+
+    const paymentPosSelect = document.getElementById('classicSheetPaymentPosSelect');
+    if (paymentPosSelect) {
+      paymentPosSelect.value = state.classicSheetPaymentPos || 'sticky';
+      paymentPosSelect.addEventListener('change', (e) => {
+        state.classicSheetPaymentPos = e.target.value;
         renderClassicSheetView();
       });
     }
@@ -2554,12 +2549,8 @@
         selectEl.appendChild(opt);
       });
 
-      const activeMonth = months.find(m => m.gws && m.gws.includes(currentGw));
-      if (activeMonth) {
-        selectEl.value = activeMonth.name;
-      } else {
-        selectEl.value = 'recent';
-      }
+      // Default by user request: Recent 5 Gameweeks
+      selectEl.value = 'recent';
 
       selectEl.addEventListener('change', () => {
         renderClassicSheetView();
@@ -2602,7 +2593,15 @@
 
     const showMots = Boolean(state.showMotsBadge);
     const showMotm = Boolean(state.showMotmBadge);
-    const sdChipMode = state.classicSheetSdChipMode || 'current'; // 'current' | 'all' | 'none'
+
+    const sdChipSelect = document.getElementById('classicSheetSdChipSelect');
+    const sdChipMode = sdChipSelect ? sdChipSelect.value : (state.classicSheetSdChipMode || 'current');
+    state.classicSheetSdChipMode = sdChipMode;
+
+    const paymentPosSelect = document.getElementById('classicSheetPaymentPosSelect');
+    const paymentPos = paymentPosSelect ? paymentPosSelect.value : (state.classicSheetPaymentPos || 'sticky');
+    state.classicSheetPaymentPos = paymentPos;
+
     const activeLatestGw = gwsToDisplay.filter(g => g <= currentGw).pop() || currentGw;
 
     function shouldShowSdChipForGw(g) {
@@ -2621,6 +2620,8 @@
       return String(chipRaw).toUpperCase();
     }
 
+    const paymentClass = paymentPos === 'sticky' ? 'cs-payment-sticky' : (paymentPos === 'next_to_gw' ? 'cs-payment-next-to-gw' : 'cs-payment-inline');
+
     // Calculate MOTS (Manager of the Season)
     let seasonLeader = null;
     if (showMots && currentStandings.length > 0) {
@@ -2638,7 +2639,19 @@
         theadColsHtml += `<th class="cs-col-sd cs-th-sd">S.D.</th><th class="cs-col-chip cs-th-chip">Chip</th>`;
         totalGwColumns += 2;
       }
+      if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+        theadColsHtml += `<th class="cs-col-payment ${paymentClass}">Payment</th>`;
+        totalGwColumns += 1;
+      }
     });
+
+    if (paymentPos !== 'next_to_gw') {
+      theadColsHtml += `<th class="cs-col-payment ${paymentClass}">Payment</th>`;
+    }
+
+    if (showMots) {
+      theadColsHtml += `<th class="cs-col-seasonal">Seasonal prize</th>`;
+    }
 
     let theadHtml = `
       <thead>
@@ -2648,8 +2661,6 @@
           <th class="cs-col-team">Team</th>
           <th class="cs-col-aba">ABA</th>
           ${theadColsHtml}
-          <th class="cs-col-payment">Payment</th>
-          ${showMots ? `<th class="cs-col-seasonal">Seasonal prize</th>` : ''}
         </tr>
       </thead>
     `;
@@ -2677,13 +2688,16 @@
 
       const abaNum = ABA_ACCOUNTS[m.id] || '';
 
-      // Build GW score cells & optional SD/Chip per GW
+      // Build GW score cells & optional SD/Chip / Payment per GW
       let gwCellsHtml = '';
       gwsToDisplay.forEach(g => {
         if (g > currentGw) {
           gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
           if (shouldShowSdChipForGw(g)) {
             gwCellsHtml += `<td class="cs-col-sd"></td><td class="cs-col-chip"></td>`;
+          }
+          if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+            gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
           }
           return;
         }
@@ -2694,6 +2708,9 @@
           gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
           if (shouldShowSdChipForGw(g)) {
             gwCellsHtml += `<td class="cs-col-sd"></td><td class="cs-col-chip"></td>`;
+          }
+          if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+            gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
           }
           return;
         }
@@ -2723,6 +2740,10 @@
 
           gwCellsHtml += `${sdHtml}${chipHtml}`;
         }
+
+        if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+          gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
+        }
       });
 
       const motsCellHtml = (showMots && idx === 0)
@@ -2741,7 +2762,7 @@
           <td class="cs-col-team">${m.teamName}</td>
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
-          <td class="cs-col-payment">${paymentText}</td>
+          ${paymentPos !== 'next_to_gw' ? `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>` : ''}
           ${motsCellHtml}
         </tr>
       `;

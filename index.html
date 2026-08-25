@@ -14,7 +14,7 @@
     body, html { font-family: 'Outfit', sans-serif; }
     h3, .pipeline-gw-title { font-family: 'Inter', sans-serif; }
   </style>
-  <link rel="stylesheet" href="styles.css?v=88.0">
+  <link rel="stylesheet" href="styles.css?v=89.0">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -252,11 +252,18 @@
       </div>
       <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
         <select id="classicSheetMonthSelect" class="classic-sheet-select" aria-label="Select Month for Sheet View">
-          <!-- Populated dynamically by JS -->
+          <!-- Populated dynamically by JS (default Recent 5 Gameweeks) -->
         </select>
-        <button id="btnToggleSdChip" class="classic-sheet-toggle-btn active" title="Click to show or hide S.D. and Chip columns">
-          ⚡ S.D. &amp; Chips
-        </button>
+        <select id="classicSheetSdChipSelect" class="classic-sheet-select" aria-label="S.D. and Chips Display Mode">
+          <option value="current">⚡ S.D. &amp; Chips: Current GW</option>
+          <option value="all">⚡ S.D. &amp; Chips: All GWs</option>
+          <option value="none">⚡ S.D. &amp; Chips: Hidden</option>
+        </select>
+        <select id="classicSheetPaymentPosSelect" class="classic-sheet-select" aria-label="Payment Column Position">
+          <option value="sticky">📌 Payment: Freeze at Right</option>
+          <option value="next_to_gw">⬅️ Payment: Next to Current GW</option>
+          <option value="inline_end">➡️ Payment: End of Table (Scrollable)</option>
+        </select>
         <button id="btnExportClassicSheet" class="btn-export-sheet" title="Export as PNG image for Telegram / Chat">
           📸 Export Image
         </button>
@@ -328,7 +335,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.min.js"></script>
 <script src="demoData.js"></script>
-<script src="squadData.js?v=88.0"></script>
-<script src="app.js?v=88.0"></script>
+<script src="squadData.js?v=89.0"></script>
+<script src="app.js?v=89.0"></script>
 </body>
 </html>
