@@ -215,13 +215,132 @@ async function run() {
   const hasNeutral = total % 2 === 1;
   const neutralRank = hasNeutral ? splitSize + 1 : null;
 
+  function computeAutoSubs(picks, automaticSubs, pMap, isBenchBoost) {
+    if (isBenchBoost || !picks || picks.length === 0) return [];
+    if (automaticSubs && automaticSubs.length > 0) {
+      return automaticSubs.map(s => ({
+        element_in: s.element_in,
+        element_out: s.element_out,
+        is_official: true
+      }));
+    }
+
+    const starters = picks.filter(p => p.position <= 11);
+    const bench = picks.filter(p => p.position > 11).sort((a, b) => a.position - b.position);
+
+    const dnpStarters = starters.filter(p => {
+      const pl = pMap[p.element];
+      return pl && pl.match_status === 'dnp';
+    });
+
+    if (dnpStarters.length === 0) return [];
+
+    const computed = [];
+    const usedBenchIds = new Set();
+    const currentFormation = { 1: 0, 2: 0, 3: 0, 4: 0 };
+    starters.forEach(p => {
+      const pl = pMap[p.element];
+      const type = pl?.element_type || (p.position === 1 ? 1 : 2);
+      currentFormation[type] = (currentFormation[type] || 0) + 1;
+    });
+
+    const gkStarter = dnpStarters.find(p => p.position === 1);
+    if (gkStarter) {
+      const benchGk = bench.find(p => p.position === 12);
+      if (benchGk) {
+        const plGk = pMap[benchGk.element];
+        if (plGk && plGk.match_status !== 'dnp') {
+          computed.push({ element_in: benchGk.element, element_out: gkStarter.element, is_official: false });
+          usedBenchIds.add(benchGk.element);
+        }
+      }
+    }
+
+    const outfieldDnps = dnpStarters.filter(p => p.position > 1);
+    const outfieldBench = bench.filter(p => p.position > 12);
+
+    for (const dnpStarter of outfieldDnps) {
+      const pOutInfo = pMap[dnpStarter.element];
+      const outType = pOutInfo?.element_type || 2;
+
+      for (const benchPick of outfieldBench) {
+        if (usedBenchIds.has(benchPick.element)) continue;
+        const pInInfo = pMap[benchPick.element];
+        if (!pInInfo || pInInfo.match_status === 'dnp') continue;
+
+        const inType = pInInfo.element_type || 2;
+        const testFormation = { ...currentFormation };
+        testFormation[outType]--;
+        testFormation[inType]++;
+
+        const isValid = testFormation[1] === 1 &&
+                        testFormation[2] >= 3 && testFormation[2] <= 5 &&
+                        testFormation[3] >= 2 && testFormation[3] <= 5 &&
+                        testFormation[4] >= 1 && testFormation[4] <= 3;
+
+        if (isValid) {
+          computed.push({ element_in: benchPick.element, element_out: dnpStarter.element, is_official: false });
+          usedBenchIds.add(benchPick.element);
+          currentFormation[outType]--;
+          currentFormation[inType]++;
+          break;
+        }
+      }
+    }
+    return computed;
+  }
+
+  function getManagerLiveScore(mId, gw) {
+    const gwData = gameweeks.find(g => g.gw === gw);
+    let fallbackScore = (gwData && gwData.scores) ? (gwData.scores[mId] || 0) : 0;
+
+    const squadPicksMap = (liveData && liveData.squadPicks) || {};
+    const playersMap = (liveData && liveData.players) || {};
+
+    const mgrPicks = squadPicksMap[String(mId)] || squadPicksMap[Number(mId)];
+    const squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
+
+    if (!squadData || !squadData.picks || squadData.picks.length === 0 || !playersMap || Object.keys(playersMap).length === 0) {
+      return fallbackScore;
+    }
+
+    const activeChip = squadData.active_chip ? getChipLabel(squadData.active_chip) : null;
+    const isBenchBoost = Boolean(activeChip && (activeChip.toLowerCase().includes('bb') || activeChip.toLowerCase().includes('bench boost')));
+
+    const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoost);
+    const subInIds = new Set(autoSubs.map(s => s.element_in));
+    const subOutIds = new Set(autoSubs.map(s => s.element_out));
+
+    let liveSum = 0;
+    let hasPlayerPoints = false;
+
+    squadData.picks.forEach(p => {
+      const pl = playersMap[p.element];
+      const pts = pl ? (pl.event_points || 0) : 0;
+      if (pts > 0) hasPlayerPoints = true;
+      const multiplier = p.multiplier || 1;
+
+      if (isBenchBoost) {
+        liveSum += pts * multiplier;
+      } else if (p.position <= 11) {
+        if (!subOutIds.has(p.element)) {
+          liveSum += pts * multiplier;
+        }
+      } else if (subInIds.has(p.element)) {
+        liveSum += pts;
+      }
+    });
+
+    return hasPlayerPoints ? liveSum : fallbackScore;
+  }
+
   function getManagerSeasonNetUpToGw(mId, upToGw) {
     let sum = 0;
     for (let g = 1; g <= upToGw; g++) {
       const gData = gameweeks.find(x => x.gw === g);
-      if (gData && gData.scores) {
-        sum += (gData.scores[mId] || 0) - (gData.hits ? (gData.hits[mId] || 0) : 0);
-      }
+      const gross = getManagerLiveScore(mId, g);
+      const hits = (gData && gData.hits) ? (gData.hits[mId] || 0) : 0;
+      sum += (gross - hits);
     }
     return sum;
   }
@@ -231,7 +350,7 @@ async function run() {
     if (!gwData) return [];
 
     let mList = managers.map(m => {
-      const grossScore = gwData.scores ? (gwData.scores[m.id] || 0) : 0;
+      const grossScore = getManagerLiveScore(m.id, gw);
       const hitCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
       const transfers = gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
       const netScore = grossScore - hitCost;
