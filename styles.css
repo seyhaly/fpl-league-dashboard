@@ -3682,8 +3682,9 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 .classic-sheet-mom-container {
   display: flex;
-  justify-content: center;
-  margin-top: 12px;
+  justify-content: flex-start;
+  padding-left: 169px; /* Aligns directly under Team and ABA columns */
+  margin-top: 10px;
 }
 
 .classic-sheet-mom-pill {
@@ -3691,11 +3692,24 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   color: #ffffff;
   font-size: 14.5px;
   font-weight: 900;
-  padding: 6px 20px;
+  padding: 6px 14px;
   border-radius: 4px;
   display: inline-block;
   letter-spacing: 0.3px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  width: 245px; /* Spans Team (140px) + ABA (105px) */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .classic-sheet-mom-container {
+    padding-left: 0;
+    justify-content: center;
+  }
+  .classic-sheet-mom-pill {
+    width: auto;
+  }
 }
 
 
