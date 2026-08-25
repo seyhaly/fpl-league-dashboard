@@ -3598,6 +3598,31 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 /* Sticky Frozen Right Columns */
+.classic-sheet-table .cs-col-total {
+  position: sticky;
+  right: 125px;
+  z-index: 5;
+  background: #ffffff;
+  text-align: center;
+  font-weight: 900;
+  font-size: 15px;
+  color: #0b5394;
+  padding: 6px 10px;
+  min-width: 75px;
+  width: 75px;
+  max-width: 85px;
+  border-left: 2.5px solid #2b6cb0 !important;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.classic-sheet-table th.cs-col-total {
+  background: #ffffff;
+  color: #0b5394;
+  position: sticky;
+  right: 125px;
+  z-index: 10;
+}
+
 .classic-sheet-table .cs-col-payment {
   position: sticky;
   right: 0;
@@ -3611,8 +3636,6 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   min-width: 125px;
   width: 125px;
   max-width: 135px;
-  border-left: 2.5px solid #2b6cb0 !important;
-  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
 }
 
 .classic-sheet-table th.cs-col-payment {
@@ -3827,11 +3850,21 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   box-shadow: 4px 0 10px rgba(0, 0, 0, 0.35);
 }
 
+[data-theme="dark"] .classic-sheet-table .cs-col-total {
+  background: #0f172a;
+  color: #38bdf8;
+  border-left: 2.5px solid #38bdf8 !important;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .classic-sheet-table th.cs-col-total {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
 [data-theme="dark"] .classic-sheet-table .cs-col-payment {
   background: #0f172a;
   color: #f8fafc;
-  border-left: 2.5px solid #38bdf8 !important;
-  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.35);
 }
 
 [data-theme="dark"] .classic-sheet-table th.cs-col-payment {

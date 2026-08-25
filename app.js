@@ -2624,6 +2624,7 @@
           <th class="cs-col-team">Team</th>
           <th class="cs-col-aba">ABA</th>
           ${theadColsHtml}
+          <th class="cs-col-total">Total</th>
           <th class="cs-col-payment">Payment</th>
           ${showMots ? `<th class="cs-col-seasonal">Seasonal prize</th>` : ''}
         </tr>
@@ -2717,6 +2718,7 @@
           <td class="cs-col-team">${m.teamName}</td>
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
+          <td class="cs-col-total">${m.seasonTotalNet !== undefined ? m.seasonTotalNet : (m.totalPoints || 0)}</td>
           <td class="cs-col-payment">${paymentText}</td>
           ${motsCellHtml}
         </tr>
