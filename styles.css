@@ -3773,4 +3773,95 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   }
 }
 
+/* ===================== CLASSIC SHEET DARK THEME ===================== */
+[data-theme="dark"] .classic-sheet-container {
+  background: #0f172a;
+  color: #f8fafc;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
 
+[data-theme="dark"] .classic-sheet-table-scroll-wrapper {
+  border-color: #38bdf8;
+}
+
+[data-theme="dark"] .classic-sheet-table {
+  background: #1e293b;
+}
+
+[data-theme="dark"] .classic-sheet-table th,
+[data-theme="dark"] .classic-sheet-table td {
+  border-right-color: #334155;
+  border-bottom-color: #334155;
+}
+
+[data-theme="dark"] .classic-sheet-table th {
+  background: #1e293b;
+  color: #38bdf8;
+  border-bottom-color: #38bdf8;
+}
+
+[data-theme="dark"] .classic-sheet-table td {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-col-rank,
+[data-theme="dark"] .classic-sheet-table .cs-col-manager,
+[data-theme="dark"] .classic-sheet-table .cs-col-team,
+[data-theme="dark"] .classic-sheet-table .cs-col-aba {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .classic-sheet-table th.cs-col-rank,
+[data-theme="dark"] .classic-sheet-table th.cs-col-manager,
+[data-theme="dark"] .classic-sheet-table th.cs-col-team,
+[data-theme="dark"] .classic-sheet-table th.cs-col-aba {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-col-aba {
+  border-right: 2.5px solid #38bdf8 !important;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-col-payment {
+  background: #0f172a;
+  color: #f8fafc;
+  border-left: 2.5px solid #38bdf8 !important;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .classic-sheet-table th.cs-col-payment {
+  background: #1e293b;
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .classic-sheet-table th.cs-th-sd {
+  color: #fb7185 !important;
+}
+
+[data-theme="dark"] .classic-sheet-table th.cs-th-chip {
+  color: #38bdf8 !important;
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-col-sd {
+  color: #f87171;
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-col-chip {
+  color: #fbbf24;
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-cell-unplayed {
+  background: #0f172a !important;
+  color: #475569 !important;
+}
+
+[data-theme="dark"] .classic-sheet-mom-pill {
+  background: #0284c7;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
