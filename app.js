@@ -2428,6 +2428,107 @@
         (activeChip.toLowerCase().includes('bboost') || activeChip.toLowerCase().includes('bench boost') || activeChip.toUpperCase().includes('BB'))
       );
 
+      // ===================== AUTO-SUBSTITUTIONS CALCULATION =====================
+      function computeAutoSubs(picks, automaticSubs, pMap, isBenchBoost) {
+        if (isBenchBoost || !picks || picks.length === 0) return [];
+
+        // 1. Official automatic_subs from FPL API
+        if (automaticSubs && automaticSubs.length > 0) {
+          return automaticSubs.map(s => ({
+            element_in: s.element_in,
+            element_out: s.element_out,
+            is_official: true
+          }));
+        }
+
+        // 2. Live predictive auto-subs (starters with DNP substituted by bench in priority order)
+        const starters = picks.filter(p => p.position <= 11);
+        const bench = picks.filter(p => p.position > 11).sort((a, b) => a.position - b.position);
+
+        const dnpStarters = starters.filter(p => {
+          const pl = pMap[p.element];
+          return pl && pl.match_status === 'dnp';
+        });
+
+        if (dnpStarters.length === 0) return [];
+
+        const computed = [];
+        const usedBenchIds = new Set();
+
+        const currentFormation = { 1: 0, 2: 0, 3: 0, 4: 0 };
+        starters.forEach(p => {
+          const pl = pMap[p.element];
+          const type = pl?.element_type || (p.position === 1 ? 1 : 2);
+          currentFormation[type] = (currentFormation[type] || 0) + 1;
+        });
+
+        // Goalkeeper DNP
+        const gkStarter = dnpStarters.find(p => p.position === 1);
+        if (gkStarter) {
+          const benchGk = bench.find(p => p.position === 12);
+          if (benchGk) {
+            const plGk = pMap[benchGk.element];
+            if (plGk && plGk.match_status !== 'dnp') {
+              computed.push({
+                element_in: benchGk.element,
+                element_out: gkStarter.element,
+                is_official: false
+              });
+              usedBenchIds.add(benchGk.element);
+            }
+          }
+        }
+
+        // Outfield DNPs
+        const outfieldDnps = dnpStarters.filter(p => p.position > 1);
+        const outfieldBench = bench.filter(p => p.position > 12);
+
+        for (const dnpStarter of outfieldDnps) {
+          const pOutInfo = pMap[dnpStarter.element];
+          const outType = pOutInfo?.element_type || 2;
+
+          for (const benchPick of outfieldBench) {
+            if (usedBenchIds.has(benchPick.element)) continue;
+
+            const pInInfo = pMap[benchPick.element];
+            if (!pInInfo || pInInfo.match_status === 'dnp') continue;
+
+            const inType = pInInfo.element_type || 2;
+            const testFormation = { ...currentFormation };
+            testFormation[outType]--;
+            testFormation[inType]++;
+
+            // Valid FPL formation: 1 GK, 3-5 DEF, 2-5 MID, 1-3 FWD
+            const isValid = testFormation[1] === 1 &&
+                            testFormation[2] >= 3 && testFormation[2] <= 5 &&
+                            testFormation[3] >= 2 && testFormation[3] <= 5 &&
+                            testFormation[4] >= 1 && testFormation[4] <= 3;
+
+            if (isValid) {
+              computed.push({
+                element_in: benchPick.element,
+                element_out: dnpStarter.element,
+                is_official: false
+              });
+              usedBenchIds.add(benchPick.element);
+              currentFormation[outType]--;
+              currentFormation[inType]++;
+              break;
+            }
+          }
+        }
+
+        return computed;
+      }
+
+      const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
+      const subOutMap = {};
+      const subInMap = {};
+      autoSubs.forEach(s => {
+        subOutMap[s.element_out] = s;
+        subInMap[s.element_in] = s;
+      });
+
       squadData.picks.forEach(p => {
         const pl = playersMap[p.element] || {
           web_name: `Player #${p.element}`,
@@ -2484,8 +2585,17 @@
             playedCount++;
           }
 
+          let subOutBadge = '';
+          let rowClass = '';
+          if (subOutMap[p.element]) {
+            const subInPl = playersMap[subOutMap[p.element].element_in];
+            const inName = subInPl ? subInPl.web_name : 'Bench';
+            subOutBadge = `<span class="auto-sub-badge sub-out" title="Auto-subbed out for ${inName}">🔄 Subbed Out ➔ ${inName}</span>`;
+            rowClass = 'tr-subbed-out';
+          }
+
           startingRows += `
-            <tr>
+            <tr class="${rowClass}">
               <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
               <td class="col-player">
                 <div class="player-name-cell">
@@ -2495,7 +2605,7 @@
               </td>
               <td class="col-opp">${oppBadge}</td>
               <td class="col-status">${statusPill}</td>
-              <td class="col-role">${roleTag}</td>
+              <td class="col-role">${roleTag} ${subOutBadge}</td>
               <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : ''}">${pts} pts</span></td>
             </tr>
           `;
@@ -2510,9 +2620,18 @@
           }
 
           const subOrder = p.position === 12 ? 'GK' : `Sub ${p.position - 12}`;
-          const benchOrderTag = `<span class="bench-order-badge">🪑 ${subOrder}</span>`;
+          let benchOrderTag = `<span class="bench-order-badge">🪑 ${subOrder}</span>`;
+          let rowClass = '';
+
+          if (subInMap[p.element]) {
+            const subOutPl = playersMap[subInMap[p.element].element_out];
+            const outName = subOutPl ? subOutPl.web_name : 'Starter';
+            benchOrderTag += ` <span class="auto-sub-badge sub-in" title="Auto-subbed in for ${outName}">🔄 Subbed In (+${pts} pts)</span>`;
+            rowClass = 'tr-subbed-in';
+          }
+
           benchRows += `
-            <tr>
+            <tr class="${rowClass}">
               <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
               <td class="col-player">
                 <div class="player-name-cell">
@@ -2523,7 +2642,7 @@
               <td class="col-opp">${oppBadge}</td>
               <td class="col-status">${statusPill}</td>
               <td class="col-role">${benchOrderTag}</td>
-              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
+              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive || subInMap[p.element] ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
             </tr>
           `;
         }
@@ -2584,6 +2703,38 @@
     const grossPoints = startingPtsTotal + (isBenchBoostActive ? benchPts : 0);
     const netGwPoints = grossPoints - transferCost;
 
+    // ── Build Auto-Substitutions Banner Section ──────────────
+    let autoSubBannerHtml = '';
+    const squadAutoSubs = (typeof autoSubs !== 'undefined') ? autoSubs : [];
+    if (squadAutoSubs.length > 0) {
+      const isOfficial = squadAutoSubs[0].is_official;
+      const subItems = squadAutoSubs.map(s => {
+        const pOut = playersMap[s.element_out] || { web_name: 'Starter' };
+        const pIn = playersMap[s.element_in] || { web_name: 'Bench' };
+        const inPts = pIn.event_points || 0;
+        return `
+          <div class="auto-sub-item">
+            <span class="auto-sub-pill-out">🔴 OUT: <strong>${pOut.web_name}</strong> (0 pts)</span>
+            <span style="color:var(--text-muted);font-weight:800;margin:0 4px;">➔</span>
+            <span class="auto-sub-pill-in">🟢 IN: <strong>${pIn.web_name}</strong> (+${inPts} pts)</span>
+          </div>
+        `;
+      }).join('');
+
+      autoSubBannerHtml = `
+        <div class="modal-auto-sub-box">
+          <div class="auto-sub-box-header">
+            <span style="font-size:14px;">🔄</span>
+            <span>Automatic Substitution${squadAutoSubs.length > 1 ? 's' : ''}</span>
+            <span class="${isOfficial ? 'auto-sub-confirmed-tag' : 'auto-sub-live-tag'}">${isOfficial ? 'CONFIRMED' : 'LIVE PREVIEW'}</span>
+          </div>
+          <div>
+            ${subItems}
+          </div>
+        </div>
+      `;
+    }
+
     modalBody.innerHTML = `
       <!-- Vital Stats Ribbon -->
       <div class="modal-stats-grid">
@@ -2612,6 +2763,8 @@
           <span class="stat-val" style="color:#facc15;">${captainName}</span>
         </div>
       </div>
+
+      ${autoSubBannerHtml}
 
       <!-- Starting XI Table -->
       <div>
