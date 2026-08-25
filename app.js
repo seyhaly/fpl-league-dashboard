@@ -2748,47 +2748,42 @@
     });
     tbodyHtml += '</tbody>';
 
-    // Calculate MOTM (Manager of the Month) to place directly under GW columns
-    let tfootHtml = '';
-    if (showMotm) {
-      let motmName = '';
-      const targetMonth = selectedMonthObj || months.find(m => m.gws && m.gws.includes(currentGw)) || months[0];
-      if (targetMonth && targetMonth.gws) {
-        const motmScores = state.dataset.managers.map(mgr => {
-          let pts = 0;
-          targetMonth.gws.forEach(g => {
-            if (g <= currentGw) {
-              const gScore = getManagerLiveScore(mgr.id, g);
-              const gData = state.dataset.gameweeks.find(x => x.gw === g);
-              const hit = (gData && gData.hits) ? (gData.hits[mgr.id] || 0) : 0;
-              pts += (gScore - hit);
-            }
-          });
-          return { name: mgr.name, pts };
-        }).sort((a, b) => b.pts - a.pts);
+    tableEl.innerHTML = theadHtml + tbodyHtml;
 
-        if (motmScores[0] && motmScores[0].pts > 0) {
-          motmName = motmScores[0].name;
+    // Manager of the Month (MoM) Banner centered below table
+    const momEl = document.getElementById('classicSheetMoMBanner');
+    if (momEl) {
+      if (showMotm) {
+        let motmName = '';
+        const targetMonth = selectedMonthObj || months.find(m => m.gws && m.gws.includes(currentGw)) || months[0];
+        if (targetMonth && targetMonth.gws) {
+          const motmScores = state.dataset.managers.map(mgr => {
+            let pts = 0;
+            targetMonth.gws.forEach(g => {
+              if (g <= currentGw) {
+                const gScore = getManagerLiveScore(mgr.id, g);
+                const gData = state.dataset.gameweeks.find(x => x.gw === g);
+                const hit = (gData && gData.hits) ? (gData.hits[mgr.id] || 0) : 0;
+                pts += (gScore - hit);
+              }
+            });
+            return { name: mgr.name, pts };
+          }).sort((a, b) => b.pts - a.pts);
+
+          if (motmScores[0] && motmScores[0].pts > 0) {
+            motmName = motmScores[0].name;
+          }
         }
-      }
 
-      const rightColspan = 1 + (showMots ? 1 : 0);
-      if (motmName) {
-        tfootHtml = `
-          <tfoot>
-            <tr>
-              <td colspan="4" style="border:none;background:transparent;"></td>
-              <td colspan="${totalGwColumns}" style="border:none;background:transparent;text-align:center;padding:10px 0;">
-                <div class="classic-sheet-mom-pill">MoM: ${motmName}</div>
-              </td>
-              <td colspan="${rightColspan}" style="border:none;background:transparent;"></td>
-            </tr>
-          </tfoot>
-        `;
+        if (motmName) {
+          momEl.innerHTML = `<div class="classic-sheet-mom-pill">MoM: ${motmName}</div>`;
+        } else {
+          momEl.innerHTML = '';
+        }
+      } else {
+        momEl.innerHTML = '';
       }
     }
-
-    tableEl.innerHTML = theadHtml + tbodyHtml + tfootHtml;
   }
 
   // ===================== MANAGER SQUAD DETAIL MODAL =====================
