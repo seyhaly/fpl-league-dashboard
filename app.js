@@ -8,7 +8,7 @@
     entryFee: 3,
     showMotmBadge: false,
     showMotsBadge: false,
-    showClassicSheetSdChip: true,
+    classicSheetSdChipMode: 'current', // 'current' | 'all' | 'none'
     theme: localStorage.getItem('fpl_admin_theme') || 'dark',
     motsPrizePool: 50,
     dataset: JSON.parse(JSON.stringify(window.DEMO_DATA)),
@@ -554,9 +554,22 @@
     const btnToggleSdChip = document.getElementById('btnToggleSdChip');
     if (btnToggleSdChip) {
       btnToggleSdChip.addEventListener('click', () => {
-        state.showClassicSheetSdChip = !state.showClassicSheetSdChip;
-        btnToggleSdChip.classList.toggle('active', state.showClassicSheetSdChip);
-        btnToggleSdChip.textContent = state.showClassicSheetSdChip ? '⚡ S.D. & Chips' : '⚡ S.D. & Chips (Hidden)';
+        if (state.classicSheetSdChipMode === 'current') {
+          state.classicSheetSdChipMode = 'all';
+          btnToggleSdChip.className = 'classic-sheet-toggle-btn active';
+          btnToggleSdChip.textContent = '⚡ S.D. & Chips: All GWs';
+          showToast('S.D. & Chips: Displaying for All GWs');
+        } else if (state.classicSheetSdChipMode === 'all') {
+          state.classicSheetSdChipMode = 'none';
+          btnToggleSdChip.className = 'classic-sheet-toggle-btn';
+          btnToggleSdChip.textContent = '⚡ S.D. & Chips: Off';
+          showToast('S.D. & Chips: Hidden');
+        } else {
+          state.classicSheetSdChipMode = 'current';
+          btnToggleSdChip.className = 'classic-sheet-toggle-btn active';
+          btnToggleSdChip.textContent = '⚡ S.D. & Chips: Current GW';
+          showToast('S.D. & Chips: Displaying for Current GW');
+        }
         renderClassicSheetView();
       });
     }
@@ -2589,7 +2602,24 @@
 
     const showMots = Boolean(state.showMotsBadge);
     const showMotm = Boolean(state.showMotmBadge);
-    const showSdChip = Boolean(state.showClassicSheetSdChip);
+    const sdChipMode = state.classicSheetSdChipMode || 'current'; // 'current' | 'all' | 'none'
+    const activeLatestGw = gwsToDisplay.filter(g => g <= currentGw).pop() || currentGw;
+
+    function shouldShowSdChipForGw(g) {
+      if (sdChipMode === 'all') return true;
+      if (sdChipMode === 'current' && g === activeLatestGw) return true;
+      return false;
+    }
+
+    function getChipCode(chipRaw) {
+      if (!chipRaw) return '';
+      const cn = String(chipRaw).toLowerCase();
+      if (cn.includes('wildcard') || cn.includes('wc')) return 'WC';
+      if (cn.includes('free hit') || cn.includes('freehit') || cn.includes('fh')) return 'FH';
+      if (cn.includes('bench boost') || cn.includes('bboost') || cn.includes('bb')) return 'BB';
+      if (cn.includes('triple captain') || cn.includes('3xc') || cn.includes('tc')) return 'TC';
+      return String(chipRaw).toUpperCase();
+    }
 
     // Calculate MOTS (Manager of the Season)
     let seasonLeader = null;
@@ -2599,6 +2629,17 @@
     }
 
     // Table Header
+    let theadColsHtml = '';
+    let totalGwColumns = 0;
+    gwsToDisplay.forEach(g => {
+      theadColsHtml += `<th class="cs-col-gw">GW${g}</th>`;
+      totalGwColumns += 1;
+      if (shouldShowSdChipForGw(g)) {
+        theadColsHtml += `<th class="cs-col-sd cs-th-sd">S.D.</th><th class="cs-col-chip cs-th-chip">Chip</th>`;
+        totalGwColumns += 2;
+      }
+    });
+
     let theadHtml = `
       <thead>
         <tr>
@@ -2606,8 +2647,7 @@
           <th class="cs-col-manager">Manager</th>
           <th class="cs-col-team">Team</th>
           <th class="cs-col-aba">ABA</th>
-          ${gwsToDisplay.map(g => `<th class="cs-col-gw">GW${g}</th>`).join('')}
-          ${showSdChip ? `<th class="cs-col-sd cs-th-sd">S.D.</th><th class="cs-col-chip cs-th-chip">Chip</th>` : ''}
+          ${theadColsHtml}
           <th class="cs-col-payment">Payment</th>
           ${showMots ? `<th class="cs-col-seasonal">Seasonal prize</th>` : ''}
         </tr>
@@ -2616,7 +2656,6 @@
 
     // Table Body
     let tbodyHtml = '<tbody>';
-    const currGwData = state.dataset.gameweeks.find(g => g.gw === currentGw);
 
     currentStandings.forEach((m, idx) => {
       const rank = idx + 1;
@@ -2638,11 +2677,14 @@
 
       const abaNum = ABA_ACCOUNTS[m.id] || '';
 
-      // Build GW score cells
+      // Build GW score cells & optional SD/Chip per GW
       let gwCellsHtml = '';
       gwsToDisplay.forEach(g => {
         if (g > currentGw) {
           gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
+          if (shouldShowSdChipForGw(g)) {
+            gwCellsHtml += `<td class="cs-col-sd"></td><td class="cs-col-chip"></td>`;
+          }
           return;
         }
 
@@ -2650,6 +2692,9 @@
         const gManager = gStandings.find(x => x.id === m.id);
         if (!gManager || (gManager.grossScore === 0 && gManager.hitCost === 0)) {
           gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
+          if (shouldShowSdChipForGw(g)) {
+            gwCellsHtml += `<td class="cs-col-sd"></td><td class="cs-col-chip"></td>`;
+          }
           return;
         }
 
@@ -2662,28 +2707,23 @@
         }
 
         gwCellsHtml += `<td class="cs-col-gw ${cellClass}">${gScore}</td>`;
+
+        if (shouldShowSdChipForGw(g)) {
+          const gData = state.dataset.gameweeks.find(x => x.gw === g);
+          const hitCost = gData && gData.hits ? (gData.hits[m.id] || 0) : (gManager.hitCost || 0);
+          const sdHtml = hitCost > 0
+            ? `<td class="cs-col-sd" style="color:#dc2626;font-weight:900;font-size:15px;">-${hitCost}</td>`
+            : `<td class="cs-col-sd"></td>`;
+
+          const chipRaw = (gData && gData.chipsUsed && gData.chipsUsed[m.id]) || gManager.chip || '';
+          const chipCode = getChipCode(chipRaw);
+          const chipHtml = chipCode
+            ? `<td class="cs-col-chip" style="color:#f59e0b;font-weight:900;font-size:15px;">${chipCode}</td>`
+            : `<td class="cs-col-chip"></td>`;
+
+          gwCellsHtml += `${sdHtml}${chipHtml}`;
+        }
       });
-
-      // S.D. (Transfer Hits) for current viewed GW
-      const hitCost = currGwData && currGwData.hits ? (currGwData.hits[m.id] || 0) : (m.hitCost || 0);
-      const sdCellHtml = hitCost > 0
-        ? `<td class="cs-col-sd" style="color:#dc2626;font-weight:900;font-size:16px;">-${hitCost}</td>`
-        : `<td class="cs-col-sd"></td>`;
-
-      // Chip for current viewed GW
-      const chipRaw = (currGwData && currGwData.chipsUsed && currGwData.chipsUsed[m.id]) || m.chip || '';
-      let chipCode = '';
-      if (chipRaw) {
-        const cn = String(chipRaw).toLowerCase();
-        if (cn.includes('wildcard') || cn.includes('wc')) chipCode = 'WC';
-        else if (cn.includes('free hit') || cn.includes('freehit') || cn.includes('fh')) chipCode = 'FH';
-        else if (cn.includes('bench boost') || cn.includes('bboost') || cn.includes('bb')) chipCode = 'BB';
-        else if (cn.includes('triple captain') || cn.includes('3xc') || cn.includes('tc')) chipCode = 'TC';
-        else chipCode = String(chipRaw).toUpperCase();
-      }
-      const chipCellHtml = chipCode
-        ? `<td class="cs-col-chip" style="color:#f59e0b;font-weight:900;font-size:16px;">${chipCode}</td>`
-        : `<td class="cs-col-chip"></td>`;
 
       const motsCellHtml = (showMots && idx === 0)
         ? `<td class="cs-col-seasonal" rowspan="${totalManagers}">
@@ -2701,7 +2741,6 @@
           <td class="cs-col-team">${m.teamName}</td>
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
-          ${showSdChip ? `${sdCellHtml}${chipCellHtml}` : ''}
           <td class="cs-col-payment">${paymentText}</td>
           ${motsCellHtml}
         </tr>
@@ -2733,13 +2772,13 @@
         }
       }
 
-      const rightColspan = (showSdChip ? 2 : 0) + 1 + (showMots ? 1 : 0);
+      const rightColspan = 1 + (showMots ? 1 : 0);
       if (motmName) {
         tfootHtml = `
           <tfoot>
             <tr>
               <td colspan="4" style="border:none;background:transparent;"></td>
-              <td colspan="${gwsToDisplay.length}" style="border:none;background:transparent;text-align:center;padding:10px 0;">
+              <td colspan="${totalGwColumns}" style="border:none;background:transparent;text-align:center;padding:10px 0;">
                 <div class="classic-sheet-mom-pill">MoM: ${motmName}</div>
               </td>
               <td colspan="${rightColspan}" style="border:none;background:transparent;"></td>
