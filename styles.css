@@ -3574,21 +3574,23 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .classic-sheet-table .cs-col-sd {
   text-align: center;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 15px;
   color: #dc2626;
-  min-width: 48px;
-  width: 48px;
-  max-width: 48px;
+  min-width: 58px;
+  width: 58px;
+  max-width: 64px;
+  box-sizing: border-box;
 }
 
 .classic-sheet-table .cs-col-chip {
   text-align: center;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 15px;
   color: #f59e0b;
-  min-width: 52px;
-  width: 52px;
-  max-width: 52px;
+  min-width: 62px;
+  width: 62px;
+  max-width: 68px;
+  box-sizing: border-box;
 }
 
 /* Seasonal Prize Column */
@@ -3642,11 +3644,12 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 .classic-sheet-table .cs-col-gw {
   text-align: center;
   font-weight: 900;
-  font-size: 16px;
-  padding: 6px 10px;
-  min-width: 52px;
-  width: 52px;
-  max-width: 52px;
+  font-size: 15px;
+  padding: 6px 8px;
+  min-width: 62px;
+  width: 62px;
+  max-width: 68px;
+  box-sizing: border-box;
 }
 
 .classic-sheet-table .cs-cell-win {
