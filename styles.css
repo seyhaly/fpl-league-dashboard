@@ -3528,6 +3528,34 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   background: #ffffff;
 }
 
+.classic-sheet-table th.cs-th-sd {
+  color: #e11d48 !important;
+  font-weight: 900;
+}
+
+.classic-sheet-table th.cs-th-chip {
+  color: #0b5394 !important;
+  font-weight: 900;
+}
+
+.classic-sheet-table .cs-col-sd {
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  color: #dc2626;
+  min-width: 50px;
+  width: 50px;
+}
+
+.classic-sheet-table .cs-col-chip {
+  text-align: center;
+  font-weight: 900;
+  font-size: 16px;
+  color: #f59e0b;
+  min-width: 55px;
+  width: 55px;
+}
+
 /* Seasonal Prize Column */
 .classic-sheet-table th.cs-col-seasonal {
   background: #005a70 !important;

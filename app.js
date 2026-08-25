@@ -2589,6 +2589,8 @@
           <th class="cs-col-team">Team</th>
           <th class="cs-col-aba">ABA</th>
           ${gwsToDisplay.map(g => `<th class="cs-col-gw">GW${g}</th>`).join('')}
+          <th class="cs-col-sd cs-th-sd">S.D.</th>
+          <th class="cs-col-chip cs-th-chip">Chip</th>
           <th class="cs-col-payment">Payment</th>
           ${showMots ? `<th class="cs-col-seasonal">Seasonal prize</th>` : ''}
         </tr>
@@ -2597,6 +2599,8 @@
 
     // Table Body
     let tbodyHtml = '<tbody>';
+    const currGwData = state.dataset.gameweeks.find(g => g.gw === currentGw);
+
     currentStandings.forEach((m, idx) => {
       const rank = idx + 1;
       let rankBorderClass = 'cs-rank-loss';
@@ -2643,6 +2647,27 @@
         gwCellsHtml += `<td class="cs-col-gw ${cellClass}">${gScore}</td>`;
       });
 
+      // S.D. (Transfer Hits) for current viewed GW
+      const hitCost = currGwData && currGwData.hits ? (currGwData.hits[m.id] || 0) : (m.hitCost || 0);
+      const sdCellHtml = hitCost > 0
+        ? `<td class="cs-col-sd" style="color:#dc2626;font-weight:900;font-size:16px;">-${hitCost}</td>`
+        : `<td class="cs-col-sd"></td>`;
+
+      // Chip for current viewed GW
+      const chipRaw = (currGwData && currGwData.chipsUsed && currGwData.chipsUsed[m.id]) || m.chip || '';
+      let chipCode = '';
+      if (chipRaw) {
+        const cn = String(chipRaw).toLowerCase();
+        if (cn.includes('wildcard') || cn.includes('wc')) chipCode = 'WC';
+        else if (cn.includes('free hit') || cn.includes('freehit') || cn.includes('fh')) chipCode = 'FH';
+        else if (cn.includes('bench boost') || cn.includes('bboost') || cn.includes('bb')) chipCode = 'BB';
+        else if (cn.includes('triple captain') || cn.includes('3xc') || cn.includes('tc')) chipCode = 'TC';
+        else chipCode = String(chipRaw).toUpperCase();
+      }
+      const chipCellHtml = chipCode
+        ? `<td class="cs-col-chip" style="color:#f59e0b;font-weight:900;font-size:16px;">${chipCode}</td>`
+        : `<td class="cs-col-chip"></td>`;
+
       const motsCellHtml = (showMots && idx === 0)
         ? `<td class="cs-col-seasonal" rowspan="${totalManagers}">
             <div class="classic-sheet-mots-content">
@@ -2659,6 +2684,8 @@
           <td class="cs-col-team">${m.teamName}</td>
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
+          ${sdCellHtml}
+          ${chipCellHtml}
           <td class="cs-col-payment">${paymentText}</td>
           ${motsCellHtml}
         </tr>
@@ -2698,7 +2725,7 @@
               <td colspan="${gwsToDisplay.length}" style="border:none;background:transparent;text-align:center;padding:10px 0;">
                 <div class="classic-sheet-mom-pill">MoM: ${motmName}</div>
               </td>
-              <td colspan="${showMots ? 2 : 1}" style="border:none;background:transparent;"></td>
+              <td colspan="${showMots ? 4 : 3}" style="border:none;background:transparent;"></td>
             </tr>
           </tfoot>
         `;
