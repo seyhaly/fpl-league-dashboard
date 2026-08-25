@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-25T22:45:11Z",
+  "lastUpdated": "2026-08-25T23:03:20Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -887,7 +887,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "6.5",
+      "now_cost": "6.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -995,7 +995,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "7.5",
+      "now_cost": "7.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -2633,7 +2633,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 14,
-      "now_cost": "5.5",
+      "now_cost": "5.6",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -2723,7 +2723,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 17,
-      "now_cost": "4.5",
+      "now_cost": "4.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
