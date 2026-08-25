@@ -3396,6 +3396,7 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 }
 
 .classic-sheet-container {
+  width: fit-content;
   max-width: 100%;
   margin: 0 auto;
   background: #ffffff;
@@ -3423,17 +3424,20 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 .classic-sheet-table-scroll-wrapper {
   overflow-x: auto;
+  width: fit-content;
   max-width: 100%;
+  margin: 0 auto;
   position: relative;
   border: 2px solid #2b6cb0;
 }
 
 .classic-sheet-table {
-  width: 100%;
+  width: auto;
   border-collapse: separate;
   border-spacing: 0;
   background: #ffffff;
   table-layout: auto;
+  margin: 0 auto;
 }
 
 .classic-sheet-table th,
@@ -3546,7 +3550,9 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-size: 13.5px;
   color: #000000;
   padding: 6px 12px;
-  min-width: 120px;
+  min-width: 125px;
+  width: 125px;
+  max-width: 135px;
   border-left: 2.5px solid #2b6cb0 !important;
   box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
 }
@@ -3570,8 +3576,9 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-weight: 900;
   font-size: 16px;
   color: #dc2626;
-  min-width: 50px;
-  width: 50px;
+  min-width: 48px;
+  width: 48px;
+  max-width: 48px;
 }
 
 .classic-sheet-table .cs-col-chip {
@@ -3579,8 +3586,9 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-weight: 900;
   font-size: 16px;
   color: #f59e0b;
-  min-width: 55px;
-  width: 55px;
+  min-width: 52px;
+  width: 52px;
+  max-width: 52px;
 }
 
 /* Seasonal Prize Column */

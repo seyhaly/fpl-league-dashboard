@@ -2515,7 +2515,7 @@
 
     if (titleEl) {
       const rawLeague = state.dataset.leagueName || "Clash of Elite";
-      const cleanLeague = rawLeague.replace(/\s*(20\d\d[-–]20\d\d|\d\d\/\d\d)\s*/gi, '').trim();
+      const cleanLeague = rawLeague.replace(/\s*(fantasy\s*league|20\d\d[-–]20\d\d|\d\d\/\d\d)\s*/gi, ' ').trim();
       titleEl.textContent = `${cleanLeague} Fantasy League 2026-2027`;
     }
 
