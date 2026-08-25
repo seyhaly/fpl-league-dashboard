@@ -3615,6 +3615,11 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
 }
 
+.classic-sheet-table .cs-col-total.cs-total-highest {
+  color: #16a34a !important;
+  font-weight: 900 !important;
+}
+
 .classic-sheet-table th.cs-col-total {
   background: #ffffff;
   color: #0b5394;
@@ -3855,6 +3860,11 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   color: #38bdf8;
   border-left: 2.5px solid #38bdf8 !important;
   box-shadow: -4px 0 10px rgba(0, 0, 0, 0.35);
+}
+
+[data-theme="dark"] .classic-sheet-table .cs-col-total.cs-total-highest {
+  color: #00ff87 !important;
+  font-weight: 900 !important;
 }
 
 [data-theme="dark"] .classic-sheet-table th.cs-col-total {

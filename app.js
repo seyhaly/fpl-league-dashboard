@@ -2633,6 +2633,7 @@
 
     // Table Body
     let tbodyHtml = '<tbody>';
+    const maxTotalScore = Math.max(...currentStandings.map(m => m.seasonTotalNet !== undefined ? m.seasonTotalNet : (m.totalPoints || 0)));
 
     currentStandings.forEach((m, idx) => {
       const rank = idx + 1;
@@ -2653,6 +2654,9 @@
       }
 
       const abaNum = ABA_ACCOUNTS[m.id] || '';
+      const totalScore = m.seasonTotalNet !== undefined ? m.seasonTotalNet : (m.totalPoints || 0);
+      const isHighestTotal = totalScore > 0 && totalScore === maxTotalScore;
+      const totalColClass = isHighestTotal ? 'cs-col-total cs-total-highest' : 'cs-col-total';
 
       // Build GW score cells & optional SD/Chip per GW
       let gwCellsHtml = '';
@@ -2718,7 +2722,7 @@
           <td class="cs-col-team">${m.teamName}</td>
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
-          <td class="cs-col-total">${m.seasonTotalNet !== undefined ? m.seasonTotalNet : (m.totalPoints || 0)}</td>
+          <td class="${totalColClass}">${totalScore}</td>
           <td class="cs-col-payment">${paymentText}</td>
           ${motsCellHtml}
         </tr>
