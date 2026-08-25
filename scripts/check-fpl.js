@@ -24,7 +24,7 @@ if (!RESEND_API_KEY || !NOTIFICATION_EMAIL) {
   process.exit(1);
 }
 
-// ABA Bank Account numbers mapping
+// ABA Bank Account numbers mapping (exact webapp mapping)
 const ABA_ACCOUNTS = {
   2023789: '001 335 048', // Monor Noem
   2026484: '000 971 427', // Bora Chhe
@@ -36,23 +36,35 @@ const ABA_ACCOUNTS = {
   145847: ''              // Hokheng Ker (blank)
 };
 
-function getChipBadgeHtml(chipName) {
-  if (!chipName) return '<span style="color:#94a3b8;">-</span>';
+// Exact WebApp Chip Label
+function getChipLabel(chipName) {
+  if (!chipName) return '';
   const n = chipName.toLowerCase();
   const num = chipName.match(/\d+/)?.[0] || '1';
-  if (n.includes('wildcard')) {
-    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:800;background:#fef3c7;color:#b45309;border:1px solid #fcd34d;">WC ${num}</span>`;
+  if (n.includes('wildcard') || n.includes('wc')) return `WC ${num}`;
+  if (n.includes('free hit') || n.includes('freehit') || n.includes('fh')) return `FH ${num}`;
+  if (n.includes('bench boost') || n.includes('bboost') || n.includes('bb')) return `BB ${num}`;
+  if (n.includes('triple captain') || n.includes('3xc') || n.includes('tc')) return `TC ${num}`;
+  return chipName.toUpperCase();
+}
+
+function getChipBadgeHtml(chipName) {
+  if (!chipName) return '<span style="color:#94a3b8;font-size:13px;">-</span>';
+  const label = getChipLabel(chipName);
+  const n = chipName.toLowerCase();
+  if (n.includes('wildcard') || n.includes('wc')) {
+    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:800;background:#fef3c7;color:#b45309;border:1px solid #fcd34d;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">${label}</span>`;
   }
-  if (n.includes('free hit')) {
-    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:800;background:#e0f2fe;color:#0369a1;border:1px solid #7dd3fc;">FH ${num}</span>`;
+  if (n.includes('free hit') || n.includes('freehit') || n.includes('fh')) {
+    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:800;background:#e0f2fe;color:#0369a1;border:1px solid #7dd3fc;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">${label}</span>`;
   }
   if (n.includes('bench boost') || n.includes('bboost') || n.includes('bb')) {
-    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:800;background:#ffedd5;color:#c2410c;border:1px solid #fdba74;">BB ${num}</span>`;
+    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:800;background:#ffedd5;color:#c2410c;border:1px solid #fdba74;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">${label}</span>`;
   }
   if (n.includes('triple captain') || n.includes('3xc') || n.includes('tc')) {
-    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:800;background:#fce7f3;color:#9d174d;border:1px solid #f472b6;">TC ${num}</span>`;
+    return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:800;background:#fce7f3;color:#9d174d;border:1px solid #f472b6;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">${label}</span>`;
   }
-  return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10px;font-weight:800;background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;">${chipName}</span>`;
+  return `<span style="display:inline-block;padding:2px 7px;border-radius:4px;font-size:10.5px;font-weight:800;background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;font-family:-apple-system,BlinkMacSystemFont,sans-serif;">${label}</span>`;
 }
 
 async function fetchFplJson(targetUrl, timeoutMs = 5000) {
@@ -196,15 +208,14 @@ async function run() {
     process.exit(0);
   }
 
-  // Compute Gameweek Standings & Payouts for currentGw
-  const gwData = gameweeks.find(g => g.gw === currentGw) || gameweeks[gameweeks.length - 1] || {};
+  // ===================== EXACT WEBAPP CALCULATION ENGINE =====================
   const entryFee = 3.00;
   const total = managers.length;
   const splitSize = Math.floor(total / 2);
   const hasNeutral = total % 2 === 1;
   const neutralRank = hasNeutral ? splitSize + 1 : null;
 
-  function getSeasonNetUpToGw(mId, upToGw) {
+  function getManagerSeasonNetUpToGw(mId, upToGw) {
     let sum = 0;
     for (let g = 1; g <= upToGw; g++) {
       const gData = gameweeks.find(x => x.gw === g);
@@ -215,109 +226,89 @@ async function run() {
     return sum;
   }
 
-  function getFormGuide(mId) {
+  function getGameweekStandings(gw) {
+    const gwData = gameweeks.find(g => g.gw === gw);
+    if (!gwData) return [];
+
+    let mList = managers.map(m => {
+      const grossScore = gwData.scores ? (gwData.scores[m.id] || 0) : 0;
+      const hitCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
+      const transfers = gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
+      const netScore = grossScore - hitCost;
+      const bench = gwData.benchPoints ? (gwData.benchPoints[m.id] || 0) : 0;
+      const captain = gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
+      const chip = gwData.chipsUsed ? (gwData.chipsUsed[m.id] || null) : null;
+      const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, gw);
+      const aba = ABA_ACCOUNTS[m.id] || '';
+      return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, chip, seasonTotalNet, aba };
+    });
+
+    // 4-Layer Custom Tiebreaker Sort
+    mList.sort((a, b) => {
+      if (b.netScore !== a.netScore) return b.netScore - a.netScore;
+      if (b.bench !== a.bench) return b.bench - a.bench;
+      if (b.captain !== a.captain) return b.captain - a.captain;
+      if (a.hitCost !== b.hitCost) return a.hitCost - b.hitCost;
+      return b.seasonTotalNet - a.seasonTotalNet;
+    });
+
+    const hasPlayedMatches = mList.some(m => m.grossScore > 0 || m.hitCost > 0);
+
+    return mList.map((m, idx) => {
+      const rank = idx + 1;
+      let payout = 0, outcomeCode = 'N', note = '';
+      let rankBg = '#f1f5f9', rankColor = '#475569', rankBorder = '1px solid #cbd5e1';
+      let rowBg = '#ffffff', rowBorderLeft = '4px solid #cbd5e1';
+
+      if (!hasPlayedMatches) {
+        payout = 0; outcomeCode = '-'; note = 'Neutral';
+      } else {
+        if (rank <= splitSize) {
+          payout = entryFee; outcomeCode = 'W';
+          const payer = mList[total - rank];
+          note = `Gets from ${payer ? payer.name : 'Bottom'}`;
+          rowBg = '#ecfdf5'; rowBorderLeft = '4px solid #10b981';
+          if (rank === 1) { rankBg = '#f59e0b'; rankColor = '#ffffff'; rankBorder = 'none'; }
+          else if (rank === 2) { rankBg = '#e2e8f0'; rankColor = '#1e293b'; rankBorder = '1px solid #cbd5e1'; }
+          else if (rank === 3) { rankBg = '#fdba74'; rankColor = '#431407'; rankBorder = 'none'; }
+        } else if (hasNeutral && rank === neutralRank) {
+          payout = 0; outcomeCode = 'N';
+          note = 'Neutral';
+          rowBg = '#f1f5f9'; rowBorderLeft = '4px solid #94a3b8';
+          rankBg = '#e2e8f0'; rankColor = '#475569';
+        } else {
+          payout = -entryFee; outcomeCode = 'L';
+          const receiver = mList[total - rank];
+          note = `Pays to ${receiver ? receiver.name : 'Top'}`;
+          rowBg = '#fef2f2'; rowBorderLeft = '4px solid #ef4444';
+          rankBg = '#fee2e2'; rankColor = '#ef4444'; rankBorder = '1px solid #fca5a5';
+        }
+      }
+
+      return { ...m, rank, payout, outcomeCode, note, rankBg, rankColor, rankBorder, rowBg, rowBorderLeft };
+    });
+  }
+
+  // Exact WebApp Form Guide (strictly previous GWs only)
+  function getFormGuide(managerId) {
     if (currentGw <= 1) {
       return ['-'];
     }
     const form = [];
-    const startGw = Math.max(1, currentGw - 4);
-    for (let g = startGw; g <= currentGw; g++) {
-      const gData = gameweeks.find(x => x.gw === g);
-      if (!gData || !gData.scores) continue;
-
-      let gManagers = managers.map(m => {
-        const gross = gData.scores[m.id] || 0;
-        const hit = gData.hits ? (gData.hits[m.id] || 0) : 0;
-        return { id: m.id, net: gross - hit };
-      });
-      gManagers.sort((a, b) => b.net - a.net);
-
-      const mIndex = gManagers.findIndex(x => x.id === mId);
-      const mRank = mIndex + 1;
-      let code = 'N';
-      if (mRank <= splitSize) code = 'W';
-      else if (hasNeutral && mRank === neutralRank) code = 'N';
-      else code = 'L';
-
-      form.push(code);
+    const endGw = currentGw - 1;
+    const startGw = Math.max(1, endGw - 4);
+    for (let gw = startGw; gw <= endGw; gw++) {
+      const gStandings = getGameweekStandings(gw);
+      const m = gStandings.find(x => x.id === managerId);
+      if (m && m.outcomeCode && m.outcomeCode !== '-') {
+        form.push(m.outcomeCode);
+      }
     }
     return form.length > 0 ? form : ['-'];
   }
 
-  let standings = managers.map(m => {
-    const grossScore = gwData.scores ? (gwData.scores[m.id] || 0) : 0;
-    const hitCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
-    const transfers = gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
-    const netScore = grossScore - hitCost;
-    const bench = gwData.benchPoints ? (gwData.benchPoints[m.id] || 0) : 0;
-    const captain = gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
-    const seasonTotalNet = getSeasonNetUpToGw(m.id, currentGw);
-    const chip = gwData.chipsUsed ? (gwData.chipsUsed[m.id] || null) : null;
-    const form = getFormGuide(m.id);
-    const aba = ABA_ACCOUNTS[m.id] || '';
-
-    return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, seasonTotalNet, chip, form, aba };
-  });
-
-  // 4-Layer Tiebreaker Sort
-  standings.sort((a, b) => {
-    if (b.netScore !== a.netScore) return b.netScore - a.netScore;
-    if (b.bench !== a.bench) return b.bench - a.bench;
-    if (b.captain !== a.captain) return b.captain - a.captain;
-    if (a.hitCost !== b.hitCost) return a.hitCost - b.hitCost;
-    return b.seasonTotalNet - a.seasonTotalNet;
-  });
-
-  standings = standings.map((m, idx) => {
-    const rank = idx + 1;
-    let payout = 0;
-    let note = '';
-    let rankBg = '#f1f5f9';
-    let rankColor = '#475569';
-    let rankBorder = '1px solid #cbd5e1';
-    let rowBg = '#ffffff';
-    let rowBorderLeft = '4px solid #cbd5e1';
-
-    if (rank === 1) {
-      rankBg = '#f59e0b';
-      rankColor = '#ffffff';
-      rankBorder = 'none';
-    } else if (rank === 2) {
-      rankBg = '#e2e8f0';
-      rankColor = '#1e293b';
-      rankBorder = '1px solid #cbd5e1';
-    } else if (rank === 3) {
-      rankBg = '#fdba74';
-      rankColor = '#431407';
-      rankBorder = 'none';
-    } else if (rank > splitSize && (!hasNeutral || rank !== neutralRank)) {
-      rankBg = '#fee2e2';
-      rankColor = '#ef4444';
-      rankBorder = '1px solid #fca5a5';
-    }
-
-    if (rank <= splitSize) {
-      payout = entryFee;
-      const payer = standings[total - rank];
-      note = `Gets from ${payer ? payer.name : 'Bottom'}`;
-      rowBg = '#ecfdf5';
-      rowBorderLeft = '4px solid #10b981';
-    } else if (hasNeutral && rank === neutralRank) {
-      payout = 0;
-      note = 'Neutral';
-      rowBg = '#f1f5f9';
-      rowBorderLeft = '4px solid #94a3b8';
-    } else {
-      payout = -entryFee;
-      const receiver = standings[total - rank];
-      note = `Pays to ${receiver ? receiver.name : 'Top'}`;
-      rowBg = '#fef2f2';
-      rowBorderLeft = '4px solid #ef4444';
-    }
-
-    return { ...m, rank, payout, note, rankBg, rankColor, rankBorder, rowBg, rowBorderLeft };
-  });
-
+  // Get current gameweek standings
+  let standings = getGameweekStandings(currentGw);
   const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
 
   // MOTM Banner calculation
@@ -348,7 +339,7 @@ async function run() {
 
   const timestamp = Date.now();
 
-  // High-Fidelity Web-App Match HTML Email Template (Light Theme)
+  // High-Fidelity Web-App Match HTML Email Template
   const emailHtml = `
     <!DOCTYPE html>
     <html>
@@ -449,7 +440,7 @@ async function run() {
                   ${getChipBadgeHtml(m.chip)}
                 </td>
                 <td style="text-align:center;">
-                  ${m.form.map(c => c === 'W'
+                  ${getFormGuide(m.id).map(c => c === 'W'
                     ? `<span class="form-pill form-w">W</span>`
                     : c === 'L'
                     ? `<span class="form-pill form-l">L</span>`
