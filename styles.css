@@ -3368,6 +3368,33 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   transform: translateY(-1px);
 }
 
+.classic-sheet-toggle-btn {
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.15s ease;
+}
+
+.classic-sheet-toggle-btn.active {
+  background: rgba(245, 158, 11, 0.15);
+  color: #f59e0b;
+  border-color: rgba(245, 158, 11, 0.4);
+}
+
+[data-theme="light"] .classic-sheet-toggle-btn.active {
+  background: #fef3c7;
+  color: #b45309;
+  border-color: #fde68a;
+}
+
 .classic-sheet-container {
   max-width: 100%;
   margin: 0 auto;

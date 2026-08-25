@@ -8,6 +8,7 @@
     entryFee: 3,
     showMotmBadge: false,
     showMotsBadge: false,
+    showClassicSheetSdChip: true,
     theme: localStorage.getItem('fpl_admin_theme') || 'dark',
     motsPrizePool: 50,
     dataset: JSON.parse(JSON.stringify(window.DEMO_DATA)),
@@ -547,6 +548,16 @@
           btnExportSheet.disabled = false;
           btnExportSheet.textContent = '📸 Export Image';
         }
+      });
+    }
+
+    const btnToggleSdChip = document.getElementById('btnToggleSdChip');
+    if (btnToggleSdChip) {
+      btnToggleSdChip.addEventListener('click', () => {
+        state.showClassicSheetSdChip = !state.showClassicSheetSdChip;
+        btnToggleSdChip.classList.toggle('active', state.showClassicSheetSdChip);
+        btnToggleSdChip.textContent = state.showClassicSheetSdChip ? '⚡ S.D. & Chips' : '⚡ S.D. & Chips (Hidden)';
+        renderClassicSheetView();
       });
     }
   }
@@ -2558,7 +2569,13 @@
     } else {
       selectedMonthObj = months.find(m => m.name === selectedVal);
       if (selectedMonthObj) {
-        gwsToDisplay = [...selectedMonthObj.gws];
+        const maxMonthGw = Math.max(...selectedMonthObj.gws);
+        if (currentGw < maxMonthGw) {
+          gwsToDisplay = selectedMonthObj.gws.filter(g => g <= currentGw);
+          if (gwsToDisplay.length === 0) gwsToDisplay = [selectedMonthObj.gws[0]];
+        } else {
+          gwsToDisplay = [...selectedMonthObj.gws];
+        }
       } else {
         gwsToDisplay = [currentGw];
       }
@@ -2572,6 +2589,7 @@
 
     const showMots = Boolean(state.showMotsBadge);
     const showMotm = Boolean(state.showMotmBadge);
+    const showSdChip = Boolean(state.showClassicSheetSdChip);
 
     // Calculate MOTS (Manager of the Season)
     let seasonLeader = null;
@@ -2589,8 +2607,7 @@
           <th class="cs-col-team">Team</th>
           <th class="cs-col-aba">ABA</th>
           ${gwsToDisplay.map(g => `<th class="cs-col-gw">GW${g}</th>`).join('')}
-          <th class="cs-col-sd cs-th-sd">S.D.</th>
-          <th class="cs-col-chip cs-th-chip">Chip</th>
+          ${showSdChip ? `<th class="cs-col-sd cs-th-sd">S.D.</th><th class="cs-col-chip cs-th-chip">Chip</th>` : ''}
           <th class="cs-col-payment">Payment</th>
           ${showMots ? `<th class="cs-col-seasonal">Seasonal prize</th>` : ''}
         </tr>
@@ -2684,8 +2701,7 @@
           <td class="cs-col-team">${m.teamName}</td>
           <td class="cs-col-aba">${abaNum || '-'}</td>
           ${gwCellsHtml}
-          ${sdCellHtml}
-          ${chipCellHtml}
+          ${showSdChip ? `${sdCellHtml}${chipCellHtml}` : ''}
           <td class="cs-col-payment">${paymentText}</td>
           ${motsCellHtml}
         </tr>
@@ -2717,6 +2733,7 @@
         }
       }
 
+      const rightColspan = (showSdChip ? 2 : 0) + 1 + (showMots ? 1 : 0);
       if (motmName) {
         tfootHtml = `
           <tfoot>
@@ -2725,7 +2742,7 @@
               <td colspan="${gwsToDisplay.length}" style="border:none;background:transparent;text-align:center;padding:10px 0;">
                 <div class="classic-sheet-mom-pill">MoM: ${motmName}</div>
               </td>
-              <td colspan="${showMots ? 4 : 3}" style="border:none;background:transparent;"></td>
+              <td colspan="${rightColspan}" style="border:none;background:transparent;"></td>
             </tr>
           </tfoot>
         `;
