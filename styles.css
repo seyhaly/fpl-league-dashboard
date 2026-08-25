@@ -3348,49 +3348,6 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-color: #cbd5e1;
 }
 
-.classic-sheet-slider-group {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  padding: 4px 10px;
-  border-radius: 6px;
-}
-
-[data-theme="light"] .classic-sheet-slider-group {
-  background: #ffffff;
-  border-color: #cbd5e1;
-}
-
-.classic-sheet-slider-label {
-  font-size: 11.5px;
-  font-weight: 800;
-  color: var(--text-muted);
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.classic-sheet-slider {
-  width: 100px;
-  height: 6px;
-  accent-color: #0284c7;
-  cursor: pointer;
-}
-
-.classic-sheet-slider-val {
-  font-size: 11.5px;
-  font-weight: 900;
-  color: var(--pl-cyan, #0284c7);
-  min-width: 65px;
-  text-align: left;
-  white-space: nowrap;
-}
-
-[data-theme="light"] .classic-sheet-slider-val {
-  color: #0369a1;
-}
-
 .btn-export-sheet {
   background: linear-gradient(135deg, #0284c7, #0369a1);
   color: #ffffff;
@@ -3582,8 +3539,12 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   z-index: 10;
 }
 
-/* Payment Column Styles */
+/* Sticky Frozen Right Columns */
 .classic-sheet-table .cs-col-payment {
+  position: sticky;
+  right: 0;
+  z-index: 5;
+  background: #ffffff;
   text-align: center;
   font-weight: 900;
   font-size: 13.5px;
@@ -3592,37 +3553,12 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   min-width: 125px;
   width: 125px;
   max-width: 135px;
-  background: #ffffff;
-}
-
-.classic-sheet-table .cs-col-payment.cs-payment-sticky {
-  position: sticky;
-  right: 0;
-  z-index: 5;
   border-left: 2.5px solid #2b6cb0 !important;
   box-shadow: -4px 0 8px rgba(0, 0, 0, 0.08);
 }
 
-.classic-sheet-table .cs-col-payment.cs-payment-inline {
-  position: static;
-  z-index: auto;
-  border-left: 1.5px solid #777777;
-  box-shadow: none;
-}
-
-.classic-sheet-table .cs-col-payment.cs-payment-next-to-gw {
-  position: static;
-  z-index: auto;
-  border-left: 2px solid #2b6cb0 !important;
-  border-right: 2px solid #2b6cb0 !important;
-  box-shadow: none;
-}
-
 .classic-sheet-table th.cs-col-payment {
   background: #ffffff;
-}
-
-.classic-sheet-table th.cs-col-payment.cs-payment-sticky {
   position: sticky;
   right: 0;
   z-index: 10;
