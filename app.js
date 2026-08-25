@@ -560,11 +560,10 @@
       });
     }
 
-    const paymentPosSelect = document.getElementById('classicSheetPaymentPosSelect');
-    if (paymentPosSelect) {
-      paymentPosSelect.value = state.classicSheetPaymentPos || 'sticky';
-      paymentPosSelect.addEventListener('change', (e) => {
-        state.classicSheetPaymentPos = e.target.value;
+    const paymentSlider = document.getElementById('paymentColSlider');
+    if (paymentSlider) {
+      paymentSlider.addEventListener('input', (e) => {
+        state.classicSheetPaymentIndex = parseInt(e.target.value, 10);
         renderClassicSheetView();
       });
     }
@@ -2598,9 +2597,36 @@
     const sdChipMode = sdChipSelect ? sdChipSelect.value : (state.classicSheetSdChipMode || 'current');
     state.classicSheetSdChipMode = sdChipMode;
 
-    const paymentPosSelect = document.getElementById('classicSheetPaymentPosSelect');
-    const paymentPos = paymentPosSelect ? paymentPosSelect.value : (state.classicSheetPaymentPos || 'sticky');
-    state.classicSheetPaymentPos = paymentPos;
+    const paymentSlider = document.getElementById('paymentColSlider');
+    const paymentSliderVal = document.getElementById('paymentColSliderVal');
+    if (paymentSlider) {
+      paymentSlider.min = 0;
+      paymentSlider.max = gwsToDisplay.length;
+      
+      let curIndex = state.classicSheetPaymentIndex;
+      if (curIndex === undefined || curIndex === null || curIndex === -1 || curIndex > gwsToDisplay.length) {
+        curIndex = gwsToDisplay.length;
+        state.classicSheetPaymentIndex = curIndex;
+      }
+      paymentSlider.value = curIndex;
+
+      if (paymentSliderVal) {
+        if (curIndex === 0) {
+          paymentSliderVal.textContent = 'Before GWs';
+        } else if (curIndex === gwsToDisplay.length) {
+          paymentSliderVal.textContent = 'At End';
+        } else {
+          paymentSliderVal.textContent = `After GW${gwsToDisplay[curIndex - 1]}`;
+        }
+      }
+    }
+
+    const curPaymentIdx = (state.classicSheetPaymentIndex !== undefined && state.classicSheetPaymentIndex >= 0 && state.classicSheetPaymentIndex <= gwsToDisplay.length)
+      ? state.classicSheetPaymentIndex
+      : gwsToDisplay.length;
+
+    const isAtEnd = curPaymentIdx === gwsToDisplay.length;
+    const paymentClass = isAtEnd ? 'cs-payment-sticky' : 'cs-payment-next-to-gw';
 
     const activeLatestGw = gwsToDisplay.filter(g => g <= currentGw).pop() || currentGw;
 
@@ -2620,8 +2646,6 @@
       return String(chipRaw).toUpperCase();
     }
 
-    const paymentClass = paymentPos === 'sticky' ? 'cs-payment-sticky' : (paymentPos === 'next_to_gw' ? 'cs-payment-next-to-gw' : 'cs-payment-inline');
-
     // Calculate MOTS (Manager of the Season)
     let seasonLeader = null;
     if (showMots && currentStandings.length > 0) {
@@ -2631,23 +2655,19 @@
 
     // Table Header
     let theadColsHtml = '';
-    let totalGwColumns = 0;
-    gwsToDisplay.forEach(g => {
-      theadColsHtml += `<th class="cs-col-gw">GW${g}</th>`;
-      totalGwColumns += 1;
-      if (shouldShowSdChipForGw(g)) {
-        theadColsHtml += `<th class="cs-col-sd cs-th-sd">S.D.</th><th class="cs-col-chip cs-th-chip">Chip</th>`;
-        totalGwColumns += 2;
-      }
-      if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
-        theadColsHtml += `<th class="cs-col-payment ${paymentClass}">Payment</th>`;
-        totalGwColumns += 1;
-      }
-    });
-
-    if (paymentPos !== 'next_to_gw') {
+    if (curPaymentIdx === 0) {
       theadColsHtml += `<th class="cs-col-payment ${paymentClass}">Payment</th>`;
     }
+
+    gwsToDisplay.forEach((g, gIdx) => {
+      theadColsHtml += `<th class="cs-col-gw">GW${g}</th>`;
+      if (shouldShowSdChipForGw(g)) {
+        theadColsHtml += `<th class="cs-col-sd cs-th-sd">S.D.</th><th class="cs-col-chip cs-th-chip">Chip</th>`;
+      }
+      if (curPaymentIdx === gIdx + 1) {
+        theadColsHtml += `<th class="cs-col-payment ${paymentClass}">Payment</th>`;
+      }
+    });
 
     if (showMots) {
       theadColsHtml += `<th class="cs-col-seasonal">Seasonal prize</th>`;
@@ -2690,13 +2710,17 @@
 
       // Build GW score cells & optional SD/Chip / Payment per GW
       let gwCellsHtml = '';
-      gwsToDisplay.forEach(g => {
+      if (curPaymentIdx === 0) {
+        gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
+      }
+
+      gwsToDisplay.forEach((g, gIdx) => {
         if (g > currentGw) {
           gwCellsHtml += `<td class="cs-col-gw cs-cell-unplayed">-</td>`;
           if (shouldShowSdChipForGw(g)) {
             gwCellsHtml += `<td class="cs-col-sd"></td><td class="cs-col-chip"></td>`;
           }
-          if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+          if (curPaymentIdx === gIdx + 1) {
             gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
           }
           return;
@@ -2709,7 +2733,7 @@
           if (shouldShowSdChipForGw(g)) {
             gwCellsHtml += `<td class="cs-col-sd"></td><td class="cs-col-chip"></td>`;
           }
-          if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+          if (curPaymentIdx === gIdx + 1) {
             gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
           }
           return;
@@ -2741,7 +2765,7 @@
           gwCellsHtml += `${sdHtml}${chipHtml}`;
         }
 
-        if (paymentPos === 'next_to_gw' && g === activeLatestGw) {
+        if (curPaymentIdx === gIdx + 1) {
           gwCellsHtml += `<td class="cs-col-payment ${paymentClass}">${paymentText}</td>`;
         }
       });

@@ -3348,6 +3348,49 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   border-color: #cbd5e1;
 }
 
+.classic-sheet-slider-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+[data-theme="light"] .classic-sheet-slider-group {
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+.classic-sheet-slider-label {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: var(--text-muted);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.classic-sheet-slider {
+  width: 100px;
+  height: 6px;
+  accent-color: #0284c7;
+  cursor: pointer;
+}
+
+.classic-sheet-slider-val {
+  font-size: 11.5px;
+  font-weight: 900;
+  color: var(--pl-cyan, #0284c7);
+  min-width: 65px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+[data-theme="light"] .classic-sheet-slider-val {
+  color: #0369a1;
+}
+
 .btn-export-sheet {
   background: linear-gradient(135deg, #0284c7, #0369a1);
   color: #ffffff;
