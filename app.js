@@ -515,8 +515,6 @@
       });
     }
 
-    }
-
     const sdChipSelect = document.getElementById('classicSheetSdChipSelect');
     if (sdChipSelect) {
       sdChipSelect.value = state.classicSheetSdChipMode || 'current';
