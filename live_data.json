@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-26T14:01:30Z",
+  "lastUpdated": "2026-08-26T14:54:44Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -3001,24 +3001,6 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
-    "131": {
-      "id": 131,
-      "web_name": "Baleba",
-      "first_name": "Carlos",
-      "second_name": "Baleba",
-      "element_type": 3,
-      "team": "BHA",
-      "team_name": "Brighton",
-      "team_id": 5,
-      "event_points": 0,
-      "now_cost": "5.0",
-      "opponent": "AVL",
-      "opponent_short": "AVL",
-      "difficulty": 3,
-      "minutes": 0,
-      "match_status": "dnp",
-      "status_label": "✕ DNP (0m)"
-    },
     "132": {
       "id": 132,
       "web_name": "Howell",
@@ -3234,6 +3216,24 @@
       "minutes": 4,
       "match_status": "played",
       "status_label": "✓ Played"
+    },
+    "614": {
+      "id": 614,
+      "web_name": "Hadjam",
+      "first_name": "Jaouen",
+      "second_name": "Hadjam",
+      "element_type": 2,
+      "team": "BHA",
+      "team_name": "Brighton",
+      "team_id": 5,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "AVL",
+      "opponent_short": "AVL",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "40": {
       "id": 40,
@@ -8869,6 +8869,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "131": {
+      "id": 131,
+      "web_name": "Baleba",
+      "first_name": "Carlos",
+      "second_name": "Baleba",
+      "element_type": 3,
+      "team": "MUN",
+      "team_name": "Man Utd",
+      "team_id": 16,
+      "event_points": 0,
+      "now_cost": "5.0",
+      "opponent": "HUL",
+      "opponent_short": "HUL",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "162": {
       "id": 162,
       "web_name": "Andrey Santos",
@@ -11575,6 +11593,24 @@
       "first_name": "Dayann",
       "second_name": "Méthalie",
       "element_type": 2,
+      "team": "SUN",
+      "team_name": "Sunderland",
+      "team_id": 20,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "IPS",
+      "opponent_short": "IPS",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "613": {
+      "id": 613,
+      "web_name": "Ahoka",
+      "first_name": "Jules",
+      "second_name": "Ahoka",
+      "element_type": 3,
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
