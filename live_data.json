@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-27T10:27:58Z",
+  "lastUpdated": "2026-08-27T20:38:02Z",
   "currentGw": 1,
   "eventStatuses": {
     "1": {
@@ -2173,6 +2173,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "615": {
+      "id": 615,
+      "web_name": "Di Gregorio",
+      "first_name": "Michele",
+      "second_name": "Di Gregorio",
+      "element_type": 1,
+      "team": "BOU",
+      "team_name": "Bournemouth",
+      "team_id": 3,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "MCI",
+      "opponent_short": "MCI",
+      "difficulty": 5,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "82": {
       "id": 82,
       "web_name": "Kelleher",
@@ -4336,7 +4354,7 @@
     "192": {
       "id": 192,
       "web_name": "Andrews",
-      "first_name": "Kaine",
+      "first_name": "Kai",
       "second_name": "Andrews",
       "element_type": 3,
       "team": "COV",
@@ -8844,6 +8862,24 @@
       "team_id": 15,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "BOU",
+      "opponent_short": "BOU",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "616": {
+      "id": 616,
+      "web_name": "Bouaddi",
+      "first_name": "Ayyoub",
+      "second_name": "Bouaddi",
+      "element_type": 3,
+      "team": "MCI",
+      "team_name": "Man City",
+      "team_id": 15,
+      "event_points": 0,
+      "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
