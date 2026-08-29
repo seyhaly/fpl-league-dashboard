@@ -1225,7 +1225,7 @@
   function computeAutoSubs(picks, automaticSubs, pMap, isBenchBoost) {
     if (isBenchBoost || !picks || picks.length === 0) return [];
 
-    // 1. Official automatic_subs from FPL API
+    // Official automatic_subs from FPL API
     if (automaticSubs && automaticSubs.length > 0) {
       return automaticSubs.map(s => ({
         element_in: s.element_in,
@@ -1234,40 +1234,7 @@
       }));
     }
 
-    // 2. Live predictive auto-subs
-    const starters = picks.filter(p => p.position <= 11);
-    const bench = picks.filter(p => p.position > 11).sort((a, b) => a.position - b.position);
-
-    const dnpStarters = starters.filter(p => {
-      const pl = pMap[p.element];
-      return pl && pl.match_status === 'dnp';
-    });
-
-    if (dnpStarters.length === 0) return [];
-
-    const computed = [];
-    const usedBenchIds = new Set();
-
-    dnpStarters.forEach(starter => {
-      const isGk = starter.position === 1;
-      const candidate = bench.find(b => {
-        if (usedBenchIds.has(b.element)) return false;
-        const pl = pMap[b.element];
-        if (!pl || pl.match_status === 'dnp') return false;
-        return isGk ? b.position === 12 : b.position > 12;
-      });
-
-      if (candidate) {
-        usedBenchIds.add(candidate.element);
-        computed.push({
-          element_in: candidate.element,
-          element_out: starter.element,
-          is_official: false
-        });
-      }
-    });
-
-    return computed;
+    return [];
   }
 
   function getManagerLiveScore(mId, gw) {
@@ -2903,104 +2870,18 @@
         (activeChip.toLowerCase().includes('bboost') || activeChip.toLowerCase().includes('bench boost') || activeChip.toUpperCase().includes('BB'))
       );
 
-      // ===================== AUTO-SUBSTITUTIONS CALCULATION =====================
-      function computeAutoSubs(picks, automaticSubs, pMap, isBenchBoost) {
-        if (isBenchBoost || !picks || picks.length === 0) return [];
-
-        // 1. Official automatic_subs from FPL API
-        if (automaticSubs && automaticSubs.length > 0) {
-          return automaticSubs.map(s => ({
+      // Auto-subs: only apply official automatic_subs from FPL API when confirmed
+      const officialSubs = (squadData.automatic_subs && squadData.automatic_subs.length > 0)
+        ? squadData.automatic_subs.map(s => ({
             element_in: s.element_in,
             element_out: s.element_out,
             is_official: true
-          }));
-        }
+          }))
+        : [];
 
-        // 2. Live predictive auto-subs (starters with DNP substituted by bench in priority order)
-        const starters = picks.filter(p => p.position <= 11);
-        const bench = picks.filter(p => p.position > 11).sort((a, b) => a.position - b.position);
-
-        const dnpStarters = starters.filter(p => {
-          const pl = pMap[p.element];
-          return pl && pl.match_status === 'dnp';
-        });
-
-        if (dnpStarters.length === 0) return [];
-
-        const computed = [];
-        const usedBenchIds = new Set();
-
-        const currentFormation = { 1: 0, 2: 0, 3: 0, 4: 0 };
-        starters.forEach(p => {
-          const pl = pMap[p.element];
-          const type = pl?.element_type || (p.position === 1 ? 1 : 2);
-          currentFormation[type] = (currentFormation[type] || 0) + 1;
-        });
-
-        // Goalkeeper DNP
-        const gkStarter = dnpStarters.find(p => p.position === 1);
-        if (gkStarter) {
-          const benchGk = bench.find(p => p.position === 12);
-          if (benchGk) {
-            const plGk = pMap[benchGk.element];
-            if (plGk && plGk.match_status !== 'dnp') {
-              computed.push({
-                element_in: benchGk.element,
-                element_out: gkStarter.element,
-                is_official: false
-              });
-              usedBenchIds.add(benchGk.element);
-            }
-          }
-        }
-
-        // Outfield DNPs
-        const outfieldDnps = dnpStarters.filter(p => p.position > 1);
-        const outfieldBench = bench.filter(p => p.position > 12);
-
-        for (const dnpStarter of outfieldDnps) {
-          const pOutInfo = pMap[dnpStarter.element];
-          const outType = pOutInfo?.element_type || 2;
-
-          for (const benchPick of outfieldBench) {
-            if (usedBenchIds.has(benchPick.element)) continue;
-
-            const pInInfo = pMap[benchPick.element];
-            if (!pInInfo || pInInfo.match_status === 'dnp') continue;
-
-            const inType = pInInfo.element_type || 2;
-            const testFormation = { ...currentFormation };
-            testFormation[outType]--;
-            testFormation[inType]++;
-
-            // Valid FPL formation: 1 GK, 3-5 DEF, 2-5 MID, 1-3 FWD
-            const isValid = testFormation[1] === 1 &&
-                            testFormation[2] >= 3 && testFormation[2] <= 5 &&
-                            testFormation[3] >= 2 && testFormation[3] <= 5 &&
-                            testFormation[4] >= 1 && testFormation[4] <= 3;
-
-            if (isValid) {
-              computed.push({
-                element_in: benchPick.element,
-                element_out: dnpStarter.element,
-                is_official: false
-              });
-              usedBenchIds.add(benchPick.element);
-              currentFormation[outType]--;
-              currentFormation[inType]++;
-              break;
-            }
-          }
-        }
-
-        return computed;
-      }
-
-      const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
-
-      // Create display picks with auto-subs moved: Incoming player ➔ Starting XI, Outgoing DNP starter ➔ Bench
+      // Create display picks: preserve original starting XI (1..11) and bench (12..15)
       const displayPicks = squadData.picks.map(p => ({ ...p }));
-      autoSubs.forEach(s => {
+      officialSubs.forEach(s => {
         const outIdx = displayPicks.findIndex(p => p.element === s.element_out);
         const inIdx = displayPicks.findIndex(p => p.element === s.element_in);
         if (outIdx !== -1 && inIdx !== -1) {
