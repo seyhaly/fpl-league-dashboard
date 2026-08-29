@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T13:13:03Z",
+  "lastUpdated": "2026-08-29T17:07:37Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -1714,14 +1714,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "4.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "58": {
       "id": 58,
@@ -1738,8 +1738,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "59": {
       "id": 59,
@@ -1756,8 +1756,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "60": {
       "id": 60,
@@ -1768,14 +1768,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "61": {
       "id": 61,
@@ -1786,14 +1786,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "62": {
       "id": 62,
@@ -1810,8 +1810,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "63": {
       "id": 63,
@@ -1828,8 +1828,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "64": {
       "id": 64,
@@ -1840,14 +1840,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "65": {
       "id": 65,
@@ -1864,8 +1864,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "66": {
       "id": 66,
@@ -1882,8 +1882,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "67": {
       "id": 67,
@@ -1894,14 +1894,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "68": {
       "id": 68,
@@ -1912,14 +1912,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "69": {
       "id": 69,
@@ -1930,14 +1930,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 12,
       "now_cost": "6.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "70": {
       "id": 70,
@@ -1948,14 +1948,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "71": {
       "id": 71,
@@ -1966,14 +1966,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 68,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "72": {
       "id": 72,
@@ -1990,8 +1990,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "73": {
       "id": 73,
@@ -2002,14 +2002,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 21,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "74": {
       "id": 74,
@@ -2020,14 +2020,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "75": {
       "id": 75,
@@ -2038,14 +2038,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "76": {
       "id": 76,
@@ -2062,8 +2062,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "77": {
       "id": 77,
@@ -2080,8 +2080,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "78": {
       "id": 78,
@@ -2098,8 +2098,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "79": {
       "id": 79,
@@ -2110,14 +2110,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "6.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "80": {
       "id": 80,
@@ -2134,8 +2134,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "81": {
       "id": 81,
@@ -2146,14 +2146,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "566": {
       "id": 566,
@@ -2164,14 +2164,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "573": {
       "id": 573,
@@ -2188,8 +2188,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "608": {
       "id": 608,
@@ -2206,8 +2206,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "615": {
       "id": 615,
@@ -2224,8 +2224,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "82": {
       "id": 82,
@@ -3928,14 +3928,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "104": {
       "id": 104,
@@ -3952,8 +3952,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "110": {
       "id": 110,
@@ -3964,14 +3964,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "171": {
       "id": 171,
@@ -3988,8 +3988,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "172": {
       "id": 172,
@@ -4006,8 +4006,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "173": {
       "id": 173,
@@ -4018,14 +4018,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "4.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "174": {
       "id": 174,
@@ -4042,8 +4042,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "175": {
       "id": 175,
@@ -4054,14 +4054,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "176": {
       "id": 176,
@@ -4072,14 +4072,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "177": {
       "id": 177,
@@ -4096,8 +4096,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "178": {
       "id": 178,
@@ -4114,8 +4114,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "179": {
       "id": 179,
@@ -4132,8 +4132,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "180": {
       "id": 180,
@@ -4150,8 +4150,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "181": {
       "id": 181,
@@ -4168,8 +4168,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "182": {
       "id": 182,
@@ -4180,14 +4180,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "183": {
       "id": 183,
@@ -4198,14 +4198,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "184": {
       "id": 184,
@@ -4216,14 +4216,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "185": {
       "id": 185,
@@ -4234,14 +4234,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 31,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "186": {
       "id": 186,
@@ -4252,14 +4252,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 57,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "187": {
       "id": 187,
@@ -4276,8 +4276,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "188": {
       "id": 188,
@@ -4288,14 +4288,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "189": {
       "id": 189,
@@ -4312,8 +4312,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "190": {
       "id": 190,
@@ -4324,14 +4324,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 58,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "191": {
       "id": 191,
@@ -4348,8 +4348,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "192": {
       "id": 192,
@@ -4366,8 +4366,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "193": {
       "id": 193,
@@ -4384,8 +4384,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "194": {
       "id": 194,
@@ -4396,14 +4396,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "195": {
       "id": 195,
@@ -4420,8 +4420,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "196": {
       "id": 196,
@@ -4438,8 +4438,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "197": {
       "id": 197,
@@ -4456,8 +4456,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "492": {
       "id": 492,
@@ -4468,14 +4468,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "575": {
       "id": 575,
@@ -4486,14 +4486,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "584": {
       "id": 584,
@@ -4504,14 +4504,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "599": {
       "id": 599,
@@ -4528,8 +4528,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "42": {
       "id": 42,
@@ -5140,8 +5140,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "209": {
       "id": 209,
@@ -5152,14 +5152,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 28,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "226": {
       "id": 226,
@@ -5170,14 +5170,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "227": {
       "id": 227,
@@ -5194,8 +5194,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "228": {
       "id": 228,
@@ -5212,8 +5212,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "229": {
       "id": 229,
@@ -5224,14 +5224,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 12,
       "now_cost": "6.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "230": {
       "id": 230,
@@ -5242,14 +5242,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "231": {
       "id": 231,
@@ -5266,8 +5266,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "232": {
       "id": 232,
@@ -5284,8 +5284,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "233": {
       "id": 233,
@@ -5296,14 +5296,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "234": {
       "id": 234,
@@ -5320,8 +5320,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "235": {
       "id": 235,
@@ -5338,8 +5338,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "236": {
       "id": 236,
@@ -5350,14 +5350,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "237": {
       "id": 237,
@@ -5368,14 +5368,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "6.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "239": {
       "id": 239,
@@ -5386,14 +5386,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "240": {
       "id": 240,
@@ -5404,14 +5404,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "242": {
       "id": 242,
@@ -5422,14 +5422,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "243": {
       "id": 243,
@@ -5445,9 +5445,9 @@
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "244": {
       "id": 244,
@@ -5458,14 +5458,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "245": {
       "id": 245,
@@ -5482,8 +5482,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "246": {
       "id": 246,
@@ -5494,14 +5494,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "247": {
       "id": 247,
@@ -5512,14 +5512,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 28,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "248": {
       "id": 248,
@@ -5530,14 +5530,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 20,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "249": {
       "id": 249,
@@ -5548,14 +5548,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 69,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "250": {
       "id": 250,
@@ -6004,8 +6004,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "274": {
       "id": 274,
@@ -6022,8 +6022,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "275": {
       "id": 275,
@@ -6040,8 +6040,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "276": {
       "id": 276,
@@ -6058,8 +6058,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "277": {
       "id": 277,
@@ -6070,14 +6070,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "4.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "278": {
       "id": 278,
@@ -6094,8 +6094,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "279": {
       "id": 279,
@@ -6106,14 +6106,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "280": {
       "id": 280,
@@ -6129,9 +6129,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "281": {
       "id": 281,
@@ -6142,14 +6142,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "282": {
       "id": 282,
@@ -6160,14 +6160,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "283": {
       "id": 283,
@@ -6184,8 +6184,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "284": {
       "id": 284,
@@ -6202,8 +6202,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "285": {
       "id": 285,
@@ -6220,8 +6220,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "286": {
       "id": 286,
@@ -6232,14 +6232,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 82,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "287": {
       "id": 287,
@@ -6250,14 +6250,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 31,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "288": {
       "id": 288,
@@ -6274,8 +6274,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "289": {
       "id": 289,
@@ -6292,8 +6292,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "290": {
       "id": 290,
@@ -6304,14 +6304,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "291": {
       "id": 291,
@@ -6328,8 +6328,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "292": {
       "id": 292,
@@ -6346,8 +6346,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "293": {
       "id": 293,
@@ -6364,8 +6364,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "294": {
       "id": 294,
@@ -6382,8 +6382,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "295": {
       "id": 295,
@@ -6394,14 +6394,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "296": {
       "id": 296,
@@ -6418,8 +6418,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "297": {
       "id": 297,
@@ -6436,8 +6436,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "298": {
       "id": 298,
@@ -6454,8 +6454,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "299": {
       "id": 299,
@@ -6472,8 +6472,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "340": {
       "id": 340,
@@ -6490,8 +6490,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "556": {
       "id": 556,
@@ -6508,8 +6508,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "563": {
       "id": 563,
@@ -6520,14 +6520,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "572": {
       "id": 572,
@@ -6538,14 +6538,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "574": {
       "id": 574,
@@ -6562,8 +6562,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "576": {
       "id": 576,
@@ -6579,9 +6579,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 58,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "585": {
       "id": 585,
@@ -6592,14 +6592,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 31,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "586": {
       "id": 586,
@@ -6610,14 +6610,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 58,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "589": {
       "id": 589,
@@ -6628,14 +6628,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "617": {
       "id": 617,
@@ -6646,14 +6646,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 7,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "259": {
       "id": 259,
@@ -7785,9 +7785,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "351": {
       "id": 351,
@@ -7804,8 +7804,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "352": {
       "id": 352,
@@ -7822,8 +7822,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "353": {
       "id": 353,
@@ -7840,8 +7840,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "354": {
       "id": 354,
@@ -7858,8 +7858,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "355": {
       "id": 355,
@@ -7876,8 +7876,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "356": {
       "id": 356,
@@ -7893,9 +7893,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "357": {
       "id": 357,
@@ -7912,8 +7912,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 70,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "358": {
       "id": 358,
@@ -7930,8 +7930,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 70,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "359": {
       "id": 359,
@@ -7948,8 +7948,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "360": {
       "id": 360,
@@ -7966,8 +7966,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "361": {
       "id": 361,
@@ -7984,8 +7984,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "362": {
       "id": 362,
@@ -8002,8 +8002,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 76,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "363": {
       "id": 363,
@@ -8020,8 +8020,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "364": {
       "id": 364,
@@ -8037,9 +8037,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 9,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "365": {
       "id": 365,
@@ -8056,8 +8056,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "366": {
       "id": 366,
@@ -8068,14 +8068,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 4,
       "now_cost": "7.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "367": {
       "id": 367,
@@ -8092,8 +8092,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 70,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "368": {
       "id": 368,
@@ -8104,14 +8104,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 2,
+      "event_points": 4,
       "now_cost": "7.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "369": {
       "id": 369,
@@ -8127,9 +8127,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 9,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "370": {
       "id": 370,
@@ -8146,8 +8146,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "371": {
       "id": 371,
@@ -8163,9 +8163,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 9,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "372": {
       "id": 372,
@@ -8182,8 +8182,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 76,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "373": {
       "id": 373,
@@ -8200,8 +8200,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "374": {
       "id": 374,
@@ -8218,8 +8218,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "375": {
       "id": 375,
@@ -8235,9 +8235,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 3,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 13,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "376": {
       "id": 376,
@@ -8254,8 +8254,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "377": {
       "id": 377,
@@ -8266,14 +8266,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "6.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "378": {
       "id": 378,
@@ -8290,8 +8290,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "379": {
       "id": 379,
@@ -8307,9 +8307,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "380": {
       "id": 380,
@@ -8326,8 +8326,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "381": {
       "id": 381,
@@ -8344,8 +8344,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "382": {
       "id": 382,
@@ -8362,8 +8362,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "383": {
       "id": 383,
@@ -8380,8 +8380,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "579": {
       "id": 579,
@@ -8397,9 +8397,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 3,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 13,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "238": {
       "id": 238,
@@ -9567,9 +9567,9 @@
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "442": {
       "id": 442,
@@ -9586,8 +9586,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "443": {
       "id": 443,
@@ -9604,8 +9604,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "444": {
       "id": 444,
@@ -9622,8 +9622,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "445": {
       "id": 445,
@@ -9634,14 +9634,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "446": {
       "id": 446,
@@ -9658,8 +9658,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "447": {
       "id": 447,
@@ -9670,14 +9670,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "448": {
       "id": 448,
@@ -9694,8 +9694,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "449": {
       "id": 449,
@@ -9706,14 +9706,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "450": {
       "id": 450,
@@ -9730,8 +9730,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "451": {
       "id": 451,
@@ -9748,8 +9748,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "453": {
       "id": 453,
@@ -9760,14 +9760,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "454": {
       "id": 454,
@@ -9778,14 +9778,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "456": {
       "id": 456,
@@ -9802,8 +9802,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "457": {
       "id": 457,
@@ -9820,8 +9820,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "458": {
       "id": 458,
@@ -9838,8 +9838,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "459": {
       "id": 459,
@@ -9850,14 +9850,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "460": {
       "id": 460,
@@ -9868,14 +9868,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "461": {
       "id": 461,
@@ -9892,8 +9892,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "462": {
       "id": 462,
@@ -9910,8 +9910,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "463": {
       "id": 463,
@@ -9928,8 +9928,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "464": {
       "id": 464,
@@ -9940,14 +9940,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "465": {
       "id": 465,
@@ -9964,8 +9964,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "466": {
       "id": 466,
@@ -9982,8 +9982,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "559": {
       "id": 559,
@@ -10000,8 +10000,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "567": {
       "id": 567,
@@ -10012,14 +10012,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "593": {
       "id": 593,
@@ -10030,14 +10030,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "609": {
       "id": 609,
@@ -10054,8 +10054,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "167": {
       "id": 167,
@@ -10071,9 +10071,9 @@
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "467": {
       "id": 467,
@@ -10084,14 +10084,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 2,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "468": {
       "id": 468,
@@ -10108,8 +10108,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "469": {
       "id": 469,
@@ -10120,14 +10120,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 5,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "470": {
       "id": 470,
@@ -10144,8 +10144,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "471": {
       "id": 471,
@@ -10156,14 +10156,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 4,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "472": {
       "id": 472,
@@ -10174,14 +10174,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 2,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "473": {
       "id": 473,
@@ -10192,14 +10192,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 0,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 85,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "474": {
       "id": 474,
@@ -10210,14 +10210,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 2,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "475": {
       "id": 475,
@@ -10234,8 +10234,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "476": {
       "id": 476,
@@ -10252,8 +10252,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "477": {
       "id": 477,
@@ -10270,8 +10270,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "478": {
       "id": 478,
@@ -10282,14 +10282,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 4,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "479": {
       "id": 479,
@@ -10306,8 +10306,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "480": {
       "id": 480,
@@ -10323,9 +10323,9 @@
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "482": {
       "id": 482,
@@ -10336,14 +10336,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "483": {
       "id": 483,
@@ -10354,14 +10354,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 8,
+      "event_points": 9,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 65,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "484": {
       "id": 484,
@@ -10378,8 +10378,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "485": {
       "id": 485,
@@ -10396,8 +10396,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "486": {
       "id": 486,
@@ -10413,9 +10413,9 @@
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "487": {
       "id": 487,
@@ -10426,14 +10426,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "488": {
       "id": 488,
@@ -10450,8 +10450,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "489": {
       "id": 489,
@@ -10468,8 +10468,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "490": {
       "id": 490,
@@ -10486,8 +10486,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "491": {
       "id": 491,
@@ -10503,9 +10503,9 @@
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "493": {
       "id": 493,
@@ -10522,8 +10522,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "558": {
       "id": 558,
@@ -10539,9 +10539,9 @@
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 80,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "581": {
       "id": 581,
@@ -10558,8 +10558,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "590": {
       "id": 590,
@@ -10576,8 +10576,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (80')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "112": {
       "id": 112,
@@ -10588,14 +10588,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "401": {
       "id": 401,
@@ -10606,14 +10606,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "403": {
       "id": 403,
@@ -10630,8 +10630,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "455": {
       "id": 455,
@@ -10642,14 +10642,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "494": {
       "id": 494,
@@ -10666,8 +10666,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "495": {
       "id": 495,
@@ -10684,8 +10684,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "496": {
       "id": 496,
@@ -10696,14 +10696,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "497": {
       "id": 497,
@@ -10720,8 +10720,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "498": {
       "id": 498,
@@ -10738,8 +10738,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "499": {
       "id": 499,
@@ -10750,14 +10750,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "500": {
       "id": 500,
@@ -10774,8 +10774,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "501": {
       "id": 501,
@@ -10792,8 +10792,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "502": {
       "id": 502,
@@ -10804,14 +10804,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "503": {
       "id": 503,
@@ -10822,14 +10822,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "505": {
       "id": 505,
@@ -10846,8 +10846,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "506": {
       "id": 506,
@@ -10864,8 +10864,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "507": {
       "id": 507,
@@ -10882,8 +10882,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "508": {
       "id": 508,
@@ -10900,8 +10900,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "509": {
       "id": 509,
@@ -10918,8 +10918,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "510": {
       "id": 510,
@@ -10936,8 +10936,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "511": {
       "id": 511,
@@ -10954,8 +10954,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "512": {
       "id": 512,
@@ -10972,8 +10972,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "513": {
       "id": 513,
@@ -10990,8 +10990,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "514": {
       "id": 514,
@@ -11002,14 +11002,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "515": {
       "id": 515,
@@ -11026,8 +11026,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "516": {
       "id": 516,
@@ -11038,14 +11038,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "517": {
       "id": 517,
@@ -11062,8 +11062,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "518": {
       "id": 518,
@@ -11080,8 +11080,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "519": {
       "id": 519,
@@ -11098,8 +11098,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "520": {
       "id": 520,
@@ -11116,8 +11116,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "521": {
       "id": 521,
@@ -11134,8 +11134,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "522": {
       "id": 522,
@@ -11146,14 +11146,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "523": {
       "id": 523,
@@ -11170,8 +11170,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "524": {
       "id": 524,
@@ -11188,8 +11188,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "525": {
       "id": 525,
@@ -11200,14 +11200,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 36,
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "526": {
       "id": 526,
@@ -11224,8 +11224,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "527": {
       "id": 527,
@@ -11242,8 +11242,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "528": {
       "id": 528,
@@ -11260,8 +11260,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "601": {
       "id": 601,
@@ -11278,8 +11278,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (36')"
     },
     "529": {
       "id": 529,
@@ -14075,17 +14075,6 @@
         "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
-    "2023013": [
-      {
-        "element_in": 379,
-        "element_in_cost": 90,
-        "element_out": 25,
-        "element_out_cost": 75,
-        "entry": 2023013,
-        "event": 2,
-        "time": "2026-08-22T06:44:02.281015Z"
-      }
-    ],
     "2067578": [
       {
         "element_in": 565,
@@ -14095,6 +14084,17 @@
         "entry": 2067578,
         "event": 2,
         "time": "2026-08-25T00:27:33.395226Z"
+      }
+    ],
+    "2023013": [
+      {
+        "element_in": 379,
+        "element_in_cost": 90,
+        "element_out": 25,
+        "element_out_cost": 75,
+        "entry": 2023013,
+        "event": 2,
+        "time": "2026-08-22T06:44:02.281015Z"
       }
     ],
     "2026484": [
@@ -14290,16 +14290,16 @@
           "avatar": "VI"
         },
         {
-          "id": 2023013,
-          "name": "នរ សិង្ហ កន្សៃ",
-          "teamName": "G.O.A.T",
-          "avatar": "នរ"
-        },
-        {
           "id": 2067578,
           "name": "Kun Phaktra",
           "teamName": "The Blue Warriors",
           "avatar": "KU"
+        },
+        {
+          "id": 2023013,
+          "name": "នរ សិង្ហ កន្សៃ",
+          "teamName": "G.O.A.T",
+          "avatar": "នរ"
         },
         {
           "id": 2019453,
@@ -14326,8 +14326,8 @@
           "scores": {
             "2023789": 72,
             "2024611": 54,
-            "2023013": 52,
             "2067578": 66,
+            "2023013": 52,
             "2019453": 41,
             "2026484": 61,
             "2026160": 49
@@ -14335,8 +14335,8 @@
           "hits": {
             "2023789": 0,
             "2024611": 0,
-            "2023013": 0,
             "2067578": 0,
+            "2023013": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
@@ -14344,8 +14344,8 @@
           "transfers": {
             "2023789": 0,
             "2024611": 0,
-            "2023013": 0,
             "2067578": 0,
+            "2023013": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
@@ -14353,8 +14353,8 @@
           "benchPoints": {
             "2023789": 0,
             "2024611": 3,
-            "2023013": 4,
             "2067578": 11,
+            "2023013": 4,
             "2019453": 11,
             "2026484": 9,
             "2026160": 0
@@ -14366,8 +14366,8 @@
           "seasonTotals": {
             "2023789": 72,
             "2024611": 54,
-            "2023013": 52,
             "2067578": 66,
+            "2023013": 52,
             "2019453": 41,
             "2026484": 61,
             "2026160": 49
@@ -14378,8 +14378,8 @@
           "scores": {
             "2023789": 36,
             "2024611": 31,
-            "2023013": 31,
             "2067578": 28,
+            "2023013": 31,
             "2019453": 33,
             "2026484": 5,
             "2026160": 13
@@ -14387,8 +14387,8 @@
           "hits": {
             "2023789": 0,
             "2024611": 0,
-            "2023013": 0,
             "2067578": 0,
+            "2023013": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
@@ -14396,8 +14396,8 @@
           "transfers": {
             "2023789": 1,
             "2024611": 0,
-            "2023013": 1,
             "2067578": 1,
+            "2023013": 1,
             "2019453": 0,
             "2026484": 0,
             "2026160": 1
@@ -14405,8 +14405,8 @@
           "benchPoints": {
             "2023789": 0,
             "2024611": 0,
-            "2023013": 0,
             "2067578": 0,
+            "2023013": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
@@ -14418,8 +14418,8 @@
           "seasonTotals": {
             "2023789": 108,
             "2024611": 85,
-            "2023013": 83,
             "2067578": 94,
+            "2023013": 83,
             "2019453": 74,
             "2026484": 66,
             "2026160": 62
