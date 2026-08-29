@@ -1177,10 +1177,23 @@
 
   function getManagerSeasonNetUpToGw(managerId, upToGw) {
     let sum = 0;
+    const staticData = window.FPL_LIVE_STATIC || {};
+    const squadPicksMap = (state.dataset.squadPicks && Object.keys(state.dataset.squadPicks).length > 0)
+      ? state.dataset.squadPicks
+      : (staticData.squadPicks || {});
+    const mgrPicks = squadPicksMap[String(managerId)] || squadPicksMap[Number(managerId)];
+
     for (let g = 1; g <= upToGw; g++) {
       const gwData = state.dataset.gameweeks.find(x => x.gw === g);
-      const gross = (typeof getManagerLiveScore === 'function') ? getManagerLiveScore(managerId, g) : ((gwData && gwData.scores) ? (gwData.scores[managerId] || 0) : 0);
-      const hits = (gwData && gwData.hits) ? (gwData.hits[managerId] || 0) : 0;
+      const gross = getManagerLiveScore(managerId, g);
+      const squadData = (mgrPicks && (mgrPicks[String(g)] || mgrPicks[Number(g)])) || null;
+
+      let hits = 0;
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers_cost === 'number') {
+        hits = squadData.entry_history.event_transfers_cost;
+      } else if (gwData && gwData.hits) {
+        hits = gwData.hits[managerId] || 0;
+      }
       sum += (gross - hits);
     }
     return sum;
@@ -1235,68 +1248,24 @@
     const computed = [];
     const usedBenchIds = new Set();
 
-    const currentFormation = { 1: 0, 2: 0, 3: 0, 4: 0 };
-    starters.forEach(p => {
-      const pl = pMap[p.element];
-      const type = pl?.element_type || (p.position === 1 ? 1 : 2);
-      currentFormation[type] = (currentFormation[type] || 0) + 1;
+    dnpStarters.forEach(starter => {
+      const isGk = starter.position === 1;
+      const candidate = bench.find(b => {
+        if (usedBenchIds.has(b.element)) return false;
+        const pl = pMap[b.element];
+        if (!pl || pl.match_status === 'dnp') return false;
+        return isGk ? b.position === 12 : b.position > 12;
+      });
+
+      if (candidate) {
+        usedBenchIds.add(candidate.element);
+        computed.push({
+          element_in: candidate.element,
+          element_out: starter.element,
+          is_official: false
+        });
+      }
     });
-
-    // Goalkeeper DNP
-    const gkStarter = dnpStarters.find(p => p.position === 1);
-    if (gkStarter) {
-      const benchGk = bench.find(p => p.position === 12);
-      if (benchGk) {
-        const plGk = pMap[benchGk.element];
-        if (plGk && plGk.match_status !== 'dnp') {
-          computed.push({
-            element_in: benchGk.element,
-            element_out: gkStarter.element,
-            is_official: false
-          });
-          usedBenchIds.add(benchGk.element);
-        }
-      }
-    }
-
-    // Outfield DNPs
-    const outfieldDnps = dnpStarters.filter(p => p.position > 1);
-    const outfieldBench = bench.filter(p => p.position > 12);
-
-    for (const dnpStarter of outfieldDnps) {
-      const pOutInfo = pMap[dnpStarter.element];
-      const outType = pOutInfo?.element_type || 2;
-
-      for (const benchPick of outfieldBench) {
-        if (usedBenchIds.has(benchPick.element)) continue;
-
-        const pInInfo = pMap[benchPick.element];
-        if (!pInInfo || pInInfo.match_status === 'dnp') continue;
-
-        const inType = pInInfo.element_type || 2;
-        const testFormation = { ...currentFormation };
-        testFormation[outType]--;
-        testFormation[inType]++;
-
-        // Valid FPL formation: 1 GK, 3-5 DEF, 2-5 MID, 1-3 FWD
-        const isValid = testFormation[1] === 1 &&
-                        testFormation[2] >= 3 && testFormation[2] <= 5 &&
-                        testFormation[3] >= 2 && testFormation[3] <= 5 &&
-                        testFormation[4] >= 1 && testFormation[4] <= 3;
-
-        if (isValid) {
-          computed.push({
-            element_in: benchPick.element,
-            element_out: dnpStarter.element,
-            is_official: false
-          });
-          usedBenchIds.add(benchPick.element);
-          currentFormation[outType]--;
-          currentFormation[inType]++;
-          break;
-        }
-      }
-    }
 
     return computed;
   }
@@ -1316,8 +1285,26 @@
     const mgrPicks = squadPicksMap[String(mId)] || squadPicksMap[Number(mId)];
     const squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
 
+    // For past / finalized gameweeks, always use the recorded official points from entry_history or dataset
+    if (gw < state.currentGw) {
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
+        return squadData.entry_history.points;
+      }
+      if (fallbackScore > 0) {
+        return fallbackScore;
+      }
+    }
+
     if (!squadData || !squadData.picks || squadData.picks.length === 0 || !playersMap || Object.keys(playersMap).length === 0) {
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
+        return squadData.entry_history.points;
+      }
       return fallbackScore;
+    }
+
+    // Only compute live squad points dynamically against playersMap if gw is the current active GW
+    if (gw !== state.currentGw && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
+      return squadData.entry_history.points;
     }
 
     const activeChip = squadData.active_chip ? getChipLabel(squadData.active_chip) : null;
@@ -1343,11 +1330,15 @@
           liveSum += pts * multiplier;
         }
       } else if (subInIds.has(p.element)) {
-        liveSum += pts;
+        liveSum += pts * multiplier;
       }
     });
 
-    return hasPlayerPoints ? liveSum : fallbackScore;
+    if (hasPlayerPoints) return liveSum;
+    if (squadData && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
+      return squadData.entry_history.points;
+    }
+    return fallbackScore;
   }
 
   // ===================== STANDINGS ENGINE =====================
@@ -1358,14 +1349,41 @@
     const activeManagers = state.dataset.managers;
     const total = activeManagers.length;
 
+    const staticData = window.FPL_LIVE_STATIC || {};
+    const squadPicksMap = (state.dataset.squadPicks && Object.keys(state.dataset.squadPicks).length > 0)
+      ? state.dataset.squadPicks
+      : (staticData.squadPicks || {});
+
     let managers = activeManagers.map(m => {
+      const mgrPicks = squadPicksMap[String(m.id)] || squadPicksMap[Number(m.id)];
+      const squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
+
       const grossScore    = getManagerLiveScore(m.id, gw);
-      const hitCost       = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
-      const transfers     = gwData.transfers ? (gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0)) : (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
+      let hitCost = 0;
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers_cost === 'number') {
+        hitCost = squadData.entry_history.event_transfers_cost;
+      } else if (gwData && gwData.hits) {
+        hitCost = gwData.hits[m.id] || 0;
+      }
+
+      let transfers = 0;
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers === 'number') {
+        transfers = squadData.entry_history.event_transfers;
+      } else if (gwData && gwData.transfers) {
+        transfers = gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
+      }
+
       const netScore      = grossScore - hitCost;
-      const bench         = gwData.benchPoints[m.id] || 0;
+
+      let bench = 0;
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.points_on_bench === 'number') {
+        bench = squadData.entry_history.points_on_bench;
+      } else if (gwData && gwData.benchPoints) {
+        bench = gwData.benchPoints[m.id] || 0;
+      }
+
       const captain       = gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
-      const chip          = gwData.chipsUsed[m.id] || null;
+      const chip          = (squadData && squadData.active_chip) ? getChipLabel(squadData.active_chip) : (gwData && gwData.chipsUsed ? gwData.chipsUsed[m.id] : null);
       const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, gw);
       return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, chip, seasonTotalNet };
     });
