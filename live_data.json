@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T07:24:11Z",
+  "lastUpdated": "2026-08-29T13:13:03Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -35,7 +35,7 @@
           "bonus_added": false,
           "date": "2026-08-29",
           "event": 2,
-          "points": ""
+          "points": "l"
         },
         {
           "bonus_added": false,
@@ -7785,9 +7785,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "351": {
       "id": 351,
@@ -7804,8 +7804,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "352": {
       "id": 352,
@@ -7822,8 +7822,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "353": {
       "id": 353,
@@ -7840,8 +7840,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "354": {
       "id": 354,
@@ -7858,8 +7858,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "355": {
       "id": 355,
@@ -7876,8 +7876,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "356": {
       "id": 356,
@@ -7888,14 +7888,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "357": {
       "id": 357,
@@ -7906,14 +7906,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "358": {
       "id": 358,
@@ -7924,14 +7924,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "359": {
       "id": 359,
@@ -7948,8 +7948,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "360": {
       "id": 360,
@@ -7966,8 +7966,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "361": {
       "id": 361,
@@ -7984,8 +7984,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "362": {
       "id": 362,
@@ -7996,14 +7996,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 76,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "363": {
       "id": 363,
@@ -8020,8 +8020,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "364": {
       "id": 364,
@@ -8032,14 +8032,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "365": {
       "id": 365,
@@ -8056,8 +8056,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "366": {
       "id": 366,
@@ -8068,14 +8068,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "367": {
       "id": 367,
@@ -8086,14 +8086,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "7.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "368": {
       "id": 368,
@@ -8104,14 +8104,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "369": {
       "id": 369,
@@ -8122,14 +8122,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "370": {
       "id": 370,
@@ -8146,8 +8146,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "371": {
       "id": 371,
@@ -8158,14 +8158,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "372": {
       "id": 372,
@@ -8176,14 +8176,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 76,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "373": {
       "id": 373,
@@ -8200,8 +8200,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "374": {
       "id": 374,
@@ -8218,8 +8218,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "375": {
       "id": 375,
@@ -8230,14 +8230,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "376": {
       "id": 376,
@@ -8254,8 +8254,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "377": {
       "id": 377,
@@ -8266,14 +8266,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "378": {
       "id": 378,
@@ -8290,8 +8290,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "379": {
       "id": 379,
@@ -8302,14 +8302,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "9.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "380": {
       "id": 380,
@@ -8326,8 +8326,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "381": {
       "id": 381,
@@ -8344,8 +8344,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "382": {
       "id": 382,
@@ -8362,8 +8362,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "383": {
       "id": 383,
@@ -8380,8 +8380,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "579": {
       "id": 579,
@@ -8397,9 +8397,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "238": {
       "id": 238,
@@ -10066,14 +10066,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 14,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "467": {
       "id": 467,
@@ -10084,14 +10084,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "468": {
       "id": 468,
@@ -10108,8 +10108,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "469": {
       "id": 469,
@@ -10120,14 +10120,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "470": {
       "id": 470,
@@ -10144,8 +10144,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "471": {
       "id": 471,
@@ -10156,14 +10156,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "472": {
       "id": 472,
@@ -10174,14 +10174,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "473": {
       "id": 473,
@@ -10192,14 +10192,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "474": {
       "id": 474,
@@ -10210,14 +10210,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "475": {
       "id": 475,
@@ -10234,8 +10234,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "476": {
       "id": 476,
@@ -10252,8 +10252,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "477": {
       "id": 477,
@@ -10270,8 +10270,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "478": {
       "id": 478,
@@ -10288,8 +10288,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "479": {
       "id": 479,
@@ -10306,8 +10306,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "480": {
       "id": 480,
@@ -10318,14 +10318,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 13,
       "now_cost": "7.9",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "482": {
       "id": 482,
@@ -10342,8 +10342,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "483": {
       "id": 483,
@@ -10354,14 +10354,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 65,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "484": {
       "id": 484,
@@ -10378,8 +10378,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "485": {
       "id": 485,
@@ -10396,8 +10396,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "486": {
       "id": 486,
@@ -10408,14 +10408,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "487": {
       "id": 487,
@@ -10432,8 +10432,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "488": {
       "id": 488,
@@ -10450,8 +10450,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "489": {
       "id": 489,
@@ -10468,8 +10468,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "490": {
       "id": 490,
@@ -10486,8 +10486,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "491": {
       "id": 491,
@@ -10498,14 +10498,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "493": {
       "id": 493,
@@ -10522,8 +10522,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "558": {
       "id": 558,
@@ -10534,14 +10534,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "581": {
       "id": 581,
@@ -10558,8 +10558,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "590": {
       "id": 590,
@@ -10576,8 +10576,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (80')"
     },
     "112": {
       "id": 112,
@@ -14075,17 +14075,6 @@
         "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
-    "2067578": [
-      {
-        "element_in": 565,
-        "element_in_cost": 55,
-        "element_out": 127,
-        "element_out_cost": 50,
-        "entry": 2067578,
-        "event": 2,
-        "time": "2026-08-25T00:27:33.395226Z"
-      }
-    ],
     "2023013": [
       {
         "element_in": 379,
@@ -14095,6 +14084,17 @@
         "entry": 2023013,
         "event": 2,
         "time": "2026-08-22T06:44:02.281015Z"
+      }
+    ],
+    "2067578": [
+      {
+        "element_in": 565,
+        "element_in_cost": 55,
+        "element_out": 127,
+        "element_out_cost": 50,
+        "entry": 2067578,
+        "event": 2,
+        "time": "2026-08-25T00:27:33.395226Z"
       }
     ],
     "2026484": [
@@ -14284,12 +14284,6 @@
           "avatar": "MO"
         },
         {
-          "id": 2067578,
-          "name": "Kun Phaktra",
-          "teamName": "The Blue Warriors",
-          "avatar": "KU"
-        },
-        {
           "id": 2024611,
           "name": "Vibol Dang",
           "teamName": "The White Emperor",
@@ -14300,6 +14294,12 @@
           "name": "នរ សិង្ហ កន្សៃ",
           "teamName": "G.O.A.T",
           "avatar": "នរ"
+        },
+        {
+          "id": 2067578,
+          "name": "Kun Phaktra",
+          "teamName": "The Blue Warriors",
+          "avatar": "KU"
         },
         {
           "id": 2019453,
@@ -14325,36 +14325,36 @@
           "gw": 1,
           "scores": {
             "2023789": 72,
-            "2067578": 66,
             "2024611": 54,
             "2023013": 52,
+            "2067578": 66,
             "2019453": 41,
             "2026484": 61,
             "2026160": 49
           },
           "hits": {
             "2023789": 0,
-            "2067578": 0,
             "2024611": 0,
             "2023013": 0,
+            "2067578": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
           },
           "transfers": {
             "2023789": 0,
-            "2067578": 0,
             "2024611": 0,
             "2023013": 0,
+            "2067578": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
           },
           "benchPoints": {
             "2023789": 0,
-            "2067578": 11,
             "2024611": 3,
             "2023013": 4,
+            "2067578": 11,
             "2019453": 11,
             "2026484": 9,
             "2026160": 0
@@ -14365,9 +14365,9 @@
           },
           "seasonTotals": {
             "2023789": 72,
-            "2067578": 66,
             "2024611": 54,
             "2023013": 52,
+            "2067578": 66,
             "2019453": 41,
             "2026484": 61,
             "2026160": 49
@@ -14377,36 +14377,36 @@
           "gw": 2,
           "scores": {
             "2023789": 36,
-            "2067578": 28,
             "2024611": 31,
             "2023013": 31,
+            "2067578": 28,
             "2019453": 33,
             "2026484": 5,
             "2026160": 13
           },
           "hits": {
             "2023789": 0,
-            "2067578": 0,
             "2024611": 0,
             "2023013": 0,
+            "2067578": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
           },
           "transfers": {
             "2023789": 1,
-            "2067578": 1,
             "2024611": 0,
             "2023013": 1,
+            "2067578": 1,
             "2019453": 0,
             "2026484": 0,
             "2026160": 1
           },
           "benchPoints": {
             "2023789": 0,
-            "2067578": 0,
             "2024611": 0,
             "2023013": 0,
+            "2067578": 0,
             "2019453": 0,
             "2026484": 0,
             "2026160": 0
@@ -14417,9 +14417,9 @@
           },
           "seasonTotals": {
             "2023789": 108,
-            "2067578": 94,
             "2024611": 85,
             "2023013": 83,
+            "2067578": 94,
             "2019453": 74,
             "2026484": 66,
             "2026160": 62
