@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T17:07:37Z",
+  "lastUpdated": "2026-08-29T19:41:12Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -22,7 +22,7 @@
       "is_next": false,
       "deadline_time": "2026-08-28T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
@@ -35,7 +35,7 @@
           "bonus_added": false,
           "date": "2026-08-29",
           "event": 2,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -4524,6 +4524,24 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.0",
+      "opponent": "HUL",
+      "opponent_short": "HUL",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "623": {
+      "id": 623,
+      "web_name": "Bentley",
+      "first_name": "Dan",
+      "second_name": "Bentley",
+      "element_type": 1,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "team_id": 7,
+      "event_points": 0,
+      "now_cost": "4.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -9562,14 +9580,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "442": {
       "id": 442,
@@ -9586,8 +9604,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "443": {
       "id": 443,
@@ -9604,8 +9622,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "444": {
       "id": 444,
@@ -9622,8 +9640,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "445": {
       "id": 445,
@@ -9634,14 +9652,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "446": {
       "id": 446,
@@ -9658,8 +9676,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "447": {
       "id": 447,
@@ -9670,14 +9688,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 5,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "448": {
       "id": 448,
@@ -9694,8 +9712,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "449": {
       "id": 449,
@@ -9706,14 +9724,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 4,
+      "event_points": 11,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "450": {
       "id": 450,
@@ -9730,8 +9748,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "451": {
       "id": 451,
@@ -9748,8 +9766,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "453": {
       "id": 453,
@@ -9760,14 +9778,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "454": {
       "id": 454,
@@ -9778,14 +9796,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 8,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 81,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "456": {
       "id": 456,
@@ -9796,14 +9814,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "457": {
       "id": 457,
@@ -9814,14 +9832,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "458": {
       "id": 458,
@@ -9838,8 +9856,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "459": {
       "id": 459,
@@ -9850,14 +9868,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "460": {
       "id": 460,
@@ -9868,14 +9886,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "461": {
       "id": 461,
@@ -9886,14 +9904,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "462": {
       "id": 462,
@@ -9904,14 +9922,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "463": {
       "id": 463,
@@ -9922,14 +9940,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "464": {
       "id": 464,
@@ -9940,14 +9958,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 7,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 81,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "465": {
       "id": 465,
@@ -9964,8 +9982,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "466": {
       "id": 466,
@@ -9982,8 +10000,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "559": {
       "id": 559,
@@ -10000,8 +10018,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "567": {
       "id": 567,
@@ -10012,14 +10030,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 1,
+      "event_points": 7,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "593": {
       "id": 593,
@@ -10030,14 +10048,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 2,
+      "event_points": 11,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "609": {
       "id": 609,
@@ -10054,8 +10072,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "167": {
       "id": 167,
@@ -10588,14 +10606,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 3,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "401": {
       "id": 401,
@@ -10606,14 +10624,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "7.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "403": {
       "id": 403,
@@ -10630,8 +10648,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "455": {
       "id": 455,
@@ -10642,14 +10660,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 74,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "494": {
       "id": 494,
@@ -10666,8 +10684,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "495": {
       "id": 495,
@@ -10684,8 +10702,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "496": {
       "id": 496,
@@ -10701,9 +10719,9 @@
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "497": {
       "id": 497,
@@ -10720,8 +10738,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "498": {
       "id": 498,
@@ -10738,8 +10756,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "499": {
       "id": 499,
@@ -10750,14 +10768,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 2,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "500": {
       "id": 500,
@@ -10774,8 +10792,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "501": {
       "id": 501,
@@ -10792,8 +10810,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "502": {
       "id": 502,
@@ -10804,14 +10822,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 67,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "503": {
       "id": 503,
@@ -10822,14 +10840,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 0,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "505": {
       "id": 505,
@@ -10846,8 +10864,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "506": {
       "id": 506,
@@ -10858,14 +10876,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 22,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "507": {
       "id": 507,
@@ -10882,8 +10900,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "508": {
       "id": 508,
@@ -10900,8 +10918,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "509": {
       "id": 509,
@@ -10918,8 +10936,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "510": {
       "id": 510,
@@ -10936,8 +10954,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "511": {
       "id": 511,
@@ -10954,8 +10972,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "512": {
       "id": 512,
@@ -10966,14 +10984,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 22,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "513": {
       "id": 513,
@@ -10990,8 +11008,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "514": {
       "id": 514,
@@ -11007,9 +11025,9 @@
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 67,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "515": {
       "id": 515,
@@ -11026,8 +11044,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "516": {
       "id": 516,
@@ -11038,14 +11056,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "517": {
       "id": 517,
@@ -11062,8 +11080,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "518": {
       "id": 518,
@@ -11080,8 +11098,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "519": {
       "id": 519,
@@ -11098,8 +11116,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "520": {
       "id": 520,
@@ -11116,8 +11134,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "521": {
       "id": 521,
@@ -11134,8 +11152,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "522": {
       "id": 522,
@@ -11146,14 +11164,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 67,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "523": {
       "id": 523,
@@ -11164,14 +11182,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 22,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "524": {
       "id": 524,
@@ -11188,8 +11206,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "525": {
       "id": 525,
@@ -11200,14 +11218,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 36,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "526": {
       "id": 526,
@@ -11218,14 +11236,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "minutes": 15,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "527": {
       "id": 527,
@@ -11242,8 +11260,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "528": {
       "id": 528,
@@ -11260,8 +11278,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "601": {
       "id": 601,
@@ -11278,8 +11296,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (36')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "529": {
       "id": 529,
@@ -12037,13 +12055,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 36,
-          "total_points": 108,
-          "rank": 581453,
-          "rank_sort": 590755,
-          "overall_rank": 61763,
-          "percentile_rank": 10,
-          "overall_rank_percentage": "0.6",
+          "points": 37,
+          "total_points": 109,
+          "rank": 2688222,
+          "rank_sort": 2707362,
+          "overall_rank": 292197,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "3",
           "bank": 0,
           "value": 1002,
           "event_transfers": 1,
@@ -12328,18 +12346,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 31,
-          "total_points": 83,
-          "rank": 1657729,
-          "rank_sort": 1721292,
-          "overall_rank": 1684061,
-          "percentile_rank": 20,
-          "overall_rank_percentage": "17",
+          "points": 45,
+          "total_points": 97,
+          "rank": 1084130,
+          "rank_sort": 1093362,
+          "overall_rank": 1174466,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "12",
           "bank": 0,
           "value": 1000,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 6
         },
         "automatic_subs": []
       }
@@ -12612,13 +12630,13 @@
         "active_chip": "wildcard",
         "entry_history": {
           "event": 2,
-          "points": 5,
-          "total_points": 66,
-          "rank": 8012835,
-          "rank_sort": 8072848,
-          "overall_rank": 4978807,
-          "percentile_rank": 85,
-          "overall_rank_percentage": "50",
+          "points": 18,
+          "total_points": 79,
+          "rank": 7585974,
+          "rank_sort": 7654779,
+          "overall_rank": 4270361,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "43",
           "bank": 25,
           "value": 1003,
           "event_transfers": 0,
@@ -12903,18 +12921,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 28,
-          "total_points": 94,
-          "rank": 2640116,
-          "rank_sort": 2692846,
-          "overall_rank": 493644,
-          "percentile_rank": 30,
-          "overall_rank_percentage": "5",
+          "points": 32,
+          "total_points": 98,
+          "rank": 4256068,
+          "rank_sort": 4278777,
+          "overall_rank": 1062630,
+          "percentile_rank": 45,
+          "overall_rank_percentage": "11",
           "bank": 0,
           "value": 1003,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 1
         },
         "automatic_subs": []
       }
@@ -13187,18 +13205,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 13,
-          "total_points": 62,
-          "rank": 6809678,
-          "rank_sort": 6906407,
-          "overall_rank": 5909917,
-          "percentile_rank": 70,
-          "overall_rank_percentage": "60",
+          "points": 28,
+          "total_points": 77,
+          "rank": 5377945,
+          "rank_sort": 5392644,
+          "overall_rank": 4830894,
+          "percentile_rank": 55,
+          "overall_rank_percentage": "49",
           "bank": 20,
           "value": 1002,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 1
         },
         "automatic_subs": []
       }
@@ -13471,13 +13489,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 33,
-          "total_points": 74,
-          "rank": 739601,
-          "rank_sort": 770222,
-          "overall_rank": 3242984,
-          "percentile_rank": 10,
-          "overall_rank_percentage": "33",
+          "points": 39,
+          "total_points": 80,
+          "rank": 2057000,
+          "rank_sort": 2083046,
+          "overall_rank": 4059857,
+          "percentile_rank": 25,
+          "overall_rank_percentage": "41",
           "bank": 0,
           "value": 1002,
           "event_transfers": 0,
@@ -13755,13 +13773,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 31,
-          "total_points": 85,
-          "rank": 1109824,
-          "rank_sort": 1226678,
-          "overall_rank": 1306061,
-          "percentile_rank": 15,
-          "overall_rank_percentage": "13",
+          "points": 48,
+          "total_points": 102,
+          "rank": 645648,
+          "rank_sort": 656188,
+          "overall_rank": 645289,
+          "percentile_rank": 10,
+          "overall_rank_percentage": "6",
           "bank": 0,
           "value": 1000,
           "event_transfers": 0,
@@ -14046,13 +14064,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 13,
-          "total_points": 56,
-          "rank": 6063578,
-          "rank_sort": 6093486,
-          "overall_rank": 6869014,
+          "points": 24,
+          "total_points": 67,
+          "rank": 6114244,
+          "rank_sort": 6116078,
+          "overall_rank": 6646605,
           "percentile_rank": 65,
-          "overall_rank_percentage": "69",
+          "overall_rank_percentage": "67",
           "bank": 0,
           "value": 1002,
           "event_transfers": 0,
@@ -14376,13 +14394,13 @@
         {
           "gw": 2,
           "scores": {
-            "2023789": 36,
-            "2024611": 31,
-            "2067578": 28,
-            "2023013": 31,
-            "2019453": 33,
-            "2026484": 5,
-            "2026160": 13
+            "2023789": 37,
+            "2024611": 48,
+            "2067578": 32,
+            "2023013": 45,
+            "2019453": 39,
+            "2026484": 18,
+            "2026160": 28
           },
           "hits": {
             "2023789": 0,
@@ -14405,24 +14423,24 @@
           "benchPoints": {
             "2023789": 0,
             "2024611": 0,
-            "2067578": 0,
-            "2023013": 0,
+            "2067578": 1,
+            "2023013": 6,
             "2019453": 0,
             "2026484": 0,
-            "2026160": 0
+            "2026160": 1
           },
           "captainPoints": {},
           "chipsUsed": {
             "2026484": "wildcard"
           },
           "seasonTotals": {
-            "2023789": 108,
-            "2024611": 85,
-            "2067578": 94,
-            "2023013": 83,
-            "2019453": 74,
-            "2026484": 66,
-            "2026160": 62
+            "2023789": 109,
+            "2024611": 102,
+            "2067578": 98,
+            "2023013": 97,
+            "2019453": 80,
+            "2026484": 79,
+            "2026160": 77
           }
         },
         {
@@ -14923,8 +14941,8 @@
         {
           "gw": 2,
           "scores": {
-            "2019453": 33,
-            "145847": 13
+            "2019453": 39,
+            "145847": 24
           },
           "hits": {
             "2019453": 0,
@@ -14941,8 +14959,8 @@
           "captainPoints": {},
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 74,
-            "145847": 56
+            "2019453": 80,
+            "145847": 67
           }
         },
         {
