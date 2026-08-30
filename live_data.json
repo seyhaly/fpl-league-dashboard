@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-29T23:46:13Z",
+  "lastUpdated": "2026-08-30T01:41:39Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -9958,7 +9958,7 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 7,
+      "event_points": 8,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
