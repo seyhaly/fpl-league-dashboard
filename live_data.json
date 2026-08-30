@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-30T07:25:58Z",
+  "lastUpdated": "2026-08-30T13:02:35Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -41,7 +41,7 @@
           "bonus_added": false,
           "date": "2026-08-30",
           "event": 2,
-          "points": ""
+          "points": "l"
         },
         {
           "bonus_added": false,
@@ -2242,8 +2242,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "83": {
       "id": 83,
@@ -2260,8 +2260,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "84": {
       "id": 84,
@@ -2278,8 +2278,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "85": {
       "id": 85,
@@ -2296,8 +2296,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "86": {
       "id": 86,
@@ -2314,8 +2314,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "87": {
       "id": 87,
@@ -2332,8 +2332,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "88": {
       "id": 88,
@@ -2350,8 +2350,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "89": {
       "id": 89,
@@ -2368,8 +2368,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "90": {
       "id": 90,
@@ -2386,8 +2386,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "92": {
       "id": 92,
@@ -2404,8 +2404,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "93": {
       "id": 93,
@@ -2422,8 +2422,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "94": {
       "id": 94,
@@ -2440,8 +2440,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "95": {
       "id": 95,
@@ -2458,8 +2458,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "96": {
       "id": 96,
@@ -2476,8 +2476,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "97": {
       "id": 97,
@@ -2494,8 +2494,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "98": {
       "id": 98,
@@ -2512,8 +2512,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "99": {
       "id": 99,
@@ -2530,8 +2530,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "100": {
       "id": 100,
@@ -2548,8 +2548,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "102": {
       "id": 102,
@@ -2566,8 +2566,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "103": {
       "id": 103,
@@ -2584,8 +2584,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "105": {
       "id": 105,
@@ -2602,8 +2602,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "106": {
       "id": 106,
@@ -2620,8 +2620,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "107": {
       "id": 107,
@@ -2638,8 +2638,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "108": {
       "id": 108,
@@ -2656,8 +2656,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "565": {
       "id": 565,
@@ -2674,8 +2674,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "620": {
       "id": 620,
@@ -2692,8 +2692,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "109": {
       "id": 109,
@@ -2710,8 +2710,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "111": {
       "id": 111,
@@ -2728,8 +2728,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "113": {
       "id": 113,
@@ -2746,8 +2746,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "114": {
       "id": 114,
@@ -2764,8 +2764,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "115": {
       "id": 115,
@@ -2782,8 +2782,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "116": {
       "id": 116,
@@ -2800,8 +2800,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "117": {
       "id": 117,
@@ -2818,8 +2818,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "118": {
       "id": 118,
@@ -2836,8 +2836,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "119": {
       "id": 119,
@@ -2854,8 +2854,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "120": {
       "id": 120,
@@ -2872,8 +2872,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "121": {
       "id": 121,
@@ -2890,8 +2890,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "122": {
       "id": 122,
@@ -2908,8 +2908,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "123": {
       "id": 123,
@@ -2926,8 +2926,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "124": {
       "id": 124,
@@ -2944,8 +2944,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "125": {
       "id": 125,
@@ -2962,8 +2962,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "126": {
       "id": 126,
@@ -2980,8 +2980,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "127": {
       "id": 127,
@@ -2998,8 +2998,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "128": {
       "id": 128,
@@ -3016,8 +3016,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "129": {
       "id": 129,
@@ -3034,8 +3034,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "130": {
       "id": 130,
@@ -3052,8 +3052,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "132": {
       "id": 132,
@@ -3070,8 +3070,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "133": {
       "id": 133,
@@ -3088,8 +3088,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "134": {
       "id": 134,
@@ -3106,8 +3106,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "135": {
       "id": 135,
@@ -3124,8 +3124,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "137": {
       "id": 137,
@@ -3142,8 +3142,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "138": {
       "id": 138,
@@ -3160,8 +3160,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "139": {
       "id": 139,
@@ -3178,8 +3178,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "328": {
       "id": 328,
@@ -3196,8 +3196,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "504": {
       "id": 504,
@@ -3214,8 +3214,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "594": {
       "id": 594,
@@ -3232,8 +3232,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "600": {
       "id": 600,
@@ -3250,8 +3250,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "605": {
       "id": 605,
@@ -3268,8 +3268,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "614": {
       "id": 614,
@@ -3286,8 +3286,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "40": {
       "id": 40,
@@ -3304,8 +3304,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "101": {
       "id": 101,
@@ -3322,8 +3322,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "136": {
       "id": 136,
@@ -3340,8 +3340,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "140": {
       "id": 140,
@@ -3358,8 +3358,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "141": {
       "id": 141,
@@ -3376,8 +3376,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "142": {
       "id": 142,
@@ -3394,8 +3394,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "143": {
       "id": 143,
@@ -3412,8 +3412,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "144": {
       "id": 144,
@@ -3430,8 +3430,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "145": {
       "id": 145,
@@ -3448,8 +3448,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "146": {
       "id": 146,
@@ -3466,8 +3466,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "147": {
       "id": 147,
@@ -3484,8 +3484,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "148": {
       "id": 148,
@@ -3502,8 +3502,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "149": {
       "id": 149,
@@ -3520,8 +3520,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "150": {
       "id": 150,
@@ -3538,8 +3538,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "151": {
       "id": 151,
@@ -3556,8 +3556,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "152": {
       "id": 152,
@@ -3574,8 +3574,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "154": {
       "id": 154,
@@ -3592,8 +3592,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "155": {
       "id": 155,
@@ -3610,8 +3610,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "156": {
       "id": 156,
@@ -3628,8 +3628,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "157": {
       "id": 157,
@@ -3646,8 +3646,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "158": {
       "id": 158,
@@ -3664,8 +3664,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "159": {
       "id": 159,
@@ -3682,8 +3682,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "161": {
       "id": 161,
@@ -3700,8 +3700,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "163": {
       "id": 163,
@@ -3718,8 +3718,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "164": {
       "id": 164,
@@ -3736,8 +3736,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "165": {
       "id": 165,
@@ -3754,8 +3754,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "168": {
       "id": 168,
@@ -3772,8 +3772,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "169": {
       "id": 169,
@@ -3790,8 +3790,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "170": {
       "id": 170,
@@ -3808,8 +3808,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "200": {
       "id": 200,
@@ -3826,8 +3826,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "560": {
       "id": 560,
@@ -3844,8 +3844,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "561": {
       "id": 561,
@@ -3862,8 +3862,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "568": {
       "id": 568,
@@ -3880,8 +3880,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "578": {
       "id": 578,
@@ -3898,8 +3898,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "583": {
       "id": 583,
@@ -3916,8 +3916,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "91": {
       "id": 91,
@@ -5590,8 +5590,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "251": {
       "id": 251,
@@ -5608,8 +5608,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "252": {
       "id": 252,
@@ -5626,8 +5626,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "253": {
       "id": 253,
@@ -5644,8 +5644,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "254": {
       "id": 254,
@@ -5662,8 +5662,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "255": {
       "id": 255,
@@ -5680,8 +5680,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "256": {
       "id": 256,
@@ -5698,8 +5698,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "257": {
       "id": 257,
@@ -5716,8 +5716,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "258": {
       "id": 258,
@@ -5734,8 +5734,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "261": {
       "id": 261,
@@ -5752,8 +5752,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "262": {
       "id": 262,
@@ -5770,8 +5770,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "263": {
       "id": 263,
@@ -5788,8 +5788,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "264": {
       "id": 264,
@@ -5806,8 +5806,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "265": {
       "id": 265,
@@ -5824,8 +5824,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "266": {
       "id": 266,
@@ -5842,8 +5842,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "268": {
       "id": 268,
@@ -5860,8 +5860,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "269": {
       "id": 269,
@@ -5878,8 +5878,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "270": {
       "id": 270,
@@ -5896,8 +5896,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "271": {
       "id": 271,
@@ -5914,8 +5914,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "272": {
       "id": 272,
@@ -5932,8 +5932,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "569": {
       "id": 569,
@@ -5950,8 +5950,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "570": {
       "id": 570,
@@ -5968,8 +5968,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "580": {
       "id": 580,
@@ -5986,8 +5986,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "610": {
       "id": 610,
@@ -6004,8 +6004,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "273": {
       "id": 273,
@@ -7318,8 +7318,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "326": {
       "id": 326,
@@ -7336,8 +7336,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "327": {
       "id": 327,
@@ -7354,8 +7354,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "329": {
       "id": 329,
@@ -7372,8 +7372,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "330": {
       "id": 330,
@@ -7390,8 +7390,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "331": {
       "id": 331,
@@ -7408,8 +7408,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "332": {
       "id": 332,
@@ -7426,8 +7426,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "333": {
       "id": 333,
@@ -7444,8 +7444,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "334": {
       "id": 334,
@@ -7462,8 +7462,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "335": {
       "id": 335,
@@ -7480,8 +7480,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "336": {
       "id": 336,
@@ -7498,8 +7498,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "337": {
       "id": 337,
@@ -7516,8 +7516,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "338": {
       "id": 338,
@@ -7534,8 +7534,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "339": {
       "id": 339,
@@ -7552,8 +7552,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "341": {
       "id": 341,
@@ -7570,8 +7570,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "342": {
       "id": 342,
@@ -7588,8 +7588,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "343": {
       "id": 343,
@@ -7606,8 +7606,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "344": {
       "id": 344,
@@ -7624,8 +7624,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "345": {
       "id": 345,
@@ -7642,8 +7642,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "346": {
       "id": 346,
@@ -7660,8 +7660,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "347": {
       "id": 347,
@@ -7678,8 +7678,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "348": {
       "id": 348,
@@ -7696,8 +7696,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "349": {
       "id": 349,
@@ -7714,8 +7714,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "385": {
       "id": 385,
@@ -7732,8 +7732,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "598": {
       "id": 598,
@@ -7750,8 +7750,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "603": {
       "id": 603,
@@ -7768,8 +7768,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "604": {
       "id": 604,
@@ -7786,8 +7786,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "350": {
       "id": 350,
@@ -11314,8 +11314,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "530": {
       "id": 530,
@@ -11332,8 +11332,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "531": {
       "id": 531,
@@ -11350,8 +11350,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "532": {
       "id": 532,
@@ -11368,8 +11368,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "533": {
       "id": 533,
@@ -11386,8 +11386,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "534": {
       "id": 534,
@@ -11404,8 +11404,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "535": {
       "id": 535,
@@ -11422,8 +11422,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "536": {
       "id": 536,
@@ -11440,8 +11440,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "537": {
       "id": 537,
@@ -11458,8 +11458,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "538": {
       "id": 538,
@@ -11476,8 +11476,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "539": {
       "id": 539,
@@ -11494,8 +11494,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "540": {
       "id": 540,
@@ -11512,8 +11512,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "541": {
       "id": 541,
@@ -11530,8 +11530,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "542": {
       "id": 542,
@@ -11548,8 +11548,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "543": {
       "id": 543,
@@ -11566,8 +11566,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "544": {
       "id": 544,
@@ -11584,8 +11584,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "545": {
       "id": 545,
@@ -11602,8 +11602,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "546": {
       "id": 546,
@@ -11620,8 +11620,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "547": {
       "id": 547,
@@ -11638,8 +11638,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "548": {
       "id": 548,
@@ -11656,8 +11656,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "549": {
       "id": 549,
@@ -11674,8 +11674,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "550": {
       "id": 550,
@@ -11692,8 +11692,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "551": {
       "id": 551,
@@ -11710,8 +11710,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "552": {
       "id": 552,
@@ -11728,8 +11728,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "553": {
       "id": 553,
@@ -11746,8 +11746,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "612": {
       "id": 612,
@@ -11764,8 +11764,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     },
     "613": {
       "id": 613,
@@ -11782,8 +11782,8 @@
       "opponent_short": "FUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (0')"
     }
   },
   "squadPicks": {
