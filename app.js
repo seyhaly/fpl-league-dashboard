@@ -1334,9 +1334,32 @@
       }
 
       let transfers = 0;
-      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers === 'number') {
+      const transfersHistoryMap = (state.dataset.transfersHistory && Object.keys(state.dataset.transfersHistory).length > 0)
+        ? state.dataset.transfersHistory
+        : (staticData.transfersHistory || {});
+      const mTransfers = transfersHistoryMap[String(m.id)] || transfersHistoryMap[Number(m.id)] || [];
+      const gwTransfers = mTransfers.filter(t => t.event === gw);
+
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers === 'number' && squadData.entry_history.event_transfers > 0) {
         transfers = squadData.entry_history.event_transfers;
-      } else if (gwData && gwData.transfers) {
+      } else if (gwTransfers.length > 0) {
+        transfers = gwTransfers.length;
+      } else if (gwData && gwData.transfers && gwData.transfers[m.id] !== undefined && gwData.transfers[m.id] > 0) {
+        transfers = gwData.transfers[m.id];
+      } else if (gw > 1 && mgrPicks) {
+        const prevSquad = mgrPicks[String(gw - 1)] || mgrPicks[Number(gw - 1)];
+        if (prevSquad && prevSquad.picks && squadData && squadData.picks) {
+          const prevElements = new Set(prevSquad.picks.map(p => p.element));
+          const currentElements = new Set(squadData.picks.map(p => p.element));
+          let diffCount = 0;
+          currentElements.forEach(el => {
+            if (!prevElements.has(el)) diffCount++;
+          });
+          if (diffCount > 0) transfers = diffCount;
+        }
+      }
+
+      if (transfers === 0 && gwData && gwData.transfers && gwData.transfers[m.id] !== undefined) {
         transfers = gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
       }
 

@@ -310,8 +310,12 @@ def main():
                     curr_gw_obj['scores'][m_id] = entry_hist['points']
                 if 'event_transfers_cost' in entry_hist:
                     curr_gw_obj['hits'][m_id] = entry_hist['event_transfers_cost']
-                if 'event_transfers' in entry_hist:
-                    curr_gw_obj['transfers'][m_id] = entry_hist['event_transfers']
+                trans_count = entry_hist.get('event_transfers', 0)
+                if trans_count == 0 and trans_data and isinstance(trans_data, list):
+                    gw_trans = [t for t in trans_data if t.get('event') == detected_gw]
+                    if gw_trans:
+                        trans_count = len(gw_trans)
+                curr_gw_obj['transfers'][m_id] = trans_count
                 if 'points_on_bench' in entry_hist:
                     curr_gw_obj['benchPoints'][m_id] = entry_hist['points_on_bench']
                 if 'total_points' in entry_hist:

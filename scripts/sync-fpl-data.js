@@ -326,7 +326,12 @@ async function syncAll() {
           if (picksData.entry_history) {
             if (picksData.entry_history.points !== undefined) currGwObj.scores[m.id] = picksData.entry_history.points;
             if (picksData.entry_history.event_transfers_cost !== undefined) currGwObj.hits[m.id] = picksData.entry_history.event_transfers_cost;
-            if (picksData.entry_history.event_transfers !== undefined) currGwObj.transfers[m.id] = picksData.entry_history.event_transfers;
+            let transCount = picksData.entry_history.event_transfers || 0;
+            if (transCount === 0 && transData && Array.isArray(transData)) {
+              const gwTrans = transData.filter(t => t.event === detectedGw);
+              if (gwTrans.length > 0) transCount = gwTrans.length;
+            }
+            currGwObj.transfers[m.id] = transCount;
             if (picksData.entry_history.points_on_bench !== undefined) currGwObj.benchPoints[m.id] = picksData.entry_history.points_on_bench;
             if (picksData.entry_history.total_points !== undefined) currGwObj.seasonTotals[m.id] = picksData.entry_history.total_points;
           }
