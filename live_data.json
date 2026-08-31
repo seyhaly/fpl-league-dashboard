@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T19:35:51Z",
+  "lastUpdated": "2026-08-31T23:19:26Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -22,8 +22,8 @@
       "is_next": false,
       "deadline_time": "2026-08-28T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
-      "points": "l",
+      "leagues": "Updating",
+      "points": "p",
       "daily_status": [
         {
           "bonus_added": false,
@@ -47,7 +47,7 @@
           "bonus_added": false,
           "date": "2026-08-31",
           "event": 2,
-          "points": "l"
+          "points": "p"
         }
       ]
     },
@@ -580,14 +580,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "6.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "2": {
       "id": 2,
@@ -604,8 +604,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "3": {
       "id": 3,
@@ -622,8 +622,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "4": {
       "id": 4,
@@ -634,14 +634,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 8,
       "now_cost": "8.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "5": {
       "id": 5,
@@ -658,8 +658,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "6": {
       "id": 6,
@@ -676,8 +676,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "7": {
       "id": 7,
@@ -688,14 +688,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 2,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "8": {
       "id": 8,
@@ -706,14 +706,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 11,
       "now_cost": "5.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "9": {
       "id": 9,
@@ -730,8 +730,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "10": {
       "id": 10,
@@ -742,14 +742,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 2,
+      "event_points": 7,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "11": {
       "id": 11,
@@ -760,14 +760,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 78,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "12": {
       "id": 12,
@@ -778,14 +778,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 2,
+      "event_points": 11,
       "now_cost": "9.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "13": {
       "id": 13,
@@ -801,9 +801,9 @@
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "14": {
       "id": 14,
@@ -814,14 +814,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "15": {
       "id": 15,
@@ -832,14 +832,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 2,
+      "event_points": 3,
       "now_cost": "6.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "16": {
       "id": 16,
@@ -856,8 +856,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "17": {
       "id": 17,
@@ -868,14 +868,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "18": {
       "id": 18,
@@ -892,8 +892,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "19": {
       "id": 19,
@@ -904,14 +904,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "20": {
       "id": 20,
@@ -928,8 +928,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "22": {
       "id": 22,
@@ -946,8 +946,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "23": {
       "id": 23,
@@ -964,8 +964,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "24": {
       "id": 24,
@@ -982,8 +982,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "25": {
       "id": 25,
@@ -1000,8 +1000,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "26": {
       "id": 26,
@@ -1012,14 +1012,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "7.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "27": {
       "id": 27,
@@ -1031,13 +1031,13 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "31": {
       "id": 31,
@@ -1048,14 +1048,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 11,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "452": {
       "id": 452,
@@ -1066,14 +1066,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.9",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "557": {
       "id": 557,
@@ -1089,9 +1089,9 @@
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "29": {
       "id": 29,
@@ -1108,8 +1108,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "30": {
       "id": 30,
@@ -1126,8 +1126,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "32": {
       "id": 32,
@@ -1138,14 +1138,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 4,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "33": {
       "id": 33,
@@ -1162,8 +1162,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "34": {
       "id": 34,
@@ -1174,14 +1174,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "35": {
       "id": 35,
@@ -1198,8 +1198,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "36": {
       "id": 36,
@@ -1210,14 +1210,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 2,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "37": {
       "id": 37,
@@ -1228,14 +1228,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "38": {
       "id": 38,
@@ -1252,8 +1252,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "39": {
       "id": 39,
@@ -1270,8 +1270,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "41": {
       "id": 41,
@@ -1282,14 +1282,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "6.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "44": {
       "id": 44,
@@ -1306,8 +1306,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "45": {
       "id": 45,
@@ -1323,9 +1323,9 @@
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "46": {
       "id": 46,
@@ -1341,9 +1341,9 @@
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "47": {
       "id": 47,
@@ -1354,14 +1354,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "48": {
       "id": 48,
@@ -1378,8 +1378,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "49": {
       "id": 49,
@@ -1396,8 +1396,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "50": {
       "id": 50,
@@ -1414,8 +1414,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "51": {
       "id": 51,
@@ -1426,14 +1426,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "52": {
       "id": 52,
@@ -1449,9 +1449,9 @@
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "53": {
       "id": 53,
@@ -1468,8 +1468,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "54": {
       "id": 54,
@@ -1486,8 +1486,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "55": {
       "id": 55,
@@ -1499,13 +1499,13 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "7.9",
+      "now_cost": "7.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "56": {
       "id": 56,
@@ -1516,14 +1516,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "160": {
       "id": 160,
@@ -1534,14 +1534,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "166": {
       "id": 166,
@@ -1552,14 +1552,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "582": {
       "id": 582,
@@ -1576,8 +1576,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "596": {
       "id": 596,
@@ -1594,8 +1594,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "597": {
       "id": 597,
@@ -1606,14 +1606,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 32,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "606": {
       "id": 606,
@@ -1630,8 +1630,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "607": {
       "id": 607,
@@ -1648,8 +1648,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "611": {
       "id": 611,
@@ -1660,14 +1660,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "618": {
       "id": 618,
@@ -1684,8 +1684,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (32')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "57": {
       "id": 57,
@@ -2273,7 +2273,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -2759,7 +2759,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "4.6",
+      "now_cost": "4.7",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
@@ -3371,7 +3371,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
@@ -3911,7 +3911,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
@@ -4937,7 +4937,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -5027,7 +5027,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "6.5",
+      "now_cost": "6.4",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -5189,7 +5189,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 1,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
@@ -6161,7 +6161,7 @@
       "team_name": "Hull City",
       "team_id": 11,
       "event_points": 6,
-      "now_cost": "4.0",
+      "now_cost": "4.1",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -7673,7 +7673,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 1,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -8195,7 +8195,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 1,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -8447,7 +8447,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -8753,7 +8753,7 @@
       "team_name": "Man City",
       "team_id": 15,
       "event_points": 14,
-      "now_cost": "7.6",
+      "now_cost": "7.7",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 3,
@@ -8897,7 +8897,7 @@
       "team_name": "Man City",
       "team_id": 15,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 3,
@@ -9239,7 +9239,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 1,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -9887,7 +9887,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 1,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -9905,7 +9905,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -9995,7 +9995,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 4,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -10445,7 +10445,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
@@ -10715,7 +10715,7 @@
       "team_name": "Spurs",
       "team_id": 19,
       "event_points": 2,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
@@ -11291,7 +11291,7 @@
       "team_name": "Spurs",
       "team_id": 19,
       "event_points": 1,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
@@ -11723,7 +11723,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 2,
@@ -12109,18 +12109,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 61,
-          "total_points": 133,
-          "rank": 5972291,
-          "rank_sort": 5985354,
-          "overall_rank": 2359614,
-          "percentile_rank": 65,
+          "points": 74,
+          "total_points": 146,
+          "rank": 5900566,
+          "rank_sort": 5913534,
+          "overall_rank": 2394534,
+          "percentile_rank": 60,
           "overall_rank_percentage": "24",
           "bank": 0,
           "value": 1002,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 2
+          "points_on_bench": 4
         },
         "automatic_subs": []
       }
@@ -12400,18 +12400,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 59,
-          "total_points": 111,
-          "rank": 6368765,
-          "rank_sort": 6380938,
-          "overall_rank": 5354008,
-          "percentile_rank": 65,
-          "overall_rank_percentage": "54",
+          "points": 70,
+          "total_points": 122,
+          "rank": 6667345,
+          "rank_sort": 6678384,
+          "overall_rank": 5499398,
+          "percentile_rank": 70,
+          "overall_rank_percentage": "56",
           "bank": 0,
           "value": 1000,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 6
+          "points_on_bench": 12
         },
         "automatic_subs": []
       }
@@ -12684,13 +12684,13 @@
         "active_chip": "wildcard",
         "entry_history": {
           "event": 2,
-          "points": 43,
-          "total_points": 104,
-          "rank": 8785813,
-          "rank_sort": 8792767,
-          "overall_rank": 6200807,
-          "percentile_rank": 90,
-          "overall_rank_percentage": "63",
+          "points": 65,
+          "total_points": 126,
+          "rank": 7444380,
+          "rank_sort": 7456042,
+          "overall_rank": 4911010,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "50",
           "bank": 25,
           "value": 1003,
           "event_transfers": 0,
@@ -12975,18 +12975,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 63,
-          "total_points": 129,
-          "rank": 5573300,
-          "rank_sort": 5587141,
-          "overall_rank": 2857242,
-          "percentile_rank": 60,
-          "overall_rank_percentage": "29",
+          "points": 80,
+          "total_points": 146,
+          "rank": 4714606,
+          "rank_sort": 4729049,
+          "overall_rank": 2394534,
+          "percentile_rank": 50,
+          "overall_rank_percentage": "24",
           "bank": 0,
           "value": 1003,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 9
+          "points_on_bench": 11
         },
         "automatic_subs": []
       }
@@ -13259,13 +13259,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 64,
-          "total_points": 113,
-          "rank": 5374456,
-          "rank_sort": 5388050,
-          "overall_rank": 5076382,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "51",
+          "points": 76,
+          "total_points": 125,
+          "rank": 5505432,
+          "rank_sort": 5518862,
+          "overall_rank": 5112404,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "52",
           "bank": 20,
           "value": 1002,
           "event_transfers": 1,
@@ -13543,13 +13543,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 70,
-          "total_points": 111,
-          "rank": 4112985,
-          "rank_sort": 4133316,
-          "overall_rank": 5280355,
-          "percentile_rank": 45,
-          "overall_rank_percentage": "53",
+          "points": 87,
+          "total_points": 128,
+          "rank": 3331887,
+          "rank_sort": 3350915,
+          "overall_rank": 4643710,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "47",
           "bank": 0,
           "value": 1002,
           "event_transfers": 0,
@@ -13827,13 +13827,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 63,
-          "total_points": 117,
-          "rank": 5456838,
-          "rank_sort": 5476154,
-          "overall_rank": 4432767,
-          "percentile_rank": 60,
-          "overall_rank_percentage": "45",
+          "points": 69,
+          "total_points": 123,
+          "rank": 6744998,
+          "rank_sort": 6758837,
+          "overall_rank": 5303770,
+          "percentile_rank": 70,
+          "overall_rank_percentage": "54",
           "bank": 0,
           "value": 1000,
           "event_transfers": 0,
@@ -14118,13 +14118,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 2,
-          "points": 92,
-          "total_points": 135,
-          "rank": 963719,
-          "rank_sort": 966406,
-          "overall_rank": 2059876,
-          "percentile_rank": 10,
-          "overall_rank_percentage": "21",
+          "points": 103,
+          "total_points": 146,
+          "rank": 1180092,
+          "rank_sort": 1182442,
+          "overall_rank": 2327207,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "24",
           "bank": 0,
           "value": 1002,
           "event_transfers": 0,
@@ -14136,17 +14136,6 @@
     }
   },
   "transfersHistory": {
-    "2023789": [
-      {
-        "element_in": 569,
-        "element_in_cost": 60,
-        "element_out": 463,
-        "element_out_cost": 60,
-        "entry": 2023789,
-        "event": 2,
-        "time": "2026-08-28T07:54:47.989682Z"
-      }
-    ],
     "2067578": [
       {
         "element_in": 565,
@@ -14158,26 +14147,15 @@
         "time": "2026-08-25T00:27:33.395226Z"
       }
     ],
-    "2026160": [
+    "2023789": [
       {
-        "element_in": 367,
-        "element_in_cost": 70,
-        "element_out": 397,
-        "element_out_cost": 85,
-        "entry": 2026160,
+        "element_in": 569,
+        "element_in_cost": 60,
+        "element_out": 463,
+        "element_out_cost": 60,
+        "entry": 2023789,
         "event": 2,
-        "time": "2026-08-28T14:55:45.754628Z"
-      }
-    ],
-    "2023013": [
-      {
-        "element_in": 379,
-        "element_in_cost": 90,
-        "element_out": 25,
-        "element_out_cost": 75,
-        "entry": 2023013,
-        "event": 2,
-        "time": "2026-08-22T06:44:02.281015Z"
+        "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
     "2026484": [
@@ -14343,6 +14321,28 @@
         "event": 2,
         "time": "2026-08-24T14:45:16.841602Z"
       }
+    ],
+    "2026160": [
+      {
+        "element_in": 367,
+        "element_in_cost": 70,
+        "element_out": 397,
+        "element_out_cost": 85,
+        "entry": 2026160,
+        "event": 2,
+        "time": "2026-08-28T14:55:45.754628Z"
+      }
+    ],
+    "2023013": [
+      {
+        "element_in": 379,
+        "element_in_cost": 90,
+        "element_out": 25,
+        "element_out_cost": 75,
+        "entry": 2023013,
+        "event": 2,
+        "time": "2026-08-22T06:44:02.281015Z"
+      }
     ]
   },
   "leagues": {
@@ -14350,28 +14350,16 @@
       "leagueName": "Clash of Elite 2026-2027",
       "managers": [
         {
-          "id": 2023789,
-          "name": "Monor Noem",
-          "teamName": "NORA FC",
-          "avatar": "MO"
-        },
-        {
           "id": 2067578,
           "name": "Kun Phaktra",
           "teamName": "The Blue Warriors",
           "avatar": "KU"
         },
         {
-          "id": 2024611,
-          "name": "Vibol Dang",
-          "teamName": "The White Emperor",
-          "avatar": "VI"
-        },
-        {
-          "id": 2026160,
-          "name": "Piseth Nhim",
-          "teamName": "DESSTRo",
-          "avatar": "PI"
+          "id": 2023789,
+          "name": "Monor Noem",
+          "teamName": "NORA FC",
+          "avatar": "MO"
         },
         {
           "id": 2019453,
@@ -14380,121 +14368,133 @@
           "avatar": "SE"
         },
         {
-          "id": 2023013,
-          "name": "នរ សិង្ហ កន្សៃ",
-          "teamName": "G.O.A.T",
-          "avatar": "នរ"
-        },
-        {
           "id": 2026484,
           "name": "Bora Chhe",
           "teamName": "Bora's Team",
           "avatar": "BO"
+        },
+        {
+          "id": 2026160,
+          "name": "Piseth Nhim",
+          "teamName": "DESSTRo",
+          "avatar": "PI"
+        },
+        {
+          "id": 2024611,
+          "name": "Vibol Dang",
+          "teamName": "The White Emperor",
+          "avatar": "VI"
+        },
+        {
+          "id": 2023013,
+          "name": "នរ សិង្ហ កន្សៃ",
+          "teamName": "G.O.A.T",
+          "avatar": "នរ"
         }
       ],
       "gameweeks": [
         {
           "gw": 1,
           "scores": {
-            "2023789": 72,
             "2067578": 66,
-            "2024611": 54,
-            "2026160": 49,
+            "2023789": 72,
             "2019453": 41,
-            "2023013": 52,
-            "2026484": 61
+            "2026484": 61,
+            "2026160": 49,
+            "2024611": 54,
+            "2023013": 52
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
-            "2024611": 0,
-            "2026160": 0,
+            "2023789": 0,
             "2019453": 0,
-            "2023013": 0,
-            "2026484": 0
+            "2026484": 0,
+            "2026160": 0,
+            "2024611": 0,
+            "2023013": 0
           },
           "transfers": {
-            "2023789": 0,
             "2067578": 0,
-            "2024611": 0,
-            "2026160": 0,
+            "2023789": 0,
             "2019453": 0,
-            "2023013": 0,
-            "2026484": 0
+            "2026484": 0,
+            "2026160": 0,
+            "2024611": 0,
+            "2023013": 0
           },
           "benchPoints": {
-            "2023789": 0,
             "2067578": 11,
-            "2024611": 3,
-            "2026160": 0,
+            "2023789": 0,
             "2019453": 11,
-            "2023013": 4,
-            "2026484": 9
+            "2026484": 9,
+            "2026160": 0,
+            "2024611": 3,
+            "2023013": 4
           },
           "captainPoints": {},
           "chipsUsed": {
             "2026160": "bboost"
           },
           "seasonTotals": {
-            "2023789": 72,
             "2067578": 66,
-            "2024611": 54,
-            "2026160": 49,
+            "2023789": 72,
             "2019453": 41,
-            "2023013": 52,
-            "2026484": 61
+            "2026484": 61,
+            "2026160": 49,
+            "2024611": 54,
+            "2023013": 52
           }
         },
         {
           "gw": 2,
           "scores": {
-            "2023789": 61,
-            "2067578": 63,
-            "2024611": 63,
-            "2026160": 64,
-            "2019453": 70,
-            "2023013": 59,
-            "2026484": 43
+            "2067578": 80,
+            "2023789": 74,
+            "2019453": 87,
+            "2026484": 65,
+            "2026160": 76,
+            "2024611": 69,
+            "2023013": 70
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
-            "2024611": 0,
-            "2026160": 0,
+            "2023789": 0,
             "2019453": 0,
-            "2023013": 0,
-            "2026484": 0
+            "2026484": 0,
+            "2026160": 0,
+            "2024611": 0,
+            "2023013": 0
           },
           "transfers": {
-            "2023789": 1,
             "2067578": 1,
-            "2024611": 0,
-            "2026160": 1,
+            "2023789": 1,
             "2019453": 0,
-            "2023013": 1,
-            "2026484": 18
+            "2026484": 18,
+            "2026160": 1,
+            "2024611": 0,
+            "2023013": 1
           },
           "benchPoints": {
-            "2023789": 2,
-            "2067578": 9,
-            "2024611": 4,
-            "2026160": 15,
+            "2067578": 11,
+            "2023789": 4,
             "2019453": 3,
-            "2023013": 6,
-            "2026484": 2
+            "2026484": 2,
+            "2026160": 15,
+            "2024611": 4,
+            "2023013": 12
           },
           "captainPoints": {},
           "chipsUsed": {
             "2026484": "wildcard"
           },
           "seasonTotals": {
-            "2023789": 133,
-            "2067578": 129,
-            "2024611": 117,
-            "2026160": 113,
-            "2019453": 111,
-            "2023013": 111,
-            "2026484": 104
+            "2067578": 146,
+            "2023789": 146,
+            "2019453": 128,
+            "2026484": 126,
+            "2026160": 125,
+            "2024611": 123,
+            "2023013": 122
           }
         },
         {
@@ -14995,8 +14995,8 @@
         {
           "gw": 2,
           "scores": {
-            "145847": 92,
-            "2019453": 70
+            "145847": 103,
+            "2019453": 87
           },
           "hits": {
             "145847": 0,
@@ -15013,8 +15013,8 @@
           "captainPoints": {},
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 135,
-            "2019453": 111
+            "145847": 146,
+            "2019453": 128
           }
         },
         {
