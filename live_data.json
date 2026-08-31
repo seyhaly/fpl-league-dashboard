@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T13:31:49Z",
+  "lastUpdated": "2026-08-31T19:35:51Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -23,7 +23,7 @@
       "deadline_time": "2026-08-28T17:30:00Z",
       "bonus_added": false,
       "leagues": "",
-      "points": "",
+      "points": "l",
       "daily_status": [
         {
           "bonus_added": false,
@@ -47,7 +47,7 @@
           "bonus_added": false,
           "date": "2026-08-31",
           "event": 2,
-          "points": ""
+          "points": "l"
         }
       ]
     },
@@ -580,14 +580,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "2": {
       "id": 2,
@@ -604,8 +604,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "3": {
       "id": 3,
@@ -622,8 +622,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "4": {
       "id": 4,
@@ -634,14 +634,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "8.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "5": {
       "id": 5,
@@ -658,8 +658,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "6": {
       "id": 6,
@@ -676,8 +676,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "7": {
       "id": 7,
@@ -688,14 +688,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "8": {
       "id": 8,
@@ -706,14 +706,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "9": {
       "id": 9,
@@ -730,8 +730,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "10": {
       "id": 10,
@@ -742,14 +742,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "11": {
       "id": 11,
@@ -760,14 +760,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "12": {
       "id": 12,
@@ -778,14 +778,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "9.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "13": {
       "id": 13,
@@ -796,14 +796,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "7.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "14": {
       "id": 14,
@@ -820,8 +820,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "15": {
       "id": 15,
@@ -832,14 +832,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "16": {
       "id": 16,
@@ -856,8 +856,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "17": {
       "id": 17,
@@ -874,8 +874,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "18": {
       "id": 18,
@@ -892,8 +892,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "19": {
       "id": 19,
@@ -910,8 +910,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "20": {
       "id": 20,
@@ -928,8 +928,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "22": {
       "id": 22,
@@ -946,8 +946,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "23": {
       "id": 23,
@@ -964,8 +964,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "24": {
       "id": 24,
@@ -982,8 +982,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "25": {
       "id": 25,
@@ -1000,8 +1000,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "26": {
       "id": 26,
@@ -1012,14 +1012,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "27": {
       "id": 27,
@@ -1036,8 +1036,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "31": {
       "id": 31,
@@ -1054,8 +1054,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "452": {
       "id": 452,
@@ -1072,8 +1072,8 @@
       "opponent_short": "AVL",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "557": {
       "id": 557,
@@ -1089,9 +1089,9 @@
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "29": {
       "id": 29,
@@ -1108,8 +1108,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "30": {
       "id": 30,
@@ -1126,8 +1126,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "32": {
       "id": 32,
@@ -1138,14 +1138,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "33": {
       "id": 33,
@@ -1162,8 +1162,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "34": {
       "id": 34,
@@ -1174,14 +1174,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "35": {
       "id": 35,
@@ -1198,8 +1198,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "36": {
       "id": 36,
@@ -1210,14 +1210,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "37": {
       "id": 37,
@@ -1228,14 +1228,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "38": {
       "id": 38,
@@ -1252,8 +1252,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "39": {
       "id": 39,
@@ -1270,8 +1270,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "41": {
       "id": 41,
@@ -1282,14 +1282,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "44": {
       "id": 44,
@@ -1306,8 +1306,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "45": {
       "id": 45,
@@ -1318,14 +1318,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "46": {
       "id": 46,
@@ -1336,14 +1336,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "47": {
       "id": 47,
@@ -1354,14 +1354,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "48": {
       "id": 48,
@@ -1378,8 +1378,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "49": {
       "id": 49,
@@ -1396,8 +1396,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "50": {
       "id": 50,
@@ -1414,8 +1414,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "51": {
       "id": 51,
@@ -1426,14 +1426,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "52": {
       "id": 52,
@@ -1450,8 +1450,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "53": {
       "id": 53,
@@ -1468,8 +1468,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "54": {
       "id": 54,
@@ -1486,8 +1486,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "55": {
       "id": 55,
@@ -1504,8 +1504,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "56": {
       "id": 56,
@@ -1522,8 +1522,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "160": {
       "id": 160,
@@ -1540,8 +1540,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "166": {
       "id": 166,
@@ -1558,8 +1558,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "582": {
       "id": 582,
@@ -1576,8 +1576,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "596": {
       "id": 596,
@@ -1594,8 +1594,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "597": {
       "id": 597,
@@ -1606,14 +1606,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "606": {
       "id": 606,
@@ -1630,8 +1630,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "607": {
       "id": 607,
@@ -1648,8 +1648,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "611": {
       "id": 611,
@@ -1666,8 +1666,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "618": {
       "id": 618,
@@ -1684,8 +1684,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (32')"
     },
     "57": {
       "id": 57,
