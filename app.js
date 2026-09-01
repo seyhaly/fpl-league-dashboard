@@ -3059,384 +3059,390 @@
     modal.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
 
-    // Retrieve squad picks from memory (state or pre-bundled FPL_LIVE_STATIC)
-    const staticData = window.FPL_LIVE_STATIC || {};
-    const squadPicksMap = (state.dataset.squadPicks && Object.keys(state.dataset.squadPicks).length > 0) 
-      ? state.dataset.squadPicks 
-      : (staticData.squadPicks || {});
-    const playersMap = (state.dataset.players && Object.keys(state.dataset.players).length > 0)
-      ? state.dataset.players
-      : (staticData.players || {});
-    const transfersHistoryMap = (state.dataset.transfersHistory && Object.keys(state.dataset.transfersHistory).length > 0)
-      ? state.dataset.transfersHistory
-      : (staticData.transfersHistory || {});
+    try {
+      // Retrieve squad picks from memory (state or pre-bundled FPL_LIVE_STATIC)
+      const staticData = window.FPL_LIVE_STATIC || {};
+      const squadPicksMap = (state.dataset.squadPicks && Object.keys(state.dataset.squadPicks).length > 0) 
+        ? state.dataset.squadPicks 
+        : (staticData.squadPicks || {});
+      const playersMap = (state.dataset.players && Object.keys(state.dataset.players).length > 0)
+        ? state.dataset.players
+        : (staticData.players || {});
+      const transfersHistoryMap = (state.dataset.transfersHistory && Object.keys(state.dataset.transfersHistory).length > 0)
+        ? state.dataset.transfersHistory
+        : (staticData.transfersHistory || {});
 
-    const mgrPicks = squadPicksMap[String(manager.id)] || squadPicksMap[Number(manager.id)] || (staticData.squadPicks && (staticData.squadPicks[String(manager.id)] || staticData.squadPicks[Number(manager.id)]));
-    let squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
+      const mgrPicks = squadPicksMap[String(manager.id)] || squadPicksMap[Number(manager.id)] || (staticData.squadPicks && (staticData.squadPicks[String(manager.id)] || staticData.squadPicks[Number(manager.id)]));
+      let squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
 
-    const posNames = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' };
-    const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
+      const posNames = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' };
+      const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
 
-    let overallRank = '-';
-    let transfersCount = 0;
-    let transferHits = '(0 hits)';
-    let benchPts = 0;
-    let activeChip = 'None';
-    let captainName = '-';
-    let hist = {};
+      let overallRank = '-';
+      let transfersCount = 0;
+      let transferHits = '(0 hits)';
+      let benchPts = 0;
+      let activeChip = 'None';
+      let captainName = '-';
+      let hist = {};
 
-    let startingRows = '';
-    let benchRows = '';
-    let startingPtsTotal = 0;
-    let playedCount = 0;
-    let yetToPlayCount = 0;
-    let isBenchBoostActive = false;
-    let autoSubs = [];
+      let startingRows = '';
+      let benchRows = '';
+      let startingPtsTotal = 0;
+      let benchPtsTotal = 0;
+      let playedCount = 0;
+      let yetToPlayCount = 0;
+      let isBenchBoostActive = false;
+      let autoSubs = [];
 
-    if (squadData && squadData.picks && squadData.picks.length > 0) {
-      hist = squadData.entry_history || {};
-      if (hist.overall_rank) overallRank = Number(hist.overall_rank).toLocaleString();
-      if (hist.event_transfers !== undefined) transfersCount = hist.event_transfers;
-      if (hist.event_transfers_cost !== undefined) {
-        transferHits = hist.event_transfers_cost > 0 ? `(-${hist.event_transfers_cost} pts)` : '(0 hits)';
-      }
-      if (hist.points_on_bench !== undefined) benchPts = hist.points_on_bench;
-      if (squadData.active_chip) activeChip = getChipLabel(squadData.active_chip);
-
-      isBenchBoostActive = Boolean(
-        activeChip && 
-        (activeChip.toLowerCase().includes('bboost') || activeChip.toLowerCase().includes('bench boost') || activeChip.toUpperCase().includes('BB'))
-      );
-
-      // Auto-subs: compute auto-subs (official or when Gameweek / matches finished)
-      autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
-
-      // Create display picks: apply auto-subs when confirmed or finished
-      const displayPicks = squadData.picks.map(p => ({ ...p }));
-      autoSubs.forEach(s => {
-        const outIdx = displayPicks.findIndex(p => p.element === s.element_out);
-        const inIdx = displayPicks.findIndex(p => p.element === s.element_in);
-        if (outIdx !== -1 && inIdx !== -1) {
-          const outPos = displayPicks[outIdx].position;
-          const inPos = displayPicks[inIdx].position;
-          displayPicks[outIdx].position = inPos;
-          displayPicks[inIdx].position = outPos;
-          displayPicks[inIdx].was_subbed_in = true;
-          displayPicks[outIdx].was_subbed_out = true;
-          displayPicks[inIdx].subbed_for_id = s.element_out;
-          displayPicks[outIdx].subbed_by_id = s.element_in;
-          displayPicks[outIdx].original_bench_role = inPos === 12 ? 'GK' : `Sub ${inPos - 12}`;
+      if (squadData && squadData.picks && squadData.picks.length > 0) {
+        hist = squadData.entry_history || {};
+        if (hist.overall_rank) overallRank = Number(hist.overall_rank).toLocaleString();
+        if (hist.event_transfers !== undefined) transfersCount = hist.event_transfers;
+        if (hist.event_transfers_cost !== undefined) {
+          transferHits = hist.event_transfers_cost > 0 ? `(-${hist.event_transfers_cost} pts)` : '(0 hits)';
         }
-      });
+        if (hist.points_on_bench !== undefined) benchPts = hist.points_on_bench;
+        if (squadData.active_chip) activeChip = getChipLabel(squadData.active_chip);
 
-      // Sort so Starting XI (1..11) comes first, followed by Bench (12..15)
-      displayPicks.sort((a, b) => a.position - b.position);
+        isBenchBoostActive = Boolean(
+          activeChip && 
+          (activeChip.toLowerCase().includes('bboost') || activeChip.toLowerCase().includes('bench boost') || activeChip.toUpperCase().includes('BB'))
+        );
 
-      displayPicks.forEach(p => {
-        const pl = playersMap[p.element] || {
-          web_name: `Player #${p.element}`,
-          element_type: p.element_type || (p.position === 1 ? 1 : 2),
-          team: '-',
-          event_points: 0,
-          match_status: 'yet_to_play',
-          status_label: '⏳ Yet to Play'
-        };
-        const posName = posNames[pl.element_type] || 'DEF';
-        const posClass = posClasses[pl.element_type] || 'pos-def';
-        const multiplier = p.multiplier || 1;
-        const pts = (pl.event_points || 0) * (p.position <= 11 ? multiplier : 1);
+        // Auto-subs: compute auto-subs (official or when Gameweek / matches finished)
+        autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
 
-        const isYetToPlay = pl.match_status === 'yet_to_play';
-
-        if (p.is_captain) {
-          captainName = `${pl.web_name} (${pts} pts)${isYetToPlay ? ' ⏳' : ''}`;
-        }
-
-        let roleTag = '';
-        if (p.is_captain) {
-          roleTag = `<span class="captain-role-badge">👑 CAPTAIN (${multiplier}x)</span>`;
-        } else if (p.is_vice_captain) {
-          roleTag = `<span class="vice-role-badge">🛡️ VICE</span>`;
-        }
-
-        let statusPill = '';
-        if (pl.match_status === 'yet_to_play') {
-          statusPill = `<span class="status-pill-yet-to-play">⏳ Yet to Play</span>`;
-        } else if (pl.match_status === 'live') {
-          statusPill = `<span class="status-pill-live">🟢 Live (${pl.minutes || 0}')</span>`;
-        } else if (pl.match_status === 'dnp') {
-          statusPill = `<span class="status-pill-dnp">✕ DNP</span>`;
-        } else {
-          statusPill = `<span class="status-pill-played">✓ Played</span>`;
-        }
-
-        let oppBadge = `<span style="color:var(--text-muted);font-size:11px;">-</span>`;
-        if (pl.opponent && pl.opponent !== '-') {
-          let oppShort = pl.opponent_short || pl.opponent;
-          oppShort = String(oppShort).replace(/\s*\([HAha]\)/g, '').trim();
-          if (oppShort && oppShort !== '-') {
-            const diff = pl.difficulty || 3;
-            const diffClass = `fdr-${diff}`;
-            oppBadge = `<span class="opp-pill ${diffClass}">${oppShort}</span>`;
+        // Create display picks: apply auto-subs when confirmed or finished
+        const displayPicks = squadData.picks.map(p => ({ ...p }));
+        autoSubs.forEach(s => {
+          const outIdx = displayPicks.findIndex(p => p.element === s.element_out);
+          const inIdx = displayPicks.findIndex(p => p.element === s.element_in);
+          if (outIdx !== -1 && inIdx !== -1) {
+            const outPos = displayPicks[outIdx].position;
+            const inPos = displayPicks[inIdx].position;
+            displayPicks[outIdx].position = inPos;
+            displayPicks[inIdx].position = outPos;
+            displayPicks[inIdx].was_subbed_in = true;
+            displayPicks[outIdx].was_subbed_out = true;
+            displayPicks[inIdx].subbed_for_id = s.element_out;
+            displayPicks[outIdx].subbed_by_id = s.element_in;
+            displayPicks[outIdx].original_bench_role = inPos === 12 ? 'GK' : `Sub ${inPos - 12}`;
           }
-        }
+        });
 
-        if (p.position <= 11) {
-          if (isYetToPlay) {
-            yetToPlayCount++;
+        // Sort so Starting XI (1..11) comes first, followed by Bench (12..15)
+        displayPicks.sort((a, b) => a.position - b.position);
+
+        displayPicks.forEach(p => {
+          const pl = playersMap[p.element] || {
+            web_name: `Player #${p.element}`,
+            element_type: p.element_type || (p.position === 1 ? 1 : 2),
+            team: '-',
+            event_points: 0,
+            match_status: 'yet_to_play',
+            status_label: '⏳ Yet to Play'
+          };
+          const posName = posNames[pl.element_type] || 'DEF';
+          const posClass = posClasses[pl.element_type] || 'pos-def';
+          const multiplier = p.multiplier || 1;
+          const pts = (pl.event_points || 0) * (p.position <= 11 ? multiplier : 1);
+
+          const isYetToPlay = pl.match_status === 'yet_to_play';
+
+          if (p.is_captain) {
+            captainName = `${pl.web_name} (${pts} pts)${isYetToPlay ? ' ⏳' : ''}`;
+          }
+
+          let roleTag = '';
+          if (p.is_captain) {
+            roleTag = `<span class="captain-role-badge">👑 CAPTAIN (${multiplier}x)</span>`;
+          } else if (p.is_vice_captain) {
+            roleTag = `<span class="vice-role-badge">🛡️ VICE</span>`;
+          }
+
+          let statusPill = '';
+          if (pl.match_status === 'yet_to_play') {
+            statusPill = `<span class="status-pill-yet-to-play">⏳ Yet to Play</span>`;
+          } else if (pl.match_status === 'live') {
+            statusPill = `<span class="status-pill-live">🟢 Live (${pl.minutes || 0}')</span>`;
+          } else if (pl.match_status === 'dnp') {
+            statusPill = `<span class="status-pill-dnp">✕ DNP</span>`;
           } else {
-            playedCount++;
+            statusPill = `<span class="status-pill-played">✓ Played</span>`;
           }
 
-          let subInBadge = '';
-          let rowClass = '';
-          if (p.was_subbed_in) {
-            const subOutPl = playersMap[p.subbed_for_id];
-            const outName = subOutPl ? subOutPl.web_name : 'Starter';
-            subInBadge = `<span class="auto-sub-badge sub-in" title="Auto-subbed into Starting XI for ${outName}">🔄 Subbed In ➔ ${outName}</span>`;
-            rowClass = 'tr-subbed-in';
+          let oppBadge = `<span style="color:var(--text-muted);font-size:11px;">-</span>`;
+          if (pl.opponent && pl.opponent !== '-') {
+            let oppShort = pl.opponent_short || pl.opponent;
+            oppShort = String(oppShort).replace(/\s*\([HAha]\)/g, '').trim();
+            if (oppShort && oppShort !== '-') {
+              const diff = pl.difficulty || 3;
+              const diffClass = `fdr-${diff}`;
+              oppBadge = `<span class="opp-pill ${diffClass}">${oppShort}</span>`;
+            }
           }
 
-          startingRows += `
-            <tr class="${rowClass}">
-              <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
-              <td class="col-player">
-                <div class="player-name-cell">
-                  <span style="font-weight:700;">${pl.web_name}</span>
-                  <span class="player-team-pill">${pl.team}</span>
-                </div>
-              </td>
-              <td class="col-opp">${oppBadge}</td>
-              <td class="col-status">${statusPill}</td>
-              <td class="col-role">${roleTag} ${subInBadge}</td>
-              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (p.was_subbed_in ? 'color:var(--pl-cyan);font-weight:800;' : '')}">${pts} pts</span></td>
-            </tr>
-          `;
-          startingPtsTotal += pts;
-        } else {
-          if (isBenchBoostActive) {
+          if (p.position <= 11) {
             if (isYetToPlay) {
               yetToPlayCount++;
             } else {
               playedCount++;
             }
+
+            let subInBadge = '';
+            let rowClass = '';
+            if (p.was_subbed_in) {
+              const subOutPl = playersMap[p.subbed_for_id];
+              const outName = subOutPl ? subOutPl.web_name : 'Starter';
+              subInBadge = `<span class="auto-sub-badge sub-in" title="Auto-subbed into Starting XI for ${outName}">🔄 Subbed In ➔ ${outName}</span>`;
+              rowClass = 'tr-subbed-in';
+            }
+
+            startingRows += `
+              <tr class="${rowClass}">
+                <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
+                <td class="col-player">
+                  <div class="player-name-cell">
+                    <span style="font-weight:700;">${pl.web_name}</span>
+                    <span class="player-team-pill">${pl.team}</span>
+                  </div>
+                </td>
+                <td class="col-opp">${oppBadge}</td>
+                <td class="col-status">${statusPill}</td>
+                <td class="col-role">${roleTag} ${subInBadge}</td>
+                <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (p.was_subbed_in ? 'color:var(--pl-cyan);font-weight:800;' : '')}">${pts} pts</span></td>
+              </tr>
+            `;
+            startingPtsTotal += pts;
+          } else {
+            if (isBenchBoostActive) {
+              if (isYetToPlay) {
+                yetToPlayCount++;
+              } else {
+                playedCount++;
+              }
+            }
+
+            const subOrder = p.original_bench_role || (p.position === 12 ? 'GK' : `Sub ${p.position - 12}`);
+            let benchOrderTag = `<span class="bench-order-badge">🪑 ${subOrder}</span>`;
+            let rowClass = '';
+
+            if (p.was_subbed_out) {
+              const subInPl = playersMap[p.subbed_by_id];
+              const inName = subInPl ? subInPl.web_name : 'Bench';
+              benchOrderTag += ` <span class="auto-sub-badge sub-out" title="Auto-subbed out to Bench for ${inName}">🔄 Subbed Out ➔ ${inName}</span>`;
+              rowClass = 'tr-subbed-out';
+            }
+
+            benchRows += `
+              <tr class="${rowClass}">
+                <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
+                <td class="col-player">
+                  <div class="player-name-cell">
+                    <span style="font-weight:700;">${pl.web_name}</span>
+                    <span class="player-team-pill">${pl.team}</span>
+                  </div>
+                </td>
+                <td class="col-opp">${oppBadge}</td>
+                <td class="col-status">${statusPill}</td>
+                <td class="col-role">${benchOrderTag}</td>
+                <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
+              </tr>
+            `;
+            benchPtsTotal += pts;
           }
+        });
 
-          const subOrder = p.original_bench_role || (p.position === 12 ? 'GK' : `Sub ${p.position - 12}`);
-          let benchOrderTag = `<span class="bench-order-badge">🪑 ${subOrder}</span>`;
-          let rowClass = '';
+        benchPts = benchPtsTotal;
+      }
 
-          if (p.was_subbed_out) {
-            const subInPl = playersMap[p.subbed_by_id];
-            const inName = subInPl ? subInPl.web_name : 'Bench';
-            benchOrderTag += ` <span class="auto-sub-badge sub-out" title="Auto-subbed out to Bench for ${inName}">🔄 Subbed Out ➔ ${inName}</span>`;
-            rowClass = 'tr-subbed-out';
-          }
+      const maxSquadCount = isBenchBoostActive ? 15 : 11;
+      const squadScopeLabel = isBenchBoostActive ? '15 Players (BB Active ⚡)' : '11 Players';
 
-          benchRows += `
-            <tr class="${rowClass}">
-              <td class="col-pos"><span class="pos-pill ${posClass}">${posName}</span></td>
-              <td class="col-player">
-                <div class="player-name-cell">
-                  <span style="font-weight:700;">${pl.web_name}</span>
-                  <span class="player-team-pill">${pl.team}</span>
-                </div>
-              </td>
-              <td class="col-opp">${oppBadge}</td>
-              <td class="col-status">${statusPill}</td>
-              <td class="col-role">${benchOrderTag}</td>
-              <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
-            </tr>
+      // ── Build Transfers This GW Section ─────────────────────
+      const allTransfers = transfersHistoryMap[String(manager.id)] || [];
+      const gwTransfers = allTransfers.filter(t => t.event === gw);
+      let transfersHtml = '';
+
+      if (gwTransfers.length > 0) {
+        const transferItems = gwTransfers.map(t => {
+          const pIn = playersMap[t.element_in] || { web_name: 'Player #' + t.element_in, team: '' };
+          const pOut = playersMap[t.element_out] || { web_name: 'Player #' + t.element_out, team: '' };
+          const costIn = t.element_in_cost ? `£${(t.element_in_cost / 10).toFixed(1)}M` : '';
+          const costOut = t.element_out_cost ? `£${(t.element_out_cost / 10).toFixed(1)}M` : '';
+
+          return `
+            <div class="transfer-item-row" style="padding:6px 0;border-bottom:1px dashed var(--border-subtle);">
+              <span class="transfer-pill-in">🟢 IN: <strong>${pIn.web_name}</strong> ${costIn ? `(${costIn})` : ''} <span class="player-team-pill">${pIn.team}</span></span>
+              <span style="color:var(--text-muted);font-weight:700;margin:0 8px;">⇄</span>
+              <span class="transfer-pill-out">🔴 OUT: <strong>${pOut.web_name}</strong> ${costOut ? `(${costOut})` : ''} <span class="player-team-pill">${pOut.team}</span></span>
+            </div>
           `;
-          benchPtsTotal += pts;
-        }
-      });
+        }).join('');
 
-      benchPts = benchPtsTotal;
-    }
-
-    const maxSquadCount = isBenchBoostActive ? 15 : 11;
-    const squadScopeLabel = isBenchBoostActive ? '15 Players (BB Active ⚡)' : '11 Players';
-
-    // ── Build Transfers This GW Section ─────────────────────
-    const allTransfers = transfersHistoryMap[String(manager.id)] || [];
-    const gwTransfers = allTransfers.filter(t => t.event === gw);
-    let transfersHtml = '';
-
-    if (gwTransfers.length > 0) {
-      const transferItems = gwTransfers.map(t => {
-        const pIn = playersMap[t.element_in] || { web_name: 'Player #' + t.element_in, team: '' };
-        const pOut = playersMap[t.element_out] || { web_name: 'Player #' + t.element_out, team: '' };
-        const costIn = t.element_in_cost ? `£${(t.element_in_cost / 10).toFixed(1)}M` : '';
-        const costOut = t.element_out_cost ? `£${(t.element_out_cost / 10).toFixed(1)}M` : '';
-
-        return `
-          <div class="transfer-item-row" style="padding:6px 0;border-bottom:1px dashed var(--border-subtle);">
-            <span class="transfer-pill-in">🟢 IN: <strong>${pIn.web_name}</strong> ${costIn ? `(${costIn})` : ''} <span class="player-team-pill">${pIn.team}</span></span>
-            <span style="color:var(--text-muted);font-weight:700;margin:0 8px;">⇄</span>
-            <span class="transfer-pill-out">🔴 OUT: <strong>${pOut.web_name}</strong> ${costOut ? `(${costOut})` : ''} <span class="player-team-pill">${pOut.team}</span></span>
-          </div>
-        `;
-      }).join('');
-
-      transfersHtml = `
-        <div>
-          <div class="modal-section-header">
-            <span>🔄 Transfers This GW (${gwTransfers.length} transfer${gwTransfers.length > 1 ? 's' : ''}${transferHits !== '(0 hits)' ? ` · ${transferHits}` : ''})</span>
-          </div>
-          <div class="modal-transfers-box">
-            ${transferItems}
-          </div>
-        </div>
-      `;
-    } else {
-      transfersHtml = `
-        <div>
-          <div class="modal-section-header">
-            <span>🔄 Transfers This GW</span>
-          </div>
-          <div class="modal-transfers-box" style="color:var(--text-muted);font-style:italic;">
-            None (0 transfers made in Gameweek ${gw})
-          </div>
-        </div>
-      `;
-    }
-
-    const transferCost = (hist.event_transfers_cost !== undefined) 
-      ? hist.event_transfers_cost 
-      : ((state.dataset.gameweeks && state.dataset.gameweeks[gw - 1] && state.dataset.gameweeks[gw - 1].hits && state.dataset.gameweeks[gw - 1].hits[manager.id]) || 0);
-
-    const grossPoints = startingPtsTotal + (isBenchBoostActive ? benchPts : 0);
-    const netGwPoints = grossPoints - transferCost;
-
-    // ── Build Auto-Substitutions Banner Section ──────────────
-    let autoSubBannerHtml = '';
-    const squadAutoSubs = (typeof autoSubs !== 'undefined') ? autoSubs : [];
-    if (squadAutoSubs.length > 0) {
-      const isOfficial = squadAutoSubs[0].is_official;
-      const subItems = squadAutoSubs.map(s => {
-        const pOut = playersMap[s.element_out] || { web_name: 'Starter' };
-        const pIn = playersMap[s.element_in] || { web_name: 'Bench' };
-        const inPts = pIn.event_points || 0;
-        return `
-          <div class="auto-sub-item">
-            <span class="auto-sub-pill-out">🔴 OUT: <strong>${pOut.web_name}</strong> (0 pts)</span>
-            <span style="color:var(--text-muted);font-weight:800;margin:0 4px;">➔</span>
-            <span class="auto-sub-pill-in">🟢 IN: <strong>${pIn.web_name}</strong> (+${inPts} pts)</span>
-          </div>
-        `;
-      }).join('');
-
-      autoSubBannerHtml = `
-        <div class="modal-auto-sub-box">
-          <div class="auto-sub-box-header">
-            <span style="font-size:14px;">🔄</span>
-            <span>Automatic Substitution${squadAutoSubs.length > 1 ? 's' : ''}</span>
-            <span class="${isOfficial ? 'auto-sub-confirmed-tag' : 'auto-sub-live-tag'}">${isOfficial ? 'CONFIRMED' : 'LIVE PREVIEW'}</span>
-          </div>
+        transfersHtml = `
           <div>
-            ${subItems}
+            <div class="modal-section-header">
+              <span>🔄 Transfers This GW (${gwTransfers.length} transfer${gwTransfers.length > 1 ? 's' : ''}${transferHits !== '(0 hits)' ? ` · ${transferHits}` : ''})</span>
+            </div>
+            <div class="modal-transfers-box">
+              ${transferItems}
+            </div>
+          </div>
+        `;
+      } else {
+        transfersHtml = `
+          <div>
+            <div class="modal-section-header">
+              <span>🔄 Transfers This GW</span>
+            </div>
+            <div class="modal-transfers-box" style="color:var(--text-muted);font-style:italic;">
+              None (0 transfers made in Gameweek ${gw})
+            </div>
+          </div>
+        `;
+      }
+
+      const transferCost = (hist.event_transfers_cost !== undefined) 
+        ? hist.event_transfers_cost 
+        : ((state.dataset.gameweeks && state.dataset.gameweeks[gw - 1] && state.dataset.gameweeks[gw - 1].hits && state.dataset.gameweeks[gw - 1].hits[manager.id]) || 0);
+
+      const grossPoints = startingPtsTotal + (isBenchBoostActive ? benchPts : 0);
+      const netGwPoints = grossPoints - transferCost;
+
+      // ── Build Auto-Substitutions Banner Section ──────────────
+      let autoSubBannerHtml = '';
+      const squadAutoSubs = (typeof autoSubs !== 'undefined') ? autoSubs : [];
+      if (squadAutoSubs.length > 0) {
+        const isOfficial = squadAutoSubs[0].is_official;
+        const subItems = squadAutoSubs.map(s => {
+          const pOut = playersMap[s.element_out] || { web_name: 'Starter' };
+          const pIn = playersMap[s.element_in] || { web_name: 'Bench' };
+          const inPts = pIn.event_points || 0;
+          return `
+            <div class="auto-sub-item">
+              <span class="auto-sub-pill-out">🔴 OUT: <strong>${pOut.web_name}</strong> (0 pts)</span>
+              <span style="color:var(--text-muted);font-weight:800;margin:0 4px;">➔</span>
+              <span class="auto-sub-pill-in">🟢 IN: <strong>${pIn.web_name}</strong> (+${inPts} pts)</span>
+            </div>
+          `;
+        }).join('');
+
+        autoSubBannerHtml = `
+          <div class="modal-auto-sub-box">
+            <div class="auto-sub-box-header">
+              <span style="font-size:14px;">🔄</span>
+              <span>Automatic Substitution${squadAutoSubs.length > 1 ? 's' : ''}</span>
+              <span class="${isOfficial ? 'auto-sub-confirmed-tag' : 'auto-sub-live-tag'}">${isOfficial ? 'CONFIRMED' : 'LIVE PREVIEW'}</span>
+            </div>
+            <div>
+              ${subItems}
+            </div>
+          </div>
+        `;
+      }
+
+      modalBody.innerHTML = `
+        <!-- Vital Stats Ribbon -->
+        <div class="modal-stats-grid">
+          <div class="modal-stat-card">
+            <span class="stat-label">🎯 GW${gw} Net Points</span>
+            <span class="stat-val" style="color:var(--pl-cyan);">${netGwPoints} pts ${transferCost > 0 ? `<span style="font-size:10.5px;color:#f87171;font-weight:700;">(-${transferCost})</span>` : ''}</span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">⚽ Played</span>
+            <span class="stat-val" style="color:#10b981;">${playedCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">⏳ Yet to Play</span>
+            <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">🔄 Transfers</span>
+            <span class="stat-val">${transfersCount} <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${transferHits}</span></span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">⚡ Active Chip</span>
+            <span class="stat-val" style="color:${activeChip !== 'None' ? '#a855f7' : 'var(--text-primary)'};">${activeChip}</span>
+          </div>
+          <div class="modal-stat-card">
+            <span class="stat-label">👑 Captain</span>
+            <span class="stat-val" style="color:#facc15;">${captainName}</span>
           </div>
         </div>
+
+        ${autoSubBannerHtml}
+
+        <!-- Starting XI Table -->
+        <div>
+          <div class="modal-section-header">
+            <span>⚽ Starting XI (${startingPtsTotal} pts)</span>
+            <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${squadScopeLabel} (${playedCount} Played · ${yetToPlayCount} Remaining)</span>
+          </div>
+          <table class="modal-squad-table">
+            <colgroup>
+              <col class="col-pos" style="width: 7%;">
+              <col class="col-player" style="width: 28%;">
+              <col class="col-opp" style="width: 15%;">
+              <col class="col-status" style="width: 18%;">
+              <col class="col-role" style="width: 20%;">
+              <col class="col-pts" style="width: 12%;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="col-pos">Pos</th>
+                <th class="col-player">Player</th>
+                <th class="col-opp">Opponent</th>
+                <th class="col-status">Status</th>
+                <th class="col-role">Role</th>
+                <th class="col-pts text-center">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${startingRows || '<tr><td colspan="6" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Bench Table -->
+        <div>
+          <div class="modal-section-header">
+            <span>🪑 Substitutes Bench (${benchPts} pts)${isBenchBoostActive ? ' <span style="font-size:10px;color:#a855f7;font-weight:800;background:rgba(168,85,247,0.12);padding:2px 6px;border-radius:4px;margin-left:6px;">⚡ ACTIVE IN BENCH BOOST</span>' : ''}</span>
+            <span style="font-size:11px;font-weight:600;color:var(--text-muted);">4 Players</span>
+          </div>
+          <table class="modal-squad-table">
+            <colgroup>
+              <col class="col-pos" style="width: 7%;">
+              <col class="col-player" style="width: 28%;">
+              <col class="col-opp" style="width: 15%;">
+              <col class="col-status" style="width: 18%;">
+              <col class="col-role" style="width: 20%;">
+              <col class="col-pts" style="width: 12%;">
+            </colgroup>
+            <thead>
+              <tr>
+                <th class="col-pos">Pos</th>
+                <th class="col-player">Player</th>
+                <th class="col-opp">Opponent</th>
+                <th class="col-status">Status</th>
+                <th class="col-role">Role</th>
+                <th class="col-pts text-center">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${benchRows || '<tr><td colspan="6" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Transfers This GW Breakdown -->
+        ${transfersHtml}
       `;
+    } catch (err) {
+      console.error('Error rendering squad modal:', err);
+      modalBody.innerHTML = `<div style="padding:24px;text-align:center;color:#ef4444;font-weight:600;">Failed to render squad details: ${err.message}</div>`;
     }
-
-    modalBody.innerHTML = `
-      <!-- Vital Stats Ribbon -->
-      <div class="modal-stats-grid">
-        <div class="modal-stat-card">
-          <span class="stat-label">🎯 GW${gw} Net Points</span>
-          <span class="stat-val" style="color:var(--pl-cyan);">${netGwPoints} pts ${transferCost > 0 ? `<span style="font-size:10.5px;color:#f87171;font-weight:700;">(-${transferCost})</span>` : ''}</span>
-        </div>
-        <div class="modal-stat-card">
-          <span class="stat-label">⚽ Played</span>
-          <span class="stat-val" style="color:#10b981;">${playedCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
-        </div>
-        <div class="modal-stat-card">
-          <span class="stat-label">⏳ Yet to Play</span>
-          <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
-        </div>
-        <div class="modal-stat-card">
-          <span class="stat-label">🔄 Transfers</span>
-          <span class="stat-val">${transfersCount} <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${transferHits}</span></span>
-        </div>
-        <div class="modal-stat-card">
-          <span class="stat-label">⚡ Active Chip</span>
-          <span class="stat-val" style="color:${activeChip !== 'None' ? '#a855f7' : 'var(--text-primary)'};">${activeChip}</span>
-        </div>
-        <div class="modal-stat-card">
-          <span class="stat-label">👑 Captain</span>
-          <span class="stat-val" style="color:#facc15;">${captainName}</span>
-        </div>
-      </div>
-
-      ${autoSubBannerHtml}
-
-      <!-- Starting XI Table -->
-      <div>
-        <div class="modal-section-header">
-          <span>⚽ Starting XI (${startingPtsTotal} pts)</span>
-          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${squadScopeLabel} (${playedCount} Played · ${yetToPlayCount} Remaining)</span>
-        </div>
-        <table class="modal-squad-table">
-          <colgroup>
-            <col class="col-pos" style="width: 7%;">
-            <col class="col-player" style="width: 28%;">
-            <col class="col-opp" style="width: 15%;">
-            <col class="col-status" style="width: 18%;">
-            <col class="col-role" style="width: 20%;">
-            <col class="col-pts" style="width: 12%;">
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="col-pos">Pos</th>
-              <th class="col-player">Player</th>
-              <th class="col-opp">Opponent</th>
-              <th class="col-status">Status</th>
-              <th class="col-role">Role</th>
-              <th class="col-pts text-center">Points</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${startingRows || '<tr><td colspan="6" style="text-align:center;padding:16px;color:var(--text-muted);">Squad data loading or not yet submitted for this Gameweek.</td></tr>'}
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Bench Table -->
-      <div>
-        <div class="modal-section-header">
-          <span>🪑 Substitutes Bench (${benchPts} pts)${isBenchBoostActive ? ' <span style="font-size:10px;color:#a855f7;font-weight:800;background:rgba(168,85,247,0.12);padding:2px 6px;border-radius:4px;margin-left:6px;">⚡ ACTIVE IN BENCH BOOST</span>' : ''}</span>
-          <span style="font-size:11px;font-weight:600;color:var(--text-muted);">4 Players</span>
-        </div>
-        <table class="modal-squad-table">
-          <colgroup>
-            <col class="col-pos" style="width: 7%;">
-            <col class="col-player" style="width: 28%;">
-            <col class="col-opp" style="width: 15%;">
-            <col class="col-status" style="width: 18%;">
-            <col class="col-role" style="width: 20%;">
-            <col class="col-pts" style="width: 12%;">
-          </colgroup>
-          <thead>
-            <tr>
-              <th class="col-pos">Pos</th>
-              <th class="col-player">Player</th>
-              <th class="col-opp">Opponent</th>
-              <th class="col-status">Status</th>
-              <th class="col-role">Role</th>
-              <th class="col-pts text-center">Points</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${benchRows || '<tr><td colspan="6" style="text-align:center;padding:16px;color:var(--text-muted);">Bench data not available.</td></tr>'}
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Transfers This GW Breakdown -->
-      ${transfersHtml}
-    `;
   };
 
   document.addEventListener('keydown', (e) => {
