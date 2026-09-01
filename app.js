@@ -1457,7 +1457,23 @@
       const netScore      = grossScore - hitCost;
 
       let bench = 0;
-      if (squadData && squadData.entry_history && typeof squadData.entry_history.points_on_bench === 'number') {
+      const activeChip = squadData && squadData.active_chip ? getChipLabel(squadData.active_chip) : null;
+      const isBenchBoost = Boolean(activeChip && (activeChip.toLowerCase().includes('bb') || activeChip.toLowerCase().includes('bench boost')));
+
+      if (squadData && squadData.picks && squadData.picks.length > 0 && playersMap && Object.keys(playersMap).length > 0) {
+        const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoost);
+        const subInIds = new Set(autoSubs.map(s => s.element_in));
+        const subOutIds = new Set(autoSubs.map(s => s.element_out));
+
+        squadData.picks.forEach(p => {
+          const pl = playersMap[p.element];
+          const pts = pl ? (pl.event_points || 0) : 0;
+          const isOnBench = (p.position > 11 && !subInIds.has(p.element)) || (p.position <= 11 && subOutIds.has(p.element));
+          if (isOnBench) {
+            bench += pts;
+          }
+        });
+      } else if (squadData && squadData.entry_history && typeof squadData.entry_history.points_on_bench === 'number') {
         bench = squadData.entry_history.points_on_bench;
       } else if (gwData && gwData.benchPoints) {
         bench = gwData.benchPoints[m.id] || 0;
@@ -3134,8 +3150,11 @@
               <td class="col-pts text-center"><span class="player-points-badge" style="${isYetToPlay ? 'color:var(--text-muted);' : (isBenchBoostActive ? 'color:var(--pl-cyan);font-weight:800;' : 'color:var(--text-muted);')}">${pts} pts</span></td>
             </tr>
           `;
+          benchPtsTotal += pts;
         }
       });
+
+      benchPts = benchPtsTotal;
     }
 
     const maxSquadCount = isBenchBoostActive ? 15 : 11;
