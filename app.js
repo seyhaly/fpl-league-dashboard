@@ -1225,7 +1225,7 @@
   function computeAutoSubs(picks, automaticSubs, pMap, isBenchBoost) {
     if (isBenchBoost || !picks || picks.length === 0) return [];
 
-    // Official automatic_subs from FPL API
+    // 1. Official automatic_subs from FPL API
     if (automaticSubs && automaticSubs.length > 0) {
       return automaticSubs.map(s => ({
         element_in: s.element_in,
@@ -1234,7 +1234,98 @@
       }));
     }
 
-    return [];
+    // 2. Intelligent Auto-Subs when Gameweek / Matches are Finished (0 Remaining)
+    if (!pMap || Object.keys(pMap).length === 0) return [];
+
+    const starters = picks.filter(p => p.position <= 11);
+    const bench = picks.filter(p => p.position > 11).sort((a, b) => a.position - b.position);
+
+    // Identify DNP starters (matches finished with 0 minutes)
+    const dnpStarters = starters.filter(p => {
+      const pl = pMap[p.element];
+      return pl && pl.match_status === 'dnp';
+    });
+
+    if (dnpStarters.length === 0) return [];
+
+    // Check if all squad/gameweek matches are finished (0 remaining) or bench candidates have played
+    const allMatchesFinished = picks.every(p => {
+      const pl = pMap[p.element];
+      return !pl || pl.match_status === 'played' || pl.match_status === 'dnp';
+    });
+
+    const computed = [];
+    const usedBenchIds = new Set();
+
+    // Formation tracking: 1: GK, 2: DEF, 3: MID, 4: FWD
+    const currentFormation = { 1: 0, 2: 0, 3: 0, 4: 0 };
+    starters.forEach(p => {
+      const pl = pMap[p.element];
+      const type = pl?.element_type || (p.position === 1 ? 1 : 2);
+      currentFormation[type] = (currentFormation[type] || 0) + 1;
+    });
+
+    // 1. Goalkeeper Auto-Sub
+    const gkStarter = dnpStarters.find(p => p.position === 1);
+    if (gkStarter) {
+      const benchGk = bench.find(p => p.position === 12);
+      if (benchGk) {
+        const plGk = pMap[benchGk.element];
+        const isEligible = plGk && (plGk.match_status === 'played' || (allMatchesFinished && plGk.match_status !== 'dnp'));
+        if (isEligible) {
+          computed.push({
+            element_in: benchGk.element,
+            element_out: gkStarter.element,
+            is_official: false
+          });
+          usedBenchIds.add(benchGk.element);
+        }
+      }
+    }
+
+    // 2. Outfield Auto-Subs (positions 2..11)
+    const outfieldDnps = dnpStarters.filter(p => p.position > 1);
+    const outfieldBench = bench.filter(p => p.position > 12);
+
+    for (const dnpStarter of outfieldDnps) {
+      const pOutInfo = pMap[dnpStarter.element];
+      const outType = pOutInfo?.element_type || 2;
+
+      for (const benchPick of outfieldBench) {
+        if (usedBenchIds.has(benchPick.element)) continue;
+
+        const pInInfo = pMap[benchPick.element];
+        if (!pInInfo) continue;
+
+        const isEligible = pInInfo.match_status === 'played' || (allMatchesFinished && pInInfo.match_status !== 'dnp');
+        if (!isEligible) continue;
+
+        const inType = pInInfo.element_type || 2;
+        const testFormation = { ...currentFormation };
+        testFormation[outType]--;
+        testFormation[inType]++;
+
+        // Valid FPL formation: 1 GK, 3-5 DEF, 2-5 MID, 1-3 FWD
+        const isValid = testFormation[1] === 1 &&
+                        testFormation[2] >= 3 && testFormation[2] <= 5 &&
+                        testFormation[3] >= 2 && testFormation[3] <= 5 &&
+                        testFormation[4] >= 1 && testFormation[4] <= 3;
+
+        if (isValid) {
+          computed.push({
+            element_in: benchPick.element,
+            element_out: dnpStarter.element,
+            is_official: false
+          });
+          usedBenchIds.add(benchPick.element);
+          currentFormation[outType]--;
+          currentFormation[inType]++;
+          break;
+        }
+      }
+    }
+
+    return computed;
   }
 
   function getManagerLiveScore(mId, gw) {
@@ -2903,18 +2994,12 @@
         (activeChip.toLowerCase().includes('bboost') || activeChip.toLowerCase().includes('bench boost') || activeChip.toUpperCase().includes('BB'))
       );
 
-      // Auto-subs: only apply official automatic_subs from FPL API when confirmed
-      const officialSubs = (squadData.automatic_subs && squadData.automatic_subs.length > 0)
-        ? squadData.automatic_subs.map(s => ({
-            element_in: s.element_in,
-            element_out: s.element_out,
-            is_official: true
-          }))
-        : [];
+      // Auto-subs: compute auto-subs (official or when Gameweek / matches finished)
+      const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
 
-      // Create display picks: preserve original starting XI (1..11) and bench (12..15)
+      // Create display picks: apply auto-subs when confirmed or finished
       const displayPicks = squadData.picks.map(p => ({ ...p }));
-      officialSubs.forEach(s => {
+      autoSubs.forEach(s => {
         const outIdx = displayPicks.findIndex(p => p.element === s.element_out);
         const inIdx = displayPicks.findIndex(p => p.element === s.element_in);
         if (outIdx !== -1 && inIdx !== -1) {
