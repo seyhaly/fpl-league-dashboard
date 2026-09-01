@@ -349,13 +349,7 @@ async function syncAll() {
   }
 
   const squadJsPath = path.join(__dirname, '..', 'squadData.js');
-  const staticPayload = {
-    squadPicks: outputData.squadPicks,
-    players: outputData.players,
-    transfersHistory: outputData.transfersHistory,
-    teams: outputData.teams
-  };
-  fs.writeFileSync(squadJsPath, `window.FPL_LIVE_STATIC = ${JSON.stringify(staticPayload)};\n`, 'utf-8');
+  fs.writeFileSync(squadJsPath, `window.FPL_LIVE_STATIC = ${JSON.stringify(outputData)};\n`, 'utf-8');
   fs.writeFileSync(outPath, JSON.stringify(outputData, null, 2), 'utf-8');
 
   console.log(`✅ Automated FPL sync complete! Saved live data and pre-bundled squadData.js`);

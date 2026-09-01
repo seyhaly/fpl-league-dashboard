@@ -183,6 +183,34 @@
   // ===================== INITIALIZE APPLICATION =====================
   function init() {
     applyTheme(state.theme);
+
+    // If pre-bundled live static data exists, initialize immediately with real league 389585
+    const staticData = window.FPL_LIVE_STATIC || {};
+    if (staticData.leagues && staticData.leagues['389585']) {
+      const lData = staticData.leagues['389585'];
+      state.dataset = {
+        leagueName: lData.leagueName || 'Clash of Elite 2026-2027',
+        entryFee: 3.00,
+        chipTypes: window.DEMO_DATA ? window.DEMO_DATA.chipTypes : [],
+        managers: lData.managers || [],
+        months: lData.months || (window.DEMO_DATA ? window.DEMO_DATA.months : []),
+        gameweeks: lData.gameweeks || [],
+        players: staticData.players || {},
+        squadPicks: staticData.squadPicks || {},
+        transfersHistory: staticData.transfersHistory || {},
+        teams: staticData.teams || {}
+      };
+      if (lData.currentGw) {
+        state.currentGw = lData.currentGw;
+        state.maxGw = lData.currentGw;
+      }
+      if (staticData.eventStatuses) {
+        state.eventStatuses = staticData.eventStatuses;
+      }
+      if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = lData.leagueName;
+      if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = lData.leagueName;
+    }
+
     populateGwSelect();
     populateViewModeSelect();
     bindEvents();
@@ -673,6 +701,30 @@
         state.dataset.squadPicks = window.FPL_LIVE_STATIC.squadPicks || {};
         state.dataset.transfersHistory = window.FPL_LIVE_STATIC.transfersHistory || {};
         state.dataset.teams = window.FPL_LIVE_STATIC.teams || {};
+        if (window.FPL_LIVE_STATIC.eventStatuses) {
+          state.eventStatuses = window.FPL_LIVE_STATIC.eventStatuses;
+        }
+        if (window.FPL_LIVE_STATIC.leagues && window.FPL_LIVE_STATIC.leagues[inputCode]) {
+          const lData = window.FPL_LIVE_STATIC.leagues[inputCode];
+          state.dataset.managers = lData.managers || [];
+          state.dataset.gameweeks = lData.gameweeks || [];
+          if (lData.months) state.dataset.months = lData.months;
+          if (lData.leagueName) {
+            if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = lData.leagueName;
+            if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = lData.leagueName;
+          }
+          if (lData.currentGw) {
+            state.currentGw = lData.currentGw;
+            state.maxGw = lData.currentGw;
+          }
+          populateGwSelect();
+          changeGw(state.currentGw);
+          updateMemberCountBadge();
+          renderAll();
+          dataLoadedSuccessfully = true;
+          elements.syncStatusTag.className = 'sync-status-tag live';
+          elements.syncStatusTag.textContent = `SYNCED (${state.dataset.managers.length} Members)`;
+        }
       }
 
       const resp = await fetch(`./live_data.json?t=${Date.now()}`);

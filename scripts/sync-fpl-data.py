@@ -332,14 +332,8 @@ def main():
     with open(live_data_path, 'w', encoding='utf-8') as f:
         json.dump(output_data, f, indent=2, ensure_ascii=False)
 
-    static_payload = {
-        'squadPicks': output_data['squadPicks'],
-        'players': output_data['players'],
-        'transfersHistory': output_data['transfersHistory'],
-        'teams': output_data['teams']
-    }
     with open(squad_data_path, 'w', encoding='utf-8') as f:
-        f.write(f"window.FPL_LIVE_STATIC = {json.dumps(static_payload, ensure_ascii=False)};\n")
+        f.write(f"window.FPL_LIVE_STATIC = {json.dumps(output_data, ensure_ascii=False)};\n")
 
     print("✅ Automated FPL sync complete! Saved live_data.json and squadData.js successfully.")
 
