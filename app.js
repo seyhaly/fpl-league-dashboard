@@ -3,8 +3,8 @@
   // App State
   const state = {
     viewMode: 'overall',
-    currentGw: 10,
-    maxGw: 10,
+    currentGw: 2,
+    maxGw: 2,
     entryFee: 3,
     showMotmBadge: false,
     showMotsBadge: false,
@@ -214,7 +214,7 @@
     populateGwSelect();
     populateViewModeSelect();
     bindEvents();
-    renderAll();
+    changeGw(state.currentGw);
     initChart();
     initPerformanceChart();
     initCollapsibles();
