@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T12:05:05Z",
+  "lastUpdated": "2026-09-01T16:30:50Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -15,14 +15,14 @@
     },
     "2": {
       "gw": 2,
-      "finished": false,
-      "data_checked": false,
+      "finished": true,
+      "data_checked": true,
       "is_current": true,
       "is_previous": false,
       "is_next": false,
       "deadline_time": "2026-08-28T17:30:00Z",
       "bonus_added": true,
-      "leagues": "Updating",
+      "leagues": "Updated",
       "points": "r",
       "daily_status": [
         {
@@ -4639,24 +4639,6 @@
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
     },
-    "201": {
-      "id": 201,
-      "web_name": "Muñoz",
-      "first_name": "Daniel",
-      "second_name": "Muñoz Mejía",
-      "element_type": 2,
-      "team": "CRY",
-      "team_name": "Crystal Palace",
-      "team_id": 8,
-      "event_points": 0,
-      "now_cost": "5.4",
-      "opponent": "MCI",
-      "opponent_short": "MCI",
-      "difficulty": 4,
-      "minutes": 0,
-      "match_status": "dnp",
-      "status_label": "✕ DNP (0m)"
-    },
     "202": {
       "id": 202,
       "web_name": "Richards",
@@ -7843,6 +7825,24 @@
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
     },
+    "629": {
+      "id": 629,
+      "web_name": "Zetterer",
+      "first_name": "Michael",
+      "second_name": "Zetterer",
+      "element_type": 1,
+      "team": "LEE",
+      "team_name": "Leeds",
+      "team_id": 13,
+      "event_points": 0,
+      "now_cost": "4.0",
+      "opponent": "BRE",
+      "opponent_short": "BRE",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "350": {
       "id": 350,
       "web_name": "A.Becker",
@@ -8473,6 +8473,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "627": {
+      "id": 627,
+      "web_name": "Barcola",
+      "first_name": "Bradley",
+      "second_name": "Barcola",
+      "element_type": 3,
+      "team": "LIV",
+      "team_name": "Liverpool",
+      "team_id": 14,
+      "event_points": 0,
+      "now_cost": "8.0",
+      "opponent": "NFO",
+      "opponent_short": "NFO",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "238": {
       "id": 238,
       "web_name": "Grealish",
@@ -9012,6 +9030,24 @@
       "minutes": 1,
       "match_status": "played",
       "status_label": "✓ Played"
+    },
+    "628": {
+      "id": 628,
+      "web_name": "Allan",
+      "first_name": "Allan",
+      "second_name": "Andrade Elias",
+      "element_type": 3,
+      "team": "MCI",
+      "team_name": "Man City",
+      "team_id": 15,
+      "event_points": 0,
+      "now_cost": "6.0",
+      "opponent": "CRY",
+      "opponent_short": "CRY",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "43": {
       "id": 43,
@@ -10146,6 +10182,24 @@
       "minutes": 24,
       "match_status": "played",
       "status_label": "✓ Played"
+    },
+    "201": {
+      "id": 201,
+      "web_name": "Muñoz",
+      "first_name": "Daniel",
+      "second_name": "Muñoz Mejía",
+      "element_type": 2,
+      "team": "NFO",
+      "team_name": "Nott'm Forest",
+      "team_id": 18,
+      "event_points": 0,
+      "now_cost": "5.4",
+      "opponent": "LIV",
+      "opponent_short": "LIV",
+      "difficulty": 4,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "467": {
       "id": 467,
