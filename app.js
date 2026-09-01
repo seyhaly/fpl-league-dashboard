@@ -1463,6 +1463,9 @@
     const squadPicksMap = (state.dataset.squadPicks && Object.keys(state.dataset.squadPicks).length > 0)
       ? state.dataset.squadPicks
       : (staticData.squadPicks || {});
+    const playersMap = (state.dataset.players && Object.keys(state.dataset.players).length > 0)
+      ? state.dataset.players
+      : (staticData.players || {});
 
     let managers = activeManagers.map(m => {
       const mgrPicks = squadPicksMap[String(m.id)] || squadPicksMap[Number(m.id)];
