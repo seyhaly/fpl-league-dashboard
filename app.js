@@ -3091,6 +3091,7 @@
     let playedCount = 0;
     let yetToPlayCount = 0;
     let isBenchBoostActive = false;
+    let autoSubs = [];
 
     if (squadData && squadData.picks && squadData.picks.length > 0) {
       hist = squadData.entry_history || {};
@@ -3108,7 +3109,7 @@
       );
 
       // Auto-subs: compute auto-subs (official or when Gameweek / matches finished)
-      const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
+      autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoostActive);
 
       // Create display picks: apply auto-subs when confirmed or finished
       const displayPicks = squadData.picks.map(p => ({ ...p }));
