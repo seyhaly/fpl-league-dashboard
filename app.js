@@ -1479,7 +1479,19 @@
         bench = gwData.benchPoints[m.id] || 0;
       }
 
-      const captain       = gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
+      let captain = 0;
+      if (squadData && squadData.picks && squadData.picks.length > 0 && playersMap && Object.keys(playersMap).length > 0) {
+        const capPick = squadData.picks.find(p => p.is_captain);
+        if (capPick) {
+          const capPl = playersMap[capPick.element];
+          const multiplier = capPick.multiplier || 2;
+          captain = capPl ? (capPl.event_points || 0) * multiplier : 0;
+        }
+      }
+      if (captain === 0 && gwData && gwData.captainPoints && gwData.captainPoints[m.id] !== undefined) {
+        captain = gwData.captainPoints[m.id] || 0;
+      }
+
       const chip          = (squadData && squadData.active_chip) ? getChipLabel(squadData.active_chip) : (gwData && gwData.chipsUsed ? gwData.chipsUsed[m.id] : null);
       const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, gw);
       return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, chip, seasonTotalNet };
@@ -1500,7 +1512,7 @@
     const neutralRank = hasNeutral ? splitSize + 1 : null; // exact middle rank
     const hasPlayedMatches = managers.some(m => m.grossScore > 0 || m.hitCost > 0);
 
-    return managers.map((m, idx) => {
+    const resultManagers = managers.map((m, idx) => {
       const rank = idx + 1;
       let payout = 0, statusClass = '', outcomeCode = 'N', note = '';
 
@@ -1537,6 +1549,36 @@
 
       return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note };
     });
+
+    // Progressive Tiebreaker detail calculation
+    resultManagers.forEach(m => {
+      if (!m.isTied) {
+        m.tiebreakerText = '';
+        return;
+      }
+      const cohort = resultManagers.filter(x => x.netScore === m.netScore);
+      const benchSet = new Set(cohort.map(x => x.bench));
+      if (benchSet.size > 1) {
+        m.tiebreakerText = `TB → Bench: ${m.bench}`;
+        return;
+      }
+
+      const captSet = new Set(cohort.map(x => x.captain));
+      if (captSet.size > 1) {
+        m.tiebreakerText = `TB → Bench: ${m.bench} · Capt: ${m.captain}`;
+        return;
+      }
+
+      const hitSet = new Set(cohort.map(x => x.hitCost));
+      if (hitSet.size > 1) {
+        m.tiebreakerText = `TB → Bench: ${m.bench} · Capt: ${m.captain} · Hits: ${m.hitCost}`;
+        return;
+      }
+
+      m.tiebreakerText = `TB → Bench: ${m.bench} · Capt: ${m.captain} · Hits: ${m.hitCost} · Season: ${m.seasonTotalNet}`;
+    });
+
+    return resultManagers;
   }
 
   // ===================== MONTHLY STANDINGS ENGINE =====================
@@ -1809,8 +1851,8 @@
         ? `<span class="tied-pill">TIED</span>` : '';
 
       // Tiebreaker detail line — only shown on tied rows
-      const tiebreakerDetail = m.isTied
-        ? `<span class="tiebreaker-detail">TB → Bench: ${m.bench} · Capt: ${m.captain} · Hits: ${m.hitCost} · Season: ${m.seasonTotalNet}</span>`
+      const tiebreakerDetail = m.isTied && m.tiebreakerText
+        ? `<span class="tiebreaker-detail">${m.tiebreakerText}</span>`
         : '';
 
       const abaAccount = ABA_ACCOUNTS[m.id] || '';
