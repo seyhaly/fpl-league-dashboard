@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-31T23:19:26Z",
+  "lastUpdated": "2026-09-01T01:51:09Z",
   "currentGw": 2,
   "eventStatuses": {
     "1": {
@@ -22,7 +22,7 @@
       "is_next": false,
       "deadline_time": "2026-08-28T17:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "p",
       "daily_status": [
         {
@@ -796,7 +796,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 3,
+      "event_points": 5,
       "now_cost": "7.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
