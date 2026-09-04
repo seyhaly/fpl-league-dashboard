@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T19:55:57Z",
+  "lastUpdated": "2026-09-04T21:54:48Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -40,7 +40,7 @@
           "bonus_added": false,
           "date": "2026-09-04",
           "event": 3,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -6946,14 +6946,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "4.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "267": {
       "id": 267,
@@ -6964,14 +6964,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "300": {
       "id": 300,
@@ -6988,8 +6988,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "301": {
       "id": 301,
@@ -7006,8 +7006,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "302": {
       "id": 302,
@@ -7024,8 +7024,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "303": {
       "id": 303,
@@ -7042,8 +7042,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "304": {
       "id": 304,
@@ -7054,14 +7054,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "305": {
       "id": 305,
@@ -7072,14 +7072,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "306": {
       "id": 306,
@@ -7090,14 +7090,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "307": {
       "id": 307,
@@ -7114,8 +7114,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "308": {
       "id": 308,
@@ -7132,8 +7132,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "309": {
       "id": 309,
@@ -7150,8 +7150,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "310": {
       "id": 310,
@@ -7168,8 +7168,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "311": {
       "id": 311,
@@ -7186,8 +7186,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "312": {
       "id": 312,
@@ -7204,8 +7204,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "313": {
       "id": 313,
@@ -7216,14 +7216,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "314": {
       "id": 314,
@@ -7240,8 +7240,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "315": {
       "id": 315,
@@ -7252,14 +7252,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 78,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "316": {
       "id": 316,
@@ -7270,14 +7270,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 65,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "317": {
       "id": 317,
@@ -7294,8 +7294,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "318": {
       "id": 318,
@@ -7312,8 +7312,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "319": {
       "id": 319,
@@ -7330,8 +7330,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "320": {
       "id": 320,
@@ -7348,8 +7348,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "321": {
       "id": 321,
@@ -7366,8 +7366,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "322": {
       "id": 322,
@@ -7384,8 +7384,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "323": {
       "id": 323,
@@ -7396,14 +7396,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 11,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "324": {
       "id": 324,
@@ -7420,8 +7420,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "554": {
       "id": 554,
@@ -7438,8 +7438,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "562": {
       "id": 562,
@@ -7450,14 +7450,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 65,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "564": {
       "id": 564,
@@ -7468,14 +7468,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "571": {
       "id": 571,
@@ -7492,8 +7492,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "591": {
       "id": 591,
@@ -7504,14 +7504,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "592": {
       "id": 592,
@@ -7522,14 +7522,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "602": {
       "id": 602,
@@ -7546,8 +7546,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "619": {
       "id": 619,
@@ -7558,14 +7558,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "640": {
       "id": 640,
@@ -7576,14 +7576,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "260": {
       "id": 260,
@@ -8152,14 +8152,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 2,
+      "event_points": 8,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "351": {
       "id": 351,
@@ -8176,8 +8176,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "352": {
       "id": 352,
@@ -8194,8 +8194,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "353": {
       "id": 353,
@@ -8212,8 +8212,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "354": {
       "id": 354,
@@ -8230,8 +8230,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "355": {
       "id": 355,
@@ -8248,8 +8248,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "356": {
       "id": 356,
@@ -8260,14 +8260,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "6.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "357": {
       "id": 357,
@@ -8284,8 +8284,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "358": {
       "id": 358,
@@ -8296,14 +8296,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 5,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "359": {
       "id": 359,
@@ -8320,8 +8320,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "360": {
       "id": 360,
@@ -8338,8 +8338,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "361": {
       "id": 361,
@@ -8356,8 +8356,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "362": {
       "id": 362,
@@ -8368,14 +8368,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 5,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "363": {
       "id": 363,
@@ -8392,8 +8392,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "364": {
       "id": 364,
@@ -8410,8 +8410,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "365": {
       "id": 365,
@@ -8428,8 +8428,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "366": {
       "id": 366,
@@ -8440,14 +8440,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "7.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "367": {
       "id": 367,
@@ -8458,14 +8458,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 9,
+      "event_points": 11,
       "now_cost": "7.1",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "368": {
       "id": 368,
@@ -8476,14 +8476,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "7.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "369": {
       "id": 369,
@@ -8500,8 +8500,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "370": {
       "id": 370,
@@ -8518,8 +8518,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "371": {
       "id": 371,
@@ -8530,14 +8530,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 26,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "372": {
       "id": 372,
@@ -8548,14 +8548,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "373": {
       "id": 373,
@@ -8572,8 +8572,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "374": {
       "id": 374,
@@ -8590,8 +8590,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "375": {
       "id": 375,
@@ -8602,14 +8602,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "376": {
       "id": 376,
@@ -8626,8 +8626,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "377": {
       "id": 377,
@@ -8638,14 +8638,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "6.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 63,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "378": {
       "id": 378,
@@ -8662,8 +8662,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "379": {
       "id": 379,
@@ -8674,14 +8674,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 12,
+      "event_points": 13,
       "now_cost": "9.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 63,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "380": {
       "id": 380,
@@ -8698,8 +8698,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "381": {
       "id": 381,
@@ -8710,14 +8710,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "382": {
       "id": 382,
@@ -8734,8 +8734,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "383": {
       "id": 383,
@@ -8752,8 +8752,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "579": {
       "id": 579,
@@ -8764,14 +8764,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "5.4",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "627": {
       "id": 627,
@@ -8782,14 +8782,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "8.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (42')"
+      "minutes": 26,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "155": {
       "id": 155,
