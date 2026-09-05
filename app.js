@@ -3663,6 +3663,8 @@
 
       if (isPastGw && hist.points_on_bench !== undefined && typeof hist.points_on_bench === 'number') {
         benchPts = hist.points_on_bench;
+      } else if (benchPts === 0 && state.dataset.gameweeks && state.dataset.gameweeks[gw - 1] && state.dataset.gameweeks[gw - 1].benchPoints && state.dataset.gameweeks[gw - 1].benchPoints[manager.id] !== undefined) {
+        benchPts = state.dataset.gameweeks[gw - 1].benchPoints[manager.id];
       }
       const grossPoints = (isPastGw && hist.points !== undefined && typeof hist.points === 'number')
         ? hist.points
@@ -3717,16 +3719,16 @@
             <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
           </div>
           <div class="modal-stat-card">
-            <span class="stat-label">🔄 Transfers</span>
-            <span class="stat-val">${transfersCount} <span style="font-size:11px;font-weight:600;color:var(--text-muted);">${transferHits}</span></span>
+            <span class="stat-label">🪑 Bench Points</span>
+            <span class="stat-val" style="color:${benchPts > 0 ? 'var(--text-secondary)' : 'var(--text-muted)'};">${benchPts} pts</span>
           </div>
           <div class="modal-stat-card">
             <span class="stat-label">⚡ Active Chip</span>
             <span class="stat-val" style="color:${activeChip !== 'None' ? '#a855f7' : 'var(--text-primary)'};">${activeChip}</span>
           </div>
           <div class="modal-stat-card">
-            <span class="stat-label">👑 Captain</span>
-            <span class="stat-val" style="color:#facc15;">${captainName}</span>
+            <span class="stat-label">🔄 Transfers</span>
+            <span class="stat-val">${transfersCount} <span style="font-size:11px;font-weight:700;${transferCost > 0 ? 'color:#f87171;' : 'color:var(--text-muted);'}">(${transferCost > 0 ? `-${transferCost} pts` : '0 pts'})</span></span>
           </div>
         </div>
 
