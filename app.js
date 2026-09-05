@@ -22,7 +22,8 @@
     standingsSortColumn: null,
     standingsSortDir: 'desc',
     activeLeagueId: '389585',
-    fetchCounter: 0
+    fetchCounter: 0,
+    motmSelectedMonth: null
   };
 
   // DOM Elements
@@ -43,6 +44,7 @@
     statusCounters:         document.getElementById('statusCounters'),
     statusTabs:             document.getElementById('statusTabs'),
     toggleMotmBtn:          document.getElementById('toggleMotmBtn'),
+    motmMonthSelect:        document.getElementById('motmMonthSelect'),
     toggleMotsBtn:          document.getElementById('toggleMotsBtn'),
     themeToggleBtns:        document.querySelectorAll('[data-theme-btn]'),
     leagueNameHeader:       document.getElementById('leagueNameHeader'),
@@ -283,6 +285,28 @@
     }
   }
 
+  function populateMotmMonthSelect() {
+    if (!elements.motmMonthSelect) return;
+    const months = state.dataset.months || [];
+    const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+    const currentDefaultMonth = (state.motmSelectedMonth) || (state.viewMode !== 'overall' ? state.viewMode : (getCurrentGwMonth(state.currentGw)?.name || 'September'));
+
+    elements.motmMonthSelect.innerHTML = '';
+    months.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m.name;
+      const maxMonthGw = Math.max(...m.gws);
+      const isFin = activeSeasonGw > maxMonthGw;
+      const isInProg = activeSeasonGw >= Math.min(...m.gws) && activeSeasonGw <= maxMonthGw;
+      const tag = isFin ? ' (Finalized)' : (isInProg ? ' (Active)' : '');
+      opt.textContent = `${m.name}${tag}`;
+      if (m.name.toLowerCase() === currentDefaultMonth.toLowerCase()) {
+        opt.selected = true;
+      }
+      elements.motmMonthSelect.appendChild(opt);
+    });
+  }
+
   // ===================== EVENTS =====================
   function bindEvents() {
     elements.prevGwBtn.addEventListener('click', () => {
@@ -317,6 +341,18 @@
       elements.toggleMotmBtn.addEventListener('click', () => {
         state.showMotmBadge = !state.showMotmBadge;
         elements.toggleMotmBtn.classList.toggle('active', state.showMotmBadge);
+        if (elements.motmMonthSelect) {
+          elements.motmMonthSelect.style.display = state.showMotmBadge ? 'inline-block' : 'none';
+          if (state.showMotmBadge) populateMotmMonthSelect();
+        }
+        renderStandingsTable();
+        renderClassicSheetView();
+      });
+    }
+
+    if (elements.motmMonthSelect) {
+      elements.motmMonthSelect.addEventListener('change', e => {
+        state.motmSelectedMonth = e.target.value;
         renderStandingsTable();
         renderClassicSheetView();
       });
@@ -1175,44 +1211,71 @@
     return state.dataset.months.find(m => m.gws.includes(gw)) || state.dataset.months[0];
   }
 
-  function getMonthlyMotmLeader(gw) {
-    const activeMonth = getCurrentGwMonth(gw);
-    const monthGws = activeMonth.gws;
-    const startGw = Math.min(...monthGws);
-    const endGw = Math.max(...monthGws);
+  function getMonthlyMotmLeader(monthIdentifier) {
+    let activeMonth = null;
+    const months = state.dataset.months || [];
+    if (typeof monthIdentifier === 'string') {
+      activeMonth = months.find(m => m.name.toLowerCase() === monthIdentifier.toLowerCase());
+    } else if (typeof monthIdentifier === 'number') {
+      activeMonth = getCurrentGwMonth(monthIdentifier);
+    }
+    if (!activeMonth) {
+      activeMonth = months[0] || { name: 'August', gws: [1, 2] };
+    }
 
-    const datasetMaxGw = Math.max(...state.dataset.gameweeks.map(g => g.gw));
-    const isFinalized = datasetMaxGw > endGw || gw > endGw;
+    const monthGws = activeMonth.gws || [];
+    const startGw = monthGws.length > 0 ? Math.min(...monthGws) : 1;
+    const endGw = monthGws.length > 0 ? Math.max(...monthGws) : 1;
 
-    const gwsToCalculate = isFinalized ? monthGws : monthGws.filter(g => g <= gw);
-    const managers = state.dataset.managers;
+    const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+    const isFinalized = activeSeasonGw > endGw;
+    const gwsToCalculate = monthGws.filter(g => g <= activeSeasonGw);
+    const managers = state.dataset.managers || [];
 
     const totals = managers.map(m => {
-      let netPts = 0, benchPts = 0, captainPts = 0, hitCost = 0;
+      let netPts = 0, grossPts = 0, benchPts = 0, captainPts = 0, hitCost = 0;
       gwsToCalculate.forEach(g => {
         const gwData = state.dataset.gameweeks.find(x => x.gw === g);
         if (gwData) {
+          const gScore = (g < activeSeasonGw)
+            ? (gwData.scores[m.id] || 0)
+            : getManagerLiveScore(m.id, g);
           const hCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
-          netPts += (gwData.scores[m.id] || 0) - hCost;
+          netPts += (gScore - hCost);
+          grossPts += gScore;
           benchPts += (gwData.benchPoints[m.id] || 0);
           captainPts += gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
           hitCost += hCost;
         }
       });
-      const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, isFinalized ? endGw : gw);
-      return { id: m.id, name: m.name, netPts, benchPts, captainPts, hitCost, seasonTotalNet };
+      return { id: m.id, name: m.name, teamName: m.teamName, netPts, grossPts, benchPts, captainPts, hitCost };
     });
 
-    // 4-Layer Custom Tiebreaker Sort (matching Gameweek tiebreaker rule)
     totals.sort((a, b) => {
-      if (b.netPts      !== a.netPts)      return b.netPts - a.netPts;
-      if (b.benchPts    !== a.benchPts)    return b.benchPts - a.benchPts;         // Layer 1: Bench Pts
-      if (b.captainPts  !== a.captainPts)  return b.captainPts - a.captainPts;     // Layer 2: Captain Pts
-      if (a.hitCost     !== b.hitCost)     return a.hitCost - b.hitCost;           // Layer 3: Hits
-      return b.seasonTotalNet - a.seasonTotalNet;                                  // Layer 4: Season Net Pts
+      if (b.netPts !== a.netPts) return b.netPts - a.netPts;
+      if (b.benchPts !== a.benchPts) return b.benchPts - a.benchPts;
+      if (b.captainPts !== a.captainPts) return b.captainPts - a.captainPts;
+      return a.hitCost - b.hitCost;
     });
 
-    return { activeMonth, leader: totals[0], totals, isFinalized, startGw, endGw };
+    const topScore = (totals.length > 0 && gwsToCalculate.length > 0) ? totals[0].netPts : 0;
+    const leaders = (totals.length > 0 && gwsToCalculate.length > 0)
+      ? totals.filter(m => m.netPts === topScore)
+      : [];
+    const isTied = leaders.length > 1;
+
+    return {
+      activeMonth,
+      leaders,
+      leader: leaders[0] || null,
+      isTied,
+      topScore,
+      totals,
+      isFinalized,
+      startGw,
+      endGw,
+      hasGames: gwsToCalculate.length > 0
+    };
   }
 
   function getSeasonLeaders(gw) {
@@ -2000,26 +2063,84 @@
     elements.standingsBody.innerHTML = '';
     if (elements.mobileCards) elements.mobileCards.innerHTML = '';
 
-    const targetGwForMotm = isMonthlyView
-      ? Math.min(...(monthGws.length > 0 ? monthGws : [state.currentGw]))
-      : state.currentGw;
-
-    const motmInfo = getMonthlyMotmLeader(targetGwForMotm);
+    const motmTargetMonth = state.motmSelectedMonth || (isMonthlyView ? state.viewMode : (getCurrentGwMonth(state.currentGw)?.name || 'September'));
+    const motmInfo = getMonthlyMotmLeader(motmTargetMonth);
+    const activeMotmMonthName = motmInfo.activeMonth.name;
     const motsLeaders = getSeasonLeaders(state.currentGw);
     const isMotsTied = motsLeaders.length > 1;
 
     // Render MOTM Banner (Only when explicitly toggled on via MOTM button)
     const motmBannerContainer = document.getElementById('motmBannerContainer');
     if (motmBannerContainer) {
-      if (state.showMotmBadge && motmInfo && motmInfo.leader) {
+      if (state.showMotmBadge && motmInfo) {
         const icon = motmInfo.isFinalized ? '🏆' : '⏳';
+        const months = state.dataset.months || [];
+        const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+
+        const monthOptionsHtml = months.map(m => {
+          const maxMonthGw = Math.max(...m.gws);
+          const isFin = activeSeasonGw > maxMonthGw;
+          const isInProg = activeSeasonGw >= Math.min(...m.gws) && activeSeasonGw <= maxMonthGw;
+          const tag = isFin ? ' (Finalized)' : (isInProg ? ' (Active)' : '');
+          const isSel = m.name.toLowerCase() === activeMotmMonthName.toLowerCase() ? ' selected' : '';
+          return `<option value="${m.name}"${isSel}>${m.name}${tag}</option>`;
+        }).join('');
+
+        let winnerContent = '';
+        if (motmInfo.leaders && motmInfo.leaders.length > 0) {
+          const names = motmInfo.leaders.map(l => l.name).join(' & ');
+          const splitHtml = motmInfo.isTied ? ' <span class="motm-split-tag">(split the prize)</span>' : '';
+          winnerContent = `<span class="motm-winner-name">${names}</span>${splitHtml}`;
+        } else {
+          winnerContent = `<span style="font-style:italic;color:var(--text-muted);margin:0 4px;">Upcoming (Starts GW${motmInfo.startGw})</span>`;
+        }
+
+        let statusText = '';
+        if (motmInfo.isFinalized) {
+          statusText = motmInfo.isTied ? 'FINALIZED · TIED' : 'FINALIZED';
+        } else if (motmInfo.hasGames) {
+          statusText = 'IN PROGRESS';
+        } else {
+          statusText = 'UPCOMING';
+        }
+
         motmBannerContainer.innerHTML = `
           <div class="motm-banner">
-            <span>${icon} <strong>${activeMonthName} Manager of the Month</strong>: <span class="motm-winner-name">${motmInfo.leader.name}</span></span>
+            <div class="motm-banner-left">
+              <span style="font-size:16px;">${icon}</span>
+              <div class="motm-banner-text">
+                <select id="motmBannerMonthSelect" class="motm-banner-select" title="Switch Month for MOTM">
+                  ${monthOptionsHtml}
+                </select>
+                <span><strong>Manager of the Month</strong>:</span>
+                ${winnerContent}
+              </div>
+            </div>
+            <span class="motm-banner-status">${statusText}</span>
           </div>
         `;
+
+        if (elements.motmMonthSelect) {
+          elements.motmMonthSelect.style.display = 'inline-block';
+          elements.motmMonthSelect.value = activeMotmMonthName;
+        }
+
+        const bannerSelect = document.getElementById('motmBannerMonthSelect');
+        if (bannerSelect) {
+          bannerSelect.addEventListener('change', e => {
+            state.motmSelectedMonth = e.target.value;
+            if (elements.motmMonthSelect) {
+              elements.motmMonthSelect.value = e.target.value;
+            }
+            renderStandingsTable();
+            renderClassicSheetView();
+          });
+        }
       } else {
         motmBannerContainer.innerHTML = '';
+        if (elements.motmMonthSelect) {
+          elements.motmMonthSelect.style.display = 'none';
+        }
       }
     }
 
@@ -3226,29 +3347,12 @@
     const momEl = document.getElementById('classicSheetMoMBanner');
     if (momEl) {
       if (showMotm) {
-        let motmName = '';
-        const targetMonth = selectedMonthObj || months.find(m => m.gws && m.gws.includes(currentGw)) || months[0];
-        if (targetMonth && targetMonth.gws) {
-          const motmScores = state.dataset.managers.map(mgr => {
-            let pts = 0;
-            targetMonth.gws.forEach(g => {
-              if (g <= currentGw) {
-                const gScore = getManagerLiveScore(mgr.id, g);
-                const gData = state.dataset.gameweeks.find(x => x.gw === g);
-                const hit = (gData && gData.hits) ? (gData.hits[mgr.id] || 0) : 0;
-                pts += (gScore - hit);
-              }
-            });
-            return { name: mgr.name, pts };
-          }).sort((a, b) => b.pts - a.pts);
-
-          if (motmScores[0] && motmScores[0].pts > 0) {
-            motmName = motmScores[0].name;
-          }
-        }
-
-        if (motmName) {
-          momEl.innerHTML = `<div class="classic-sheet-mom-pill">MoM: ${motmName}</div>`;
+        const targetMonthName = state.motmSelectedMonth || (selectedMonthObj ? selectedMonthObj.name : (getCurrentGwMonth(currentGw)?.name || 'September'));
+        const motmInfo = getMonthlyMotmLeader(targetMonthName);
+        if (motmInfo && motmInfo.leaders && motmInfo.leaders.length > 0) {
+          const names = motmInfo.leaders.map(l => l.name).join(' & ');
+          const splitText = motmInfo.isTied ? ' (split the prize)' : '';
+          momEl.innerHTML = `<div class="classic-sheet-mom-pill">MoM (${motmInfo.activeMonth.name}): ${names}${splitText}</div>`;
         } else {
           momEl.innerHTML = '';
         }
