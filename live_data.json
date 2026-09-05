@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-04T23:27:12Z",
+  "lastUpdated": "2026-09-05T01:10:14Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -33,7 +33,7 @@
       "is_next": false,
       "deadline_time": "2026-09-04T17:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -7054,7 +7054,7 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
@@ -8548,7 +8548,7 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 4,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
@@ -8764,7 +8764,7 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 6,
+      "event_points": 8,
       "now_cost": "5.4",
       "opponent": "IPS",
       "opponent_short": "IPS",
