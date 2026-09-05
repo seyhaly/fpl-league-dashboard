@@ -2074,67 +2074,28 @@
     if (motmBannerContainer) {
       if (state.showMotmBadge && motmInfo) {
         const icon = motmInfo.isFinalized ? '🏆' : '⏳';
-        const months = state.dataset.months || [];
-        const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
-
-        const monthOptionsHtml = months.map(m => {
-          const maxMonthGw = Math.max(...m.gws);
-          const isFin = activeSeasonGw > maxMonthGw;
-          const isInProg = activeSeasonGw >= Math.min(...m.gws) && activeSeasonGw <= maxMonthGw;
-          const tag = isFin ? ' (Finalized)' : (isInProg ? ' (Active)' : '');
-          const isSel = m.name.toLowerCase() === activeMotmMonthName.toLowerCase() ? ' selected' : '';
-          return `<option value="${m.name}"${isSel}>${m.name}${tag}</option>`;
-        }).join('');
-
         let winnerContent = '';
         if (motmInfo.leaders && motmInfo.leaders.length > 0) {
           const names = motmInfo.leaders.map(l => l.name).join(' & ');
           const splitHtml = motmInfo.isTied ? ' <span class="motm-split-tag">(split the prize)</span>' : '';
           winnerContent = `<span class="motm-winner-name">${names}</span>${splitHtml}`;
         } else {
-          winnerContent = `<span style="font-style:italic;color:var(--text-muted);margin:0 4px;">Upcoming (Starts GW${motmInfo.startGw})</span>`;
-        }
-
-        let statusText = '';
-        if (motmInfo.isFinalized) {
-          statusText = motmInfo.isTied ? 'FINALIZED · TIED' : 'FINALIZED';
-        } else if (motmInfo.hasGames) {
-          statusText = 'IN PROGRESS';
-        } else {
-          statusText = 'UPCOMING';
+          winnerContent = `<span style="font-style:italic;opacity:0.85;margin-left:4px;">Upcoming (Starts GW${motmInfo.startGw})</span>`;
         }
 
         motmBannerContainer.innerHTML = `
           <div class="motm-banner">
-            <div class="motm-banner-left">
-              <span style="font-size:16px;">${icon}</span>
-              <div class="motm-banner-text">
-                <select id="motmBannerMonthSelect" class="motm-banner-select" title="Switch Month for MOTM">
-                  ${monthOptionsHtml}
-                </select>
-                <span><strong>Manager of the Month</strong>:</span>
-                ${winnerContent}
-              </div>
+            <div class="motm-banner-content">
+              <span class="motm-icon">${icon}</span>
+              <span class="motm-title">${activeMotmMonthName} Manager of the Month:</span>
+              ${winnerContent}
             </div>
-            <span class="motm-banner-status">${statusText}</span>
           </div>
         `;
 
         if (elements.motmMonthSelect) {
           elements.motmMonthSelect.style.display = 'inline-block';
           elements.motmMonthSelect.value = activeMotmMonthName;
-        }
-
-        const bannerSelect = document.getElementById('motmBannerMonthSelect');
-        if (bannerSelect) {
-          bannerSelect.addEventListener('change', e => {
-            state.motmSelectedMonth = e.target.value;
-            if (elements.motmMonthSelect) {
-              elements.motmMonthSelect.value = e.target.value;
-            }
-            renderStandingsTable();
-            renderClassicSheetView();
-          });
         }
       } else {
         motmBannerContainer.innerHTML = '';

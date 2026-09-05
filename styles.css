@@ -903,64 +903,74 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
 
 /* MOTM Prominent Gold Banner */
 .motm-banner {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 12px 18px; margin-bottom: 16px; border-radius: var(--radius-md);
-  font-family: 'Outfit', sans-serif; font-size: 14px; font-weight: 700;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  border-radius: var(--radius-md);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
   background: linear-gradient(135deg, #fcd34d, #f59e0b);
-  color: #3b1700; border: 1px solid #eab308;
-  box-shadow: 0 4px 16px rgba(234, 179, 8, 0.3);
+  color: #3b1700;
+  border: 1px solid #eab308;
+  box-shadow: 0 4px 16px rgba(234, 179, 8, 0.25);
   transition: var(--transition);
 }
 
 [data-theme="light"] .motm-banner {
   background: linear-gradient(135deg, #fcd34d, #f59e0b);
-  color: #451a03; border: 1px solid #f59e0b;
-  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.25);
+  color: #451a03;
+  border: 1px solid #f59e0b;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.2);
+}
+
+.motm-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.motm-icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.motm-title {
+  font-size: 14.5px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
 }
 
 .motm-winner-name {
-  font-size: 15px; font-weight: 900;
-  padding: 2px 10px; border-radius: 6px;
-  background: #3b1700; color: #fcd34d;
+  font-size: 15px;
+  font-weight: 900;
+  padding: 3px 12px;
+  border-radius: 6px;
+  background: #3b1700;
+  color: #fcd34d;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  margin: 0 4px; display: inline-block;
+  margin: 0 4px;
+  display: inline-block;
   letter-spacing: 0.3px;
 }
 
+[data-theme="light"] .motm-winner-name {
+  background: #451a03;
+  color: #fef08a;
+}
+
 .motm-split-tag {
-  font-size: 13px; font-weight: 800;
-  color: #3b1700; margin-left: 6px;
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #3b1700;
   letter-spacing: 0.2px;
+  margin-left: 2px;
 }
 
 [data-theme="light"] .motm-split-tag {
   color: #451a03;
-}
-
-.motm-banner-select {
-  background: #3b1700;
-  color: #fcd34d;
-  font-family: 'Outfit', sans-serif;
-  font-size: 13px;
-  font-weight: 800;
-  border: 1px solid rgba(252, 211, 77, 0.4);
-  border-radius: 6px;
-  padding: 3px 8px;
-  cursor: pointer;
-  outline: none;
-  transition: var(--transition);
-  margin: 0 4px;
-}
-
-.motm-banner-select:hover, .motm-banner-select:focus {
-  border-color: #fcd34d;
-  box-shadow: 0 0 0 2px rgba(252, 211, 77, 0.3);
-}
-
-[data-theme="light"] .motm-banner-select {
-  background: #451a03;
-  color: #fef08a;
-  border-color: rgba(254, 240, 138, 0.5);
 }
 
 .toolbar-motm-select {
@@ -971,11 +981,11 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   font-family: 'Outfit', sans-serif;
   font-size: 12px;
   font-weight: 700;
-  padding: 4px 10px;
+  padding: 5px 12px;
   margin-left: 6px;
   cursor: pointer;
   outline: none;
-  transition: var(--transition);
+  transition: all 0.2s ease;
 }
 
 .toolbar-motm-select:hover, .toolbar-motm-select:focus {
@@ -987,12 +997,6 @@ h1, h2, h3, h4, .font-heading { font-family: 'Outfit', sans-serif; }
   background: #fef3c7;
   color: #b45309;
   border-color: #fde68a;
-}
-
-.motm-banner-status {
-  font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 0.6px;
-  padding: 4px 12px; border-radius: 20px;
-  background: #3b1700; color: #fcd34d;
 }
 
 .motm-payout-note {
