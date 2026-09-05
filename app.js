@@ -3374,6 +3374,8 @@
     state.activeModalManagerId = Number(managerId);
 
     const gw = state.currentGw || 1;
+    const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+    const isPastGw = gw < activeSeasonGw;
     const manager = (state.dataset.managers || []).find(m => m.id === Number(managerId));
     if (!manager) return;
 
@@ -3467,8 +3469,6 @@
         // Sort so Starting XI (1..11) comes first, followed by Bench (12..15)
         displayPicks.sort((a, b) => a.position - b.position);
 
-        const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
-        const isPastGw = gw < activeSeasonGw;
         const playerGwPointsMap = (state.dataset.playerGwPoints && state.dataset.playerGwPoints[String(gw)]) ||
                                   (staticData.playerGwPoints && staticData.playerGwPoints[String(gw)]) || null;
 
