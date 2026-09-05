@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T17:39:54Z",
+  "lastUpdated": "2026-09-05T19:27:03Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -46,7 +46,7 @@
           "bonus_added": false,
           "date": "2026-09-05",
           "event": 3,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -1102,8 +1102,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "30": {
       "id": 30,
@@ -1120,8 +1120,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "32": {
       "id": 32,
@@ -1132,14 +1132,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "33": {
       "id": 33,
@@ -1150,14 +1150,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 7,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "34": {
       "id": 34,
@@ -1174,8 +1174,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "35": {
       "id": 35,
@@ -1192,8 +1192,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "36": {
       "id": 36,
@@ -1204,14 +1204,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 7,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 74,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "37": {
       "id": 37,
@@ -1222,14 +1222,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "38": {
       "id": 38,
@@ -1246,8 +1246,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "39": {
       "id": 39,
@@ -1264,8 +1264,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "41": {
       "id": 41,
@@ -1276,14 +1276,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "6.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 74,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "44": {
       "id": 44,
@@ -1300,8 +1300,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "45": {
       "id": 45,
@@ -1312,14 +1312,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.4",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "46": {
       "id": 46,
@@ -1330,14 +1330,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 4,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "47": {
       "id": 47,
@@ -1348,14 +1348,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "48": {
       "id": 48,
@@ -1372,8 +1372,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "49": {
       "id": 49,
@@ -1390,8 +1390,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "50": {
       "id": 50,
@@ -1408,8 +1408,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "51": {
       "id": 51,
@@ -1420,14 +1420,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 74,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "52": {
       "id": 52,
@@ -1438,14 +1438,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 15,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "53": {
       "id": 53,
@@ -1462,8 +1462,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "54": {
       "id": 54,
@@ -1480,8 +1480,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "55": {
       "id": 55,
@@ -1498,8 +1498,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "56": {
       "id": 56,
@@ -1510,14 +1510,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "160": {
       "id": 160,
@@ -1528,14 +1528,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 15,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "166": {
       "id": 166,
@@ -1546,14 +1546,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "582": {
       "id": 582,
@@ -1570,8 +1570,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "596": {
       "id": 596,
@@ -1582,14 +1582,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 15,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "597": {
       "id": 597,
@@ -1600,14 +1600,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 5,
+      "event_points": 10,
       "now_cost": "5.0",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "606": {
       "id": 606,
@@ -1624,8 +1624,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "607": {
       "id": 607,
@@ -1642,8 +1642,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "611": {
       "id": 611,
@@ -1654,14 +1654,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "618": {
       "id": 618,
@@ -1678,8 +1678,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "630": {
       "id": 630,
@@ -1696,8 +1696,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "631": {
       "id": 631,
@@ -1714,8 +1714,8 @@
       "opponent_short": "HUL",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "57": {
       "id": 57,
@@ -6178,8 +6178,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "273": {
       "id": 273,
@@ -6196,8 +6196,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "274": {
       "id": 274,
@@ -6214,8 +6214,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "275": {
       "id": 275,
@@ -6232,8 +6232,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "276": {
       "id": 276,
@@ -6250,8 +6250,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "277": {
       "id": 277,
@@ -6262,14 +6262,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "278": {
       "id": 278,
@@ -6286,8 +6286,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "279": {
       "id": 279,
@@ -6298,14 +6298,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "4.1",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "280": {
       "id": 280,
@@ -6316,14 +6316,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 63,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "281": {
       "id": 281,
@@ -6340,8 +6340,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "282": {
       "id": 282,
@@ -6352,14 +6352,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 8,
       "now_cost": "4.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "283": {
       "id": 283,
@@ -6376,8 +6376,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "284": {
       "id": 284,
@@ -6394,8 +6394,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "285": {
       "id": 285,
@@ -6412,8 +6412,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "286": {
       "id": 286,
@@ -6424,14 +6424,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 2,
+      "event_points": 5,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 81,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "287": {
       "id": 287,
@@ -6448,8 +6448,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "288": {
       "id": 288,
@@ -6466,8 +6466,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "289": {
       "id": 289,
@@ -6484,8 +6484,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "290": {
       "id": 290,
@@ -6496,14 +6496,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "291": {
       "id": 291,
@@ -6520,8 +6520,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "292": {
       "id": 292,
@@ -6538,8 +6538,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "293": {
       "id": 293,
@@ -6556,8 +6556,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "294": {
       "id": 294,
@@ -6574,8 +6574,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "295": {
       "id": 295,
@@ -6586,14 +6586,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "296": {
       "id": 296,
@@ -6610,8 +6610,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "297": {
       "id": 297,
@@ -6628,8 +6628,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "298": {
       "id": 298,
@@ -6646,8 +6646,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "299": {
       "id": 299,
@@ -6664,8 +6664,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "340": {
       "id": 340,
@@ -6682,8 +6682,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "556": {
       "id": 556,
@@ -6700,8 +6700,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "563": {
       "id": 563,
@@ -6718,8 +6718,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "572": {
       "id": 572,
@@ -6730,14 +6730,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "574": {
       "id": 574,
@@ -6748,14 +6748,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "576": {
       "id": 576,
@@ -6766,14 +6766,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 62,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "585": {
       "id": 585,
@@ -6784,14 +6784,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "586": {
       "id": 586,
@@ -6802,14 +6802,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 8,
       "now_cost": "4.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "589": {
       "id": 589,
@@ -6820,14 +6820,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 81,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "617": {
       "id": 617,
@@ -6838,14 +6838,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "632": {
       "id": 632,
@@ -6862,8 +6862,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "637": {
       "id": 637,
@@ -6880,8 +6880,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "638": {
       "id": 638,
@@ -6892,14 +6892,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 26,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "642": {
       "id": 642,
@@ -6910,14 +6910,14 @@
       "team": "HUL",
       "team_name": "Hull City",
       "team_id": 11,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "minutes": 27,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "645": {
       "id": 645,
@@ -6934,8 +6934,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (51')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "259": {
       "id": 259,
@@ -8890,7 +8890,7 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 7,
+      "event_points": 8,
       "now_cost": "6.0",
       "opponent": "COV",
       "opponent_short": "COV",
@@ -13575,31 +13575,31 @@
       "29": 0,
       "30": 0,
       "31": 0,
-      "32": 1,
-      "33": 1,
+      "32": 6,
+      "33": 7,
       "34": 0,
       "35": 0,
-      "36": 1,
-      "37": 1,
+      "36": 7,
+      "37": 6,
       "38": 0,
       "39": 0,
       "40": 0,
-      "41": 1,
+      "41": 3,
       "42": 0,
       "43": 0,
       "44": 0,
-      "45": 1,
-      "46": 4,
-      "47": 1,
+      "45": 3,
+      "46": 3,
+      "47": 3,
       "48": 0,
       "49": 0,
       "50": 0,
-      "51": 1,
-      "52": 0,
+      "51": 3,
+      "52": 1,
       "53": 0,
       "54": 0,
       "55": 0,
-      "56": 0,
+      "56": 1,
       "57": 1,
       "58": 0,
       "59": 0,
@@ -13703,13 +13703,13 @@
       "157": 0,
       "158": 0,
       "159": 0,
-      "160": 0,
+      "160": 1,
       "161": 0,
       "162": 0,
       "163": 0,
       "164": 0,
       "165": 0,
-      "166": 1,
+      "166": 2,
       "167": 2,
       "168": 0,
       "169": 0,
@@ -13820,25 +13820,25 @@
       "274": 0,
       "275": 0,
       "276": 0,
-      "277": 1,
+      "277": 6,
       "278": 0,
-      "279": 0,
-      "280": 1,
+      "279": 5,
+      "280": 6,
       "281": 0,
-      "282": 1,
+      "282": 8,
       "283": 0,
       "284": 0,
       "285": 0,
-      "286": 2,
+      "286": 5,
       "287": 0,
       "288": 0,
       "289": 0,
-      "290": 1,
+      "290": 3,
       "291": 0,
       "292": 0,
       "293": 0,
       "294": 0,
-      "295": 1,
+      "295": 2,
       "296": 0,
       "297": 0,
       "298": 0,
@@ -13931,7 +13931,7 @@
       "385": 3,
       "386": 0,
       "387": 0,
-      "388": 7,
+      "388": 8,
       "389": 0,
       "390": 6,
       "391": 8,
@@ -14115,11 +14115,11 @@
       "569": 2,
       "570": 8,
       "571": 0,
-      "572": 1,
+      "572": 6,
       "573": 0,
-      "574": 0,
+      "574": 1,
       "575": 1,
-      "576": 1,
+      "576": 3,
       "577": 0,
       "578": 1,
       "579": 8,
@@ -14128,19 +14128,19 @@
       "582": 0,
       "583": 0,
       "584": 1,
-      "585": 0,
-      "586": 1,
+      "585": 1,
+      "586": 8,
       "587": 0,
       "588": 3,
-      "589": 1,
+      "589": 2,
       "590": 0,
       "591": 1,
       "592": 1,
       "593": 1,
       "594": 0,
       "595": 0,
-      "596": 0,
-      "597": 5,
+      "596": 1,
+      "597": 10,
       "598": 4,
       "599": 0,
       "600": 0,
@@ -14154,13 +14154,13 @@
       "608": 1,
       "609": 0,
       "610": 0,
-      "611": 0,
+      "611": 1,
       "612": 0,
       "613": 0,
       "614": 0,
       "615": 0,
       "616": 1,
-      "617": 0,
+      "617": 1,
       "618": 0,
       "619": 4,
       "620": 0,
@@ -14181,11 +14181,11 @@
       "635": 1,
       "636": 0,
       "637": 0,
-      "638": 0,
+      "638": 1,
       "639": 0,
       "640": 1,
       "641": 0,
-      "642": 0,
+      "642": 1,
       "643": 7,
       "644": 2,
       "645": 0,
@@ -17662,26 +17662,6 @@
         "time": "2026-08-22T06:44:02.281015Z"
       }
     ],
-    "2023789": [
-      {
-        "element_in": 398,
-        "element_in_cost": 70,
-        "element_out": 397,
-        "element_out_cost": 85,
-        "entry": 2023789,
-        "event": 3,
-        "time": "2026-09-04T08:42:22.837756Z"
-      },
-      {
-        "element_in": 569,
-        "element_in_cost": 60,
-        "element_out": 463,
-        "element_out_cost": 60,
-        "entry": 2023789,
-        "event": 2,
-        "time": "2026-08-28T07:54:47.989682Z"
-      }
-    ],
     "2067578": [
       {
         "element_in": 279,
@@ -17700,6 +17680,26 @@
         "entry": 2067578,
         "event": 2,
         "time": "2026-08-25T00:27:33.395226Z"
+      }
+    ],
+    "2023789": [
+      {
+        "element_in": 398,
+        "element_in_cost": 70,
+        "element_out": 397,
+        "element_out_cost": 85,
+        "entry": 2023789,
+        "event": 3,
+        "time": "2026-09-04T08:42:22.837756Z"
+      },
+      {
+        "element_in": 569,
+        "element_in_cost": 60,
+        "element_out": 463,
+        "element_out_cost": 60,
+        "entry": 2023789,
+        "event": 2,
+        "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
     "2019453": [
@@ -18039,16 +18039,16 @@
           "avatar": "នរ"
         },
         {
-          "id": 2023789,
-          "name": "Monor Noem",
-          "teamName": "NORA FC",
-          "avatar": "MO"
-        },
-        {
           "id": 2067578,
           "name": "Kun Phaktra",
           "teamName": "The Blue Warriors",
           "avatar": "KU"
+        },
+        {
+          "id": 2023789,
+          "name": "Monor Noem",
+          "teamName": "NORA FC",
+          "avatar": "MO"
         },
         {
           "id": 2019453,
@@ -18080,8 +18080,8 @@
           "gw": 1,
           "scores": {
             "2023013": 52,
-            "2023789": 72,
             "2067578": 66,
+            "2023789": 72,
             "2019453": 41,
             "2026160": 49,
             "2024611": 54,
@@ -18089,8 +18089,8 @@
           },
           "hits": {
             "2023013": 0,
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -18098,8 +18098,8 @@
           },
           "transfers": {
             "2023013": 0,
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -18107,8 +18107,8 @@
           },
           "benchPoints": {
             "2023013": 4,
-            "2023789": 0,
             "2067578": 11,
+            "2023789": 0,
             "2019453": 11,
             "2026160": 0,
             "2024611": 3,
@@ -18116,8 +18116,8 @@
           },
           "captainPoints": {
             "2023013": 4,
-            "2023789": 4,
             "2067578": 4,
+            "2023789": 4,
             "2019453": 4,
             "2026160": 4,
             "2024611": 4,
@@ -18128,8 +18128,8 @@
           },
           "seasonTotals": {
             "2023013": 52,
-            "2023789": 72,
             "2067578": 66,
+            "2023789": 72,
             "2019453": 41,
             "2026160": 49,
             "2024611": 54,
@@ -18140,8 +18140,8 @@
           "gw": 2,
           "scores": {
             "2023013": 76,
-            "2023789": 74,
             "2067578": 80,
+            "2023789": 74,
             "2019453": 87,
             "2026160": 76,
             "2024611": 73,
@@ -18149,8 +18149,8 @@
           },
           "hits": {
             "2023013": 0,
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -18158,8 +18158,8 @@
           },
           "transfers": {
             "2023013": 1,
-            "2023789": 1,
             "2067578": 1,
+            "2023789": 1,
             "2019453": 0,
             "2026160": 1,
             "2024611": 0,
@@ -18167,8 +18167,8 @@
           },
           "benchPoints": {
             "2023013": 6,
-            "2023789": 4,
             "2067578": 11,
+            "2023789": 4,
             "2019453": 3,
             "2026160": 15,
             "2024611": 0,
@@ -18176,8 +18176,8 @@
           },
           "captainPoints": {
             "2023013": 26,
-            "2023789": 26,
             "2067578": 26,
+            "2023789": 26,
             "2019453": 26,
             "2026160": 18,
             "2024611": 26,
@@ -18188,8 +18188,8 @@
           },
           "seasonTotals": {
             "2023013": 128,
-            "2023789": 146,
             "2067578": 146,
+            "2023789": 146,
             "2019453": 128,
             "2026160": 125,
             "2024611": 127,
@@ -18200,8 +18200,8 @@
           "gw": 3,
           "scores": {
             "2023013": 30,
-            "2023789": 0,
             "2067578": 3,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 11,
             "2024611": 3,
@@ -18209,8 +18209,8 @@
           },
           "hits": {
             "2023013": 0,
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 4,
             "2026160": 0,
             "2024611": 0,
@@ -18218,8 +18218,8 @@
           },
           "transfers": {
             "2023013": 1,
-            "2023789": 1,
             "2067578": 1,
+            "2023789": 1,
             "2019453": 3,
             "2026160": 1,
             "2024611": 2,
@@ -18227,8 +18227,8 @@
           },
           "benchPoints": {
             "2023013": 1,
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 3,
             "2026160": 0,
             "2024611": 3,
@@ -18236,8 +18236,8 @@
           },
           "captainPoints": {
             "2023013": 18,
-            "2023789": 18,
             "2067578": 18,
+            "2023789": 18,
             "2019453": 18,
             "2026160": 18,
             "2024611": 18,
@@ -18248,8 +18248,8 @@
           },
           "seasonTotals": {
             "2023013": 158,
-            "2023789": 146,
             "2067578": 149,
+            "2023789": 146,
             "2019453": 124,
             "2026160": 136,
             "2024611": 130,
