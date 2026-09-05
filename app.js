@@ -512,8 +512,9 @@
         const dataUrl = await capturePngUrl();
         downloadBtn.textContent = '📥 Download PNG';
         if (dataUrl) {
+          const isMonthly = state.viewMode && state.viewMode !== 'overall';
           const link = document.createElement('a');
-          link.download = `GW${state.currentGw}_Standings_Payouts.png`;
+          link.download = isMonthly ? `${state.viewMode.toUpperCase()}_Standings_Payouts.png` : `GW${state.currentGw}_Standings_Payouts.png`;
           link.href = dataUrl;
           link.click();
           showToast('Image downloaded successfully!');
@@ -1673,54 +1674,64 @@
     const startGw = Math.min(...monthGws);
     const endGw = Math.max(...monthGws);
 
-    const datasetMaxGw = Math.max(...state.dataset.gameweeks.map(g => g.gw));
-    const isFinalized = datasetMaxGw > endGw || state.currentGw > endGw;
-    const gwsToCalculate = isFinalized ? monthGws : monthGws.filter(g => g <= state.currentGw);
+    const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+    const isFinalized = activeSeasonGw > endGw;
+    // Only calculate gameweeks belonging to this month that have commenced or finished
+    const gwsToCalculate = monthGws.filter(g => g <= activeSeasonGw);
     
     const activeManagers = state.dataset.managers;
     const total = activeManagers.length;
 
     let managers = activeManagers.map(m => {
       let grossScore = 0, hitCost = 0, transfers = 0, bench = 0, captain = 0, chips = [];
+      const gwBreakdown = {};
 
-      gwsToCalculate.forEach(g => {
-        const gwData = state.dataset.gameweeks.find(x => x.gw === g);
-        if (gwData) {
-          const gScore = gwData.scores[m.id] || 0;
-          const hCost  = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
-          const tMade  = gwData.transfers ? (gwData.transfers[m.id] ?? (hCost > 0 ? Math.floor(hCost / 4) + 1 : 0)) : (hCost > 0 ? Math.floor(hCost / 4) + 1 : 0);
-          
-          grossScore += gScore;
-          hitCost += hCost;
-          transfers += tMade;
-          bench += (gwData.benchPoints[m.id] || 0);
-          captain += gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
-          if (gwData.chipsUsed && gwData.chipsUsed[m.id]) {
-            chips.push(gwData.chipsUsed[m.id]);
+      monthGws.forEach(g => {
+        if (g <= activeSeasonGw) {
+          const gwData = state.dataset.gameweeks.find(x => x.gw === g);
+          if (gwData) {
+            const gScore = (g < activeSeasonGw) 
+              ? (gwData.scores[m.id] || 0)
+              : getManagerLiveScore(m.id, g);
+            const hCost = gwData.hits ? (gwData.hits[m.id] || 0) : 0;
+            const tMade = gwData.transfers ? (gwData.transfers[m.id] ?? (hCost > 0 ? Math.floor(hCost / 4) + 1 : 0)) : (hCost > 0 ? Math.floor(hCost / 4) + 1 : 0);
+            const netGw = gScore - hCost;
+            gwBreakdown[g] = netGw;
+            grossScore += gScore;
+            hitCost += hCost;
+            transfers += tMade;
+            bench += (gwData.benchPoints[m.id] || 0);
+            captain += gwData.captainPoints ? (gwData.captainPoints[m.id] || 0) : 0;
+            if (gwData.chipsUsed && gwData.chipsUsed[m.id]) {
+              chips.push(`${getChipLabel(gwData.chipsUsed[m.id])} (GW${g})`);
+            }
+          } else {
+            gwBreakdown[g] = '-';
           }
+        } else {
+          gwBreakdown[g] = '-';
         }
       });
 
       const netScore = grossScore - hitCost;
-      const seasonTotalNet = getManagerSeasonNetUpToGw(m.id, isFinalized ? endGw : state.currentGw);
+      const monthTotalNet = netScore;
       const chip = chips.length > 0 ? chips.join(', ') : null;
 
-      return { ...m, grossScore, hitCost, transfers, netScore, bench, captain, chip, seasonTotalNet };
+      return { ...m, grossScore, hitCost, transfers, netScore, monthTotalNet, bench, captain, chip, gwBreakdown };
     });
 
     managers.sort((a, b) => {
-      if (b.netScore   !== a.netScore)   return b.netScore - a.netScore;
-      if (b.bench      !== a.bench)      return b.bench - a.bench;
-      if (b.captain    !== a.captain)    return b.captain - a.captain;
-      if (a.hitCost    !== b.hitCost)    return a.hitCost - b.hitCost;
-      return b.seasonTotalNet - a.seasonTotalNet;
+      if (b.netScore !== a.netScore) return b.netScore - a.netScore;
+      if (b.bench !== a.bench) return b.bench - a.bench;
+      if (b.captain !== a.captain) return b.captain - a.captain;
+      return a.hitCost - b.hitCost;
     });
 
     const splitSize  = Math.floor(total / 2);
     const hasNeutral = total % 2 === 1;
     const neutralRank = hasNeutral ? splitSize + 1 : null;
 
-    return managers.map((m, idx) => {
+    const resultManagers = managers.map((m, idx) => {
       const rank = idx + 1;
       let payout = 0, statusClass = '', outcomeCode = 'N';
 
@@ -1753,12 +1764,39 @@
         note = `Pays to ${receiver ? receiver.name : 'Top'}`;
       }
 
-      return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note, monthObj };
+      return { ...m, rank, payout, statusClass, outcomeCode, isTied, payoutNote: note, monthObj, monthGws };
     });
+
+    // Progressive Tiebreaker detail calculation for month (strictly month data)
+    resultManagers.forEach(m => {
+      if (!m.isTied) {
+        m.tiebreakerText = '';
+        return;
+      }
+      const cohort = resultManagers.filter(x => x.netScore === m.netScore);
+      const benchSet = new Set(cohort.map(x => x.bench));
+      if (benchSet.size > 1) {
+        m.tiebreakerText = `TB → Bench: ${m.bench}`;
+        return;
+      }
+
+      const captSet = new Set(cohort.map(x => x.captain));
+      if (captSet.size > 1) {
+        m.tiebreakerText = `TB → Bench: ${m.bench} · Capt: ${m.captain}`;
+        return;
+      }
+
+      const hitSet = new Set(cohort.map(x => x.hitCost));
+      if (hitSet.size > 1) {
+        m.tiebreakerText = `TB → Bench: ${m.bench} · Capt: ${m.captain} · Hits: ${m.hitCost}`;
+        return;
+      }
+    });
+
+    return resultManagers;
   }
 
   function getFormGuide(managerId) {
-    // Option 1: Strictly previous gameweeks only (excluding the current active/viewed GW)
     if (state.currentGw <= 1) {
       return ['-'];
     }
@@ -1773,6 +1811,21 @@
         form.push(m.outcomeCode);
       }
     }
+    return form.length > 0 ? form : ['-'];
+  }
+
+  function getMonthlyFormGuide(managerId, monthGws) {
+    const activeSeasonGw = state.seasonGw || state.maxGw || 1;
+    const form = [];
+    monthGws.forEach(gw => {
+      if (gw <= activeSeasonGw) {
+        const standings = getGameweekStandings(gw);
+        const m = standings.find(x => x.id === managerId);
+        if (m && m.outcomeCode && m.outcomeCode !== '-') {
+          form.push(m.outcomeCode);
+        }
+      }
+    });
     return form.length > 0 ? form : ['-'];
   }
 
@@ -1815,10 +1868,10 @@
 
   // ===================== STANDINGS TABLE =====================
   function renderStandingsTable() {
-    const isMonthlyView = state.viewMode && state.viewMode !== 'overall';
+    const isMonthlyView = Boolean(state.viewMode && state.viewMode !== 'overall');
     let standings = isMonthlyView ? getMonthlyStandings(state.viewMode) : getGameweekStandings(state.currentGw);
     
-    if (state.standingsSortColumn === 'seasonTotalNet') {
+    if (!isMonthlyView && state.standingsSortColumn === 'seasonTotalNet') {
       standings = [...standings].sort((a, b) => {
         return state.standingsSortDir === 'desc'
           ? b.seasonTotalNet - a.seasonTotalNet
@@ -1826,32 +1879,23 @@
       });
     }
 
-    const thSeasonPts = document.getElementById('thSeasonPts');
-    const sortIcon = document.getElementById('seasonPtsSortIcon');
-    if (thSeasonPts && sortIcon) {
-      if (state.standingsSortColumn === 'seasonTotalNet') {
-        thSeasonPts.classList.add('active-sort');
-        sortIcon.textContent = state.standingsSortDir === 'desc' ? '▼' : '▲';
+    const monthObj = isMonthlyView
+      ? (state.dataset.months ? state.dataset.months.find(m => m.name.toLowerCase() === state.viewMode.toLowerCase()) : null)
+      : null;
+    const activeMonthName = monthObj ? monthObj.name : (getCurrentGwMonth(state.currentGw)?.name || 'August');
+    const monthGws = monthObj ? (monthObj.gws || []) : [];
+
+    // Heading update
+    const headingEl = document.getElementById('standingsSectionHeading');
+    if (headingEl) {
+      const curLeagueText = elements.leagueNameDisplay ? elements.leagueNameDisplay.textContent : (state.dataset.leagueName || 'Clash of Elite 2026-2027');
+      if (isMonthlyView) {
+        headingEl.innerHTML = `${activeMonthName} Standings &amp; Monthly Payouts — <span id="leagueNameDisplay" style="color: var(--pl-cyan);">${curLeagueText}</span>`;
       } else {
-        thSeasonPts.classList.remove('active-sort');
-        sortIcon.textContent = '⇅';
+        headingEl.innerHTML = `Gameweek Standings &amp; Weekly Payouts — <span id="leagueNameDisplay" style="color: var(--pl-cyan);">${curLeagueText}</span>`;
       }
+      elements.leagueNameDisplay = document.getElementById('leagueNameDisplay');
     }
-    
-    elements.standingsBody.innerHTML = '';
-    if (elements.mobileCards) elements.mobileCards.innerHTML = '';
-
-    const targetGwForMotm = isMonthlyView
-      ? Math.min(...(state.dataset.months.find(m => m.name.toLowerCase() === state.viewMode.toLowerCase())?.gws || [state.currentGw]))
-      : state.currentGw;
-
-    const motmInfo = getMonthlyMotmLeader(targetGwForMotm);
-    const motmLeaderId = motmInfo.leader ? motmInfo.leader.id : null;
-    const activeMonthName = motmInfo.activeMonth.name;
-    const motsLeaders = getSeasonLeaders(state.currentGw);
-    const motsLeaderIds = motsLeaders.map(m => m.id);
-    const isMotsTied = motsLeaders.length > 1;
-    const motsPrizePerWinner = state.motsPrizePool / Math.max(1, motsLeaders.length);
 
     // Update GW/Standings Badge
     if (elements.standingsGwBadge) {
@@ -1862,12 +1906,113 @@
       }
     }
 
+    // Update Table Header (thead) and Colgroup
+    const standingsTable = document.getElementById('standingsTable');
+    const theadEl = standingsTable ? standingsTable.querySelector('thead') : null;
+    const colgroupEl = standingsTable ? standingsTable.querySelector('colgroup') : null;
+
+    if (isMonthlyView) {
+      if (theadEl) {
+        const gwThs = monthGws.map(gw => `<th class="text-center">GW${gw}</th>`).join('');
+        theadEl.innerHTML = `
+          <tr>
+            <th class="text-center">Pos</th>
+            <th>Manager &amp; Team</th>
+            <th class="text-center">ABA</th>
+            ${gwThs}
+            <th class="text-center">Transfers</th>
+            <th class="text-center">${activeMonthName} Pts</th>
+            <th class="text-center">Chip</th>
+            <th class="text-center">Form</th>
+            <th class="text-center">Monthly Payout</th>
+          </tr>
+        `;
+      }
+      if (colgroupEl) {
+        const numGws = monthGws.length;
+        const gwWidth = Math.max(5, Math.min(8, Math.floor(20 / Math.max(1, numGws))));
+        const gwCols = monthGws.map(() => `<col style="width: ${gwWidth}%;">`).join('');
+        colgroupEl.innerHTML = `
+          <col style="width: 4%;">
+          <col style="width: 15%;">
+          <col style="width: 8%;">
+          ${gwCols}
+          <col style="width: 8%;">
+          <col style="width: 11%;">
+          <col style="width: 9%;">
+          <col style="width: 10%;">
+          <col style="width: 13%;">
+        `;
+      }
+    } else {
+      const sortIconText = state.standingsSortColumn === 'seasonTotalNet'
+        ? (state.standingsSortDir === 'desc' ? '▼' : '▲')
+        : '⇅';
+      const activeSortClass = state.standingsSortColumn === 'seasonTotalNet' ? ' active-sort' : '';
+
+      if (theadEl) {
+        theadEl.innerHTML = `
+          <tr>
+            <th class="text-center">Pos</th>
+            <th>Manager &amp; Team</th>
+            <th class="text-center">ABA</th>
+            <th class="text-center">Gross</th>
+            <th class="text-center">Transfers</th>
+            <th class="text-center">Net Pts</th>
+            <th class="text-center sortable-header${activeSortClass}" id="thSeasonPts" title="Click to sort by Season Points">Season Pts <span id="seasonPtsSortIcon" class="sort-icon">${sortIconText}</span></th>
+            <th class="text-center">Chip</th>
+            <th class="text-center">Form</th>
+            <th class="text-center">GW Payout</th>
+          </tr>
+        `;
+        const thSeasonPts = document.getElementById('thSeasonPts');
+        if (thSeasonPts) {
+          thSeasonPts.onclick = () => {
+            if (state.standingsSortColumn !== 'seasonTotalNet') {
+              state.standingsSortColumn = 'seasonTotalNet';
+              state.standingsSortDir = 'desc';
+            } else if (state.standingsSortDir === 'desc') {
+              state.standingsSortDir = 'asc';
+            } else {
+              state.standingsSortColumn = null;
+              state.standingsSortDir = 'desc';
+            }
+            renderStandingsTable();
+          };
+        }
+      }
+      if (colgroupEl) {
+        colgroupEl.innerHTML = `
+          <col style="width: 4%;">
+          <col style="width: 13%;">
+          <col style="width: 9%;">
+          <col style="width: 8%;">
+          <col style="width: 9%;">
+          <col style="width: 9%;">
+          <col style="width: 12%;">
+          <col style="width: 11%;">
+          <col style="width: 11%;">
+          <col style="width: 14%;">
+        `;
+      }
+    }
+
+    elements.standingsBody.innerHTML = '';
+    if (elements.mobileCards) elements.mobileCards.innerHTML = '';
+
+    const targetGwForMotm = isMonthlyView
+      ? Math.min(...(monthGws.length > 0 ? monthGws : [state.currentGw]))
+      : state.currentGw;
+
+    const motmInfo = getMonthlyMotmLeader(targetGwForMotm);
+    const motsLeaders = getSeasonLeaders(state.currentGw);
+    const isMotsTied = motsLeaders.length > 1;
+
     // Render MOTM Banner (Only when explicitly toggled on via MOTM button)
     const motmBannerContainer = document.getElementById('motmBannerContainer');
     if (motmBannerContainer) {
       if (state.showMotmBadge && motmInfo && motmInfo.leader) {
         const icon = motmInfo.isFinalized ? '🏆' : '⏳';
-        
         motmBannerContainer.innerHTML = `
           <div class="motm-banner">
             <span>${icon} <strong>${activeMonthName} Manager of the Month</strong>: <span class="motm-winner-name">${motmInfo.leader.name}</span></span>
@@ -1881,7 +2026,7 @@
     // Render MOTS Banner
     const motsBannerContainer = document.getElementById('motsBannerContainer');
     if (motsBannerContainer) {
-      if (state.showMotsBadge && motsLeaders.length > 0) {
+      if (state.showMotsBadge && motsLeaders.length > 0 && !isMonthlyView) {
         const names = motsLeaders.map(l => l.name).join(' & ');
         const tiedText = isMotsTied ? ' (Tied)' : '';
         motsBannerContainer.innerHTML = `
@@ -1900,8 +2045,9 @@
       }
     }
 
-    // Find highest season total net points for the glow highlight
-    const maxSeasonPts = Math.max(...standings.map(m => m.seasonTotalNet));
+    // Find highest points for the glow highlight
+    const maxSeasonPts = isMonthlyView ? 0 : Math.max(...standings.map(m => m.seasonTotalNet || 0));
+    const maxMonthPts = isMonthlyView ? Math.max(...standings.map(m => m.netScore || 0)) : 0;
 
     standings.forEach(m => {
       // --- Shared data ---
@@ -1925,13 +2071,14 @@
         ? `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span> <span class="hit-tag has-hit">(-${m.hitCost})</span>`
         : `<span style="font-weight:700;color:var(--text-secondary);">${m.transfers}</span>`;
 
-      const formHtml = getFormGuide(m.id).map(code => {
+      const formGuide = isMonthlyView ? getMonthlyFormGuide(m.id, monthGws) : getFormGuide(m.id);
+      const formHtml = formGuide.map(code => {
         if (code === '-') return `<span style="color:var(--text-muted);font-weight:700;margin:0 2px;">-</span>`;
         const cls = code === 'W' ? 'form-w' : code === 'L' ? 'form-l' : 'form-n';
         return `<span class="form-pill ${cls}">${code}</span>`;
       }).join('');
 
-      // #6 — Tied managers indicator
+      // Tied managers indicator
       const tiedPill = m.isTied
         ? `<span class="tied-pill">TIED</span>` : '';
 
@@ -1948,101 +2095,192 @@
       // =========== DESKTOP TABLE ROW ===========
       const tr = document.createElement('tr');
       tr.className = m.statusClass + (m.isTied ? ' tr-tied' : '');
-      tr.innerHTML = `
-        <td class="text-center">
-          <div class="rank-num ${rankClass}">${m.rank}</div>
-        </td>
-        <td>
-          <div class="manager-info">
-            <span class="manager-name">${m.name}${tiedPill}</span>
-            <span class="team-name">${m.teamName}</span>
-            ${tiebreakerDetail}
-          </div>
-        </td>
-        <td class="text-center">
-          ${abaDisplay}
-        </td>
-        <td class="text-center">
-          <span style="font-weight:700;color:var(--text-secondary);">${m.grossScore}</span>
-        </td>
-        <td class="text-center">${transferDisplay}</td>
-        <td class="text-center">
-          <span class="gw-score" data-cur-val="${m.netScore}">${m.netScore}</span>
-        </td>
-        <td class="text-center">
-          <span class="season-pts${m.seasonTotalNet === maxSeasonPts ? ' season-pts-top' : ''}" data-cur-val="${m.seasonTotalNet}">${m.seasonTotalNet}</span>
-        </td>
-        <td class="text-center">${chipColumnContent}</td>
-        <td class="text-center">
-          <div class="form-pill-container">${formHtml}</div>
-        </td>
-        <td class="text-center">
-          <div class="payout-container">
-            ${payoutBadge}
-            <span class="payout-note">${m.payoutNote}</span>
-          </div>
-        </td>
-      `;
+      tr.setAttribute('title', `Click to view ${m.name}'s squad details & stats`);
+      tr.addEventListener('click', () => openManagerModal(m.id));
+
+      if (isMonthlyView) {
+        const gwTds = monthGws.map(gw => {
+          const scoreVal = (m.gwBreakdown && m.gwBreakdown[gw] !== undefined) ? m.gwBreakdown[gw] : '-';
+          const scoreDisplay = scoreVal !== '-'
+            ? `<span style="font-weight:700;color:var(--text-secondary);">${scoreVal}</span>`
+            : `<span style="color:var(--text-muted);">-</span>`;
+          return `<td class="text-center">${scoreDisplay}</td>`;
+        }).join('');
+
+        tr.innerHTML = `
+          <td class="text-center">
+            <div class="rank-num ${rankClass}">${m.rank}</div>
+          </td>
+          <td>
+            <div class="manager-info">
+              <span class="manager-name">${m.name}${tiedPill}</span>
+              <span class="team-name">${m.teamName}</span>
+              ${tiebreakerDetail}
+            </div>
+          </td>
+          <td class="text-center">
+            ${abaDisplay}
+          </td>
+          ${gwTds}
+          <td class="text-center">${transferDisplay}</td>
+          <td class="text-center">
+            <span class="gw-score month-total-pts${m.netScore === maxMonthPts ? ' season-pts-top' : ''}" data-cur-val="${m.netScore}">${m.netScore}</span>
+          </td>
+          <td class="text-center">${chipColumnContent}</td>
+          <td class="text-center">
+            <div class="form-pill-container">${formHtml}</div>
+          </td>
+          <td class="text-center">
+            <div class="payout-container">
+              ${payoutBadge}
+              <span class="payout-note">${m.payoutNote}</span>
+            </div>
+          </td>
+        `;
+      } else {
+        tr.innerHTML = `
+          <td class="text-center">
+            <div class="rank-num ${rankClass}">${m.rank}</div>
+          </td>
+          <td>
+            <div class="manager-info">
+              <span class="manager-name">${m.name}${tiedPill}</span>
+              <span class="team-name">${m.teamName}</span>
+              ${tiebreakerDetail}
+            </div>
+          </td>
+          <td class="text-center">
+            ${abaDisplay}
+          </td>
+          <td class="text-center">
+            <span style="font-weight:700;color:var(--text-secondary);">${m.grossScore}</span>
+          </td>
+          <td class="text-center">${transferDisplay}</td>
+          <td class="text-center">
+            <span class="gw-score" data-cur-val="${m.netScore}">${m.netScore}</span>
+          </td>
+          <td class="text-center">
+            <span class="season-pts${m.seasonTotalNet === maxSeasonPts ? ' season-pts-top' : ''}" data-cur-val="${m.seasonTotalNet}">${m.seasonTotalNet}</span>
+          </td>
+          <td class="text-center">${chipColumnContent}</td>
+          <td class="text-center">
+            <div class="form-pill-container">${formHtml}</div>
+          </td>
+          <td class="text-center">
+            <div class="payout-container">
+              ${payoutBadge}
+              <span class="payout-note">${m.payoutNote}</span>
+            </div>
+          </td>
+        `;
+      }
       elements.standingsBody.appendChild(tr);
 
       const gwScoreEl = tr.querySelector('.gw-score');
       const seasonPtsEl = tr.querySelector('.season-pts');
       if (gwScoreEl) animateNumber(gwScoreEl, m.netScore, 400);
-      if (seasonPtsEl) animateNumber(seasonPtsEl, m.seasonTotalNet, 400);
+      if (seasonPtsEl && !isMonthlyView) animateNumber(seasonPtsEl, m.seasonTotalNet, 400);
 
-      tr.addEventListener('click', () => openManagerModal(m.id));
-      tr.setAttribute('title', `Click to view ${m.name}'s squad details & stats`);
-
-      // =========== #10 MOBILE CARD ===========
+      // =========== MOBILE CARD ===========
       if (elements.mobileCards) {
         const card = document.createElement('div');
         card.className = `mobile-manager-card ${m.statusClass}${m.isTied ? ' tr-tied' : ''}`;
         card.addEventListener('click', () => openManagerModal(m.id));
-        card.innerHTML = `
-          <div class="mobile-card-top">
-            <div class="mobile-card-rank-name">
-              <div class="rank-num ${rankClass}">${m.rank}</div>
-              <div class="manager-info">
-                <span class="manager-name" style="font-size:14px;">${m.name}${tiedPill}</span>
-                <span class="team-name">${m.teamName}</span>
+
+        if (isMonthlyView) {
+          const gwBreakdownHtml = monthGws.map(gw => {
+            const scoreVal = (m.gwBreakdown && m.gwBreakdown[gw] !== undefined) ? m.gwBreakdown[gw] : '-';
+            return `
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">GW${gw}</span>
+                <span class="mobile-stat-value" style="font-weight:700;">${scoreVal}</span>
+              </div>
+            `;
+          }).join('');
+
+          card.innerHTML = `
+            <div class="mobile-card-top">
+              <div class="mobile-card-rank-name">
+                <div class="rank-num ${rankClass}">${m.rank}</div>
+                <div class="manager-info">
+                  <span class="manager-name" style="font-size:14px;">${m.name}${tiedPill}</span>
+                  <span class="team-name">${m.teamName}</span>
+                  ${tiebreakerDetail}
+                </div>
+              </div>
+              ${payoutBadge}
+            </div>
+            <div class="mobile-card-stats">
+              ${abaAccount ? `
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">ABA</span>
+                <span class="mobile-stat-value" style="font-size:11px;font-weight:700;letter-spacing:0.3px;">${abaAccount}</span>
+              </div>` : ''}
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">${activeMonthName} Pts</span>
+                <span class="mobile-stat-value" style="color:var(--pl-green);font-weight:800;">${m.netScore}</span>
+              </div>
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Transfers</span>
+                <span class="mobile-stat-value">${m.transfers}${m.hitCost > 0 ? ` <span class="hit-tag has-hit">(-${m.hitCost})</span>` : ''}</span>
+              </div>
+              ${gwBreakdownHtml}
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Chip</span>
+                <span class="mobile-stat-value" style="font-size:11px;">${m.chip ? m.chip : '—'}</span>
               </div>
             </div>
-            ${payoutBadge}
-          </div>
-          <div class="mobile-card-stats">
-            ${abaAccount ? `
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">ABA</span>
-              <span class="mobile-stat-value" style="font-size:11px;font-weight:700;letter-spacing:0.3px;">${abaAccount}</span>
-            </div>` : ''}
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Net Pts</span>
-              <span class="mobile-stat-value" style="color:var(--pl-green);">${m.netScore}</span>
+            <div class="mobile-card-bottom">
+              <div class="form-pill-container">${formHtml}</div>
+              <span class="payout-note">${m.payoutNote}</span>
             </div>
-              <span class="mobile-stat-value" style="color:var(--pl-green);">${m.netScore}</span>
+          `;
+        } else {
+          card.innerHTML = `
+            <div class="mobile-card-top">
+              <div class="mobile-card-rank-name">
+                <div class="rank-num ${rankClass}">${m.rank}</div>
+                <div class="manager-info">
+                  <span class="manager-name" style="font-size:14px;">${m.name}${tiedPill}</span>
+                  <span class="team-name">${m.teamName}</span>
+                  ${tiebreakerDetail}
+                </div>
+              </div>
+              ${payoutBadge}
             </div>
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Transfers</span>
-              <span class="mobile-stat-value">${m.transfers}${m.hitCost > 0 ? ` <span class="hit-tag has-hit">(-${m.hitCost})</span>` : ''}</span>
+            <div class="mobile-card-stats">
+              ${abaAccount ? `
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">ABA</span>
+                <span class="mobile-stat-value" style="font-size:11px;font-weight:700;letter-spacing:0.3px;">${abaAccount}</span>
+              </div>` : ''}
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Net Pts</span>
+                <span class="mobile-stat-value" style="color:var(--pl-green);">${m.netScore}</span>
+              </div>
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Transfers</span>
+                <span class="mobile-stat-value">${m.transfers}${m.hitCost > 0 ? ` <span class="hit-tag has-hit">(-${m.hitCost})</span>` : ''}</span>
+              </div>
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Season</span>
+                <span class="mobile-stat-value" style="color:var(--pl-cyan);">${m.seasonTotalNet}</span>
+              </div>
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Gross</span>
+                <span class="mobile-stat-value">${m.grossScore}</span>
+              </div>
+              <div class="mobile-stat-item">
+                <span class="mobile-stat-label">Chip</span>
+                <span class="mobile-stat-value" style="font-size:11px;">${m.chip ? getChipLabel(m.chip) : '—'}</span>
+              </div>
             </div>
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Season</span>
-              <span class="mobile-stat-value" style="color:var(--pl-cyan);">${m.seasonTotalNet}</span>
+            <div class="mobile-card-bottom">
+              <div class="form-pill-container">${formHtml}</div>
+              <span class="payout-note">${m.payoutNote}</span>
             </div>
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Gross</span>
-              <span class="mobile-stat-value">${m.grossScore}</span>
-            </div>
-            <div class="mobile-stat-item">
-              <span class="mobile-stat-label">Chip</span>
-              <span class="mobile-stat-value" style="font-size:11px;">${m.chip ? getChipLabel(m.chip) : '—'}</span>
-            </div>
-          </div>
-          <div class="mobile-card-bottom">
-            <div class="form-pill-container">${formHtml}</div>
-            <span class="payout-note">${m.payoutNote}</span>
-          </div>
-        `;
+          `;
+        }
         elements.mobileCards.appendChild(card);
       }
     });
