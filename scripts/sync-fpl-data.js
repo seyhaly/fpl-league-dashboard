@@ -196,12 +196,28 @@ async function syncAll() {
     });
   }
 
+  // 2.5 Fetch historical and live event player points for all gameweeks
+  console.log(`📥 Fetching Player points for GW1 to GW${detectedGw}...`);
+  const playerGwPoints = {};
+  for (let g = 1; g <= detectedGw; g++) {
+    const liveGData = await directFetchJson(`https://fantasy.premierleague.com/api/event/${g}/live/`);
+    if (liveGData && liveGData.elements && Array.isArray(liveGData.elements)) {
+      playerGwPoints[String(g)] = {};
+      liveGData.elements.forEach(el => {
+        if (el && el.id && el.stats) {
+          playerGwPoints[String(g)][String(el.id)] = el.stats.total_points || 0;
+        }
+      });
+    }
+  }
+
   const outputData = {
     lastUpdated: new Date().toISOString(),
     currentGw: detectedGw,
     eventStatuses: eventStatuses,
     teams: teamsMap,
     players: playersMap,
+    playerGwPoints: playerGwPoints,
     squadPicks: {},
     transfersHistory: {},
     leagues: {}
@@ -276,23 +292,41 @@ async function syncAll() {
     console.log(`📥 Fetching detailed history, picks & transfers for ${managers.length} managers in League #${leagueId}...`);
     for (const m of managers) {
       const histData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/history/`);
-      const picksData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/event/${detectedGw}/picks/`);
       const transData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/transfers/`);
 
       if (transData && Array.isArray(transData)) {
         outputData.transfersHistory[String(m.id)] = transData;
       }
 
-      if (picksData) {
-        if (!outputData.squadPicks[String(m.id)]) {
-          outputData.squadPicks[String(m.id)] = {};
+      if (!outputData.squadPicks[String(m.id)]) {
+        outputData.squadPicks[String(m.id)] = {};
+      }
+
+      // Ensure all gameweeks 1..detectedGw have squad picks
+      for (let g = 1; g <= detectedGw; g++) {
+        const gwStr = String(g);
+        if (!outputData.squadPicks[String(m.id)][gwStr] || g === detectedGw) {
+          const picksData = await directFetchJson(`https://fantasy.premierleague.com/api/entry/${m.id}/event/${g}/picks/`);
+          if (picksData) {
+            outputData.squadPicks[String(m.id)][gwStr] = {
+              picks: picksData.picks || [],
+              active_chip: picksData.active_chip || null,
+              entry_history: picksData.entry_history || {},
+              automatic_subs: picksData.automatic_subs || []
+            };
+          }
         }
-        outputData.squadPicks[String(m.id)][String(detectedGw)] = {
-          picks: picksData.picks || [],
-          active_chip: picksData.active_chip || null,
-          entry_history: picksData.entry_history || {},
-          automatic_subs: picksData.automatic_subs || []
-        };
+
+        const squadForG = outputData.squadPicks[String(m.id)][gwStr];
+        if (squadForG && squadForG.picks) {
+          const capPick = squadForG.picks.find(p => p.is_captain);
+          if (capPick) {
+            const capId = String(capPick.element);
+            const mult = capPick.multiplier || 2;
+            const capPts = ((playerGwPoints[gwStr] && playerGwPoints[gwStr][capId]) || 0) * mult;
+            gameweeks[g - 1].captainPoints[m.id] = capPts;
+          }
+        }
       }
 
       if (histData && histData.current && Array.isArray(histData.current)) {
@@ -317,24 +351,25 @@ async function syncAll() {
         });
       }
 
-      if (picksData) {
+      // Populate latest active gameweek chips and entry history overrides
+      const currSquad = outputData.squadPicks[String(m.id)] && outputData.squadPicks[String(m.id)][String(detectedGw)];
+      if (currSquad) {
         const currGwObj = gameweeks[detectedGw - 1];
         if (currGwObj) {
-          if (picksData.active_chip) {
-            currGwObj.chipsUsed[m.id] = picksData.active_chip;
+          if (currSquad.active_chip) {
+            currGwObj.chipsUsed[m.id] = currSquad.active_chip;
           }
-          if (picksData.entry_history) {
-            if (picksData.entry_history.points !== undefined) currGwObj.scores[m.id] = picksData.entry_history.points;
-            if (picksData.entry_history.event_transfers_cost !== undefined) currGwObj.hits[m.id] = picksData.entry_history.event_transfers_cost;
-            let transCount = picksData.entry_history.event_transfers || 0;
-            if (transCount === 0 && transData && Array.isArray(transData)) {
-              const gwTrans = transData.filter(t => t.event === detectedGw);
-              if (gwTrans.length > 0) transCount = gwTrans.length;
-            }
-            currGwObj.transfers[m.id] = transCount;
-            if (picksData.entry_history.points_on_bench !== undefined) currGwObj.benchPoints[m.id] = picksData.entry_history.points_on_bench;
-            if (picksData.entry_history.total_points !== undefined) currGwObj.seasonTotals[m.id] = picksData.entry_history.total_points;
+          const entryHist = currSquad.entry_history || {};
+          if (entryHist.points !== undefined && entryHist.points !== null) currGwObj.scores[m.id] = entryHist.points;
+          if (entryHist.event_transfers_cost !== undefined && entryHist.event_transfers_cost !== null) currGwObj.hits[m.id] = entryHist.event_transfers_cost;
+          let transCount = entryHist.event_transfers || 0;
+          if (transCount === 0 && transData && Array.isArray(transData)) {
+            const gwTrans = transData.filter(t => t.event === detectedGw);
+            if (gwTrans.length > 0) transCount = gwTrans.length;
           }
+          currGwObj.transfers[m.id] = transCount;
+          if (entryHist.points_on_bench !== undefined && entryHist.points_on_bench !== null) currGwObj.benchPoints[m.id] = entryHist.points_on_bench;
+          if (entryHist.total_points !== undefined && entryHist.total_points !== null) currGwObj.seasonTotals[m.id] = entryHist.total_points;
         }
       }
     }

@@ -189,12 +189,24 @@ def main():
                     pl['match_status'] = 'live'
                     pl['status_label'] = f"🟢 Live ({fix.get('minutes', 0)}')"
 
+    # 2.5 Fetch historical and live event player points for all gameweeks
+    print(f"📥 Fetching Player points for GW1 to GW{detected_gw}...")
+    player_gw_points = {}
+    for g in range(1, detected_gw + 1):
+        live_g_data = fetch_json(f'https://fantasy.premierleague.com/api/event/{g}/live/')
+        if live_g_data and 'elements' in live_g_data and isinstance(live_g_data['elements'], list):
+            player_gw_points[str(g)] = {
+                str(el['id']): el.get('stats', {}).get('total_points', 0)
+                for el in live_g_data['elements'] if el and 'id' in el and 'stats' in el
+            }
+
     output_data = {
         "lastUpdated": datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ'),
         "currentGw": detected_gw,
         "eventStatuses": event_statuses,
         "teams": teams_map,
         "players": players_map,
+        "playerGwPoints": player_gw_points,
         "squadPicks": {},
         "transfersHistory": {},
         "leagues": {}
@@ -269,21 +281,36 @@ def main():
         for m in managers:
             m_id = m['id']
             hist_data = fetch_json(f'https://fantasy.premierleague.com/api/entry/{m_id}/history/')
-            picks_data = fetch_json(f'https://fantasy.premierleague.com/api/entry/{m_id}/event/{detected_gw}/picks/')
             trans_data = fetch_json(f'https://fantasy.premierleague.com/api/entry/{m_id}/transfers/')
 
             if trans_data and isinstance(trans_data, list):
                 output_data['transfersHistory'][str(m_id)] = trans_data
 
-            if picks_data:
-                if str(m_id) not in output_data['squadPicks']:
-                    output_data['squadPicks'][str(m_id)] = {}
-                output_data['squadPicks'][str(m_id)][str(detected_gw)] = {
-                    'picks': picks_data.get('picks', []),
-                    'active_chip': picks_data.get('active_chip', None),
-                    'entry_history': picks_data.get('entry_history', {}),
-                    'automatic_subs': picks_data.get('automatic_subs', [])
-                }
+            if str(m_id) not in output_data['squadPicks']:
+                output_data['squadPicks'][str(m_id)] = {}
+
+            # Ensure all gameweeks 1..detected_gw have squad picks
+            for g in range(1, detected_gw + 1):
+                gw_str = str(g)
+                # Fetch picks if missing or if it is the current active gameweek
+                if gw_str not in output_data['squadPicks'][str(m_id)] or g == detected_gw:
+                    picks_data = fetch_json(f'https://fantasy.premierleague.com/api/entry/{m_id}/event/{g}/picks/')
+                    if picks_data:
+                        output_data['squadPicks'][str(m_id)][gw_str] = {
+                            'picks': picks_data.get('picks', []),
+                            'active_chip': picks_data.get('active_chip', None),
+                            'entry_history': picks_data.get('entry_history', {}),
+                            'automatic_subs': picks_data.get('automatic_subs', [])
+                        }
+
+                squad_for_g = output_data['squadPicks'][str(m_id)].get(gw_str, {})
+                picks_list = squad_for_g.get('picks', [])
+                cap_pick = next((p for p in picks_list if p.get('is_captain')), None)
+                if cap_pick:
+                    cap_id = str(cap_pick.get('element'))
+                    mult = cap_pick.get('multiplier', 2)
+                    cap_pts = player_gw_points.get(gw_str, {}).get(cap_id, 0) * mult
+                    gameweeks[g - 1]['captainPoints'][m_id] = cap_pts
 
             if hist_data and 'current' in hist_data and isinstance(hist_data['current'], list):
                 for h in hist_data['current']:
@@ -301,14 +328,16 @@ def main():
                     if 1 <= g_num <= 38:
                         gameweeks[g_num - 1]['chipsUsed'][m_id] = c.get('name')
 
-            if picks_data:
+            # Populate latest active gameweek chips and entry history overrides
+            curr_squad = output_data['squadPicks'][str(m_id)].get(str(detected_gw), {})
+            if curr_squad:
                 curr_gw_obj = gameweeks[detected_gw - 1]
-                if picks_data.get('active_chip'):
-                    curr_gw_obj['chipsUsed'][m_id] = picks_data['active_chip']
-                entry_hist = picks_data.get('entry_history', {})
-                if 'points' in entry_hist:
+                if curr_squad.get('active_chip'):
+                    curr_gw_obj['chipsUsed'][m_id] = curr_squad['active_chip']
+                entry_hist = curr_squad.get('entry_history', {})
+                if 'points' in entry_hist and entry_hist['points'] is not None:
                     curr_gw_obj['scores'][m_id] = entry_hist['points']
-                if 'event_transfers_cost' in entry_hist:
+                if 'event_transfers_cost' in entry_hist and entry_hist['event_transfers_cost'] is not None:
                     curr_gw_obj['hits'][m_id] = entry_hist['event_transfers_cost']
                 trans_count = entry_hist.get('event_transfers', 0)
                 if trans_count == 0 and trans_data and isinstance(trans_data, list):
@@ -316,9 +345,9 @@ def main():
                     if gw_trans:
                         trans_count = len(gw_trans)
                 curr_gw_obj['transfers'][m_id] = trans_count
-                if 'points_on_bench' in entry_hist:
+                if 'points_on_bench' in entry_hist and entry_hist['points_on_bench'] is not None:
                     curr_gw_obj['benchPoints'][m_id] = entry_hist['points_on_bench']
-                if 'total_points' in entry_hist:
+                if 'total_points' in entry_hist and entry_hist['total_points'] is not None:
                     curr_gw_obj['seasonTotals'][m_id] = entry_hist['total_points']
 
         output_data['leagues'][league_id] = {

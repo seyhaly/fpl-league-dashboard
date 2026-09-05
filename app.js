@@ -3,8 +3,9 @@
   // App State
   const state = {
     viewMode: 'overall',
-    currentGw: 2,
-    maxGw: 2,
+    currentGw: 3,
+    seasonGw: 3,
+    maxGw: 3,
     entryFee: 3,
     showMotmBadge: false,
     showMotsBadge: false,
@@ -196,11 +197,13 @@
         months: lData.months || (window.DEMO_DATA ? window.DEMO_DATA.months : []),
         gameweeks: lData.gameweeks || [],
         players: staticData.players || {},
+        playerGwPoints: staticData.playerGwPoints || {},
         squadPicks: staticData.squadPicks || {},
         transfersHistory: staticData.transfersHistory || {},
         teams: staticData.teams || {}
       };
       if (lData.currentGw) {
+        state.seasonGw = lData.currentGw;
         state.currentGw = lData.currentGw;
         state.maxGw = lData.currentGw;
       }
@@ -740,10 +743,12 @@
             if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = lData.leagueName;
           }
           if (lData.currentGw) {
+            state.seasonGw = lData.currentGw;
             state.currentGw = lData.currentGw;
             state.maxGw = lData.currentGw;
           }
           if (liveJson.players) state.dataset.players = liveJson.players;
+          if (liveJson.playerGwPoints) state.dataset.playerGwPoints = liveJson.playerGwPoints;
           if (liveJson.squadPicks) state.dataset.squadPicks = liveJson.squadPicks;
           if (liveJson.transfersHistory) state.dataset.transfersHistory = liveJson.transfersHistory;
           if (liveJson.teams) state.dataset.teams = liveJson.teams;
@@ -1395,8 +1400,11 @@
     const mgrPicks = squadPicksMap[String(mId)] || squadPicksMap[Number(mId)];
     const squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
 
-    // For past / finalized gameweeks, always use the recorded official points from entry_history or dataset
-    if (gw < state.currentGw) {
+    const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+
+    // For any past / finalized gameweek (gw < activeSeasonGw), ALWAYS use official recorded points
+    // NEVER dynamically re-calculate past gameweeks against current live playersMap
+    if (gw < activeSeasonGw) {
       if (squadData && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
         return squadData.entry_history.points;
       }
@@ -1413,7 +1421,7 @@
     }
 
     // Only compute live squad points dynamically against playersMap if gw is the current active GW
-    if (gw !== state.currentGw && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
+    if (gw !== activeSeasonGw && squadData.entry_history && typeof squadData.entry_history.points === 'number') {
       return squadData.entry_history.points;
     }
 
@@ -1467,6 +1475,9 @@
       ? state.dataset.players
       : (staticData.players || {});
 
+    const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+    const isPastGw = gw < activeSeasonGw;
+
     let managers = activeManagers.map(m => {
       const mgrPicks = squadPicksMap[String(m.id)] || squadPicksMap[Number(m.id)];
       const squadData = (mgrPicks && (mgrPicks[String(gw)] || mgrPicks[Number(gw)])) || null;
@@ -1475,8 +1486,8 @@
       let hitCost = 0;
       if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers_cost === 'number') {
         hitCost = squadData.entry_history.event_transfers_cost;
-      } else if (gwData && gwData.hits) {
-        hitCost = gwData.hits[m.id] || 0;
+      } else if (gwData && gwData.hits && gwData.hits[m.id] !== undefined) {
+        hitCost = gwData.hits[m.id];
       }
 
       let transfers = 0;
@@ -1486,13 +1497,13 @@
       const mTransfers = transfersHistoryMap[String(m.id)] || transfersHistoryMap[Number(m.id)] || [];
       const gwTransfers = mTransfers.filter(t => t.event === gw);
 
-      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers === 'number' && squadData.entry_history.event_transfers > 0) {
+      if (squadData && squadData.entry_history && typeof squadData.entry_history.event_transfers === 'number') {
         transfers = squadData.entry_history.event_transfers;
+      } else if (gwData && gwData.transfers && gwData.transfers[m.id] !== undefined) {
+        transfers = gwData.transfers[m.id];
       } else if (gwTransfers.length > 0) {
         transfers = gwTransfers.length;
-      } else if (gwData && gwData.transfers && gwData.transfers[m.id] !== undefined && gwData.transfers[m.id] > 0) {
-        transfers = gwData.transfers[m.id];
-      } else if (gw > 1 && mgrPicks) {
+      } else if (gw > 1 && mgrPicks && !isPastGw) {
         const prevSquad = mgrPicks[String(gw - 1)] || mgrPicks[Number(gw - 1)];
         if (prevSquad && prevSquad.picks && squadData && squadData.picks) {
           const prevElements = new Set(prevSquad.picks.map(p => p.element));
@@ -1505,46 +1516,65 @@
         }
       }
 
-      if (transfers === 0 && gwData && gwData.transfers && gwData.transfers[m.id] !== undefined) {
-        transfers = gwData.transfers[m.id] ?? (hitCost > 0 ? Math.floor(hitCost / 4) + 1 : 0);
-      }
-
       const netScore      = grossScore - hitCost;
 
       let bench = 0;
       const activeChip = squadData && squadData.active_chip ? getChipLabel(squadData.active_chip) : null;
       const isBenchBoost = Boolean(activeChip && (activeChip.toLowerCase().includes('bb') || activeChip.toLowerCase().includes('bench boost')));
 
-      if (squadData && squadData.picks && squadData.picks.length > 0 && playersMap && Object.keys(playersMap).length > 0) {
-        const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoost);
-        const subInIds = new Set(autoSubs.map(s => s.element_in));
-        const subOutIds = new Set(autoSubs.map(s => s.element_out));
+      if (isPastGw) {
+        if (squadData && squadData.entry_history && typeof squadData.entry_history.points_on_bench === 'number') {
+          bench = squadData.entry_history.points_on_bench;
+        } else if (gwData && gwData.benchPoints && gwData.benchPoints[m.id] !== undefined) {
+          bench = gwData.benchPoints[m.id];
+        }
+      } else {
+        if (squadData && squadData.picks && squadData.picks.length > 0 && playersMap && Object.keys(playersMap).length > 0) {
+          const autoSubs = computeAutoSubs(squadData.picks, squadData.automatic_subs, playersMap, isBenchBoost);
+          const subInIds = new Set(autoSubs.map(s => s.element_in));
+          const subOutIds = new Set(autoSubs.map(s => s.element_out));
 
-        squadData.picks.forEach(p => {
-          const pl = playersMap[p.element];
-          const pts = pl ? (pl.event_points || 0) : 0;
-          const isOnBench = (p.position > 11 && !subInIds.has(p.element)) || (p.position <= 11 && subOutIds.has(p.element));
-          if (isOnBench) {
-            bench += pts;
-          }
-        });
-      } else if (squadData && squadData.entry_history && typeof squadData.entry_history.points_on_bench === 'number') {
-        bench = squadData.entry_history.points_on_bench;
-      } else if (gwData && gwData.benchPoints) {
-        bench = gwData.benchPoints[m.id] || 0;
+          squadData.picks.forEach(p => {
+            const pl = playersMap[p.element];
+            const pts = pl ? (pl.event_points || 0) : 0;
+            const isOnBench = (p.position > 11 && !subInIds.has(p.element)) || (p.position <= 11 && subOutIds.has(p.element));
+            if (isOnBench) {
+              bench += pts;
+            }
+          });
+        } else if (squadData && squadData.entry_history && typeof squadData.entry_history.points_on_bench === 'number') {
+          bench = squadData.entry_history.points_on_bench;
+        } else if (gwData && gwData.benchPoints) {
+          bench = gwData.benchPoints[m.id] || 0;
+        }
       }
 
       let captain = 0;
-      if (squadData && squadData.picks && squadData.picks.length > 0 && playersMap && Object.keys(playersMap).length > 0) {
-        const capPick = squadData.picks.find(p => p.is_captain);
-        if (capPick) {
-          const capPl = playersMap[capPick.element];
-          const multiplier = capPick.multiplier || 2;
-          captain = capPl ? (capPl.event_points || 0) * multiplier : 0;
+      if (isPastGw) {
+        if (gwData && gwData.captainPoints && gwData.captainPoints[m.id] !== undefined && gwData.captainPoints[m.id] > 0) {
+          captain = gwData.captainPoints[m.id];
+        } else {
+          const gwPoints = (state.dataset.playerGwPoints && state.dataset.playerGwPoints[String(gw)]) ||
+                           (staticData.playerGwPoints && staticData.playerGwPoints[String(gw)]) || null;
+          if (gwPoints && squadData && squadData.picks) {
+            const capPick = squadData.picks.find(p => p.is_captain);
+            if (capPick) {
+              captain = (gwPoints[String(capPick.element)] || 0) * (capPick.multiplier || 2);
+            }
+          }
         }
-      }
-      if (captain === 0 && gwData && gwData.captainPoints && gwData.captainPoints[m.id] !== undefined) {
-        captain = gwData.captainPoints[m.id] || 0;
+      } else {
+        if (squadData && squadData.picks && squadData.picks.length > 0 && playersMap && Object.keys(playersMap).length > 0) {
+          const capPick = squadData.picks.find(p => p.is_captain);
+          if (capPick) {
+            const capPl = playersMap[capPick.element];
+            const multiplier = capPick.multiplier || 2;
+            captain = capPl ? (capPl.event_points || 0) * multiplier : 0;
+          }
+        }
+        if (captain === 0 && gwData && gwData.captainPoints && gwData.captainPoints[m.id] !== undefined) {
+          captain = gwData.captainPoints[m.id] || 0;
+        }
       }
 
       const chip          = (squadData && squadData.active_chip) ? getChipLabel(squadData.active_chip) : (gwData && gwData.chipsUsed ? gwData.chipsUsed[m.id] : null);
@@ -3134,15 +3164,35 @@
         // Sort so Starting XI (1..11) comes first, followed by Bench (12..15)
         displayPicks.sort((a, b) => a.position - b.position);
 
+        const activeSeasonGw = state.seasonGw || state.maxGw || (state.dataset && state.dataset.currentGw) || 1;
+        const isPastGw = gw < activeSeasonGw;
+        const playerGwPointsMap = (state.dataset.playerGwPoints && state.dataset.playerGwPoints[String(gw)]) ||
+                                  (staticData.playerGwPoints && staticData.playerGwPoints[String(gw)]) || null;
+
         displayPicks.forEach(p => {
-          const pl = playersMap[p.element] || {
-            web_name: `Player #${p.element}`,
-            element_type: p.element_type || (p.position === 1 ? 1 : 2),
-            team: '-',
-            event_points: 0,
-            match_status: 'yet_to_play',
-            status_label: '⏳ Yet to Play'
+          const plRaw = playersMap[p.element] || {};
+          const pl = {
+            web_name: plRaw.web_name || `Player #${p.element}`,
+            element_type: plRaw.element_type || p.element_type || (p.position === 1 ? 1 : 2),
+            team: plRaw.team || '-',
+            event_points: plRaw.event_points || 0,
+            match_status: plRaw.match_status || 'yet_to_play',
+            status_label: plRaw.status_label || '⏳ Yet to Play',
+            opponent: plRaw.opponent,
+            opponent_short: plRaw.opponent_short,
+            difficulty: plRaw.difficulty,
+            minutes: plRaw.minutes
           };
+
+          if (playerGwPointsMap && playerGwPointsMap[String(p.element)] !== undefined) {
+            pl.event_points = playerGwPointsMap[String(p.element)];
+          }
+
+          if (isPastGw) {
+            pl.match_status = 'played';
+            pl.status_label = '✓ Played';
+          }
+
           const posName = posNames[pl.element_type] || 'DEF';
           const posClass = posClasses[pl.element_type] || 'pos-def';
           const multiplier = p.multiplier || 1;
@@ -3308,7 +3358,12 @@
         ? hist.event_transfers_cost 
         : ((state.dataset.gameweeks && state.dataset.gameweeks[gw - 1] && state.dataset.gameweeks[gw - 1].hits && state.dataset.gameweeks[gw - 1].hits[manager.id]) || 0);
 
-      const grossPoints = startingPtsTotal + (isBenchBoostActive ? benchPts : 0);
+      if (isPastGw && hist.points_on_bench !== undefined && typeof hist.points_on_bench === 'number') {
+        benchPts = hist.points_on_bench;
+      }
+      const grossPoints = (isPastGw && hist.points !== undefined && typeof hist.points === 'number')
+        ? hist.points
+        : (startingPtsTotal + (isBenchBoostActive ? benchPts : 0));
       const netGwPoints = grossPoints - transferCost;
 
       // ── Build Auto-Substitutions Banner Section ──────────────
