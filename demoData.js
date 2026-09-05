@@ -27,9 +27,9 @@ window.DEMO_DATA = {
 
   // Calendar Months mapping for MOTM
   months: [
-    { name: "August", gws: [1, 2, 3] },
-    { name: "September", gws: [4, 5, 6] },
-    { name: "October", gws: [7, 8, 9, 10] }
+    { name: "August", gws: [1, 2] },
+    { name: "September", gws: [3, 4, 5] },
+    { name: "October", gws: [6, 7, 8, 9] }
   ],
 
   // Gameweeks 1 to 10 with Gross Scores, Transfer Hits, Bench Points, Captain Points, & Chips Used

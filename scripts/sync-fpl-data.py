@@ -19,17 +19,42 @@ REAL_MANAGER_MAP = {
 }
 
 MONTHS_CONFIG = [
-    {"name": "August", "gws": [1, 2, 3]},
-    {"name": "September", "gws": [4, 5, 6]},
-    {"name": "October", "gws": [7, 8, 9, 10]},
-    {"name": "November", "gws": [11, 12, 13, 14]},
-    {"name": "December", "gws": [15, 16, 17, 18, 19, 20]},
-    {"name": "January", "gws": [21, 22, 23, 24]},
-    {"name": "February", "gws": [25, 26, 27]},
+    {"name": "August", "gws": [1, 2]},
+    {"name": "September", "gws": [3, 4, 5]},
+    {"name": "October", "gws": [6, 7, 8, 9]},
+    {"name": "November", "gws": [10, 11, 12]},
+    {"name": "December", "gws": [13, 14, 15, 16, 17, 18]},
+    {"name": "January", "gws": [19, 20, 21, 22, 23]},
+    {"name": "February", "gws": [24, 25, 26, 27]},
     {"name": "March", "gws": [28, 29, 30]},
-    {"name": "April", "gws": [31, 32, 33, 34]},
-    {"name": "May", "gws": [35, 36, 37, 38]}
+    {"name": "April", "gws": [31, 32, 33]},
+    {"name": "May", "gws": [34, 35, 36, 37, 38]}
 ]
+
+def compute_months_from_events(events):
+    from datetime import datetime
+    month_dict = {}
+    for ev in events:
+        gw_id = ev.get('id')
+        dl = ev.get('deadline_time')
+        if not gw_id or not dl:
+            continue
+        try:
+            dt = datetime.fromisoformat(dl.replace('Z', '+00:00'))
+            m_name = dt.strftime('%B')
+            m_key = (dt.year, dt.month, m_name)
+            if m_key not in month_dict:
+                month_dict[m_key] = []
+            month_dict[m_key].append(gw_id)
+        except Exception:
+            continue
+    
+    if month_dict:
+        res = []
+        for (year, m_num, m_name), gws in sorted(month_dict.items()):
+            res.append({"name": m_name, "gws": gws})
+        return res
+    return MONTHS_CONFIG
 
 def fetch_json(url, timeout=10):
     try:
@@ -60,6 +85,7 @@ def main():
         sys.exit(1)
 
     detected_gw = 1
+    calculated_months = compute_months_from_events(bs_data.get('events', []))
     event_statuses = {}
     teams_map = {}
     players_map = {}
@@ -354,7 +380,7 @@ def main():
             'leagueName': league_name,
             'managers': managers,
             'gameweeks': gameweeks,
-            'months': MONTHS_CONFIG,
+            'months': calculated_months,
             'currentGw': detected_gw
         }
 

@@ -15,16 +15,16 @@ const REAL_MANAGER_MAP = {
 };
 
 const MONTHS_CONFIG = [
-  { name: "August", gws: [1, 2, 3] },
-  { name: "September", gws: [4, 5, 6] },
-  { name: "October", gws: [7, 8, 9, 10] },
-  { name: "November", gws: [11, 12, 13, 14] },
-  { name: "December", gws: [15, 16, 17, 18, 19, 20] },
-  { name: "January", gws: [21, 22, 23, 24] },
-  { name: "February", gws: [25, 26, 27] },
+  { name: "August", gws: [1, 2] },
+  { name: "September", gws: [3, 4, 5] },
+  { name: "October", gws: [6, 7, 8, 9] },
+  { name: "November", gws: [10, 11, 12] },
+  { name: "December", gws: [13, 14, 15, 16, 17, 18] },
+  { name: "January", gws: [19, 20, 21, 22, 23] },
+  { name: "February", gws: [24, 25, 26, 27] },
   { name: "March", gws: [28, 29, 30] },
-  { name: "April", gws: [31, 32, 33, 34] },
-  { name: "May", gws: [35, 36, 37, 38] }
+  { name: "April", gws: [31, 32, 33] },
+  { name: "May", gws: [34, 35, 36, 37, 38] }
 ];
 
 async function directFetchJson(url, timeoutMs = 8000) {
