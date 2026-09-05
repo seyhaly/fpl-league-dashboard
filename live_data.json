@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T09:23:34Z",
+  "lastUpdated": "2026-09-05T12:51:02Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -46,7 +46,7 @@
           "bonus_added": false,
           "date": "2026-09-05",
           "event": 3,
-          "points": ""
+          "points": "l"
         },
         {
           "bonus_added": false,
@@ -1726,14 +1726,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "58": {
       "id": 58,
@@ -1750,8 +1750,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "59": {
       "id": 59,
@@ -1768,8 +1768,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "60": {
       "id": 60,
@@ -1780,14 +1780,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "61": {
       "id": 61,
@@ -1798,14 +1798,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "62": {
       "id": 62,
@@ -1822,8 +1822,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "63": {
       "id": 63,
@@ -1840,8 +1840,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "64": {
       "id": 64,
@@ -1852,14 +1852,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "65": {
       "id": 65,
@@ -1876,8 +1876,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "66": {
       "id": 66,
@@ -1894,8 +1894,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "67": {
       "id": 67,
@@ -1906,14 +1906,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "68": {
       "id": 68,
@@ -1924,14 +1924,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "69": {
       "id": 69,
@@ -1942,14 +1942,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "70": {
       "id": 70,
@@ -1960,14 +1960,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "71": {
       "id": 71,
@@ -1984,8 +1984,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "72": {
       "id": 72,
@@ -2002,8 +2002,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "73": {
       "id": 73,
@@ -2014,14 +2014,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "74": {
       "id": 74,
@@ -2038,8 +2038,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "75": {
       "id": 75,
@@ -2056,8 +2056,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "76": {
       "id": 76,
@@ -2074,8 +2074,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "77": {
       "id": 77,
@@ -2092,8 +2092,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "78": {
       "id": 78,
@@ -2110,8 +2110,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "79": {
       "id": 79,
@@ -2122,14 +2122,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "80": {
       "id": 80,
@@ -2146,8 +2146,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "81": {
       "id": 81,
@@ -2164,8 +2164,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "566": {
       "id": 566,
@@ -2176,14 +2176,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "573": {
       "id": 573,
@@ -2200,8 +2200,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "608": {
       "id": 608,
@@ -2218,8 +2218,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "615": {
       "id": 615,
@@ -2236,8 +2236,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "82": {
       "id": 82,
@@ -9988,14 +9988,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "442": {
       "id": 442,
@@ -10012,8 +10012,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "443": {
       "id": 443,
@@ -10030,8 +10030,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "444": {
       "id": 444,
@@ -10048,8 +10048,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "445": {
       "id": 445,
@@ -10060,14 +10060,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": -1,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "446": {
       "id": 446,
@@ -10084,8 +10084,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "447": {
       "id": 447,
@@ -10096,14 +10096,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "448": {
       "id": 448,
@@ -10120,8 +10120,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "449": {
       "id": 449,
@@ -10132,14 +10132,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.1",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "450": {
       "id": 450,
@@ -10156,8 +10156,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "451": {
       "id": 451,
@@ -10174,8 +10174,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "453": {
       "id": 453,
@@ -10186,14 +10186,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "6.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "454": {
       "id": 454,
@@ -10204,14 +10204,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.1",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "456": {
       "id": 456,
@@ -10228,8 +10228,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "457": {
       "id": 457,
@@ -10246,8 +10246,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "458": {
       "id": 458,
@@ -10264,8 +10264,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "459": {
       "id": 459,
@@ -10276,14 +10276,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "460": {
       "id": 460,
@@ -10294,14 +10294,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "461": {
       "id": 461,
@@ -10318,8 +10318,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "462": {
       "id": 462,
@@ -10336,8 +10336,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "463": {
       "id": 463,
@@ -10354,8 +10354,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "464": {
       "id": 464,
@@ -10366,14 +10366,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.1",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "465": {
       "id": 465,
@@ -10390,8 +10390,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "466": {
       "id": 466,
@@ -10408,8 +10408,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "559": {
       "id": 559,
@@ -10426,8 +10426,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "567": {
       "id": 567,
@@ -10438,14 +10438,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "593": {
       "id": 593,
@@ -10456,14 +10456,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "609": {
       "id": 609,
@@ -10480,8 +10480,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "634": {
       "id": 634,
@@ -10498,8 +10498,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (61')"
     },
     "167": {
       "id": 167,
@@ -13600,29 +13600,29 @@
       "54": 0,
       "55": 0,
       "56": 0,
-      "57": 0,
+      "57": 2,
       "58": 0,
       "59": 0,
-      "60": 0,
-      "61": 0,
+      "60": 2,
+      "61": 2,
       "62": 0,
       "63": 0,
-      "64": 0,
+      "64": 2,
       "65": 0,
       "66": 0,
-      "67": 0,
-      "68": 0,
-      "69": 0,
-      "70": 0,
+      "67": 2,
+      "68": 10,
+      "69": 10,
+      "70": 2,
       "71": 0,
       "72": 0,
-      "73": 0,
+      "73": 2,
       "74": 0,
       "75": 0,
       "76": 0,
       "77": 0,
       "78": 0,
-      "79": 0,
+      "79": 2,
       "80": 0,
       "81": 0,
       "82": 0,
@@ -13948,7 +13948,7 @@
       "402": 0,
       "403": 0,
       "404": 0,
-      "405": 0,
+      "405": 2,
       "406": 0,
       "407": 0,
       "408": 0,
@@ -13988,26 +13988,26 @@
       "442": 0,
       "443": 0,
       "444": 0,
-      "445": 0,
+      "445": -1,
       "446": 0,
-      "447": 0,
+      "447": 1,
       "448": 0,
-      "449": 0,
+      "449": 4,
       "450": 0,
       "451": 0,
       "452": 0,
-      "453": 0,
-      "454": 0,
+      "453": 8,
+      "454": 1,
       "455": 0,
       "456": 0,
       "457": 0,
       "458": 0,
-      "459": 0,
-      "460": 0,
+      "459": 2,
+      "460": 2,
       "461": 0,
       "462": 0,
       "463": 0,
-      "464": 0,
+      "464": 1,
       "465": 0,
       "466": 0,
       "467": 0,
@@ -14109,8 +14109,8 @@
       "563": 0,
       "564": 2,
       "565": 0,
-      "566": 0,
-      "567": 0,
+      "566": 2,
+      "567": 2,
       "568": 0,
       "569": 0,
       "570": 0,
@@ -14136,7 +14136,7 @@
       "590": 0,
       "591": 1,
       "592": 1,
-      "593": 0,
+      "593": 1,
       "594": 0,
       "595": 0,
       "596": 0,
