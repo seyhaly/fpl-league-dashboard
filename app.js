@@ -3414,6 +3414,7 @@
       const posClasses = { 1: 'pos-gkp', 2: 'pos-def', 3: 'pos-mid', 4: 'pos-fwd' };
 
       let overallRank = '-';
+      let bankVal = '£0.0M';
       let transfersCount = 0;
       let transferHits = '(0 hits)';
       let benchPts = 0;
@@ -3433,6 +3434,7 @@
       if (squadData && squadData.picks && squadData.picks.length > 0) {
         hist = squadData.entry_history || {};
         if (hist.overall_rank) overallRank = Number(hist.overall_rank).toLocaleString();
+        if (hist.bank !== undefined && hist.bank !== null) bankVal = `£${(hist.bank / 10).toFixed(1)}M`;
         if (hist.event_transfers !== undefined) transfersCount = hist.event_transfers;
         if (hist.event_transfers_cost !== undefined) {
           transferHits = hist.event_transfers_cost > 0 ? `(-${hist.event_transfers_cost} pts)` : '(0 hits)';
@@ -3719,8 +3721,8 @@
             <span class="stat-val" style="color:#f59e0b;">${yetToPlayCount} <span style="font-size:11px;color:var(--text-muted);font-weight:600;">/ ${maxSquadCount}</span></span>
           </div>
           <div class="modal-stat-card">
-            <span class="stat-label">🪑 Bench Points</span>
-            <span class="stat-val" style="color:${benchPts > 0 ? 'var(--text-secondary)' : 'var(--text-muted)'};">${benchPts} pts</span>
+            <span class="stat-label">🏦 In the Bank</span>
+            <span class="stat-val" style="color:var(--text-primary);">${bankVal}</span>
           </div>
           <div class="modal-stat-card">
             <span class="stat-label">⚡ Active Chip</span>
