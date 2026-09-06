@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05T23:02:29Z",
+  "lastUpdated": "2026-09-06T00:49:22Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -1150,7 +1150,7 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 7,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
@@ -13594,7 +13594,7 @@
       "30": 0,
       "31": 0,
       "32": 6,
-      "33": 7,
+      "33": 6,
       "34": 0,
       "35": 0,
       "36": 7,
