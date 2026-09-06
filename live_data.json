@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-06T17:47:44Z",
+  "lastUpdated": "2026-09-06T19:33:35Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -5658,6 +5658,24 @@
       "minutes": 13,
       "match_status": "played",
       "status_label": "✓ Played"
+    },
+    "654": {
+      "id": 654,
+      "web_name": "Graham",
+      "first_name": "Braiden",
+      "second_name": "Graham",
+      "element_type": 3,
+      "team": "EVE",
+      "team_name": "Everton",
+      "team_id": 9,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "MUN",
+      "opponent_short": "MUN",
+      "difficulty": 4,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "250": {
       "id": 250,
