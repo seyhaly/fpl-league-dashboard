@@ -233,6 +233,7 @@ def main():
         "teams": teams_map,
         "players": players_map,
         "playerGwPoints": player_gw_points,
+        "fixtures": fix_data or [],
         "squadPicks": {},
         "transfersHistory": {},
         "leagues": {}

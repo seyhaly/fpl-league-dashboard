@@ -218,6 +218,7 @@ async function syncAll() {
     teams: teamsMap,
     players: playersMap,
     playerGwPoints: playerGwPoints,
+    fixtures: fixData || [],
     squadPicks: {},
     transfersHistory: {},
     leagues: {}

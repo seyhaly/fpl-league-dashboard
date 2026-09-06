@@ -212,6 +212,10 @@
       if (staticData.eventStatuses) {
         state.eventStatuses = staticData.eventStatuses;
       }
+      if (staticData.fixtures) {
+        state.fixtures = staticData.fixtures;
+        if (state.dataset) state.dataset.fixtures = staticData.fixtures;
+      }
       if (elements.leagueNameHeader) elements.leagueNameHeader.textContent = lData.leagueName;
       if (elements.leagueNameDisplay) elements.leagueNameDisplay.textContent = lData.leagueName;
     }
@@ -792,6 +796,10 @@
           if (liveJson.eventStatuses) {
             state.eventStatuses = liveJson.eventStatuses;
           }
+          if (liveJson.fixtures) {
+            state.fixtures = liveJson.fixtures;
+            if (state.dataset) state.dataset.fixtures = liveJson.fixtures;
+          }
 
           populateGwSelect();
           changeGw(state.currentGw);
@@ -997,6 +1005,11 @@
                 elStatsMap[el.id] = el.stats;
               }
             });
+          }
+
+          if (fixData && Array.isArray(fixData)) {
+            state.fixtures = fixData;
+            if (state.dataset) state.dataset.fixtures = fixData;
           }
 
           if (fixData && Array.isArray(fixData) && state.dataset.players) {
@@ -2781,6 +2794,34 @@
       return `<span class="day-tag tag-${type}">${icon}${label}</span>`;
     };
 
+    // ── Fixtures helper: count matches on each day ──────────────
+    const KNOWN_MATCH_COUNTS = {
+      // GW1
+      '2026-08-21': 1, '2026-08-22': 5, '2026-08-23': 3, '2026-08-24': 1,
+      // GW2
+      '2026-08-28': 1, '2026-08-29': 4, '2026-08-30': 4, '2026-08-31': 1,
+      // GW3
+      '2026-09-04': 1, '2026-09-05': 7, '2026-09-06': 2,
+      // GW4
+      '2026-09-12': 7, '2026-09-13': 2, '2026-09-14': 1
+    };
+
+    const getMatchCountForDay = (dateStr) => {
+      const fixturesList = state.fixtures || 
+                           (state.dataset && state.dataset.fixtures) || 
+                           (window.FPL_LIVE_STATIC && window.FPL_LIVE_STATIC.fixtures) || [];
+      if (Array.isArray(fixturesList) && fixturesList.length > 0) {
+        const matchesOnDate = fixturesList.filter(f => f && f.kickoff_time && f.kickoff_time.split('T')[0] === dateStr);
+        if (matchesOnDate.length > 0) {
+          return matchesOnDate.length;
+        }
+      }
+      if (KNOWN_MATCH_COUNTS[dateStr] !== undefined) {
+        return KNOWN_MATCH_COUNTS[dateStr];
+      }
+      return 1;
+    };
+
     // ── Build rows matching official matchday calendar ──────────────
     const tableRows = normalizedDailyStatus.map((day, idx, arr) => {
       const [y, m, d] = day.date.split('-').map(Number);
@@ -2792,6 +2833,9 @@
       const isDayLiveOrProvisional = !isDayConfirmed && (day.points === 'p' || day.points === 'r');
       const isDayUpcoming = !isDayConfirmed && !isDayLiveOrProvisional;
 
+      const matchCount = getMatchCountForDay(day.date);
+      const fixturesLabel = matchCount === 1 ? '(1 match)' : `(${matchCount} matches)`;
+
       let dayStatusBadge = '';
       let ptsType = 'pending';
       let ptsLabel = 'Pending';
@@ -2799,14 +2843,12 @@
       let bonusLabel = 'Pending';
       let leaguesTagType = 'pending';
       let leaguesLabel = 'Pending';
-      let fixturesLabel = 'Upcoming Matches';
 
       if (isDayConfirmed) {
         dayStatusBadge = `<span class="fpl-status-badge fpl-badge-final">CONFIRMED</span>`;
         ptsType = 'done'; ptsLabel = 'Updated';
         bonusType = 'done'; bonusLabel = 'Added';
         leaguesTagType = 'done'; leaguesLabel = 'Updated';
-        fixturesLabel = 'Matches (FT)';
       } else if (isDayLiveOrProvisional) {
         if (day.bonus_added) {
           dayStatusBadge = `<span class="fpl-status-badge fpl-badge-final">CONFIRMED</span>`;
@@ -2819,13 +2861,11 @@
         const leaguesUpdating = (statusObj.leagues || '').toLowerCase() === 'updating';
         leaguesTagType = leaguesUpdating ? 'active' : 'pending';
         leaguesLabel = leaguesUpdating ? 'Updating…' : 'Pending';
-        fixturesLabel = 'Matches (FT)';
       } else {
         dayStatusBadge = `<span class="fpl-status-badge fpl-badge-upcoming">YET TO PLAY</span>`;
         ptsType = 'pending'; ptsLabel = 'Pending';
         bonusType = 'pending'; bonusLabel = 'Pending';
         leaguesTagType = 'pending'; leaguesLabel = 'Pending';
-        fixturesLabel = 'Upcoming Matches';
       }
 
       const rowClass = isDayConfirmed ? 'row-done' : (isDayLiveOrProvisional ? 'row-active' : 'row-pending');
