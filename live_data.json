@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T11:28:20Z",
+  "lastUpdated": "2026-09-10T15:04:44Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -206,7 +206,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-12-26T13:30:00Z",
+      "deadline_time": "2026-12-26T11:00:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -217,7 +217,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-12-30T18:30:00Z",
+      "deadline_time": "2026-12-29T18:00:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -228,7 +228,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2027-01-02T13:30:00Z",
+      "deadline_time": "2027-01-01T18:30:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -239,7 +239,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2027-01-06T18:30:00Z",
+      "deadline_time": "2027-01-05T18:00:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -4572,6 +4572,24 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "4.0",
+      "opponent": "MCI",
+      "opponent_short": "MCI",
+      "difficulty": 5,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "655": {
+      "id": 655,
+      "web_name": "Gboho",
+      "first_name": "Yann",
+      "second_name": "Gboho",
+      "element_type": 3,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "team_id": 7,
+      "event_points": 0,
+      "now_cost": "5.5",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 5,
