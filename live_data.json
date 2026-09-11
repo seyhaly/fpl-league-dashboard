@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-11T13:46:03Z",
+  "lastUpdated": "2026-09-11T17:16:00Z",
   "currentGw": 3,
   "eventStatuses": {
     "1": {
@@ -4590,6 +4590,24 @@
       "team_id": 7,
       "event_points": 0,
       "now_cost": "5.5",
+      "opponent": "MCI",
+      "opponent_short": "MCI",
+      "difficulty": 5,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "656": {
+      "id": 656,
+      "web_name": "Mfuni",
+      "first_name": "Stephen",
+      "second_name": "Mfuni",
+      "element_type": 2,
+      "team": "COV",
+      "team_name": "Coventry City",
+      "team_id": 7,
+      "event_points": 0,
+      "now_cost": "4.0",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 5,
