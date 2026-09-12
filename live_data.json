@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T20:58:22Z",
+  "lastUpdated": "2026-09-12T22:44:47Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -44,14 +44,14 @@
       "is_next": false,
       "deadline_time": "2026-09-12T12:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
           "bonus_added": false,
           "date": "2026-09-12",
           "event": 4,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -1060,7 +1060,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 7,
+      "event_points": 8,
       "now_cost": "6.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
@@ -2707,6 +2707,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "657": {
+      "id": 657,
+      "web_name": "Nunes",
+      "first_name": "Gustavo",
+      "second_name": "Nunes Fernandes Gomes",
+      "element_type": 3,
+      "team": "BRE",
+      "team_name": "Brentford",
+      "team_id": 4,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "BOU",
+      "opponent_short": "BOU",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "109": {
       "id": 109,
       "web_name": "Verbruggen",
@@ -3747,7 +3765,7 @@
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 69,
+      "minutes": 68,
       "match_status": "played",
       "status_label": "✓ Played"
     },
@@ -3927,7 +3945,7 @@
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
-      "minutes": 20,
+      "minutes": 21,
       "match_status": "played",
       "status_label": "✓ Played"
     },
@@ -10942,7 +10960,7 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
@@ -14723,7 +14741,7 @@
       "449": 0,
       "450": 0,
       "451": 0,
-      "452": 7,
+      "452": 8,
       "453": 0,
       "454": 0,
       "455": 3,
@@ -14757,7 +14775,7 @@
       "483": 1,
       "484": 0,
       "485": 0,
-      "486": 1,
+      "486": 3,
       "487": 0,
       "488": 1,
       "489": 0,
@@ -14927,7 +14945,8 @@
       "653": 0,
       "654": 0,
       "655": 0,
-      "656": 0
+      "656": 0,
+      "657": 0
     }
   },
   "fixtures": [
@@ -15077,7 +15096,7 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 39,
+              "value": 42,
               "element": 480
             },
             {
@@ -15089,16 +15108,12 @@
               "element": 167
             },
             {
-              "value": 20,
+              "value": 23,
               "element": 201
             },
             {
-              "value": 20,
+              "value": 19,
               "element": 467
-            },
-            {
-              "value": 20,
-              "element": 558
             },
             {
               "value": 18,
@@ -15109,16 +15124,20 @@
               "element": 486
             },
             {
-              "value": 13,
+              "value": 18,
+              "element": 558
+            },
+            {
+              "value": 11,
+              "element": 473
+            },
+            {
+              "value": 10,
               "element": 581
             },
             {
               "value": 9,
               "element": 469
-            },
-            {
-              "value": 9,
-              "element": 473
             },
             {
               "value": 3,
@@ -15144,10 +15163,6 @@
             },
             {
               "value": 17,
-              "element": 46
-            },
-            {
-              "value": 17,
               "element": 47
             },
             {
@@ -15155,15 +15170,19 @@
               "element": 597
             },
             {
+              "value": 14,
+              "element": 46
+            },
+            {
               "value": 11,
               "element": 611
             },
             {
-              "value": 7,
+              "value": 8,
               "element": 41
             },
             {
-              "value": 6,
+              "value": 7,
               "element": 36
             },
             {
@@ -15176,11 +15195,11 @@
             },
             {
               "value": 4,
-              "element": 51
+              "element": 56
             },
             {
-              "value": 4,
-              "element": 56
+              "value": 3,
+              "element": 51
             },
             {
               "value": 3,
@@ -15196,7 +15215,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 15,
+              "value": 16,
               "element": 558
             },
             {
@@ -15208,7 +15227,7 @@
               "element": 472
             },
             {
-              "value": 11,
+              "value": 12,
               "element": 486
             },
             {
@@ -15246,11 +15265,11 @@
           ],
           "h": [
             {
-              "value": 13,
+              "value": 12,
               "element": 611
             },
             {
-              "value": 7,
+              "value": 9,
               "element": 45
             },
             {
@@ -15259,18 +15278,18 @@
             },
             {
               "value": 5,
+              "element": 33
+            },
+            {
+              "value": 5,
+              "element": 41
+            },
+            {
+              "value": 5,
               "element": 47
             },
             {
               "value": 4,
-              "element": 33
-            },
-            {
-              "value": 4,
-              "element": 41
-            },
-            {
-              "value": 3,
               "element": 36
             },
             {
@@ -15441,20 +15460,20 @@
               "element": 94
             },
             {
+              "value": 20,
+              "element": 98
+            },
+            {
               "value": 19,
               "element": 82
             },
             {
               "value": 19,
-              "element": 565
-            },
-            {
-              "value": 18,
-              "element": 98
-            },
-            {
-              "value": 18,
               "element": 102
+            },
+            {
+              "value": 19,
+              "element": 565
             },
             {
               "value": 12,
@@ -15482,15 +15501,11 @@
             },
             {
               "value": 3,
-              "element": 106
-            },
-            {
-              "value": 2,
               "element": 96
             },
             {
-              "value": -2,
-              "element": 87
+              "value": 3,
+              "element": 106
             }
           ],
           "h": [
@@ -15503,12 +15518,12 @@
               "element": 70
             },
             {
-              "value": 22,
-              "element": 79
+              "value": 23,
+              "element": 61
             },
             {
-              "value": 19,
-              "element": 61
+              "value": 22,
+              "element": 79
             },
             {
               "value": 19,
@@ -15540,15 +15555,15 @@
             },
             {
               "value": -1,
+              "element": 64
+            },
+            {
+              "value": -1,
               "element": 71
             },
             {
               "value": -1,
               "element": 74
-            },
-            {
-              "value": -2,
-              "element": 64
             },
             {
               "value": -2,
@@ -15584,6 +15599,10 @@
               "element": 90
             },
             {
+              "value": 5,
+              "element": 102
+            },
+            {
               "value": 4,
               "element": 94
             },
@@ -15593,18 +15612,10 @@
             },
             {
               "value": 4,
-              "element": 102
-            },
-            {
-              "value": 3,
               "element": 96
             },
             {
               "value": 2,
-              "element": 620
-            },
-            {
-              "value": 1,
               "element": 86
             },
             {
@@ -15614,15 +15625,19 @@
             {
               "value": 1,
               "element": 106
+            },
+            {
+              "value": 1,
+              "element": 620
             }
           ],
           "h": [
             {
-              "value": 15,
+              "value": 16,
               "element": 61
             },
             {
-              "value": 14,
+              "value": 15,
               "element": 69
             },
             {
@@ -15630,12 +15645,12 @@
               "element": 60
             },
             {
-              "value": 11,
-              "element": 566
+              "value": 10,
+              "element": 73
             },
             {
               "value": 10,
-              "element": 73
+              "element": 566
             },
             {
               "value": 8,
@@ -15650,12 +15665,12 @@
               "element": 64
             },
             {
-              "value": 5,
-              "element": 72
+              "value": 4,
+              "element": 70
             },
             {
               "value": 4,
-              "element": 70
+              "element": 72
             },
             {
               "value": 4,
@@ -15838,24 +15853,24 @@
               "element": 282
             },
             {
-              "value": 19,
-              "element": 572
-            },
-            {
               "value": 17,
               "element": 295
             },
             {
-              "value": 5,
+              "value": 15,
+              "element": 572
+            },
+            {
+              "value": 6,
               "element": 642
             },
             {
               "value": 3,
-              "element": 280
+              "element": 576
             },
             {
               "value": 3,
-              "element": 576
+              "element": 586
             },
             {
               "value": 3,
@@ -15867,15 +15882,15 @@
             },
             {
               "value": 2,
-              "element": 289
-            },
-            {
-              "value": 1,
               "element": 240
             },
             {
-              "value": 1,
-              "element": 586
+              "value": 2,
+              "element": 280
+            },
+            {
+              "value": 2,
+              "element": 289
             },
             {
               "value": -1,
@@ -15884,10 +15899,6 @@
             {
               "value": -1,
               "element": 585
-            },
-            {
-              "value": -1,
-              "element": 638
             },
             {
               "value": -6,
@@ -15900,28 +15911,28 @@
               "element": 165
             },
             {
-              "value": 30,
+              "value": 31,
               "element": 40
             },
             {
-              "value": 26,
+              "value": 28,
               "element": 154
             },
             {
-              "value": 16,
+              "value": 17,
               "element": 156
             },
             {
-              "value": 15,
+              "value": 14,
               "element": 161
             },
             {
               "value": 11,
-              "element": 28
+              "element": 142
             },
             {
-              "value": 11,
-              "element": 142
+              "value": 10,
+              "element": 28
             },
             {
               "value": 10,
@@ -15949,14 +15960,14 @@
             },
             {
               "value": 4,
-              "element": 583
-            },
-            {
-              "value": 2,
               "element": 200
             },
             {
-              "value": -5,
+              "value": 4,
+              "element": 583
+            },
+            {
+              "value": -8,
               "element": 148
             }
           ]
@@ -15965,16 +15976,16 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 13,
+              "value": 14,
               "element": 277
+            },
+            {
+              "value": 11,
+              "element": 290
             },
             {
               "value": 10,
               "element": 289
-            },
-            {
-              "value": 10,
-              "element": 290
             },
             {
               "value": 7,
@@ -15990,10 +16001,6 @@
             },
             {
               "value": 4,
-              "element": 280
-            },
-            {
-              "value": 4,
               "element": 642
             },
             {
@@ -16001,12 +16008,16 @@
               "element": 279
             },
             {
-              "value": 2,
-              "element": 240
+              "value": 3,
+              "element": 280
+            },
+            {
+              "value": 3,
+              "element": 295
             },
             {
               "value": 2,
-              "element": 295
+              "element": 240
             },
             {
               "value": 2,
@@ -16027,8 +16038,12 @@
           ],
           "h": [
             {
-              "value": 10,
+              "value": 9,
               "element": 161
+            },
+            {
+              "value": 7,
+              "element": 156
             },
             {
               "value": 6,
@@ -16041,10 +16056,6 @@
             {
               "value": 6,
               "element": 149
-            },
-            {
-              "value": 6,
-              "element": 156
             },
             {
               "value": 5,
@@ -16063,12 +16074,12 @@
               "element": 154
             },
             {
-              "value": 2,
-              "element": 165
+              "value": 3,
+              "element": 200
             },
             {
               "value": 2,
-              "element": 200
+              "element": 165
             },
             {
               "value": 2,
@@ -16081,6 +16092,10 @@
             {
               "value": 1,
               "element": 157
+            },
+            {
+              "value": 1,
+              "element": 583
             }
           ]
         }
@@ -17191,7 +17206,7 @@
       "code": 2645233,
       "event": 4,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 36,
       "kickoff_time": "2026-09-12T19:00:00Z",
       "minutes": 90,
@@ -17319,7 +17334,7 @@
               "element": 4
             },
             {
-              "value": 1,
+              "value": 2,
               "element": 452
             }
           ],
@@ -17329,15 +17344,15 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 39,
+              "value": 38,
               "element": 1
             },
             {
-              "value": 31,
+              "value": 30,
               "element": 4
             },
             {
-              "value": 29,
+              "value": 30,
               "element": 452
             },
             {
@@ -17448,7 +17463,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 10,
+              "value": 11,
               "element": 4
             },
             {
@@ -17472,16 +17487,16 @@
               "element": 8
             },
             {
-              "value": 4,
-              "element": 452
-            },
-            {
               "value": 3,
               "element": 5
             },
             {
               "value": 3,
               "element": 10
+            },
+            {
+              "value": 3,
+              "element": 452
             },
             {
               "value": 3,
@@ -17522,12 +17537,12 @@
               "element": 533
             },
             {
-              "value": 5,
-              "element": 542
+              "value": 4,
+              "element": 501
             },
             {
               "value": 4,
-              "element": 501
+              "element": 542
             },
             {
               "value": 4,
@@ -17542,7 +17557,7 @@
               "element": 541
             },
             {
-              "value": 1,
+              "value": 2,
               "element": 553
             }
           ]
@@ -18182,18 +18197,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 202,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2121627,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 20,
+          "total_points": 222,
+          "rank": 10106769,
+          "rank_sort": 10109775,
+          "overall_rank": 4842494,
+          "percentile_rank": 95,
+          "overall_rank_percentage": "45",
           "bank": 3,
           "value": 1001,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 18
         },
         "automatic_subs": []
       }
@@ -18755,18 +18770,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 201,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2232825,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 57,
+          "total_points": 258,
+          "rank": 1587769,
+          "rank_sort": 1598257,
+          "overall_rank": 1330298,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "12",
           "bank": 3,
           "value": 1008,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 4
         },
         "automatic_subs": []
       }
@@ -19328,13 +19343,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 198,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2580351,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 40,
+          "total_points": 234,
+          "rank": 6034726,
+          "rank_sort": 6044146,
+          "overall_rank": 3578601,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "34",
           "bank": 7,
           "value": 1006,
           "event_transfers": 2,
@@ -19901,18 +19916,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 183,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 4498301,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 43,
+          "total_points": 222,
+          "rank": 5155060,
+          "rank_sort": 5164403,
+          "overall_rank": 4871522,
+          "percentile_rank": 50,
+          "overall_rank_percentage": "46",
           "bank": 4,
           "value": 1001,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 0
+          "points_on_bench": 2
         },
         "automatic_subs": []
       }
@@ -20493,18 +20508,18 @@
         "active_chip": "wildcard",
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 174,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 5635925,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 46,
+          "total_points": 220,
+          "rank": 4064279,
+          "rank_sort": 4087347,
+          "overall_rank": 5027509,
+          "percentile_rank": 40,
+          "overall_rank_percentage": "47",
           "bank": 0,
           "value": 1005,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 5
         },
         "automatic_subs": []
       }
@@ -21066,18 +21081,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 187,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 4024505,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 38,
+          "total_points": 225,
+          "rank": 6395814,
+          "rank_sort": 6417565,
+          "overall_rank": 4523360,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "42",
           "bank": 5,
           "value": 1003,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 8
         },
         "automatic_subs": []
       }
@@ -21632,18 +21647,18 @@
         "active_chip": "3xc",
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 142,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 8393139,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 63,
+          "total_points": 169,
+          "rank": 784982,
+          "rank_sort": 785015,
+          "overall_rank": 8763790,
+          "percentile_rank": 10,
+          "overall_rank_percentage": "82",
           "bank": 21,
           "value": 1006,
           "event_transfers": 10,
           "event_transfers_cost": 36,
-          "points_on_bench": 0
+          "points_on_bench": 8
         },
         "automatic_subs": []
       }
@@ -22205,18 +22220,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 4,
-          "points": 0,
-          "total_points": 187,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3974893,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 40,
+          "total_points": 227,
+          "rank": 5964977,
+          "rank_sort": 5966110,
+          "overall_rank": 4305798,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "40",
           "bank": 6,
           "value": 1002,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 4
         },
         "automatic_subs": []
       }
@@ -23101,13 +23116,13 @@
         {
           "gw": 4,
           "scores": {
-            "2067578": 0,
-            "2023789": 0,
-            "2019453": 0,
-            "2023013": 0,
-            "2026160": 0,
-            "2024611": 0,
-            "2026484": 0
+            "2067578": 57,
+            "2023789": 40,
+            "2019453": 38,
+            "2023013": 20,
+            "2026160": 43,
+            "2024611": 46,
+            "2026484": 63
           },
           "hits": {
             "2067578": 0,
@@ -23128,13 +23143,13 @@
             "2026484": 10
           },
           "benchPoints": {
-            "2067578": 0,
+            "2067578": 4,
             "2023789": 0,
-            "2019453": 0,
-            "2023013": 0,
-            "2026160": 0,
-            "2024611": 0,
-            "2026484": 0
+            "2019453": 8,
+            "2023013": 18,
+            "2026160": 2,
+            "2024611": 5,
+            "2026484": 8
           },
           "captainPoints": {
             "2067578": 24,
@@ -23150,13 +23165,13 @@
             "2026484": "3xc"
           },
           "seasonTotals": {
-            "2067578": 201,
-            "2023789": 198,
-            "2019453": 187,
-            "2023013": 202,
-            "2026160": 183,
-            "2024611": 174,
-            "2026484": 142
+            "2067578": 258,
+            "2023789": 234,
+            "2019453": 225,
+            "2023013": 222,
+            "2026160": 222,
+            "2024611": 220,
+            "2026484": 169
           }
         },
         {
@@ -23696,8 +23711,8 @@
         {
           "gw": 4,
           "scores": {
-            "145847": 0,
-            "2019453": 0
+            "145847": 40,
+            "2019453": 38
           },
           "hits": {
             "145847": 0,
@@ -23708,8 +23723,8 @@
             "2019453": 0
           },
           "benchPoints": {
-            "145847": 0,
-            "2019453": 0
+            "145847": 4,
+            "2019453": 8
           },
           "captainPoints": {
             "145847": 0,
@@ -23717,8 +23732,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 187,
-            "2019453": 187
+            "145847": 227,
+            "2019453": 225
           }
         },
         {
