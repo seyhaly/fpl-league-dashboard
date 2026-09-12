@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T16:32:16Z",
+  "lastUpdated": "2026-09-12T18:40:30Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -5278,8 +5278,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "209": {
       "id": 209,
@@ -5290,14 +5290,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 74,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "226": {
       "id": 226,
@@ -5308,14 +5308,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "227": {
       "id": 227,
@@ -5332,8 +5332,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "228": {
       "id": 228,
@@ -5350,8 +5350,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "229": {
       "id": 229,
@@ -5362,14 +5362,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "230": {
       "id": 230,
@@ -5380,14 +5380,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "231": {
       "id": 231,
@@ -5404,8 +5404,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "232": {
       "id": 232,
@@ -5416,14 +5416,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 15,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "233": {
       "id": 233,
@@ -5434,14 +5434,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 11,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "234": {
       "id": 234,
@@ -5458,8 +5458,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "235": {
       "id": 235,
@@ -5476,8 +5476,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "236": {
       "id": 236,
@@ -5488,14 +5488,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "238": {
       "id": 238,
@@ -5506,14 +5506,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 25,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "239": {
       "id": 239,
@@ -5524,14 +5524,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "242": {
       "id": 242,
@@ -5542,14 +5542,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 64,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "243": {
       "id": 243,
@@ -5566,8 +5566,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "244": {
       "id": 244,
@@ -5578,14 +5578,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "245": {
       "id": 245,
@@ -5602,8 +5602,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "246": {
       "id": 246,
@@ -5620,8 +5620,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "247": {
       "id": 247,
@@ -5632,14 +5632,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 15,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "248": {
       "id": 248,
@@ -5656,8 +5656,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "249": {
       "id": 249,
@@ -5668,14 +5668,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.6",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "649": {
       "id": 649,
@@ -5686,14 +5686,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 74,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "654": {
       "id": 654,
@@ -5710,8 +5710,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "250": {
       "id": 250,
@@ -11122,14 +11122,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "4.9",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "147": {
       "id": 147,
@@ -11140,14 +11140,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "401": {
       "id": 401,
@@ -11158,14 +11158,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 76,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "403": {
       "id": 403,
@@ -11176,14 +11176,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "455": {
       "id": 455,
@@ -11194,14 +11194,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.4",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "494": {
       "id": 494,
@@ -11218,8 +11218,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "495": {
       "id": 495,
@@ -11236,8 +11236,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "496": {
       "id": 496,
@@ -11248,14 +11248,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "4.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "497": {
       "id": 497,
@@ -11272,8 +11272,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "498": {
       "id": 498,
@@ -11290,8 +11290,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "499": {
       "id": 499,
@@ -11308,8 +11308,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "500": {
       "id": 500,
@@ -11326,8 +11326,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "502": {
       "id": 502,
@@ -11338,14 +11338,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "4.4",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "503": {
       "id": 503,
@@ -11356,14 +11356,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "505": {
       "id": 505,
@@ -11380,8 +11380,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "506": {
       "id": 506,
@@ -11398,8 +11398,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "507": {
       "id": 507,
@@ -11416,8 +11416,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "508": {
       "id": 508,
@@ -11434,8 +11434,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "509": {
       "id": 509,
@@ -11452,8 +11452,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "510": {
       "id": 510,
@@ -11470,8 +11470,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "511": {
       "id": 511,
@@ -11488,8 +11488,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "512": {
       "id": 512,
@@ -11500,14 +11500,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 27,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "513": {
       "id": 513,
@@ -11524,8 +11524,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "514": {
       "id": 514,
@@ -11536,14 +11536,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 27,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "515": {
       "id": 515,
@@ -11554,14 +11554,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.3",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 13,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "516": {
       "id": 516,
@@ -11572,14 +11572,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 62,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "517": {
       "id": 517,
@@ -11596,8 +11596,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "518": {
       "id": 518,
@@ -11614,8 +11614,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "519": {
       "id": 519,
@@ -11632,8 +11632,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "520": {
       "id": 520,
@@ -11644,14 +11644,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 27,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "521": {
       "id": 521,
@@ -11668,8 +11668,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "522": {
       "id": 522,
@@ -11680,14 +11680,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "523": {
       "id": 523,
@@ -11704,8 +11704,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "524": {
       "id": 524,
@@ -11722,8 +11722,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "525": {
       "id": 525,
@@ -11734,14 +11734,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.8",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 62,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "526": {
       "id": 526,
@@ -11752,14 +11752,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.9",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 62,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "527": {
       "id": 527,
@@ -11776,8 +11776,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "528": {
       "id": 528,
@@ -11794,8 +11794,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "578": {
       "id": 578,
@@ -11812,8 +11812,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "601": {
       "id": 601,
@@ -11830,8 +11830,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "501": {
       "id": 501,
@@ -14383,7 +14383,7 @@
       "109": 0,
       "110": 0,
       "111": 0,
-      "112": 0,
+      "112": 8,
       "113": 0,
       "114": 0,
       "115": 0,
@@ -14418,7 +14418,7 @@
       "144": 1,
       "145": 1,
       "146": 0,
-      "147": 0,
+      "147": 1,
       "148": 0,
       "149": 1,
       "150": 0,
@@ -14480,7 +14480,7 @@
       "206": 0,
       "207": 0,
       "208": 0,
-      "209": 0,
+      "209": 3,
       "210": 2,
       "211": 1,
       "212": 1,
@@ -14497,30 +14497,30 @@
       "223": 0,
       "224": 0,
       "225": 0,
-      "226": 0,
+      "226": 6,
       "227": 0,
       "228": 0,
-      "229": 0,
-      "230": 0,
+      "229": 8,
+      "230": 6,
       "231": 0,
-      "232": 0,
-      "233": 0,
+      "232": 1,
+      "233": 11,
       "234": 0,
       "235": 0,
-      "236": 0,
+      "236": 2,
       "237": 0,
-      "238": 0,
-      "239": 0,
+      "238": 1,
+      "239": 4,
       "240": 0,
       "241": 0,
-      "242": 0,
+      "242": 3,
       "243": 0,
-      "244": 0,
+      "244": 3,
       "245": 0,
       "246": 0,
-      "247": 0,
+      "247": 1,
       "248": 0,
-      "249": 0,
+      "249": 2,
       "250": 8,
       "251": 0,
       "252": 0,
@@ -14672,9 +14672,9 @@
       "398": 0,
       "399": 0,
       "400": 0,
-      "401": 0,
+      "401": 2,
       "402": 0,
-      "403": 0,
+      "403": 3,
       "404": 0,
       "405": 0,
       "406": 0,
@@ -14726,7 +14726,7 @@
       "452": 0,
       "453": 0,
       "454": 0,
-      "455": 0,
+      "455": 3,
       "456": 0,
       "457": 0,
       "458": 0,
@@ -14767,14 +14767,14 @@
       "493": 0,
       "494": 0,
       "495": 0,
-      "496": 0,
+      "496": 7,
       "497": 0,
       "498": 0,
       "499": 0,
       "500": 0,
       "501": 0,
-      "502": 0,
-      "503": 0,
+      "502": 7,
+      "503": 6,
       "504": 0,
       "505": 0,
       "506": 0,
@@ -14783,21 +14783,21 @@
       "509": 0,
       "510": 0,
       "511": 0,
-      "512": 0,
+      "512": 1,
       "513": 0,
-      "514": 0,
-      "515": 0,
-      "516": 0,
+      "514": 1,
+      "515": 1,
+      "516": 3,
       "517": 0,
       "518": 0,
       "519": 0,
-      "520": 0,
+      "520": 1,
       "521": 0,
-      "522": 0,
+      "522": 3,
       "523": 0,
       "524": 0,
-      "525": 0,
-      "526": 0,
+      "525": 3,
+      "526": 2,
       "527": 0,
       "528": 0,
       "529": 0,
@@ -14920,7 +14920,7 @@
       "646": 0,
       "647": 0,
       "648": 0,
-      "649": 0,
+      "649": 6,
       "650": 8,
       "651": 0,
       "652": 0,
@@ -16851,16 +16851,16 @@
       "code": 2645234,
       "event": 4,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 37,
       "kickoff_time": "2026-09-12T16:30:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 9,
-      "team_a_score": null,
+      "team_a_score": 0,
       "team_h": 19,
-      "team_h_score": null,
+      "team_h_score": 0,
       "stats": [
         {
           "identifier": "goals_scored",
@@ -16889,7 +16889,16 @@
         },
         {
           "identifier": "yellow_cards",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 236
+            },
+            {
+              "value": 1,
+              "element": 239
+            }
+          ],
           "h": []
         },
         {
@@ -16899,23 +16908,279 @@
         },
         {
           "identifier": "saves",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 2,
+              "element": 226
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 496
+            }
+          ]
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 3,
+              "element": 233
+            },
+            {
+              "value": 2,
+              "element": 229
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 502
+            }
+          ]
         },
         {
           "identifier": "bps",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 38,
+              "element": 233
+            },
+            {
+              "value": 32,
+              "element": 229
+            },
+            {
+              "value": 27,
+              "element": 230
+            },
+            {
+              "value": 25,
+              "element": 226
+            },
+            {
+              "value": 23,
+              "element": 239
+            },
+            {
+              "value": 23,
+              "element": 649
+            },
+            {
+              "value": 18,
+              "element": 236
+            },
+            {
+              "value": 13,
+              "element": 242
+            },
+            {
+              "value": 10,
+              "element": 209
+            },
+            {
+              "value": 6,
+              "element": 244
+            },
+            {
+              "value": 5,
+              "element": 249
+            },
+            {
+              "value": 4,
+              "element": 238
+            },
+            {
+              "value": 3,
+              "element": 247
+            },
+            {
+              "value": 2,
+              "element": 232
+            }
+          ],
+          "h": [
+            {
+              "value": 31,
+              "element": 502
+            },
+            {
+              "value": 29,
+              "element": 496
+            },
+            {
+              "value": 26,
+              "element": 112
+            },
+            {
+              "value": 26,
+              "element": 503
+            },
+            {
+              "value": 22,
+              "element": 403
+            },
+            {
+              "value": 16,
+              "element": 455
+            },
+            {
+              "value": 15,
+              "element": 516
+            },
+            {
+              "value": 15,
+              "element": 525
+            },
+            {
+              "value": 13,
+              "element": 522
+            },
+            {
+              "value": 9,
+              "element": 401
+            },
+            {
+              "value": 8,
+              "element": 512
+            },
+            {
+              "value": 8,
+              "element": 520
+            },
+            {
+              "value": 5,
+              "element": 147
+            },
+            {
+              "value": 4,
+              "element": 526
+            },
+            {
+              "value": 3,
+              "element": 514
+            },
+            {
+              "value": 3,
+              "element": 515
+            }
+          ]
         },
         {
           "identifier": "defensive_contribution",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 17,
+              "element": 239
+            },
+            {
+              "value": 10,
+              "element": 233
+            },
+            {
+              "value": 9,
+              "element": 230
+            },
+            {
+              "value": 8,
+              "element": 229
+            },
+            {
+              "value": 6,
+              "element": 209
+            },
+            {
+              "value": 6,
+              "element": 236
+            },
+            {
+              "value": 5,
+              "element": 244
+            },
+            {
+              "value": 5,
+              "element": 649
+            },
+            {
+              "value": 4,
+              "element": 238
+            },
+            {
+              "value": 3,
+              "element": 242
+            },
+            {
+              "value": 2,
+              "element": 249
+            },
+            {
+              "value": 1,
+              "element": 232
+            },
+            {
+              "value": 1,
+              "element": 247
+            }
+          ],
+          "h": [
+            {
+              "value": 11,
+              "element": 455
+            },
+            {
+              "value": 11,
+              "element": 522
+            },
+            {
+              "value": 10,
+              "element": 112
+            },
+            {
+              "value": 10,
+              "element": 516
+            },
+            {
+              "value": 6,
+              "element": 403
+            },
+            {
+              "value": 5,
+              "element": 401
+            },
+            {
+              "value": 5,
+              "element": 503
+            },
+            {
+              "value": 4,
+              "element": 147
+            },
+            {
+              "value": 4,
+              "element": 520
+            },
+            {
+              "value": 4,
+              "element": 525
+            },
+            {
+              "value": 3,
+              "element": 502
+            },
+            {
+              "value": 3,
+              "element": 515
+            },
+            {
+              "value": 2,
+              "element": 512
+            },
+            {
+              "value": 2,
+              "element": 526
+            }
+          ]
         }
       ],
       "team_h_difficulty": 3,
