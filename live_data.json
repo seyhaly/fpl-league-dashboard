@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T00:23:06Z",
+  "lastUpdated": "2026-09-13T05:00:16Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -44,7 +44,7 @@
       "is_next": false,
       "deadline_time": "2026-09-12T12:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -1060,7 +1060,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 8,
+      "event_points": 7,
       "now_cost": "6.7",
       "opponent": "SUN",
       "opponent_short": "SUN",
@@ -12148,7 +12148,7 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 3,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
@@ -14741,7 +14741,7 @@
       "449": 0,
       "450": 0,
       "451": 0,
-      "452": 8,
+      "452": 7,
       "453": 0,
       "454": 0,
       "455": 3,
@@ -14833,7 +14833,7 @@
       "541": 2,
       "542": 0,
       "543": 0,
-      "544": 3,
+      "544": 1,
       "545": 2,
       "546": 0,
       "547": 0,
@@ -17334,7 +17334,7 @@
               "element": 4
             },
             {
-              "value": 2,
+              "value": 1,
               "element": 452
             }
           ],
@@ -17352,7 +17352,7 @@
               "element": 4
             },
             {
-              "value": 30,
+              "value": 29,
               "element": 452
             },
             {
@@ -17368,7 +17368,7 @@
               "element": 15
             },
             {
-              "value": 20,
+              "value": 18,
               "element": 8
             },
             {
@@ -17406,7 +17406,7 @@
           ],
           "h": [
             {
-              "value": 20,
+              "value": 19,
               "element": 544
             },
             {
@@ -17422,16 +17422,16 @@
               "element": 551
             },
             {
-              "value": 5,
+              "value": 6,
               "element": 501
+            },
+            {
+              "value": 6,
+              "element": 542
             },
             {
               "value": 5,
               "element": 541
-            },
-            {
-              "value": 5,
-              "element": 542
             },
             {
               "value": 4,
@@ -17446,15 +17446,11 @@
               "element": 553
             },
             {
-              "value": -1,
-              "element": 532
-            },
-            {
-              "value": -6,
+              "value": -5,
               "element": 533
             },
             {
-              "value": -13,
+              "value": -12,
               "element": 536
             }
           ]
@@ -17467,16 +17463,16 @@
               "element": 4
             },
             {
-              "value": 9,
-              "element": 12
-            },
-            {
-              "value": 9,
+              "value": 10,
               "element": 13
             },
             {
-              "value": 9,
+              "value": 8,
               "element": 31
+            },
+            {
+              "value": 7,
+              "element": 12
             },
             {
               "value": 5,
@@ -17509,15 +17505,11 @@
             {
               "value": 2,
               "element": 26
-            },
-            {
-              "value": 1,
-              "element": 7
             }
           ],
           "h": [
             {
-              "value": 12,
+              "value": 11,
               "element": 544
             },
             {
@@ -17557,7 +17549,7 @@
               "element": 541
             },
             {
-              "value": 2,
+              "value": 1,
               "element": 553
             }
           ]
