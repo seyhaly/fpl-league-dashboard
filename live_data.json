@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T19:34:20Z",
+  "lastUpdated": "2026-09-13T21:37:02Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -44,7 +44,7 @@
       "is_next": false,
       "deadline_time": "2026-09-12T12:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -9340,7 +9340,7 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 8,
+      "event_points": 9,
       "now_cost": "15.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
@@ -14718,7 +14718,7 @@
       "408": 0,
       "409": 0,
       "410": 0,
-      "411": 8,
+      "411": 9,
       "412": 2,
       "413": 0,
       "414": 0,
@@ -18053,7 +18053,7 @@
               "element": 391
             },
             {
-              "value": 2,
+              "value": 3,
               "element": 411
             },
             {
@@ -18067,7 +18067,7 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 38,
+              "value": 36,
               "element": 391
             },
             {
@@ -18091,12 +18091,12 @@
               "element": 390
             },
             {
-              "value": 19,
-              "element": 155
-            },
-            {
               "value": 18,
               "element": 481
+            },
+            {
+              "value": 17,
+              "element": 155
             },
             {
               "value": 15,
@@ -18121,12 +18121,12 @@
           ],
           "h": [
             {
-              "value": 19,
-              "element": 415
+              "value": 20,
+              "element": 432
             },
             {
               "value": 19,
-              "element": 432
+              "element": 415
             },
             {
               "value": 17,
@@ -18142,15 +18142,15 @@
             },
             {
               "value": 9,
+              "element": 417
+            },
+            {
+              "value": 9,
               "element": 427
             },
             {
               "value": 8,
               "element": 428
-            },
-            {
-              "value": 7,
-              "element": 417
             },
             {
               "value": 6,
@@ -18178,7 +18178,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 13,
+              "value": 14,
               "element": 481
             },
             {
@@ -23823,8 +23823,8 @@
           "captainPoints": {
             "2067578": 24,
             "2023789": 24,
-            "2024611": 16,
-            "2019453": 16,
+            "2024611": 18,
+            "2019453": 18,
             "2023013": 4,
             "2026160": 24,
             "2026484": 24
@@ -24396,8 +24396,8 @@
             "2019453": 9
           },
           "captainPoints": {
-            "145847": 16,
-            "2019453": 16
+            "145847": 18,
+            "2019453": 18
           },
           "chipsUsed": {},
           "seasonTotals": {
