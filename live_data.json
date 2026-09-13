@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T14:18:19Z",
+  "lastUpdated": "2026-09-13T17:25:27Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -2734,14 +2734,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 2,
+      "event_points": 8,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "111": {
       "id": 111,
@@ -2758,8 +2758,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "113": {
       "id": 113,
@@ -2770,14 +2770,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "114": {
       "id": 114,
@@ -2788,14 +2788,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "115": {
       "id": 115,
@@ -2806,14 +2806,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 4,
+      "event_points": 11,
       "now_cost": "4.8",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "116": {
       "id": 116,
@@ -2824,14 +2824,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 1,
+      "event_points": 12,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "117": {
       "id": 117,
@@ -2848,8 +2848,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "118": {
       "id": 118,
@@ -2866,8 +2866,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "119": {
       "id": 119,
@@ -2878,14 +2878,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "120": {
       "id": 120,
@@ -2902,8 +2902,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "121": {
       "id": 121,
@@ -2920,8 +2920,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "122": {
       "id": 122,
@@ -2938,8 +2938,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "123": {
       "id": 123,
@@ -2956,8 +2956,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "124": {
       "id": 124,
@@ -2968,14 +2968,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 6,
+      "event_points": 17,
       "now_cost": "5.6",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "125": {
       "id": 125,
@@ -2992,8 +2992,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "126": {
       "id": 126,
@@ -3004,14 +3004,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "127": {
       "id": 127,
@@ -3022,14 +3022,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "128": {
       "id": 128,
@@ -3046,8 +3046,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "129": {
       "id": 129,
@@ -3058,14 +3058,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 1,
+      "event_points": 8,
       "now_cost": "5.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "130": {
       "id": 130,
@@ -3082,8 +3082,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "132": {
       "id": 132,
@@ -3100,8 +3100,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "133": {
       "id": 133,
@@ -3118,8 +3118,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "134": {
       "id": 134,
@@ -3136,8 +3136,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "135": {
       "id": 135,
@@ -3154,8 +3154,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "137": {
       "id": 137,
@@ -3172,8 +3172,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "138": {
       "id": 138,
@@ -3184,14 +3184,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 8,
+      "event_points": 10,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "139": {
       "id": 139,
@@ -3208,8 +3208,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "328": {
       "id": 328,
@@ -3220,14 +3220,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "504": {
       "id": 504,
@@ -3238,14 +3238,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "594": {
       "id": 594,
@@ -3262,8 +3262,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "600": {
       "id": 600,
@@ -3274,14 +3274,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "605": {
       "id": 605,
@@ -3292,14 +3292,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 7,
+      "event_points": 8,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 64,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "614": {
       "id": 614,
@@ -3316,8 +3316,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "624": {
       "id": 624,
@@ -3334,8 +3334,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "639": {
       "id": 639,
@@ -3346,14 +3346,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 25,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "652": {
       "id": 652,
@@ -3370,8 +3370,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "28": {
       "id": 28,
@@ -3976,14 +3976,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "104": {
       "id": 104,
@@ -3994,14 +3994,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 72,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "110": {
       "id": 110,
@@ -4017,9 +4017,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "171": {
       "id": 171,
@@ -4036,8 +4036,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "172": {
       "id": 172,
@@ -4054,8 +4054,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "173": {
       "id": 173,
@@ -4071,9 +4071,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "174": {
       "id": 174,
@@ -4090,8 +4090,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "175": {
       "id": 175,
@@ -4107,9 +4107,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "176": {
       "id": 176,
@@ -4125,9 +4125,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "177": {
       "id": 177,
@@ -4144,8 +4144,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "178": {
       "id": 178,
@@ -4162,8 +4162,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "179": {
       "id": 179,
@@ -4180,8 +4180,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "180": {
       "id": 180,
@@ -4198,8 +4198,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "181": {
       "id": 181,
@@ -4216,8 +4216,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "182": {
       "id": 182,
@@ -4233,9 +4233,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "183": {
       "id": 183,
@@ -4246,14 +4246,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 72,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "184": {
       "id": 184,
@@ -4264,14 +4264,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "185": {
       "id": 185,
@@ -4288,8 +4288,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "186": {
       "id": 186,
@@ -4306,8 +4306,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 59,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "187": {
       "id": 187,
@@ -4324,8 +4324,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "188": {
       "id": 188,
@@ -4336,14 +4336,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "189": {
       "id": 189,
@@ -4360,8 +4360,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "190": {
       "id": 190,
@@ -4378,8 +4378,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "191": {
       "id": 191,
@@ -4396,8 +4396,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "192": {
       "id": 192,
@@ -4414,8 +4414,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "193": {
       "id": 193,
@@ -4432,8 +4432,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "194": {
       "id": 194,
@@ -4444,14 +4444,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "195": {
       "id": 195,
@@ -4468,8 +4468,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "196": {
       "id": 196,
@@ -4486,8 +4486,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "197": {
       "id": 197,
@@ -4504,8 +4504,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "492": {
       "id": 492,
@@ -4522,8 +4522,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 52,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "575": {
       "id": 575,
@@ -4534,14 +4534,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "584": {
       "id": 584,
@@ -4558,8 +4558,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "599": {
       "id": 599,
@@ -4570,14 +4570,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "minutes": 30,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "623": {
       "id": 623,
@@ -4594,8 +4594,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "655": {
       "id": 655,
@@ -4612,8 +4612,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "656": {
       "id": 656,
@@ -4630,8 +4630,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (59')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "42": {
       "id": 42,
@@ -8872,14 +8872,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 81,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "237": {
       "id": 237,
@@ -8890,14 +8890,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "384": {
       "id": 384,
@@ -8908,14 +8908,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "386": {
       "id": 386,
@@ -8932,8 +8932,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "387": {
       "id": 387,
@@ -8944,14 +8944,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.4",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 8,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "388": {
       "id": 388,
@@ -8962,14 +8962,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "6.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "389": {
       "id": 389,
@@ -8980,14 +8980,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "5.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "390": {
       "id": 390,
@@ -8998,14 +8998,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "391": {
       "id": 391,
@@ -9016,14 +9016,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 11,
       "now_cost": "5.6",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "392": {
       "id": 392,
@@ -9040,8 +9040,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "393": {
       "id": 393,
@@ -9058,8 +9058,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "394": {
       "id": 394,
@@ -9076,8 +9076,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "395": {
       "id": 395,
@@ -9094,8 +9094,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "396": {
       "id": 396,
@@ -9112,8 +9112,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "397": {
       "id": 397,
@@ -9124,14 +9124,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "8.4",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "398": {
       "id": 398,
@@ -9142,14 +9142,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": -2,
       "now_cost": "7.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 22,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "399": {
       "id": 399,
@@ -9160,14 +9160,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.8",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "400": {
       "id": 400,
@@ -9184,8 +9184,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "402": {
       "id": 402,
@@ -9202,8 +9202,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "404": {
       "id": 404,
@@ -9220,8 +9220,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "406": {
       "id": 406,
@@ -9238,8 +9238,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "407": {
       "id": 407,
@@ -9256,8 +9256,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "408": {
       "id": 408,
@@ -9274,8 +9274,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "409": {
       "id": 409,
@@ -9292,8 +9292,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "410": {
       "id": 410,
@@ -9310,8 +9310,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "411": {
       "id": 411,
@@ -9322,14 +9322,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "15.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "481": {
       "id": 481,
@@ -9340,14 +9340,14 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "6.3",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "587": {
       "id": 587,
@@ -9364,8 +9364,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "616": {
       "id": 616,
@@ -9382,8 +9382,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "621": {
       "id": 621,
@@ -9400,8 +9400,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "622": {
       "id": 622,
@@ -9418,8 +9418,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "628": {
       "id": 628,
@@ -9436,8 +9436,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "653": {
       "id": 653,
@@ -9454,8 +9454,8 @@
       "opponent_short": "MUN",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "43": {
       "id": 43,
@@ -9466,14 +9466,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 66,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "131": {
       "id": 131,
@@ -9490,8 +9490,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "162": {
       "id": 162,
@@ -9508,8 +9508,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "325": {
       "id": 325,
@@ -9526,8 +9526,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "412": {
       "id": 412,
@@ -9538,14 +9538,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "413": {
       "id": 413,
@@ -9562,8 +9562,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "414": {
       "id": 414,
@@ -9580,8 +9580,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "415": {
       "id": 415,
@@ -9592,14 +9592,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.8",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "416": {
       "id": 416,
@@ -9616,8 +9616,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "417": {
       "id": 417,
@@ -9628,14 +9628,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "418": {
       "id": 418,
@@ -9646,14 +9646,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "419": {
       "id": 419,
@@ -9664,14 +9664,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "420": {
       "id": 420,
@@ -9688,8 +9688,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "421": {
       "id": 421,
@@ -9706,8 +9706,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "422": {
       "id": 422,
@@ -9724,8 +9724,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "423": {
       "id": 423,
@@ -9742,8 +9742,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "424": {
       "id": 424,
@@ -9760,8 +9760,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "425": {
       "id": 425,
@@ -9778,8 +9778,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "426": {
       "id": 426,
@@ -9790,14 +9790,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "12.0",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "427": {
       "id": 427,
@@ -9808,14 +9808,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "428": {
       "id": 428,
@@ -9826,14 +9826,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "429": {
       "id": 429,
@@ -9844,14 +9844,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.0",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 82,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "430": {
       "id": 430,
@@ -9868,8 +9868,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "431": {
       "id": 431,
@@ -9886,8 +9886,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "432": {
       "id": 432,
@@ -9898,14 +9898,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "433": {
       "id": 433,
@@ -9922,8 +9922,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "434": {
       "id": 434,
@@ -9940,8 +9940,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "435": {
       "id": 435,
@@ -9958,8 +9958,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "436": {
       "id": 436,
@@ -9976,8 +9976,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "437": {
       "id": 437,
@@ -9994,8 +9994,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "438": {
       "id": 438,
@@ -10012,8 +10012,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "439": {
       "id": 439,
@@ -10024,14 +10024,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.0",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 23,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "440": {
       "id": 440,
@@ -10042,14 +10042,14 @@
       "team": "MUN",
       "team_name": "Man Utd",
       "team_id": 16,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 7,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "441": {
       "id": 441,
@@ -10066,8 +10066,8 @@
       "opponent_short": "MCI",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "405": {
       "id": 405,
@@ -14332,7 +14332,7 @@
       "40": 8,
       "41": 2,
       "42": 0,
-      "43": 0,
+      "43": 2,
       "44": 0,
       "45": 6,
       "46": 2,
@@ -14380,7 +14380,7 @@
       "88": 1,
       "89": 0,
       "90": 1,
-      "91": 0,
+      "91": 2,
       "92": 0,
       "93": 3,
       "94": 15,
@@ -14393,32 +14393,32 @@
       "101": 0,
       "102": 4,
       "103": 0,
-      "104": 1,
+      "104": 2,
       "105": 1,
       "106": 1,
       "107": 0,
       "108": 0,
-      "109": 2,
+      "109": 8,
       "110": 0,
       "111": 0,
       "112": 8,
-      "113": 1,
-      "114": 1,
-      "115": 4,
-      "116": 1,
+      "113": 6,
+      "114": 6,
+      "115": 11,
+      "116": 12,
       "117": 0,
       "118": 0,
-      "119": 0,
+      "119": 1,
       "120": 0,
       "121": 0,
       "122": 0,
       "123": 0,
-      "124": 6,
+      "124": 17,
       "125": 0,
-      "126": 0,
-      "127": 1,
+      "126": 1,
+      "127": 3,
       "128": 0,
-      "129": 1,
+      "129": 8,
       "130": 0,
       "131": 0,
       "132": 0,
@@ -14427,7 +14427,7 @@
       "135": 0,
       "136": 1,
       "137": 0,
-      "138": 8,
+      "138": 10,
       "139": 0,
       "140": 0,
       "141": 0,
@@ -14444,7 +14444,7 @@
       "152": 0,
       "153": -3,
       "154": 5,
-      "155": 0,
+      "155": 2,
       "156": 2,
       "157": 1,
       "158": 0,
@@ -14472,18 +14472,18 @@
       "180": 0,
       "181": 0,
       "182": 0,
-      "183": 1,
-      "184": 1,
+      "183": 2,
+      "184": 2,
       "185": 0,
       "186": 1,
       "187": 0,
-      "188": 0,
+      "188": 1,
       "189": 0,
       "190": 0,
       "191": 0,
       "192": 0,
       "193": 0,
-      "194": 0,
+      "194": 1,
       "195": 0,
       "196": 0,
       "197": 0,
@@ -14526,7 +14526,7 @@
       "234": 0,
       "235": 0,
       "236": 2,
-      "237": 0,
+      "237": 1,
       "238": 1,
       "239": 4,
       "240": 0,
@@ -14617,7 +14617,7 @@
       "325": 0,
       "326": 0,
       "327": 0,
-      "328": 0,
+      "328": 1,
       "329": 0,
       "330": 0,
       "331": 0,
@@ -14673,22 +14673,22 @@
       "381": 0,
       "382": 0,
       "383": 0,
-      "384": 0,
+      "384": 6,
       "385": 0,
       "386": 0,
-      "387": 0,
-      "388": 0,
-      "389": 0,
-      "390": 0,
-      "391": 0,
+      "387": 1,
+      "388": 6,
+      "389": 9,
+      "390": 6,
+      "391": 11,
       "392": 0,
       "393": 0,
       "394": 0,
       "395": 0,
       "396": 0,
-      "397": 0,
-      "398": 0,
-      "399": 0,
+      "397": 3,
+      "398": -2,
+      "399": 1,
       "400": 0,
       "401": 2,
       "402": 0,
@@ -14700,36 +14700,36 @@
       "408": 0,
       "409": 0,
       "410": 0,
-      "411": 0,
-      "412": 0,
+      "411": 8,
+      "412": 2,
       "413": 0,
       "414": 0,
-      "415": 0,
+      "415": 4,
       "416": 0,
-      "417": 0,
-      "418": 0,
-      "419": 0,
+      "417": 2,
+      "418": 1,
+      "419": 2,
       "420": 0,
       "421": 0,
       "422": 0,
       "423": 0,
       "424": 0,
       "425": 0,
-      "426": 0,
-      "427": 0,
-      "428": 0,
-      "429": 0,
+      "426": 2,
+      "427": 2,
+      "428": 2,
+      "429": 2,
       "430": 0,
       "431": 0,
-      "432": 0,
+      "432": 4,
       "433": 0,
       "434": 0,
       "435": 0,
       "436": 0,
       "437": 0,
       "438": 0,
-      "439": 0,
-      "440": 0,
+      "439": 1,
+      "440": 1,
       "441": 0,
       "442": 0,
       "443": 0,
@@ -14770,7 +14770,7 @@
       "478": 0,
       "479": 0,
       "480": 8,
-      "481": 0,
+      "481": 5,
       "482": 0,
       "483": 1,
       "484": 0,
@@ -14793,7 +14793,7 @@
       "501": 1,
       "502": 7,
       "503": 6,
-      "504": 1,
+      "504": 6,
       "505": 0,
       "506": 0,
       "507": 0,
@@ -14864,7 +14864,7 @@
       "572": 2,
       "573": 0,
       "574": 0,
-      "575": 0,
+      "575": 1,
       "576": 1,
       "577": 0,
       "578": 0,
@@ -14888,13 +14888,13 @@
       "596": 0,
       "597": 2,
       "598": 0,
-      "599": 0,
-      "600": 0,
+      "599": 1,
+      "600": 1,
       "601": 0,
       "602": 0,
       "603": 0,
       "604": 0,
-      "605": 7,
+      "605": 8,
       "606": 0,
       "607": 0,
       "608": 0,
@@ -14928,7 +14928,7 @@
       "636": 0,
       "637": 1,
       "638": 0,
-      "639": 0,
+      "639": 4,
       "640": 5,
       "641": 0,
       "642": 1,
@@ -17563,20 +17563,32 @@
       "code": 2645228,
       "event": 4,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 38,
       "kickoff_time": "2026-09-13T13:00:00Z",
-      "minutes": 59,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 5,
-      "team_a_score": 2,
+      "team_a_score": 5,
       "team_h": 7,
       "team_h_score": 0,
       "stats": [
         {
           "identifier": "goals_scored",
           "a": [
+            {
+              "value": 1,
+              "element": 116
+            },
+            {
+              "value": 1,
+              "element": 124
+            },
+            {
+              "value": 1,
+              "element": 129
+            },
             {
               "value": 1,
               "element": 138
@@ -17592,12 +17604,20 @@
           "identifier": "assists",
           "a": [
             {
+              "value": 2,
+              "element": 124
+            },
+            {
               "value": 1,
               "element": 115
             },
             {
               "value": 1,
-              "element": 124
+              "element": 138
+            },
+            {
+              "value": 1,
+              "element": 639
             }
           ],
           "h": []
@@ -17636,13 +17656,13 @@
           "identifier": "saves",
           "a": [
             {
-              "value": 4,
+              "value": 6,
               "element": 109
             }
           ],
           "h": [
             {
-              "value": 1,
+              "value": 2,
               "element": 110
             }
           ]
@@ -17652,15 +17672,15 @@
           "a": [
             {
               "value": 3,
-              "element": 138
-            },
-            {
-              "value": 2,
               "element": 124
             },
             {
+              "value": 2,
+              "element": 115
+            },
+            {
               "value": 1,
-              "element": 605
+              "element": 138
             }
           ],
           "h": []
@@ -17669,94 +17689,130 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 28,
-              "element": 138
-            },
-            {
-              "value": 27,
+              "value": 57,
               "element": 124
             },
             {
-              "value": 26,
-              "element": 605
-            },
-            {
-              "value": 19,
+              "value": 41,
               "element": 115
             },
             {
-              "value": 17,
-              "element": 109
+              "value": 40,
+              "element": 138
             },
             {
-              "value": 14,
-              "element": 129
-            },
-            {
-              "value": 11,
-              "element": 504
-            },
-            {
-              "value": 10,
+              "value": 39,
               "element": 116
             },
             {
-              "value": 7,
+              "value": 38,
+              "element": 109
+            },
+            {
+              "value": 37,
+              "element": 129
+            },
+            {
+              "value": 29,
+              "element": 605
+            },
+            {
+              "value": 27,
+              "element": 504
+            },
+            {
+              "value": 25,
               "element": 114
             },
             {
-              "value": 5,
+              "value": 24,
               "element": 113
             },
             {
-              "value": 2,
+              "value": 12,
+              "element": 639
+            },
+            {
+              "value": 6,
               "element": 127
+            },
+            {
+              "value": 4,
+              "element": 126
+            },
+            {
+              "value": 4,
+              "element": 328
+            },
+            {
+              "value": 3,
+              "element": 119
+            },
+            {
+              "value": 3,
+              "element": 600
             }
           ],
           "h": [
             {
-              "value": 7,
+              "value": 11,
               "element": 104
             },
             {
-              "value": 6,
+              "value": 11,
               "element": 183
             },
             {
-              "value": 5,
+              "value": 9,
               "element": 184
+            },
+            {
+              "value": 7,
+              "element": 194
             },
             {
               "value": 5,
               "element": 186
             },
             {
-              "value": 1,
+              "value": 3,
+              "element": 188
+            },
+            {
+              "value": 3,
+              "element": 575
+            },
+            {
+              "value": 3,
+              "element": 599
+            },
+            {
+              "value": -5,
               "element": 110
             },
             {
-              "value": 1,
-              "element": 176
-            },
-            {
-              "value": -3,
-              "element": 173
-            },
-            {
-              "value": -4,
-              "element": 91
-            },
-            {
-              "value": -4,
+              "value": -5,
               "element": 175
             },
             {
               "value": -5,
+              "element": 492
+            },
+            {
+              "value": -7,
+              "element": 176
+            },
+            {
+              "value": -11,
+              "element": 91
+            },
+            {
+              "value": -12,
               "element": 182
             },
             {
-              "value": -5,
-              "element": 492
+              "value": -17,
+              "element": 173
             }
           ]
         },
@@ -17764,46 +17820,74 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 8,
-              "element": 129
-            },
-            {
-              "value": 8,
-              "element": 504
-            },
-            {
-              "value": 6,
-              "element": 124
-            },
-            {
-              "value": 5,
+              "value": 9,
               "element": 114
             },
             {
-              "value": 5,
+              "value": 9,
+              "element": 504
+            },
+            {
+              "value": 7,
+              "element": 124
+            },
+            {
+              "value": 7,
+              "element": 129
+            },
+            {
+              "value": 7,
               "element": 138
             },
             {
-              "value": 4,
-              "element": 605
-            },
-            {
-              "value": 3,
+              "value": 6,
               "element": 116
             },
             {
-              "value": 2,
+              "value": 6,
+              "element": 605
+            },
+            {
+              "value": 4,
+              "element": 639
+            },
+            {
+              "value": 3,
               "element": 127
             },
             {
-              "value": 1,
+              "value": 3,
+              "element": 328
+            },
+            {
+              "value": 2,
               "element": 113
+            },
+            {
+              "value": 1,
+              "element": 119
+            },
+            {
+              "value": 1,
+              "element": 126
+            },
+            {
+              "value": 1,
+              "element": 600
             }
           ],
           "h": [
             {
-              "value": 8,
+              "value": 10,
               "element": 91
+            },
+            {
+              "value": 8,
+              "element": 173
+            },
+            {
+              "value": 8,
+              "element": 182
             },
             {
               "value": 7,
@@ -17811,11 +17895,7 @@
             },
             {
               "value": 7,
-              "element": 173
-            },
-            {
-              "value": 5,
-              "element": 182
+              "element": 175
             },
             {
               "value": 5,
@@ -17830,16 +17910,16 @@
               "element": 176
             },
             {
-              "value": 2,
-              "element": 175
-            },
-            {
-              "value": 2,
+              "value": 3,
               "element": 184
             },
             {
               "value": 2,
               "element": 492
+            },
+            {
+              "value": 1,
+              "element": 599
             }
           ]
         }
@@ -17855,14 +17935,318 @@
       "finished_provisional": false,
       "id": 39,
       "kickoff_time": "2026-09-13T15:30:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 15,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 16,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 411
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 391
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 155
+            },
+            {
+              "value": 1,
+              "element": 391
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 418
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 398
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 3,
+              "element": 384
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 412
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 391
+            },
+            {
+              "value": 2,
+              "element": 411
+            },
+            {
+              "value": 1,
+              "element": 389
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 38,
+              "element": 391
+            },
+            {
+              "value": 36,
+              "element": 411
+            },
+            {
+              "value": 34,
+              "element": 389
+            },
+            {
+              "value": 29,
+              "element": 384
+            },
+            {
+              "value": 27,
+              "element": 388
+            },
+            {
+              "value": 24,
+              "element": 390
+            },
+            {
+              "value": 19,
+              "element": 237
+            },
+            {
+              "value": 17,
+              "element": 481
+            },
+            {
+              "value": 15,
+              "element": 155
+            },
+            {
+              "value": 7,
+              "element": 397
+            },
+            {
+              "value": 4,
+              "element": 399
+            },
+            {
+              "value": 3,
+              "element": 387
+            },
+            {
+              "value": -4,
+              "element": 398
+            }
+          ],
+          "h": [
+            {
+              "value": 21,
+              "element": 426
+            },
+            {
+              "value": 19,
+              "element": 415
+            },
+            {
+              "value": 19,
+              "element": 432
+            },
+            {
+              "value": 15,
+              "element": 43
+            },
+            {
+              "value": 14,
+              "element": 419
+            },
+            {
+              "value": 9,
+              "element": 427
+            },
+            {
+              "value": 8,
+              "element": 428
+            },
+            {
+              "value": 7,
+              "element": 417
+            },
+            {
+              "value": 6,
+              "element": 429
+            },
+            {
+              "value": 5,
+              "element": 412
+            },
+            {
+              "value": 5,
+              "element": 418
+            },
+            {
+              "value": 4,
+              "element": 439
+            },
+            {
+              "value": 3,
+              "element": 440
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 13,
+              "element": 481
+            },
+            {
+              "value": 11,
+              "element": 389
+            },
+            {
+              "value": 10,
+              "element": 155
+            },
+            {
+              "value": 10,
+              "element": 237
+            },
+            {
+              "value": 7,
+              "element": 388
+            },
+            {
+              "value": 7,
+              "element": 390
+            },
+            {
+              "value": 7,
+              "element": 391
+            },
+            {
+              "value": 3,
+              "element": 397
+            },
+            {
+              "value": 3,
+              "element": 411
+            },
+            {
+              "value": 1,
+              "element": 399
+            }
+          ],
+          "h": [
+            {
+              "value": 13,
+              "element": 432
+            },
+            {
+              "value": 12,
+              "element": 415
+            },
+            {
+              "value": 7,
+              "element": 426
+            },
+            {
+              "value": 6,
+              "element": 419
+            },
+            {
+              "value": 5,
+              "element": 43
+            },
+            {
+              "value": 5,
+              "element": 418
+            },
+            {
+              "value": 5,
+              "element": 427
+            },
+            {
+              "value": 5,
+              "element": 429
+            },
+            {
+              "value": 3,
+              "element": 417
+            },
+            {
+              "value": 3,
+              "element": 440
+            },
+            {
+              "value": 2,
+              "element": 428
+            },
+            {
+              "value": 2,
+              "element": 439
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 4,
       "team_a_difficulty": 4,
       "pulse_id": 0
@@ -22567,35 +22951,6 @@
         "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
-    "2019453": [
-      {
-        "element_in": 454,
-        "element_in_cost": 60,
-        "element_out": 337,
-        "element_out_cost": 55,
-        "entry": 2019453,
-        "event": 3,
-        "time": "2026-08-30T00:31:14.617853Z"
-      },
-      {
-        "element_in": 279,
-        "element_in_cost": 40,
-        "element_out": 201,
-        "element_out_cost": 55,
-        "entry": 2019453,
-        "event": 3,
-        "time": "2026-08-29T00:41:11.480685Z"
-      },
-      {
-        "element_in": 496,
-        "element_in_cost": 45,
-        "element_out": 301,
-        "element_out_cost": 40,
-        "entry": 2019453,
-        "event": 3,
-        "time": "2026-08-29T00:41:11.474635Z"
-      }
-    ],
     "2024611": [
       {
         "element_in": 115,
@@ -22722,6 +23077,35 @@
         "entry": 2024611,
         "event": 3,
         "time": "2026-08-29T11:29:00.909893Z"
+      }
+    ],
+    "2019453": [
+      {
+        "element_in": 454,
+        "element_in_cost": 60,
+        "element_out": 337,
+        "element_out_cost": 55,
+        "entry": 2019453,
+        "event": 3,
+        "time": "2026-08-30T00:31:14.617853Z"
+      },
+      {
+        "element_in": 279,
+        "element_in_cost": 40,
+        "element_out": 201,
+        "element_out_cost": 55,
+        "entry": 2019453,
+        "event": 3,
+        "time": "2026-08-29T00:41:11.480685Z"
+      },
+      {
+        "element_in": 496,
+        "element_in_cost": 45,
+        "element_out": 301,
+        "element_out_cost": 40,
+        "entry": 2019453,
+        "event": 3,
+        "time": "2026-08-29T00:41:11.474635Z"
       }
     ],
     "2023013": [
@@ -23164,16 +23548,16 @@
           "avatar": "MO"
         },
         {
-          "id": 2019453,
-          "name": "Seyha ly",
-          "teamName": "The Red Devil",
-          "avatar": "SE"
-        },
-        {
           "id": 2024611,
           "name": "Vibol Dang",
           "teamName": "The White Emperor",
           "avatar": "VI"
+        },
+        {
+          "id": 2019453,
+          "name": "Seyha ly",
+          "teamName": "The Red Devil",
+          "avatar": "SE"
         },
         {
           "id": 2023013,
@@ -23200,8 +23584,8 @@
           "scores": {
             "2067578": 66,
             "2023789": 72,
-            "2019453": 41,
             "2024611": 54,
+            "2019453": 41,
             "2023013": 52,
             "2026160": 49,
             "2026484": 61
@@ -23209,8 +23593,8 @@
           "hits": {
             "2067578": 0,
             "2023789": 0,
-            "2019453": 0,
             "2024611": 0,
+            "2019453": 0,
             "2023013": 0,
             "2026160": 0,
             "2026484": 0
@@ -23218,8 +23602,8 @@
           "transfers": {
             "2067578": 0,
             "2023789": 0,
-            "2019453": 0,
             "2024611": 0,
+            "2019453": 0,
             "2023013": 0,
             "2026160": 0,
             "2026484": 0
@@ -23227,8 +23611,8 @@
           "benchPoints": {
             "2067578": 11,
             "2023789": 0,
-            "2019453": 11,
             "2024611": 3,
+            "2019453": 11,
             "2023013": 4,
             "2026160": 0,
             "2026484": 9
@@ -23236,8 +23620,8 @@
           "captainPoints": {
             "2067578": 4,
             "2023789": 4,
-            "2019453": 4,
             "2024611": 4,
+            "2019453": 4,
             "2023013": 4,
             "2026160": 4,
             "2026484": 4
@@ -23248,8 +23632,8 @@
           "seasonTotals": {
             "2067578": 66,
             "2023789": 72,
-            "2019453": 41,
             "2024611": 54,
+            "2019453": 41,
             "2023013": 52,
             "2026160": 49,
             "2026484": 61
@@ -23260,8 +23644,8 @@
           "scores": {
             "2067578": 80,
             "2023789": 74,
-            "2019453": 87,
             "2024611": 73,
+            "2019453": 87,
             "2023013": 76,
             "2026160": 76,
             "2026484": 65
@@ -23269,8 +23653,8 @@
           "hits": {
             "2067578": 0,
             "2023789": 0,
-            "2019453": 0,
             "2024611": 0,
+            "2019453": 0,
             "2023013": 0,
             "2026160": 0,
             "2026484": 0
@@ -23278,8 +23662,8 @@
           "transfers": {
             "2067578": 1,
             "2023789": 1,
-            "2019453": 0,
             "2024611": 0,
+            "2019453": 0,
             "2023013": 1,
             "2026160": 1,
             "2026484": 0
@@ -23287,8 +23671,8 @@
           "benchPoints": {
             "2067578": 11,
             "2023789": 4,
-            "2019453": 3,
             "2024611": 0,
+            "2019453": 3,
             "2023013": 6,
             "2026160": 15,
             "2026484": 2
@@ -23296,8 +23680,8 @@
           "captainPoints": {
             "2067578": 26,
             "2023789": 26,
-            "2019453": 26,
             "2024611": 26,
+            "2019453": 26,
             "2023013": 26,
             "2026160": 18,
             "2026484": 18
@@ -23308,8 +23692,8 @@
           "seasonTotals": {
             "2067578": 146,
             "2023789": 146,
-            "2019453": 128,
             "2024611": 127,
+            "2019453": 128,
             "2023013": 128,
             "2026160": 125,
             "2026484": 126
@@ -23320,8 +23704,8 @@
           "scores": {
             "2067578": 55,
             "2023789": 52,
-            "2019453": 63,
             "2024611": 47,
+            "2019453": 63,
             "2023013": 74,
             "2026160": 58,
             "2026484": 44
@@ -23329,8 +23713,8 @@
           "hits": {
             "2067578": 0,
             "2023789": 0,
-            "2019453": 4,
             "2024611": 0,
+            "2019453": 4,
             "2023013": 0,
             "2026160": 0,
             "2026484": 28
@@ -23338,8 +23722,8 @@
           "transfers": {
             "2067578": 1,
             "2023789": 1,
-            "2019453": 3,
             "2024611": 2,
+            "2019453": 3,
             "2023013": 1,
             "2026160": 1,
             "2026484": 8
@@ -23347,8 +23731,8 @@
           "benchPoints": {
             "2067578": 21,
             "2023789": 6,
-            "2019453": 11,
             "2024611": 0,
+            "2019453": 11,
             "2023013": 4,
             "2026160": 5,
             "2026484": 0
@@ -23356,8 +23740,8 @@
           "captainPoints": {
             "2067578": 18,
             "2023789": 18,
-            "2019453": 18,
             "2024611": 18,
+            "2019453": 18,
             "2023013": 18,
             "2026160": 18,
             "2026484": 6
@@ -23368,8 +23752,8 @@
           "seasonTotals": {
             "2067578": 201,
             "2023789": 198,
-            "2019453": 187,
             "2024611": 174,
+            "2019453": 187,
             "2023013": 202,
             "2026160": 183,
             "2026484": 142
@@ -23380,8 +23764,8 @@
           "scores": {
             "2067578": 57,
             "2023789": 40,
-            "2019453": 38,
             "2024611": 46,
+            "2019453": 38,
             "2023013": 20,
             "2026160": 43,
             "2026484": 63
@@ -23389,8 +23773,8 @@
           "hits": {
             "2067578": 0,
             "2023789": 4,
-            "2019453": 0,
             "2024611": 0,
+            "2019453": 0,
             "2023013": 0,
             "2026160": 4,
             "2026484": 36
@@ -23398,8 +23782,8 @@
           "transfers": {
             "2067578": 1,
             "2023789": 2,
-            "2019453": 0,
             "2024611": 12,
+            "2019453": 0,
             "2023013": 1,
             "2026160": 2,
             "2026484": 10
@@ -23407,8 +23791,8 @@
           "benchPoints": {
             "2067578": 4,
             "2023789": 0,
-            "2019453": 8,
             "2024611": 5,
+            "2019453": 8,
             "2023013": 18,
             "2026160": 2,
             "2026484": 8
@@ -23416,8 +23800,8 @@
           "captainPoints": {
             "2067578": 24,
             "2023789": 24,
-            "2019453": 0,
-            "2024611": 0,
+            "2024611": 16,
+            "2019453": 16,
             "2023013": 4,
             "2026160": 24,
             "2026484": 24
@@ -23429,8 +23813,8 @@
           "seasonTotals": {
             "2067578": 258,
             "2023789": 234,
-            "2019453": 225,
             "2024611": 220,
+            "2019453": 225,
             "2023013": 222,
             "2026160": 222,
             "2026484": 169
@@ -23989,8 +24373,8 @@
             "2019453": 8
           },
           "captainPoints": {
-            "145847": 0,
-            "2019453": 0
+            "145847": 16,
+            "2019453": 16
           },
           "chipsUsed": {},
           "seasonTotals": {
