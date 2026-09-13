@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T10:08:36Z",
+  "lastUpdated": "2026-09-13T14:18:19Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -57,7 +57,7 @@
           "bonus_added": false,
           "date": "2026-09-13",
           "event": 4,
-          "points": ""
+          "points": "l"
         },
         {
           "bonus_added": false,
@@ -2734,14 +2734,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "111": {
       "id": 111,
@@ -2758,8 +2758,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "113": {
       "id": 113,
@@ -2770,14 +2770,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "114": {
       "id": 114,
@@ -2788,14 +2788,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "115": {
       "id": 115,
@@ -2806,14 +2806,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.8",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "116": {
       "id": 116,
@@ -2824,14 +2824,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "117": {
       "id": 117,
@@ -2848,8 +2848,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "118": {
       "id": 118,
@@ -2866,8 +2866,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "119": {
       "id": 119,
@@ -2884,8 +2884,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "120": {
       "id": 120,
@@ -2902,8 +2902,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "121": {
       "id": 121,
@@ -2920,8 +2920,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "122": {
       "id": 122,
@@ -2938,8 +2938,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "123": {
       "id": 123,
@@ -2956,8 +2956,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "124": {
       "id": 124,
@@ -2968,14 +2968,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.6",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "125": {
       "id": 125,
@@ -2992,8 +2992,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "126": {
       "id": 126,
@@ -3010,8 +3010,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "127": {
       "id": 127,
@@ -3022,14 +3022,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "128": {
       "id": 128,
@@ -3046,8 +3046,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "129": {
       "id": 129,
@@ -3058,14 +3058,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "130": {
       "id": 130,
@@ -3082,8 +3082,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "132": {
       "id": 132,
@@ -3100,8 +3100,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "133": {
       "id": 133,
@@ -3118,8 +3118,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "134": {
       "id": 134,
@@ -3136,8 +3136,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "135": {
       "id": 135,
@@ -3154,8 +3154,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "137": {
       "id": 137,
@@ -3172,8 +3172,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "138": {
       "id": 138,
@@ -3184,14 +3184,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "139": {
       "id": 139,
@@ -3208,8 +3208,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "328": {
       "id": 328,
@@ -3226,8 +3226,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "504": {
       "id": 504,
@@ -3238,14 +3238,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "594": {
       "id": 594,
@@ -3262,8 +3262,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "600": {
       "id": 600,
@@ -3280,8 +3280,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "605": {
       "id": 605,
@@ -3292,14 +3292,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "614": {
       "id": 614,
@@ -3316,8 +3316,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "624": {
       "id": 624,
@@ -3334,8 +3334,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "639": {
       "id": 639,
@@ -3352,8 +3352,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "652": {
       "id": 652,
@@ -3370,8 +3370,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "28": {
       "id": 28,
@@ -3981,9 +3981,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "104": {
       "id": 104,
@@ -3994,14 +3994,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "110": {
       "id": 110,
@@ -4017,9 +4017,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "171": {
       "id": 171,
@@ -4036,8 +4036,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "172": {
       "id": 172,
@@ -4054,8 +4054,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "173": {
       "id": 173,
@@ -4071,9 +4071,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "174": {
       "id": 174,
@@ -4090,8 +4090,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "175": {
       "id": 175,
@@ -4107,9 +4107,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "176": {
       "id": 176,
@@ -4125,9 +4125,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "177": {
       "id": 177,
@@ -4144,8 +4144,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "178": {
       "id": 178,
@@ -4162,8 +4162,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "179": {
       "id": 179,
@@ -4180,8 +4180,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "180": {
       "id": 180,
@@ -4198,8 +4198,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "181": {
       "id": 181,
@@ -4216,8 +4216,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "182": {
       "id": 182,
@@ -4233,9 +4233,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "183": {
       "id": 183,
@@ -4246,14 +4246,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "184": {
       "id": 184,
@@ -4264,14 +4264,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "185": {
       "id": 185,
@@ -4288,8 +4288,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "186": {
       "id": 186,
@@ -4300,14 +4300,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "187": {
       "id": 187,
@@ -4324,8 +4324,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "188": {
       "id": 188,
@@ -4342,8 +4342,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "189": {
       "id": 189,
@@ -4360,8 +4360,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "190": {
       "id": 190,
@@ -4378,8 +4378,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "191": {
       "id": 191,
@@ -4396,8 +4396,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "192": {
       "id": 192,
@@ -4414,8 +4414,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "193": {
       "id": 193,
@@ -4432,8 +4432,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "194": {
       "id": 194,
@@ -4450,8 +4450,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "195": {
       "id": 195,
@@ -4468,8 +4468,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "196": {
       "id": 196,
@@ -4486,8 +4486,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "197": {
       "id": 197,
@@ -4504,8 +4504,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "492": {
       "id": 492,
@@ -4516,14 +4516,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": -2,
       "now_cost": "5.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 52,
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "575": {
       "id": 575,
@@ -4540,8 +4540,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "584": {
       "id": 584,
@@ -4558,8 +4558,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "599": {
       "id": 599,
@@ -4576,8 +4576,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "623": {
       "id": 623,
@@ -4594,8 +4594,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "655": {
       "id": 655,
@@ -4612,8 +4612,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "656": {
       "id": 656,
@@ -4630,8 +4630,8 @@
       "opponent_short": "BHA",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (59')"
     },
     "42": {
       "id": 42,
@@ -14393,19 +14393,19 @@
       "101": 0,
       "102": 4,
       "103": 0,
-      "104": 0,
+      "104": 1,
       "105": 1,
       "106": 1,
       "107": 0,
       "108": 0,
-      "109": 0,
+      "109": 2,
       "110": 0,
       "111": 0,
       "112": 8,
-      "113": 0,
-      "114": 0,
-      "115": 0,
-      "116": 0,
+      "113": 1,
+      "114": 1,
+      "115": 4,
+      "116": 1,
       "117": 0,
       "118": 0,
       "119": 0,
@@ -14413,12 +14413,12 @@
       "121": 0,
       "122": 0,
       "123": 0,
-      "124": 0,
+      "124": 6,
       "125": 0,
       "126": 0,
-      "127": 0,
+      "127": 1,
       "128": 0,
-      "129": 0,
+      "129": 1,
       "130": 0,
       "131": 0,
       "132": 0,
@@ -14427,7 +14427,7 @@
       "135": 0,
       "136": 1,
       "137": 0,
-      "138": 0,
+      "138": 8,
       "139": 0,
       "140": 0,
       "141": 0,
@@ -14472,10 +14472,10 @@
       "180": 0,
       "181": 0,
       "182": 0,
-      "183": 0,
-      "184": 0,
+      "183": 1,
+      "184": 1,
       "185": 0,
-      "186": 0,
+      "186": 1,
       "187": 0,
       "188": 0,
       "189": 0,
@@ -14781,7 +14781,7 @@
       "489": 0,
       "490": 1,
       "491": 7,
-      "492": 0,
+      "492": -2,
       "493": 0,
       "494": 0,
       "495": 0,
@@ -14793,7 +14793,7 @@
       "501": 1,
       "502": 7,
       "503": 6,
-      "504": 0,
+      "504": 1,
       "505": 0,
       "506": 0,
       "507": 0,
@@ -14894,7 +14894,7 @@
       "602": 0,
       "603": 0,
       "604": 0,
-      "605": 0,
+      "605": 7,
       "606": 0,
       "607": 0,
       "608": 0,
@@ -17566,14 +17566,284 @@
       "finished_provisional": false,
       "id": 38,
       "kickoff_time": "2026-09-13T13:00:00Z",
-      "minutes": 0,
+      "minutes": 59,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 5,
-      "team_a_score": null,
+      "team_a_score": 2,
       "team_h": 7,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 138
+            },
+            {
+              "value": 1,
+              "element": 605
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 115
+            },
+            {
+              "value": 1,
+              "element": 124
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": [
+            {
+              "value": 1,
+              "element": 492
+            }
+          ]
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 4,
+              "element": 109
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 110
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 138
+            },
+            {
+              "value": 2,
+              "element": 124
+            },
+            {
+              "value": 1,
+              "element": 605
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 28,
+              "element": 138
+            },
+            {
+              "value": 27,
+              "element": 124
+            },
+            {
+              "value": 26,
+              "element": 605
+            },
+            {
+              "value": 19,
+              "element": 115
+            },
+            {
+              "value": 17,
+              "element": 109
+            },
+            {
+              "value": 14,
+              "element": 129
+            },
+            {
+              "value": 11,
+              "element": 504
+            },
+            {
+              "value": 10,
+              "element": 116
+            },
+            {
+              "value": 7,
+              "element": 114
+            },
+            {
+              "value": 5,
+              "element": 113
+            },
+            {
+              "value": 2,
+              "element": 127
+            }
+          ],
+          "h": [
+            {
+              "value": 7,
+              "element": 104
+            },
+            {
+              "value": 6,
+              "element": 183
+            },
+            {
+              "value": 5,
+              "element": 184
+            },
+            {
+              "value": 5,
+              "element": 186
+            },
+            {
+              "value": 1,
+              "element": 110
+            },
+            {
+              "value": 1,
+              "element": 176
+            },
+            {
+              "value": -3,
+              "element": 173
+            },
+            {
+              "value": -4,
+              "element": 91
+            },
+            {
+              "value": -4,
+              "element": 175
+            },
+            {
+              "value": -5,
+              "element": 182
+            },
+            {
+              "value": -5,
+              "element": 492
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 8,
+              "element": 129
+            },
+            {
+              "value": 8,
+              "element": 504
+            },
+            {
+              "value": 6,
+              "element": 124
+            },
+            {
+              "value": 5,
+              "element": 114
+            },
+            {
+              "value": 5,
+              "element": 138
+            },
+            {
+              "value": 4,
+              "element": 605
+            },
+            {
+              "value": 3,
+              "element": 116
+            },
+            {
+              "value": 2,
+              "element": 127
+            },
+            {
+              "value": 1,
+              "element": 113
+            }
+          ],
+          "h": [
+            {
+              "value": 8,
+              "element": 91
+            },
+            {
+              "value": 7,
+              "element": 104
+            },
+            {
+              "value": 7,
+              "element": 173
+            },
+            {
+              "value": 5,
+              "element": 182
+            },
+            {
+              "value": 5,
+              "element": 183
+            },
+            {
+              "value": 4,
+              "element": 186
+            },
+            {
+              "value": 3,
+              "element": 176
+            },
+            {
+              "value": 2,
+              "element": 175
+            },
+            {
+              "value": 2,
+              "element": 184
+            },
+            {
+              "value": 2,
+              "element": 492
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 2,
       "team_a_difficulty": 2,
       "pulse_id": 0
@@ -22326,73 +22596,6 @@
         "time": "2026-08-29T00:41:11.474635Z"
       }
     ],
-    "2023013": [
-      {
-        "element_in": 454,
-        "element_in_cost": 61,
-        "element_out": 260,
-        "element_out_cost": 64,
-        "entry": 2023013,
-        "event": 4,
-        "time": "2026-09-05T00:43:32.259710Z"
-      },
-      {
-        "element_in": 244,
-        "element_in_cost": 50,
-        "element_out": 287,
-        "element_out_cost": 50,
-        "entry": 2023013,
-        "event": 3,
-        "time": "2026-08-29T12:01:45.906114Z"
-      },
-      {
-        "element_in": 379,
-        "element_in_cost": 90,
-        "element_out": 25,
-        "element_out_cost": 75,
-        "entry": 2023013,
-        "event": 2,
-        "time": "2026-08-22T06:44:02.281015Z"
-      }
-    ],
-    "2026160": [
-      {
-        "element_in": 385,
-        "element_in_cost": 50,
-        "element_out": 412,
-        "element_out_cost": 50,
-        "entry": 2026160,
-        "event": 4,
-        "time": "2026-09-11T13:00:05.610330Z"
-      },
-      {
-        "element_in": 15,
-        "element_in_cost": 67,
-        "element_out": 14,
-        "element_out_cost": 64,
-        "entry": 2026160,
-        "event": 4,
-        "time": "2026-09-11T12:51:44.689810Z"
-      },
-      {
-        "element_in": 399,
-        "element_in_cost": 77,
-        "element_out": 260,
-        "element_out_cost": 64,
-        "entry": 2026160,
-        "event": 3,
-        "time": "2026-09-04T10:50:18.044333Z"
-      },
-      {
-        "element_in": 367,
-        "element_in_cost": 70,
-        "element_out": 397,
-        "element_out_cost": 85,
-        "entry": 2026160,
-        "event": 2,
-        "time": "2026-08-28T14:55:45.754628Z"
-      }
-    ],
     "2024611": [
       {
         "element_in": 115,
@@ -22519,6 +22722,73 @@
         "entry": 2024611,
         "event": 3,
         "time": "2026-08-29T11:29:00.909893Z"
+      }
+    ],
+    "2023013": [
+      {
+        "element_in": 454,
+        "element_in_cost": 61,
+        "element_out": 260,
+        "element_out_cost": 64,
+        "entry": 2023013,
+        "event": 4,
+        "time": "2026-09-05T00:43:32.259710Z"
+      },
+      {
+        "element_in": 244,
+        "element_in_cost": 50,
+        "element_out": 287,
+        "element_out_cost": 50,
+        "entry": 2023013,
+        "event": 3,
+        "time": "2026-08-29T12:01:45.906114Z"
+      },
+      {
+        "element_in": 379,
+        "element_in_cost": 90,
+        "element_out": 25,
+        "element_out_cost": 75,
+        "entry": 2023013,
+        "event": 2,
+        "time": "2026-08-22T06:44:02.281015Z"
+      }
+    ],
+    "2026160": [
+      {
+        "element_in": 385,
+        "element_in_cost": 50,
+        "element_out": 412,
+        "element_out_cost": 50,
+        "entry": 2026160,
+        "event": 4,
+        "time": "2026-09-11T13:00:05.610330Z"
+      },
+      {
+        "element_in": 15,
+        "element_in_cost": 67,
+        "element_out": 14,
+        "element_out_cost": 64,
+        "entry": 2026160,
+        "event": 4,
+        "time": "2026-09-11T12:51:44.689810Z"
+      },
+      {
+        "element_in": 399,
+        "element_in_cost": 77,
+        "element_out": 260,
+        "element_out_cost": 64,
+        "entry": 2026160,
+        "event": 3,
+        "time": "2026-09-04T10:50:18.044333Z"
+      },
+      {
+        "element_in": 367,
+        "element_in_cost": 70,
+        "element_out": 397,
+        "element_out_cost": 85,
+        "entry": 2026160,
+        "event": 2,
+        "time": "2026-08-28T14:55:45.754628Z"
       }
     ],
     "2026484": [
@@ -22900,6 +23170,12 @@
           "avatar": "SE"
         },
         {
+          "id": 2024611,
+          "name": "Vibol Dang",
+          "teamName": "The White Emperor",
+          "avatar": "VI"
+        },
+        {
           "id": 2023013,
           "name": "នរ សិង្ហ កន្សៃ",
           "teamName": "G.O.A.T",
@@ -22910,12 +23186,6 @@
           "name": "Piseth Nhim",
           "teamName": "DESSTRo",
           "avatar": "PI"
-        },
-        {
-          "id": 2024611,
-          "name": "Vibol Dang",
-          "teamName": "The White Emperor",
-          "avatar": "VI"
         },
         {
           "id": 2026484,
@@ -22931,45 +23201,45 @@
             "2067578": 66,
             "2023789": 72,
             "2019453": 41,
+            "2024611": 54,
             "2023013": 52,
             "2026160": 49,
-            "2024611": 54,
             "2026484": 61
           },
           "hits": {
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
+            "2024611": 0,
             "2023013": 0,
             "2026160": 0,
-            "2024611": 0,
             "2026484": 0
           },
           "transfers": {
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
+            "2024611": 0,
             "2023013": 0,
             "2026160": 0,
-            "2024611": 0,
             "2026484": 0
           },
           "benchPoints": {
             "2067578": 11,
             "2023789": 0,
             "2019453": 11,
+            "2024611": 3,
             "2023013": 4,
             "2026160": 0,
-            "2024611": 3,
             "2026484": 9
           },
           "captainPoints": {
             "2067578": 4,
             "2023789": 4,
             "2019453": 4,
+            "2024611": 4,
             "2023013": 4,
             "2026160": 4,
-            "2024611": 4,
             "2026484": 4
           },
           "chipsUsed": {
@@ -22979,9 +23249,9 @@
             "2067578": 66,
             "2023789": 72,
             "2019453": 41,
+            "2024611": 54,
             "2023013": 52,
             "2026160": 49,
-            "2024611": 54,
             "2026484": 61
           }
         },
@@ -22991,45 +23261,45 @@
             "2067578": 80,
             "2023789": 74,
             "2019453": 87,
+            "2024611": 73,
             "2023013": 76,
             "2026160": 76,
-            "2024611": 73,
             "2026484": 65
           },
           "hits": {
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
+            "2024611": 0,
             "2023013": 0,
             "2026160": 0,
-            "2024611": 0,
             "2026484": 0
           },
           "transfers": {
             "2067578": 1,
             "2023789": 1,
             "2019453": 0,
+            "2024611": 0,
             "2023013": 1,
             "2026160": 1,
-            "2024611": 0,
             "2026484": 0
           },
           "benchPoints": {
             "2067578": 11,
             "2023789": 4,
             "2019453": 3,
+            "2024611": 0,
             "2023013": 6,
             "2026160": 15,
-            "2024611": 0,
             "2026484": 2
           },
           "captainPoints": {
             "2067578": 26,
             "2023789": 26,
             "2019453": 26,
+            "2024611": 26,
             "2023013": 26,
             "2026160": 18,
-            "2024611": 26,
             "2026484": 18
           },
           "chipsUsed": {
@@ -23039,9 +23309,9 @@
             "2067578": 146,
             "2023789": 146,
             "2019453": 128,
+            "2024611": 127,
             "2023013": 128,
             "2026160": 125,
-            "2024611": 127,
             "2026484": 126
           }
         },
@@ -23051,45 +23321,45 @@
             "2067578": 55,
             "2023789": 52,
             "2019453": 63,
+            "2024611": 47,
             "2023013": 74,
             "2026160": 58,
-            "2024611": 47,
             "2026484": 44
           },
           "hits": {
             "2067578": 0,
             "2023789": 0,
             "2019453": 4,
+            "2024611": 0,
             "2023013": 0,
             "2026160": 0,
-            "2024611": 0,
             "2026484": 28
           },
           "transfers": {
             "2067578": 1,
             "2023789": 1,
             "2019453": 3,
+            "2024611": 2,
             "2023013": 1,
             "2026160": 1,
-            "2024611": 2,
             "2026484": 8
           },
           "benchPoints": {
             "2067578": 21,
             "2023789": 6,
             "2019453": 11,
+            "2024611": 0,
             "2023013": 4,
             "2026160": 5,
-            "2024611": 0,
             "2026484": 0
           },
           "captainPoints": {
             "2067578": 18,
             "2023789": 18,
             "2019453": 18,
+            "2024611": 18,
             "2023013": 18,
             "2026160": 18,
-            "2024611": 18,
             "2026484": 6
           },
           "chipsUsed": {
@@ -23099,9 +23369,9 @@
             "2067578": 201,
             "2023789": 198,
             "2019453": 187,
+            "2024611": 174,
             "2023013": 202,
             "2026160": 183,
-            "2024611": 174,
             "2026484": 142
           }
         },
@@ -23111,45 +23381,45 @@
             "2067578": 57,
             "2023789": 40,
             "2019453": 38,
+            "2024611": 46,
             "2023013": 20,
             "2026160": 43,
-            "2024611": 46,
             "2026484": 63
           },
           "hits": {
             "2067578": 0,
             "2023789": 4,
             "2019453": 0,
+            "2024611": 0,
             "2023013": 0,
             "2026160": 4,
-            "2024611": 0,
             "2026484": 36
           },
           "transfers": {
             "2067578": 1,
             "2023789": 2,
             "2019453": 0,
+            "2024611": 12,
             "2023013": 1,
             "2026160": 2,
-            "2024611": 12,
             "2026484": 10
           },
           "benchPoints": {
             "2067578": 4,
             "2023789": 0,
             "2019453": 8,
+            "2024611": 5,
             "2023013": 18,
             "2026160": 2,
-            "2024611": 5,
             "2026484": 8
           },
           "captainPoints": {
             "2067578": 24,
             "2023789": 24,
             "2019453": 0,
+            "2024611": 0,
             "2023013": 4,
             "2026160": 24,
-            "2024611": 0,
             "2026484": 24
           },
           "chipsUsed": {
@@ -23160,9 +23430,9 @@
             "2067578": 258,
             "2023789": 234,
             "2019453": 225,
+            "2024611": 220,
             "2023013": 222,
             "2026160": 222,
-            "2024611": 220,
             "2026484": 169
           }
         },
