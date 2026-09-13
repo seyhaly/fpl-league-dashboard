@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-12T22:44:47Z",
+  "lastUpdated": "2026-09-13T00:23:06Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -899,7 +899,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 1,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
@@ -1007,7 +1007,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 1,
-      "now_cost": "7.5",
+      "now_cost": "7.6",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
@@ -1061,7 +1061,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 8,
-      "now_cost": "6.8",
+      "now_cost": "6.7",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
@@ -1367,7 +1367,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -1529,7 +1529,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -1565,7 +1565,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -1835,7 +1835,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -2609,7 +2609,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 1,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
@@ -3167,7 +3167,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -3401,7 +3401,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 8,
-      "now_cost": "7.6",
+      "now_cost": "7.7",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -3653,7 +3653,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -3707,7 +3707,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 1,
-      "now_cost": "6.4",
+      "now_cost": "6.3",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -3815,7 +3815,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 12,
-      "now_cost": "7.7",
+      "now_cost": "7.8",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -4265,7 +4265,7 @@
       "team_name": "Coventry City",
       "team_id": 7,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 2,
@@ -4823,7 +4823,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "6.3",
+      "now_cost": "6.2",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -5075,7 +5075,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "6.4",
+      "now_cost": "6.3",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -5417,7 +5417,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -5939,7 +5939,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 1,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
@@ -6353,7 +6353,7 @@
       "team_name": "Hull City",
       "team_id": 11,
       "event_points": 0,
-      "now_cost": "4.0",
+      "now_cost": "3.9",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
@@ -7847,7 +7847,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
@@ -7955,7 +7955,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
@@ -9539,7 +9539,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -10889,7 +10889,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
@@ -11033,7 +11033,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 1,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
@@ -11051,7 +11051,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 7,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 4,
@@ -11303,7 +11303,7 @@
       "team_name": "Spurs",
       "team_id": 19,
       "event_points": 0,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
@@ -11699,7 +11699,7 @@
       "team_name": "Spurs",
       "team_id": 19,
       "event_points": 3,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
@@ -16983,16 +16983,16 @@
               "element": 649
             },
             {
-              "value": 18,
+              "value": 16,
               "element": 236
             },
             {
               "value": 13,
-              "element": 242
+              "element": 209
             },
             {
-              "value": 10,
-              "element": 209
+              "value": 13,
+              "element": 242
             },
             {
               "value": 6,
@@ -17017,7 +17017,7 @@
           ],
           "h": [
             {
-              "value": 31,
+              "value": 30,
               "element": 502
             },
             {
@@ -17025,11 +17025,11 @@
               "element": 496
             },
             {
-              "value": 26,
+              "value": 27,
               "element": 112
             },
             {
-              "value": 26,
+              "value": 27,
               "element": 503
             },
             {
@@ -17090,7 +17090,7 @@
               "element": 239
             },
             {
-              "value": 10,
+              "value": 11,
               "element": 233
             },
             {
@@ -17140,16 +17140,16 @@
           ],
           "h": [
             {
+              "value": 13,
+              "element": 112
+            },
+            {
               "value": 11,
               "element": 455
             },
             {
               "value": 11,
               "element": 522
-            },
-            {
-              "value": 10,
-              "element": 112
             },
             {
               "value": 10,
@@ -17160,12 +17160,12 @@
               "element": 403
             },
             {
-              "value": 5,
-              "element": 401
+              "value": 6,
+              "element": 503
             },
             {
               "value": 5,
-              "element": 503
+              "element": 401
             },
             {
               "value": 4,
@@ -17181,11 +17181,11 @@
             },
             {
               "value": 3,
-              "element": 502
+              "element": 515
             },
             {
-              "value": 3,
-              "element": 515
+              "value": 2,
+              "element": 502
             },
             {
               "value": 2,
@@ -18201,7 +18201,7 @@
           "total_points": 222,
           "rank": 10106769,
           "rank_sort": 10109775,
-          "overall_rank": 4842494,
+          "overall_rank": 4842539,
           "percentile_rank": 95,
           "overall_rank_percentage": "45",
           "bank": 3,
@@ -18774,7 +18774,7 @@
           "total_points": 258,
           "rank": 1587769,
           "rank_sort": 1598257,
-          "overall_rank": 1330298,
+          "overall_rank": 1330306,
           "percentile_rank": 15,
           "overall_rank_percentage": "12",
           "bank": 3,
@@ -19347,7 +19347,7 @@
           "total_points": 234,
           "rank": 6034726,
           "rank_sort": 6044146,
-          "overall_rank": 3578601,
+          "overall_rank": 3578627,
           "percentile_rank": 60,
           "overall_rank_percentage": "34",
           "bank": 7,
@@ -19920,7 +19920,7 @@
           "total_points": 222,
           "rank": 5155060,
           "rank_sort": 5164403,
-          "overall_rank": 4871522,
+          "overall_rank": 4871567,
           "percentile_rank": 50,
           "overall_rank_percentage": "46",
           "bank": 4,
@@ -20512,7 +20512,7 @@
           "total_points": 220,
           "rank": 4064279,
           "rank_sort": 4087347,
-          "overall_rank": 5027509,
+          "overall_rank": 5027559,
           "percentile_rank": 40,
           "overall_rank_percentage": "47",
           "bank": 0,
@@ -21085,7 +21085,7 @@
           "total_points": 225,
           "rank": 6395814,
           "rank_sort": 6417565,
-          "overall_rank": 4523360,
+          "overall_rank": 4523402,
           "percentile_rank": 60,
           "overall_rank_percentage": "42",
           "bank": 5,
@@ -21651,7 +21651,7 @@
           "total_points": 169,
           "rank": 784982,
           "rank_sort": 785015,
-          "overall_rank": 8763790,
+          "overall_rank": 8763852,
           "percentile_rank": 10,
           "overall_rank_percentage": "82",
           "bank": 21,
@@ -22224,7 +22224,7 @@
           "total_points": 227,
           "rank": 5964977,
           "rank_sort": 5966110,
-          "overall_rank": 4305798,
+          "overall_rank": 4305838,
           "percentile_rank": 60,
           "overall_rank_percentage": "40",
           "bank": 6,
