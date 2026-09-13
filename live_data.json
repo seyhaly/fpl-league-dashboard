@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-13T05:00:16Z",
+  "lastUpdated": "2026-09-13T10:08:36Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -16292,6 +16292,10 @@
             },
             {
               "value": 6,
+              "element": 315
+            },
+            {
+              "value": 6,
               "element": 318
             },
             {
@@ -16305,10 +16309,6 @@
             {
               "value": 5,
               "element": 592
-            },
-            {
-              "value": 4,
-              "element": 315
             },
             {
               "value": 1,
@@ -16335,6 +16335,10 @@
             {
               "value": 10,
               "element": 633
+            },
+            {
+              "value": 6,
+              "element": 204
             },
             {
               "value": 6,
@@ -16366,10 +16370,6 @@
             },
             {
               "value": 2,
-              "element": 204
-            },
-            {
-              "value": 1,
               "element": 202
             },
             {
@@ -16448,7 +16448,7 @@
               "element": 644
             },
             {
-              "value": 12,
+              "value": 13,
               "element": 202
             },
             {
