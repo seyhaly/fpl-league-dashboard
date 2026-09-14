@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-14T18:32:03Z",
+  "lastUpdated": "2026-09-14T21:59:02Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -44,8 +44,8 @@
       "is_next": false,
       "deadline_time": "2026-09-12T12:30:00Z",
       "bonus_added": false,
-      "leagues": "",
-      "points": "",
+      "leagues": "Updating",
+      "points": "p",
       "daily_status": [
         {
           "bonus_added": false,
@@ -63,7 +63,7 @@
           "bonus_added": false,
           "date": "2026-09-14",
           "event": 4,
-          "points": ""
+          "points": "p"
         }
       ]
     },
@@ -7684,14 +7684,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.3",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "326": {
       "id": 326,
@@ -7708,8 +7708,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "327": {
       "id": 327,
@@ -7726,8 +7726,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "329": {
       "id": 329,
@@ -7744,8 +7744,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "330": {
       "id": 330,
@@ -7756,14 +7756,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 15,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 82,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "331": {
       "id": 331,
@@ -7774,14 +7774,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 72,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "332": {
       "id": 332,
@@ -7792,14 +7792,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "333": {
       "id": 333,
@@ -7816,8 +7816,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "334": {
       "id": 334,
@@ -7828,14 +7828,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "335": {
       "id": 335,
@@ -7846,14 +7846,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 87,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "336": {
       "id": 336,
@@ -7864,14 +7864,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "5.8",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "337": {
       "id": 337,
@@ -7882,14 +7882,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "338": {
       "id": 338,
@@ -7900,14 +7900,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "5.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "339": {
       "id": 339,
@@ -7918,14 +7918,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 2,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "341": {
       "id": 341,
@@ -7942,8 +7942,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "342": {
       "id": 342,
@@ -7960,8 +7960,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "343": {
       "id": 343,
@@ -7972,14 +7972,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 7,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "344": {
       "id": 344,
@@ -7996,8 +7996,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "345": {
       "id": 345,
@@ -8008,14 +8008,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "346": {
       "id": 346,
@@ -8026,14 +8026,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "347": {
       "id": 347,
@@ -8044,14 +8044,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "348": {
       "id": 348,
@@ -8068,8 +8068,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "349": {
       "id": 349,
@@ -8086,8 +8086,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "385": {
       "id": 385,
@@ -8098,14 +8098,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "598": {
       "id": 598,
@@ -8116,14 +8116,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "603": {
       "id": 603,
@@ -8140,8 +8140,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "604": {
       "id": 604,
@@ -8158,8 +8158,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "625": {
       "id": 625,
@@ -8176,8 +8176,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "629": {
       "id": 629,
@@ -8194,8 +8194,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "641": {
       "id": 641,
@@ -8206,14 +8206,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "648": {
       "id": 648,
@@ -8230,8 +8230,8 @@
       "opponent_short": "NEW",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "350": {
       "id": 350,
@@ -10096,14 +10096,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "442": {
       "id": 442,
@@ -10120,8 +10120,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "443": {
       "id": 443,
@@ -10138,8 +10138,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "444": {
       "id": 444,
@@ -10156,8 +10156,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "445": {
       "id": 445,
@@ -10168,14 +10168,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "446": {
       "id": 446,
@@ -10192,8 +10192,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "447": {
       "id": 447,
@@ -10204,14 +10204,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "448": {
       "id": 448,
@@ -10228,8 +10228,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "449": {
       "id": 449,
@@ -10245,9 +10245,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "450": {
       "id": 450,
@@ -10258,14 +10258,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 32,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "451": {
       "id": 451,
@@ -10282,8 +10282,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "453": {
       "id": 453,
@@ -10294,14 +10294,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.0",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "454": {
       "id": 454,
@@ -10318,8 +10318,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "456": {
       "id": 456,
@@ -10336,8 +10336,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "457": {
       "id": 457,
@@ -10353,9 +10353,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 56,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "458": {
       "id": 458,
@@ -10372,8 +10372,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "459": {
       "id": 459,
@@ -10389,9 +10389,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 79,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "460": {
       "id": 460,
@@ -10402,14 +10402,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 33,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "461": {
       "id": 461,
@@ -10420,14 +10420,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.8",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 33,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "462": {
       "id": 462,
@@ -10438,14 +10438,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "463": {
       "id": 463,
@@ -10462,8 +10462,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "464": {
       "id": 464,
@@ -10474,14 +10474,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.2",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "465": {
       "id": 465,
@@ -10498,8 +10498,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "466": {
       "id": 466,
@@ -10516,8 +10516,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "559": {
       "id": 559,
@@ -10528,14 +10528,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 10,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "567": {
       "id": 567,
@@ -10546,14 +10546,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "593": {
       "id": 593,
@@ -10569,9 +10569,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 57,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "609": {
       "id": 609,
@@ -10588,8 +10588,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "634": {
       "id": 634,
@@ -10600,14 +10600,32 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
+      "minutes": 56,
+      "match_status": "played",
+      "status_label": "✓ Played"
+    },
+    "659": {
+      "id": 659,
+      "web_name": "Miley",
+      "first_name": "Mason",
+      "second_name": "Miley",
+      "element_type": 3,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "team_id": 17,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "LEE",
+      "opponent_short": "LEE",
+      "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "167": {
       "id": 167,
@@ -14567,7 +14585,7 @@
       "257": 6,
       "258": 6,
       "259": 1,
-      "260": 0,
+      "260": 1,
       "261": 3,
       "262": 1,
       "263": 1,
@@ -14637,24 +14655,24 @@
       "327": 0,
       "328": 1,
       "329": 0,
-      "330": 0,
-      "331": 0,
-      "332": 0,
+      "330": 15,
+      "331": 6,
+      "332": 2,
       "333": 0,
-      "334": 0,
-      "335": 0,
-      "336": 0,
-      "337": 0,
-      "338": 0,
-      "339": 0,
+      "334": 7,
+      "335": 3,
+      "336": 9,
+      "337": 1,
+      "338": 7,
+      "339": 1,
       "340": 0,
       "341": 0,
       "342": 0,
-      "343": 0,
+      "343": 1,
       "344": 0,
-      "345": 0,
-      "346": 0,
-      "347": 0,
+      "345": 6,
+      "346": 10,
+      "347": 1,
       "348": 0,
       "349": 0,
       "350": 9,
@@ -14692,7 +14710,7 @@
       "382": 0,
       "383": 0,
       "384": 7,
-      "385": 0,
+      "385": 3,
       "386": 0,
       "387": 1,
       "388": 6,
@@ -14712,7 +14730,7 @@
       "402": 0,
       "403": 3,
       "404": 0,
-      "405": 0,
+      "405": 1,
       "406": 0,
       "407": 0,
       "408": 0,
@@ -14752,26 +14770,26 @@
       "442": 0,
       "443": 0,
       "444": 0,
-      "445": 0,
+      "445": 2,
       "446": 0,
-      "447": 0,
+      "447": 2,
       "448": 0,
       "449": 0,
-      "450": 0,
+      "450": 3,
       "451": 0,
       "452": 7,
-      "453": 0,
+      "453": 2,
       "454": 0,
       "455": 3,
       "456": 0,
       "457": 0,
       "458": 0,
       "459": 0,
-      "460": 0,
-      "461": 0,
-      "462": 0,
+      "460": 1,
+      "461": 6,
+      "462": 2,
       "463": 0,
-      "464": 0,
+      "464": 2,
       "465": 0,
       "466": 0,
       "467": 3,
@@ -14866,7 +14884,7 @@
       "556": 0,
       "557": 3,
       "558": 3,
-      "559": 0,
+      "559": 1,
       "560": 0,
       "561": 0,
       "562": 1,
@@ -14874,7 +14892,7 @@
       "564": 1,
       "565": 4,
       "566": 3,
-      "567": 0,
+      "567": 1,
       "568": 0,
       "569": 2,
       "570": 0,
@@ -14905,7 +14923,7 @@
       "595": 1,
       "596": 0,
       "597": 2,
-      "598": 0,
+      "598": 2,
       "599": 1,
       "600": 1,
       "601": 0,
@@ -14941,14 +14959,14 @@
       "631": 1,
       "632": 0,
       "633": 3,
-      "634": 0,
+      "634": 1,
       "635": 1,
       "636": 0,
       "637": 1,
       "638": 0,
       "639": 4,
       "640": 5,
-      "641": 0,
+      "641": 1,
       "642": 1,
       "643": 1,
       "644": 4,
@@ -14965,7 +14983,8 @@
       "655": 0,
       "656": 0,
       "657": 0,
-      "658": 0
+      "658": 0,
+      "659": 0
     }
   },
   "fixtures": [
@@ -18278,17 +18297,411 @@
       "code": 2645230,
       "event": 4,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 40,
       "kickoff_time": "2026-09-14T19:00:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 17,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 13,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 4,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 461
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 330
+            },
+            {
+              "value": 1,
+              "element": 336
+            },
+            {
+              "value": 1,
+              "element": 346
+            }
+          ]
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 450
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 334
+            },
+            {
+              "value": 1,
+              "element": 338
+            },
+            {
+              "value": 1,
+              "element": 345
+            },
+            {
+              "value": 1,
+              "element": 346
+            }
+          ]
+        },
+        {
+          "identifier": "own_goals",
+          "a": [
+            {
+              "value": 1,
+              "element": 459
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 450
+            },
+            {
+              "value": 1,
+              "element": 457
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 346
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 3,
+              "element": 567
+            }
+          ],
+          "h": [
+            {
+              "value": 4,
+              "element": 385
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [],
+          "h": [
+            {
+              "value": 3,
+              "element": 330
+            },
+            {
+              "value": 2,
+              "element": 346
+            },
+            {
+              "value": 1,
+              "element": 336
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 24,
+              "element": 461
+            },
+            {
+              "value": 13,
+              "element": 462
+            },
+            {
+              "value": 10,
+              "element": 453
+            },
+            {
+              "value": 9,
+              "element": 449
+            },
+            {
+              "value": 9,
+              "element": 450
+            },
+            {
+              "value": 9,
+              "element": 459
+            },
+            {
+              "value": 8,
+              "element": 460
+            },
+            {
+              "value": 7,
+              "element": 464
+            },
+            {
+              "value": 5,
+              "element": 634
+            },
+            {
+              "value": 4,
+              "element": 559
+            },
+            {
+              "value": 3,
+              "element": 405
+            },
+            {
+              "value": 2,
+              "element": 447
+            },
+            {
+              "value": 2,
+              "element": 457
+            },
+            {
+              "value": 1,
+              "element": 567
+            },
+            {
+              "value": -4,
+              "element": 445
+            },
+            {
+              "value": -4,
+              "element": 593
+            }
+          ],
+          "h": [
+            {
+              "value": 45,
+              "element": 330
+            },
+            {
+              "value": 37,
+              "element": 346
+            },
+            {
+              "value": 34,
+              "element": 336
+            },
+            {
+              "value": 27,
+              "element": 334
+            },
+            {
+              "value": 25,
+              "element": 338
+            },
+            {
+              "value": 24,
+              "element": 345
+            },
+            {
+              "value": 22,
+              "element": 331
+            },
+            {
+              "value": 15,
+              "element": 335
+            },
+            {
+              "value": 15,
+              "element": 385
+            },
+            {
+              "value": 11,
+              "element": 332
+            },
+            {
+              "value": 8,
+              "element": 598
+            },
+            {
+              "value": 4,
+              "element": 260
+            },
+            {
+              "value": 4,
+              "element": 337
+            },
+            {
+              "value": 4,
+              "element": 339
+            },
+            {
+              "value": 4,
+              "element": 343
+            },
+            {
+              "value": 4,
+              "element": 347
+            },
+            {
+              "value": 1,
+              "element": 641
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 17,
+              "element": 447
+            },
+            {
+              "value": 10,
+              "element": 445
+            },
+            {
+              "value": 10,
+              "element": 459
+            },
+            {
+              "value": 8,
+              "element": 462
+            },
+            {
+              "value": 6,
+              "element": 449
+            },
+            {
+              "value": 6,
+              "element": 453
+            },
+            {
+              "value": 5,
+              "element": 464
+            },
+            {
+              "value": 5,
+              "element": 593
+            },
+            {
+              "value": 4,
+              "element": 457
+            },
+            {
+              "value": 4,
+              "element": 460
+            },
+            {
+              "value": 3,
+              "element": 450
+            },
+            {
+              "value": 2,
+              "element": 461
+            },
+            {
+              "value": 2,
+              "element": 559
+            },
+            {
+              "value": 2,
+              "element": 634
+            },
+            {
+              "value": 1,
+              "element": 405
+            }
+          ],
+          "h": [
+            {
+              "value": 12,
+              "element": 338
+            },
+            {
+              "value": 11,
+              "element": 334
+            },
+            {
+              "value": 11,
+              "element": 335
+            },
+            {
+              "value": 9,
+              "element": 598
+            },
+            {
+              "value": 5,
+              "element": 332
+            },
+            {
+              "value": 5,
+              "element": 336
+            },
+            {
+              "value": 5,
+              "element": 345
+            },
+            {
+              "value": 5,
+              "element": 346
+            },
+            {
+              "value": 4,
+              "element": 331
+            },
+            {
+              "value": 3,
+              "element": 330
+            },
+            {
+              "value": 2,
+              "element": 260
+            },
+            {
+              "value": 2,
+              "element": 343
+            },
+            {
+              "value": 2,
+              "element": 641
+            },
+            {
+              "value": 1,
+              "element": 337
+            },
+            {
+              "value": 1,
+              "element": 347
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 2,
       "team_a_difficulty": 3,
       "pulse_id": 0
