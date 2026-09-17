@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-16T22:17:06Z",
+  "lastUpdated": "2026-09-17T00:34:06Z",
   "currentGw": 4,
   "eventStatuses": {
     "1": {
@@ -2069,7 +2069,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -2807,7 +2807,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 11,
-      "now_cost": "4.8",
+      "now_cost": "4.9",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
