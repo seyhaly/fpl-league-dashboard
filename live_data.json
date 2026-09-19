@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T21:04:24Z",
+  "lastUpdated": "2026-09-19T22:53:36Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -55,7 +55,7 @@
       "is_next": false,
       "deadline_time": "2026-09-18T17:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -4102,7 +4102,7 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 12,
+      "event_points": 11,
       "now_cost": "4.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
@@ -15240,7 +15240,7 @@
       "107": 0,
       "108": 0,
       "109": 6,
-      "110": 12,
+      "110": 11,
       "111": 0,
       "112": 6,
       "113": 5,
@@ -17762,11 +17762,11 @@
           "a": [
             {
               "value": 3,
-              "element": 110
+              "element": 176
             },
             {
-              "value": 3,
-              "element": 176
+              "value": 2,
+              "element": 110
             },
             {
               "value": 1,
@@ -17779,19 +17779,19 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 38,
-              "element": 110
+              "value": 40,
+              "element": 176
             },
             {
               "value": 38,
-              "element": 176
+              "element": 110
             },
             {
               "value": 37,
               "element": 173
             },
             {
-              "value": 26,
+              "value": 27,
               "element": 656
             },
             {
@@ -17799,23 +17799,23 @@
               "element": 91
             },
             {
+              "value": 17,
+              "element": 184
+            },
+            {
+              "value": 16,
+              "element": 183
+            },
+            {
               "value": 16,
               "element": 194
             },
             {
-              "value": 14,
-              "element": 183
-            },
-            {
-              "value": 12,
-              "element": 184
-            },
-            {
-              "value": 11,
+              "value": 10,
               "element": 104
             },
             {
-              "value": 11,
+              "value": 10,
               "element": 575
             },
             {
@@ -17845,15 +17845,15 @@
               "element": 469
             },
             {
+              "value": 17,
+              "element": 486
+            },
+            {
               "value": 16,
               "element": 472
             },
             {
               "value": 16,
-              "element": 486
-            },
-            {
-              "value": 15,
               "element": 558
             },
             {
@@ -17861,7 +17861,7 @@
               "element": 467
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 167
             },
             {
@@ -17882,6 +17882,10 @@
             },
             {
               "value": 4,
+              "element": 491
+            },
+            {
+              "value": 4,
               "element": 581
             },
             {
@@ -17891,10 +17895,6 @@
             {
               "value": 3,
               "element": 488
-            },
-            {
-              "value": 3,
-              "element": 491
             }
           ]
         },
@@ -17902,7 +17902,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 18,
+              "value": 19,
               "element": 91
             },
             {
@@ -17930,7 +17930,7 @@
               "element": 656
             },
             {
-              "value": 6,
+              "value": 5,
               "element": 575
             },
             {
@@ -17952,7 +17952,7 @@
           ],
           "h": [
             {
-              "value": 10,
+              "value": 11,
               "element": 472
             },
             {
