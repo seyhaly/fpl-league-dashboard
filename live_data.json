@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T16:35:13Z",
+  "lastUpdated": "2026-09-19T18:48:17Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -68,7 +68,7 @@
           "bonus_added": false,
           "date": "2026-09-19",
           "event": 5,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -4048,14 +4048,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 8,
       "now_cost": "4.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "104": {
       "id": 104,
@@ -4066,14 +4066,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "110": {
       "id": 110,
@@ -4084,14 +4084,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 12,
       "now_cost": "4.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "171": {
       "id": 171,
@@ -4108,8 +4108,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "172": {
       "id": 172,
@@ -4126,8 +4126,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "173": {
       "id": 173,
@@ -4138,14 +4138,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 9,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "174": {
       "id": 174,
@@ -4162,8 +4162,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "175": {
       "id": 175,
@@ -4180,8 +4180,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "176": {
       "id": 176,
@@ -4192,14 +4192,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 15,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "177": {
       "id": 177,
@@ -4216,8 +4216,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "178": {
       "id": 178,
@@ -4234,8 +4234,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "179": {
       "id": 179,
@@ -4246,14 +4246,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "180": {
       "id": 180,
@@ -4270,8 +4270,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "181": {
       "id": 181,
@@ -4288,8 +4288,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "182": {
       "id": 182,
@@ -4306,8 +4306,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "183": {
       "id": 183,
@@ -4318,14 +4318,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 5,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 73,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "184": {
       "id": 184,
@@ -4336,14 +4336,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "185": {
       "id": 185,
@@ -4360,8 +4360,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "186": {
       "id": 186,
@@ -4377,9 +4377,9 @@
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "187": {
       "id": 187,
@@ -4396,8 +4396,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "188": {
       "id": 188,
@@ -4414,8 +4414,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "189": {
       "id": 189,
@@ -4432,8 +4432,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "190": {
       "id": 190,
@@ -4444,14 +4444,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "191": {
       "id": 191,
@@ -4468,8 +4468,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "192": {
       "id": 192,
@@ -4486,8 +4486,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "193": {
       "id": 193,
@@ -4504,8 +4504,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "194": {
       "id": 194,
@@ -4516,14 +4516,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "195": {
       "id": 195,
@@ -4534,14 +4534,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 16,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "196": {
       "id": 196,
@@ -4558,8 +4558,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "197": {
       "id": 197,
@@ -4576,8 +4576,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "492": {
       "id": 492,
@@ -4594,8 +4594,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "575": {
       "id": 575,
@@ -4606,14 +4606,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "584": {
       "id": 584,
@@ -4630,8 +4630,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "599": {
       "id": 599,
@@ -4648,8 +4648,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "623": {
       "id": 623,
@@ -4666,8 +4666,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "655": {
       "id": 655,
@@ -4684,8 +4684,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "656": {
       "id": 656,
@@ -4696,14 +4696,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "42": {
       "id": 42,
@@ -10695,9 +10695,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "201": {
       "id": 201,
@@ -10708,14 +10708,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 82,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "467": {
       "id": 467,
@@ -10726,14 +10726,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "468": {
       "id": 468,
@@ -10750,8 +10750,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "469": {
       "id": 469,
@@ -10762,14 +10762,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "470": {
       "id": 470,
@@ -10786,8 +10786,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "471": {
       "id": 471,
@@ -10804,8 +10804,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "472": {
       "id": 472,
@@ -10816,14 +10816,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "473": {
       "id": 473,
@@ -10840,8 +10840,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "474": {
       "id": 474,
@@ -10857,9 +10857,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "475": {
       "id": 475,
@@ -10876,8 +10876,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "476": {
       "id": 476,
@@ -10894,8 +10894,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "477": {
       "id": 477,
@@ -10912,8 +10912,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "478": {
       "id": 478,
@@ -10924,14 +10924,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 7,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "479": {
       "id": 479,
@@ -10948,8 +10948,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "480": {
       "id": 480,
@@ -10960,14 +10960,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "8.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "482": {
       "id": 482,
@@ -10984,8 +10984,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "483": {
       "id": 483,
@@ -11001,9 +11001,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 58,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "484": {
       "id": 484,
@@ -11020,8 +11020,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "485": {
       "id": 485,
@@ -11038,8 +11038,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "486": {
       "id": 486,
@@ -11050,14 +11050,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 82,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "487": {
       "id": 487,
@@ -11074,8 +11074,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "488": {
       "id": 488,
@@ -11086,14 +11086,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 7,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "489": {
       "id": 489,
@@ -11110,8 +11110,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "490": {
       "id": 490,
@@ -11122,14 +11122,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "491": {
       "id": 491,
@@ -11140,14 +11140,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 31,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "493": {
       "id": 493,
@@ -11164,8 +11164,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "558": {
       "id": 558,
@@ -11176,14 +11176,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "581": {
       "id": 581,
@@ -11194,14 +11194,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 2,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "minutes": 72,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "590": {
       "id": 590,
@@ -11218,8 +11218,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (3')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "112": {
       "id": 112,
@@ -15131,7 +15131,7 @@
       "88": 6,
       "89": 0,
       "90": 1,
-      "91": 1,
+      "91": 8,
       "92": 0,
       "93": 14,
       "94": 9,
@@ -15144,13 +15144,13 @@
       "101": 2,
       "102": 3,
       "103": 0,
-      "104": 1,
+      "104": 3,
       "105": 10,
       "106": 5,
       "107": 0,
       "108": 0,
       "109": 7,
-      "110": 1,
+      "110": 12,
       "111": 0,
       "112": 6,
       "113": 5,
@@ -15213,35 +15213,35 @@
       "170": 0,
       "171": 0,
       "172": 0,
-      "173": 1,
+      "173": 9,
       "174": 0,
       "175": 0,
-      "176": 1,
+      "176": 15,
       "177": 0,
       "178": 0,
-      "179": 0,
+      "179": 1,
       "180": 0,
       "181": 0,
       "182": 0,
-      "183": 1,
-      "184": 1,
+      "183": 5,
+      "184": 3,
       "185": 0,
       "186": 1,
       "187": 0,
       "188": 0,
       "189": 0,
-      "190": 0,
+      "190": 1,
       "191": 0,
       "192": 0,
       "193": 0,
-      "194": 1,
-      "195": 0,
+      "194": 4,
+      "195": 1,
       "196": 0,
       "197": 0,
       "198": 0,
       "199": 0,
       "200": 3,
-      "201": 1,
+      "201": 2,
       "202": 0,
       "203": 0,
       "204": 0,
@@ -15507,31 +15507,31 @@
       "464": 0,
       "465": 0,
       "466": 0,
-      "467": 1,
+      "467": 2,
       "468": 0,
-      "469": 1,
+      "469": 2,
       "470": 0,
       "471": 0,
-      "472": 1,
+      "472": 4,
       "473": 0,
       "474": 1,
       "475": 0,
       "476": 0,
       "477": 0,
-      "478": 0,
+      "478": 1,
       "479": 0,
-      "480": 1,
+      "480": 2,
       "481": 0,
       "482": 0,
       "483": 1,
       "484": 0,
       "485": 0,
-      "486": 1,
+      "486": 2,
       "487": 0,
-      "488": 0,
+      "488": 1,
       "489": 0,
-      "490": 0,
-      "491": 0,
+      "490": 1,
+      "491": 1,
       "492": 0,
       "493": 0,
       "494": 0,
@@ -15598,7 +15598,7 @@
       "555": 0,
       "556": 0,
       "557": 2,
-      "558": 1,
+      "558": 2,
       "559": 1,
       "560": 0,
       "561": 0,
@@ -15615,13 +15615,13 @@
       "572": 6,
       "573": 0,
       "574": 0,
-      "575": 1,
+      "575": 3,
       "576": 0,
       "577": 0,
       "578": 0,
       "579": 0,
       "580": 0,
-      "581": 1,
+      "581": 2,
       "582": 0,
       "583": 1,
       "584": 0,
@@ -15696,7 +15696,7 @@
       "653": 0,
       "654": 0,
       "655": 0,
-      "656": 1,
+      "656": 6,
       "657": 0,
       "658": 0,
       "659": 0,
@@ -16204,7 +16204,7 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 47,
+              "value": 50,
               "element": 41
             },
             {
@@ -16212,15 +16212,15 @@
               "element": 53
             },
             {
-              "value": 30,
+              "value": 31,
               "element": 166
             },
             {
-              "value": 25,
+              "value": 26,
               "element": 47
             },
             {
-              "value": 20,
+              "value": 19,
               "element": 45
             },
             {
@@ -16232,11 +16232,11 @@
               "element": 54
             },
             {
-              "value": 13,
+              "value": 11,
               "element": 596
             },
             {
-              "value": 9,
+              "value": 10,
               "element": 33
             },
             {
@@ -16270,23 +16270,27 @@
           ],
           "h": [
             {
-              "value": 28,
+              "value": 29,
               "element": 403
+            },
+            {
+              "value": 24,
+              "element": 512
             },
             {
               "value": 24,
               "element": 519
             },
             {
-              "value": 22,
-              "element": 512
-            },
-            {
-              "value": 20,
+              "value": 18,
               "element": 455
             },
             {
-              "value": 16,
+              "value": 17,
+              "element": 112
+            },
+            {
+              "value": 15,
               "element": 502
             },
             {
@@ -16294,12 +16298,8 @@
               "element": 516
             },
             {
-              "value": 13,
-              "element": 112
-            },
-            {
-              "value": 11,
-              "element": 401
+              "value": 14,
+              "element": 522
             },
             {
               "value": 9,
@@ -16310,12 +16310,12 @@
               "element": 526
             },
             {
-              "value": 7,
-              "element": 503
+              "value": 8,
+              "element": 401
             },
             {
               "value": 7,
-              "element": 522
+              "element": 503
             },
             {
               "value": 5,
@@ -16339,8 +16339,12 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 13,
+              "value": 15,
               "element": 41
+            },
+            {
+              "value": 13,
+              "element": 33
             },
             {
               "value": 13,
@@ -16349,10 +16353,6 @@
             {
               "value": 13,
               "element": 596
-            },
-            {
-              "value": 12,
-              "element": 33
             },
             {
               "value": 7,
@@ -16375,7 +16375,7 @@
               "element": 611
             },
             {
-              "value": 5,
+              "value": 4,
               "element": 46
             },
             {
@@ -16385,10 +16385,6 @@
             {
               "value": 3,
               "element": 32
-            },
-            {
-              "value": 1,
-              "element": 51
             }
           ],
           "h": [
@@ -16969,19 +16965,19 @@
               "element": 592
             },
             {
-              "value": 17,
+              "value": 15,
               "element": 619
+            },
+            {
+              "value": 14,
+              "element": 267
             },
             {
               "value": 13,
               "element": 259
             },
             {
-              "value": 13,
-              "element": 267
-            },
-            {
-              "value": 11,
+              "value": 12,
               "element": 304
             },
             {
@@ -17023,6 +17019,10 @@
             {
               "value": 1,
               "element": 571
+            },
+            {
+              "value": -2,
+              "element": 640
             }
           ],
           "h": [
@@ -17035,7 +17035,7 @@
               "element": 649
             },
             {
-              "value": 35,
+              "value": 34,
               "element": 226
             },
             {
@@ -17055,12 +17055,12 @@
               "element": 238
             },
             {
-              "value": 13,
-              "element": 244
+              "value": 14,
+              "element": 239
             },
             {
-              "value": 12,
-              "element": 239
+              "value": 13,
+              "element": 244
             },
             {
               "value": 10,
@@ -17096,20 +17096,20 @@
               "element": 259
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 304
             },
             {
-              "value": 7,
+              "value": 8,
               "element": 592
-            },
-            {
-              "value": 7,
-              "element": 619
             },
             {
               "value": 6,
               "element": 267
+            },
+            {
+              "value": 6,
+              "element": 619
             },
             {
               "value": 5,
@@ -17154,7 +17154,7 @@
               "element": 229
             },
             {
-              "value": 10,
+              "value": 9,
               "element": 239
             },
             {
@@ -17586,25 +17586,35 @@
       "code": 2645243,
       "event": 5,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 47,
       "kickoff_time": "2026-09-19T16:30:00Z",
-      "minutes": 3,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 7,
-      "team_a_score": 0,
+      "team_a_score": 1,
       "team_h": 18,
       "team_h_score": 0,
       "stats": [
         {
           "identifier": "goals_scored",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 176
+            }
+          ],
           "h": []
         },
         {
           "identifier": "assists",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 110
+            }
+          ],
           "h": []
         },
         {
@@ -17625,7 +17635,16 @@
         {
           "identifier": "yellow_cards",
           "a": [],
-          "h": []
+          "h": [
+            {
+              "value": 1,
+              "element": 167
+            },
+            {
+              "value": 1,
+              "element": 474
+            }
+          ]
         },
         {
           "identifier": "red_cards",
@@ -17636,97 +17655,143 @@
           "identifier": "saves",
           "a": [
             {
-              "value": 1,
+              "value": 2,
               "element": 110
             }
           ],
-          "h": []
+          "h": [
+            {
+              "value": 2,
+              "element": 467
+            }
+          ]
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
-        },
-        {
-          "identifier": "bps",
           "a": [
             {
-              "value": 5,
+              "value": 3,
               "element": 110
-            },
-            {
-              "value": 3,
-              "element": 91
-            },
-            {
-              "value": 3,
-              "element": 104
-            },
-            {
-              "value": 3,
-              "element": 173
             },
             {
               "value": 3,
               "element": 176
             },
             {
-              "value": 3,
-              "element": 184
+              "value": 1,
+              "element": 173
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 38,
+              "element": 110
             },
             {
-              "value": 3,
-              "element": 186
+              "value": 38,
+              "element": 176
             },
             {
-              "value": 3,
-              "element": 194
+              "value": 37,
+              "element": 173
             },
             {
-              "value": 3,
-              "element": 575
-            },
-            {
-              "value": 3,
+              "value": 26,
               "element": 656
             },
             {
-              "value": 2,
+              "value": 24,
+              "element": 91
+            },
+            {
+              "value": 16,
+              "element": 194
+            },
+            {
+              "value": 14,
               "element": 183
+            },
+            {
+              "value": 12,
+              "element": 184
+            },
+            {
+              "value": 11,
+              "element": 104
+            },
+            {
+              "value": 11,
+              "element": 575
+            },
+            {
+              "value": 6,
+              "element": 186
+            },
+            {
+              "value": 5,
+              "element": 190
+            },
+            {
+              "value": 3,
+              "element": 179
+            },
+            {
+              "value": 3,
+              "element": 195
             }
           ],
           "h": [
+            {
+              "value": 25,
+              "element": 480
+            },
+            {
+              "value": 19,
+              "element": 469
+            },
+            {
+              "value": 16,
+              "element": 472
+            },
+            {
+              "value": 16,
+              "element": 486
+            },
+            {
+              "value": 15,
+              "element": 558
+            },
+            {
+              "value": 10,
+              "element": 467
+            },
+            {
+              "value": 8,
+              "element": 167
+            },
+            {
+              "value": 5,
+              "element": 201
+            },
             {
               "value": 5,
               "element": 474
             },
             {
               "value": 5,
-              "element": 486
+              "element": 478
             },
             {
               "value": 4,
-              "element": 480
+              "element": 490
             },
             {
-              "value": 3,
-              "element": 167
-            },
-            {
-              "value": 3,
-              "element": 201
-            },
-            {
-              "value": 3,
-              "element": 467
-            },
-            {
-              "value": 3,
-              "element": 469
-            },
-            {
-              "value": 3,
-              "element": 472
+              "value": 4,
+              "element": 581
             },
             {
               "value": 3,
@@ -17734,11 +17799,11 @@
             },
             {
               "value": 3,
-              "element": 558
+              "element": 488
             },
             {
               "value": 3,
-              "element": 581
+              "element": 491
             }
           ]
         },
@@ -17746,30 +17811,98 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 3,
-              "element": 183
+              "value": 18,
+              "element": 91
             },
             {
-              "value": 2,
-              "element": 184
+              "value": 16,
+              "element": 194
             },
             {
-              "value": 1,
+              "value": 13,
               "element": 173
             },
             {
-              "value": 1,
+              "value": 13,
+              "element": 183
+            },
+            {
+              "value": 10,
+              "element": 184
+            },
+            {
+              "value": 9,
+              "element": 104
+            },
+            {
+              "value": 8,
+              "element": 656
+            },
+            {
+              "value": 6,
+              "element": 575
+            },
+            {
+              "value": 4,
+              "element": 176
+            },
+            {
+              "value": 3,
+              "element": 190
+            },
+            {
+              "value": 2,
+              "element": 179
+            },
+            {
+              "value": 2,
               "element": 186
             }
           ],
           "h": [
             {
-              "value": 1,
+              "value": 10,
+              "element": 472
+            },
+            {
+              "value": 8,
               "element": 167
             },
             {
-              "value": 1,
+              "value": 8,
               "element": 474
+            },
+            {
+              "value": 7,
+              "element": 558
+            },
+            {
+              "value": 5,
+              "element": 581
+            },
+            {
+              "value": 4,
+              "element": 486
+            },
+            {
+              "value": 3,
+              "element": 201
+            },
+            {
+              "value": 3,
+              "element": 491
+            },
+            {
+              "value": 2,
+              "element": 469
+            },
+            {
+              "value": 2,
+              "element": 480
+            },
+            {
+              "value": 1,
+              "element": 483
             }
           ]
         }
