@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T18:48:17Z",
+  "lastUpdated": "2026-09-19T21:04:24Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -55,7 +55,7 @@
       "is_next": false,
       "deadline_time": "2026-09-18T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
@@ -1717,6 +1717,24 @@
       "match_status": "played",
       "status_label": "✓ Played"
     },
+    "667": {
+      "id": 667,
+      "web_name": "Wright",
+      "first_name": "James",
+      "second_name": "Wright",
+      "element_type": 1,
+      "team": "AVL",
+      "team_name": "Aston Villa",
+      "team_id": 2,
+      "event_points": 0,
+      "now_cost": "4.0",
+      "opponent": "TOT",
+      "opponent_short": "TOT",
+      "difficulty": 3,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
     "57": {
       "id": 57,
       "web_name": "Petrović",
@@ -2770,7 +2788,7 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 7,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
@@ -2842,7 +2860,7 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 5,
+      "event_points": 6,
       "now_cost": "4.9",
       "opponent": "ARS",
       "opponent_short": "ARS",
@@ -3382,7 +3400,7 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 9,
+      "event_points": 8,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
@@ -10294,7 +10312,7 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 12,
+      "event_points": 13,
       "now_cost": "5.2",
       "opponent": "HUL",
       "opponent_short": "HUL",
@@ -10668,6 +10686,78 @@
       "web_name": "Miley",
       "first_name": "Mason",
       "second_name": "Miley",
+      "element_type": 3,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "team_id": 17,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "HUL",
+      "opponent_short": "HUL",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "663": {
+      "id": 663,
+      "web_name": "Pivas",
+      "first_name": "Miodrag",
+      "second_name": "Pivas",
+      "element_type": 2,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "team_id": 17,
+      "event_points": 0,
+      "now_cost": "4.0",
+      "opponent": "HUL",
+      "opponent_short": "HUL",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "664": {
+      "id": 664,
+      "web_name": "Salia",
+      "first_name": "Vakhtang",
+      "second_name": "Salia",
+      "element_type": 4,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "team_id": 17,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "HUL",
+      "opponent_short": "HUL",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "665": {
+      "id": 665,
+      "web_name": "Mills",
+      "first_name": "Michael",
+      "second_name": "Mills",
+      "element_type": 3,
+      "team": "NEW",
+      "team_name": "Newcastle",
+      "team_id": 17,
+      "event_points": 0,
+      "now_cost": "4.5",
+      "opponent": "HUL",
+      "opponent_short": "HUL",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "666": {
+      "id": 666,
+      "web_name": "Thompson",
+      "first_name": "Kyran",
+      "second_name": "Thompson",
       "element_type": 3,
       "team": "NEW",
       "team_name": "Newcastle",
@@ -15149,13 +15239,13 @@
       "106": 5,
       "107": 0,
       "108": 0,
-      "109": 7,
+      "109": 6,
       "110": 12,
       "111": 0,
       "112": 6,
       "113": 5,
       "114": 6,
-      "115": 5,
+      "115": 6,
       "116": 0,
       "117": 0,
       "118": 0,
@@ -15489,7 +15579,7 @@
       "446": 1,
       "447": 4,
       "448": 0,
-      "449": 12,
+      "449": 13,
       "450": 0,
       "451": 0,
       "452": 1,
@@ -15679,7 +15769,7 @@
       "636": 0,
       "637": 1,
       "638": 0,
-      "639": 9,
+      "639": 8,
       "640": 0,
       "641": 0,
       "642": 2,
@@ -15702,7 +15792,12 @@
       "659": 0,
       "660": 0,
       "661": 0,
-      "662": 1
+      "662": 1,
+      "663": 0,
+      "664": 0,
+      "665": 0,
+      "666": 0,
+      "667": 0
     }
   },
   "fixtures": [
@@ -16582,11 +16677,7 @@
             },
             {
               "value": 1,
-              "element": 109
-            },
-            {
-              "value": 1,
-              "element": 639
+              "element": 115
             }
           ]
         },
@@ -16614,12 +16705,12 @@
               "element": 557
             },
             {
-              "value": 7,
-              "element": 4
+              "value": 6,
+              "element": 1
             },
             {
               "value": 6,
-              "element": 1
+              "element": 4
             },
             {
               "value": 5,
@@ -16627,7 +16718,7 @@
             },
             {
               "value": 5,
-              "element": 20
+              "element": 25
             },
             {
               "value": 5,
@@ -16639,18 +16730,18 @@
             },
             {
               "value": 4,
-              "element": 19
+              "element": 20
             },
             {
-              "value": 4,
-              "element": 25
+              "value": 2,
+              "element": 19
             },
             {
               "value": 2,
               "element": 31
             },
             {
-              "value": -2,
+              "value": -3,
               "element": 8
             },
             {
@@ -16660,12 +16751,16 @@
           ],
           "h": [
             {
-              "value": 49,
+              "value": 47,
               "element": 124
             },
             {
-              "value": 39,
+              "value": 40,
               "element": 138
+            },
+            {
+              "value": 30,
+              "element": 115
             },
             {
               "value": 27,
@@ -16673,47 +16768,39 @@
             },
             {
               "value": 27,
-              "element": 639
+              "element": 504
             },
             {
-              "value": 26,
-              "element": 115
+              "value": 27,
+              "element": 639
             },
             {
               "value": 25,
               "element": 114
             },
             {
-              "value": 25,
-              "element": 504
-            },
-            {
               "value": 24,
               "element": 328
-            },
-            {
-              "value": 20,
-              "element": 113
             },
             {
               "value": 19,
               "element": 127
             },
             {
-              "value": 6,
+              "value": 18,
+              "element": 113
+            },
+            {
+              "value": 9,
               "element": 605
+            },
+            {
+              "value": 7,
+              "element": 129
             },
             {
               "value": 5,
               "element": 120
-            },
-            {
-              "value": 4,
-              "element": 125
-            },
-            {
-              "value": 4,
-              "element": 129
             },
             {
               "value": 2,
@@ -16722,6 +16809,10 @@
             {
               "value": 2,
               "element": 126
+            },
+            {
+              "value": 1,
+              "element": 125
             }
           ]
         },
@@ -16733,7 +16824,7 @@
               "element": 4
             },
             {
-              "value": 7,
+              "value": 8,
               "element": 13
             },
             {
@@ -16773,7 +16864,7 @@
               "element": 15
             },
             {
-              "value": 2,
+              "value": 1,
               "element": 19
             }
           ],
@@ -16796,11 +16887,11 @@
             },
             {
               "value": 7,
-              "element": 129
+              "element": 115
             },
             {
-              "value": 6,
-              "element": 115
+              "value": 7,
+              "element": 129
             },
             {
               "value": 6,
@@ -16811,11 +16902,11 @@
               "element": 124
             },
             {
-              "value": 3,
+              "value": 4,
               "element": 138
             },
             {
-              "value": 2,
+              "value": 3,
               "element": 113
             },
             {
@@ -17327,11 +17418,11 @@
           "h": [
             {
               "value": 3,
-              "element": 460
+              "element": 449
             },
             {
-              "value": 2,
-              "element": 449
+              "value": 3,
+              "element": 460
             },
             {
               "value": 1,
@@ -17347,11 +17438,11 @@
               "element": 617
             },
             {
-              "value": 24,
+              "value": 22,
               "element": 286
             },
             {
-              "value": 15,
+              "value": 16,
               "element": 572
             },
             {
@@ -17363,7 +17454,7 @@
               "element": 290
             },
             {
-              "value": 9,
+              "value": 8,
               "element": 295
             },
             {
@@ -17391,16 +17482,16 @@
               "element": 637
             },
             {
-              "value": 4,
-              "element": 642
-            },
-            {
               "value": 3,
               "element": 280
             },
             {
               "value": 2,
               "element": 277
+            },
+            {
+              "value": 2,
+              "element": 642
             },
             {
               "value": -1,
@@ -17410,11 +17501,11 @@
           "h": [
             {
               "value": 38,
-              "element": 460
+              "element": 449
             },
             {
-              "value": 35,
-              "element": 449
+              "value": 38,
+              "element": 460
             },
             {
               "value": 34,
@@ -17429,16 +17520,16 @@
               "element": 462
             },
             {
-              "value": 17,
-              "element": 447
+              "value": 14,
+              "element": 567
             },
             {
               "value": 13,
               "element": 445
             },
             {
-              "value": 13,
-              "element": 567
+              "value": 12,
+              "element": 447
             },
             {
               "value": 12,
@@ -17478,7 +17569,7 @@
               "element": 240
             },
             {
-              "value": 7,
+              "value": 6,
               "element": 295
             },
             {
@@ -17503,11 +17594,11 @@
             },
             {
               "value": 2,
-              "element": 289
+              "element": 280
             },
             {
-              "value": 1,
-              "element": 280
+              "value": 2,
+              "element": 289
             },
             {
               "value": 1,
@@ -17524,7 +17615,7 @@
           ],
           "h": [
             {
-              "value": 17,
+              "value": 18,
               "element": 447
             },
             {
@@ -17532,7 +17623,7 @@
               "element": 459
             },
             {
-              "value": 14,
+              "value": 13,
               "element": 445
             },
             {
@@ -18714,18 +18805,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 0,
-          "total_points": 261,
-          "rank": 9618213,
-          "rank_sort": 9758092,
-          "overall_rank": 3888279,
-          "percentile_rank": 90,
-          "overall_rank_percentage": "36",
+          "points": 3,
+          "total_points": 264,
+          "rank": 10675977,
+          "rank_sort": 10679441,
+          "overall_rank": 4960331,
+          "percentile_rank": 100,
+          "overall_rank_percentage": "46",
           "bank": 6,
           "value": 1002,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 5
         },
         "automatic_subs": []
       }
@@ -19435,18 +19526,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 2,
-          "total_points": 281,
-          "rank": 5954913,
-          "rank_sort": 6204159,
-          "overall_rank": 2087972,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "19",
+          "points": 11,
+          "total_points": 290,
+          "rank": 7793794,
+          "rank_sort": 7817785,
+          "overall_rank": 2689641,
+          "percentile_rank": 75,
+          "overall_rank_percentage": "25",
           "bank": 13,
           "value": 1010,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 7
         },
         "automatic_subs": []
       }
@@ -20149,18 +20240,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 5,
-          "total_points": 268,
-          "rank": 2718928,
-          "rank_sort": 2726832,
-          "overall_rank": 3254076,
-          "percentile_rank": 30,
-          "overall_rank_percentage": "30",
+          "points": 23,
+          "total_points": 286,
+          "rank": 3274109,
+          "rank_sort": 3285314,
+          "overall_rank": 3045961,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "28",
           "bank": 31,
           "value": 1011,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 0
+          "points_on_bench": -1
         },
         "automatic_subs": []
       }
@@ -20863,13 +20954,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 0,
-          "total_points": 235,
-          "rank": 10259868,
-          "rank_sort": 10333609,
-          "overall_rank": 6331749,
-          "percentile_rank": 95,
-          "overall_rank_percentage": "58",
+          "points": 18,
+          "total_points": 253,
+          "rank": 5142979,
+          "rank_sort": 5155064,
+          "overall_rank": 5940789,
+          "percentile_rank": 50,
+          "overall_rank_percentage": "55",
           "bank": 31,
           "value": 1001,
           "event_transfers": 2,
@@ -21609,18 +21700,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 2,
-          "total_points": 278,
-          "rank": 5954913,
-          "rank_sort": 6199397,
-          "overall_rank": 2310073,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "21",
+          "points": 10,
+          "total_points": 286,
+          "rank": 8224558,
+          "rank_sort": 8249468,
+          "overall_rank": 2994231,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "28",
           "bank": 11,
           "value": 1010,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 6
         },
         "automatic_subs": []
       }
@@ -22330,18 +22421,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 2,
-          "total_points": 261,
-          "rank": 6872915,
-          "rank_sort": 7002895,
-          "overall_rank": 3913306,
-          "percentile_rank": 65,
-          "overall_rank_percentage": "36",
+          "points": 9,
+          "total_points": 268,
+          "rank": 8734813,
+          "rank_sort": 8744996,
+          "overall_rank": 4621825,
+          "percentile_rank": 85,
+          "overall_rank_percentage": "43",
           "bank": 0,
           "value": 1006,
           "event_transfers": 2,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 6
         },
         "automatic_subs": []
       }
@@ -23037,18 +23128,18 @@
         "active_chip": "freehit",
         "entry_history": {
           "event": 5,
-          "points": 2,
-          "total_points": 182,
-          "rank": 4258277,
-          "rank_sort": 4559758,
-          "overall_rank": 9171650,
-          "percentile_rank": 40,
-          "overall_rank_percentage": "85",
+          "points": 30,
+          "total_points": 210,
+          "rank": 1307055,
+          "rank_sort": 1323248,
+          "overall_rank": 8613500,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "80",
           "bank": 21,
           "value": 1014,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 2
+          "points_on_bench": 3
         },
         "automatic_subs": []
       }
@@ -23751,18 +23842,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 5,
-          "points": 0,
-          "total_points": 282,
-          "rank": 9618213,
-          "rank_sort": 9626257,
-          "overall_rank": 2009585,
-          "percentile_rank": 90,
-          "overall_rank_percentage": "18",
+          "points": 13,
+          "total_points": 295,
+          "rank": 6959502,
+          "rank_sort": 6961298,
+          "overall_rank": 2304443,
+          "percentile_rank": 65,
+          "overall_rank_percentage": "21",
           "bank": 0,
           "value": 1005,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 21
         },
         "automatic_subs": []
       }
@@ -23805,6 +23896,62 @@
         "entry": 2067578,
         "event": 2,
         "time": "2026-08-25T00:27:33.395226Z"
+      }
+    ],
+    "2023789": [
+      {
+        "element_in": 286,
+        "element_in_cost": 50,
+        "element_out": 398,
+        "element_out_cost": 70,
+        "entry": 2023789,
+        "event": 5,
+        "time": "2026-09-15T03:39:35.828725Z"
+      },
+      {
+        "element_in": 572,
+        "element_in_cost": 46,
+        "element_out": 28,
+        "element_out_cost": 50,
+        "entry": 2023789,
+        "event": 5,
+        "time": "2026-09-15T03:39:35.823460Z"
+      },
+      {
+        "element_in": 204,
+        "element_in_cost": 45,
+        "element_out": 357,
+        "element_out_cost": 54,
+        "entry": 2023789,
+        "event": 4,
+        "time": "2026-09-10T12:09:21.170780Z"
+      },
+      {
+        "element_in": 165,
+        "element_in_cost": 77,
+        "element_out": 569,
+        "element_out_cost": 60,
+        "entry": 2023789,
+        "event": 4,
+        "time": "2026-09-10T12:09:21.164924Z"
+      },
+      {
+        "element_in": 398,
+        "element_in_cost": 70,
+        "element_out": 397,
+        "element_out_cost": 85,
+        "entry": 2023789,
+        "event": 3,
+        "time": "2026-09-04T08:42:22.837756Z"
+      },
+      {
+        "element_in": 569,
+        "element_in_cost": 60,
+        "element_out": 463,
+        "element_out_cost": 60,
+        "entry": 2023789,
+        "event": 2,
+        "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
     "2024611": [
@@ -23942,62 +24089,6 @@
         "entry": 2024611,
         "event": 3,
         "time": "2026-08-29T11:29:00.909893Z"
-      }
-    ],
-    "2023789": [
-      {
-        "element_in": 286,
-        "element_in_cost": 50,
-        "element_out": 398,
-        "element_out_cost": 70,
-        "entry": 2023789,
-        "event": 5,
-        "time": "2026-09-15T03:39:35.828725Z"
-      },
-      {
-        "element_in": 572,
-        "element_in_cost": 46,
-        "element_out": 28,
-        "element_out_cost": 50,
-        "entry": 2023789,
-        "event": 5,
-        "time": "2026-09-15T03:39:35.823460Z"
-      },
-      {
-        "element_in": 204,
-        "element_in_cost": 45,
-        "element_out": 357,
-        "element_out_cost": 54,
-        "entry": 2023789,
-        "event": 4,
-        "time": "2026-09-10T12:09:21.170780Z"
-      },
-      {
-        "element_in": 165,
-        "element_in_cost": 77,
-        "element_out": 569,
-        "element_out_cost": 60,
-        "entry": 2023789,
-        "event": 4,
-        "time": "2026-09-10T12:09:21.164924Z"
-      },
-      {
-        "element_in": 398,
-        "element_in_cost": 70,
-        "element_out": 397,
-        "element_out_cost": 85,
-        "entry": 2023789,
-        "event": 3,
-        "time": "2026-09-04T08:42:22.837756Z"
-      },
-      {
-        "element_in": 569,
-        "element_in_cost": 60,
-        "element_out": 463,
-        "element_out_cost": 60,
-        "entry": 2023789,
-        "event": 2,
-        "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
     "2019453": [
@@ -25057,16 +25148,16 @@
           "avatar": "KU"
         },
         {
-          "id": 2024611,
-          "name": "Vibol Dang",
-          "teamName": "The White Emperor",
-          "avatar": "VI"
-        },
-        {
           "id": 2023789,
           "name": "Monor Noem",
           "teamName": "NORA FC",
           "avatar": "MO"
+        },
+        {
+          "id": 2024611,
+          "name": "Vibol Dang",
+          "teamName": "The White Emperor",
+          "avatar": "VI"
         },
         {
           "id": 2019453,
@@ -25098,8 +25189,8 @@
           "gw": 1,
           "scores": {
             "2067578": 66,
-            "2024611": 54,
             "2023789": 72,
+            "2024611": 54,
             "2019453": 41,
             "2023013": 52,
             "2026160": 49,
@@ -25107,8 +25198,8 @@
           },
           "hits": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 0,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 0,
             "2026160": 0,
@@ -25116,8 +25207,8 @@
           },
           "transfers": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 0,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 0,
             "2026160": 0,
@@ -25125,8 +25216,8 @@
           },
           "benchPoints": {
             "2067578": 11,
-            "2024611": 3,
             "2023789": 0,
+            "2024611": 3,
             "2019453": 11,
             "2023013": 4,
             "2026160": 0,
@@ -25134,8 +25225,8 @@
           },
           "captainPoints": {
             "2067578": 4,
-            "2024611": 4,
             "2023789": 4,
+            "2024611": 4,
             "2019453": 4,
             "2023013": 4,
             "2026160": 4,
@@ -25146,8 +25237,8 @@
           },
           "seasonTotals": {
             "2067578": 66,
-            "2024611": 54,
             "2023789": 72,
+            "2024611": 54,
             "2019453": 41,
             "2023013": 52,
             "2026160": 49,
@@ -25158,8 +25249,8 @@
           "gw": 2,
           "scores": {
             "2067578": 80,
-            "2024611": 73,
             "2023789": 74,
+            "2024611": 73,
             "2019453": 87,
             "2023013": 76,
             "2026160": 76,
@@ -25167,8 +25258,8 @@
           },
           "hits": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 0,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 0,
             "2026160": 0,
@@ -25176,8 +25267,8 @@
           },
           "transfers": {
             "2067578": 1,
-            "2024611": 0,
             "2023789": 1,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 1,
             "2026160": 1,
@@ -25185,8 +25276,8 @@
           },
           "benchPoints": {
             "2067578": 11,
-            "2024611": 0,
             "2023789": 4,
+            "2024611": 0,
             "2019453": 3,
             "2023013": 6,
             "2026160": 15,
@@ -25194,8 +25285,8 @@
           },
           "captainPoints": {
             "2067578": 26,
-            "2024611": 26,
             "2023789": 26,
+            "2024611": 26,
             "2019453": 26,
             "2023013": 26,
             "2026160": 18,
@@ -25206,8 +25297,8 @@
           },
           "seasonTotals": {
             "2067578": 146,
-            "2024611": 127,
             "2023789": 146,
+            "2024611": 127,
             "2019453": 128,
             "2023013": 128,
             "2026160": 125,
@@ -25218,8 +25309,8 @@
           "gw": 3,
           "scores": {
             "2067578": 55,
-            "2024611": 47,
             "2023789": 52,
+            "2024611": 47,
             "2019453": 63,
             "2023013": 74,
             "2026160": 58,
@@ -25227,8 +25318,8 @@
           },
           "hits": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 0,
+            "2024611": 0,
             "2019453": 4,
             "2023013": 0,
             "2026160": 0,
@@ -25236,8 +25327,8 @@
           },
           "transfers": {
             "2067578": 1,
-            "2024611": 2,
             "2023789": 1,
+            "2024611": 2,
             "2019453": 3,
             "2023013": 1,
             "2026160": 1,
@@ -25245,8 +25336,8 @@
           },
           "benchPoints": {
             "2067578": 21,
-            "2024611": 0,
             "2023789": 6,
+            "2024611": 0,
             "2019453": 11,
             "2023013": 4,
             "2026160": 5,
@@ -25254,8 +25345,8 @@
           },
           "captainPoints": {
             "2067578": 18,
-            "2024611": 18,
             "2023789": 18,
+            "2024611": 18,
             "2019453": 18,
             "2023013": 18,
             "2026160": 18,
@@ -25266,8 +25357,8 @@
           },
           "seasonTotals": {
             "2067578": 201,
-            "2024611": 174,
             "2023789": 198,
+            "2024611": 174,
             "2019453": 187,
             "2023013": 202,
             "2026160": 183,
@@ -25278,8 +25369,8 @@
           "gw": 4,
           "scores": {
             "2067578": 78,
-            "2024611": 102,
             "2023789": 73,
+            "2024611": 102,
             "2019453": 72,
             "2023013": 59,
             "2026160": 60,
@@ -25287,8 +25378,8 @@
           },
           "hits": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 4,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 0,
             "2026160": 4,
@@ -25296,8 +25387,8 @@
           },
           "transfers": {
             "2067578": 1,
-            "2024611": 0,
             "2023789": 2,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 1,
             "2026160": 2,
@@ -25305,8 +25396,8 @@
           },
           "benchPoints": {
             "2067578": 18,
-            "2024611": 4,
             "2023789": -1,
+            "2024611": 4,
             "2019453": 8,
             "2023013": 1,
             "2026160": 4,
@@ -25314,8 +25405,8 @@
           },
           "captainPoints": {
             "2067578": 24,
-            "2024611": 18,
             "2023789": 24,
+            "2024611": 18,
             "2019453": 18,
             "2023013": 4,
             "2026160": 24,
@@ -25327,8 +25418,8 @@
           },
           "seasonTotals": {
             "2067578": 279,
-            "2024611": 276,
             "2023789": 267,
+            "2024611": 276,
             "2019453": 259,
             "2023013": 261,
             "2026160": 239,
@@ -25338,18 +25429,18 @@
         {
           "gw": 5,
           "scores": {
-            "2067578": 2,
-            "2024611": 2,
-            "2023789": 5,
-            "2019453": 2,
-            "2023013": 0,
-            "2026160": 0,
-            "2026484": 2
+            "2067578": 11,
+            "2023789": 23,
+            "2024611": 10,
+            "2019453": 9,
+            "2023013": 3,
+            "2026160": 18,
+            "2026484": 30
           },
           "hits": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 4,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 0,
             "2026160": 4,
@@ -25357,26 +25448,26 @@
           },
           "transfers": {
             "2067578": 1,
-            "2024611": 1,
             "2023789": 2,
+            "2024611": 1,
             "2019453": 2,
             "2023013": 1,
             "2026160": 2,
             "2026484": 60
           },
           "benchPoints": {
-            "2067578": 0,
-            "2024611": 0,
-            "2023789": 0,
-            "2019453": 0,
-            "2023013": 0,
+            "2067578": 7,
+            "2023789": -1,
+            "2024611": 6,
+            "2019453": 6,
+            "2023013": 5,
             "2026160": 0,
-            "2026484": 2
+            "2026484": 3
           },
           "captainPoints": {
             "2067578": 0,
-            "2024611": 0,
             "2023789": 0,
+            "2024611": 0,
             "2019453": 0,
             "2023013": 0,
             "2026160": 0,
@@ -25386,13 +25477,13 @@
             "2026484": "freehit"
           },
           "seasonTotals": {
-            "2067578": 281,
-            "2024611": 278,
-            "2023789": 268,
-            "2019453": 261,
-            "2023013": 261,
-            "2026160": 235,
-            "2026484": 182
+            "2067578": 290,
+            "2023789": 286,
+            "2024611": 286,
+            "2019453": 268,
+            "2023013": 264,
+            "2026160": 253,
+            "2026484": 210
           }
         },
         {
@@ -25950,8 +26041,8 @@
         {
           "gw": 5,
           "scores": {
-            "145847": 0,
-            "2019453": 2
+            "145847": 13,
+            "2019453": 9
           },
           "hits": {
             "145847": 0,
@@ -25962,8 +26053,8 @@
             "2019453": 2
           },
           "benchPoints": {
-            "145847": 0,
-            "2019453": 0
+            "145847": 21,
+            "2019453": 6
           },
           "captainPoints": {
             "145847": 0,
@@ -25971,8 +26062,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 282,
-            "2019453": 261
+            "145847": 295,
+            "2019453": 268
           }
         },
         {
