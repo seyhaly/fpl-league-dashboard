@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-19T09:44:46Z",
+  "lastUpdated": "2026-09-19T13:25:11Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -68,7 +68,7 @@
           "bonus_added": false,
           "date": "2026-09-19",
           "event": 5,
-          "points": ""
+          "points": "l"
         },
         {
           "bonus_added": false,
@@ -1102,8 +1102,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "30": {
       "id": 30,
@@ -1120,8 +1120,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "32": {
       "id": 32,
@@ -1132,14 +1132,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 44,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "33": {
       "id": 33,
@@ -1150,14 +1150,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "34": {
       "id": 34,
@@ -1174,8 +1174,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "35": {
       "id": 35,
@@ -1192,8 +1192,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "36": {
       "id": 36,
@@ -1210,8 +1210,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "37": {
       "id": 37,
@@ -1222,14 +1222,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "38": {
       "id": 38,
@@ -1246,8 +1246,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "39": {
       "id": 39,
@@ -1264,8 +1264,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "41": {
       "id": 41,
@@ -1276,14 +1276,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 11,
       "now_cost": "5.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "44": {
       "id": 44,
@@ -1300,8 +1300,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "45": {
       "id": 45,
@@ -1312,14 +1312,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "46": {
       "id": 46,
@@ -1330,14 +1330,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 5,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "47": {
       "id": 47,
@@ -1348,14 +1348,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "48": {
       "id": 48,
@@ -1372,8 +1372,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "49": {
       "id": 49,
@@ -1390,8 +1390,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "50": {
       "id": 50,
@@ -1408,8 +1408,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "51": {
       "id": 51,
@@ -1420,14 +1420,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 17,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "52": {
       "id": 52,
@@ -1444,8 +1444,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "53": {
       "id": 53,
@@ -1456,14 +1456,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 14,
       "now_cost": "5.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "54": {
       "id": 54,
@@ -1474,14 +1474,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "55": {
       "id": 55,
@@ -1498,8 +1498,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "56": {
       "id": 56,
@@ -1510,14 +1510,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 1,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "160": {
       "id": 160,
@@ -1534,8 +1534,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "166": {
       "id": 166,
@@ -1546,14 +1546,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "6.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 87,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "582": {
       "id": 582,
@@ -1570,8 +1570,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "596": {
       "id": 596,
@@ -1582,14 +1582,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "597": {
       "id": 597,
@@ -1600,14 +1600,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "606": {
       "id": 606,
@@ -1624,8 +1624,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "607": {
       "id": 607,
@@ -1642,8 +1642,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "611": {
       "id": 611,
@@ -1654,14 +1654,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "618": {
       "id": 618,
@@ -1678,8 +1678,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "630": {
       "id": 630,
@@ -1696,8 +1696,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "631": {
       "id": 631,
@@ -1708,14 +1708,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 5,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "57": {
       "id": 57,
@@ -11235,9 +11235,9 @@
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "147": {
       "id": 147,
@@ -11254,8 +11254,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "401": {
       "id": 401,
@@ -11266,14 +11266,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "403": {
       "id": 403,
@@ -11284,14 +11284,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "455": {
       "id": 455,
@@ -11302,14 +11302,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.3",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "494": {
       "id": 494,
@@ -11326,8 +11326,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "495": {
       "id": 495,
@@ -11344,8 +11344,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "496": {
       "id": 496,
@@ -11356,14 +11356,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "497": {
       "id": 497,
@@ -11380,8 +11380,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "498": {
       "id": 498,
@@ -11398,8 +11398,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "499": {
       "id": 499,
@@ -11410,14 +11410,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "500": {
       "id": 500,
@@ -11434,8 +11434,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "502": {
       "id": 502,
@@ -11446,14 +11446,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "503": {
       "id": 503,
@@ -11464,14 +11464,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "505": {
       "id": 505,
@@ -11488,8 +11488,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "506": {
       "id": 506,
@@ -11506,8 +11506,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "507": {
       "id": 507,
@@ -11524,8 +11524,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "508": {
       "id": 508,
@@ -11542,8 +11542,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "509": {
       "id": 509,
@@ -11560,8 +11560,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "510": {
       "id": 510,
@@ -11578,8 +11578,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "511": {
       "id": 511,
@@ -11596,8 +11596,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "512": {
       "id": 512,
@@ -11608,14 +11608,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "6.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 44,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "513": {
       "id": 513,
@@ -11632,8 +11632,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "514": {
       "id": 514,
@@ -11650,8 +11650,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "515": {
       "id": 515,
@@ -11662,14 +11662,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.3",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 23,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "516": {
       "id": 516,
@@ -11680,14 +11680,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "517": {
       "id": 517,
@@ -11704,8 +11704,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "518": {
       "id": 518,
@@ -11722,8 +11722,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "519": {
       "id": 519,
@@ -11734,14 +11734,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.3",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 5,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "520": {
       "id": 520,
@@ -11752,14 +11752,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 5,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "521": {
       "id": 521,
@@ -11776,8 +11776,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "522": {
       "id": 522,
@@ -11788,14 +11788,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "523": {
       "id": 523,
@@ -11812,8 +11812,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "524": {
       "id": 524,
@@ -11830,8 +11830,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "525": {
       "id": 525,
@@ -11842,14 +11842,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "526": {
       "id": 526,
@@ -11860,14 +11860,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 65,
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "527": {
       "id": 527,
@@ -11884,8 +11884,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "528": {
       "id": 528,
@@ -11902,8 +11902,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "578": {
       "id": 578,
@@ -11920,8 +11920,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "601": {
       "id": 601,
@@ -11938,8 +11938,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (89')"
     },
     "501": {
       "id": 501,
@@ -15072,31 +15072,31 @@
       "29": 0,
       "30": 0,
       "31": 0,
-      "32": 0,
-      "33": 0,
+      "32": 1,
+      "33": 4,
       "34": 0,
       "35": 0,
       "36": 0,
-      "37": 0,
+      "37": 2,
       "38": 0,
       "39": 0,
       "40": 2,
-      "41": 0,
+      "41": 11,
       "42": 0,
       "43": 0,
       "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
+      "45": 6,
+      "46": 1,
+      "47": 6,
       "48": 0,
       "49": 0,
       "50": 0,
-      "51": 0,
+      "51": 1,
       "52": 0,
-      "53": 0,
-      "54": 0,
+      "53": 14,
+      "54": 2,
       "55": 0,
-      "56": 0,
+      "56": 1,
       "57": 0,
       "58": 0,
       "59": 0,
@@ -15206,7 +15206,7 @@
       "163": 0,
       "164": 1,
       "165": 0,
-      "166": 0,
+      "166": 6,
       "167": 0,
       "168": 0,
       "169": 0,
@@ -15441,9 +15441,9 @@
       "398": 0,
       "399": 0,
       "400": 0,
-      "401": 0,
+      "401": 2,
       "402": 0,
-      "403": 0,
+      "403": 2,
       "404": 0,
       "405": 0,
       "406": 0,
@@ -15495,7 +15495,7 @@
       "452": 0,
       "453": 0,
       "454": 0,
-      "455": 0,
+      "455": 2,
       "456": 0,
       "457": 0,
       "458": 0,
@@ -15536,14 +15536,14 @@
       "493": 0,
       "494": 0,
       "495": 0,
-      "496": 0,
+      "496": 2,
       "497": 0,
       "498": 0,
-      "499": 0,
+      "499": 1,
       "500": 0,
       "501": 0,
-      "502": 0,
-      "503": 0,
+      "502": 1,
+      "503": 1,
       "504": 0,
       "505": 0,
       "506": 0,
@@ -15552,21 +15552,21 @@
       "509": 0,
       "510": 0,
       "511": 0,
-      "512": 0,
+      "512": 4,
       "513": 0,
       "514": 0,
-      "515": 0,
-      "516": 0,
+      "515": 1,
+      "516": 4,
       "517": 0,
       "518": 0,
-      "519": 0,
-      "520": 0,
+      "519": 6,
+      "520": 1,
       "521": 0,
-      "522": 0,
+      "522": 2,
       "523": 0,
       "524": 0,
-      "525": 0,
-      "526": 0,
+      "525": 1,
+      "526": 2,
       "527": 0,
       "528": 0,
       "529": 0,
@@ -15636,8 +15636,8 @@
       "593": 0,
       "594": 0,
       "595": 0,
-      "596": 0,
-      "597": 0,
+      "596": 4,
+      "597": 3,
       "598": 0,
       "599": 0,
       "600": 0,
@@ -15651,7 +15651,7 @@
       "608": 0,
       "609": 0,
       "610": 0,
-      "611": 0,
+      "611": 1,
       "612": 0,
       "613": 0,
       "614": 0,
@@ -15671,7 +15671,7 @@
       "628": 0,
       "629": 0,
       "630": 0,
-      "631": 0,
+      "631": 1,
       "632": 0,
       "633": 0,
       "634": 0,
@@ -16066,14 +16066,367 @@
       "finished_provisional": false,
       "id": 48,
       "kickoff_time": "2026-09-19T11:30:00Z",
-      "minutes": 0,
+      "minutes": 89,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 2,
-      "team_a_score": null,
+      "team_a_score": 3,
       "team_h": 19,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 1,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 41
+            },
+            {
+              "value": 1,
+              "element": 53
+            },
+            {
+              "value": 1,
+              "element": 166
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 519
+            }
+          ]
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 45
+            },
+            {
+              "value": 1,
+              "element": 47
+            },
+            {
+              "value": 1,
+              "element": 53
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 512
+            }
+          ]
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 166
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 112
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 4,
+              "element": 597
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 496
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 53
+            },
+            {
+              "value": 2,
+              "element": 41
+            },
+            {
+              "value": 1,
+              "element": 166
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 45,
+              "element": 53
+            },
+            {
+              "value": 42,
+              "element": 41
+            },
+            {
+              "value": 33,
+              "element": 166
+            },
+            {
+              "value": 25,
+              "element": 47
+            },
+            {
+              "value": 20,
+              "element": 45
+            },
+            {
+              "value": 19,
+              "element": 597
+            },
+            {
+              "value": 12,
+              "element": 33
+            },
+            {
+              "value": 11,
+              "element": 54
+            },
+            {
+              "value": 11,
+              "element": 596
+            },
+            {
+              "value": 6,
+              "element": 611
+            },
+            {
+              "value": 4,
+              "element": 37
+            },
+            {
+              "value": 3,
+              "element": 46
+            },
+            {
+              "value": 3,
+              "element": 51
+            },
+            {
+              "value": 3,
+              "element": 56
+            },
+            {
+              "value": 3,
+              "element": 631
+            }
+          ],
+          "h": [
+            {
+              "value": 24,
+              "element": 403
+            },
+            {
+              "value": 23,
+              "element": 519
+            },
+            {
+              "value": 20,
+              "element": 455
+            },
+            {
+              "value": 18,
+              "element": 512
+            },
+            {
+              "value": 15,
+              "element": 516
+            },
+            {
+              "value": 11,
+              "element": 401
+            },
+            {
+              "value": 9,
+              "element": 526
+            },
+            {
+              "value": 8,
+              "element": 503
+            },
+            {
+              "value": 7,
+              "element": 522
+            },
+            {
+              "value": 5,
+              "element": 496
+            },
+            {
+              "value": 4,
+              "element": 499
+            },
+            {
+              "value": 4,
+              "element": 515
+            },
+            {
+              "value": 3,
+              "element": 520
+            },
+            {
+              "value": 2,
+              "element": 502
+            },
+            {
+              "value": 2,
+              "element": 525
+            },
+            {
+              "value": -1,
+              "element": 112
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 13,
+              "element": 41
+            },
+            {
+              "value": 13,
+              "element": 596
+            },
+            {
+              "value": 11,
+              "element": 54
+            },
+            {
+              "value": 10,
+              "element": 33
+            },
+            {
+              "value": 7,
+              "element": 53
+            },
+            {
+              "value": 6,
+              "element": 45
+            },
+            {
+              "value": 6,
+              "element": 47
+            },
+            {
+              "value": 6,
+              "element": 611
+            },
+            {
+              "value": 5,
+              "element": 37
+            },
+            {
+              "value": 4,
+              "element": 166
+            },
+            {
+              "value": 3,
+              "element": 32
+            },
+            {
+              "value": 2,
+              "element": 46
+            }
+          ],
+          "h": [
+            {
+              "value": 17,
+              "element": 516
+            },
+            {
+              "value": 11,
+              "element": 455
+            },
+            {
+              "value": 9,
+              "element": 112
+            },
+            {
+              "value": 7,
+              "element": 525
+            },
+            {
+              "value": 6,
+              "element": 512
+            },
+            {
+              "value": 6,
+              "element": 526
+            },
+            {
+              "value": 5,
+              "element": 503
+            },
+            {
+              "value": 5,
+              "element": 522
+            },
+            {
+              "value": 4,
+              "element": 401
+            },
+            {
+              "value": 4,
+              "element": 403
+            },
+            {
+              "value": 3,
+              "element": 502
+            },
+            {
+              "value": 1,
+              "element": 499
+            },
+            {
+              "value": 1,
+              "element": 515
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 3,
       "team_a_difficulty": 3,
       "pulse_id": 0
