@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-18T23:12:13Z",
+  "lastUpdated": "2026-09-19T01:09:55Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -55,7 +55,7 @@
       "is_next": false,
       "deadline_time": "2026-09-18T17:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -15918,7 +15918,7 @@
               "element": 88
             },
             {
-              "value": 18,
+              "value": 19,
               "element": 102
             },
             {
@@ -15926,7 +15926,7 @@
               "element": 86
             },
             {
-              "value": 13,
+              "value": 15,
               "element": 96
             },
             {
@@ -16005,8 +16005,16 @@
               "element": 93
             },
             {
-              "value": 11,
+              "value": 10,
+              "element": 96
+            },
+            {
+              "value": 10,
               "element": 102
+            },
+            {
+              "value": 9,
+              "element": 86
             },
             {
               "value": 9,
@@ -16014,15 +16022,7 @@
             },
             {
               "value": 9,
-              "element": 96
-            },
-            {
-              "value": 9,
               "element": 98
-            },
-            {
-              "value": 8,
-              "element": 86
             },
             {
               "value": 7,
