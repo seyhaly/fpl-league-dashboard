@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-20T19:15:29Z",
+  "lastUpdated": "2026-09-20T21:33:58Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -55,7 +55,7 @@
       "is_next": false,
       "deadline_time": "2026-09-18T17:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "p",
       "daily_status": [
         {
@@ -19305,8 +19305,12 @@
               "element": 418
             },
             {
-              "value": 3,
+              "value": 4,
               "element": 419
+            },
+            {
+              "value": 4,
+              "element": 427
             },
             {
               "value": 3,
@@ -19314,11 +19318,11 @@
             },
             {
               "value": 3,
-              "element": 427
+              "element": 428
             },
             {
-              "value": 3,
-              "element": 428
+              "value": 2,
+              "element": 415
             },
             {
               "value": 2,
@@ -19327,10 +19331,6 @@
             {
               "value": 2,
               "element": 429
-            },
-            {
-              "value": 1,
-              "element": 415
             },
             {
               "value": 1,
@@ -19363,7 +19363,7 @@
               "element": 254
             },
             {
-              "value": 6,
+              "value": 7,
               "element": 261
             },
             {
@@ -19396,11 +19396,11 @@
             },
             {
               "value": 2,
-              "element": 271
+              "element": 569
             },
             {
-              "value": 2,
-              "element": 569
+              "value": 1,
+              "element": 271
             }
           ]
         }
