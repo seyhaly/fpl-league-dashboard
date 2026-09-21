@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-21T13:04:02Z",
+  "lastUpdated": "2026-09-21T18:36:41Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -48,14 +48,14 @@
     },
     "5": {
       "gw": 5,
-      "finished": false,
-      "data_checked": false,
+      "finished": true,
+      "data_checked": true,
       "is_current": true,
       "is_previous": false,
       "is_next": false,
       "deadline_time": "2026-09-18T17:30:00Z",
       "bonus_added": true,
-      "leagues": "Updating",
+      "leagues": "Updated",
       "points": "r",
       "daily_status": [
         {
@@ -129,7 +129,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-11-07T13:30:00Z",
+      "deadline_time": "2026-11-06T18:30:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -140,7 +140,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-11-21T13:30:00Z",
+      "deadline_time": "2026-11-21T11:00:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -151,7 +151,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-11-28T13:30:00Z",
+      "deadline_time": "2026-11-27T18:30:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
