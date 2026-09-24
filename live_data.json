@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23T22:32:15Z",
+  "lastUpdated": "2026-09-24T00:49:47Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -6371,7 +6371,7 @@
       "team_name": "Hull City",
       "team_id": 11,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
