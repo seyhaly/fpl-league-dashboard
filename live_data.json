@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-25T22:21:19Z",
+  "lastUpdated": "2026-09-26T00:41:43Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -809,7 +809,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 1,
-      "now_cost": "6.3",
+      "now_cost": "6.2",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -2861,7 +2861,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 6,
-      "now_cost": "4.9",
+      "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
@@ -3203,7 +3203,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
@@ -5291,7 +5291,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
