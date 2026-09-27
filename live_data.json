@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-26T22:51:06Z",
+  "lastUpdated": "2026-09-27T00:58:30Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -6263,7 +6263,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
