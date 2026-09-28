@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-27T22:22:23Z",
+  "lastUpdated": "2026-09-28T00:56:02Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -3941,7 +3941,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -5777,7 +5777,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 6,
-      "now_cost": "5.6",
+      "now_cost": "5.7",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
