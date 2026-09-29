@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-28T20:14:02Z",
+  "lastUpdated": "2026-09-29T00:22:00Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -5381,7 +5381,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -6875,7 +6875,7 @@
       "team_name": "Hull City",
       "team_id": 11,
       "event_points": 0,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
@@ -12095,7 +12095,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 5,
@@ -12311,7 +12311,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 5,
