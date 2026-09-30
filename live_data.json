@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T21:15:44Z",
+  "lastUpdated": "2026-09-30T00:27:56Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -1169,7 +1169,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -4517,7 +4517,7 @@
       "team_name": "Coventry City",
       "team_id": 7,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -8459,7 +8459,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 6,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
