@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-30T21:03:47Z",
+  "lastUpdated": "2026-10-01T00:29:38Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -863,7 +863,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 1,
-      "now_cost": "5.8",
+      "now_cost": "5.7",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -4805,7 +4805,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 8,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -5471,7 +5471,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 14,
-      "now_cost": "6.1",
+      "now_cost": "6.2",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -9791,7 +9791,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "4.4",
+      "now_cost": "4.3",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
