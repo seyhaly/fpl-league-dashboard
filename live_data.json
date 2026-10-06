@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-05T22:12:57Z",
+  "lastUpdated": "2026-10-06T02:17:58Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -701,7 +701,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 1,
-      "now_cost": "5.8",
+      "now_cost": "5.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -773,7 +773,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 2,
-      "now_cost": "9.5",
+      "now_cost": "9.6",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -10403,7 +10403,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
