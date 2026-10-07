@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-07T18:50:02Z",
+  "lastUpdated": "2026-10-07T23:20:54Z",
   "currentGw": 5,
   "eventStatuses": {
     "1": {
@@ -7253,7 +7253,7 @@
       "team_name": "Ipswich Town",
       "team_id": 12,
       "event_points": 0,
-      "now_cost": "4.0",
+      "now_cost": "3.9",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
@@ -9485,7 +9485,7 @@
       "team_name": "Man City",
       "team_id": 15,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
