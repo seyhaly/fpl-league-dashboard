@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-15T22:08:23Z",
+  "lastUpdated": "2026-10-16T00:19:23Z",
   "currentGw": 6,
   "eventStatuses": {
     "1": {
@@ -1079,7 +1079,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "6.3",
+      "now_cost": "6.2",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -10115,7 +10115,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "7.0",
+      "now_cost": "6.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 2,
@@ -11231,7 +11231,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "5.8",
+      "now_cost": "5.7",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 3,
