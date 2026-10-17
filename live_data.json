@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T18:23:48Z",
+  "lastUpdated": "2026-10-17T20:45:05Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -77,14 +77,14 @@
       "is_next": false,
       "deadline_time": "2026-10-17T10:00:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
           "bonus_added": false,
           "date": "2026-10-17",
           "event": 7,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -10312,7 +10312,7 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 2,
+      "event_points": 4,
       "now_cost": "5.3",
       "opponent": "AVL",
       "opponent_short": "AVL",
@@ -16917,7 +16917,7 @@
       "446": 0,
       "447": 3,
       "448": 1,
-      "449": 2,
+      "449": 4,
       "450": 0,
       "451": 0,
       "452": 0,
@@ -17722,7 +17722,7 @@
               "element": 87
             },
             {
-              "value": 14,
+              "value": 11,
               "element": 106
             },
             {
@@ -17754,7 +17754,11 @@
               "element": 565
             },
             {
-              "value": 5,
+              "value": 4,
+              "element": 98
+            },
+            {
+              "value": 3,
               "element": 94
             },
             {
@@ -17764,10 +17768,6 @@
             {
               "value": 2,
               "element": 97
-            },
-            {
-              "value": 2,
-              "element": 98
             },
             {
               "value": 1,
@@ -17783,12 +17783,12 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 14,
-              "element": 362
+              "value": 13,
+              "element": 356
             },
             {
               "value": 13,
-              "element": 356
+              "element": 362
             },
             {
               "value": 9,
@@ -17803,12 +17803,12 @@
               "element": 358
             },
             {
-              "value": 6,
-              "element": 368
+              "value": 7,
+              "element": 375
             },
             {
               "value": 6,
-              "element": 375
+              "element": 368
             },
             {
               "value": 5,
@@ -17841,7 +17841,7 @@
               "element": 87
             },
             {
-              "value": 10,
+              "value": 11,
               "element": 98
             },
             {
@@ -17865,12 +17865,12 @@
               "element": 88
             },
             {
-              "value": 6,
-              "element": 94
+              "value": 5,
+              "element": 86
             },
             {
               "value": 5,
-              "element": 86
+              "element": 94
             },
             {
               "value": 4,
@@ -18669,7 +18669,7 @@
       "code": 2645262,
       "event": 7,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 68,
       "kickoff_time": "2026-10-17T16:30:00Z",
       "minutes": 90,
@@ -18800,11 +18800,11 @@
               "element": 53
             },
             {
-              "value": 26,
+              "value": 27,
               "element": 37
             },
             {
-              "value": 26,
+              "value": 27,
               "element": 597
             },
             {
@@ -18824,7 +18824,7 @@
               "element": 32
             },
             {
-              "value": 19,
+              "value": 21,
               "element": 47
             },
             {
@@ -18833,11 +18833,11 @@
             },
             {
               "value": 11,
-              "element": 46
+              "element": 45
             },
             {
-              "value": 10,
-              "element": 45
+              "value": 11,
+              "element": 46
             },
             {
               "value": 10,
@@ -18862,12 +18862,16 @@
           ],
           "h": [
             {
-              "value": 18,
+              "value": 17,
               "element": 449
             },
             {
               "value": 16,
               "element": 459
+            },
+            {
+              "value": 12,
+              "element": 453
             },
             {
               "value": 12,
@@ -18878,10 +18882,6 @@
               "element": 405
             },
             {
-              "value": 11,
-              "element": 453
-            },
-            {
               "value": 10,
               "element": 567
             },
@@ -18890,12 +18890,12 @@
               "element": 445
             },
             {
-              "value": 7,
-              "element": 448
-            },
-            {
               "value": 6,
               "element": 447
+            },
+            {
+              "value": 5,
+              "element": 448
             },
             {
               "value": 5,
@@ -18919,11 +18919,11 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 16,
+              "value": 17,
               "element": 47
             },
             {
-              "value": 11,
+              "value": 12,
               "element": 37
             },
             {
@@ -18935,8 +18935,12 @@
               "element": 32
             },
             {
-              "value": 9,
+              "value": 10,
               "element": 45
+            },
+            {
+              "value": 7,
+              "element": 33
             },
             {
               "value": 7,
@@ -18944,10 +18948,6 @@
             },
             {
               "value": 6,
-              "element": 33
-            },
-            {
-              "value": 5,
               "element": 46
             },
             {
@@ -18993,12 +18993,12 @@
               "element": 447
             },
             {
-              "value": 9,
-              "element": 445
+              "value": 10,
+              "element": 449
             },
             {
               "value": 9,
-              "element": 449
+              "element": 445
             },
             {
               "value": 6,
@@ -19018,15 +19018,15 @@
             },
             {
               "value": 2,
-              "element": 448
-            },
-            {
-              "value": 2,
               "element": 460
             },
             {
               "value": 2,
               "element": 634
+            },
+            {
+              "value": 1,
+              "element": 448
             }
           ]
         }
@@ -20183,18 +20183,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 368,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3799670,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 21,
+          "total_points": 389,
+          "rank": 8499190,
+          "rank_sort": 8505463,
+          "overall_rank": 4498497,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "41",
           "bank": 19,
           "value": 1004,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 8
         },
         "automatic_subs": []
       }
@@ -21212,18 +21212,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 391,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2148058,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 33,
+          "total_points": 424,
+          "rank": 4905114,
+          "rank_sort": 4938111,
+          "overall_rank": 2139766,
+          "percentile_rank": 45,
+          "overall_rank_percentage": "19",
           "bank": 21,
           "value": 1017,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 2
         },
         "automatic_subs": []
       }
@@ -22215,18 +22215,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 392,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2102328,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 44,
+          "total_points": 436,
+          "rank": 962304,
+          "rank_sort": 974996,
+          "overall_rank": 1484828,
+          "percentile_rank": 10,
+          "overall_rank_percentage": "13",
           "bank": 18,
           "value": 1017,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 10
         },
         "automatic_subs": []
       }
@@ -23225,13 +23225,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 363,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 4205578,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 19,
+          "total_points": 382,
+          "rank": 8869388,
+          "rank_sort": 8875715,
+          "overall_rank": 5005972,
+          "percentile_rank": 85,
+          "overall_rank_percentage": "45",
           "bank": 22,
           "value": 1005,
           "event_transfers": 1,
@@ -24267,13 +24267,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 371,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3542043,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 24,
+          "total_points": 395,
+          "rank": 8004366,
+          "rank_sort": 8006416,
+          "overall_rank": 4061691,
+          "percentile_rank": 75,
+          "overall_rank_percentage": "37",
           "bank": 6,
           "value": 1020,
           "event_transfers": 2,
@@ -25277,13 +25277,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 361,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 4338290,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 35,
+          "total_points": 396,
+          "rank": 3414537,
+          "rank_sort": 3457984,
+          "overall_rank": 3991608,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "36",
           "bank": 0,
           "value": 1004,
           "event_transfers": 0,
@@ -26266,18 +26266,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 288,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 8692443,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 10,
+          "total_points": 298,
+          "rank": 10307160,
+          "rank_sort": 10313546,
+          "overall_rank": 9110597,
+          "percentile_rank": 95,
+          "overall_rank_percentage": "82",
           "bank": 42,
           "value": 1026,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 4
         },
         "automatic_subs": []
       }
@@ -27276,13 +27276,13 @@
         "active_chip": "wildcard",
         "entry_history": {
           "event": 7,
-          "points": 0,
-          "total_points": 383,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2671593,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 21,
+          "total_points": 404,
+          "rank": 8358272,
+          "rank_sort": 8358951,
+          "overall_rank": 3420347,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "31",
           "bank": 1,
           "value": 1008,
           "event_transfers": 0,
@@ -29224,13 +29224,13 @@
         {
           "gw": 7,
           "scores": {
-            "2023789": 0,
-            "2067578": 0,
-            "2019453": 0,
-            "2024611": 0,
-            "2023013": 0,
-            "2026160": 0,
-            "2026484": 0
+            "2023789": 44,
+            "2067578": 33,
+            "2019453": 35,
+            "2024611": 24,
+            "2023013": 21,
+            "2026160": 19,
+            "2026484": 10
           },
           "hits": {
             "2023789": 0,
@@ -29251,13 +29251,13 @@
             "2026484": 1
           },
           "benchPoints": {
-            "2023789": 0,
-            "2067578": 0,
+            "2023789": 10,
+            "2067578": 2,
             "2019453": 0,
             "2024611": 0,
-            "2023013": 0,
+            "2023013": 8,
             "2026160": 0,
-            "2026484": 0
+            "2026484": 4
           },
           "captainPoints": {
             "2023789": 26,
@@ -29270,13 +29270,13 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2023789": 392,
-            "2067578": 391,
-            "2019453": 361,
-            "2024611": 371,
-            "2023013": 368,
-            "2026160": 363,
-            "2026484": 288
+            "2023789": 436,
+            "2067578": 424,
+            "2019453": 396,
+            "2024611": 395,
+            "2023013": 389,
+            "2026160": 382,
+            "2026484": 298
           }
         },
         {
@@ -29870,8 +29870,8 @@
         {
           "gw": 7,
           "scores": {
-            "145847": 0,
-            "2019453": 0
+            "145847": 21,
+            "2019453": 35
           },
           "hits": {
             "145847": 0,
@@ -29893,8 +29893,8 @@
             "145847": "wildcard"
           },
           "seasonTotals": {
-            "145847": 383,
-            "2019453": 361
+            "145847": 404,
+            "2019453": 396
           }
         },
         {
