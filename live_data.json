@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17T16:05:36Z",
+  "lastUpdated": "2026-10-17T18:23:48Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -1102,8 +1102,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "30": {
       "id": 30,
@@ -1120,8 +1120,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "32": {
       "id": 32,
@@ -1132,14 +1132,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "4.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "33": {
       "id": 33,
@@ -1150,14 +1150,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "34": {
       "id": 34,
@@ -1168,14 +1168,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 13,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "35": {
       "id": 35,
@@ -1192,8 +1192,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "36": {
       "id": 36,
@@ -1210,8 +1210,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "37": {
       "id": 37,
@@ -1222,14 +1222,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "38": {
       "id": 38,
@@ -1246,8 +1246,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "39": {
       "id": 39,
@@ -1264,8 +1264,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "41": {
       "id": 41,
@@ -1276,14 +1276,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "44": {
       "id": 44,
@@ -1300,8 +1300,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "45": {
       "id": 45,
@@ -1312,14 +1312,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "46": {
       "id": 46,
@@ -1330,14 +1330,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "47": {
       "id": 47,
@@ -1348,14 +1348,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "48": {
       "id": 48,
@@ -1372,8 +1372,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "49": {
       "id": 49,
@@ -1390,8 +1390,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "50": {
       "id": 50,
@@ -1408,8 +1408,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "51": {
       "id": 51,
@@ -1426,8 +1426,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "52": {
       "id": 52,
@@ -1443,9 +1443,9 @@
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "53": {
       "id": 53,
@@ -1456,14 +1456,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 11,
       "now_cost": "5.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "54": {
       "id": 54,
@@ -1474,14 +1474,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "55": {
       "id": 55,
@@ -1498,8 +1498,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "56": {
       "id": 56,
@@ -1516,8 +1516,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "160": {
       "id": 160,
@@ -1534,8 +1534,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "166": {
       "id": 166,
@@ -1546,14 +1546,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.6",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "582": {
       "id": 582,
@@ -1570,8 +1570,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "596": {
       "id": 596,
@@ -1588,8 +1588,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "597": {
       "id": 597,
@@ -1600,14 +1600,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "5.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "606": {
       "id": 606,
@@ -1624,8 +1624,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "607": {
       "id": 607,
@@ -1642,8 +1642,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "611": {
       "id": 611,
@@ -1654,14 +1654,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 76,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "618": {
       "id": 618,
@@ -1672,14 +1672,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "630": {
       "id": 630,
@@ -1696,8 +1696,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "631": {
       "id": 631,
@@ -1708,14 +1708,14 @@
       "team": "AVL",
       "team_name": "Aston Villa",
       "team_id": 2,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "667": {
       "id": 667,
@@ -1732,8 +1732,8 @@
       "opponent_short": "NEW",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "57": {
       "id": 57,
@@ -10168,14 +10168,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "442": {
       "id": 442,
@@ -10192,8 +10192,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "443": {
       "id": 443,
@@ -10210,8 +10210,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "444": {
       "id": 444,
@@ -10228,8 +10228,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "445": {
       "id": 445,
@@ -10240,14 +10240,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "446": {
       "id": 446,
@@ -10264,8 +10264,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "447": {
       "id": 447,
@@ -10276,14 +10276,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "448": {
       "id": 448,
@@ -10294,14 +10294,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "449": {
       "id": 449,
@@ -10312,14 +10312,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.3",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "450": {
       "id": 450,
@@ -10336,8 +10336,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "451": {
       "id": 451,
@@ -10354,8 +10354,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "453": {
       "id": 453,
@@ -10366,14 +10366,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.1",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "454": {
       "id": 454,
@@ -10390,8 +10390,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "456": {
       "id": 456,
@@ -10408,8 +10408,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "457": {
       "id": 457,
@@ -10426,8 +10426,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "458": {
       "id": 458,
@@ -10438,14 +10438,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 89,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "459": {
       "id": 459,
@@ -10456,14 +10456,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "460": {
       "id": 460,
@@ -10474,14 +10474,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 55,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "461": {
       "id": 461,
@@ -10492,14 +10492,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 34,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "462": {
       "id": 462,
@@ -10516,8 +10516,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "463": {
       "id": 463,
@@ -10534,8 +10534,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "464": {
       "id": 464,
@@ -10546,14 +10546,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.2",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "465": {
       "id": 465,
@@ -10569,9 +10569,9 @@
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 34,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "466": {
       "id": 466,
@@ -10588,8 +10588,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "559": {
       "id": 559,
@@ -10606,8 +10606,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "567": {
       "id": 567,
@@ -10618,14 +10618,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "593": {
       "id": 593,
@@ -10642,8 +10642,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "609": {
       "id": 609,
@@ -10660,8 +10660,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "634": {
       "id": 634,
@@ -10672,14 +10672,14 @@
       "team": "NEW",
       "team_name": "Newcastle",
       "team_id": 17,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.0",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 55,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "659": {
       "id": 659,
@@ -10696,8 +10696,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "663": {
       "id": 663,
@@ -10714,8 +10714,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "664": {
       "id": 664,
@@ -10732,8 +10732,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "665": {
       "id": 665,
@@ -10750,8 +10750,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "666": {
       "id": 666,
@@ -10768,8 +10768,8 @@
       "opponent_short": "AVL",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "167": {
       "id": 167,
@@ -16500,29 +16500,29 @@
       "29": 0,
       "30": 0,
       "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
+      "32": 8,
+      "33": 6,
+      "34": 1,
       "35": 0,
       "36": 0,
-      "37": 0,
+      "37": 10,
       "38": 0,
       "39": 0,
       "40": 2,
-      "41": 0,
+      "41": 3,
       "42": 0,
       "43": 0,
       "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
+      "45": 1,
+      "46": 1,
+      "47": 5,
       "48": 0,
       "49": 0,
       "50": 0,
       "51": 0,
       "52": 0,
-      "53": 0,
-      "54": 0,
+      "53": 11,
+      "54": 5,
       "55": 0,
       "56": 0,
       "57": 0,
@@ -16634,7 +16634,7 @@
       "163": 0,
       "164": 1,
       "165": 2,
-      "166": 0,
+      "166": 2,
       "167": 0,
       "168": 0,
       "169": 0,
@@ -16873,7 +16873,7 @@
       "402": 0,
       "403": 0,
       "404": 0,
-      "405": 0,
+      "405": 3,
       "406": 5,
       "407": 0,
       "408": 0,
@@ -16913,26 +16913,26 @@
       "442": 0,
       "443": 0,
       "444": 0,
-      "445": 0,
+      "445": 1,
       "446": 0,
-      "447": 0,
-      "448": 0,
-      "449": 0,
+      "447": 3,
+      "448": 1,
+      "449": 2,
       "450": 0,
       "451": 0,
       "452": 0,
-      "453": 0,
+      "453": 2,
       "454": 0,
       "455": 0,
       "456": 0,
       "457": 0,
-      "458": 0,
-      "459": 0,
-      "460": 0,
-      "461": 0,
+      "458": 1,
+      "459": 2,
+      "460": 1,
+      "461": 1,
       "462": 0,
       "463": 0,
-      "464": 0,
+      "464": 1,
       "465": 0,
       "466": 0,
       "467": 0,
@@ -17035,7 +17035,7 @@
       "564": 0,
       "565": 1,
       "566": 0,
-      "567": 0,
+      "567": 2,
       "568": 0,
       "569": 2,
       "570": 1,
@@ -17065,7 +17065,7 @@
       "594": 0,
       "595": 0,
       "596": 0,
-      "597": 0,
+      "597": 8,
       "598": 0,
       "599": 0,
       "600": 0,
@@ -17079,14 +17079,14 @@
       "608": 0,
       "609": 0,
       "610": 0,
-      "611": 0,
+      "611": 6,
       "612": 0,
       "613": 0,
       "614": 0,
       "615": 0,
       "616": 2,
       "617": 0,
-      "618": 0,
+      "618": 1,
       "619": 4,
       "620": 1,
       "621": 0,
@@ -17099,10 +17099,10 @@
       "628": 0,
       "629": 0,
       "630": 0,
-      "631": 0,
+      "631": 1,
       "632": 0,
       "633": 0,
-      "634": 0,
+      "634": 1,
       "635": 0,
       "636": 0,
       "637": 1,
@@ -17270,7 +17270,7 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 61,
+              "value": 64,
               "element": 156
             },
             {
@@ -17290,24 +17290,24 @@
               "element": 149
             },
             {
-              "value": 21,
+              "value": 22,
               "element": 151
             },
             {
-              "value": 14,
-              "element": 40
-            },
-            {
-              "value": 14,
-              "element": 101
-            },
-            {
-              "value": 14,
+              "value": 16,
               "element": 154
             },
             {
               "value": 12,
+              "element": 101
+            },
+            {
+              "value": 12,
               "element": 159
+            },
+            {
+              "value": 11,
+              "element": 40
             },
             {
               "value": 6,
@@ -17340,7 +17340,7 @@
               "element": 236
             },
             {
-              "value": 14,
+              "value": 17,
               "element": 233
             },
             {
@@ -17361,22 +17361,22 @@
             },
             {
               "value": 11,
-              "element": 249
+              "element": 226
             },
             {
-              "value": 10,
-              "element": 226
+              "value": 11,
+              "element": 249
             },
             {
               "value": 5,
               "element": 230
             },
             {
-              "value": 5,
+              "value": 4,
               "element": 242
             },
             {
-              "value": 2,
+              "value": 3,
               "element": 229
             },
             {
@@ -17405,7 +17405,7 @@
               "element": 149
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 156
             },
             {
@@ -17460,15 +17460,15 @@
             },
             {
               "value": 7,
-              "element": 236
+              "element": 229
             },
             {
               "value": 7,
-              "element": 238
+              "element": 236
             },
             {
               "value": 6,
-              "element": 229
+              "element": 238
             },
             {
               "value": 5,
@@ -17476,11 +17476,11 @@
             },
             {
               "value": 4,
-              "element": 649
+              "element": 233
             },
             {
-              "value": 3,
-              "element": 233
+              "value": 4,
+              "element": 649
             },
             {
               "value": 2,
@@ -17505,7 +17505,7 @@
       "code": 2645256,
       "event": 7,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 62,
       "kickoff_time": "2026-10-17T14:00:00Z",
       "minutes": 90,
@@ -17660,23 +17660,23 @@
               "element": 366
             },
             {
-              "value": 19,
+              "value": 17,
               "element": 372
             },
             {
-              "value": 14,
+              "value": 15,
               "element": 356
             },
             {
-              "value": 12,
+              "value": 14,
               "element": 358
             },
             {
-              "value": 12,
+              "value": 13,
               "element": 627
             },
             {
-              "value": 10,
+              "value": 12,
               "element": 362
             },
             {
@@ -17718,15 +17718,15 @@
               "element": 86
             },
             {
+              "value": 15,
+              "element": 87
+            },
+            {
               "value": 14,
               "element": 106
             },
             {
-              "value": 13,
-              "element": 87
-            },
-            {
-              "value": 9,
+              "value": 10,
               "element": 88
             },
             {
@@ -17783,11 +17783,11 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 13,
+              "value": 14,
               "element": 362
             },
             {
-              "value": 12,
+              "value": 13,
               "element": 356
             },
             {
@@ -17837,7 +17837,7 @@
           ],
           "h": [
             {
-              "value": 12,
+              "value": 13,
               "element": 87
             },
             {
@@ -17862,15 +17862,15 @@
             },
             {
               "value": 6,
+              "element": 88
+            },
+            {
+              "value": 6,
               "element": 94
             },
             {
               "value": 5,
               "element": 86
-            },
-            {
-              "value": 4,
-              "element": 88
             },
             {
               "value": 4,
@@ -18516,7 +18516,7 @@
               "element": 387
             },
             {
-              "value": 6,
+              "value": 5,
               "element": 388
             },
             {
@@ -18620,10 +18620,6 @@
             },
             {
               "value": 4,
-              "element": 388
-            },
-            {
-              "value": 4,
               "element": 390
             },
             {
@@ -18633,6 +18629,10 @@
             {
               "value": 4,
               "element": 406
+            },
+            {
+              "value": 3,
+              "element": 388
             },
             {
               "value": 3,
@@ -18672,14 +18672,365 @@
       "finished_provisional": false,
       "id": 68,
       "kickoff_time": "2026-10-17T16:30:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 2,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 17,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 53
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 54
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 52
+            },
+            {
+              "value": 1,
+              "element": 54
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 405
+            },
+            {
+              "value": 1,
+              "element": 445
+            },
+            {
+              "value": 1,
+              "element": 447
+            },
+            {
+              "value": 1,
+              "element": 458
+            },
+            {
+              "value": 1,
+              "element": 464
+            },
+            {
+              "value": 1,
+              "element": 465
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 1,
+              "element": 597
+            }
+          ],
+          "h": [
+            {
+              "value": 2,
+              "element": 567
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 53
+            },
+            {
+              "value": 2,
+              "element": 37
+            },
+            {
+              "value": 2,
+              "element": 597
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 34,
+              "element": 53
+            },
+            {
+              "value": 26,
+              "element": 37
+            },
+            {
+              "value": 26,
+              "element": 597
+            },
+            {
+              "value": 25,
+              "element": 33
+            },
+            {
+              "value": 24,
+              "element": 41
+            },
+            {
+              "value": 23,
+              "element": 54
+            },
+            {
+              "value": 22,
+              "element": 32
+            },
+            {
+              "value": 19,
+              "element": 47
+            },
+            {
+              "value": 19,
+              "element": 611
+            },
+            {
+              "value": 11,
+              "element": 46
+            },
+            {
+              "value": 10,
+              "element": 45
+            },
+            {
+              "value": 10,
+              "element": 166
+            },
+            {
+              "value": 7,
+              "element": 52
+            },
+            {
+              "value": 5,
+              "element": 34
+            },
+            {
+              "value": 4,
+              "element": 618
+            },
+            {
+              "value": 3,
+              "element": 631
+            }
+          ],
+          "h": [
+            {
+              "value": 18,
+              "element": 449
+            },
+            {
+              "value": 16,
+              "element": 459
+            },
+            {
+              "value": 12,
+              "element": 458
+            },
+            {
+              "value": 11,
+              "element": 405
+            },
+            {
+              "value": 11,
+              "element": 453
+            },
+            {
+              "value": 10,
+              "element": 567
+            },
+            {
+              "value": 8,
+              "element": 445
+            },
+            {
+              "value": 7,
+              "element": 448
+            },
+            {
+              "value": 6,
+              "element": 447
+            },
+            {
+              "value": 5,
+              "element": 460
+            },
+            {
+              "value": 5,
+              "element": 461
+            },
+            {
+              "value": 5,
+              "element": 634
+            },
+            {
+              "value": -2,
+              "element": 465
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 16,
+              "element": 47
+            },
+            {
+              "value": 11,
+              "element": 37
+            },
+            {
+              "value": 11,
+              "element": 41
+            },
+            {
+              "value": 10,
+              "element": 32
+            },
+            {
+              "value": 9,
+              "element": 45
+            },
+            {
+              "value": 7,
+              "element": 618
+            },
+            {
+              "value": 6,
+              "element": 33
+            },
+            {
+              "value": 5,
+              "element": 46
+            },
+            {
+              "value": 5,
+              "element": 52
+            },
+            {
+              "value": 5,
+              "element": 54
+            },
+            {
+              "value": 4,
+              "element": 611
+            },
+            {
+              "value": 3,
+              "element": 34
+            },
+            {
+              "value": 3,
+              "element": 53
+            },
+            {
+              "value": 3,
+              "element": 166
+            },
+            {
+              "value": 3,
+              "element": 631
+            }
+          ],
+          "h": [
+            {
+              "value": 12,
+              "element": 405
+            },
+            {
+              "value": 11,
+              "element": 459
+            },
+            {
+              "value": 10,
+              "element": 447
+            },
+            {
+              "value": 9,
+              "element": 445
+            },
+            {
+              "value": 9,
+              "element": 449
+            },
+            {
+              "value": 6,
+              "element": 458
+            },
+            {
+              "value": 4,
+              "element": 464
+            },
+            {
+              "value": 3,
+              "element": 453
+            },
+            {
+              "value": 3,
+              "element": 461
+            },
+            {
+              "value": 2,
+              "element": 448
+            },
+            {
+              "value": 2,
+              "element": 460
+            },
+            {
+              "value": 2,
+              "element": 634
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 3,
       "team_a_difficulty": 3,
       "pulse_id": 0
