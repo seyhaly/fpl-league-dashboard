@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T16:31:42Z",
+  "lastUpdated": "2026-10-18T18:51:11Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -77,7 +77,7 @@
       "is_next": false,
       "deadline_time": "2026-10-17T10:00:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
@@ -90,7 +90,7 @@
           "bonus_added": false,
           "date": "2026-10-18",
           "event": 7,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -574,14 +574,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 9,
       "now_cost": "6.1",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "2": {
       "id": 2,
@@ -598,8 +598,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "3": {
       "id": 3,
@@ -616,8 +616,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "4": {
       "id": 4,
@@ -628,14 +628,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 4,
+      "event_points": 8,
       "now_cost": "7.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "5": {
       "id": 5,
@@ -646,14 +646,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "6": {
       "id": 6,
@@ -670,8 +670,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "7": {
       "id": 7,
@@ -688,8 +688,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "8": {
       "id": 8,
@@ -700,14 +700,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "6.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "9": {
       "id": 9,
@@ -724,8 +724,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "10": {
       "id": 10,
@@ -736,14 +736,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 6,
       "now_cost": "5.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 65,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "11": {
       "id": 11,
@@ -760,8 +760,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "12": {
       "id": 12,
@@ -772,14 +772,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "9.6",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "13": {
       "id": 13,
@@ -790,14 +790,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 2,
+      "event_points": 7,
       "now_cost": "7.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "14": {
       "id": 14,
@@ -814,8 +814,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "15": {
       "id": 15,
@@ -826,14 +826,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "6.8",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "16": {
       "id": 16,
@@ -844,14 +844,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "6.2",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "17": {
       "id": 17,
@@ -862,14 +862,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "18": {
       "id": 18,
@@ -886,8 +886,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "19": {
       "id": 19,
@@ -904,8 +904,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "20": {
       "id": 20,
@@ -922,8 +922,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "22": {
       "id": 22,
@@ -940,8 +940,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "23": {
       "id": 23,
@@ -958,8 +958,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "24": {
       "id": 24,
@@ -976,8 +976,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "25": {
       "id": 25,
@@ -988,14 +988,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.1",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "26": {
       "id": 26,
@@ -1006,14 +1006,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "7.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 65,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "27": {
       "id": 27,
@@ -1030,8 +1030,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "31": {
       "id": 31,
@@ -1042,14 +1042,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 4,
+      "event_points": 9,
       "now_cost": "4.6",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "452": {
       "id": 452,
@@ -1060,14 +1060,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "6.7",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 65,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "557": {
       "id": 557,
@@ -1084,8 +1084,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "29": {
       "id": 29,
@@ -10780,14 +10780,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "201": {
       "id": 201,
@@ -10798,14 +10798,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.3",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "467": {
       "id": 467,
@@ -10816,14 +10816,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "468": {
       "id": 468,
@@ -10840,8 +10840,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "469": {
       "id": 469,
@@ -10852,14 +10852,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "470": {
       "id": 470,
@@ -10876,8 +10876,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "471": {
       "id": 471,
@@ -10894,8 +10894,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "472": {
       "id": 472,
@@ -10906,14 +10906,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "473": {
       "id": 473,
@@ -10930,8 +10930,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "474": {
       "id": 474,
@@ -10942,14 +10942,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "4.4",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "475": {
       "id": 475,
@@ -10966,8 +10966,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "476": {
       "id": 476,
@@ -10984,8 +10984,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "477": {
       "id": 477,
@@ -11002,8 +11002,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "478": {
       "id": 478,
@@ -11020,8 +11020,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "479": {
       "id": 479,
@@ -11038,8 +11038,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "480": {
       "id": 480,
@@ -11056,8 +11056,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "482": {
       "id": 482,
@@ -11068,14 +11068,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "483": {
       "id": 483,
@@ -11086,14 +11086,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 72,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "484": {
       "id": 484,
@@ -11110,8 +11110,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "485": {
       "id": 485,
@@ -11128,8 +11128,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "486": {
       "id": 486,
@@ -11140,14 +11140,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "487": {
       "id": 487,
@@ -11158,14 +11158,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "4.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 73,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "488": {
       "id": 488,
@@ -11176,14 +11176,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 16,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "489": {
       "id": 489,
@@ -11200,8 +11200,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "490": {
       "id": 490,
@@ -11212,14 +11212,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "491": {
       "id": 491,
@@ -11236,8 +11236,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "493": {
       "id": 493,
@@ -11248,14 +11248,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "558": {
       "id": 558,
@@ -11266,14 +11266,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "581": {
       "id": 581,
@@ -11284,14 +11284,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 1,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 45,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "590": {
       "id": 590,
@@ -11308,8 +11308,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (45')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "112": {
       "id": 112,
@@ -12292,7 +12292,7 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 2,
+      "event_points": 4,
       "now_cost": "5.7",
       "opponent": "BOU",
       "opponent_short": "BOU",
@@ -12570,6 +12570,24 @@
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
+    },
+    "668": {
+      "id": 668,
+      "web_name": "Tutierov",
+      "first_name": "Tymur",
+      "second_name": "Tutierov",
+      "element_type": 3,
+      "team": "SUN",
+      "team_name": "Sunderland",
+      "team_id": 20,
+      "event_points": 1,
+      "now_cost": "5.0",
+      "opponent": "BOU",
+      "opponent_short": "BOU",
+      "difficulty": 3,
+      "minutes": 58,
+      "match_status": "played",
+      "status_label": "✓ Played"
     }
   },
   "playerGwPoints": {
@@ -16469,23 +16487,23 @@
       "667": 0
     },
     "7": {
-      "1": 1,
+      "1": 9,
       "2": 0,
       "3": 0,
-      "4": 4,
-      "5": 0,
+      "4": 8,
+      "5": 1,
       "6": 0,
       "7": 0,
-      "8": 1,
+      "8": 6,
       "9": 0,
-      "10": 1,
+      "10": 6,
       "11": 0,
-      "12": 1,
-      "13": 2,
+      "12": 3,
+      "13": 7,
       "14": 1,
-      "15": 1,
-      "16": 0,
-      "17": 0,
+      "15": 3,
+      "16": 5,
+      "17": 1,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -16493,13 +16511,13 @@
       "22": 0,
       "23": 0,
       "24": 0,
-      "25": 0,
-      "26": 1,
+      "25": 1,
+      "26": 2,
       "27": 0,
       "28": 8,
       "29": 0,
       "30": 0,
-      "31": 4,
+      "31": 9,
       "32": 8,
       "33": 7,
       "34": 1,
@@ -16635,7 +16653,7 @@
       "164": 1,
       "165": 2,
       "166": 2,
-      "167": 1,
+      "167": 2,
       "168": 0,
       "169": 0,
       "170": 0,
@@ -16669,7 +16687,7 @@
       "198": 0,
       "199": 1,
       "200": 6,
-      "201": 1,
+      "201": 2,
       "202": 2,
       "203": -2,
       "204": 0,
@@ -16920,7 +16938,7 @@
       "449": 4,
       "450": 0,
       "451": 0,
-      "452": 1,
+      "452": 3,
       "453": 2,
       "454": 0,
       "455": 0,
@@ -16935,14 +16953,14 @@
       "464": 1,
       "465": 0,
       "466": 0,
-      "467": 1,
+      "467": 2,
       "468": 0,
-      "469": 0,
+      "469": 3,
       "470": 0,
       "471": 0,
-      "472": 1,
+      "472": 2,
       "473": 0,
-      "474": 1,
+      "474": 2,
       "475": 0,
       "476": 0,
       "477": 0,
@@ -16950,18 +16968,18 @@
       "479": 0,
       "480": 0,
       "481": 1,
-      "482": 0,
-      "483": 1,
+      "482": 1,
+      "483": 3,
       "484": 0,
       "485": 0,
-      "486": 1,
-      "487": 1,
-      "488": 0,
+      "486": 2,
+      "487": 3,
+      "488": 1,
       "489": 0,
-      "490": 0,
+      "490": 1,
       "491": 0,
       "492": 0,
-      "493": 0,
+      "493": 1,
       "494": 0,
       "495": 0,
       "496": 0,
@@ -17010,7 +17028,7 @@
       "539": 1,
       "540": 0,
       "541": 0,
-      "542": 2,
+      "542": 4,
       "543": 1,
       "544": 2,
       "545": 2,
@@ -17026,7 +17044,7 @@
       "555": 0,
       "556": 0,
       "557": 0,
-      "558": 1,
+      "558": 4,
       "559": 0,
       "560": 1,
       "561": 0,
@@ -17049,7 +17067,7 @@
       "578": 0,
       "579": 1,
       "580": 3,
-      "581": 1,
+      "581": 2,
       "582": 0,
       "583": 0,
       "584": 0,
@@ -17135,7 +17153,8 @@
       "664": 0,
       "665": 0,
       "666": 0,
-      "667": 0
+      "667": 0,
+      "668": 1
     }
   },
   "fixtures": [
@@ -19206,6 +19225,10 @@
               "element": 613
             },
             {
+              "value": 4,
+              "element": 668
+            },
+            {
               "value": 2,
               "element": 536
             },
@@ -19252,16 +19275,16 @@
               "element": 57
             },
             {
-              "value": 17,
+              "value": 15,
               "element": 71
+            },
+            {
+              "value": 15,
+              "element": 75
             },
             {
               "value": 12,
               "element": 73
-            },
-            {
-              "value": 11,
-              "element": 75
             },
             {
               "value": 9,
@@ -19276,7 +19299,7 @@
               "element": 72
             },
             {
-              "value": 3,
+              "value": 2,
               "element": 77
             },
             {
@@ -19297,7 +19320,7 @@
               "element": 533
             },
             {
-              "value": 11,
+              "value": 12,
               "element": 542
             },
             {
@@ -19329,6 +19352,10 @@
               "element": 545
             },
             {
+              "value": 3,
+              "element": 668
+            },
+            {
               "value": 2,
               "element": 543
             },
@@ -19355,16 +19382,12 @@
               "element": 68
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 60
             },
             {
-              "value": 7,
+              "value": 8,
               "element": 75
-            },
-            {
-              "value": 6,
-              "element": 71
             },
             {
               "value": 6,
@@ -19372,11 +19395,15 @@
             },
             {
               "value": 5,
+              "element": 64
+            },
+            {
+              "value": 5,
               "element": 67
             },
             {
-              "value": 4,
-              "element": 64
+              "value": 5,
+              "element": 71
             },
             {
               "value": 3,
@@ -20133,25 +20160,35 @@
       "code": 2645263,
       "event": 7,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 69,
       "kickoff_time": "2026-10-18T15:30:00Z",
-      "minutes": 45,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 1,
-      "team_a_score": 0,
+      "team_a_score": 1,
       "team_h": 18,
       "team_h_score": 0,
       "stats": [
         {
           "identifier": "goals_scored",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 16
+            }
+          ],
           "h": []
         },
         {
           "identifier": "assists",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 13
+            }
+          ],
           "h": []
         },
         {
@@ -20171,7 +20208,12 @@
         },
         {
           "identifier": "yellow_cards",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 16
+            }
+          ],
           "h": [
             {
               "value": 1,
@@ -20186,7 +20228,12 @@
         },
         {
           "identifier": "saves",
-          "a": [],
+          "a": [
+            {
+              "value": 2,
+              "element": 1
+            }
+          ],
           "h": []
         },
         {
@@ -20194,7 +20241,7 @@
           "a": [
             {
               "value": 3,
-              "element": 4
+              "element": 1
             },
             {
               "value": 3,
@@ -20211,94 +20258,126 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 12,
-              "element": 4
+              "value": 29,
+              "element": 1
             },
             {
-              "value": 12,
+              "value": 29,
               "element": 31
             },
             {
-              "value": 11,
+              "value": 28,
               "element": 13
             },
             {
-              "value": 10,
+              "value": 27,
+              "element": 4
+            },
+            {
+              "value": 24,
+              "element": 8
+            },
+            {
+              "value": 23,
               "element": 10
             },
             {
-              "value": 10,
-              "element": 15
+              "value": 22,
+              "element": 16
             },
             {
-              "value": 10,
+              "value": 18,
               "element": 452
             },
             {
-              "value": 7,
+              "value": 16,
               "element": 12
             },
             {
+              "value": 13,
+              "element": 15
+            },
+            {
               "value": 5,
-              "element": 1
+              "element": 17
+            },
+            {
+              "value": 4,
+              "element": 5
             },
             {
               "value": 4,
               "element": 14
             },
             {
-              "value": 2,
-              "element": 8
+              "value": 3,
+              "element": 26
             },
             {
-              "value": 1,
-              "element": 26
+              "value": 2,
+              "element": 25
             }
           ],
           "h": [
             {
-              "value": 9,
-              "element": 472
-            },
-            {
-              "value": 8,
+              "value": 20,
               "element": 558
             },
             {
-              "value": 5,
+              "value": 15,
+              "element": 472
+            },
+            {
+              "value": 12,
+              "element": 487
+            },
+            {
+              "value": 10,
               "element": 486
             },
             {
-              "value": 4,
+              "value": 9,
               "element": 167
+            },
+            {
+              "value": 8,
+              "element": 581
+            },
+            {
+              "value": 7,
+              "element": 469
             },
             {
               "value": 4,
               "element": 467
             },
             {
-              "value": 3,
-              "element": 469
+              "value": 4,
+              "element": 474
+            },
+            {
+              "value": 4,
+              "element": 482
+            },
+            {
+              "value": 4,
+              "element": 493
             },
             {
               "value": 3,
-              "element": 487
+              "element": 483
             },
             {
               "value": 3,
-              "element": 581
+              "element": 490
             },
             {
               "value": 2,
               "element": 201
             },
             {
-              "value": 2,
-              "element": 474
-            },
-            {
-              "value": 2,
-              "element": 483
+              "value": 1,
+              "element": 488
             }
           ]
         },
@@ -20306,28 +20385,48 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 7,
+              "value": 12,
               "element": 4
             },
             {
-              "value": 5,
-              "element": 13
-            },
-            {
-              "value": 4,
+              "value": 10,
               "element": 452
             },
             {
-              "value": 3,
+              "value": 8,
+              "element": 13
+            },
+            {
+              "value": 7,
               "element": 12
             },
             {
-              "value": 3,
+              "value": 5,
               "element": 31
             },
             {
-              "value": 1,
+              "value": 3,
               "element": 8
+            },
+            {
+              "value": 2,
+              "element": 5
+            },
+            {
+              "value": 2,
+              "element": 15
+            },
+            {
+              "value": 2,
+              "element": 17
+            },
+            {
+              "value": 1,
+              "element": 10
+            },
+            {
+              "value": 1,
+              "element": 25
             },
             {
               "value": 1,
@@ -20336,44 +20435,56 @@
           ],
           "h": [
             {
-              "value": 7,
+              "value": 13,
               "element": 558
             },
             {
-              "value": 5,
+              "value": 10,
               "element": 469
             },
             {
-              "value": 5,
+              "value": 9,
               "element": 472
             },
             {
-              "value": 4,
-              "element": 487
-            },
-            {
-              "value": 3,
+              "value": 9,
               "element": 486
             },
             {
-              "value": 2,
-              "element": 167
+              "value": 8,
+              "element": 581
             },
             {
-              "value": 2,
+              "value": 7,
+              "element": 487
+            },
+            {
+              "value": 5,
               "element": 201
             },
             {
-              "value": 2,
+              "value": 4,
+              "element": 488
+            },
+            {
+              "value": 3,
+              "element": 167
+            },
+            {
+              "value": 3,
               "element": 474
             },
             {
-              "value": 2,
+              "value": 3,
               "element": 483
             },
             {
               "value": 2,
-              "element": 581
+              "element": 482
+            },
+            {
+              "value": 1,
+              "element": 493
             }
           ]
         }
@@ -28733,80 +28844,6 @@
         "time": "2026-08-29T00:41:11.474635Z"
       }
     ],
-    "2026160": [
-      {
-        "element_in": 399,
-        "element_in_cost": 79,
-        "element_out": 367,
-        "element_out_cost": 70,
-        "entry": 2026160,
-        "event": 7,
-        "time": "2026-10-15T07:26:30.708990Z"
-      },
-      {
-        "element_in": 124,
-        "element_in_cost": 58,
-        "element_out": 237,
-        "element_out_cost": 58,
-        "entry": 2026160,
-        "event": 6,
-        "time": "2026-09-30T08:44:25.303346Z"
-      },
-      {
-        "element_in": 286,
-        "element_in_cost": 51,
-        "element_out": 399,
-        "element_out_cost": 77,
-        "entry": 2026160,
-        "event": 5,
-        "time": "2026-09-17T12:09:31.530006Z"
-      },
-      {
-        "element_in": 115,
-        "element_in_cost": 49,
-        "element_out": 445,
-        "element_out_cost": 50,
-        "entry": 2026160,
-        "event": 5,
-        "time": "2026-09-17T11:59:49.345982Z"
-      },
-      {
-        "element_in": 385,
-        "element_in_cost": 50,
-        "element_out": 412,
-        "element_out_cost": 50,
-        "entry": 2026160,
-        "event": 4,
-        "time": "2026-09-11T13:00:05.610330Z"
-      },
-      {
-        "element_in": 15,
-        "element_in_cost": 67,
-        "element_out": 14,
-        "element_out_cost": 64,
-        "entry": 2026160,
-        "event": 4,
-        "time": "2026-09-11T12:51:44.689810Z"
-      },
-      {
-        "element_in": 399,
-        "element_in_cost": 77,
-        "element_out": 260,
-        "element_out_cost": 64,
-        "entry": 2026160,
-        "event": 3,
-        "time": "2026-09-04T10:50:18.044333Z"
-      },
-      {
-        "element_in": 367,
-        "element_in_cost": 70,
-        "element_out": 397,
-        "element_out_cost": 85,
-        "entry": 2026160,
-        "event": 2,
-        "time": "2026-08-28T14:55:45.754628Z"
-      }
-    ],
     "2024611": [
       {
         "element_in": 124,
@@ -28960,6 +28997,80 @@
         "entry": 2024611,
         "event": 3,
         "time": "2026-08-29T11:29:00.909893Z"
+      }
+    ],
+    "2026160": [
+      {
+        "element_in": 399,
+        "element_in_cost": 79,
+        "element_out": 367,
+        "element_out_cost": 70,
+        "entry": 2026160,
+        "event": 7,
+        "time": "2026-10-15T07:26:30.708990Z"
+      },
+      {
+        "element_in": 124,
+        "element_in_cost": 58,
+        "element_out": 237,
+        "element_out_cost": 58,
+        "entry": 2026160,
+        "event": 6,
+        "time": "2026-09-30T08:44:25.303346Z"
+      },
+      {
+        "element_in": 286,
+        "element_in_cost": 51,
+        "element_out": 399,
+        "element_out_cost": 77,
+        "entry": 2026160,
+        "event": 5,
+        "time": "2026-09-17T12:09:31.530006Z"
+      },
+      {
+        "element_in": 115,
+        "element_in_cost": 49,
+        "element_out": 445,
+        "element_out_cost": 50,
+        "entry": 2026160,
+        "event": 5,
+        "time": "2026-09-17T11:59:49.345982Z"
+      },
+      {
+        "element_in": 385,
+        "element_in_cost": 50,
+        "element_out": 412,
+        "element_out_cost": 50,
+        "entry": 2026160,
+        "event": 4,
+        "time": "2026-09-11T13:00:05.610330Z"
+      },
+      {
+        "element_in": 15,
+        "element_in_cost": 67,
+        "element_out": 14,
+        "element_out_cost": 64,
+        "entry": 2026160,
+        "event": 4,
+        "time": "2026-09-11T12:51:44.689810Z"
+      },
+      {
+        "element_in": 399,
+        "element_in_cost": 77,
+        "element_out": 260,
+        "element_out_cost": 64,
+        "entry": 2026160,
+        "event": 3,
+        "time": "2026-09-04T10:50:18.044333Z"
+      },
+      {
+        "element_in": 367,
+        "element_in_cost": 70,
+        "element_out": 397,
+        "element_out_cost": 85,
+        "entry": 2026160,
+        "event": 2,
+        "time": "2026-08-28T14:55:45.754628Z"
       }
     ],
     "2023013": [
@@ -30108,16 +30219,16 @@
           "avatar": "SE"
         },
         {
-          "id": 2026160,
-          "name": "Piseth Nhim",
-          "teamName": "DESSTRo",
-          "avatar": "PI"
-        },
-        {
           "id": 2024611,
           "name": "Vibol Dang",
           "teamName": "The White Emperor",
           "avatar": "VI"
+        },
+        {
+          "id": 2026160,
+          "name": "Piseth Nhim",
+          "teamName": "DESSTRo",
+          "avatar": "PI"
         },
         {
           "id": 2023013,
@@ -30139,8 +30250,8 @@
             "2067578": 66,
             "2023789": 72,
             "2019453": 41,
-            "2026160": 49,
             "2024611": 54,
+            "2026160": 49,
             "2023013": 52,
             "2026484": 61
           },
@@ -30148,8 +30259,8 @@
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 0,
             "2026484": 0
           },
@@ -30157,8 +30268,8 @@
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 0,
             "2026484": 0
           },
@@ -30166,8 +30277,8 @@
             "2067578": 11,
             "2023789": 0,
             "2019453": 11,
-            "2026160": 0,
             "2024611": 3,
+            "2026160": 0,
             "2023013": 4,
             "2026484": 9
           },
@@ -30175,8 +30286,8 @@
             "2067578": 4,
             "2023789": 4,
             "2019453": 4,
-            "2026160": 4,
             "2024611": 4,
+            "2026160": 4,
             "2023013": 4,
             "2026484": 4
           },
@@ -30187,8 +30298,8 @@
             "2067578": 66,
             "2023789": 72,
             "2019453": 41,
-            "2026160": 49,
             "2024611": 54,
+            "2026160": 49,
             "2023013": 52,
             "2026484": 61
           }
@@ -30199,8 +30310,8 @@
             "2067578": 80,
             "2023789": 74,
             "2019453": 87,
-            "2026160": 76,
             "2024611": 73,
+            "2026160": 76,
             "2023013": 76,
             "2026484": 65
           },
@@ -30208,8 +30319,8 @@
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 0,
             "2026484": 0
           },
@@ -30217,8 +30328,8 @@
             "2067578": 1,
             "2023789": 1,
             "2019453": 0,
-            "2026160": 1,
             "2024611": 0,
+            "2026160": 1,
             "2023013": 1,
             "2026484": 0
           },
@@ -30226,8 +30337,8 @@
             "2067578": 11,
             "2023789": 4,
             "2019453": 3,
-            "2026160": 15,
             "2024611": 0,
+            "2026160": 15,
             "2023013": 6,
             "2026484": 2
           },
@@ -30235,8 +30346,8 @@
             "2067578": 26,
             "2023789": 26,
             "2019453": 26,
-            "2026160": 18,
             "2024611": 26,
+            "2026160": 18,
             "2023013": 26,
             "2026484": 18
           },
@@ -30247,8 +30358,8 @@
             "2067578": 146,
             "2023789": 146,
             "2019453": 128,
-            "2026160": 125,
             "2024611": 127,
+            "2026160": 125,
             "2023013": 128,
             "2026484": 126
           }
@@ -30259,8 +30370,8 @@
             "2067578": 55,
             "2023789": 52,
             "2019453": 63,
-            "2026160": 58,
             "2024611": 47,
+            "2026160": 58,
             "2023013": 74,
             "2026484": 44
           },
@@ -30268,8 +30379,8 @@
             "2067578": 0,
             "2023789": 0,
             "2019453": 4,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 0,
             "2026484": 28
           },
@@ -30277,8 +30388,8 @@
             "2067578": 1,
             "2023789": 1,
             "2019453": 3,
-            "2026160": 1,
             "2024611": 2,
+            "2026160": 1,
             "2023013": 1,
             "2026484": 8
           },
@@ -30286,8 +30397,8 @@
             "2067578": 21,
             "2023789": 6,
             "2019453": 11,
-            "2026160": 5,
             "2024611": 0,
+            "2026160": 5,
             "2023013": 4,
             "2026484": 0
           },
@@ -30295,8 +30406,8 @@
             "2067578": 18,
             "2023789": 18,
             "2019453": 18,
-            "2026160": 18,
             "2024611": 18,
+            "2026160": 18,
             "2023013": 18,
             "2026484": 6
           },
@@ -30307,8 +30418,8 @@
             "2067578": 201,
             "2023789": 198,
             "2019453": 187,
-            "2026160": 183,
             "2024611": 174,
+            "2026160": 183,
             "2023013": 202,
             "2026484": 142
           }
@@ -30319,8 +30430,8 @@
             "2067578": 78,
             "2023789": 73,
             "2019453": 72,
-            "2026160": 60,
             "2024611": 102,
+            "2026160": 60,
             "2023013": 59,
             "2026484": 74
           },
@@ -30328,8 +30439,8 @@
             "2067578": 0,
             "2023789": 4,
             "2019453": 0,
-            "2026160": 4,
             "2024611": 0,
+            "2026160": 4,
             "2023013": 0,
             "2026484": 36
           },
@@ -30337,8 +30448,8 @@
             "2067578": 1,
             "2023789": 2,
             "2019453": 0,
-            "2026160": 2,
             "2024611": 0,
+            "2026160": 2,
             "2023013": 1,
             "2026484": 10
           },
@@ -30346,8 +30457,8 @@
             "2067578": 18,
             "2023789": -1,
             "2019453": 8,
-            "2026160": 4,
             "2024611": 4,
+            "2026160": 4,
             "2023013": 1,
             "2026484": 44
           },
@@ -30355,8 +30466,8 @@
             "2067578": 24,
             "2023789": 24,
             "2019453": 18,
-            "2026160": 24,
             "2024611": 18,
+            "2026160": 24,
             "2023013": 4,
             "2026484": 24
           },
@@ -30368,8 +30479,8 @@
             "2067578": 279,
             "2023789": 267,
             "2019453": 259,
-            "2026160": 239,
             "2024611": 276,
+            "2026160": 239,
             "2023013": 261,
             "2026484": 180
           }
@@ -30380,8 +30491,8 @@
             "2067578": 34,
             "2023789": 57,
             "2019453": 33,
-            "2026160": 52,
             "2024611": 35,
+            "2026160": 52,
             "2023013": 47,
             "2026484": 49
           },
@@ -30389,8 +30500,8 @@
             "2067578": 0,
             "2023789": 4,
             "2019453": 0,
-            "2026160": 4,
             "2024611": 0,
+            "2026160": 4,
             "2023013": 0,
             "2026484": 0
           },
@@ -30398,8 +30509,8 @@
             "2067578": 1,
             "2023789": 2,
             "2019453": 2,
-            "2026160": 2,
             "2024611": 1,
+            "2026160": 2,
             "2023013": 1,
             "2026484": 0
           },
@@ -30407,8 +30518,8 @@
             "2067578": 6,
             "2023789": -1,
             "2019453": 7,
-            "2026160": 2,
             "2024611": 7,
+            "2026160": 2,
             "2023013": 2,
             "2026484": 3
           },
@@ -30416,8 +30527,8 @@
             "2067578": 12,
             "2023789": 12,
             "2019453": 12,
-            "2026160": 12,
             "2024611": 12,
+            "2026160": 12,
             "2023013": 16,
             "2026484": 12
           },
@@ -30428,8 +30539,8 @@
             "2067578": 313,
             "2023789": 320,
             "2019453": 292,
-            "2026160": 287,
             "2024611": 311,
+            "2026160": 287,
             "2023013": 308,
             "2026484": 229
           }
@@ -30440,8 +30551,8 @@
             "2067578": 78,
             "2023789": 72,
             "2019453": 69,
-            "2026160": 76,
             "2024611": 60,
+            "2026160": 76,
             "2023013": 60,
             "2026484": 67
           },
@@ -30449,8 +30560,8 @@
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 0,
             "2026484": 8
           },
@@ -30458,8 +30569,8 @@
             "2067578": 1,
             "2023789": 1,
             "2019453": 0,
-            "2026160": 1,
             "2024611": 0,
+            "2026160": 1,
             "2023013": 1,
             "2026484": 3
           },
@@ -30467,8 +30578,8 @@
             "2067578": 9,
             "2023789": 12,
             "2019453": 4,
-            "2026160": 4,
             "2024611": 15,
+            "2026160": 4,
             "2023013": 0,
             "2026484": 17
           },
@@ -30476,8 +30587,8 @@
             "2067578": 12,
             "2023789": 4,
             "2019453": 24,
-            "2026160": 12,
             "2024611": 12,
+            "2026160": 12,
             "2023013": 0,
             "2026484": 12
           },
@@ -30486,8 +30597,8 @@
             "2067578": 391,
             "2023789": 392,
             "2019453": 361,
-            "2026160": 363,
             "2024611": 371,
+            "2026160": 363,
             "2023013": 368,
             "2026484": 288
           }
@@ -30498,8 +30609,8 @@
             "2067578": 33,
             "2023789": 44,
             "2019453": 35,
-            "2026160": 19,
             "2024611": 24,
+            "2026160": 19,
             "2023013": 21,
             "2026484": 10
           },
@@ -30507,8 +30618,8 @@
             "2067578": 0,
             "2023789": 0,
             "2019453": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 0,
             "2026484": 0
           },
@@ -30516,8 +30627,8 @@
             "2067578": 1,
             "2023789": 0,
             "2019453": 0,
-            "2026160": 1,
             "2024611": 2,
+            "2026160": 1,
             "2023013": 1,
             "2026484": 1
           },
@@ -30525,8 +30636,8 @@
             "2067578": 2,
             "2023789": 10,
             "2019453": 0,
-            "2026160": 0,
             "2024611": 0,
+            "2026160": 0,
             "2023013": 8,
             "2026484": 4
           },
@@ -30534,8 +30645,8 @@
             "2067578": 26,
             "2023789": 26,
             "2019453": 26,
-            "2026160": 4,
             "2024611": 4,
+            "2026160": 4,
             "2023013": 4,
             "2026484": 10
           },
@@ -30544,8 +30655,8 @@
             "2067578": 424,
             "2023789": 436,
             "2019453": 396,
-            "2026160": 382,
             "2024611": 395,
+            "2026160": 382,
             "2023013": 389,
             "2026484": 298
           }
