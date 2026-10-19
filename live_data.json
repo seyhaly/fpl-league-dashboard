@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18T23:01:35Z",
+  "lastUpdated": "2026-10-19T01:04:31Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -790,7 +790,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 7,
+      "event_points": 9,
       "now_cost": "7.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
@@ -16499,7 +16499,7 @@
       "10": 6,
       "11": 0,
       "12": 3,
-      "13": 7,
+      "13": 9,
       "14": 1,
       "15": 3,
       "16": 5,
@@ -20249,11 +20249,11 @@
             },
             {
               "value": 3,
-              "element": 31
+              "element": 13
             },
             {
-              "value": 1,
-              "element": 13
+              "value": 3,
+              "element": 31
             }
           ],
           "h": []
@@ -20267,18 +20267,18 @@
             },
             {
               "value": 29,
-              "element": 31
+              "element": 13
             },
             {
-              "value": 28,
-              "element": 13
+              "value": 29,
+              "element": 31
             },
             {
               "value": 27,
               "element": 4
             },
             {
-              "value": 24,
+              "value": 23,
               "element": 8
             },
             {
@@ -20303,15 +20303,15 @@
             },
             {
               "value": 5,
+              "element": 14
+            },
+            {
+              "value": 5,
               "element": 17
             },
             {
               "value": 4,
               "element": 5
-            },
-            {
-              "value": 4,
-              "element": 14
             },
             {
               "value": 3,
@@ -20324,7 +20324,7 @@
           ],
           "h": [
             {
-              "value": 20,
+              "value": 16,
               "element": 558
             },
             {
@@ -20332,16 +20332,16 @@
               "element": 472
             },
             {
-              "value": 12,
-              "element": 487
+              "value": 10,
+              "element": 167
             },
             {
               "value": 10,
               "element": 486
             },
             {
-              "value": 9,
-              "element": 167
+              "value": 8,
+              "element": 487
             },
             {
               "value": 8,
@@ -20352,12 +20352,12 @@
               "element": 469
             },
             {
-              "value": 4,
-              "element": 467
+              "value": 5,
+              "element": 474
             },
             {
               "value": 4,
-              "element": 474
+              "element": 467
             },
             {
               "value": 4,
@@ -20397,7 +20397,7 @@
               "element": 452
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 13
             },
             {
@@ -20409,12 +20409,12 @@
               "element": 31
             },
             {
-              "value": 3,
-              "element": 8
+              "value": 2,
+              "element": 5
             },
             {
               "value": 2,
-              "element": 5
+              "element": 8
             },
             {
               "value": 2,
@@ -20439,7 +20439,7 @@
           ],
           "h": [
             {
-              "value": 13,
+              "value": 14,
               "element": 558
             },
             {
