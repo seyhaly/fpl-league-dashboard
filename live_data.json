@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T01:04:31Z",
+  "lastUpdated": "2026-10-19T06:00:24Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -19954,15 +19954,15 @@
             },
             {
               "value": 14,
-              "element": 162
-            },
-            {
-              "value": 14,
               "element": 412
             },
             {
               "value": 14,
               "element": 431
+            },
+            {
+              "value": 12,
+              "element": 162
             },
             {
               "value": 12,
@@ -20003,7 +20003,7 @@
               "element": 334
             },
             {
-              "value": 15,
+              "value": 16,
               "element": 332
             },
             {
@@ -20111,11 +20111,11 @@
             },
             {
               "value": 6,
-              "element": 598
+              "element": 332
             },
             {
-              "value": 5,
-              "element": 332
+              "value": 6,
+              "element": 598
             },
             {
               "value": 5,
@@ -20126,16 +20126,16 @@
               "element": 345
             },
             {
-              "value": 4,
-              "element": 346
-            },
-            {
               "value": 3,
               "element": 330
             },
             {
               "value": 3,
               "element": 335
+            },
+            {
+              "value": 3,
+              "element": 346
             },
             {
               "value": 2,
