@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T12:55:28Z",
+  "lastUpdated": "2026-10-19T18:52:01Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -162,7 +162,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-12-02T18:30:00Z",
+      "deadline_time": "2026-12-01T18:30:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -173,7 +173,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-12-05T13:30:00Z",
+      "deadline_time": "2026-12-05T11:00:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -195,7 +195,7 @@
       "is_current": false,
       "is_previous": false,
       "is_next": false,
-      "deadline_time": "2026-12-19T13:30:00Z",
+      "deadline_time": "2026-12-19T11:00:00Z",
       "bonus_added": false,
       "leagues": "Updating"
     },
@@ -18449,7 +18449,7 @@
               "element": 591
             },
             {
-              "value": 7,
+              "value": 9,
               "element": 571
             },
             {
@@ -18473,12 +18473,8 @@
               "element": 313
             },
             {
-              "value": 2,
+              "value": 1,
               "element": 304
-            },
-            {
-              "value": -2,
-              "element": 259
             },
             {
               "value": -2,
@@ -18495,7 +18491,7 @@
               "element": 411
             },
             {
-              "value": 38,
+              "value": 36,
               "element": 398
             },
             {
@@ -18507,7 +18503,7 @@
               "element": 406
             },
             {
-              "value": 25,
+              "value": 30,
               "element": 237
             },
             {
@@ -18520,6 +18516,10 @@
             },
             {
               "value": 8,
+              "element": 155
+            },
+            {
+              "value": 8,
               "element": 390
             },
             {
@@ -18528,14 +18528,10 @@
             },
             {
               "value": 6,
-              "element": 155
-            },
-            {
-              "value": 6,
               "element": 387
             },
             {
-              "value": 5,
+              "value": 6,
               "element": 388
             },
             {
@@ -18631,11 +18627,11 @@
             },
             {
               "value": 5,
-              "element": 481
+              "element": 155
             },
             {
-              "value": 4,
-              "element": 155
+              "value": 5,
+              "element": 481
             },
             {
               "value": 4,
