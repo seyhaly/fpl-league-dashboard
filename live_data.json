@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-19T18:52:01Z",
+  "lastUpdated": "2026-10-19T22:39:42Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -77,8 +77,8 @@
       "is_next": false,
       "deadline_time": "2026-10-17T10:00:00Z",
       "bonus_added": false,
-      "leagues": "",
-      "points": "",
+      "leagues": "Updating",
+      "points": "p",
       "daily_status": [
         {
           "bonus_added": false,
@@ -96,7 +96,7 @@
           "bonus_added": false,
           "date": "2026-10-19",
           "event": 7,
-          "points": ""
+          "points": "p"
         }
       ]
     },
@@ -4066,14 +4066,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "104": {
       "id": 104,
@@ -4084,14 +4084,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 30,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "110": {
       "id": 110,
@@ -4102,14 +4102,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "171": {
       "id": 171,
@@ -4126,8 +4126,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "172": {
       "id": 172,
@@ -4144,8 +4144,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "173": {
       "id": 173,
@@ -4156,14 +4156,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "4.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "174": {
       "id": 174,
@@ -4180,8 +4180,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "175": {
       "id": 175,
@@ -4192,14 +4192,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "3.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "176": {
       "id": 176,
@@ -4215,9 +4215,9 @@
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "177": {
       "id": 177,
@@ -4228,14 +4228,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "3.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "178": {
       "id": 178,
@@ -4252,8 +4252,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "179": {
       "id": 179,
@@ -4270,8 +4270,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "180": {
       "id": 180,
@@ -4288,8 +4288,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "181": {
       "id": 181,
@@ -4306,8 +4306,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "182": {
       "id": 182,
@@ -4324,8 +4324,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "183": {
       "id": 183,
@@ -4336,14 +4336,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "4.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "184": {
       "id": 184,
@@ -4354,14 +4354,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "185": {
       "id": 185,
@@ -4372,14 +4372,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.8",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "186": {
       "id": 186,
@@ -4390,14 +4390,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "187": {
       "id": 187,
@@ -4414,8 +4414,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "188": {
       "id": 188,
@@ -4432,8 +4432,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "189": {
       "id": 189,
@@ -4450,8 +4450,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "190": {
       "id": 190,
@@ -4468,8 +4468,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "191": {
       "id": 191,
@@ -4486,8 +4486,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "192": {
       "id": 192,
@@ -4504,8 +4504,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "193": {
       "id": 193,
@@ -4522,8 +4522,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "194": {
       "id": 194,
@@ -4534,14 +4534,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 77,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "195": {
       "id": 195,
@@ -4558,8 +4558,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "196": {
       "id": 196,
@@ -4576,8 +4576,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "197": {
       "id": 197,
@@ -4594,8 +4594,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "492": {
       "id": 492,
@@ -4606,14 +4606,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 30,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "575": {
       "id": 575,
@@ -4629,9 +4629,9 @@
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "584": {
       "id": 584,
@@ -4642,14 +4642,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 12,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "599": {
       "id": 599,
@@ -4660,14 +4660,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 59,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "623": {
       "id": 623,
@@ -4684,8 +4684,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "655": {
       "id": 655,
@@ -4702,8 +4702,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "656": {
       "id": 656,
@@ -4720,8 +4720,8 @@
       "opponent_short": "TOT",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "42": {
       "id": 42,
@@ -11320,14 +11320,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.9",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "147": {
       "id": 147,
@@ -11338,14 +11338,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 70,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "401": {
       "id": 401,
@@ -11356,14 +11356,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "7.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "403": {
       "id": 403,
@@ -11380,8 +11380,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "455": {
       "id": 455,
@@ -11392,14 +11392,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.3",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "494": {
       "id": 494,
@@ -11416,8 +11416,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "495": {
       "id": 495,
@@ -11434,8 +11434,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "496": {
       "id": 496,
@@ -11446,14 +11446,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "497": {
       "id": 497,
@@ -11470,8 +11470,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "498": {
       "id": 498,
@@ -11488,8 +11488,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "499": {
       "id": 499,
@@ -11506,8 +11506,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "500": {
       "id": 500,
@@ -11524,8 +11524,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "502": {
       "id": 502,
@@ -11536,14 +11536,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "4.4",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 68,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "503": {
       "id": 503,
@@ -11554,14 +11554,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "505": {
       "id": 505,
@@ -11578,8 +11578,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "506": {
       "id": 506,
@@ -11596,8 +11596,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "507": {
       "id": 507,
@@ -11614,8 +11614,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "508": {
       "id": 508,
@@ -11626,14 +11626,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "3.9",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 21,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "509": {
       "id": 509,
@@ -11650,8 +11650,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "510": {
       "id": 510,
@@ -11668,8 +11668,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "511": {
       "id": 511,
@@ -11686,8 +11686,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "512": {
       "id": 512,
@@ -11698,14 +11698,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "6.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "513": {
       "id": 513,
@@ -11722,8 +11722,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "514": {
       "id": 514,
@@ -11734,14 +11734,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.6",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "515": {
       "id": 515,
@@ -11752,14 +11752,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "6.2",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 68,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "516": {
       "id": 516,
@@ -11776,8 +11776,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "517": {
       "id": 517,
@@ -11794,8 +11794,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "518": {
       "id": 518,
@@ -11812,8 +11812,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "519": {
       "id": 519,
@@ -11824,14 +11824,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 21,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "520": {
       "id": 520,
@@ -11848,8 +11848,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "521": {
       "id": 521,
@@ -11860,14 +11860,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "522": {
       "id": 522,
@@ -11878,14 +11878,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "523": {
       "id": 523,
@@ -11902,8 +11902,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "524": {
       "id": 524,
@@ -11920,8 +11920,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "525": {
       "id": 525,
@@ -11932,14 +11932,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 19,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "526": {
       "id": 526,
@@ -11950,14 +11950,14 @@
       "team": "TOT",
       "team_name": "Spurs",
       "team_id": 19,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.8",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "527": {
       "id": 527,
@@ -11974,8 +11974,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "528": {
       "id": 528,
@@ -11992,8 +11992,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "578": {
       "id": 578,
@@ -12010,8 +12010,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "601": {
       "id": 601,
@@ -12028,8 +12028,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "501": {
       "id": 501,
@@ -16577,7 +16577,7 @@
       "88": 1,
       "89": 0,
       "90": 1,
-      "91": 0,
+      "91": 1,
       "92": 0,
       "93": 0,
       "94": 0,
@@ -16590,15 +16590,15 @@
       "101": 3,
       "102": -2,
       "103": 0,
-      "104": 0,
+      "104": 1,
       "105": 2,
       "106": 4,
       "107": 0,
       "108": 0,
       "109": 6,
-      "110": 0,
+      "110": 1,
       "111": 0,
-      "112": 0,
+      "112": 4,
       "113": 6,
       "114": 10,
       "115": 6,
@@ -16633,7 +16633,7 @@
       "144": 0,
       "145": 0,
       "146": 0,
-      "147": 0,
+      "147": 2,
       "148": 11,
       "149": 6,
       "150": 0,
@@ -16659,20 +16659,20 @@
       "170": 0,
       "171": 0,
       "172": 0,
-      "173": 0,
+      "173": 3,
       "174": 0,
-      "175": 0,
+      "175": 1,
       "176": 0,
-      "177": 0,
+      "177": 1,
       "178": 0,
       "179": 0,
       "180": 0,
       "181": 0,
       "182": 0,
-      "183": 0,
-      "184": 0,
-      "185": 0,
-      "186": 0,
+      "183": 6,
+      "184": 2,
+      "185": 2,
+      "186": 1,
       "187": 0,
       "188": 0,
       "189": 0,
@@ -16680,7 +16680,7 @@
       "191": 0,
       "192": 0,
       "193": 0,
-      "194": 0,
+      "194": 5,
       "195": 0,
       "196": 0,
       "197": 0,
@@ -16887,7 +16887,7 @@
       "398": 9,
       "399": 0,
       "400": 6,
-      "401": 0,
+      "401": 9,
       "402": 0,
       "403": 0,
       "404": 0,
@@ -16941,7 +16941,7 @@
       "452": 3,
       "453": 2,
       "454": 0,
-      "455": 0,
+      "455": 4,
       "456": 0,
       "457": 0,
       "458": 1,
@@ -16978,41 +16978,41 @@
       "489": 0,
       "490": 1,
       "491": 0,
-      "492": 0,
+      "492": 1,
       "493": 1,
       "494": 0,
       "495": 0,
-      "496": 0,
+      "496": 2,
       "497": 0,
       "498": 0,
       "499": 0,
       "500": 0,
       "501": -3,
-      "502": 0,
-      "503": 0,
+      "502": 5,
+      "503": 2,
       "504": 11,
       "505": 0,
       "506": 0,
       "507": 0,
-      "508": 0,
+      "508": 7,
       "509": 0,
       "510": 0,
       "511": 0,
-      "512": 0,
+      "512": 6,
       "513": 0,
-      "514": 0,
-      "515": 0,
+      "514": 1,
+      "515": 9,
       "516": 0,
       "517": 0,
       "518": 0,
-      "519": 0,
+      "519": 1,
       "520": 0,
-      "521": 0,
-      "522": 0,
+      "521": 1,
+      "522": 2,
       "523": 0,
       "524": 0,
-      "525": 0,
-      "526": 0,
+      "525": 1,
+      "526": 4,
       "527": 0,
       "528": 0,
       "529": 2,
@@ -17070,7 +17070,7 @@
       "581": 2,
       "582": 0,
       "583": 0,
-      "584": 0,
+      "584": 1,
       "585": 0,
       "586": 0,
       "587": 0,
@@ -17085,7 +17085,7 @@
       "596": 0,
       "597": 8,
       "598": 2,
-      "599": 0,
+      "599": 1,
       "600": 0,
       "601": 0,
       "602": 0,
@@ -20497,17 +20497,381 @@
       "code": 2645264,
       "event": 7,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 70,
       "kickoff_time": "2026-10-19T19:00:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 7,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 19,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 3,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 183
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 401
+            },
+            {
+              "value": 1,
+              "element": 508
+            },
+            {
+              "value": 1,
+              "element": 515
+            }
+          ]
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 194
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 502
+            },
+            {
+              "value": 1,
+              "element": 512
+            },
+            {
+              "value": 1,
+              "element": 526
+            }
+          ]
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 176
+            },
+            {
+              "value": 1,
+              "element": 183
+            },
+            {
+              "value": 1,
+              "element": 575
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 526
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 2,
+              "element": 110
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bonus",
+          "a": [],
+          "h": [
+            {
+              "value": 3,
+              "element": 401
+            },
+            {
+              "value": 2,
+              "element": 515
+            },
+            {
+              "value": 1,
+              "element": 512
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 22,
+              "element": 194
+            },
+            {
+              "value": 21,
+              "element": 183
+            },
+            {
+              "value": 12,
+              "element": 184
+            },
+            {
+              "value": 11,
+              "element": 175
+            },
+            {
+              "value": 9,
+              "element": 104
+            },
+            {
+              "value": 9,
+              "element": 185
+            },
+            {
+              "value": 7,
+              "element": 584
+            },
+            {
+              "value": 6,
+              "element": 186
+            },
+            {
+              "value": 5,
+              "element": 599
+            },
+            {
+              "value": 3,
+              "element": 91
+            },
+            {
+              "value": 2,
+              "element": 177
+            },
+            {
+              "value": 1,
+              "element": 492
+            },
+            {
+              "value": -2,
+              "element": 110
+            },
+            {
+              "value": -3,
+              "element": 173
+            },
+            {
+              "value": -6,
+              "element": 176
+            }
+          ],
+          "h": [
+            {
+              "value": 39,
+              "element": 401
+            },
+            {
+              "value": 36,
+              "element": 515
+            },
+            {
+              "value": 26,
+              "element": 512
+            },
+            {
+              "value": 20,
+              "element": 455
+            },
+            {
+              "value": 16,
+              "element": 508
+            },
+            {
+              "value": 16,
+              "element": 522
+            },
+            {
+              "value": 14,
+              "element": 112
+            },
+            {
+              "value": 11,
+              "element": 502
+            },
+            {
+              "value": 10,
+              "element": 147
+            },
+            {
+              "value": 9,
+              "element": 503
+            },
+            {
+              "value": 9,
+              "element": 526
+            },
+            {
+              "value": 6,
+              "element": 496
+            },
+            {
+              "value": 6,
+              "element": 525
+            },
+            {
+              "value": 5,
+              "element": 521
+            },
+            {
+              "value": 3,
+              "element": 519
+            },
+            {
+              "value": 2,
+              "element": 514
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 11,
+              "element": 173
+            },
+            {
+              "value": 9,
+              "element": 91
+            },
+            {
+              "value": 8,
+              "element": 575
+            },
+            {
+              "value": 7,
+              "element": 184
+            },
+            {
+              "value": 7,
+              "element": 194
+            },
+            {
+              "value": 6,
+              "element": 104
+            },
+            {
+              "value": 6,
+              "element": 175
+            },
+            {
+              "value": 6,
+              "element": 176
+            },
+            {
+              "value": 4,
+              "element": 183
+            },
+            {
+              "value": 4,
+              "element": 185
+            },
+            {
+              "value": 4,
+              "element": 599
+            },
+            {
+              "value": 2,
+              "element": 492
+            },
+            {
+              "value": 1,
+              "element": 177
+            }
+          ],
+          "h": [
+            {
+              "value": 14,
+              "element": 455
+            },
+            {
+              "value": 11,
+              "element": 112
+            },
+            {
+              "value": 9,
+              "element": 512
+            },
+            {
+              "value": 9,
+              "element": 522
+            },
+            {
+              "value": 9,
+              "element": 526
+            },
+            {
+              "value": 7,
+              "element": 503
+            },
+            {
+              "value": 6,
+              "element": 401
+            },
+            {
+              "value": 6,
+              "element": 515
+            },
+            {
+              "value": 4,
+              "element": 147
+            },
+            {
+              "value": 3,
+              "element": 525
+            },
+            {
+              "value": 2,
+              "element": 502
+            },
+            {
+              "value": 2,
+              "element": 508
+            },
+            {
+              "value": 2,
+              "element": 521
+            },
+            {
+              "value": 1,
+              "element": 519
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 2,
       "team_a_difficulty": 3,
       "pulse_id": 0
@@ -21567,11 +21931,11 @@
           "event": 7,
           "points": 35,
           "total_points": 403,
-          "rank": 9995747,
-          "rank_sort": 9998387,
-          "overall_rank": 5302413,
+          "rank": 10150670,
+          "rank_sort": 10153088,
+          "overall_rank": 5377538,
           "percentile_rank": 95,
-          "overall_rank_percentage": "48",
+          "overall_rank_percentage": "49",
           "bank": 19,
           "value": 1004,
           "event_transfers": 1,
@@ -22596,10 +22960,10 @@
           "event": 7,
           "points": 64,
           "total_points": 455,
-          "rank": 3226520,
-          "rank_sort": 3246068,
-          "overall_rank": 2059372,
-          "percentile_rank": 30,
+          "rank": 3554235,
+          "rank_sort": 3574691,
+          "overall_rank": 2114620,
+          "percentile_rank": 35,
           "overall_rank_percentage": "19",
           "bank": 21,
           "value": 1017,
@@ -23599,9 +23963,9 @@
           "event": 7,
           "points": 59,
           "total_points": 451,
-          "rank": 4605267,
-          "rank_sort": 4631942,
-          "overall_rank": 2292626,
+          "rank": 4967597,
+          "rank_sort": 4993867,
+          "overall_rank": 2350719,
           "percentile_rank": 45,
           "overall_rank_percentage": "21",
           "bank": 18,
@@ -24607,13 +24971,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 7,
-          "points": 49,
-          "total_points": 412,
-          "rank": 7576276,
-          "rank_sort": 7583106,
-          "overall_rank": 4740719,
-          "percentile_rank": 70,
-          "overall_rank_percentage": "43",
+          "points": 53,
+          "total_points": 416,
+          "rank": 6905623,
+          "rank_sort": 6914857,
+          "overall_rank": 4555208,
+          "percentile_rank": 65,
+          "overall_rank_percentage": "41",
           "bank": 22,
           "value": 1005,
           "event_transfers": 1,
@@ -25651,11 +26015,11 @@
           "event": 7,
           "points": 47,
           "total_points": 418,
-          "rank": 8045160,
-          "rank_sort": 8048404,
-          "overall_rank": 4322178,
-          "percentile_rank": 75,
-          "overall_rank_percentage": "39",
+          "rank": 8303653,
+          "rank_sort": 8306546,
+          "overall_rank": 4396056,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "40",
           "bank": 6,
           "value": 1020,
           "event_transfers": 2,
@@ -26661,16 +27025,16 @@
           "event": 7,
           "points": 71,
           "total_points": 432,
-          "rank": 1405647,
-          "rank_sort": 1423644,
-          "overall_rank": 3415503,
+          "rank": 1585148,
+          "rank_sort": 1604764,
+          "overall_rank": 3483977,
           "percentile_rank": 15,
-          "overall_rank_percentage": "31",
+          "overall_rank_percentage": "32",
           "bank": 0,
           "value": 1004,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 3
+          "points_on_bench": 5
         },
         "automatic_subs": []
       }
@@ -27650,16 +28014,16 @@
           "event": 7,
           "points": 38,
           "total_points": 326,
-          "rank": 9599749,
-          "rank_sort": 9603016,
-          "overall_rank": 8908333,
+          "rank": 9780259,
+          "rank_sort": 9783311,
+          "overall_rank": 8944292,
           "percentile_rank": 90,
-          "overall_rank_percentage": "80",
+          "overall_rank_percentage": "81",
           "bank": 42,
           "value": 1026,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 4
+          "points_on_bench": 6
         },
         "automatic_subs": []
       }
@@ -28658,13 +29022,13 @@
         "active_chip": "wildcard",
         "entry_history": {
           "event": 7,
-          "points": 44,
-          "total_points": 427,
-          "rank": 8472583,
-          "rank_sort": 8473015,
-          "overall_rank": 3726511,
-          "percentile_rank": 80,
-          "overall_rank_percentage": "34",
+          "points": 52,
+          "total_points": 435,
+          "rank": 6987505,
+          "rank_sort": 6988285,
+          "overall_rank": 3283321,
+          "percentile_rank": 65,
+          "overall_rank_percentage": "30",
           "bank": 1,
           "value": 1008,
           "event_transfers": 0,
@@ -30610,7 +30974,7 @@
             "2023789": 59,
             "2019453": 71,
             "2024611": 47,
-            "2026160": 49,
+            "2026160": 53,
             "2023013": 35,
             "2026484": 38
           },
@@ -30635,11 +30999,11 @@
           "benchPoints": {
             "2067578": 20,
             "2023789": 10,
-            "2019453": 3,
+            "2019453": 5,
             "2024611": 9,
             "2026160": 6,
             "2023013": 17,
-            "2026484": 4
+            "2026484": 6
           },
           "captainPoints": {
             "2067578": 26,
@@ -30656,7 +31020,7 @@
             "2023789": 451,
             "2019453": 432,
             "2024611": 418,
-            "2026160": 412,
+            "2026160": 416,
             "2023013": 403,
             "2026484": 326
           }
@@ -31068,215 +31432,215 @@
       "leagueName": "Fantasy with Heng",
       "managers": [
         {
-          "id": 2019453,
-          "name": "Seyha ly",
-          "teamName": "The Red Devil",
-          "avatar": "SE"
-        },
-        {
           "id": 145847,
           "name": "Hokheng Ker",
           "teamName": "Undefeated",
           "avatar": "HO"
+        },
+        {
+          "id": 2019453,
+          "name": "Seyha ly",
+          "teamName": "The Red Devil",
+          "avatar": "SE"
         }
       ],
       "gameweeks": [
         {
           "gw": 1,
           "scores": {
-            "2019453": 41,
-            "145847": 43
+            "145847": 43,
+            "2019453": 41
           },
           "hits": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "transfers": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "benchPoints": {
-            "2019453": 11,
-            "145847": 2
+            "145847": 2,
+            "2019453": 11
           },
           "captainPoints": {
-            "2019453": 4,
-            "145847": 4
+            "145847": 4,
+            "2019453": 4
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 41,
-            "145847": 43
+            "145847": 43,
+            "2019453": 41
           }
         },
         {
           "gw": 2,
           "scores": {
-            "2019453": 87,
-            "145847": 103
+            "145847": 103,
+            "2019453": 87
           },
           "hits": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "transfers": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "benchPoints": {
-            "2019453": 3,
-            "145847": 13
+            "145847": 13,
+            "2019453": 3
           },
           "captainPoints": {
-            "2019453": 26,
-            "145847": 46
+            "145847": 46,
+            "2019453": 26
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 128,
-            "145847": 146
+            "145847": 146,
+            "2019453": 128
           }
         },
         {
           "gw": 3,
           "scores": {
-            "2019453": 63,
-            "145847": 41
+            "145847": 41,
+            "2019453": 63
           },
           "hits": {
-            "2019453": 4,
-            "145847": 0
+            "145847": 0,
+            "2019453": 4
           },
           "transfers": {
-            "2019453": 3,
-            "145847": 2
+            "145847": 2,
+            "2019453": 3
           },
           "benchPoints": {
-            "2019453": 11,
-            "145847": 5
+            "145847": 5,
+            "2019453": 11
           },
           "captainPoints": {
-            "2019453": 18,
-            "145847": 6
+            "145847": 6,
+            "2019453": 18
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 187,
-            "145847": 187
+            "145847": 187,
+            "2019453": 187
           }
         },
         {
           "gw": 4,
           "scores": {
-            "2019453": 72,
-            "145847": 95
+            "145847": 95,
+            "2019453": 72
           },
           "hits": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "transfers": {
-            "2019453": 0,
-            "145847": 1
+            "145847": 1,
+            "2019453": 0
           },
           "benchPoints": {
-            "2019453": 8,
-            "145847": 15
+            "145847": 15,
+            "2019453": 8
           },
           "captainPoints": {
-            "2019453": 18,
-            "145847": 18
+            "145847": 18,
+            "2019453": 18
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 259,
-            "145847": 282
+            "145847": 282,
+            "2019453": 259
           }
         },
         {
           "gw": 5,
           "scores": {
-            "2019453": 33,
-            "145847": 41
+            "145847": 41,
+            "2019453": 33
           },
           "hits": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "transfers": {
-            "2019453": 2,
-            "145847": 1
+            "145847": 1,
+            "2019453": 2
           },
           "benchPoints": {
-            "2019453": 7,
-            "145847": 20
+            "145847": 20,
+            "2019453": 7
           },
           "captainPoints": {
-            "2019453": 12,
-            "145847": 4
+            "145847": 4,
+            "2019453": 12
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 292,
-            "145847": 323
+            "145847": 323,
+            "2019453": 292
           }
         },
         {
           "gw": 6,
           "scores": {
-            "2019453": 69,
-            "145847": 60
+            "145847": 60,
+            "2019453": 69
           },
           "hits": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "transfers": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "benchPoints": {
-            "2019453": 4,
-            "145847": 15
+            "145847": 15,
+            "2019453": 4
           },
           "captainPoints": {
-            "2019453": 24,
-            "145847": 24
+            "145847": 24,
+            "2019453": 24
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 361,
-            "145847": 383
+            "145847": 383,
+            "2019453": 361
           }
         },
         {
           "gw": 7,
           "scores": {
-            "2019453": 71,
-            "145847": 44
+            "145847": 52,
+            "2019453": 71
           },
           "hits": {
-            "2019453": 0,
-            "145847": 0
+            "145847": 0,
+            "2019453": 0
           },
           "transfers": {
-            "2019453": 0,
-            "145847": 14
+            "145847": 14,
+            "2019453": 0
           },
           "benchPoints": {
-            "2019453": 3,
-            "145847": 19
+            "145847": 19,
+            "2019453": 5
           },
           "captainPoints": {
-            "2019453": 26,
-            "145847": 0
+            "145847": 8,
+            "2019453": 26
           },
           "chipsUsed": {
             "145847": "wildcard"
           },
           "seasonTotals": {
-            "2019453": 432,
-            "145847": 427
+            "145847": 435,
+            "2019453": 432
           }
         },
         {
