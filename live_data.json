@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T15:41:31Z",
+  "lastUpdated": "2026-10-20T19:35:45Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -70,14 +70,14 @@
     },
     "7": {
       "gw": 7,
-      "finished": false,
-      "data_checked": false,
+      "finished": true,
+      "data_checked": true,
       "is_current": true,
       "is_previous": false,
       "is_next": false,
       "deadline_time": "2026-10-17T10:00:00Z",
       "bonus_added": true,
-      "leagues": "Updating",
+      "leagues": "Updated",
       "points": "r",
       "daily_status": [
         {
