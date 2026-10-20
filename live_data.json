@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20T01:14:22Z",
+  "lastUpdated": "2026-10-20T06:00:13Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -20629,12 +20629,12 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 22,
-              "element": 194
+              "value": 23,
+              "element": 183
             },
             {
-              "value": 21,
-              "element": 183
+              "value": 22,
+              "element": 194
             },
             {
               "value": 12,
@@ -20760,7 +20760,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 11,
+              "value": 10,
               "element": 173
             },
             {
@@ -20814,7 +20814,7 @@
           ],
           "h": [
             {
-              "value": 14,
+              "value": 15,
               "element": 455
             },
             {
@@ -20846,7 +20846,7 @@
               "element": 515
             },
             {
-              "value": 4,
+              "value": 5,
               "element": 147
             },
             {
