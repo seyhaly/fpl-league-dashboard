@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-22T22:21:48Z",
+  "lastUpdated": "2026-10-23T00:44:51Z",
   "currentGw": 7,
   "eventStatuses": {
     "1": {
@@ -3743,7 +3743,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 2,
-      "now_cost": "9.7",
+      "now_cost": "9.8",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
@@ -7973,7 +7973,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 1,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
@@ -9737,7 +9737,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 4,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -9899,7 +9899,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 8,
-      "now_cost": "7.8",
+      "now_cost": "7.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
