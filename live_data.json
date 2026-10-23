@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-23T19:04:40Z",
+  "lastUpdated": "2026-10-23T21:59:47Z",
   "currentGw": 8,
   "eventStatuses": {
     "1": {
@@ -88,14 +88,14 @@
       "is_next": false,
       "deadline_time": "2026-10-23T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
           "bonus_added": false,
           "date": "2026-10-23",
           "event": 8,
-          "points": ""
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -7108,14 +7108,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "3.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "267": {
       "id": 267,
@@ -7132,8 +7132,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "300": {
       "id": 300,
@@ -7144,14 +7144,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "4.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "301": {
       "id": 301,
@@ -7168,8 +7168,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "302": {
       "id": 302,
@@ -7186,8 +7186,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "303": {
       "id": 303,
@@ -7204,8 +7204,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "304": {
       "id": 304,
@@ -7216,14 +7216,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "305": {
       "id": 305,
@@ -7234,14 +7234,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "306": {
       "id": 306,
@@ -7258,8 +7258,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "307": {
       "id": 307,
@@ -7276,8 +7276,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "308": {
       "id": 308,
@@ -7294,8 +7294,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "309": {
       "id": 309,
@@ -7312,8 +7312,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "310": {
       "id": 310,
@@ -7324,14 +7324,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "311": {
       "id": 311,
@@ -7348,8 +7348,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "312": {
       "id": 312,
@@ -7366,8 +7366,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "313": {
       "id": 313,
@@ -7378,14 +7378,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 29,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "314": {
       "id": 314,
@@ -7402,8 +7402,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "315": {
       "id": 315,
@@ -7414,14 +7414,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 72,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "316": {
       "id": 316,
@@ -7432,14 +7432,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.6",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 59,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "317": {
       "id": 317,
@@ -7456,8 +7456,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "318": {
       "id": 318,
@@ -7468,14 +7468,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 60,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "319": {
       "id": 319,
@@ -7492,8 +7492,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "320": {
       "id": 320,
@@ -7504,14 +7504,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 4,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "321": {
       "id": 321,
@@ -7528,8 +7528,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "322": {
       "id": 322,
@@ -7546,8 +7546,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "323": {
       "id": 323,
@@ -7564,8 +7564,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "324": {
       "id": 324,
@@ -7582,8 +7582,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "554": {
       "id": 554,
@@ -7600,8 +7600,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "562": {
       "id": 562,
@@ -7612,14 +7612,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "564": {
       "id": 564,
@@ -7636,8 +7636,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "571": {
       "id": 571,
@@ -7648,14 +7648,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.8",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "591": {
       "id": 591,
@@ -7666,14 +7666,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "5.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 85,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "592": {
       "id": 592,
@@ -7684,14 +7684,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "602": {
       "id": 602,
@@ -7708,8 +7708,8 @@
       "opponent_short": "NFO",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "619": {
       "id": 619,
@@ -7720,14 +7720,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "640": {
       "id": 640,
@@ -7738,14 +7738,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 30,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "260": {
       "id": 260,
@@ -10780,14 +10780,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "201": {
       "id": 201,
@@ -10798,14 +10798,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 7,
       "now_cost": "5.3",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "467": {
       "id": 467,
@@ -10816,14 +10816,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "468": {
       "id": 468,
@@ -10840,8 +10840,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "469": {
       "id": 469,
@@ -10852,14 +10852,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "470": {
       "id": 470,
@@ -10876,8 +10876,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "471": {
       "id": 471,
@@ -10888,14 +10888,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "472": {
       "id": 472,
@@ -10906,14 +10906,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "473": {
       "id": 473,
@@ -10930,8 +10930,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "474": {
       "id": 474,
@@ -10942,14 +10942,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.4",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "475": {
       "id": 475,
@@ -10966,8 +10966,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "476": {
       "id": 476,
@@ -10984,8 +10984,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "477": {
       "id": 477,
@@ -11002,8 +11002,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "478": {
       "id": 478,
@@ -11014,14 +11014,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "479": {
       "id": 479,
@@ -11038,8 +11038,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "480": {
       "id": 480,
@@ -11050,14 +11050,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.9",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "482": {
       "id": 482,
@@ -11068,14 +11068,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 21,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "483": {
       "id": 483,
@@ -11086,14 +11086,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 68,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "484": {
       "id": 484,
@@ -11110,8 +11110,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "485": {
       "id": 485,
@@ -11128,8 +11128,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "486": {
       "id": 486,
@@ -11140,14 +11140,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "5.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "487": {
       "id": 487,
@@ -11164,8 +11164,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "488": {
       "id": 488,
@@ -11182,8 +11182,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "489": {
       "id": 489,
@@ -11200,8 +11200,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "490": {
       "id": 490,
@@ -11212,14 +11212,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "491": {
       "id": 491,
@@ -11236,8 +11236,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "493": {
       "id": 493,
@@ -11254,8 +11254,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "558": {
       "id": 558,
@@ -11266,14 +11266,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "581": {
       "id": 581,
@@ -11290,8 +11290,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "590": {
       "id": 590,
@@ -11308,8 +11308,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (0')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "112": {
       "id": 112,
@@ -17323,7 +17323,7 @@
       "164": 0,
       "165": 0,
       "166": 0,
-      "167": 0,
+      "167": 2,
       "168": 0,
       "169": 0,
       "170": 0,
@@ -17357,7 +17357,7 @@
       "198": 0,
       "199": 0,
       "200": 0,
-      "201": 0,
+      "201": 7,
       "202": 0,
       "203": 0,
       "204": 0,
@@ -17415,7 +17415,7 @@
       "256": 0,
       "257": 0,
       "258": 0,
-      "259": 0,
+      "259": 1,
       "260": 0,
       "261": 0,
       "262": 0,
@@ -17456,27 +17456,27 @@
       "297": 0,
       "298": 0,
       "299": 0,
-      "300": 0,
+      "300": 3,
       "301": 0,
       "302": 0,
       "303": 0,
-      "304": 0,
-      "305": 0,
+      "304": 2,
+      "305": 2,
       "306": 0,
       "307": 0,
       "308": 0,
       "309": 0,
-      "310": 0,
+      "310": 1,
       "311": 0,
       "312": 0,
-      "313": 0,
+      "313": 1,
       "314": 0,
-      "315": 0,
-      "316": 0,
+      "315": 2,
+      "316": 1,
       "317": 0,
-      "318": 0,
+      "318": 2,
       "319": 0,
-      "320": 0,
+      "320": 1,
       "321": 0,
       "322": 0,
       "323": 0,
@@ -17623,30 +17623,30 @@
       "464": 0,
       "465": 0,
       "466": 0,
-      "467": 0,
+      "467": 2,
       "468": 0,
-      "469": 0,
+      "469": 8,
       "470": 0,
-      "471": 0,
-      "472": 0,
+      "471": 2,
+      "472": 1,
       "473": 0,
-      "474": 0,
+      "474": 2,
       "475": 0,
       "476": 0,
       "477": 0,
-      "478": 0,
+      "478": 1,
       "479": 0,
-      "480": 0,
+      "480": 2,
       "481": 0,
-      "482": 0,
-      "483": 0,
+      "482": 1,
+      "483": 2,
       "484": 0,
       "485": 0,
-      "486": 0,
+      "486": 5,
       "487": 0,
       "488": 0,
       "489": 0,
-      "490": 0,
+      "490": 1,
       "491": 0,
       "492": 0,
       "493": 0,
@@ -17714,11 +17714,11 @@
       "555": 0,
       "556": 0,
       "557": 0,
-      "558": 0,
+      "558": 4,
       "559": 0,
       "560": 0,
       "561": 0,
-      "562": 0,
+      "562": 1,
       "563": 0,
       "564": 0,
       "565": 0,
@@ -17727,7 +17727,7 @@
       "568": 0,
       "569": 0,
       "570": 0,
-      "571": 0,
+      "571": 2,
       "572": 0,
       "573": 0,
       "574": 0,
@@ -17747,8 +17747,8 @@
       "588": 0,
       "589": 0,
       "590": 0,
-      "591": 0,
-      "592": 0,
+      "591": 10,
+      "592": 2,
       "593": 0,
       "594": 0,
       "595": 0,
@@ -17775,7 +17775,7 @@
       "616": 0,
       "617": 0,
       "618": 0,
-      "619": 0,
+      "619": 4,
       "620": 0,
       "621": 0,
       "622": 0,
@@ -17796,7 +17796,7 @@
       "637": 0,
       "638": 0,
       "639": 0,
-      "640": 0,
+      "640": 1,
       "641": 0,
       "642": 0,
       "643": 0,
@@ -17832,25 +17832,40 @@
       "code": 2645271,
       "event": 8,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 77,
       "kickoff_time": "2026-10-23T19:00:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 18,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 12,
-      "team_h_score": null,
+      "team_h_score": 1,
       "stats": [
         {
           "identifier": "goals_scored",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 1,
+              "element": 469
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 591
+            }
+          ]
         },
         {
           "identifier": "assists",
-          "a": [],
+          "a": [
+            {
+              "value": 1,
+              "element": 201
+            }
+          ],
           "h": []
         },
         {
@@ -17870,8 +17885,18 @@
         },
         {
           "identifier": "yellow_cards",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 1,
+              "element": 472
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 259
+            }
+          ]
         },
         {
           "identifier": "red_cards",
@@ -17880,23 +17905,271 @@
         },
         {
           "identifier": "saves",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 2,
+              "element": 467
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 300
+            }
+          ]
         },
         {
           "identifier": "bonus",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 2,
+              "element": 201
+            },
+            {
+              "value": 1,
+              "element": 486
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 591
+            }
+          ]
         },
         {
           "identifier": "bps",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 28,
+              "element": 201
+            },
+            {
+              "value": 23,
+              "element": 486
+            },
+            {
+              "value": 21,
+              "element": 469
+            },
+            {
+              "value": 19,
+              "element": 558
+            },
+            {
+              "value": 15,
+              "element": 480
+            },
+            {
+              "value": 10,
+              "element": 467
+            },
+            {
+              "value": 10,
+              "element": 474
+            },
+            {
+              "value": 8,
+              "element": 483
+            },
+            {
+              "value": 7,
+              "element": 471
+            },
+            {
+              "value": 5,
+              "element": 472
+            },
+            {
+              "value": 3,
+              "element": 490
+            },
+            {
+              "value": 2,
+              "element": 478
+            },
+            {
+              "value": 2,
+              "element": 482
+            },
+            {
+              "value": 1,
+              "element": 167
+            }
+          ],
+          "h": [
+            {
+              "value": 35,
+              "element": 591
+            },
+            {
+              "value": 20,
+              "element": 305
+            },
+            {
+              "value": 19,
+              "element": 619
+            },
+            {
+              "value": 15,
+              "element": 571
+            },
+            {
+              "value": 13,
+              "element": 300
+            },
+            {
+              "value": 9,
+              "element": 592
+            },
+            {
+              "value": 8,
+              "element": 316
+            },
+            {
+              "value": 7,
+              "element": 304
+            },
+            {
+              "value": 7,
+              "element": 318
+            },
+            {
+              "value": 5,
+              "element": 259
+            },
+            {
+              "value": 5,
+              "element": 562
+            },
+            {
+              "value": 5,
+              "element": 640
+            },
+            {
+              "value": 4,
+              "element": 315
+            },
+            {
+              "value": 3,
+              "element": 313
+            },
+            {
+              "value": 3,
+              "element": 320
+            },
+            {
+              "value": 2,
+              "element": 310
+            }
+          ]
         },
         {
           "identifier": "defensive_contribution",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 22,
+              "element": 486
+            },
+            {
+              "value": 15,
+              "element": 558
+            },
+            {
+              "value": 7,
+              "element": 201
+            },
+            {
+              "value": 6,
+              "element": 471
+            },
+            {
+              "value": 6,
+              "element": 480
+            },
+            {
+              "value": 4,
+              "element": 167
+            },
+            {
+              "value": 4,
+              "element": 472
+            },
+            {
+              "value": 3,
+              "element": 474
+            },
+            {
+              "value": 2,
+              "element": 469
+            },
+            {
+              "value": 2,
+              "element": 482
+            },
+            {
+              "value": 1,
+              "element": 483
+            }
+          ],
+          "h": [
+            {
+              "value": 17,
+              "element": 619
+            },
+            {
+              "value": 11,
+              "element": 571
+            },
+            {
+              "value": 7,
+              "element": 304
+            },
+            {
+              "value": 6,
+              "element": 259
+            },
+            {
+              "value": 6,
+              "element": 305
+            },
+            {
+              "value": 6,
+              "element": 592
+            },
+            {
+              "value": 3,
+              "element": 313
+            },
+            {
+              "value": 3,
+              "element": 318
+            },
+            {
+              "value": 3,
+              "element": 591
+            },
+            {
+              "value": 3,
+              "element": 640
+            },
+            {
+              "value": 2,
+              "element": 315
+            },
+            {
+              "value": 2,
+              "element": 316
+            },
+            {
+              "value": 1,
+              "element": 310
+            },
+            {
+              "value": 1,
+              "element": 562
+            }
+          ]
         }
       ],
       "team_h_difficulty": 3,
@@ -30172,243 +30445,243 @@
       "leagueName": "Fantasy with Heng",
       "managers": [
         {
-          "id": 145847,
-          "name": "Hokheng Ker",
-          "teamName": "Undefeated",
-          "avatar": "HO"
-        },
-        {
           "id": 2019453,
           "name": "Seyha ly",
           "teamName": "The Red Devil",
           "avatar": "SE"
+        },
+        {
+          "id": 145847,
+          "name": "Hokheng Ker",
+          "teamName": "Undefeated",
+          "avatar": "HO"
         }
       ],
       "gameweeks": [
         {
           "gw": 1,
           "scores": {
-            "145847": 43,
-            "2019453": 41
+            "2019453": 41,
+            "145847": 43
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "benchPoints": {
-            "145847": 2,
-            "2019453": 11
+            "2019453": 11,
+            "145847": 2
           },
           "captainPoints": {
-            "145847": 4,
-            "2019453": 4
+            "2019453": 4,
+            "145847": 4
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 43,
-            "2019453": 41
+            "2019453": 41,
+            "145847": 43
           }
         },
         {
           "gw": 2,
           "scores": {
-            "145847": 103,
-            "2019453": 87
+            "2019453": 87,
+            "145847": 103
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "benchPoints": {
-            "145847": 13,
-            "2019453": 3
+            "2019453": 3,
+            "145847": 13
           },
           "captainPoints": {
-            "145847": 46,
-            "2019453": 26
+            "2019453": 26,
+            "145847": 46
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 146,
-            "2019453": 128
+            "2019453": 128,
+            "145847": 146
           }
         },
         {
           "gw": 3,
           "scores": {
-            "145847": 41,
-            "2019453": 63
+            "2019453": 63,
+            "145847": 41
           },
           "hits": {
-            "145847": 0,
-            "2019453": 4
+            "2019453": 4,
+            "145847": 0
           },
           "transfers": {
-            "145847": 2,
-            "2019453": 3
+            "2019453": 3,
+            "145847": 2
           },
           "benchPoints": {
-            "145847": 5,
-            "2019453": 11
+            "2019453": 11,
+            "145847": 5
           },
           "captainPoints": {
-            "145847": 6,
-            "2019453": 18
+            "2019453": 18,
+            "145847": 6
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 187,
-            "2019453": 187
+            "2019453": 187,
+            "145847": 187
           }
         },
         {
           "gw": 4,
           "scores": {
-            "145847": 95,
-            "2019453": 72
+            "2019453": 72,
+            "145847": 95
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 1,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 1
           },
           "benchPoints": {
-            "145847": 15,
-            "2019453": 8
+            "2019453": 8,
+            "145847": 15
           },
           "captainPoints": {
-            "145847": 18,
-            "2019453": 18
+            "2019453": 18,
+            "145847": 18
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 282,
-            "2019453": 259
+            "2019453": 259,
+            "145847": 282
           }
         },
         {
           "gw": 5,
           "scores": {
-            "145847": 41,
-            "2019453": 33
+            "2019453": 33,
+            "145847": 41
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 1,
-            "2019453": 2
+            "2019453": 2,
+            "145847": 1
           },
           "benchPoints": {
-            "145847": 20,
-            "2019453": 7
+            "2019453": 7,
+            "145847": 20
           },
           "captainPoints": {
-            "145847": 4,
-            "2019453": 12
+            "2019453": 12,
+            "145847": 4
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 323,
-            "2019453": 292
+            "2019453": 292,
+            "145847": 323
           }
         },
         {
           "gw": 6,
           "scores": {
-            "145847": 60,
-            "2019453": 69
+            "2019453": 69,
+            "145847": 60
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "benchPoints": {
-            "145847": 15,
-            "2019453": 4
+            "2019453": 4,
+            "145847": 15
           },
           "captainPoints": {
-            "145847": 24,
-            "2019453": 24
+            "2019453": 24,
+            "145847": 24
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 383,
-            "2019453": 361
+            "2019453": 361,
+            "145847": 383
           }
         },
         {
           "gw": 7,
           "scores": {
-            "145847": 52,
-            "2019453": 71
+            "2019453": 71,
+            "145847": 52
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "benchPoints": {
-            "145847": 19,
-            "2019453": 5
+            "2019453": 5,
+            "145847": 19
           },
           "captainPoints": {
-            "145847": 8,
-            "2019453": 26
+            "2019453": 26,
+            "145847": 8
           },
           "chipsUsed": {
             "145847": "wildcard"
           },
           "seasonTotals": {
-            "145847": 435,
-            "2019453": 432
+            "2019453": 432,
+            "145847": 435
           }
         },
         {
           "gw": 8,
           "scores": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "hits": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "transfers": {
-            "145847": 2,
-            "2019453": 1
+            "2019453": 1,
+            "145847": 2
           },
           "benchPoints": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "captainPoints": {
-            "145847": 0,
-            "2019453": 0
+            "2019453": 0,
+            "145847": 0
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "145847": 435,
-            "2019453": 432
+            "2019453": 432,
+            "145847": 435
           }
         },
         {
