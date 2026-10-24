@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T21:20:12Z",
+  "lastUpdated": "2026-10-24T23:25:41Z",
   "currentGw": 8,
   "eventStatuses": {
     "1": {
@@ -88,7 +88,7 @@
       "is_next": false,
       "deadline_time": "2026-10-23T17:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -628,7 +628,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 16,
+      "event_points": 17,
       "now_cost": "7.9",
       "opponent": "EVE",
       "opponent_short": "EVE",
@@ -791,7 +791,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 3,
-      "now_cost": "7.3",
+      "now_cost": "7.4",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
@@ -1042,7 +1042,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 15,
+      "event_points": 14,
       "now_cost": "4.6",
       "opponent": "EVE",
       "opponent_short": "EVE",
@@ -1547,7 +1547,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 13,
-      "now_cost": "6.6",
+      "now_cost": "6.7",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -5759,7 +5759,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 1,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 5,
@@ -6209,7 +6209,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 2,
-      "now_cost": "6.1",
+      "now_cost": "6.0",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -7973,7 +7973,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "5.3",
+      "now_cost": "5.2",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
@@ -8657,7 +8657,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 0,
-      "now_cost": "6.8",
+      "now_cost": "6.7",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 3,
@@ -11195,7 +11195,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -12167,7 +12167,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "4.3",
+      "now_cost": "4.2",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -17178,7 +17178,7 @@
       "1": 7,
       "2": 0,
       "3": 0,
-      "4": 16,
+      "4": 17,
       "5": 0,
       "6": 0,
       "7": 2,
@@ -17205,7 +17205,7 @@
       "28": 0,
       "29": 0,
       "30": 0,
-      "31": 15,
+      "31": 14,
       "32": 3,
       "33": 0,
       "34": 2,
@@ -18678,11 +18678,11 @@
           "h": [
             {
               "value": 3,
-              "element": 31
+              "element": 4
             },
             {
               "value": 2,
-              "element": 4
+              "element": 31
             },
             {
               "value": 1,
@@ -18694,15 +18694,19 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 18,
-              "element": 244
-            },
-            {
-              "value": 16,
+              "value": 19,
               "element": 242
             },
             {
-              "value": 14,
+              "value": 15,
+              "element": 244
+            },
+            {
+              "value": 13,
+              "element": 236
+            },
+            {
+              "value": 12,
               "element": 239
             },
             {
@@ -18715,19 +18719,11 @@
             },
             {
               "value": 8,
-              "element": 232
-            },
-            {
-              "value": 8,
               "element": 246
             },
             {
               "value": 7,
               "element": 226
-            },
-            {
-              "value": 7,
-              "element": 236
             },
             {
               "value": 7,
@@ -18743,6 +18739,10 @@
             },
             {
               "value": 2,
+              "element": 232
+            },
+            {
+              "value": 2,
               "element": 243
             },
             {
@@ -18752,12 +18752,12 @@
           ],
           "h": [
             {
-              "value": 43,
-              "element": 31
+              "value": 44,
+              "element": 4
             },
             {
-              "value": 42,
-              "element": 4
+              "value": 43,
+              "element": 31
             },
             {
               "value": 38,
@@ -18768,12 +18768,12 @@
               "element": 1
             },
             {
-              "value": 21,
-              "element": 25
+              "value": 23,
+              "element": 13
             },
             {
-              "value": 20,
-              "element": 13
+              "value": 21,
+              "element": 25
             },
             {
               "value": 16,
@@ -18788,7 +18788,7 @@
               "element": 14
             },
             {
-              "value": 9,
+              "value": 6,
               "element": 17
             },
             {
@@ -18796,16 +18796,16 @@
               "element": 26
             },
             {
-              "value": 4,
-              "element": 8
+              "value": 6,
+              "element": 452
             },
             {
-              "value": 4,
+              "value": 5,
               "element": 16
             },
             {
               "value": 4,
-              "element": 452
+              "element": 8
             },
             {
               "value": 3,
@@ -18821,7 +18821,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 15,
+              "value": 16,
               "element": 244
             },
             {
@@ -18875,7 +18875,7 @@
           ],
           "h": [
             {
-              "value": 12,
+              "value": 14,
               "element": 4
             },
             {
@@ -18895,6 +18895,10 @@
               "element": 14
             },
             {
+              "value": 4,
+              "element": 17
+            },
+            {
               "value": 3,
               "element": 8
             },
@@ -18905,10 +18909,6 @@
             {
               "value": 3,
               "element": 16
-            },
-            {
-              "value": 3,
-              "element": 17
             },
             {
               "value": 3,
@@ -19431,7 +19431,7 @@
               "element": 502
             },
             {
-              "value": 26,
+              "value": 24,
               "element": 525
             },
             {
@@ -19489,7 +19489,7 @@
               "element": 159
             },
             {
-              "value": 13,
+              "value": 12,
               "element": 164
             },
             {
@@ -19513,12 +19513,12 @@
               "element": 149
             },
             {
-              "value": 4,
-              "element": 560
+              "value": 3,
+              "element": 136
             },
             {
               "value": 3,
-              "element": 136
+              "element": 151
             },
             {
               "value": 3,
@@ -19526,7 +19526,7 @@
             },
             {
               "value": 2,
-              "element": 151
+              "element": 560
             },
             {
               "value": 1,
@@ -19604,7 +19604,7 @@
               "element": 149
             },
             {
-              "value": 10,
+              "value": 11,
               "element": 159
             },
             {
