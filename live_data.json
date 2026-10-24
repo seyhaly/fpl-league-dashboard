@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24T18:57:12Z",
+  "lastUpdated": "2026-10-24T21:20:12Z",
   "currentGw": 8,
   "eventStatuses": {
     "1": {
@@ -88,7 +88,7 @@
       "is_next": false,
       "deadline_time": "2026-10-23T17:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
@@ -4050,6 +4050,24 @@
       "team_id": 6,
       "event_points": 0,
       "now_cost": "4.5",
+      "opponent": "TOT",
+      "opponent_short": "TOT",
+      "difficulty": 2,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "669": {
+      "id": 669,
+      "web_name": "Sharman-Lowe",
+      "first_name": "Teddy",
+      "second_name": "Sharman-Lowe",
+      "element_type": 1,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "team_id": 6,
+      "event_points": 0,
+      "now_cost": "4.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 2,
@@ -17824,7 +17842,8 @@
       "665": 0,
       "666": 0,
       "667": 0,
-      "668": 0
+      "668": 0,
+      "669": 0
     }
   },
   "fixtures": [
@@ -20935,18 +20954,18 @@
         "active_chip": "wildcard",
         "entry_history": {
           "event": 8,
-          "points": 0,
-          "total_points": 417,
-          "rank": 3097279,
-          "rank_sort": 3765747,
-          "overall_rank": 4673615,
-          "percentile_rank": 30,
-          "overall_rank_percentage": "42",
+          "points": 25,
+          "total_points": 442,
+          "rank": 6028815,
+          "rank_sort": 6068079,
+          "overall_rank": 4814052,
+          "percentile_rank": 55,
+          "overall_rank_percentage": "43",
           "bank": 0,
           "value": 1006,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 2
+          "points_on_bench": 15
         },
         "automatic_subs": []
       }
@@ -22112,13 +22131,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 0,
-          "total_points": 464,
-          "rank": 8199913,
-          "rank_sort": 8632365,
-          "overall_rank": 1776573,
-          "percentile_rank": 75,
-          "overall_rank_percentage": "16",
+          "points": 25,
+          "total_points": 489,
+          "rank": 6320180,
+          "rank_sort": 6349346,
+          "overall_rank": 2008908,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "18",
           "bank": 3,
           "value": 1024,
           "event_transfers": 1,
@@ -23256,18 +23275,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 0,
-          "total_points": 451,
-          "rank": 9740637,
-          "rank_sort": 9949047,
-          "overall_rank": 2513974,
-          "percentile_rank": 90,
-          "overall_rank_percentage": "23",
+          "points": 25,
+          "total_points": 476,
+          "rank": 6421169,
+          "rank_sort": 6434704,
+          "overall_rank": 2746889,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "25",
           "bank": 20,
           "value": 1020,
           "event_transfers": 2,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 3
         },
         "automatic_subs": []
       }
@@ -24414,13 +24433,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 0,
-          "total_points": 420,
-          "rank": 8199913,
-          "rank_sort": 8624459,
-          "overall_rank": 4500809,
-          "percentile_rank": 75,
-          "overall_rank_percentage": "40",
+          "points": 24,
+          "total_points": 444,
+          "rank": 6759230,
+          "rank_sort": 6781443,
+          "overall_rank": 4714416,
+          "percentile_rank": 65,
+          "overall_rank_percentage": "42",
           "bank": 27,
           "value": 1008,
           "event_transfers": 1,
@@ -25597,13 +25616,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 0,
-          "total_points": 418,
-          "rank": 3097279,
-          "rank_sort": 3766374,
-          "overall_rank": 4598296,
-          "percentile_rank": 30,
-          "overall_rank_percentage": "41",
+          "points": 15,
+          "total_points": 433,
+          "rank": 9453093,
+          "rank_sort": 9462896,
+          "overall_rank": 5357236,
+          "percentile_rank": 90,
+          "overall_rank_percentage": "48",
           "bank": 6,
           "value": 1024,
           "event_transfers": 0,
@@ -26748,18 +26767,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 8,
-          "total_points": 440,
-          "rank": 486790,
-          "rank_sort": 510371,
-          "overall_rank": 3162059,
-          "percentile_rank": 5,
-          "overall_rank_percentage": "28",
+          "points": 32,
+          "total_points": 464,
+          "rank": 3603495,
+          "rank_sort": 3627630,
+          "overall_rank": 3442695,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "31",
           "bank": 10,
           "value": 1008,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 1
+          "points_on_bench": 10
         },
         "automatic_subs": []
       }
@@ -27885,12 +27904,12 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 1,
-          "total_points": 253,
-          "rank": 3097211,
-          "rank_sort": 3097221,
-          "overall_rank": 10185156,
-          "percentile_rank": 30,
+          "points": 21,
+          "total_points": 273,
+          "rank": 7858292,
+          "rank_sort": 7858301,
+          "overall_rank": 10193151,
+          "percentile_rank": 75,
           "overall_rank_percentage": "92",
           "bank": 76,
           "value": 1023,
@@ -29036,18 +29055,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 8,
-          "points": 0,
-          "total_points": 435,
-          "rank": 9740637,
-          "rank_sort": 9756706,
-          "overall_rank": 3482817,
-          "percentile_rank": 90,
-          "overall_rank_percentage": "31",
+          "points": 20,
+          "total_points": 455,
+          "rank": 8157003,
+          "rank_sort": 8157600,
+          "overall_rank": 4002377,
+          "percentile_rank": 75,
+          "overall_rank_percentage": "36",
           "bank": 16,
           "value": 1014,
           "event_transfers": 2,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 1
         },
         "automatic_subs": []
       }
@@ -31366,13 +31385,13 @@
         {
           "gw": 8,
           "scores": {
-            "2067578": 0,
-            "2023789": 0,
-            "2019453": 8,
-            "2026160": 0,
-            "2023013": 0,
-            "2024611": 0,
-            "2026484": 1
+            "2067578": 25,
+            "2023789": 25,
+            "2019453": 32,
+            "2026160": 24,
+            "2023013": 25,
+            "2024611": 15,
+            "2026484": 21
           },
           "hits": {
             "2067578": 0,
@@ -31394,10 +31413,10 @@
           },
           "benchPoints": {
             "2067578": 0,
-            "2023789": 0,
-            "2019453": 1,
+            "2023789": 3,
+            "2019453": 10,
             "2026160": 0,
-            "2023013": 2,
+            "2023013": 15,
             "2024611": 0,
             "2026484": 0
           },
@@ -31414,13 +31433,13 @@
             "2023013": "wildcard"
           },
           "seasonTotals": {
-            "2067578": 464,
-            "2023789": 451,
-            "2019453": 440,
-            "2026160": 420,
-            "2023013": 417,
-            "2024611": 418,
-            "2026484": 253
+            "2067578": 489,
+            "2023789": 476,
+            "2019453": 464,
+            "2026160": 444,
+            "2023013": 442,
+            "2024611": 433,
+            "2026484": 273
           }
         },
         {
@@ -32034,8 +32053,8 @@
         {
           "gw": 8,
           "scores": {
-            "2019453": 8,
-            "145847": 0
+            "2019453": 32,
+            "145847": 20
           },
           "hits": {
             "2019453": 0,
@@ -32046,8 +32065,8 @@
             "145847": 2
           },
           "benchPoints": {
-            "2019453": 1,
-            "145847": 0
+            "2019453": 10,
+            "145847": 1
           },
           "captainPoints": {
             "2019453": 16,
@@ -32055,8 +32074,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 440,
-            "145847": 435
+            "2019453": 464,
+            "145847": 455
           }
         },
         {
