@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-25T18:09:13Z",
+  "lastUpdated": "2026-10-25T20:45:22Z",
   "currentGw": 8,
   "eventStatuses": {
     "1": {
@@ -89,7 +89,7 @@
       "deadline_time": "2026-10-23T17:30:00Z",
       "bonus_added": false,
       "leagues": "",
-      "points": "l",
+      "points": "p",
       "daily_status": [
         {
           "bonus_added": false,
@@ -107,7 +107,7 @@
           "bonus_added": false,
           "date": "2026-10-25",
           "event": 8,
-          "points": "l"
+          "points": "p"
         }
       ]
     },
@@ -7780,8 +7780,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 65,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "326": {
       "id": 326,
@@ -7798,8 +7798,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "327": {
       "id": 327,
@@ -7810,14 +7810,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 10,
+      "event_points": 8,
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "329": {
       "id": 329,
@@ -7834,8 +7834,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "330": {
       "id": 330,
@@ -7851,9 +7851,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "331": {
       "id": 331,
@@ -7869,9 +7869,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "332": {
       "id": 332,
@@ -7887,9 +7887,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "333": {
       "id": 333,
@@ -7906,8 +7906,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "334": {
       "id": 334,
@@ -7918,14 +7918,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 6,
+      "event_points": 9,
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "335": {
       "id": 335,
@@ -7941,9 +7941,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 13,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 24,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "336": {
       "id": 336,
@@ -7959,9 +7959,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 25,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "337": {
       "id": 337,
@@ -7978,8 +7978,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 64,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "338": {
       "id": 338,
@@ -7995,9 +7995,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "339": {
       "id": 339,
@@ -8008,14 +8008,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "341": {
       "id": 341,
@@ -8032,8 +8032,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "342": {
       "id": 342,
@@ -8050,8 +8050,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "343": {
       "id": 343,
@@ -8068,8 +8068,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "344": {
       "id": 344,
@@ -8086,8 +8086,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "345": {
       "id": 345,
@@ -8103,9 +8103,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 88,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "346": {
       "id": 346,
@@ -8121,9 +8121,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "347": {
       "id": 347,
@@ -8134,14 +8134,14 @@
       "team": "LEE",
       "team_name": "Leeds",
       "team_id": 13,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "348": {
       "id": 348,
@@ -8158,8 +8158,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "349": {
       "id": 349,
@@ -8176,8 +8176,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "385": {
       "id": 385,
@@ -8193,9 +8193,9 @@
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "598": {
       "id": 598,
@@ -8212,8 +8212,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "603": {
       "id": 603,
@@ -8230,8 +8230,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "604": {
       "id": 604,
@@ -8248,8 +8248,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "625": {
       "id": 625,
@@ -8266,8 +8266,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "629": {
       "id": 629,
@@ -8284,8 +8284,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "641": {
       "id": 641,
@@ -8302,8 +8302,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "648": {
       "id": 648,
@@ -8320,8 +8320,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "350": {
       "id": 350,
@@ -12064,8 +12064,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "529": {
       "id": 529,
@@ -12076,14 +12076,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 7,
+      "event_points": 9,
       "now_cost": "4.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "530": {
       "id": 530,
@@ -12100,8 +12100,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "531": {
       "id": 531,
@@ -12118,8 +12118,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "532": {
       "id": 532,
@@ -12136,8 +12136,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "533": {
       "id": 533,
@@ -12154,8 +12154,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 51,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "534": {
       "id": 534,
@@ -12171,9 +12171,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "535": {
       "id": 535,
@@ -12189,9 +12189,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 27,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 38,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "536": {
       "id": 536,
@@ -12207,9 +12207,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "537": {
       "id": 537,
@@ -12226,8 +12226,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "538": {
       "id": 538,
@@ -12244,8 +12244,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "539": {
       "id": 539,
@@ -12256,14 +12256,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 8,
+      "event_points": 9,
       "now_cost": "3.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "540": {
       "id": 540,
@@ -12280,8 +12280,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "541": {
       "id": 541,
@@ -12298,8 +12298,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "542": {
       "id": 542,
@@ -12315,9 +12315,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 78,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "543": {
       "id": 543,
@@ -12328,14 +12328,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 11,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "544": {
       "id": 544,
@@ -12351,9 +12351,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "545": {
       "id": 545,
@@ -12369,9 +12369,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "546": {
       "id": 546,
@@ -12388,8 +12388,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "547": {
       "id": 547,
@@ -12406,8 +12406,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "548": {
       "id": 548,
@@ -12423,9 +12423,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 79,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "549": {
       "id": 549,
@@ -12441,9 +12441,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 1,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 11,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "550": {
       "id": 550,
@@ -12460,8 +12460,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "551": {
       "id": 551,
@@ -12478,8 +12478,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 78,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "552": {
       "id": 552,
@@ -12496,8 +12496,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 64,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "553": {
       "id": 553,
@@ -12514,8 +12514,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "612": {
       "id": 612,
@@ -12532,8 +12532,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "613": {
       "id": 613,
@@ -12550,8 +12550,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "646": {
       "id": 646,
@@ -12568,8 +12568,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "651": {
       "id": 651,
@@ -12586,8 +12586,8 @@
       "opponent_short": "LEE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "668": {
       "id": 668,
@@ -12603,9 +12603,9 @@
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (79')"
+      "minutes": 25,
+      "match_status": "played",
+      "status_label": "✓ Played"
     }
   },
   "playerGwPoints": {
@@ -17501,19 +17501,19 @@
       "324": 0,
       "325": 0,
       "326": 0,
-      "327": 10,
+      "327": 8,
       "328": 0,
       "329": 0,
       "330": 5,
       "331": 6,
       "332": 6,
       "333": 0,
-      "334": 6,
+      "334": 9,
       "335": 1,
       "336": 1,
       "337": 3,
       "338": 2,
-      "339": 0,
+      "339": 1,
       "340": 1,
       "341": 0,
       "342": 0,
@@ -17521,7 +17521,7 @@
       "344": 0,
       "345": 3,
       "346": 2,
-      "347": 0,
+      "347": 1,
       "348": 0,
       "349": 0,
       "350": 6,
@@ -17703,7 +17703,7 @@
       "526": 1,
       "527": 0,
       "528": 0,
-      "529": 7,
+      "529": 9,
       "530": 0,
       "531": 0,
       "532": 0,
@@ -17713,11 +17713,11 @@
       "536": 5,
       "537": 0,
       "538": 0,
-      "539": 8,
+      "539": 9,
       "540": 0,
       "541": 0,
       "542": 3,
-      "543": 0,
+      "543": 1,
       "544": 3,
       "545": 3,
       "546": 0,
@@ -20852,7 +20852,7 @@
               "element": 61
             },
             {
-              "value": 31,
+              "value": 33,
               "element": 79
             },
             {
@@ -20880,12 +20880,12 @@
               "element": 71
             },
             {
-              "value": 12,
-              "element": 75
+              "value": 11,
+              "element": 73
             },
             {
               "value": 10,
-              "element": 73
+              "element": 75
             },
             {
               "value": 6,
@@ -20915,19 +20915,19 @@
             },
             {
               "value": 15,
+              "element": 428
+            },
+            {
+              "value": 15,
               "element": 431
             },
             {
-              "value": 13,
+              "value": 14,
               "element": 131
             },
             {
-              "value": 12,
+              "value": 14,
               "element": 427
-            },
-            {
-              "value": 11,
-              "element": 428
             },
             {
               "value": 5,
@@ -20971,7 +20971,7 @@
               "element": 67
             },
             {
-              "value": 12,
+              "value": 13,
               "element": 73
             },
             {
@@ -20983,7 +20983,7 @@
               "element": 566
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 79
             },
             {
@@ -21026,11 +21026,11 @@
             },
             {
               "value": 9,
-              "element": 430
+              "element": 131
             },
             {
-              "value": 8,
-              "element": 131
+              "value": 9,
+              "element": 430
             },
             {
               "value": 8,
@@ -21041,12 +21041,12 @@
               "element": 417
             },
             {
-              "value": 6,
-              "element": 420
+              "value": 5,
+              "element": 418
             },
             {
               "value": 5,
-              "element": 418
+              "element": 420
             },
             {
               "value": 5,
@@ -21054,11 +21054,11 @@
             },
             {
               "value": 4,
-              "element": 431
+              "element": 419
             },
             {
-              "value": 3,
-              "element": 419
+              "value": 4,
+              "element": 431
             },
             {
               "value": 3,
@@ -21083,10 +21083,10 @@
       "code": 2645274,
       "event": 8,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 80,
       "kickoff_time": "2026-10-25T16:30:00Z",
-      "minutes": 79,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 13,
@@ -21153,7 +21153,7 @@
           ],
           "h": [
             {
-              "value": 2,
+              "value": 3,
               "element": 529
             }
           ]
@@ -21166,14 +21166,18 @@
               "element": 385
             },
             {
-              "value": 2,
-              "element": 327
+              "value": 1,
+              "element": 334
             }
           ],
           "h": [
             {
-              "value": 1,
+              "value": 2,
               "element": 529
+            },
+            {
+              "value": 1,
+              "element": 539
             }
           ]
         },
@@ -21181,44 +21185,48 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 31,
+              "value": 33,
               "element": 385
             },
             {
               "value": 26,
-              "element": 327
-            },
-            {
-              "value": 24,
               "element": 334
             },
             {
-              "value": 23,
-              "element": 330
+              "value": 25,
+              "element": 327
             },
             {
-              "value": 22,
+              "value": 23,
               "element": 332
             },
             {
-              "value": 20,
+              "value": 22,
+              "element": 330
+            },
+            {
+              "value": 21,
               "element": 331
+            },
+            {
+              "value": 17,
+              "element": 345
             },
             {
               "value": 14,
               "element": 260
             },
             {
-              "value": 14,
-              "element": 345
+              "value": 9,
+              "element": 338
+            },
+            {
+              "value": 8,
+              "element": 336
             },
             {
               "value": 7,
               "element": 337
-            },
-            {
-              "value": 6,
-              "element": 338
             },
             {
               "value": 5,
@@ -21226,20 +21234,24 @@
             },
             {
               "value": 4,
-              "element": 336
+              "element": 335
+            },
+            {
+              "value": 4,
+              "element": 339
             },
             {
               "value": 3,
-              "element": 335
+              "element": 347
             }
           ],
           "h": [
             {
-              "value": 25,
+              "value": 28,
               "element": 529
             },
             {
-              "value": 22,
+              "value": 26,
               "element": 539
             },
             {
@@ -21263,7 +21275,7 @@
               "element": 542
             },
             {
-              "value": 13,
+              "value": 12,
               "element": 548
             },
             {
@@ -21271,20 +21283,24 @@
               "element": 545
             },
             {
-              "value": 7,
-              "element": 552
-            },
-            {
               "value": 6,
               "element": 533
             },
             {
-              "value": 3,
-              "element": 549
+              "value": 6,
+              "element": 552
             },
             {
-              "value": 2,
+              "value": 3,
               "element": 535
+            },
+            {
+              "value": 3,
+              "element": 543
+            },
+            {
+              "value": 3,
+              "element": 549
             },
             {
               "value": 2,
@@ -21296,20 +21312,20 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 11,
+              "value": 15,
               "element": 327
             },
             {
-              "value": 8,
-              "element": 332
+              "value": 12,
+              "element": 334
             },
             {
-              "value": 8,
-              "element": 345
-            },
-            {
-              "value": 7,
+              "value": 10,
               "element": 338
+            },
+            {
+              "value": 10,
+              "element": 345
             },
             {
               "value": 6,
@@ -21317,33 +21333,49 @@
             },
             {
               "value": 6,
-              "element": 334
+              "element": 331
+            },
+            {
+              "value": 6,
+              "element": 332
             },
             {
               "value": 5,
               "element": 330
             },
             {
-              "value": 4,
-              "element": 331
-            },
-            {
               "value": 3,
               "element": 337
             },
             {
-              "value": 1,
+              "value": 2,
               "element": 336
+            },
+            {
+              "value": 1,
+              "element": 335
+            },
+            {
+              "value": 1,
+              "element": 347
             }
           ],
           "h": [
             {
-              "value": 14,
+              "value": 19,
               "element": 539
             },
             {
               "value": 9,
               "element": 536
+            },
+            {
+              "value": 9,
+              "element": 544
+            },
+            {
+              "value": 8,
+              "element": 545
             },
             {
               "value": 8,
@@ -21355,19 +21387,15 @@
             },
             {
               "value": 6,
-              "element": 544
-            },
-            {
-              "value": 6,
-              "element": 545
-            },
-            {
-              "value": 6,
               "element": 551
             },
             {
               "value": 5,
               "element": 534
+            },
+            {
+              "value": 5,
+              "element": 535
             },
             {
               "value": 3,
@@ -21378,8 +21406,16 @@
               "element": 552
             },
             {
-              "value": 2,
-              "element": 535
+              "value": 1,
+              "element": 543
+            },
+            {
+              "value": 1,
+              "element": 549
+            },
+            {
+              "value": 1,
+              "element": 668
             }
           ]
         }
