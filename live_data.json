@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28T21:39:25Z",
+  "lastUpdated": "2026-10-29T01:12:31Z",
   "currentGw": 8,
   "eventStatuses": {
     "1": {
@@ -1457,7 +1457,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 1,
-      "now_cost": "6.0",
+      "now_cost": "6.1",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -2699,7 +2699,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 4,
-      "now_cost": "5.5",
+      "now_cost": "5.4",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
