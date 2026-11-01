@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-01T13:48:02Z",
+  "lastUpdated": "2026-11-01T18:36:06Z",
   "currentGw": 9,
   "eventStatuses": {
     "1": {
@@ -112,7 +112,7 @@
           "bonus_added": false,
           "date": "2026-11-01",
           "event": 9,
-          "points": ""
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -574,14 +574,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "6.2",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "2": {
       "id": 2,
@@ -598,8 +598,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "3": {
       "id": 3,
@@ -616,8 +616,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "4": {
       "id": 4,
@@ -628,14 +628,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "8.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "5": {
       "id": 5,
@@ -646,14 +646,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "6.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "6": {
       "id": 6,
@@ -670,8 +670,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "7": {
       "id": 7,
@@ -687,9 +687,9 @@
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 28,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "8": {
       "id": 8,
@@ -700,14 +700,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "5.9",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "9": {
       "id": 9,
@@ -718,14 +718,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.2",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "10": {
       "id": 10,
@@ -742,8 +742,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "11": {
       "id": 11,
@@ -760,8 +760,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "12": {
       "id": 12,
@@ -778,8 +778,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "13": {
       "id": 13,
@@ -790,14 +790,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "7.4",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "14": {
       "id": 14,
@@ -814,8 +814,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "15": {
       "id": 15,
@@ -826,14 +826,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.7",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 87,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "16": {
       "id": 16,
@@ -844,14 +844,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "6.2",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "17": {
       "id": 17,
@@ -862,14 +862,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 2,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "18": {
       "id": 18,
@@ -886,8 +886,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "19": {
       "id": 19,
@@ -904,8 +904,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "20": {
       "id": 20,
@@ -922,8 +922,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "22": {
       "id": 22,
@@ -940,8 +940,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "23": {
       "id": 23,
@@ -958,8 +958,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "24": {
       "id": 24,
@@ -976,8 +976,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "25": {
       "id": 25,
@@ -988,14 +988,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "26": {
       "id": 26,
@@ -1006,14 +1006,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "7.4",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "27": {
       "id": 27,
@@ -1030,8 +1030,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "31": {
       "id": 31,
@@ -1042,14 +1042,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 10,
       "now_cost": "4.7",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "452": {
       "id": 452,
@@ -1060,14 +1060,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.7",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 61,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "557": {
       "id": 557,
@@ -1078,14 +1078,14 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.1",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "29": {
       "id": 29,
@@ -8350,14 +8350,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "351": {
       "id": 351,
@@ -8374,8 +8374,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "352": {
       "id": 352,
@@ -8392,8 +8392,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "353": {
       "id": 353,
@@ -8410,8 +8410,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "354": {
       "id": 354,
@@ -8428,8 +8428,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "355": {
       "id": 355,
@@ -8446,8 +8446,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "356": {
       "id": 356,
@@ -8458,14 +8458,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.4",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "357": {
       "id": 357,
@@ -8482,8 +8482,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "358": {
       "id": 358,
@@ -8494,14 +8494,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "359": {
       "id": 359,
@@ -8518,8 +8518,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "360": {
       "id": 360,
@@ -8536,8 +8536,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "361": {
       "id": 361,
@@ -8554,8 +8554,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "362": {
       "id": 362,
@@ -8566,14 +8566,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.1",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "363": {
       "id": 363,
@@ -8590,8 +8590,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "364": {
       "id": 364,
@@ -8602,14 +8602,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "365": {
       "id": 365,
@@ -8626,8 +8626,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "366": {
       "id": 366,
@@ -8638,14 +8638,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.2",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "367": {
       "id": 367,
@@ -8656,14 +8656,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "7.1",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 66,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "368": {
       "id": 368,
@@ -8674,14 +8674,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.7",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 31,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "369": {
       "id": 369,
@@ -8692,14 +8692,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 23,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "370": {
       "id": 370,
@@ -8716,8 +8716,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "371": {
       "id": 371,
@@ -8734,8 +8734,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "372": {
       "id": 372,
@@ -8746,14 +8746,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "373": {
       "id": 373,
@@ -8770,8 +8770,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "374": {
       "id": 374,
@@ -8788,8 +8788,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "375": {
       "id": 375,
@@ -8800,14 +8800,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 58,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "376": {
       "id": 376,
@@ -8824,8 +8824,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "377": {
       "id": 377,
@@ -8836,14 +8836,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.5",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "378": {
       "id": 378,
@@ -8860,8 +8860,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "379": {
       "id": 379,
@@ -8872,14 +8872,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "9.2",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "380": {
       "id": 380,
@@ -8896,8 +8896,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "381": {
       "id": 381,
@@ -8908,14 +8908,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 9,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "382": {
       "id": 382,
@@ -8932,8 +8932,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "383": {
       "id": 383,
@@ -8950,8 +8950,8 @@
       "opponent_short": "ARS",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "579": {
       "id": 579,
@@ -8962,14 +8962,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.4",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 80,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "627": {
       "id": 627,
@@ -8980,14 +8980,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "8.1",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "155": {
       "id": 155,
@@ -17864,23 +17864,23 @@
       "669": 0
     },
     "9": {
-      "1": 0,
+      "1": 5,
       "2": 0,
       "3": 0,
-      "4": 0,
-      "5": 0,
+      "4": 6,
+      "5": 5,
       "6": 0,
       "7": 0,
-      "8": 0,
-      "9": 0,
+      "8": 8,
+      "9": 1,
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 0,
+      "13": 8,
       "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
+      "15": 3,
+      "16": 2,
+      "17": 1,
       "18": 0,
       "19": 0,
       "20": 0,
@@ -17888,13 +17888,13 @@
       "22": 0,
       "23": 0,
       "24": 0,
-      "25": 0,
-      "26": 0,
+      "25": 1,
+      "26": 9,
       "27": 0,
       "28": 0,
       "29": 0,
       "30": 0,
-      "31": 0,
+      "31": 10,
       "32": 1,
       "33": 0,
       "34": 2,
@@ -18213,38 +18213,38 @@
       "347": 1,
       "348": 0,
       "349": 0,
-      "350": 0,
+      "350": 2,
       "351": 0,
       "352": 0,
       "353": 0,
       "354": 0,
       "355": 0,
-      "356": 0,
+      "356": 1,
       "357": 0,
-      "358": 0,
+      "358": 1,
       "359": 0,
       "360": 0,
       "361": 0,
-      "362": 0,
+      "362": 2,
       "363": 0,
-      "364": 0,
+      "364": 1,
       "365": 0,
-      "366": 0,
-      "367": 0,
-      "368": 0,
-      "369": 0,
+      "366": 2,
+      "367": 2,
+      "368": 1,
+      "369": 1,
       "370": 0,
       "371": 0,
-      "372": 0,
+      "372": 1,
       "373": 0,
       "374": 0,
-      "375": 0,
+      "375": 1,
       "376": 0,
-      "377": 0,
+      "377": 1,
       "378": 0,
-      "379": 0,
+      "379": 2,
       "380": 0,
-      "381": 0,
+      "381": 1,
       "382": 0,
       "383": 0,
       "384": 2,
@@ -18315,7 +18315,7 @@
       "449": 0,
       "450": 0,
       "451": 0,
-      "452": 0,
+      "452": 3,
       "453": 0,
       "454": 0,
       "455": 3,
@@ -18420,7 +18420,7 @@
       "554": 0,
       "555": 0,
       "556": 0,
-      "557": 0,
+      "557": 3,
       "558": 1,
       "559": 0,
       "560": 6,
@@ -18442,7 +18442,7 @@
       "576": 0,
       "577": 0,
       "578": 0,
-      "579": 0,
+      "579": 4,
       "580": 2,
       "581": 0,
       "582": 0,
@@ -18490,7 +18490,7 @@
       "624": 0,
       "625": 0,
       "626": 0,
-      "627": 0,
+      "627": 1,
       "628": 1,
       "629": 0,
       "630": 0,
@@ -21460,17 +21460,375 @@
       "code": 2645281,
       "event": 9,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 87,
       "kickoff_time": "2026-11-01T16:30:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 1,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 14,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 26
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 1,
+              "element": 13
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 1
+            },
+            {
+              "value": 1,
+              "element": 5
+            },
+            {
+              "value": 1,
+              "element": 7
+            },
+            {
+              "value": 1,
+              "element": 16
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 356
+            },
+            {
+              "value": 1,
+              "element": 358
+            },
+            {
+              "value": 1,
+              "element": 372
+            },
+            {
+              "value": 1,
+              "element": 627
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [],
+          "h": [
+            {
+              "value": 2,
+              "element": 350
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 26
+            },
+            {
+              "value": 2,
+              "element": 13
+            },
+            {
+              "value": 2,
+              "element": 31
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 33,
+              "element": 26
+            },
+            {
+              "value": 32,
+              "element": 13
+            },
+            {
+              "value": 32,
+              "element": 31
+            },
+            {
+              "value": 29,
+              "element": 4
+            },
+            {
+              "value": 23,
+              "element": 5
+            },
+            {
+              "value": 23,
+              "element": 8
+            },
+            {
+              "value": 21,
+              "element": 1
+            },
+            {
+              "value": 17,
+              "element": 15
+            },
+            {
+              "value": 14,
+              "element": 557
+            },
+            {
+              "value": 11,
+              "element": 16
+            },
+            {
+              "value": 9,
+              "element": 452
+            },
+            {
+              "value": 4,
+              "element": 7
+            },
+            {
+              "value": 4,
+              "element": 17
+            },
+            {
+              "value": 3,
+              "element": 25
+            },
+            {
+              "value": 2,
+              "element": 9
+            }
+          ],
+          "h": [
+            {
+              "value": 14,
+              "element": 362
+            },
+            {
+              "value": 11,
+              "element": 358
+            },
+            {
+              "value": 10,
+              "element": 368
+            },
+            {
+              "value": 10,
+              "element": 375
+            },
+            {
+              "value": 9,
+              "element": 366
+            },
+            {
+              "value": 9,
+              "element": 579
+            },
+            {
+              "value": 8,
+              "element": 379
+            },
+            {
+              "value": 7,
+              "element": 350
+            },
+            {
+              "value": 7,
+              "element": 367
+            },
+            {
+              "value": 6,
+              "element": 356
+            },
+            {
+              "value": 6,
+              "element": 372
+            },
+            {
+              "value": 6,
+              "element": 627
+            },
+            {
+              "value": 5,
+              "element": 369
+            },
+            {
+              "value": 4,
+              "element": 377
+            },
+            {
+              "value": 4,
+              "element": 381
+            },
+            {
+              "value": 2,
+              "element": 364
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 15,
+              "element": 31
+            },
+            {
+              "value": 10,
+              "element": 8
+            },
+            {
+              "value": 9,
+              "element": 4
+            },
+            {
+              "value": 9,
+              "element": 13
+            },
+            {
+              "value": 8,
+              "element": 15
+            },
+            {
+              "value": 7,
+              "element": 5
+            },
+            {
+              "value": 7,
+              "element": 16
+            },
+            {
+              "value": 7,
+              "element": 26
+            },
+            {
+              "value": 6,
+              "element": 452
+            },
+            {
+              "value": 6,
+              "element": 557
+            },
+            {
+              "value": 3,
+              "element": 9
+            },
+            {
+              "value": 2,
+              "element": 7
+            },
+            {
+              "value": 2,
+              "element": 25
+            },
+            {
+              "value": 1,
+              "element": 17
+            }
+          ],
+          "h": [
+            {
+              "value": 11,
+              "element": 579
+            },
+            {
+              "value": 10,
+              "element": 372
+            },
+            {
+              "value": 9,
+              "element": 362
+            },
+            {
+              "value": 7,
+              "element": 356
+            },
+            {
+              "value": 7,
+              "element": 368
+            },
+            {
+              "value": 6,
+              "element": 358
+            },
+            {
+              "value": 6,
+              "element": 375
+            },
+            {
+              "value": 5,
+              "element": 627
+            },
+            {
+              "value": 4,
+              "element": 366
+            },
+            {
+              "value": 4,
+              "element": 367
+            },
+            {
+              "value": 4,
+              "element": 381
+            },
+            {
+              "value": 3,
+              "element": 379
+            },
+            {
+              "value": 2,
+              "element": 369
+            },
+            {
+              "value": 1,
+              "element": 377
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 4,
       "team_a_difficulty": 4,
       "pulse_id": 0
@@ -32117,89 +32475,6 @@
         "time": "2026-08-28T07:54:47.989682Z"
       }
     ],
-    "2019453": [
-      {
-        "element_in": 112,
-        "element_in_cost": 49,
-        "element_out": 469,
-        "element_out_cost": 50,
-        "entry": 2019453,
-        "event": 9,
-        "time": "2026-10-26T17:26:28.941005Z"
-      },
-      {
-        "element_in": 399,
-        "element_in_cost": 80,
-        "element_out": 154,
-        "element_out_cost": 97,
-        "entry": 2019453,
-        "event": 9,
-        "time": "2026-10-26T05:21:10.887199Z"
-      },
-      {
-        "element_in": 166,
-        "element_in_cost": 67,
-        "element_out": 165,
-        "element_out_cost": 77,
-        "entry": 2019453,
-        "event": 9,
-        "time": "2026-10-26T05:20:39.970857Z"
-      },
-      {
-        "element_in": 286,
-        "element_in_cost": 52,
-        "element_out": 557,
-        "element_out_cost": 62,
-        "entry": 2019453,
-        "event": 8,
-        "time": "2026-10-18T02:30:04.370400Z"
-      },
-      {
-        "element_in": 154,
-        "element_in_cost": 97,
-        "element_out": 397,
-        "element_out_cost": 84,
-        "entry": 2019453,
-        "event": 5,
-        "time": "2026-09-12T13:56:21.522757Z"
-      },
-      {
-        "element_in": 391,
-        "element_in_cost": 56,
-        "element_out": 387,
-        "element_out_cost": 64,
-        "entry": 2019453,
-        "event": 5,
-        "time": "2026-09-12T13:56:21.517228Z"
-      },
-      {
-        "element_in": 454,
-        "element_in_cost": 60,
-        "element_out": 337,
-        "element_out_cost": 55,
-        "entry": 2019453,
-        "event": 3,
-        "time": "2026-08-30T00:31:14.617853Z"
-      },
-      {
-        "element_in": 279,
-        "element_in_cost": 40,
-        "element_out": 201,
-        "element_out_cost": 55,
-        "entry": 2019453,
-        "event": 3,
-        "time": "2026-08-29T00:41:11.480685Z"
-      },
-      {
-        "element_in": 496,
-        "element_in_cost": 45,
-        "element_out": 301,
-        "element_out_cost": 40,
-        "entry": 2019453,
-        "event": 3,
-        "time": "2026-08-29T00:41:11.474635Z"
-      }
-    ],
     "2067578": [
       {
         "element_in": 379,
@@ -32281,6 +32556,89 @@
         "entry": 2067578,
         "event": 2,
         "time": "2026-08-25T00:27:33.395226Z"
+      }
+    ],
+    "2019453": [
+      {
+        "element_in": 112,
+        "element_in_cost": 49,
+        "element_out": 469,
+        "element_out_cost": 50,
+        "entry": 2019453,
+        "event": 9,
+        "time": "2026-10-26T17:26:28.941005Z"
+      },
+      {
+        "element_in": 399,
+        "element_in_cost": 80,
+        "element_out": 154,
+        "element_out_cost": 97,
+        "entry": 2019453,
+        "event": 9,
+        "time": "2026-10-26T05:21:10.887199Z"
+      },
+      {
+        "element_in": 166,
+        "element_in_cost": 67,
+        "element_out": 165,
+        "element_out_cost": 77,
+        "entry": 2019453,
+        "event": 9,
+        "time": "2026-10-26T05:20:39.970857Z"
+      },
+      {
+        "element_in": 286,
+        "element_in_cost": 52,
+        "element_out": 557,
+        "element_out_cost": 62,
+        "entry": 2019453,
+        "event": 8,
+        "time": "2026-10-18T02:30:04.370400Z"
+      },
+      {
+        "element_in": 154,
+        "element_in_cost": 97,
+        "element_out": 397,
+        "element_out_cost": 84,
+        "entry": 2019453,
+        "event": 5,
+        "time": "2026-09-12T13:56:21.522757Z"
+      },
+      {
+        "element_in": 391,
+        "element_in_cost": 56,
+        "element_out": 387,
+        "element_out_cost": 64,
+        "entry": 2019453,
+        "event": 5,
+        "time": "2026-09-12T13:56:21.517228Z"
+      },
+      {
+        "element_in": 454,
+        "element_in_cost": 60,
+        "element_out": 337,
+        "element_out_cost": 55,
+        "entry": 2019453,
+        "event": 3,
+        "time": "2026-08-30T00:31:14.617853Z"
+      },
+      {
+        "element_in": 279,
+        "element_in_cost": 40,
+        "element_out": 201,
+        "element_out_cost": 55,
+        "entry": 2019453,
+        "event": 3,
+        "time": "2026-08-29T00:41:11.480685Z"
+      },
+      {
+        "element_in": 496,
+        "element_in_cost": 45,
+        "element_out": 301,
+        "element_out_cost": 40,
+        "entry": 2019453,
+        "event": 3,
+        "time": "2026-08-29T00:41:11.474635Z"
       }
     ],
     "2026160": [
@@ -32382,161 +32740,6 @@
         "entry": 2026160,
         "event": 2,
         "time": "2026-08-28T14:55:45.754628Z"
-      }
-    ],
-    "2023013": [
-      {
-        "element_in": 166,
-        "element_in_cost": 67,
-        "element_out": 165,
-        "element_out_cost": 78,
-        "entry": 2023013,
-        "event": 9,
-        "time": "2026-10-26T06:52:55.158516Z"
-      },
-      {
-        "element_in": 449,
-        "element_in_cost": 53,
-        "element_out": 8,
-        "element_out_cost": 57,
-        "entry": 2023013,
-        "event": 9,
-        "time": "2026-10-24T16:23:55.554980Z"
-      },
-      {
-        "element_in": 68,
-        "element_in_cost": 62,
-        "element_out": 94,
-        "element_out_cost": 61,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-21T12:29:23.875354Z"
-      },
-      {
-        "element_in": 427,
-        "element_in_cost": 78,
-        "element_out": 286,
-        "element_out_cost": 52,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T13:38:30.845676Z"
-      },
-      {
-        "element_in": 277,
-        "element_in_cost": 41,
-        "element_out": 356,
-        "element_out_cost": 65,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T13:38:30.845525Z"
-      },
-      {
-        "element_in": 379,
-        "element_in_cost": 90,
-        "element_out": 316,
-        "element_out_cost": 55,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T05:18:52.821923Z"
-      },
-      {
-        "element_in": 40,
-        "element_in_cost": 79,
-        "element_out": 427,
-        "element_out_cost": 78,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T05:18:52.821812Z"
-      },
-      {
-        "element_in": 286,
-        "element_in_cost": 52,
-        "element_out": 481,
-        "element_out_cost": 63,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T05:18:52.821708Z"
-      },
-      {
-        "element_in": 173,
-        "element_in_cost": 40,
-        "element_out": 174,
-        "element_out_cost": 40,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T05:18:52.821596Z"
-      },
-      {
-        "element_in": 250,
-        "element_in_cost": 45,
-        "element_out": 494,
-        "element_out_cost": 45,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-18T05:18:52.821430Z"
-      },
-      {
-        "element_in": 124,
-        "element_in_cost": 61,
-        "element_out": 367,
-        "element_out_cost": 70,
-        "entry": 2023013,
-        "event": 8,
-        "time": "2026-10-17T12:13:07.007358Z"
-      },
-      {
-        "element_in": 165,
-        "element_in_cost": 77,
-        "element_out": 379,
-        "element_out_cost": 90,
-        "entry": 2023013,
-        "event": 7,
-        "time": "2026-10-10T14:22:11.176518Z"
-      },
-      {
-        "element_in": 94,
-        "element_in_cost": 61,
-        "element_out": 454,
-        "element_out_cost": 61,
-        "entry": 2023013,
-        "event": 6,
-        "time": "2026-09-19T13:40:41.845535Z"
-      },
-      {
-        "element_in": 316,
-        "element_in_cost": 55,
-        "element_out": 552,
-        "element_out_cost": 58,
-        "entry": 2023013,
-        "event": 5,
-        "time": "2026-09-13T03:08:48.173023Z"
-      },
-      {
-        "element_in": 454,
-        "element_in_cost": 61,
-        "element_out": 260,
-        "element_out_cost": 64,
-        "entry": 2023013,
-        "event": 4,
-        "time": "2026-09-05T00:43:32.259710Z"
-      },
-      {
-        "element_in": 244,
-        "element_in_cost": 50,
-        "element_out": 287,
-        "element_out_cost": 50,
-        "entry": 2023013,
-        "event": 3,
-        "time": "2026-08-29T12:01:45.906114Z"
-      },
-      {
-        "element_in": 379,
-        "element_in_cost": 90,
-        "element_out": 25,
-        "element_out_cost": 75,
-        "entry": 2023013,
-        "event": 2,
-        "time": "2026-08-22T06:44:02.281015Z"
       }
     ],
     "2024611": [
@@ -32710,6 +32913,161 @@
         "entry": 2024611,
         "event": 3,
         "time": "2026-08-29T11:29:00.909893Z"
+      }
+    ],
+    "2023013": [
+      {
+        "element_in": 166,
+        "element_in_cost": 67,
+        "element_out": 165,
+        "element_out_cost": 78,
+        "entry": 2023013,
+        "event": 9,
+        "time": "2026-10-26T06:52:55.158516Z"
+      },
+      {
+        "element_in": 449,
+        "element_in_cost": 53,
+        "element_out": 8,
+        "element_out_cost": 57,
+        "entry": 2023013,
+        "event": 9,
+        "time": "2026-10-24T16:23:55.554980Z"
+      },
+      {
+        "element_in": 68,
+        "element_in_cost": 62,
+        "element_out": 94,
+        "element_out_cost": 61,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-21T12:29:23.875354Z"
+      },
+      {
+        "element_in": 427,
+        "element_in_cost": 78,
+        "element_out": 286,
+        "element_out_cost": 52,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T13:38:30.845676Z"
+      },
+      {
+        "element_in": 277,
+        "element_in_cost": 41,
+        "element_out": 356,
+        "element_out_cost": 65,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T13:38:30.845525Z"
+      },
+      {
+        "element_in": 379,
+        "element_in_cost": 90,
+        "element_out": 316,
+        "element_out_cost": 55,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T05:18:52.821923Z"
+      },
+      {
+        "element_in": 40,
+        "element_in_cost": 79,
+        "element_out": 427,
+        "element_out_cost": 78,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T05:18:52.821812Z"
+      },
+      {
+        "element_in": 286,
+        "element_in_cost": 52,
+        "element_out": 481,
+        "element_out_cost": 63,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T05:18:52.821708Z"
+      },
+      {
+        "element_in": 173,
+        "element_in_cost": 40,
+        "element_out": 174,
+        "element_out_cost": 40,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T05:18:52.821596Z"
+      },
+      {
+        "element_in": 250,
+        "element_in_cost": 45,
+        "element_out": 494,
+        "element_out_cost": 45,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-18T05:18:52.821430Z"
+      },
+      {
+        "element_in": 124,
+        "element_in_cost": 61,
+        "element_out": 367,
+        "element_out_cost": 70,
+        "entry": 2023013,
+        "event": 8,
+        "time": "2026-10-17T12:13:07.007358Z"
+      },
+      {
+        "element_in": 165,
+        "element_in_cost": 77,
+        "element_out": 379,
+        "element_out_cost": 90,
+        "entry": 2023013,
+        "event": 7,
+        "time": "2026-10-10T14:22:11.176518Z"
+      },
+      {
+        "element_in": 94,
+        "element_in_cost": 61,
+        "element_out": 454,
+        "element_out_cost": 61,
+        "entry": 2023013,
+        "event": 6,
+        "time": "2026-09-19T13:40:41.845535Z"
+      },
+      {
+        "element_in": 316,
+        "element_in_cost": 55,
+        "element_out": 552,
+        "element_out_cost": 58,
+        "entry": 2023013,
+        "event": 5,
+        "time": "2026-09-13T03:08:48.173023Z"
+      },
+      {
+        "element_in": 454,
+        "element_in_cost": 61,
+        "element_out": 260,
+        "element_out_cost": 64,
+        "entry": 2023013,
+        "event": 4,
+        "time": "2026-09-05T00:43:32.259710Z"
+      },
+      {
+        "element_in": 244,
+        "element_in_cost": 50,
+        "element_out": 287,
+        "element_out_cost": 50,
+        "entry": 2023013,
+        "event": 3,
+        "time": "2026-08-29T12:01:45.906114Z"
+      },
+      {
+        "element_in": 379,
+        "element_in_cost": 90,
+        "element_out": 25,
+        "element_out_cost": 75,
+        "entry": 2023013,
+        "event": 2,
+        "time": "2026-08-22T06:44:02.281015Z"
       }
     ],
     "2026484": [
@@ -34096,16 +34454,16 @@
           "avatar": "MO"
         },
         {
-          "id": 2019453,
-          "name": "Seyha ly",
-          "teamName": "The Red Devil",
-          "avatar": "SE"
-        },
-        {
           "id": 2067578,
           "name": "Kun Phaktra",
           "teamName": "The Blue Warriors",
           "avatar": "KU"
+        },
+        {
+          "id": 2019453,
+          "name": "Seyha ly",
+          "teamName": "The Red Devil",
+          "avatar": "SE"
         },
         {
           "id": 2026160,
@@ -34114,16 +34472,16 @@
           "avatar": "PI"
         },
         {
-          "id": 2023013,
-          "name": "នរ សិង្ហ កន្សៃ",
-          "teamName": "G.O.A.T",
-          "avatar": "នរ"
-        },
-        {
           "id": 2024611,
           "name": "Vibol Dang",
           "teamName": "The White Emperor",
           "avatar": "VI"
+        },
+        {
+          "id": 2023013,
+          "name": "នរ សិង្ហ កន្សៃ",
+          "teamName": "G.O.A.T",
+          "avatar": "នរ"
         },
         {
           "id": 2026484,
@@ -34137,47 +34495,47 @@
           "gw": 1,
           "scores": {
             "2023789": 72,
-            "2019453": 41,
             "2067578": 66,
+            "2019453": 41,
             "2026160": 49,
-            "2023013": 52,
             "2024611": 54,
+            "2023013": 52,
             "2026484": 61
           },
           "hits": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 0
           },
           "transfers": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 0
           },
           "benchPoints": {
             "2023789": 0,
-            "2019453": 11,
             "2067578": 11,
+            "2019453": 11,
             "2026160": 0,
-            "2023013": 4,
             "2024611": 3,
+            "2023013": 4,
             "2026484": 9
           },
           "captainPoints": {
             "2023789": 4,
-            "2019453": 4,
             "2067578": 4,
+            "2019453": 4,
             "2026160": 4,
-            "2023013": 4,
             "2024611": 4,
+            "2023013": 4,
             "2026484": 4
           },
           "chipsUsed": {
@@ -34185,11 +34543,11 @@
           },
           "seasonTotals": {
             "2023789": 72,
-            "2019453": 41,
             "2067578": 66,
+            "2019453": 41,
             "2026160": 49,
-            "2023013": 52,
             "2024611": 54,
+            "2023013": 52,
             "2026484": 61
           }
         },
@@ -34197,47 +34555,47 @@
           "gw": 2,
           "scores": {
             "2023789": 74,
-            "2019453": 87,
             "2067578": 80,
+            "2019453": 87,
             "2026160": 76,
-            "2023013": 76,
             "2024611": 73,
+            "2023013": 76,
             "2026484": 65
           },
           "hits": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 0
           },
           "transfers": {
             "2023789": 1,
-            "2019453": 0,
             "2067578": 1,
+            "2019453": 0,
             "2026160": 1,
-            "2023013": 1,
             "2024611": 0,
+            "2023013": 1,
             "2026484": 0
           },
           "benchPoints": {
             "2023789": 4,
-            "2019453": 3,
             "2067578": 11,
+            "2019453": 3,
             "2026160": 15,
-            "2023013": 6,
             "2024611": 0,
+            "2023013": 6,
             "2026484": 2
           },
           "captainPoints": {
             "2023789": 26,
-            "2019453": 26,
             "2067578": 26,
+            "2019453": 26,
             "2026160": 18,
-            "2023013": 26,
             "2024611": 26,
+            "2023013": 26,
             "2026484": 18
           },
           "chipsUsed": {
@@ -34245,11 +34603,11 @@
           },
           "seasonTotals": {
             "2023789": 146,
-            "2019453": 128,
             "2067578": 146,
+            "2019453": 128,
             "2026160": 125,
-            "2023013": 128,
             "2024611": 127,
+            "2023013": 128,
             "2026484": 126
           }
         },
@@ -34257,47 +34615,47 @@
           "gw": 3,
           "scores": {
             "2023789": 52,
-            "2019453": 63,
             "2067578": 55,
+            "2019453": 63,
             "2026160": 58,
-            "2023013": 74,
             "2024611": 47,
+            "2023013": 74,
             "2026484": 44
           },
           "hits": {
             "2023789": 0,
-            "2019453": 4,
             "2067578": 0,
+            "2019453": 4,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 28
           },
           "transfers": {
             "2023789": 1,
-            "2019453": 3,
             "2067578": 1,
+            "2019453": 3,
             "2026160": 1,
-            "2023013": 1,
             "2024611": 2,
+            "2023013": 1,
             "2026484": 8
           },
           "benchPoints": {
             "2023789": 6,
-            "2019453": 11,
             "2067578": 21,
+            "2019453": 11,
             "2026160": 5,
-            "2023013": 4,
             "2024611": 0,
+            "2023013": 4,
             "2026484": 0
           },
           "captainPoints": {
             "2023789": 18,
-            "2019453": 18,
             "2067578": 18,
+            "2019453": 18,
             "2026160": 18,
-            "2023013": 18,
             "2024611": 18,
+            "2023013": 18,
             "2026484": 6
           },
           "chipsUsed": {
@@ -34305,11 +34663,11 @@
           },
           "seasonTotals": {
             "2023789": 198,
-            "2019453": 187,
             "2067578": 201,
+            "2019453": 187,
             "2026160": 183,
-            "2023013": 202,
             "2024611": 174,
+            "2023013": 202,
             "2026484": 142
           }
         },
@@ -34317,47 +34675,47 @@
           "gw": 4,
           "scores": {
             "2023789": 73,
-            "2019453": 72,
             "2067578": 78,
+            "2019453": 72,
             "2026160": 60,
-            "2023013": 59,
             "2024611": 102,
+            "2023013": 59,
             "2026484": 74
           },
           "hits": {
             "2023789": 4,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 4,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 36
           },
           "transfers": {
             "2023789": 2,
-            "2019453": 0,
             "2067578": 1,
+            "2019453": 0,
             "2026160": 2,
-            "2023013": 1,
             "2024611": 0,
+            "2023013": 1,
             "2026484": 10
           },
           "benchPoints": {
             "2023789": -1,
-            "2019453": 8,
             "2067578": 18,
+            "2019453": 8,
             "2026160": 4,
-            "2023013": 1,
             "2024611": 4,
+            "2023013": 1,
             "2026484": 44
           },
           "captainPoints": {
             "2023789": 24,
-            "2019453": 18,
             "2067578": 24,
+            "2019453": 18,
             "2026160": 24,
-            "2023013": 4,
             "2024611": 18,
+            "2023013": 4,
             "2026484": 24
           },
           "chipsUsed": {
@@ -34366,11 +34724,11 @@
           },
           "seasonTotals": {
             "2023789": 267,
-            "2019453": 259,
             "2067578": 279,
+            "2019453": 259,
             "2026160": 239,
-            "2023013": 261,
             "2024611": 276,
+            "2023013": 261,
             "2026484": 180
           }
         },
@@ -34378,47 +34736,47 @@
           "gw": 5,
           "scores": {
             "2023789": 57,
-            "2019453": 33,
             "2067578": 34,
+            "2019453": 33,
             "2026160": 52,
-            "2023013": 47,
             "2024611": 35,
+            "2023013": 47,
             "2026484": 49
           },
           "hits": {
             "2023789": 4,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 4,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 0
           },
           "transfers": {
             "2023789": 2,
-            "2019453": 2,
             "2067578": 1,
+            "2019453": 2,
             "2026160": 2,
-            "2023013": 1,
             "2024611": 1,
+            "2023013": 1,
             "2026484": 0
           },
           "benchPoints": {
             "2023789": -1,
-            "2019453": 7,
             "2067578": 6,
+            "2019453": 7,
             "2026160": 2,
-            "2023013": 2,
             "2024611": 7,
+            "2023013": 2,
             "2026484": 3
           },
           "captainPoints": {
             "2023789": 12,
-            "2019453": 12,
             "2067578": 12,
+            "2019453": 12,
             "2026160": 12,
-            "2023013": 16,
             "2024611": 12,
+            "2023013": 16,
             "2026484": 12
           },
           "chipsUsed": {
@@ -34426,11 +34784,11 @@
           },
           "seasonTotals": {
             "2023789": 320,
-            "2019453": 292,
             "2067578": 313,
+            "2019453": 292,
             "2026160": 287,
-            "2023013": 308,
             "2024611": 311,
+            "2023013": 308,
             "2026484": 229
           }
         },
@@ -34438,57 +34796,57 @@
           "gw": 6,
           "scores": {
             "2023789": 72,
-            "2019453": 69,
             "2067578": 78,
+            "2019453": 69,
             "2026160": 76,
-            "2023013": 60,
             "2024611": 60,
+            "2023013": 60,
             "2026484": 67
           },
           "hits": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 8
           },
           "transfers": {
             "2023789": 1,
-            "2019453": 0,
             "2067578": 1,
+            "2019453": 0,
             "2026160": 1,
-            "2023013": 1,
             "2024611": 0,
+            "2023013": 1,
             "2026484": 3
           },
           "benchPoints": {
             "2023789": 12,
-            "2019453": 4,
             "2067578": 9,
+            "2019453": 4,
             "2026160": 4,
-            "2023013": 0,
             "2024611": 15,
+            "2023013": 0,
             "2026484": 17
           },
           "captainPoints": {
             "2023789": 4,
-            "2019453": 24,
             "2067578": 12,
+            "2019453": 24,
             "2026160": 12,
-            "2023013": 0,
             "2024611": 12,
+            "2023013": 0,
             "2026484": 12
           },
           "chipsUsed": {},
           "seasonTotals": {
             "2023789": 392,
-            "2019453": 361,
             "2067578": 391,
+            "2019453": 361,
             "2026160": 363,
-            "2023013": 368,
             "2024611": 371,
+            "2023013": 368,
             "2026484": 288
           }
         },
@@ -34496,57 +34854,57 @@
           "gw": 7,
           "scores": {
             "2023789": 59,
-            "2019453": 71,
             "2067578": 73,
+            "2019453": 71,
             "2026160": 57,
-            "2023013": 49,
             "2024611": 47,
+            "2023013": 49,
             "2026484": 40
           },
           "hits": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 0
           },
           "transfers": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 1,
+            "2019453": 0,
             "2026160": 1,
-            "2023013": 1,
             "2024611": 2,
+            "2023013": 1,
             "2026484": 1
           },
           "benchPoints": {
             "2023789": 10,
-            "2019453": 5,
             "2067578": 11,
+            "2019453": 5,
             "2026160": 2,
-            "2023013": 3,
             "2024611": 9,
+            "2023013": 3,
             "2026484": 4
           },
           "captainPoints": {
             "2023789": 26,
-            "2019453": 26,
             "2067578": 26,
+            "2019453": 26,
             "2026160": 4,
-            "2023013": 4,
             "2024611": 4,
+            "2023013": 4,
             "2026484": 10
           },
           "chipsUsed": {},
           "seasonTotals": {
             "2023789": 451,
-            "2019453": 432,
             "2067578": 464,
+            "2019453": 432,
             "2026160": 420,
-            "2023013": 417,
             "2024611": 418,
+            "2023013": 417,
             "2026484": 328
           }
         },
@@ -34554,47 +34912,47 @@
           "gw": 8,
           "scores": {
             "2023789": 39,
-            "2019453": 45,
             "2067578": 30,
+            "2019453": 45,
             "2026160": 51,
-            "2023013": 51,
             "2024611": 35,
+            "2023013": 51,
             "2026484": 23
           },
           "hits": {
             "2023789": 0,
-            "2019453": 0,
             "2067578": 0,
+            "2019453": 0,
             "2026160": 0,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 76
           },
           "transfers": {
             "2023789": 2,
-            "2019453": 1,
             "2067578": 1,
+            "2019453": 1,
             "2026160": 1,
-            "2023013": 0,
             "2024611": 0,
+            "2023013": 0,
             "2026484": 20
           },
           "benchPoints": {
             "2023789": 5,
-            "2019453": 13,
             "2067578": 10,
+            "2019453": 13,
             "2026160": 9,
-            "2023013": 14,
             "2024611": 1,
+            "2023013": 14,
             "2026484": 2
           },
           "captainPoints": {
             "2023789": 16,
-            "2019453": 16,
             "2067578": 16,
+            "2019453": 16,
             "2026160": 16,
-            "2023013": 16,
             "2024611": -2,
+            "2023013": 16,
             "2026484": 0
           },
           "chipsUsed": {
@@ -34602,11 +34960,11 @@
           },
           "seasonTotals": {
             "2023789": 490,
-            "2019453": 477,
             "2067578": 494,
+            "2019453": 477,
             "2026160": 471,
-            "2023013": 468,
             "2024611": 453,
+            "2023013": 468,
             "2026484": 275
           }
         },
@@ -34614,57 +34972,57 @@
           "gw": 9,
           "scores": {
             "2023789": 47,
-            "2019453": 54,
             "2067578": 28,
+            "2019453": 54,
             "2026160": 49,
-            "2023013": 31,
             "2024611": 34,
+            "2023013": 31,
             "2026484": 40
           },
           "hits": {
             "2023789": 4,
-            "2019453": 0,
             "2067578": 4,
+            "2019453": 0,
             "2026160": 4,
-            "2023013": 4,
             "2024611": 0,
+            "2023013": 4,
             "2026484": 40
           },
           "transfers": {
             "2023789": 2,
-            "2019453": 3,
             "2067578": 2,
+            "2019453": 3,
             "2026160": 2,
-            "2023013": 2,
             "2024611": 2,
+            "2023013": 2,
             "2026484": 11
           },
           "benchPoints": {
             "2023789": 8,
-            "2019453": 3,
             "2067578": 18,
+            "2019453": 3,
             "2026160": 4,
-            "2023013": 1,
             "2024611": 11,
+            "2023013": 1,
             "2026484": 20
           },
           "captainPoints": {
             "2023789": 4,
-            "2019453": 4,
             "2067578": 4,
+            "2019453": 4,
             "2026160": 4,
-            "2023013": 4,
             "2024611": 4,
+            "2023013": 4,
             "2026484": 6
           },
           "chipsUsed": {},
           "seasonTotals": {
             "2023789": 533,
-            "2019453": 531,
             "2067578": 518,
+            "2019453": 531,
             "2026160": 516,
-            "2023013": 495,
             "2024611": 487,
+            "2023013": 495,
             "2026484": 275
           }
         },
