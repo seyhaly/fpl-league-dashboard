@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-31T21:57:26Z",
+  "lastUpdated": "2026-11-01T00:34:58Z",
   "currentGw": 9,
   "eventStatuses": {
     "1": {
@@ -99,14 +99,14 @@
       "is_next": false,
       "deadline_time": "2026-10-31T11:00:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
           "bonus_added": false,
           "date": "2026-10-31",
           "event": 9,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -1547,7 +1547,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 9,
-      "now_cost": "6.9",
+      "now_cost": "7.0",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 2,
@@ -1943,7 +1943,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 3,
-      "now_cost": "6.5",
+      "now_cost": "6.6",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -2141,7 +2141,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 9,
-      "now_cost": "6.3",
+      "now_cost": "6.4",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -2663,7 +2663,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 3,
@@ -2861,7 +2861,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 9,
-      "now_cost": "5.3",
+      "now_cost": "5.4",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 5,
@@ -3887,7 +3887,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "7.8",
+      "now_cost": "7.7",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 4,
@@ -4063,6 +4063,24 @@
       "first_name": "Teddy",
       "second_name": "Sharman-Lowe",
       "element_type": 1,
+      "team": "CHE",
+      "team_name": "Chelsea",
+      "team_id": 6,
+      "event_points": 0,
+      "now_cost": "4.0",
+      "opponent": "MUN",
+      "opponent_short": "MUN",
+      "difficulty": 4,
+      "minutes": 0,
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
+    },
+    "670": {
+      "id": 670,
+      "web_name": "Subuloye",
+      "first_name": "Olutayo",
+      "second_name": "Subuloye",
+      "element_type": 2,
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
@@ -5920,7 +5938,7 @@
       "team": "FUL",
       "team_name": "Fulham",
       "team_id": 10,
-      "event_points": 2,
+      "event_points": 4,
       "now_cost": "4.4",
       "opponent": "AVL",
       "opponent_short": "AVL",
@@ -6119,7 +6137,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 2,
-      "now_cost": "5.6",
+      "now_cost": "5.5",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
@@ -6605,7 +6623,7 @@
       "team_name": "Hull City",
       "team_id": 11,
       "event_points": 5,
-      "now_cost": "5.2",
+      "now_cost": "5.3",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -8855,7 +8873,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 0,
-      "now_cost": "9.1",
+      "now_cost": "9.2",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 4,
@@ -9160,7 +9178,7 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 2,
+      "event_points": 4,
       "now_cost": "5.3",
       "opponent": "BHA",
       "opponent_short": "BHA",
@@ -9269,7 +9287,7 @@
       "team_name": "Man City",
       "team_id": 15,
       "event_points": 1,
-      "now_cost": "8.0",
+      "now_cost": "7.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 3,
@@ -9286,7 +9304,7 @@
       "team": "MCI",
       "team_name": "Man City",
       "team_id": 15,
-      "event_points": 4,
+      "event_points": 2,
       "now_cost": "7.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
@@ -10871,7 +10889,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 1,
-      "now_cost": "5.0",
+      "now_cost": "4.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -11249,7 +11267,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "5.7",
+      "now_cost": "5.6",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -11339,7 +11357,7 @@
       "team_name": "Spurs",
       "team_id": 19,
       "event_points": 15,
-      "now_cost": "4.9",
+      "now_cost": "5.0",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
@@ -12131,7 +12149,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -18099,7 +18117,7 @@
       "251": 0,
       "252": 0,
       "253": 0,
-      "254": 2,
+      "254": 4,
       "255": 0,
       "256": 1,
       "257": 1,
@@ -18238,14 +18256,14 @@
       "390": 2,
       "391": 2,
       "392": 0,
-      "393": 2,
+      "393": 4,
       "394": 0,
       "395": 0,
       "396": 0,
       "397": 0,
       "398": 1,
       "399": 1,
-      "400": 4,
+      "400": 2,
       "401": 2,
       "402": 0,
       "403": 0,
@@ -18514,7 +18532,8 @@
       "666": 0,
       "667": 0,
       "668": 0,
-      "669": 0
+      "669": 0,
+      "670": 0
     }
   },
   "fixtures": [
@@ -19378,12 +19397,12 @@
               "element": 472
             },
             {
-              "value": 10,
-              "element": 474
+              "value": 11,
+              "element": 480
             },
             {
               "value": 10,
-              "element": 480
+              "element": 474
             },
             {
               "value": 8,
@@ -19428,7 +19447,7 @@
               "element": 85
             },
             {
-              "value": 24,
+              "value": 25,
               "element": 82
             },
             {
@@ -19441,15 +19460,15 @@
             },
             {
               "value": 18,
-              "element": 98
-            },
-            {
-              "value": 18,
               "element": 105
             },
             {
-              "value": 15,
+              "value": 17,
               "element": 88
+            },
+            {
+              "value": 17,
+              "element": 98
             },
             {
               "value": 11,
@@ -19460,15 +19479,15 @@
               "element": 97
             },
             {
+              "value": 10,
+              "element": 565
+            },
+            {
               "value": 9,
               "element": 94
             },
             {
-              "value": 9,
-              "element": 565
-            },
-            {
-              "value": 4,
+              "value": 5,
               "element": 90
             },
             {
@@ -19514,15 +19533,15 @@
             },
             {
               "value": 4,
+              "element": 483
+            },
+            {
+              "value": 4,
               "element": 558
             },
             {
               "value": 3,
               "element": 167
-            },
-            {
-              "value": 3,
-              "element": 483
             },
             {
               "value": 2,
@@ -19539,11 +19558,11 @@
           ],
           "h": [
             {
-              "value": 16,
+              "value": 15,
               "element": 98
             },
             {
-              "value": 13,
+              "value": 14,
               "element": 87
             },
             {
@@ -19551,11 +19570,11 @@
               "element": 85
             },
             {
-              "value": 9,
+              "value": 10,
               "element": 86
             },
             {
-              "value": 9,
+              "value": 10,
               "element": 565
             },
             {
@@ -19572,18 +19591,18 @@
             },
             {
               "value": 7,
-              "element": 105
-            },
-            {
-              "value": 6,
               "element": 106
             },
             {
-              "value": 5,
+              "value": 6,
               "element": 88
             },
             {
-              "value": 3,
+              "value": 6,
+              "element": 105
+            },
+            {
+              "value": 4,
               "element": 90
             },
             {
@@ -20473,7 +20492,7 @@
               "element": 116
             },
             {
-              "value": 25,
+              "value": 26,
               "element": 504
             },
             {
@@ -20481,12 +20500,12 @@
               "element": 114
             },
             {
-              "value": 11,
-              "element": 605
+              "value": 13,
+              "element": 639
             },
             {
               "value": 11,
-              "element": 639
+              "element": 605
             },
             {
               "value": 9,
@@ -20515,40 +20534,40 @@
           ],
           "h": [
             {
-              "value": 29,
-              "element": 481
-            },
-            {
               "value": 28,
               "element": 400
+            },
+            {
+              "value": 27,
+              "element": 481
             },
             {
               "value": 16,
               "element": 384
             },
             {
-              "value": 14,
+              "value": 15,
               "element": 393
+            },
+            {
+              "value": 12,
+              "element": 155
             },
             {
               "value": 12,
               "element": 237
             },
             {
-              "value": 11,
-              "element": 155
-            },
-            {
-              "value": 10,
+              "value": 12,
               "element": 391
-            },
-            {
-              "value": 10,
-              "element": 399
             },
             {
               "value": 9,
               "element": 389
+            },
+            {
+              "value": 9,
+              "element": 399
             },
             {
               "value": 8,
@@ -20592,12 +20611,12 @@
               "element": 127
             },
             {
-              "value": 8,
-              "element": 129
+              "value": 9,
+              "element": 504
             },
             {
               "value": 8,
-              "element": 504
+              "element": 129
             },
             {
               "value": 8,
@@ -20646,20 +20665,24 @@
               "element": 481
             },
             {
-              "value": 12,
+              "value": 11,
+              "element": 393
+            },
+            {
+              "value": 11,
               "element": 400
             },
             {
-              "value": 9,
-              "element": 393
+              "value": 6,
+              "element": 391
             },
             {
               "value": 5,
               "element": 389
             },
             {
-              "value": 5,
-              "element": 391
+              "value": 3,
+              "element": 155
             },
             {
               "value": 3,
@@ -20675,15 +20698,11 @@
             },
             {
               "value": 3,
-              "element": 399
-            },
-            {
-              "value": 3,
               "element": 616
             },
             {
               "value": 2,
-              "element": 155
+              "element": 399
             },
             {
               "value": 1,
@@ -20816,7 +20835,7 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 22,
+              "value": 23,
               "element": 198
             },
             {
@@ -20836,10 +20855,6 @@
               "element": 204
             },
             {
-              "value": 8,
-              "element": 647
-            },
-            {
               "value": 7,
               "element": 202
             },
@@ -20848,11 +20863,15 @@
               "element": 211
             },
             {
+              "value": 7,
+              "element": 647
+            },
+            {
               "value": 5,
               "element": 153
             },
             {
-              "value": 4,
+              "value": 5,
               "element": 203
             },
             {
@@ -20864,12 +20883,12 @@
               "element": 213
             },
             {
-              "value": 2,
-              "element": 224
+              "value": 3,
+              "element": 588
             },
             {
               "value": 2,
-              "element": 588
+              "element": 224
             },
             {
               "value": -3,
@@ -20886,15 +20905,15 @@
               "element": 112
             },
             {
-              "value": 35,
+              "value": 33,
               "element": 502
             },
             {
-              "value": 31,
+              "value": 32,
               "element": 512
             },
             {
-              "value": 30,
+              "value": 31,
               "element": 503
             },
             {
@@ -20910,11 +20929,11 @@
               "element": 514
             },
             {
-              "value": 23,
+              "value": 21,
               "element": 525
             },
             {
-              "value": 19,
+              "value": 18,
               "element": 455
             },
             {
@@ -20926,7 +20945,7 @@
               "element": 526
             },
             {
-              "value": 9,
+              "value": 11,
               "element": 499
             },
             {
@@ -20935,11 +20954,11 @@
             },
             {
               "value": 7,
-              "element": 519
+              "element": 521
             },
             {
-              "value": 7,
-              "element": 521
+              "value": 4,
+              "element": 519
             },
             {
               "value": 2,
@@ -20964,11 +20983,11 @@
             },
             {
               "value": 14,
-              "element": 204
+              "element": 203
             },
             {
-              "value": 13,
-              "element": 203
+              "value": 14,
+              "element": 204
             },
             {
               "value": 11,
@@ -21005,12 +21024,12 @@
           ],
           "h": [
             {
-              "value": 11,
-              "element": 525
+              "value": 10,
+              "element": 455
             },
             {
               "value": 10,
-              "element": 455
+              "element": 525
             },
             {
               "value": 9,
@@ -21034,6 +21053,10 @@
             },
             {
               "value": 3,
+              "element": 503
+            },
+            {
+              "value": 3,
               "element": 519
             },
             {
@@ -21041,20 +21064,16 @@
               "element": 112
             },
             {
+              "value": 2,
+              "element": 512
+            },
+            {
               "value": 1,
               "element": 499
             },
             {
               "value": 1,
-              "element": 503
-            },
-            {
-              "value": 1,
               "element": 506
-            },
-            {
-              "value": 1,
-              "element": 512
             },
             {
               "value": 1,
@@ -21071,7 +21090,7 @@
       "code": 2645276,
       "event": 9,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 81,
       "kickoff_time": "2026-10-31T20:00:00Z",
       "minutes": 90,
@@ -21202,7 +21221,7 @@
               "element": 261
             },
             {
-              "value": 16,
+              "value": 17,
               "element": 254
             },
             {
@@ -21230,7 +21249,7 @@
               "element": 580
             },
             {
-              "value": 8,
+              "value": 9,
               "element": 268
             },
             {
@@ -21247,11 +21266,11 @@
             },
             {
               "value": 3,
-              "element": 570
+              "element": 635
             },
             {
-              "value": 3,
-              "element": 635
+              "value": 2,
+              "element": 570
             },
             {
               "value": 1,
@@ -21260,7 +21279,7 @@
           ],
           "h": [
             {
-              "value": 37,
+              "value": 39,
               "element": 166
             },
             {
@@ -21288,12 +21307,12 @@
               "element": 37
             },
             {
-              "value": 8,
-              "element": 618
+              "value": 9,
+              "element": 41
             },
             {
-              "value": 7,
-              "element": 41
+              "value": 8,
+              "element": 618
             },
             {
               "value": 7,
@@ -21316,7 +21335,7 @@
               "element": 54
             },
             {
-              "value": -2,
+              "value": -1,
               "element": 34
             }
           ]
@@ -21330,15 +21349,15 @@
             },
             {
               "value": 10,
+              "element": 254
+            },
+            {
+              "value": 10,
               "element": 265
             },
             {
               "value": 10,
               "element": 580
-            },
-            {
-              "value": 9,
-              "element": 254
             },
             {
               "value": 6,
@@ -21358,18 +21377,18 @@
             },
             {
               "value": 3,
-              "element": 264
-            },
-            {
-              "value": 2,
               "element": 257
             },
             {
-              "value": 2,
+              "value": 3,
+              "element": 264
+            },
+            {
+              "value": 3,
               "element": 266
             },
             {
-              "value": 2,
+              "value": 3,
               "element": 570
             }
           ],
@@ -21377,6 +21396,10 @@
             {
               "value": 8,
               "element": 47
+            },
+            {
+              "value": 6,
+              "element": 34
             },
             {
               "value": 6,
@@ -21389,10 +21412,6 @@
             {
               "value": 5,
               "element": 32
-            },
-            {
-              "value": 5,
-              "element": 34
             },
             {
               "value": 5,
@@ -21416,15 +21435,15 @@
             },
             {
               "value": 2,
+              "element": 41
+            },
+            {
+              "value": 2,
               "element": 54
             },
             {
               "value": 2,
               "element": 631
-            },
-            {
-              "value": 1,
-              "element": 41
             }
           ]
         }
@@ -22832,18 +22851,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 468,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 4286908,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 31,
+          "total_points": 495,
+          "rank": 5442952,
+          "rank_sort": 5453320,
+          "overall_rank": 4587993,
+          "percentile_rank": 50,
+          "overall_rank_percentage": "41",
           "bank": 15,
           "value": 1011,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 0
+          "points_on_bench": 1
         },
         "automatic_subs": []
       }
@@ -24157,18 +24176,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 494,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2646463,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 28,
+          "total_points": 518,
+          "rank": 6376148,
+          "rank_sort": 6383841,
+          "overall_rank": 3299158,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "30",
           "bank": 5,
           "value": 1024,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 0
+          "points_on_bench": 18
         },
         "automatic_subs": []
       }
@@ -25449,18 +25468,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 490,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2903821,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 47,
+          "total_points": 533,
+          "rank": 1596845,
+          "rank_sort": 1609740,
+          "overall_rank": 2516411,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "22",
           "bank": 10,
           "value": 1018,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 0
+          "points_on_bench": 8
         },
         "automatic_subs": []
       }
@@ -26755,18 +26774,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 471,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 4117266,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 49,
+          "total_points": 516,
+          "rank": 1311535,
+          "rank_sort": 1322875,
+          "overall_rank": 3416547,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "31",
           "bank": 36,
           "value": 1006,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 0
+          "points_on_bench": 4
         },
         "automatic_subs": []
       }
@@ -28092,18 +28111,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 453,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 5252141,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 34,
+          "total_points": 487,
+          "rank": 4566817,
+          "rank_sort": 4578464,
+          "overall_rank": 5035121,
+          "percentile_rank": 45,
+          "overall_rank_percentage": "45",
           "bank": 51,
           "value": 1023,
           "event_transfers": 2,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 11
         },
         "automatic_subs": []
       }
@@ -29391,18 +29410,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 477,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3699258,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 54,
+          "total_points": 531,
+          "rank": 785824,
+          "rank_sort": 789108,
+          "overall_rank": 2611001,
+          "percentile_rank": 10,
+          "overall_rank_percentage": "23",
           "bank": 38,
           "value": 1006,
           "event_transfers": 3,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 3
         },
         "automatic_subs": []
       }
@@ -30676,18 +30695,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
+          "points": 40,
           "total_points": 275,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 10357913,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "rank": 3065319,
+          "rank_sort": 3065348,
+          "overall_rank": 10488357,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "94",
           "bank": 57,
           "value": 1026,
           "event_transfers": 11,
           "event_transfers_cost": 40,
-          "points_on_bench": 0
+          "points_on_bench": 20
         },
         "automatic_subs": []
       }
@@ -31975,18 +31994,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 0,
-          "total_points": 482,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3377582,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 36,
+          "total_points": 518,
+          "rank": 3943302,
+          "rank_sort": 3945168,
+          "overall_rank": 3278625,
+          "percentile_rank": 40,
+          "overall_rank_percentage": "29",
           "bank": 31,
           "value": 1017,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 2
         },
         "automatic_subs": []
       }
@@ -34590,13 +34609,13 @@
         {
           "gw": 9,
           "scores": {
-            "2023789": 0,
-            "2019453": 0,
-            "2067578": 0,
-            "2026160": 0,
-            "2023013": 0,
-            "2024611": 0,
-            "2026484": 0
+            "2023789": 47,
+            "2019453": 54,
+            "2067578": 28,
+            "2026160": 49,
+            "2023013": 31,
+            "2024611": 34,
+            "2026484": 40
           },
           "hits": {
             "2023789": 4,
@@ -34617,13 +34636,13 @@
             "2026484": 11
           },
           "benchPoints": {
-            "2023789": 0,
-            "2019453": 0,
-            "2067578": 0,
-            "2026160": 0,
-            "2023013": 0,
-            "2024611": 0,
-            "2026484": 0
+            "2023789": 8,
+            "2019453": 3,
+            "2067578": 18,
+            "2026160": 4,
+            "2023013": 1,
+            "2024611": 11,
+            "2026484": 20
           },
           "captainPoints": {
             "2023789": 4,
@@ -34636,12 +34655,12 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2023789": 490,
-            "2019453": 477,
-            "2067578": 494,
-            "2026160": 471,
-            "2023013": 468,
-            "2024611": 453,
+            "2023789": 533,
+            "2019453": 531,
+            "2067578": 518,
+            "2026160": 516,
+            "2023013": 495,
+            "2024611": 487,
             "2026484": 275
           }
         },
@@ -35274,8 +35293,8 @@
         {
           "gw": 9,
           "scores": {
-            "2019453": 0,
-            "145847": 0
+            "2019453": 54,
+            "145847": 36
           },
           "hits": {
             "2019453": 0,
@@ -35286,8 +35305,8 @@
             "145847": 1
           },
           "benchPoints": {
-            "2019453": 0,
-            "145847": 0
+            "2019453": 3,
+            "145847": 2
           },
           "captainPoints": {
             "2019453": 4,
@@ -35295,8 +35314,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2019453": 477,
-            "145847": 482
+            "2019453": 531,
+            "145847": 518
           }
         },
         {
