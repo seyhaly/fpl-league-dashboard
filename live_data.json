@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T07:48:17Z",
+  "lastUpdated": "2026-11-03T15:29:15Z",
   "currentGw": 9,
   "eventStatuses": {
     "1": {
@@ -92,33 +92,33 @@
     },
     "9": {
       "gw": 9,
-      "finished": false,
-      "data_checked": false,
+      "finished": true,
+      "data_checked": true,
       "is_current": true,
       "is_previous": false,
       "is_next": false,
       "deadline_time": "2026-10-31T11:00:00Z",
-      "bonus_added": false,
-      "leagues": "",
-      "points": "p",
+      "bonus_added": true,
+      "leagues": "Updated",
+      "points": "r",
       "daily_status": [
         {
-          "bonus_added": false,
+          "bonus_added": true,
           "date": "2026-10-31",
           "event": 9,
-          "points": "p"
+          "points": "r"
         },
         {
-          "bonus_added": false,
+          "bonus_added": true,
           "date": "2026-11-01",
           "event": 9,
-          "points": "p"
+          "points": "r"
         },
         {
-          "bonus_added": false,
+          "bonus_added": true,
           "date": "2026-11-02",
           "event": 9,
-          "points": "p"
+          "points": "r"
         }
       ]
     },
@@ -3458,7 +3458,7 @@
       "now_cost": "4.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3476,7 +3476,7 @@
       "now_cost": "8.1",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3494,7 +3494,7 @@
       "now_cost": "4.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3512,7 +3512,7 @@
       "now_cost": "5.8",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 3,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3530,7 +3530,7 @@
       "now_cost": "4.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3548,7 +3548,7 @@
       "now_cost": "5.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3566,7 +3566,7 @@
       "now_cost": "5.2",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3584,7 +3584,7 @@
       "now_cost": "5.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3602,7 +3602,7 @@
       "now_cost": "4.8",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 3,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3620,7 +3620,7 @@
       "now_cost": "5.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3638,7 +3638,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3656,7 +3656,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3674,7 +3674,7 @@
       "now_cost": "4.8",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3692,7 +3692,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3710,7 +3710,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3728,7 +3728,7 @@
       "now_cost": "5.3",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 73,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3746,7 +3746,7 @@
       "now_cost": "9.8",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3764,7 +3764,7 @@
       "now_cost": "6.6",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 86,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3782,7 +3782,7 @@
       "now_cost": "6.3",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 86,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3800,7 +3800,7 @@
       "now_cost": "5.8",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3818,7 +3818,7 @@
       "now_cost": "5.3",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 86,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3836,7 +3836,7 @@
       "now_cost": "5.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3854,7 +3854,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3872,7 +3872,7 @@
       "now_cost": "5.2",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 1,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3890,7 +3890,7 @@
       "now_cost": "7.7",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3908,7 +3908,7 @@
       "now_cost": "5.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3926,7 +3926,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3944,7 +3944,7 @@
       "now_cost": "4.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3962,7 +3962,7 @@
       "now_cost": "5.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -3980,7 +3980,7 @@
       "now_cost": "4.4",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -3998,7 +3998,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4016,7 +4016,7 @@
       "now_cost": "5.3",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 3,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4034,7 +4034,7 @@
       "now_cost": "4.9",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 16,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4052,7 +4052,7 @@
       "now_cost": "4.5",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4070,7 +4070,7 @@
       "now_cost": "4.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4088,7 +4088,7 @@
       "now_cost": "4.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
-      "difficulty": 4,
+      "difficulty": 3,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4106,7 +4106,7 @@
       "now_cost": "4.5",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4124,7 +4124,7 @@
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4142,7 +4142,7 @@
       "now_cost": "4.5",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4160,7 +4160,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4178,7 +4178,7 @@
       "now_cost": "4.4",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4196,7 +4196,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4214,7 +4214,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4232,7 +4232,7 @@
       "now_cost": "3.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4250,7 +4250,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4268,7 +4268,7 @@
       "now_cost": "3.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4286,7 +4286,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4304,7 +4304,7 @@
       "now_cost": "3.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4322,7 +4322,7 @@
       "now_cost": "3.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4340,7 +4340,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4358,7 +4358,7 @@
       "now_cost": "3.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4376,7 +4376,7 @@
       "now_cost": "4.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4394,7 +4394,7 @@
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 7,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4412,7 +4412,7 @@
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4430,7 +4430,7 @@
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4448,7 +4448,7 @@
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4466,7 +4466,7 @@
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 82,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4484,7 +4484,7 @@
       "now_cost": "4.4",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4502,7 +4502,7 @@
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4520,7 +4520,7 @@
       "now_cost": "4.5",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4538,7 +4538,7 @@
       "now_cost": "4.5",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4556,7 +4556,7 @@
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4574,7 +4574,7 @@
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 18,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4592,7 +4592,7 @@
       "now_cost": "4.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4610,7 +4610,7 @@
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4628,7 +4628,7 @@
       "now_cost": "4.5",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4646,7 +4646,7 @@
       "now_cost": "5.4",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 71,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4664,7 +4664,7 @@
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4682,7 +4682,7 @@
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4700,7 +4700,7 @@
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 18,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4718,7 +4718,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -4736,7 +4736,7 @@
       "now_cost": "5.5",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 71,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -4754,7 +4754,7 @@
       "now_cost": "4.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
-      "difficulty": 3,
+      "difficulty": 2,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7796,7 +7796,7 @@
       "now_cost": "6.2",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 83,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7814,7 +7814,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7832,7 +7832,7 @@
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7850,7 +7850,7 @@
       "now_cost": "4.3",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7868,7 +7868,7 @@
       "now_cost": "4.8",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7886,7 +7886,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 64,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7904,7 +7904,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 83,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7922,7 +7922,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7940,7 +7940,7 @@
       "now_cost": "5.1",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7958,7 +7958,7 @@
       "now_cost": "6.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 25,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -7976,7 +7976,7 @@
       "now_cost": "5.8",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -7994,7 +7994,7 @@
       "now_cost": "5.2",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 6,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8012,7 +8012,7 @@
       "now_cost": "5.3",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8030,7 +8030,7 @@
       "now_cost": "4.8",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 25,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8048,7 +8048,7 @@
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8066,7 +8066,7 @@
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8084,7 +8084,7 @@
       "now_cost": "4.9",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 64,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8102,7 +8102,7 @@
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8120,7 +8120,7 @@
       "now_cost": "4.9",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 64,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8138,7 +8138,7 @@
       "now_cost": "6.1",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8156,7 +8156,7 @@
       "now_cost": "5.3",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 25,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8174,7 +8174,7 @@
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8192,7 +8192,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8210,7 +8210,7 @@
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8228,7 +8228,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -8246,7 +8246,7 @@
       "now_cost": "4.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8264,7 +8264,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8282,7 +8282,7 @@
       "now_cost": "4.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8300,7 +8300,7 @@
       "now_cost": "4.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8318,7 +8318,7 @@
       "now_cost": "4.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -8336,7 +8336,7 @@
       "now_cost": "4.9",
       "opponent": "BOU",
       "opponent_short": "BOU",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 6,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9002,7 +9002,7 @@
       "now_cost": "6.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 63,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9020,7 +9020,7 @@
       "now_cost": "5.8",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 78,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9038,7 +9038,7 @@
       "now_cost": "5.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9056,7 +9056,7 @@
       "now_cost": "4.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9074,7 +9074,7 @@
       "now_cost": "6.2",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 26,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9092,7 +9092,7 @@
       "now_cost": "6.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9110,7 +9110,7 @@
       "now_cost": "5.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9128,7 +9128,7 @@
       "now_cost": "5.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9146,7 +9146,7 @@
       "now_cost": "5.7",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 78,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9164,7 +9164,7 @@
       "now_cost": "5.2",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9182,7 +9182,7 @@
       "now_cost": "5.3",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9200,7 +9200,7 @@
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9218,7 +9218,7 @@
       "now_cost": "4.3",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9236,7 +9236,7 @@
       "now_cost": "4.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9254,7 +9254,7 @@
       "now_cost": "8.2",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9272,7 +9272,7 @@
       "now_cost": "6.8",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 11,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9290,7 +9290,7 @@
       "now_cost": "7.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 35,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9308,7 +9308,7 @@
       "now_cost": "7.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9326,7 +9326,7 @@
       "now_cost": "6.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9344,7 +9344,7 @@
       "now_cost": "6.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9362,7 +9362,7 @@
       "now_cost": "5.3",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9380,7 +9380,7 @@
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9398,7 +9398,7 @@
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9416,7 +9416,7 @@
       "now_cost": "4.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9434,7 +9434,7 @@
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9452,7 +9452,7 @@
       "now_cost": "15.8",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9470,7 +9470,7 @@
       "now_cost": "6.3",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9488,7 +9488,7 @@
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9506,7 +9506,7 @@
       "now_cost": "5.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 54,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9524,7 +9524,7 @@
       "now_cost": "4.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9542,7 +9542,7 @@
       "now_cost": "3.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -9560,7 +9560,7 @@
       "now_cost": "6.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 11,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -9578,7 +9578,7 @@
       "now_cost": "4.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -10820,7 +10820,7 @@
       "now_cost": "5.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 64,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10838,7 +10838,7 @@
       "now_cost": "5.3",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10856,7 +10856,7 @@
       "now_cost": "5.0",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10874,7 +10874,7 @@
       "now_cost": "4.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -10892,7 +10892,7 @@
       "now_cost": "4.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10910,7 +10910,7 @@
       "now_cost": "5.0",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -10928,7 +10928,7 @@
       "now_cost": "5.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10946,7 +10946,7 @@
       "now_cost": "5.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10964,7 +10964,7 @@
       "now_cost": "4.3",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -10982,7 +10982,7 @@
       "now_cost": "4.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11000,7 +11000,7 @@
       "now_cost": "4.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11018,7 +11018,7 @@
       "now_cost": "3.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11036,7 +11036,7 @@
       "now_cost": "4.0",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11054,7 +11054,7 @@
       "now_cost": "4.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11072,7 +11072,7 @@
       "now_cost": "4.0",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11090,7 +11090,7 @@
       "now_cost": "7.9",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11108,7 +11108,7 @@
       "now_cost": "5.7",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11126,7 +11126,7 @@
       "now_cost": "5.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 64,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11144,7 +11144,7 @@
       "now_cost": "5.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11162,7 +11162,7 @@
       "now_cost": "5.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11180,7 +11180,7 @@
       "now_cost": "5.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 90,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11198,7 +11198,7 @@
       "now_cost": "4.8",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11216,7 +11216,7 @@
       "now_cost": "4.7",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11234,7 +11234,7 @@
       "now_cost": "4.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11252,7 +11252,7 @@
       "now_cost": "5.7",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 25,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11270,7 +11270,7 @@
       "now_cost": "5.6",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11288,7 +11288,7 @@
       "now_cost": "5.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 25,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11306,7 +11306,7 @@
       "now_cost": "5.0",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 45,
       "match_status": "played",
       "status_label": "✓ Played"
@@ -11324,7 +11324,7 @@
       "now_cost": "5.3",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -11342,7 +11342,7 @@
       "now_cost": "4.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
-      "difficulty": 3,
+      "difficulty": 4,
       "minutes": 0,
       "match_status": "dnp",
       "status_label": "✕ DNP (0m)"
@@ -18540,7 +18540,7 @@
     {
       "code": 2645278,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 84,
       "kickoff_time": "2026-10-31T12:30:00Z",
@@ -18896,14 +18896,14 @@
           ]
         }
       ],
-      "team_h_difficulty": 4,
+      "team_h_difficulty": 3,
       "team_a_difficulty": 4,
       "pulse_id": 0
     },
     {
       "code": 2645275,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 82,
       "kickoff_time": "2026-10-31T15:00:00Z",
@@ -19267,13 +19267,13 @@
         }
       ],
       "team_h_difficulty": 3,
-      "team_a_difficulty": 3,
+      "team_a_difficulty": 4,
       "pulse_id": 0
     },
     {
       "code": 2645277,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 83,
       "kickoff_time": "2026-10-31T15:00:00Z",
@@ -19613,13 +19613,13 @@
         }
       ],
       "team_h_difficulty": 3,
-      "team_a_difficulty": 3,
+      "team_a_difficulty": 4,
       "pulse_id": 0
     },
     {
       "code": 2645279,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 85,
       "kickoff_time": "2026-10-31T15:00:00Z",
@@ -19961,14 +19961,14 @@
           ]
         }
       ],
-      "team_h_difficulty": 3,
+      "team_h_difficulty": 2,
       "team_a_difficulty": 2,
       "pulse_id": 0
     },
     {
       "code": 2645280,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 86,
       "kickoff_time": "2026-10-31T15:00:00Z",
@@ -20365,7 +20365,7 @@
     {
       "code": 2645282,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 88,
       "kickoff_time": "2026-10-31T15:00:00Z",
@@ -20715,14 +20715,14 @@
           ]
         }
       ],
-      "team_h_difficulty": 3,
+      "team_h_difficulty": 4,
       "team_a_difficulty": 5,
       "pulse_id": 0
     },
     {
       "code": 2645284,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 90,
       "kickoff_time": "2026-10-31T17:30:00Z",
@@ -21089,7 +21089,7 @@
     {
       "code": 2645276,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 81,
       "kickoff_time": "2026-10-31T20:00:00Z",
@@ -21459,7 +21459,7 @@
     {
       "code": 2645281,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 87,
       "kickoff_time": "2026-11-01T16:30:00Z",
@@ -21836,7 +21836,7 @@
     {
       "code": 2645283,
       "event": 9,
-      "finished": false,
+      "finished": true,
       "finished_provisional": true,
       "id": 89,
       "kickoff_time": "2026-11-02T20:00:00Z",
@@ -23442,7 +23442,7 @@
             "element_type": 2
           },
           {
-            "element": 388,
+            "element": 304,
             "position": 3,
             "multiplier": 1,
             "is_captain": false,
@@ -23490,16 +23490,8 @@
             "element_type": 3
           },
           {
-            "element": 379,
-            "position": 9,
-            "multiplier": 1,
-            "is_captain": false,
-            "is_vice_captain": false,
-            "element_type": 4
-          },
-          {
             "element": 411,
-            "position": 10,
+            "position": 9,
             "multiplier": 2,
             "is_captain": true,
             "is_vice_captain": false,
@@ -23507,10 +23499,18 @@
           },
           {
             "element": 166,
-            "position": 11,
+            "position": 10,
             "multiplier": 1,
             "is_captain": false,
             "is_vice_captain": true,
+            "element_type": 4
+          },
+          {
+            "element": 379,
+            "position": 11,
+            "multiplier": 1,
+            "is_captain": false,
+            "is_vice_captain": false,
             "element_type": 4
           },
           {
@@ -23530,7 +23530,7 @@
             "element_type": 3
           },
           {
-            "element": 304,
+            "element": 388,
             "position": 14,
             "multiplier": 0,
             "is_captain": false,
@@ -23549,20 +23549,27 @@
         "active_chip": null,
         "entry_history": {
           "event": 9,
-          "points": 35,
-          "total_points": 499,
-          "rank": 8400168,
-          "rank_sort": 8403629,
-          "overall_rank": 5111456,
-          "percentile_rank": 80,
-          "overall_rank_percentage": "46",
+          "points": 36,
+          "total_points": 500,
+          "rank": 9228596,
+          "rank_sort": 9231847,
+          "overall_rank": 5229644,
+          "percentile_rank": 85,
+          "overall_rank_percentage": "47",
           "bank": 15,
           "value": 1011,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 9
+          "points_on_bench": 8
         },
-        "automatic_subs": []
+        "automatic_subs": [
+          {
+            "entry": 2023013,
+            "element_in": 304,
+            "element_out": 388,
+            "event": 9
+          }
+        ]
       }
     },
     "2067578": {
@@ -24759,19 +24766,19 @@
             "element_type": 1
           },
           {
-            "element": 388,
+            "element": 233,
             "position": 2,
             "multiplier": 1,
             "is_captain": false,
-            "is_vice_captain": false,
+            "is_vice_captain": true,
             "element_type": 2
           },
           {
-            "element": 233,
+            "element": 8,
             "position": 3,
             "multiplier": 1,
             "is_captain": false,
-            "is_vice_captain": true,
+            "is_vice_captain": false,
             "element_type": 2
           },
           {
@@ -24783,12 +24790,12 @@
             "element_type": 2
           },
           {
-            "element": 8,
+            "element": 40,
             "position": 5,
             "multiplier": 1,
             "is_captain": false,
             "is_vice_captain": false,
-            "element_type": 2
+            "element_type": 3
           },
           {
             "element": 124,
@@ -24799,7 +24806,7 @@
             "element_type": 3
           },
           {
-            "element": 40,
+            "element": 427,
             "position": 7,
             "multiplier": 1,
             "is_captain": false,
@@ -24807,7 +24814,7 @@
             "element_type": 3
           },
           {
-            "element": 427,
+            "element": 68,
             "position": 8,
             "multiplier": 1,
             "is_captain": false,
@@ -24815,12 +24822,12 @@
             "element_type": 3
           },
           {
-            "element": 68,
+            "element": 346,
             "position": 9,
             "multiplier": 1,
             "is_captain": false,
             "is_vice_captain": false,
-            "element_type": 3
+            "element_type": 4
           },
           {
             "element": 411,
@@ -24847,12 +24854,12 @@
             "element_type": 1
           },
           {
-            "element": 346,
+            "element": 388,
             "position": 13,
             "multiplier": 0,
             "is_captain": false,
             "is_vice_captain": false,
-            "element_type": 4
+            "element_type": 2
           },
           {
             "element": 279,
@@ -24876,18 +24883,25 @@
           "event": 9,
           "points": 49,
           "total_points": 539,
-          "rank": 4093874,
-          "rank_sort": 4107823,
-          "overall_rank": 2854986,
-          "percentile_rank": 40,
-          "overall_rank_percentage": "26",
+          "rank": 4989839,
+          "rank_sort": 5003692,
+          "overall_rank": 2972164,
+          "percentile_rank": 45,
+          "overall_rank_percentage": "27",
           "bank": 5,
           "value": 1024,
           "event_transfers": 2,
           "event_transfers_cost": 4,
-          "points_on_bench": 18
+          "points_on_bench": 16
         },
-        "automatic_subs": []
+        "automatic_subs": [
+          {
+            "entry": 2067578,
+            "element_in": 346,
+            "element_out": 388,
+            "event": 9
+          }
+        ]
       }
     },
     "2023789": {
@@ -26168,11 +26182,11 @@
           "event": 9,
           "points": 61,
           "total_points": 547,
-          "rank": 1341424,
-          "rank_sort": 1353899,
-          "overall_rank": 2448112,
+          "rank": 1620035,
+          "rank_sort": 1633439,
+          "overall_rank": 2550489,
           "percentile_rank": 15,
-          "overall_rank_percentage": "22",
+          "overall_rank_percentage": "23",
           "bank": 10,
           "value": 1018,
           "event_transfers": 2,
@@ -27474,11 +27488,11 @@
           "event": 9,
           "points": 55,
           "total_points": 522,
-          "rank": 2499774,
-          "rank_sort": 2514782,
-          "overall_rank": 3803274,
-          "percentile_rank": 25,
-          "overall_rank_percentage": "34",
+          "rank": 3055775,
+          "rank_sort": 3071434,
+          "overall_rank": 3951290,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "35",
           "bank": 36,
           "value": 1006,
           "event_transfers": 2,
@@ -28811,11 +28825,11 @@
           "event": 9,
           "points": 47,
           "total_points": 500,
-          "rank": 4698218,
-          "rank_sort": 4711029,
-          "overall_rank": 5045942,
-          "percentile_rank": 45,
-          "overall_rank_percentage": "45",
+          "rank": 5692312,
+          "rank_sort": 5704630,
+          "overall_rank": 5220867,
+          "percentile_rank": 55,
+          "overall_rank_percentage": "47",
           "bank": 51,
           "value": 1023,
           "event_transfers": 2,
@@ -30110,11 +30124,11 @@
           "event": 9,
           "points": 56,
           "total_points": 533,
-          "rank": 2325762,
-          "rank_sort": 2331182,
-          "overall_rank": 3179236,
-          "percentile_rank": 25,
-          "overall_rank_percentage": "28",
+          "rank": 2834544,
+          "rank_sort": 2840167,
+          "overall_rank": 3308202,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "30",
           "bank": 38,
           "value": 1006,
           "event_transfers": 3,
@@ -31395,11 +31409,11 @@
           "event": 9,
           "points": 44,
           "total_points": 279,
-          "rank": 5717441,
-          "rank_sort": 5717464,
-          "overall_rank": 10542919,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "94",
+          "rank": 6836768,
+          "rank_sort": 6836790,
+          "overall_rank": 10564755,
+          "percentile_rank": 65,
+          "overall_rank_percentage": "95",
           "bank": 57,
           "value": 1026,
           "event_transfers": 11,
@@ -32694,11 +32708,11 @@
           "event": 9,
           "points": 43,
           "total_points": 525,
-          "rank": 5901888,
-          "rank_sort": 5902828,
-          "overall_rank": 3606258,
-          "percentile_rank": 55,
-          "overall_rank_percentage": "32",
+          "rank": 7059641,
+          "rank_sort": 7060467,
+          "overall_rank": 3748799,
+          "percentile_rank": 65,
+          "overall_rank_percentage": "34",
           "bank": 31,
           "value": 1017,
           "event_transfers": 1,
@@ -35312,7 +35326,7 @@
             "2019453": 56,
             "2026160": 55,
             "2024611": 47,
-            "2023013": 35,
+            "2023013": 36,
             "2026484": 44
           },
           "hits": {
@@ -35335,11 +35349,11 @@
           },
           "benchPoints": {
             "2023789": 14,
-            "2067578": 18,
+            "2067578": 16,
             "2019453": 14,
             "2026160": 5,
             "2024611": 11,
-            "2023013": 9,
+            "2023013": 8,
             "2026484": 20
           },
           "captainPoints": {
@@ -35358,7 +35372,7 @@
             "2019453": 533,
             "2026160": 522,
             "2024611": 500,
-            "2023013": 499,
+            "2023013": 500,
             "2026484": 279
           }
         },
