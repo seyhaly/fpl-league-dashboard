@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T01:04:23Z",
+  "lastUpdated": "2026-11-03T07:48:17Z",
   "currentGw": 9,
   "eventStatuses": {
     "1": {
@@ -99,7 +99,7 @@
       "is_next": false,
       "deadline_time": "2026-10-31T11:00:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "p",
       "daily_status": [
         {
@@ -5452,7 +5452,7 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 8,
+      "event_points": 7,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
@@ -5524,7 +5524,7 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 6,
+      "event_points": 9,
       "now_cost": "5.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
@@ -5578,7 +5578,7 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 8,
+      "event_points": 6,
       "now_cost": "4.6",
       "opponent": "NEW",
       "opponent_short": "NEW",
@@ -5632,7 +5632,7 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 3,
+      "event_points": 4,
       "now_cost": "6.6",
       "opponent": "NEW",
       "opponent_short": "NEW",
@@ -5668,7 +5668,7 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 5,
+      "event_points": 3,
       "now_cost": "6.0",
       "opponent": "NEW",
       "opponent_short": "NEW",
@@ -18089,20 +18089,20 @@
       "223": -2,
       "224": 1,
       "225": 0,
-      "226": 8,
+      "226": 7,
       "227": 0,
       "228": 0,
       "229": 6,
-      "230": 6,
+      "230": 9,
       "231": 1,
       "232": 6,
-      "233": 8,
+      "233": 6,
       "234": 0,
       "235": 0,
-      "236": 3,
+      "236": 4,
       "237": 2,
       "238": 0,
-      "239": 5,
+      "239": 3,
       "240": 8,
       "241": 2,
       "242": 5,
@@ -21936,15 +21936,19 @@
           "a": [
             {
               "value": 3,
+              "element": 230
+            },
+            {
+              "value": 3,
               "element": 249
             },
             {
-              "value": 2,
+              "value": 1,
               "element": 226
             },
             {
-              "value": 2,
-              "element": 233
+              "value": 1,
+              "element": 236
             }
           ],
           "h": []
@@ -21953,7 +21957,11 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 34,
+              "value": 31,
+              "element": 230
+            },
+            {
+              "value": 31,
               "element": 249
             },
             {
@@ -21962,22 +21970,18 @@
             },
             {
               "value": 29,
-              "element": 233
-            },
-            {
-              "value": 28,
-              "element": 230
-            },
-            {
-              "value": 27,
               "element": 236
             },
             {
-              "value": 24,
+              "value": 27,
+              "element": 233
+            },
+            {
+              "value": 26,
               "element": 229
             },
             {
-              "value": 22,
+              "value": 20,
               "element": 232
             },
             {
@@ -22076,7 +22080,7 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 12,
+              "value": 11,
               "element": 239
             },
             {
@@ -22084,23 +22088,23 @@
               "element": 229
             },
             {
-              "value": 8,
+              "value": 7,
+              "element": 230
+            },
+            {
+              "value": 7,
               "element": 233
+            },
+            {
+              "value": 7,
+              "element": 236
             },
             {
               "value": 7,
               "element": 242
             },
             {
-              "value": 6,
-              "element": 230
-            },
-            {
-              "value": 6,
-              "element": 236
-            },
-            {
-              "value": 6,
+              "value": 7,
               "element": 246
             },
             {
