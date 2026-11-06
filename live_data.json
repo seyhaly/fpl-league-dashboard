@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05T22:14:15Z",
+  "lastUpdated": "2026-11-06T02:26:19Z",
   "currentGw": 9,
   "eventStatuses": {
     "1": {
@@ -1457,7 +1457,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 7,
-      "now_cost": "6.1",
+      "now_cost": "6.2",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 2,
@@ -1799,7 +1799,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 6,
-      "now_cost": "5.5",
+      "now_cost": "5.6",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -5183,7 +5183,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
