@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06T21:47:59Z",
+  "lastUpdated": "2026-11-07T01:16:27Z",
   "currentGw": 10,
   "eventStatuses": {
     "1": {
@@ -110,14 +110,14 @@
       "is_next": false,
       "deadline_time": "2026-11-06T18:30:00Z",
       "bonus_added": false,
-      "leagues": "",
+      "leagues": "Updating",
       "points": "",
       "daily_status": [
         {
           "bonus_added": false,
           "date": "2026-11-06",
           "event": 10,
-          "points": "l"
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -629,7 +629,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "8.0",
+      "now_cost": "8.1",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -791,7 +791,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "7.4",
+      "now_cost": "7.5",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -2141,7 +2141,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 0,
-      "now_cost": "6.4",
+      "now_cost": "6.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -2465,7 +2465,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 0,
-      "now_cost": "6.2",
+      "now_cost": "6.1",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -2681,7 +2681,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -2717,7 +2717,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -3023,7 +3023,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "6.2",
+      "now_cost": "6.3",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -3113,7 +3113,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -4107,9 +4107,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "104": {
       "id": 104,
@@ -4126,8 +4126,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "110": {
       "id": 110,
@@ -4143,9 +4143,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "171": {
       "id": 171,
@@ -4162,8 +4162,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "172": {
       "id": 172,
@@ -4180,8 +4180,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "173": {
       "id": 173,
@@ -4198,8 +4198,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "174": {
       "id": 174,
@@ -4216,8 +4216,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "175": {
       "id": 175,
@@ -4233,9 +4233,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "176": {
       "id": 176,
@@ -4251,9 +4251,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "177": {
       "id": 177,
@@ -4270,8 +4270,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "178": {
       "id": 178,
@@ -4288,8 +4288,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "179": {
       "id": 179,
@@ -4306,8 +4306,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "180": {
       "id": 180,
@@ -4324,8 +4324,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "181": {
       "id": 181,
@@ -4342,8 +4342,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "182": {
       "id": 182,
@@ -4360,8 +4360,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "183": {
       "id": 183,
@@ -4378,8 +4378,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 85,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "184": {
       "id": 184,
@@ -4395,9 +4395,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 1,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 4,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "185": {
       "id": 185,
@@ -4414,8 +4414,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 86,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "186": {
       "id": 186,
@@ -4432,8 +4432,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "187": {
       "id": 187,
@@ -4450,8 +4450,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "188": {
       "id": 188,
@@ -4468,8 +4468,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 85,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "189": {
       "id": 189,
@@ -4486,8 +4486,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "190": {
       "id": 190,
@@ -4503,9 +4503,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 1,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 4,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "191": {
       "id": 191,
@@ -4522,8 +4522,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "192": {
       "id": 192,
@@ -4540,8 +4540,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "193": {
       "id": 193,
@@ -4558,8 +4558,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "194": {
       "id": 194,
@@ -4575,9 +4575,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "195": {
       "id": 195,
@@ -4594,8 +4594,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "196": {
       "id": 196,
@@ -4612,8 +4612,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "197": {
       "id": 197,
@@ -4630,8 +4630,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "492": {
       "id": 492,
@@ -4647,9 +4647,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 86,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "575": {
       "id": 575,
@@ -4660,14 +4660,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 2,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "584": {
       "id": 584,
@@ -4683,9 +4683,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 1,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 4,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "599": {
       "id": 599,
@@ -4696,14 +4696,14 @@
       "team": "COV",
       "team_name": "Coventry City",
       "team_id": 7,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 3,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "623": {
       "id": 623,
@@ -4720,8 +4720,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "655": {
       "id": 655,
@@ -4738,8 +4738,8 @@
       "opponent_short": "EVE",
       "difficulty": 3,
       "minutes": 72,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "656": {
       "id": 656,
@@ -4755,9 +4755,9 @@
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "42": {
       "id": 42,
@@ -5422,8 +5422,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "209": {
       "id": 209,
@@ -5439,9 +5439,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "226": {
       "id": 226,
@@ -5457,9 +5457,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "227": {
       "id": 227,
@@ -5476,8 +5476,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "228": {
       "id": 228,
@@ -5494,8 +5494,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "229": {
       "id": 229,
@@ -5511,9 +5511,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "230": {
       "id": 230,
@@ -5524,14 +5524,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 4,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 88,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "231": {
       "id": 231,
@@ -5542,14 +5542,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.7",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "232": {
       "id": 232,
@@ -5565,9 +5565,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "233": {
       "id": 233,
@@ -5578,14 +5578,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 7,
+      "event_points": 8,
       "now_cost": "4.6",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "234": {
       "id": 234,
@@ -5602,8 +5602,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "235": {
       "id": 235,
@@ -5620,8 +5620,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "236": {
       "id": 236,
@@ -5637,9 +5637,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "238": {
       "id": 238,
@@ -5656,8 +5656,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "239": {
       "id": 239,
@@ -5673,9 +5673,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "242": {
       "id": 242,
@@ -5691,9 +5691,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 89,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "243": {
       "id": 243,
@@ -5704,14 +5704,14 @@
       "team": "EVE",
       "team_name": "Everton",
       "team_id": 9,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "244": {
       "id": 244,
@@ -5728,8 +5728,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 72,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "245": {
       "id": 245,
@@ -5746,8 +5746,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 72,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "246": {
       "id": 246,
@@ -5764,8 +5764,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 72,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "247": {
       "id": 247,
@@ -5781,9 +5781,9 @@
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 14,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 17,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "248": {
       "id": 248,
@@ -5800,8 +5800,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "249": {
       "id": 249,
@@ -5813,13 +5813,13 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 16,
-      "now_cost": "5.6",
+      "now_cost": "5.7",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
-      "minutes": 87,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "649": {
       "id": 649,
@@ -5836,8 +5836,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "654": {
       "id": 654,
@@ -5854,8 +5854,8 @@
       "opponent_short": "COV",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "live",
-      "status_label": "🟢 Live (65')"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "250": {
       "id": 250,
@@ -6209,7 +6209,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 0,
-      "now_cost": "4.4",
+      "now_cost": "4.3",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
@@ -7415,7 +7415,7 @@
       "team_name": "Ipswich Town",
       "team_id": 12,
       "event_points": 0,
-      "now_cost": "5.3",
+      "now_cost": "5.2",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
@@ -7973,7 +7973,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "5.8",
+      "now_cost": "5.7",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -8135,7 +8135,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "6.1",
+      "now_cost": "6.0",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -8333,7 +8333,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -8963,7 +8963,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.5",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
@@ -9593,7 +9593,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "5.7",
+      "now_cost": "5.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
@@ -10349,7 +10349,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "5.3",
+      "now_cost": "5.2",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
@@ -10583,7 +10583,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "6.0",
+      "now_cost": "5.9",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
@@ -10673,7 +10673,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
@@ -10817,7 +10817,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -12167,7 +12167,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
@@ -12365,7 +12365,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
@@ -18765,10 +18765,10 @@
       "227": 0,
       "228": 0,
       "229": 2,
-      "230": 4,
-      "231": 0,
+      "230": 3,
+      "231": 1,
       "232": 1,
-      "233": 7,
+      "233": 8,
       "234": 0,
       "235": 0,
       "236": 9,
@@ -18778,7 +18778,7 @@
       "240": 0,
       "241": 0,
       "242": 2,
-      "243": 0,
+      "243": 1,
       "244": 2,
       "245": 2,
       "246": 2,
@@ -19110,7 +19110,7 @@
       "572": 0,
       "573": 0,
       "574": 0,
-      "575": 2,
+      "575": 1,
       "576": 0,
       "577": 0,
       "578": 0,
@@ -19134,7 +19134,7 @@
       "596": 0,
       "597": 0,
       "598": 0,
-      "599": 0,
+      "599": 1,
       "600": 0,
       "601": 0,
       "602": 0,
@@ -19213,16 +19213,16 @@
       "code": 2645288,
       "event": 10,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 94,
       "kickoff_time": "2026-11-06T20:00:00Z",
-      "minutes": 65,
+      "minutes": 90,
       "provisional_start_time": false,
       "started": true,
       "team_a": 7,
       "team_a_score": 1,
       "team_h": 9,
-      "team_h_score": 2,
+      "team_h_score": 3,
       "stats": [
         {
           "identifier": "goals_scored",
@@ -19236,6 +19236,10 @@
             {
               "value": 2,
               "element": 249
+            },
+            {
+              "value": 1,
+              "element": 236
             }
           ]
         },
@@ -19246,6 +19250,10 @@
             {
               "value": 1,
               "element": 233
+            },
+            {
+              "value": 1,
+              "element": 249
             }
           ]
         },
@@ -19266,8 +19274,18 @@
         },
         {
           "identifier": "yellow_cards",
-          "a": [],
-          "h": []
+          "a": [
+            {
+              "value": 1,
+              "element": 575
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 230
+            }
+          ]
         },
         {
           "identifier": "red_cards",
@@ -19278,7 +19296,7 @@
           "identifier": "saves",
           "a": [
             {
-              "value": 2,
+              "value": 4,
               "element": 110
             }
           ],
@@ -19293,7 +19311,7 @@
           "identifier": "bonus",
           "a": [
             {
-              "value": 2,
+              "value": 1,
               "element": 655
             }
           ],
@@ -19301,6 +19319,10 @@
             {
               "value": 3,
               "element": 249
+            },
+            {
+              "value": 2,
+              "element": 236
             },
             {
               "value": 1,
@@ -19320,77 +19342,93 @@
               "element": 188
             },
             {
-              "value": 14,
+              "value": 19,
               "element": 183
+            },
+            {
+              "value": 15,
+              "element": 575
             },
             {
               "value": 13,
               "element": 185
             },
             {
-              "value": 13,
-              "element": 575
-            },
-            {
-              "value": 9,
-              "element": 492
-            },
-            {
               "value": 7,
-              "element": 656
-            },
-            {
-              "value": 5,
               "element": 110
             },
             {
-              "value": 4,
+              "value": 7,
               "element": 175
             },
             {
-              "value": 2,
-              "element": 91
+              "value": 6,
+              "element": 492
+            },
+            {
+              "value": 5,
+              "element": 656
+            },
+            {
+              "value": 4,
+              "element": 584
+            },
+            {
+              "value": 3,
+              "element": 176
+            },
+            {
+              "value": 3,
+              "element": 184
+            },
+            {
+              "value": 3,
+              "element": 599
             },
             {
               "value": 2,
-              "element": 176
+              "element": 190
+            },
+            {
+              "value": 2,
+              "element": 194
+            },
+            {
+              "value": -2,
+              "element": 91
             }
           ],
           "h": [
             {
-              "value": 56,
+              "value": 60,
               "element": 249
             },
             {
-              "value": 30,
-              "element": 233
-            },
-            {
-              "value": 15,
-              "element": 242
-            },
-            {
-              "value": 14,
+              "value": 40,
               "element": 236
             },
             {
-              "value": 14,
+              "value": 33,
+              "element": 233
+            },
+            {
+              "value": 25,
+              "element": 242
+            },
+            {
+              "value": 18,
               "element": 239
             },
             {
-              "value": 14,
+              "value": 18,
               "element": 244
             },
             {
-              "value": 12,
+              "value": 13,
               "element": 226
             },
             {
-              "value": 12,
-              "element": 230
-            },
-            {
-              "value": 11,
+              "value": 13,
               "element": 246
             },
             {
@@ -19398,8 +19436,32 @@
               "element": 245
             },
             {
-              "value": 2,
+              "value": 9,
+              "element": 230
+            },
+            {
+              "value": 7,
               "element": 229
+            },
+            {
+              "value": 5,
+              "element": 209
+            },
+            {
+              "value": 5,
+              "element": 247
+            },
+            {
+              "value": 3,
+              "element": 231
+            },
+            {
+              "value": 3,
+              "element": 232
+            },
+            {
+              "value": 3,
+              "element": 243
             }
           ]
         },
@@ -19411,82 +19473,102 @@
               "element": 188
             },
             {
-              "value": 9,
+              "value": 11,
+              "element": 575
+            },
+            {
+              "value": 10,
               "element": 91
+            },
+            {
+              "value": 8,
+              "element": 175
+            },
+            {
+              "value": 8,
+              "element": 176
+            },
+            {
+              "value": 8,
+              "element": 183
             },
             {
               "value": 8,
               "element": 185
             },
             {
-              "value": 8,
-              "element": 575
-            },
-            {
               "value": 6,
-              "element": 176
-            },
-            {
-              "value": 6,
-              "element": 183
-            },
-            {
-              "value": 5,
-              "element": 175
+              "element": 656
             },
             {
               "value": 5,
               "element": 492
             },
             {
-              "value": 4,
-              "element": 656
-            },
-            {
               "value": 3,
               "element": 655
+            },
+            {
+              "value": 2,
+              "element": 194
+            },
+            {
+              "value": 1,
+              "element": 184
             }
           ],
           "h": [
             {
-              "value": 10,
+              "value": 11,
               "element": 230
             },
             {
-              "value": 9,
+              "value": 11,
               "element": 233
+            },
+            {
+              "value": 10,
+              "element": 239
+            },
+            {
+              "value": 9,
+              "element": 236
             },
             {
               "value": 9,
               "element": 244
             },
             {
-              "value": 8,
-              "element": 239
-            },
-            {
-              "value": 7,
-              "element": 236
-            },
-            {
-              "value": 7,
-              "element": 242
-            },
-            {
-              "value": 6,
-              "element": 245
-            },
-            {
-              "value": 6,
+              "value": 9,
               "element": 246
             },
             {
-              "value": 3,
+              "value": 8,
+              "element": 242
+            },
+            {
+              "value": 7,
+              "element": 245
+            },
+            {
+              "value": 4,
+              "element": 229
+            },
+            {
+              "value": 4,
               "element": 249
             },
             {
               "value": 2,
-              "element": 229
+              "element": 247
+            },
+            {
+              "value": 1,
+              "element": 231
+            },
+            {
+              "value": 1,
+              "element": 232
             }
           ]
         }
@@ -21177,16 +21259,16 @@
           "event": 10,
           "points": 0,
           "total_points": 500,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 5229644,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "rank": 8867653,
+          "rank_sort": 9252719,
+          "overall_rank": 5345000,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "48",
           "bank": 21,
           "value": 1015,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 2
         },
         "automatic_subs": []
       }
@@ -22648,13 +22730,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 10,
-          "points": 0,
-          "total_points": 539,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2972164,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 8,
+          "total_points": 547,
+          "rank": 1466126,
+          "rank_sort": 1483331,
+          "overall_rank": 2674418,
+          "percentile_rank": 15,
+          "overall_rank_percentage": "24",
           "bank": 1,
           "value": 1027,
           "event_transfers": 1,
@@ -24083,11 +24165,11 @@
           "event": 10,
           "points": 0,
           "total_points": 547,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2550489,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "rank": 8867653,
+          "rank_sort": 9252860,
+          "overall_rank": 2680907,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "24",
           "bank": 3,
           "value": 1020,
           "event_transfers": 1,
@@ -25528,18 +25610,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 10,
-          "points": 0,
-          "total_points": 522,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3951290,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 524,
+          "rank": 3239677,
+          "rank_sort": 3321404,
+          "overall_rank": 3963902,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "35",
           "bank": 41,
           "value": 1009,
           "event_transfers": 1,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 1
         },
         "automatic_subs": []
       }
@@ -27008,11 +27090,11 @@
           "event": 10,
           "points": 0,
           "total_points": 500,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 5220867,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "rank": 8867653,
+          "rank_sort": 9252993,
+          "overall_rank": 5337307,
+          "percentile_rank": 80,
+          "overall_rank_percentage": "48",
           "bank": 11,
           "value": 1027,
           "event_transfers": 1,
@@ -28448,16 +28530,16 @@
           "event": 10,
           "points": 0,
           "total_points": 533,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3308202,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "rank": 4060968,
+          "rank_sort": 4680563,
+          "overall_rank": 3431604,
+          "percentile_rank": 40,
+          "overall_rank_percentage": "31",
           "bank": 1,
           "value": 1007,
           "event_transfers": 0,
           "event_transfers_cost": 0,
-          "points_on_bench": 0
+          "points_on_bench": 10
         },
         "automatic_subs": []
       }
@@ -29872,18 +29954,18 @@
         "active_chip": null,
         "entry_history": {
           "event": 10,
-          "points": 0,
-          "total_points": 279,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 10564755,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 221,
+          "rank": 3824608,
+          "rank_sort": 3824632,
+          "overall_rank": 10795025,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "96",
           "bank": 16,
           "value": 1026,
           "event_transfers": 16,
           "event_transfers_cost": 60,
-          "points_on_bench": 0
+          "points_on_bench": 18
         },
         "automatic_subs": []
       }
@@ -31314,11 +31396,11 @@
           "event": 10,
           "points": 0,
           "total_points": 525,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3748799,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "rank": 4060968,
+          "rank_sort": 4098542,
+          "overall_rank": 3873422,
+          "percentile_rank": 40,
+          "overall_rank_percentage": "35",
           "bank": 31,
           "value": 1020,
           "event_transfers": 0,
@@ -31330,6 +31412,98 @@
     }
   },
   "transfersHistory": {
+    "2067578": [
+      {
+        "element_in": 79,
+        "element_in_cost": 64,
+        "element_out": 346,
+        "element_out_cost": 60,
+        "entry": 2067578,
+        "event": 10,
+        "time": "2026-11-01T22:34:38.048228Z"
+      },
+      {
+        "element_in": 379,
+        "element_in_cost": 91,
+        "element_out": 165,
+        "element_out_cost": 76,
+        "entry": 2067578,
+        "event": 9,
+        "time": "2026-10-30T03:30:08.888574Z"
+      },
+      {
+        "element_in": 68,
+        "element_in_cost": 63,
+        "element_out": 399,
+        "element_out_cost": 80,
+        "entry": 2067578,
+        "event": 9,
+        "time": "2026-10-25T18:14:18.152669Z"
+      },
+      {
+        "element_in": 399,
+        "element_in_cost": 80,
+        "element_out": 557,
+        "element_out_cost": 62,
+        "entry": 2067578,
+        "event": 8,
+        "time": "2026-10-19T23:33:32.681748Z"
+      },
+      {
+        "element_in": 124,
+        "element_in_cost": 59,
+        "element_out": 367,
+        "element_out_cost": 72,
+        "entry": 2067578,
+        "event": 7,
+        "time": "2026-10-10T22:08:01.265099Z"
+      },
+      {
+        "element_in": 115,
+        "element_in_cost": 49,
+        "element_out": 32,
+        "element_out_cost": 44,
+        "entry": 2067578,
+        "event": 6,
+        "time": "2026-09-19T22:34:30.072950Z"
+      },
+      {
+        "element_in": 233,
+        "element_in_cost": 45,
+        "element_out": 499,
+        "element_out_cost": 55,
+        "entry": 2067578,
+        "event": 5,
+        "time": "2026-09-13T15:28:35.080272Z"
+      },
+      {
+        "element_in": 367,
+        "element_in_cost": 72,
+        "element_out": 368,
+        "element_out_cost": 70,
+        "entry": 2067578,
+        "event": 4,
+        "time": "2026-09-07T05:23:16.042506Z"
+      },
+      {
+        "element_in": 279,
+        "element_in_cost": 40,
+        "element_out": 423,
+        "element_out_cost": 45,
+        "entry": 2067578,
+        "event": 3,
+        "time": "2026-08-30T22:35:54.785002Z"
+      },
+      {
+        "element_in": 565,
+        "element_in_cost": 55,
+        "element_out": 127,
+        "element_out_cost": 50,
+        "entry": 2067578,
+        "event": 2,
+        "time": "2026-08-25T00:27:33.395226Z"
+      }
+    ],
     "2023789": [
       {
         "element_in": 237,
@@ -31438,98 +31612,6 @@
         "entry": 2023789,
         "event": 2,
         "time": "2026-08-28T07:54:47.989682Z"
-      }
-    ],
-    "2067578": [
-      {
-        "element_in": 79,
-        "element_in_cost": 64,
-        "element_out": 346,
-        "element_out_cost": 60,
-        "entry": 2067578,
-        "event": 10,
-        "time": "2026-11-01T22:34:38.048228Z"
-      },
-      {
-        "element_in": 379,
-        "element_in_cost": 91,
-        "element_out": 165,
-        "element_out_cost": 76,
-        "entry": 2067578,
-        "event": 9,
-        "time": "2026-10-30T03:30:08.888574Z"
-      },
-      {
-        "element_in": 68,
-        "element_in_cost": 63,
-        "element_out": 399,
-        "element_out_cost": 80,
-        "entry": 2067578,
-        "event": 9,
-        "time": "2026-10-25T18:14:18.152669Z"
-      },
-      {
-        "element_in": 399,
-        "element_in_cost": 80,
-        "element_out": 557,
-        "element_out_cost": 62,
-        "entry": 2067578,
-        "event": 8,
-        "time": "2026-10-19T23:33:32.681748Z"
-      },
-      {
-        "element_in": 124,
-        "element_in_cost": 59,
-        "element_out": 367,
-        "element_out_cost": 72,
-        "entry": 2067578,
-        "event": 7,
-        "time": "2026-10-10T22:08:01.265099Z"
-      },
-      {
-        "element_in": 115,
-        "element_in_cost": 49,
-        "element_out": 32,
-        "element_out_cost": 44,
-        "entry": 2067578,
-        "event": 6,
-        "time": "2026-09-19T22:34:30.072950Z"
-      },
-      {
-        "element_in": 233,
-        "element_in_cost": 45,
-        "element_out": 499,
-        "element_out_cost": 55,
-        "entry": 2067578,
-        "event": 5,
-        "time": "2026-09-13T15:28:35.080272Z"
-      },
-      {
-        "element_in": 367,
-        "element_in_cost": 72,
-        "element_out": 368,
-        "element_out_cost": 70,
-        "entry": 2067578,
-        "event": 4,
-        "time": "2026-09-07T05:23:16.042506Z"
-      },
-      {
-        "element_in": 279,
-        "element_in_cost": 40,
-        "element_out": 423,
-        "element_out_cost": 45,
-        "entry": 2067578,
-        "event": 3,
-        "time": "2026-08-30T22:35:54.785002Z"
-      },
-      {
-        "element_in": 565,
-        "element_in_cost": 55,
-        "element_out": 127,
-        "element_out_cost": 50,
-        "entry": 2067578,
-        "event": 2,
-        "time": "2026-08-25T00:27:33.395226Z"
       }
     ],
     "2019453": [
@@ -33701,16 +33783,16 @@
       "leagueName": "Clash of Elite 2026-2027",
       "managers": [
         {
-          "id": 2023789,
-          "name": "Monor Noem",
-          "teamName": "NORA FC",
-          "avatar": "MO"
-        },
-        {
           "id": 2067578,
           "name": "Kun Phaktra",
           "teamName": "The Blue Warriors",
           "avatar": "KU"
+        },
+        {
+          "id": 2023789,
+          "name": "Monor Noem",
+          "teamName": "NORA FC",
+          "avatar": "MO"
         },
         {
           "id": 2019453,
@@ -33747,8 +33829,8 @@
         {
           "gw": 1,
           "scores": {
-            "2023789": 72,
             "2067578": 66,
+            "2023789": 72,
             "2019453": 41,
             "2026160": 49,
             "2024611": 54,
@@ -33756,8 +33838,8 @@
             "2026484": 61
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -33765,8 +33847,8 @@
             "2026484": 0
           },
           "transfers": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -33774,8 +33856,8 @@
             "2026484": 0
           },
           "benchPoints": {
-            "2023789": 0,
             "2067578": 11,
+            "2023789": 0,
             "2019453": 11,
             "2026160": 0,
             "2024611": 3,
@@ -33783,8 +33865,8 @@
             "2026484": 9
           },
           "captainPoints": {
-            "2023789": 4,
             "2067578": 4,
+            "2023789": 4,
             "2019453": 4,
             "2026160": 4,
             "2024611": 4,
@@ -33795,8 +33877,8 @@
             "2026160": "bboost"
           },
           "seasonTotals": {
-            "2023789": 72,
             "2067578": 66,
+            "2023789": 72,
             "2019453": 41,
             "2026160": 49,
             "2024611": 54,
@@ -33807,8 +33889,8 @@
         {
           "gw": 2,
           "scores": {
-            "2023789": 74,
             "2067578": 80,
+            "2023789": 74,
             "2019453": 87,
             "2026160": 76,
             "2024611": 73,
@@ -33816,8 +33898,8 @@
             "2026484": 65
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -33825,8 +33907,8 @@
             "2026484": 0
           },
           "transfers": {
-            "2023789": 1,
             "2067578": 1,
+            "2023789": 1,
             "2019453": 0,
             "2026160": 1,
             "2024611": 0,
@@ -33834,8 +33916,8 @@
             "2026484": 0
           },
           "benchPoints": {
-            "2023789": 4,
             "2067578": 11,
+            "2023789": 4,
             "2019453": 3,
             "2026160": 15,
             "2024611": 0,
@@ -33843,8 +33925,8 @@
             "2026484": 2
           },
           "captainPoints": {
-            "2023789": 26,
             "2067578": 26,
+            "2023789": 26,
             "2019453": 26,
             "2026160": 18,
             "2024611": 26,
@@ -33855,8 +33937,8 @@
             "2026484": "wildcard"
           },
           "seasonTotals": {
-            "2023789": 146,
             "2067578": 146,
+            "2023789": 146,
             "2019453": 128,
             "2026160": 125,
             "2024611": 127,
@@ -33867,8 +33949,8 @@
         {
           "gw": 3,
           "scores": {
-            "2023789": 52,
             "2067578": 55,
+            "2023789": 52,
             "2019453": 63,
             "2026160": 58,
             "2024611": 47,
@@ -33876,8 +33958,8 @@
             "2026484": 44
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 4,
             "2026160": 0,
             "2024611": 0,
@@ -33885,8 +33967,8 @@
             "2026484": 28
           },
           "transfers": {
-            "2023789": 1,
             "2067578": 1,
+            "2023789": 1,
             "2019453": 3,
             "2026160": 1,
             "2024611": 2,
@@ -33894,8 +33976,8 @@
             "2026484": 8
           },
           "benchPoints": {
-            "2023789": 6,
             "2067578": 21,
+            "2023789": 6,
             "2019453": 11,
             "2026160": 5,
             "2024611": 0,
@@ -33903,8 +33985,8 @@
             "2026484": 0
           },
           "captainPoints": {
-            "2023789": 18,
             "2067578": 18,
+            "2023789": 18,
             "2019453": 18,
             "2026160": 18,
             "2024611": 18,
@@ -33915,8 +33997,8 @@
             "2026484": "bboost"
           },
           "seasonTotals": {
-            "2023789": 198,
             "2067578": 201,
+            "2023789": 198,
             "2019453": 187,
             "2026160": 183,
             "2024611": 174,
@@ -33927,8 +34009,8 @@
         {
           "gw": 4,
           "scores": {
-            "2023789": 73,
             "2067578": 78,
+            "2023789": 73,
             "2019453": 72,
             "2026160": 60,
             "2024611": 102,
@@ -33936,8 +34018,8 @@
             "2026484": 74
           },
           "hits": {
-            "2023789": 4,
             "2067578": 0,
+            "2023789": 4,
             "2019453": 0,
             "2026160": 4,
             "2024611": 0,
@@ -33945,8 +34027,8 @@
             "2026484": 36
           },
           "transfers": {
-            "2023789": 2,
             "2067578": 1,
+            "2023789": 2,
             "2019453": 0,
             "2026160": 2,
             "2024611": 0,
@@ -33954,8 +34036,8 @@
             "2026484": 10
           },
           "benchPoints": {
-            "2023789": -1,
             "2067578": 18,
+            "2023789": -1,
             "2019453": 8,
             "2026160": 4,
             "2024611": 4,
@@ -33963,8 +34045,8 @@
             "2026484": 44
           },
           "captainPoints": {
-            "2023789": 24,
             "2067578": 24,
+            "2023789": 24,
             "2019453": 18,
             "2026160": 24,
             "2024611": 18,
@@ -33976,8 +34058,8 @@
             "2026484": "3xc"
           },
           "seasonTotals": {
-            "2023789": 267,
             "2067578": 279,
+            "2023789": 267,
             "2019453": 259,
             "2026160": 239,
             "2024611": 276,
@@ -33988,8 +34070,8 @@
         {
           "gw": 5,
           "scores": {
-            "2023789": 57,
             "2067578": 34,
+            "2023789": 57,
             "2019453": 33,
             "2026160": 52,
             "2024611": 35,
@@ -33997,8 +34079,8 @@
             "2026484": 49
           },
           "hits": {
-            "2023789": 4,
             "2067578": 0,
+            "2023789": 4,
             "2019453": 0,
             "2026160": 4,
             "2024611": 0,
@@ -34006,8 +34088,8 @@
             "2026484": 0
           },
           "transfers": {
-            "2023789": 2,
             "2067578": 1,
+            "2023789": 2,
             "2019453": 2,
             "2026160": 2,
             "2024611": 1,
@@ -34015,8 +34097,8 @@
             "2026484": 0
           },
           "benchPoints": {
-            "2023789": -1,
             "2067578": 6,
+            "2023789": -1,
             "2019453": 7,
             "2026160": 2,
             "2024611": 7,
@@ -34024,8 +34106,8 @@
             "2026484": 3
           },
           "captainPoints": {
-            "2023789": 12,
             "2067578": 12,
+            "2023789": 12,
             "2019453": 12,
             "2026160": 12,
             "2024611": 12,
@@ -34036,8 +34118,8 @@
             "2026484": "freehit"
           },
           "seasonTotals": {
-            "2023789": 320,
             "2067578": 313,
+            "2023789": 320,
             "2019453": 292,
             "2026160": 287,
             "2024611": 311,
@@ -34048,8 +34130,8 @@
         {
           "gw": 6,
           "scores": {
-            "2023789": 72,
             "2067578": 78,
+            "2023789": 72,
             "2019453": 69,
             "2026160": 76,
             "2024611": 60,
@@ -34057,8 +34139,8 @@
             "2026484": 67
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -34066,8 +34148,8 @@
             "2026484": 8
           },
           "transfers": {
-            "2023789": 1,
             "2067578": 1,
+            "2023789": 1,
             "2019453": 0,
             "2026160": 1,
             "2024611": 0,
@@ -34075,8 +34157,8 @@
             "2026484": 3
           },
           "benchPoints": {
-            "2023789": 12,
             "2067578": 9,
+            "2023789": 12,
             "2019453": 4,
             "2026160": 4,
             "2024611": 15,
@@ -34084,8 +34166,8 @@
             "2026484": 17
           },
           "captainPoints": {
-            "2023789": 4,
             "2067578": 12,
+            "2023789": 4,
             "2019453": 24,
             "2026160": 12,
             "2024611": 12,
@@ -34094,8 +34176,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2023789": 392,
             "2067578": 391,
+            "2023789": 392,
             "2019453": 361,
             "2026160": 363,
             "2024611": 371,
@@ -34106,8 +34188,8 @@
         {
           "gw": 7,
           "scores": {
-            "2023789": 59,
             "2067578": 73,
+            "2023789": 59,
             "2019453": 71,
             "2026160": 57,
             "2024611": 47,
@@ -34115,8 +34197,8 @@
             "2026484": 40
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -34124,8 +34206,8 @@
             "2026484": 0
           },
           "transfers": {
-            "2023789": 0,
             "2067578": 1,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 1,
             "2024611": 2,
@@ -34133,8 +34215,8 @@
             "2026484": 1
           },
           "benchPoints": {
-            "2023789": 10,
             "2067578": 11,
+            "2023789": 10,
             "2019453": 5,
             "2026160": 2,
             "2024611": 9,
@@ -34142,8 +34224,8 @@
             "2026484": 4
           },
           "captainPoints": {
-            "2023789": 26,
             "2067578": 26,
+            "2023789": 26,
             "2019453": 26,
             "2026160": 4,
             "2024611": 4,
@@ -34152,8 +34234,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2023789": 451,
             "2067578": 464,
+            "2023789": 451,
             "2019453": 432,
             "2026160": 420,
             "2024611": 418,
@@ -34164,8 +34246,8 @@
         {
           "gw": 8,
           "scores": {
-            "2023789": 39,
             "2067578": 30,
+            "2023789": 39,
             "2019453": 45,
             "2026160": 51,
             "2024611": 35,
@@ -34173,8 +34255,8 @@
             "2026484": 23
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -34182,8 +34264,8 @@
             "2026484": 76
           },
           "transfers": {
-            "2023789": 2,
             "2067578": 1,
+            "2023789": 2,
             "2019453": 1,
             "2026160": 1,
             "2024611": 0,
@@ -34191,8 +34273,8 @@
             "2026484": 20
           },
           "benchPoints": {
-            "2023789": 5,
             "2067578": 10,
+            "2023789": 5,
             "2019453": 13,
             "2026160": 9,
             "2024611": 1,
@@ -34200,8 +34282,8 @@
             "2026484": 2
           },
           "captainPoints": {
-            "2023789": 16,
             "2067578": 16,
+            "2023789": 16,
             "2019453": 16,
             "2026160": 16,
             "2024611": -2,
@@ -34212,8 +34294,8 @@
             "2023013": "wildcard"
           },
           "seasonTotals": {
-            "2023789": 490,
             "2067578": 494,
+            "2023789": 490,
             "2019453": 477,
             "2026160": 471,
             "2024611": 453,
@@ -34224,8 +34306,8 @@
         {
           "gw": 9,
           "scores": {
-            "2023789": 61,
             "2067578": 49,
+            "2023789": 61,
             "2019453": 56,
             "2026160": 55,
             "2024611": 47,
@@ -34233,8 +34315,8 @@
             "2026484": 44
           },
           "hits": {
-            "2023789": 4,
             "2067578": 4,
+            "2023789": 4,
             "2019453": 0,
             "2026160": 4,
             "2024611": 0,
@@ -34242,8 +34324,8 @@
             "2026484": 40
           },
           "transfers": {
-            "2023789": 2,
             "2067578": 2,
+            "2023789": 2,
             "2019453": 3,
             "2026160": 2,
             "2024611": 2,
@@ -34251,8 +34333,8 @@
             "2026484": 11
           },
           "benchPoints": {
-            "2023789": 14,
             "2067578": 16,
+            "2023789": 14,
             "2019453": 14,
             "2026160": 5,
             "2024611": 11,
@@ -34260,8 +34342,8 @@
             "2026484": 20
           },
           "captainPoints": {
-            "2023789": 4,
             "2067578": 4,
+            "2023789": 4,
             "2019453": 4,
             "2026160": 4,
             "2024611": 4,
@@ -34270,8 +34352,8 @@
           },
           "chipsUsed": {},
           "seasonTotals": {
-            "2023789": 547,
             "2067578": 539,
+            "2023789": 547,
             "2019453": 533,
             "2026160": 522,
             "2024611": 500,
@@ -34282,17 +34364,17 @@
         {
           "gw": 10,
           "scores": {
+            "2067578": 8,
             "2023789": 0,
-            "2067578": 0,
             "2019453": 0,
-            "2026160": 0,
+            "2026160": 2,
             "2024611": 0,
             "2023013": 0,
-            "2026484": 0
+            "2026484": 2
           },
           "hits": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -34300,8 +34382,8 @@
             "2026484": 60
           },
           "transfers": {
-            "2023789": 1,
             "2067578": 1,
+            "2023789": 1,
             "2019453": 12,
             "2026160": 1,
             "2024611": 1,
@@ -34309,17 +34391,17 @@
             "2026484": 16
           },
           "benchPoints": {
-            "2023789": 0,
             "2067578": 0,
-            "2019453": 0,
-            "2026160": 0,
+            "2023789": 0,
+            "2019453": 10,
+            "2026160": 1,
             "2024611": 0,
-            "2023013": 0,
-            "2026484": 0
+            "2023013": 2,
+            "2026484": 18
           },
           "captainPoints": {
-            "2023789": 0,
             "2067578": 0,
+            "2023789": 0,
             "2019453": 0,
             "2026160": 0,
             "2024611": 0,
@@ -34330,13 +34412,13 @@
             "2019453": "wildcard"
           },
           "seasonTotals": {
+            "2067578": 547,
             "2023789": 547,
-            "2067578": 539,
             "2019453": 533,
-            "2026160": 522,
+            "2026160": 524,
             "2024611": 500,
             "2023013": 500,
-            "2026484": 279
+            "2026484": 221
           }
         },
         {
@@ -34998,7 +35080,7 @@
             "145847": 0
           },
           "benchPoints": {
-            "2019453": 0,
+            "2019453": 10,
             "145847": 0
           },
           "captainPoints": {
