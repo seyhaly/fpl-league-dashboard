@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T07:37:40Z",
+  "lastUpdated": "2026-11-08T14:29:18Z",
   "currentGw": 10,
   "eventStatuses": {
     "1": {
@@ -111,7 +111,7 @@
       "deadline_time": "2026-11-06T18:30:00Z",
       "bonus_added": false,
       "leagues": "",
-      "points": "",
+      "points": "l",
       "daily_status": [
         {
           "bonus_added": false,
@@ -129,7 +129,7 @@
           "bonus_added": false,
           "date": "2026-11-08",
           "event": 10,
-          "points": ""
+          "points": "l"
         }
       ]
     },
@@ -1744,14 +1744,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "58": {
       "id": 58,
@@ -1768,8 +1768,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "59": {
       "id": 59,
@@ -1786,8 +1786,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "60": {
       "id": 60,
@@ -1798,14 +1798,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.6",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "61": {
       "id": 61,
@@ -1816,14 +1816,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "62": {
       "id": 62,
@@ -1840,8 +1840,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "63": {
       "id": 63,
@@ -1858,8 +1858,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "64": {
       "id": 64,
@@ -1870,14 +1870,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "65": {
       "id": 65,
@@ -1894,8 +1894,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "66": {
       "id": 66,
@@ -1912,8 +1912,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "67": {
       "id": 67,
@@ -1924,14 +1924,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.3",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "68": {
       "id": 68,
@@ -1942,14 +1942,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.7",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "69": {
       "id": 69,
@@ -1966,8 +1966,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "70": {
       "id": 70,
@@ -1978,14 +1978,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "71": {
       "id": 71,
@@ -2002,8 +2002,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "72": {
       "id": 72,
@@ -2020,8 +2020,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "73": {
       "id": 73,
@@ -2032,14 +2032,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "74": {
       "id": 74,
@@ -2056,8 +2056,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "75": {
       "id": 75,
@@ -2068,14 +2068,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "76": {
       "id": 76,
@@ -2092,8 +2092,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "77": {
       "id": 77,
@@ -2110,8 +2110,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "78": {
       "id": 78,
@@ -2128,8 +2128,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "79": {
       "id": 79,
@@ -2140,14 +2140,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 8,
       "now_cost": "6.5",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "80": {
       "id": 80,
@@ -2164,8 +2164,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "81": {
       "id": 81,
@@ -2182,8 +2182,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "566": {
       "id": 566,
@@ -2194,14 +2194,14 @@
       "team": "BOU",
       "team_name": "Bournemouth",
       "team_id": 3,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.1",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "573": {
       "id": 573,
@@ -2218,8 +2218,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "608": {
       "id": 608,
@@ -2236,8 +2236,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "615": {
       "id": 615,
@@ -2254,8 +2254,8 @@
       "opponent_short": "IPS",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "82": {
       "id": 82,
@@ -2266,14 +2266,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "83": {
       "id": 83,
@@ -2290,8 +2290,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "84": {
       "id": 84,
@@ -2308,8 +2308,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "85": {
       "id": 85,
@@ -2320,14 +2320,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "86": {
       "id": 86,
@@ -2338,14 +2338,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "87": {
       "id": 87,
@@ -2361,9 +2361,9 @@
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "88": {
       "id": 88,
@@ -2374,14 +2374,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "89": {
       "id": 89,
@@ -2398,8 +2398,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "90": {
       "id": 90,
@@ -2410,14 +2410,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "92": {
       "id": 92,
@@ -2434,8 +2434,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "93": {
       "id": 93,
@@ -2452,8 +2452,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "94": {
       "id": 94,
@@ -2464,14 +2464,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.1",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "95": {
       "id": 95,
@@ -2482,14 +2482,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.2",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "96": {
       "id": 96,
@@ -2506,8 +2506,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "97": {
       "id": 97,
@@ -2524,8 +2524,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "98": {
       "id": 98,
@@ -2536,14 +2536,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "99": {
       "id": 99,
@@ -2560,8 +2560,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "100": {
       "id": 100,
@@ -2578,8 +2578,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "102": {
       "id": 102,
@@ -2596,8 +2596,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "103": {
       "id": 103,
@@ -2614,8 +2614,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "105": {
       "id": 105,
@@ -2632,8 +2632,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "106": {
       "id": 106,
@@ -2644,14 +2644,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": -2,
       "now_cost": "7.8",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 22,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "107": {
       "id": 107,
@@ -2668,8 +2668,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "108": {
       "id": 108,
@@ -2686,8 +2686,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "565": {
       "id": 565,
@@ -2698,14 +2698,14 @@
       "team": "BRE",
       "team_name": "Brentford",
       "team_id": 4,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "620": {
       "id": 620,
@@ -2722,8 +2722,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "657": {
       "id": 657,
@@ -2740,8 +2740,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "660": {
       "id": 660,
@@ -2758,8 +2758,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "661": {
       "id": 661,
@@ -2776,8 +2776,8 @@
       "opponent_short": "BHA",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "109": {
       "id": 109,
@@ -2788,14 +2788,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.6",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "111": {
       "id": 111,
@@ -2812,8 +2812,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "113": {
       "id": 113,
@@ -2830,8 +2830,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "114": {
       "id": 114,
@@ -2842,14 +2842,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "115": {
       "id": 115,
@@ -2860,14 +2860,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "116": {
       "id": 116,
@@ -2878,14 +2878,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "117": {
       "id": 117,
@@ -2902,8 +2902,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "118": {
       "id": 118,
@@ -2920,8 +2920,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "119": {
       "id": 119,
@@ -2932,14 +2932,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "120": {
       "id": 120,
@@ -2956,8 +2956,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "121": {
       "id": 121,
@@ -2974,8 +2974,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "122": {
       "id": 122,
@@ -2992,8 +2992,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "123": {
       "id": 123,
@@ -3010,8 +3010,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "124": {
       "id": 124,
@@ -3022,14 +3022,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "6.3",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "125": {
       "id": 125,
@@ -3046,8 +3046,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "126": {
       "id": 126,
@@ -3064,8 +3064,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "127": {
       "id": 127,
@@ -3076,14 +3076,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "5.0",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "128": {
       "id": 128,
@@ -3100,8 +3100,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "129": {
       "id": 129,
@@ -3112,14 +3112,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "130": {
       "id": 130,
@@ -3136,8 +3136,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "132": {
       "id": 132,
@@ -3154,8 +3154,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "133": {
       "id": 133,
@@ -3172,8 +3172,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "134": {
       "id": 134,
@@ -3190,8 +3190,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "135": {
       "id": 135,
@@ -3208,8 +3208,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "137": {
       "id": 137,
@@ -3226,8 +3226,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "138": {
       "id": 138,
@@ -3238,14 +3238,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "139": {
       "id": 139,
@@ -3262,8 +3262,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "328": {
       "id": 328,
@@ -3280,8 +3280,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "504": {
       "id": 504,
@@ -3292,14 +3292,14 @@
       "team": "BHA",
       "team_name": "Brighton",
       "team_id": 5,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.2",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "594": {
       "id": 594,
@@ -3316,8 +3316,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "600": {
       "id": 600,
@@ -3334,8 +3334,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "605": {
       "id": 605,
@@ -3352,8 +3352,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "614": {
       "id": 614,
@@ -3370,8 +3370,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "624": {
       "id": 624,
@@ -3388,8 +3388,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "639": {
       "id": 639,
@@ -3405,9 +3405,9 @@
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "652": {
       "id": 652,
@@ -3424,8 +3424,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "658": {
       "id": 658,
@@ -3442,8 +3442,8 @@
       "opponent_short": "BRE",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "28": {
       "id": 28,
@@ -3460,8 +3460,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "40": {
       "id": 40,
@@ -3472,14 +3472,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "8.2",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "101": {
       "id": 101,
@@ -3490,14 +3490,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "136": {
       "id": 136,
@@ -3514,8 +3514,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "140": {
       "id": 140,
@@ -3532,8 +3532,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "141": {
       "id": 141,
@@ -3550,8 +3550,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "142": {
       "id": 142,
@@ -3568,8 +3568,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "143": {
       "id": 143,
@@ -3586,8 +3586,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "144": {
       "id": 144,
@@ -3604,8 +3604,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "145": {
       "id": 145,
@@ -3616,14 +3616,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "146": {
       "id": 146,
@@ -3640,8 +3640,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "148": {
       "id": 148,
@@ -3658,8 +3658,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "149": {
       "id": 149,
@@ -3670,14 +3670,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "150": {
       "id": 150,
@@ -3694,8 +3694,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "151": {
       "id": 151,
@@ -3712,8 +3712,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "152": {
       "id": 152,
@@ -3724,14 +3724,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "154": {
       "id": 154,
@@ -3742,14 +3742,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "9.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "156": {
       "id": 156,
@@ -3760,14 +3760,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.6",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "157": {
       "id": 157,
@@ -3784,8 +3784,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "158": {
       "id": 158,
@@ -3802,8 +3802,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "159": {
       "id": 159,
@@ -3814,14 +3814,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "161": {
       "id": 161,
@@ -3832,14 +3832,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "163": {
       "id": 163,
@@ -3856,8 +3856,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "164": {
       "id": 164,
@@ -3874,8 +3874,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "165": {
       "id": 165,
@@ -3892,8 +3892,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "168": {
       "id": 168,
@@ -3910,8 +3910,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "169": {
       "id": 169,
@@ -3928,8 +3928,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "170": {
       "id": 170,
@@ -3946,8 +3946,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "200": {
       "id": 200,
@@ -3964,8 +3964,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "560": {
       "id": 560,
@@ -3976,14 +3976,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "561": {
       "id": 561,
@@ -4000,8 +4000,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "568": {
       "id": 568,
@@ -4018,8 +4018,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "583": {
       "id": 583,
@@ -4030,14 +4030,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "662": {
       "id": 662,
@@ -4054,8 +4054,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "669": {
       "id": 669,
@@ -4072,8 +4072,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "670": {
       "id": 670,
@@ -4090,8 +4090,8 @@
       "opponent_short": "SUN",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "91": {
       "id": 91,
@@ -4774,8 +4774,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "153": {
       "id": 153,
@@ -4786,14 +4786,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "198": {
       "id": 198,
@@ -4804,14 +4804,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "199": {
       "id": 199,
@@ -4828,8 +4828,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "202": {
       "id": 202,
@@ -4840,14 +4840,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "203": {
       "id": 203,
@@ -4864,8 +4864,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "204": {
       "id": 204,
@@ -4876,14 +4876,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "205": {
       "id": 205,
@@ -4900,8 +4900,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "206": {
       "id": 206,
@@ -4918,8 +4918,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "207": {
       "id": 207,
@@ -4930,14 +4930,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "4.3",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "208": {
       "id": 208,
@@ -4954,8 +4954,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "210": {
       "id": 210,
@@ -4966,14 +4966,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "211": {
       "id": 211,
@@ -4984,14 +4984,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "212": {
       "id": 212,
@@ -5008,8 +5008,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "213": {
       "id": 213,
@@ -5020,14 +5020,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "214": {
       "id": 214,
@@ -5038,14 +5038,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "215": {
       "id": 215,
@@ -5062,8 +5062,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "216": {
       "id": 216,
@@ -5080,8 +5080,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "217": {
       "id": 217,
@@ -5098,8 +5098,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "218": {
       "id": 218,
@@ -5116,8 +5116,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "219": {
       "id": 219,
@@ -5134,8 +5134,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "220": {
       "id": 220,
@@ -5152,8 +5152,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "221": {
       "id": 221,
@@ -5170,8 +5170,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "222": {
       "id": 222,
@@ -5182,14 +5182,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.9",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "223": {
       "id": 223,
@@ -5206,8 +5206,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "224": {
       "id": 224,
@@ -5224,8 +5224,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "225": {
       "id": 225,
@@ -5242,8 +5242,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "241": {
       "id": 241,
@@ -5260,8 +5260,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "555": {
       "id": 555,
@@ -5278,8 +5278,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "577": {
       "id": 577,
@@ -5296,8 +5296,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "588": {
       "id": 588,
@@ -5314,8 +5314,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "595": {
       "id": 595,
@@ -5332,8 +5332,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "633": {
       "id": 633,
@@ -5350,8 +5350,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "643": {
       "id": 643,
@@ -5368,8 +5368,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "644": {
       "id": 644,
@@ -5380,14 +5380,14 @@
       "team": "CRY",
       "team_name": "Crystal Palace",
       "team_id": 8,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.0",
       "opponent": "LIV",
       "opponent_short": "LIV",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "647": {
       "id": 647,
@@ -5404,8 +5404,8 @@
       "opponent_short": "LIV",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "21": {
       "id": 21,
@@ -7144,14 +7144,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "3.9",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "267": {
       "id": 267,
@@ -7168,8 +7168,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "300": {
       "id": 300,
@@ -7180,14 +7180,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "301": {
       "id": 301,
@@ -7204,8 +7204,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "302": {
       "id": 302,
@@ -7222,8 +7222,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "303": {
       "id": 303,
@@ -7240,8 +7240,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "304": {
       "id": 304,
@@ -7252,14 +7252,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "305": {
       "id": 305,
@@ -7270,14 +7270,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "306": {
       "id": 306,
@@ -7294,8 +7294,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "307": {
       "id": 307,
@@ -7312,8 +7312,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "308": {
       "id": 308,
@@ -7330,8 +7330,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "309": {
       "id": 309,
@@ -7348,8 +7348,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "310": {
       "id": 310,
@@ -7366,8 +7366,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "311": {
       "id": 311,
@@ -7384,8 +7384,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "312": {
       "id": 312,
@@ -7402,8 +7402,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "313": {
       "id": 313,
@@ -7420,8 +7420,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "314": {
       "id": 314,
@@ -7438,8 +7438,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "315": {
       "id": 315,
@@ -7456,8 +7456,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "316": {
       "id": 316,
@@ -7468,14 +7468,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "317": {
       "id": 317,
@@ -7492,8 +7492,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "318": {
       "id": 318,
@@ -7504,14 +7504,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "5.4",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "319": {
       "id": 319,
@@ -7528,8 +7528,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "320": {
       "id": 320,
@@ -7546,8 +7546,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "321": {
       "id": 321,
@@ -7564,8 +7564,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "322": {
       "id": 322,
@@ -7582,8 +7582,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "323": {
       "id": 323,
@@ -7600,8 +7600,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "324": {
       "id": 324,
@@ -7618,8 +7618,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "554": {
       "id": 554,
@@ -7636,8 +7636,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "562": {
       "id": 562,
@@ -7648,14 +7648,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "564": {
       "id": 564,
@@ -7672,8 +7672,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "571": {
       "id": 571,
@@ -7684,14 +7684,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "591": {
       "id": 591,
@@ -7702,14 +7702,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "592": {
       "id": 592,
@@ -7720,14 +7720,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "602": {
       "id": 602,
@@ -7744,8 +7744,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "619": {
       "id": 619,
@@ -7756,14 +7756,14 @@
       "team": "IPS",
       "team_name": "Ipswich Town",
       "team_id": 12,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.0",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "640": {
       "id": 640,
@@ -7780,8 +7780,8 @@
       "opponent_short": "BOU",
       "difficulty": 3,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "260": {
       "id": 260,
@@ -8350,14 +8350,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "351": {
       "id": 351,
@@ -8374,8 +8374,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "352": {
       "id": 352,
@@ -8392,8 +8392,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "353": {
       "id": 353,
@@ -8410,8 +8410,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "354": {
       "id": 354,
@@ -8428,8 +8428,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "355": {
       "id": 355,
@@ -8446,8 +8446,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "356": {
       "id": 356,
@@ -8458,14 +8458,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.4",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "357": {
       "id": 357,
@@ -8482,8 +8482,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "358": {
       "id": 358,
@@ -8494,14 +8494,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "359": {
       "id": 359,
@@ -8518,8 +8518,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "360": {
       "id": 360,
@@ -8536,8 +8536,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "361": {
       "id": 361,
@@ -8554,8 +8554,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "362": {
       "id": 362,
@@ -8566,14 +8566,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.1",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "363": {
       "id": 363,
@@ -8590,8 +8590,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "364": {
       "id": 364,
@@ -8608,8 +8608,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "365": {
       "id": 365,
@@ -8626,8 +8626,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "366": {
       "id": 366,
@@ -8638,14 +8638,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.2",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "367": {
       "id": 367,
@@ -8656,14 +8656,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "7.1",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "368": {
       "id": 368,
@@ -8674,14 +8674,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "6.7",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "369": {
       "id": 369,
@@ -8698,8 +8698,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "370": {
       "id": 370,
@@ -8716,8 +8716,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "371": {
       "id": 371,
@@ -8734,8 +8734,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "372": {
       "id": 372,
@@ -8746,14 +8746,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "373": {
       "id": 373,
@@ -8770,8 +8770,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "374": {
       "id": 374,
@@ -8788,8 +8788,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "375": {
       "id": 375,
@@ -8806,8 +8806,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "376": {
       "id": 376,
@@ -8824,8 +8824,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "377": {
       "id": 377,
@@ -8842,8 +8842,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "378": {
       "id": 378,
@@ -8860,8 +8860,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "379": {
       "id": 379,
@@ -8872,14 +8872,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "9.2",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "380": {
       "id": 380,
@@ -8896,8 +8896,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "381": {
       "id": 381,
@@ -8914,8 +8914,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "382": {
       "id": 382,
@@ -8932,8 +8932,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "383": {
       "id": 383,
@@ -8950,8 +8950,8 @@
       "opponent_short": "CRY",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "579": {
       "id": 579,
@@ -8967,9 +8967,9 @@
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "627": {
       "id": 627,
@@ -8980,14 +8980,14 @@
       "team": "LIV",
       "team_name": "Liverpool",
       "team_id": 14,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "8.1",
       "opponent": "CRY",
       "opponent_short": "CRY",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 27,
+      "match_status": "live",
+      "status_label": "🟢 Live (27')"
     },
     "155": {
       "id": 155,
@@ -12100,8 +12100,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "529": {
       "id": 529,
@@ -12112,14 +12112,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "530": {
       "id": 530,
@@ -12136,8 +12136,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "531": {
       "id": 531,
@@ -12154,8 +12154,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "532": {
       "id": 532,
@@ -12172,8 +12172,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "533": {
       "id": 533,
@@ -12184,14 +12184,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "534": {
       "id": 534,
@@ -12202,14 +12202,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.2",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "535": {
       "id": 535,
@@ -12226,8 +12226,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "536": {
       "id": 536,
@@ -12238,14 +12238,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "537": {
       "id": 537,
@@ -12262,8 +12262,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "538": {
       "id": 538,
@@ -12280,8 +12280,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "539": {
       "id": 539,
@@ -12292,14 +12292,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "3.9",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "540": {
       "id": 540,
@@ -12316,8 +12316,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "541": {
       "id": 541,
@@ -12328,14 +12328,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "542": {
       "id": 542,
@@ -12346,14 +12346,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "543": {
       "id": 543,
@@ -12370,8 +12370,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "544": {
       "id": 544,
@@ -12382,14 +12382,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 3,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "545": {
       "id": 545,
@@ -12400,14 +12400,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "546": {
       "id": 546,
@@ -12424,8 +12424,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "547": {
       "id": 547,
@@ -12442,8 +12442,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "548": {
       "id": 548,
@@ -12460,8 +12460,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "549": {
       "id": 549,
@@ -12472,14 +12472,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.2",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "550": {
       "id": 550,
@@ -12496,8 +12496,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "551": {
       "id": 551,
@@ -12514,8 +12514,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "552": {
       "id": 552,
@@ -12526,14 +12526,14 @@
       "team": "SUN",
       "team_name": "Sunderland",
       "team_id": 20,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.7",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 25,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "553": {
       "id": 553,
@@ -12550,8 +12550,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "612": {
       "id": 612,
@@ -12568,8 +12568,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "613": {
       "id": 613,
@@ -12585,9 +12585,9 @@
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 21,
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "646": {
       "id": 646,
@@ -12604,8 +12604,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "651": {
       "id": 651,
@@ -12622,8 +12622,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     },
     "668": {
       "id": 668,
@@ -12640,8 +12640,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "live",
+      "status_label": "🟢 Live (25')"
     }
   },
   "playerGwPoints": {
@@ -18593,7 +18593,7 @@
       "37": 0,
       "38": 0,
       "39": 0,
-      "40": 0,
+      "40": 1,
       "41": 0,
       "42": 0,
       "43": 0,
@@ -18610,79 +18610,79 @@
       "54": 0,
       "55": 0,
       "56": 0,
-      "57": 0,
+      "57": 1,
       "58": 0,
       "59": 0,
-      "60": 0,
-      "61": 0,
+      "60": 1,
+      "61": 1,
       "62": 0,
       "63": 0,
-      "64": 0,
+      "64": 1,
       "65": 0,
       "66": 0,
-      "67": 0,
-      "68": 0,
+      "67": 1,
+      "68": 1,
       "69": 0,
-      "70": 0,
+      "70": 1,
       "71": 0,
       "72": 0,
-      "73": 0,
+      "73": 1,
       "74": 0,
-      "75": 0,
+      "75": 1,
       "76": 0,
       "77": 0,
       "78": 0,
-      "79": 0,
+      "79": 8,
       "80": 0,
       "81": 0,
-      "82": 0,
+      "82": 1,
       "83": 0,
       "84": 0,
-      "85": 0,
-      "86": 0,
+      "85": 1,
+      "86": 1,
       "87": 0,
-      "88": 0,
+      "88": 1,
       "89": 0,
-      "90": 0,
+      "90": 1,
       "91": 3,
       "92": 0,
       "93": 0,
-      "94": 0,
-      "95": 0,
+      "94": 1,
+      "95": 1,
       "96": 0,
       "97": 0,
-      "98": 0,
+      "98": 1,
       "99": 0,
       "100": 0,
-      "101": 0,
+      "101": 1,
       "102": 0,
       "103": 0,
       "104": 0,
       "105": 0,
-      "106": 0,
+      "106": -2,
       "107": 0,
       "108": 0,
-      "109": 0,
+      "109": 1,
       "110": 2,
       "111": 0,
       "112": 4,
       "113": 0,
-      "114": 0,
-      "115": 0,
-      "116": 0,
+      "114": 1,
+      "115": 1,
+      "116": 1,
       "117": 0,
       "118": 0,
-      "119": 0,
+      "119": 1,
       "120": 0,
       "121": 0,
       "122": 0,
       "123": 0,
-      "124": 0,
+      "124": 3,
       "125": 0,
       "126": 0,
-      "127": 0,
+      "127": 9,
       "128": 0,
-      "129": 0,
+      "129": 1,
       "130": 0,
       "131": 0,
       "132": 0,
@@ -18691,30 +18691,30 @@
       "135": 0,
       "136": 0,
       "137": 0,
-      "138": 0,
+      "138": 1,
       "139": 0,
       "140": 0,
       "141": 0,
       "142": 0,
       "143": 0,
       "144": 0,
-      "145": 0,
+      "145": 1,
       "146": 0,
       "147": 0,
       "148": 0,
-      "149": 0,
+      "149": 2,
       "150": 0,
       "151": 0,
-      "152": 0,
-      "153": 0,
-      "154": 0,
+      "152": 1,
+      "153": 1,
+      "154": 1,
       "155": 2,
-      "156": 0,
+      "156": 1,
       "157": 0,
       "158": 0,
-      "159": 0,
+      "159": 1,
       "160": 0,
-      "161": 0,
+      "161": 4,
       "162": 0,
       "163": 0,
       "164": 0,
@@ -18751,23 +18751,23 @@
       "195": 0,
       "196": 0,
       "197": 0,
-      "198": 0,
+      "198": 1,
       "199": 0,
       "200": 0,
       "201": 2,
-      "202": 0,
+      "202": 1,
       "203": 0,
-      "204": 0,
+      "204": 1,
       "205": 0,
       "206": 0,
-      "207": 0,
+      "207": 4,
       "208": 0,
       "209": 1,
-      "210": 0,
-      "211": 0,
+      "210": 1,
+      "211": 1,
       "212": 0,
-      "213": 0,
-      "214": 0,
+      "213": 1,
+      "214": 1,
       "215": 0,
       "216": 0,
       "217": 0,
@@ -18775,7 +18775,7 @@
       "219": 0,
       "220": 0,
       "221": 0,
-      "222": 0,
+      "222": 1,
       "223": 0,
       "224": 0,
       "225": 0,
@@ -18812,7 +18812,7 @@
       "256": 1,
       "257": 2,
       "258": 7,
-      "259": 0,
+      "259": 1,
       "260": 1,
       "261": 2,
       "262": 0,
@@ -18853,12 +18853,12 @@
       "297": 0,
       "298": 0,
       "299": 0,
-      "300": 0,
+      "300": 1,
       "301": 0,
       "302": 0,
       "303": 0,
-      "304": 0,
-      "305": 0,
+      "304": 1,
+      "305": 1,
       "306": 0,
       "307": 0,
       "308": 0,
@@ -18869,9 +18869,9 @@
       "313": 0,
       "314": 0,
       "315": 0,
-      "316": 0,
+      "316": 1,
       "317": 0,
-      "318": 0,
+      "318": 2,
       "319": 0,
       "320": 0,
       "321": 0,
@@ -18903,36 +18903,36 @@
       "347": 2,
       "348": 0,
       "349": 0,
-      "350": 0,
+      "350": 1,
       "351": 0,
       "352": 0,
       "353": 0,
       "354": 0,
       "355": 0,
-      "356": 0,
+      "356": 1,
       "357": 0,
-      "358": 0,
+      "358": 1,
       "359": 0,
       "360": 0,
       "361": 0,
-      "362": 0,
+      "362": 4,
       "363": 0,
       "364": 0,
       "365": 0,
-      "366": 0,
-      "367": 0,
-      "368": 0,
+      "366": 1,
+      "367": 1,
+      "368": 1,
       "369": 0,
       "370": 0,
       "371": 0,
-      "372": 0,
+      "372": 1,
       "373": 0,
       "374": 0,
       "375": 0,
       "376": 0,
       "377": 0,
       "378": 0,
-      "379": 0,
+      "379": 1,
       "380": 0,
       "381": 0,
       "382": 0,
@@ -19057,7 +19057,7 @@
       "501": 0,
       "502": 2,
       "503": 1,
-      "504": 0,
+      "504": 1,
       "505": 0,
       "506": 0,
       "507": 0,
@@ -19082,30 +19082,30 @@
       "526": 1,
       "527": 0,
       "528": 0,
-      "529": 0,
+      "529": 1,
       "530": 0,
       "531": 0,
       "532": 0,
-      "533": 0,
-      "534": 0,
+      "533": 1,
+      "534": 1,
       "535": 0,
-      "536": 0,
+      "536": 1,
       "537": 0,
       "538": 0,
-      "539": 0,
+      "539": 1,
       "540": 0,
-      "541": 0,
-      "542": 0,
+      "541": 1,
+      "542": 1,
       "543": 0,
-      "544": 0,
-      "545": 0,
+      "544": 1,
+      "545": 1,
       "546": 0,
       "547": 0,
       "548": 0,
-      "549": 0,
+      "549": 4,
       "550": 0,
       "551": 0,
-      "552": 0,
+      "552": 1,
       "553": 0,
       "554": 0,
       "555": 0,
@@ -19113,18 +19113,18 @@
       "557": 3,
       "558": 7,
       "559": 0,
-      "560": 0,
+      "560": 1,
       "561": 0,
-      "562": 0,
+      "562": 1,
       "563": 0,
       "564": 0,
-      "565": 0,
-      "566": 0,
+      "565": 2,
+      "566": 1,
       "567": 3,
       "568": 0,
       "569": 2,
       "570": 4,
-      "571": 0,
+      "571": 1,
       "572": 6,
       "573": 0,
       "574": 0,
@@ -19136,7 +19136,7 @@
       "580": 2,
       "581": 0,
       "582": 0,
-      "583": 0,
+      "583": 1,
       "584": 1,
       "585": 1,
       "586": 3,
@@ -19144,8 +19144,8 @@
       "588": 0,
       "589": 1,
       "590": 0,
-      "591": 0,
-      "592": 0,
+      "591": 1,
+      "592": 1,
       "593": 3,
       "594": 0,
       "595": 0,
@@ -19172,7 +19172,7 @@
       "616": 0,
       "617": 1,
       "618": 0,
-      "619": 0,
+      "619": 3,
       "620": 0,
       "621": 0,
       "622": 0,
@@ -19180,7 +19180,7 @@
       "624": 0,
       "625": 0,
       "626": 0,
-      "627": 0,
+      "627": 1,
       "628": 0,
       "629": 0,
       "630": 0,
@@ -19197,7 +19197,7 @@
       "641": 1,
       "642": 0,
       "643": 0,
-      "644": 0,
+      "644": 2,
       "645": 1,
       "646": 0,
       "647": 0,
@@ -21052,14 +21052,253 @@
       "finished_provisional": false,
       "id": 92,
       "kickoff_time": "2026-11-08T14:00:00Z",
-      "minutes": 0,
+      "minutes": 27,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 4,
-      "team_a_score": null,
+      "team_a_score": 0,
       "team_h": 5,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 1,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [],
+          "h": [
+            {
+              "value": 1,
+              "element": 127
+            }
+          ]
+        },
+        {
+          "identifier": "assists",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 87
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 639
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 106
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 1,
+              "element": 82
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 1,
+              "element": 565
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 127
+            },
+            {
+              "value": 2,
+              "element": 124
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 6,
+              "element": 565
+            },
+            {
+              "value": 5,
+              "element": 95
+            },
+            {
+              "value": 4,
+              "element": 86
+            },
+            {
+              "value": 4,
+              "element": 98
+            },
+            {
+              "value": 3,
+              "element": 82
+            },
+            {
+              "value": 2,
+              "element": 94
+            },
+            {
+              "value": 1,
+              "element": 85
+            },
+            {
+              "value": -1,
+              "element": 88
+            },
+            {
+              "value": -2,
+              "element": 90
+            },
+            {
+              "value": -5,
+              "element": 87
+            },
+            {
+              "value": -5,
+              "element": 106
+            }
+          ],
+          "h": [
+            {
+              "value": 27,
+              "element": 127
+            },
+            {
+              "value": 8,
+              "element": 124
+            },
+            {
+              "value": 5,
+              "element": 114
+            },
+            {
+              "value": 5,
+              "element": 116
+            },
+            {
+              "value": 5,
+              "element": 138
+            },
+            {
+              "value": 4,
+              "element": 109
+            },
+            {
+              "value": 3,
+              "element": 119
+            },
+            {
+              "value": 3,
+              "element": 129
+            },
+            {
+              "value": 3,
+              "element": 504
+            },
+            {
+              "value": -2,
+              "element": 639
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 4,
+              "element": 95
+            },
+            {
+              "value": 4,
+              "element": 565
+            },
+            {
+              "value": 3,
+              "element": 85
+            },
+            {
+              "value": 3,
+              "element": 87
+            },
+            {
+              "value": 2,
+              "element": 86
+            },
+            {
+              "value": 2,
+              "element": 88
+            },
+            {
+              "value": 1,
+              "element": 90
+            },
+            {
+              "value": 1,
+              "element": 98
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 114
+            },
+            {
+              "value": 2,
+              "element": 116
+            },
+            {
+              "value": 2,
+              "element": 124
+            },
+            {
+              "value": 2,
+              "element": 127
+            },
+            {
+              "value": 2,
+              "element": 138
+            },
+            {
+              "value": 2,
+              "element": 639
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 3,
       "team_a_difficulty": 4,
       "pulse_id": 0
@@ -21071,14 +21310,267 @@
       "finished_provisional": false,
       "id": 93,
       "kickoff_time": "2026-11-08T14:00:00Z",
-      "minutes": 0,
+      "minutes": 27,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 14,
-      "team_a_score": null,
+      "team_a_score": 0,
       "team_h": 8,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 579
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 1,
+              "element": 350
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 198
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 362
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 207
+            },
+            {
+              "value": 1,
+              "element": 644
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 9,
+              "element": 362
+            },
+            {
+              "value": 7,
+              "element": 368
+            },
+            {
+              "value": 6,
+              "element": 350
+            },
+            {
+              "value": 5,
+              "element": 358
+            },
+            {
+              "value": 5,
+              "element": 379
+            },
+            {
+              "value": 4,
+              "element": 356
+            },
+            {
+              "value": 4,
+              "element": 366
+            },
+            {
+              "value": 4,
+              "element": 372
+            },
+            {
+              "value": 3,
+              "element": 627
+            },
+            {
+              "value": 2,
+              "element": 367
+            },
+            {
+              "value": -2,
+              "element": 579
+            }
+          ],
+          "h": [
+            {
+              "value": 9,
+              "element": 207
+            },
+            {
+              "value": 8,
+              "element": 644
+            },
+            {
+              "value": 7,
+              "element": 204
+            },
+            {
+              "value": 6,
+              "element": 222
+            },
+            {
+              "value": 5,
+              "element": 198
+            },
+            {
+              "value": 5,
+              "element": 210
+            },
+            {
+              "value": 4,
+              "element": 202
+            },
+            {
+              "value": 4,
+              "element": 211
+            },
+            {
+              "value": 4,
+              "element": 213
+            },
+            {
+              "value": 3,
+              "element": 153
+            },
+            {
+              "value": 3,
+              "element": 214
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 4,
+              "element": 368
+            },
+            {
+              "value": 4,
+              "element": 372
+            },
+            {
+              "value": 3,
+              "element": 362
+            },
+            {
+              "value": 3,
+              "element": 366
+            },
+            {
+              "value": 3,
+              "element": 579
+            },
+            {
+              "value": 3,
+              "element": 627
+            },
+            {
+              "value": 2,
+              "element": 358
+            },
+            {
+              "value": 1,
+              "element": 356
+            },
+            {
+              "value": 1,
+              "element": 379
+            }
+          ],
+          "h": [
+            {
+              "value": 4,
+              "element": 153
+            },
+            {
+              "value": 4,
+              "element": 213
+            },
+            {
+              "value": 3,
+              "element": 202
+            },
+            {
+              "value": 3,
+              "element": 207
+            },
+            {
+              "value": 3,
+              "element": 644
+            },
+            {
+              "value": 2,
+              "element": 204
+            },
+            {
+              "value": 2,
+              "element": 211
+            },
+            {
+              "value": 2,
+              "element": 214
+            },
+            {
+              "value": 1,
+              "element": 210
+            },
+            {
+              "value": 1,
+              "element": 222
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 4,
       "team_a_difficulty": 2,
       "pulse_id": 0
@@ -21090,14 +21582,251 @@
       "finished_provisional": false,
       "id": 96,
       "kickoff_time": "2026-11-08T14:00:00Z",
-      "minutes": 0,
+      "minutes": 27,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 3,
-      "team_a_score": null,
+      "team_a_score": 1,
       "team_h": 12,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 1,
+              "element": 79
+            }
+          ],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 1,
+              "element": 57
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 300
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 79
+            }
+          ],
+          "h": [
+            {
+              "value": 2,
+              "element": 619
+            },
+            {
+              "value": 1,
+              "element": 318
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 32,
+              "element": 79
+            },
+            {
+              "value": 7,
+              "element": 60
+            },
+            {
+              "value": 6,
+              "element": 73
+            },
+            {
+              "value": 5,
+              "element": 57
+            },
+            {
+              "value": 5,
+              "element": 67
+            },
+            {
+              "value": 5,
+              "element": 566
+            },
+            {
+              "value": 4,
+              "element": 68
+            },
+            {
+              "value": 3,
+              "element": 61
+            },
+            {
+              "value": 3,
+              "element": 64
+            },
+            {
+              "value": 2,
+              "element": 70
+            },
+            {
+              "value": 1,
+              "element": 75
+            }
+          ],
+          "h": [
+            {
+              "value": 12,
+              "element": 619
+            },
+            {
+              "value": 11,
+              "element": 318
+            },
+            {
+              "value": 9,
+              "element": 591
+            },
+            {
+              "value": 7,
+              "element": 304
+            },
+            {
+              "value": 6,
+              "element": 571
+            },
+            {
+              "value": 5,
+              "element": 305
+            },
+            {
+              "value": 5,
+              "element": 562
+            },
+            {
+              "value": 1,
+              "element": 300
+            },
+            {
+              "value": 1,
+              "element": 316
+            },
+            {
+              "value": -1,
+              "element": 592
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 7,
+              "element": 60
+            },
+            {
+              "value": 7,
+              "element": 73
+            },
+            {
+              "value": 7,
+              "element": 566
+            },
+            {
+              "value": 5,
+              "element": 68
+            },
+            {
+              "value": 2,
+              "element": 67
+            },
+            {
+              "value": 2,
+              "element": 75
+            },
+            {
+              "value": 2,
+              "element": 79
+            },
+            {
+              "value": 1,
+              "element": 70
+            }
+          ],
+          "h": [
+            {
+              "value": 7,
+              "element": 619
+            },
+            {
+              "value": 2,
+              "element": 259
+            },
+            {
+              "value": 2,
+              "element": 305
+            },
+            {
+              "value": 2,
+              "element": 318
+            },
+            {
+              "value": 2,
+              "element": 571
+            },
+            {
+              "value": 2,
+              "element": 591
+            },
+            {
+              "value": 1,
+              "element": 304
+            },
+            {
+              "value": 1,
+              "element": 316
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 3,
       "team_a_difficulty": 2,
       "pulse_id": 0
@@ -21109,14 +21838,241 @@
       "finished_provisional": false,
       "id": 100,
       "kickoff_time": "2026-11-08T14:00:00Z",
-      "minutes": 0,
+      "minutes": 25,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 6,
-      "team_a_score": null,
+      "team_a_score": 0,
       "team_h": 20,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 0,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "assists",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [],
+          "h": [
+            {
+              "value": 1,
+              "element": 613
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 161
+            },
+            {
+              "value": 1,
+              "element": 149
+            }
+          ],
+          "h": [
+            {
+              "value": 3,
+              "element": 549
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 10,
+              "element": 161
+            },
+            {
+              "value": 9,
+              "element": 149
+            },
+            {
+              "value": 5,
+              "element": 159
+            },
+            {
+              "value": 4,
+              "element": 152
+            },
+            {
+              "value": 4,
+              "element": 156
+            },
+            {
+              "value": 3,
+              "element": 101
+            },
+            {
+              "value": 3,
+              "element": 145
+            },
+            {
+              "value": 3,
+              "element": 154
+            },
+            {
+              "value": 3,
+              "element": 560
+            },
+            {
+              "value": 3,
+              "element": 583
+            },
+            {
+              "value": 2,
+              "element": 40
+            }
+          ],
+          "h": [
+            {
+              "value": 10,
+              "element": 549
+            },
+            {
+              "value": 5,
+              "element": 533
+            },
+            {
+              "value": 5,
+              "element": 542
+            },
+            {
+              "value": 3,
+              "element": 529
+            },
+            {
+              "value": 3,
+              "element": 536
+            },
+            {
+              "value": 3,
+              "element": 539
+            },
+            {
+              "value": 3,
+              "element": 544
+            },
+            {
+              "value": 3,
+              "element": 545
+            },
+            {
+              "value": 2,
+              "element": 541
+            },
+            {
+              "value": 2,
+              "element": 613
+            },
+            {
+              "value": 1,
+              "element": 534
+            },
+            {
+              "value": -2,
+              "element": 552
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 4,
+              "element": 159
+            },
+            {
+              "value": 3,
+              "element": 161
+            },
+            {
+              "value": 2,
+              "element": 145
+            },
+            {
+              "value": 2,
+              "element": 149
+            },
+            {
+              "value": 2,
+              "element": 583
+            },
+            {
+              "value": 1,
+              "element": 156
+            }
+          ],
+          "h": [
+            {
+              "value": 2,
+              "element": 534
+            },
+            {
+              "value": 2,
+              "element": 536
+            },
+            {
+              "value": 2,
+              "element": 549
+            },
+            {
+              "value": 2,
+              "element": 613
+            },
+            {
+              "value": 1,
+              "element": 533
+            },
+            {
+              "value": 1,
+              "element": 539
+            },
+            {
+              "value": 1,
+              "element": 542
+            },
+            {
+              "value": 1,
+              "element": 545
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 4,
       "team_a_difficulty": 3,
       "pulse_id": 0
@@ -35795,8 +36751,8 @@
             "2023789": 4,
             "2067578": 4,
             "2019453": 4,
-            "2026160": 0,
-            "2024611": 0,
+            "2026160": 16,
+            "2024611": 2,
             "2023013": 4,
             "2026484": 4
           },
