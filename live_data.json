@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07T22:15:51Z",
+  "lastUpdated": "2026-11-08T01:27:00Z",
   "currentGw": 10,
   "eventStatuses": {
     "1": {
@@ -110,7 +110,7 @@
       "is_next": false,
       "deadline_time": "2026-11-06T18:30:00Z",
       "bonus_added": false,
-      "leagues": "Updating",
+      "leagues": "",
       "points": "",
       "daily_status": [
         {
@@ -773,7 +773,7 @@
       "team_name": "Arsenal",
       "team_id": 1,
       "event_points": 0,
-      "now_cost": "9.5",
+      "now_cost": "9.4",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -1547,7 +1547,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "7.0",
+      "now_cost": "7.1",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 3,
@@ -1943,7 +1943,7 @@
       "team_name": "Bournemouth",
       "team_id": 3,
       "event_points": 0,
-      "now_cost": "6.6",
+      "now_cost": "6.7",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -3959,7 +3959,7 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "SUN",
       "opponent_short": "SUN",
       "difficulty": 3,
@@ -6983,7 +6983,7 @@
       "team_name": "Hull City",
       "team_id": 11,
       "event_points": 1,
-      "now_cost": "4.0",
+      "now_cost": "3.9",
       "opponent": "ARS",
       "opponent_short": "ARS",
       "difficulty": 5,
@@ -8189,7 +8189,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -9755,7 +9755,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
@@ -9917,7 +9917,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "11.7",
+      "now_cost": "11.6",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
@@ -10223,7 +10223,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
@@ -10709,7 +10709,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 1,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "FUL",
       "opponent_short": "FUL",
       "difficulty": 3,
@@ -10835,7 +10835,7 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 2,
-      "now_cost": "5.3",
+      "now_cost": "5.2",
       "opponent": "MCI",
       "opponent_short": "MCI",
       "difficulty": 4,
@@ -10942,7 +10942,7 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 2,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "MCI",
       "opponent_short": "MCI",
@@ -19025,7 +19025,7 @@
       "469": 2,
       "470": 0,
       "471": 2,
-      "472": 2,
+      "472": 4,
       "473": 0,
       "474": 9,
       "475": 0,
@@ -20080,7 +20080,7 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 32,
+              "value": 33,
               "element": 572
             },
             {
@@ -20146,11 +20146,11 @@
           ],
           "h": [
             {
-              "value": 41,
+              "value": 44,
               "element": 15
             },
             {
-              "value": 35,
+              "value": 36,
               "element": 16
             },
             {
@@ -20170,11 +20170,11 @@
               "element": 31
             },
             {
-              "value": 28,
+              "value": 26,
               "element": 8
             },
             {
-              "value": 17,
+              "value": 19,
               "element": 452
             },
             {
@@ -20186,7 +20186,7 @@
               "element": 13
             },
             {
-              "value": 12,
+              "value": 9,
               "element": 17
             },
             {
@@ -20219,7 +20219,7 @@
               "element": 586
             },
             {
-              "value": 10,
+              "value": 11,
               "element": 589
             },
             {
@@ -20273,7 +20273,7 @@
           ],
           "h": [
             {
-              "value": 12,
+              "value": 11,
               "element": 31
             },
             {
@@ -20317,7 +20317,7 @@
               "element": 14
             },
             {
-              "value": 1,
+              "value": 2,
               "element": 15
             },
             {
@@ -20900,12 +20900,12 @@
               "element": 489
             },
             {
-              "value": 7,
-              "element": 469
+              "value": 8,
+              "element": 472
             },
             {
               "value": 7,
-              "element": 472
+              "element": 469
             },
             {
               "value": 4,
@@ -20987,16 +20987,16 @@
               "element": 558
             },
             {
-              "value": 10,
-              "element": 480
-            },
-            {
-              "value": 9,
+              "value": 11,
               "element": 472
             },
             {
-              "value": 9,
+              "value": 11,
               "element": 489
+            },
+            {
+              "value": 9,
+              "element": 480
             },
             {
               "value": 8,
