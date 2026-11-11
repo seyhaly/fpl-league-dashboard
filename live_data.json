@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-10T22:22:08Z",
+  "lastUpdated": "2026-11-11T01:59:47Z",
   "currentGw": 10,
   "eventStatuses": {
     "1": {
@@ -2807,7 +2807,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 6,
-      "now_cost": "4.6",
+      "now_cost": "4.7",
       "opponent": "BRE",
       "opponent_short": "BRE",
       "difficulty": 3,
@@ -5651,7 +5651,7 @@
       "team_name": "Everton",
       "team_id": 9,
       "event_points": 9,
-      "now_cost": "6.6",
+      "now_cost": "6.7",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -9899,7 +9899,7 @@
       "team_name": "Man Utd",
       "team_id": 16,
       "event_points": 0,
-      "now_cost": "4.0",
+      "now_cost": "3.9",
       "opponent": "AVL",
       "opponent_short": "AVL",
       "difficulty": 3,
