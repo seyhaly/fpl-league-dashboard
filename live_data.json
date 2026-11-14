@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-13T21:22:52Z",
+  "lastUpdated": "2026-11-14T01:30:20Z",
   "currentGw": 10,
   "eventStatuses": {
     "1": {
@@ -12131,7 +12131,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 9,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
