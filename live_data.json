@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-15T21:14:12Z",
+  "lastUpdated": "2026-11-16T01:01:31Z",
   "currentGw": 10,
   "eventStatuses": {
     "1": {
@@ -4697,7 +4697,7 @@
       "team_name": "Coventry City",
       "team_id": 7,
       "event_points": 1,
-      "now_cost": "5.3",
+      "now_cost": "5.2",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
