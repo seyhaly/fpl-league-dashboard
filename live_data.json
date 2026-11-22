@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-22T00:43:10Z",
+  "lastUpdated": "2026-11-22T07:28:49Z",
   "currentGw": 11,
   "eventStatuses": {
     "1": {
@@ -790,7 +790,7 @@
       "team": "ARS",
       "team_name": "Arsenal",
       "team_id": 1,
-      "event_points": 1,
+      "event_points": 3,
       "now_cost": "7.5",
       "opponent": "NEW",
       "opponent_short": "NEW",
@@ -19294,7 +19294,7 @@
       "10": 0,
       "11": 0,
       "12": 0,
-      "13": 1,
+      "13": 3,
       "14": 10,
       "15": 5,
       "16": 8,
@@ -22301,11 +22301,11 @@
           "identifier": "bps",
           "a": [
             {
-              "value": 34,
+              "value": 35,
               "element": 14
             },
             {
-              "value": 29,
+              "value": 32,
               "element": 16
             },
             {
@@ -22317,7 +22317,7 @@
               "element": 26
             },
             {
-              "value": 13,
+              "value": 15,
               "element": 31
             },
             {
@@ -22325,16 +22325,16 @@
               "element": 13
             },
             {
-              "value": 6,
-              "element": 4
-            },
-            {
-              "value": 6,
+              "value": 8,
               "element": 5
             },
             {
               "value": 5,
               "element": 1
+            },
+            {
+              "value": 5,
+              "element": 4
             },
             {
               "value": 5,
@@ -22375,7 +22375,7 @@
               "element": 445
             },
             {
-              "value": 19,
+              "value": 18,
               "element": 465
             },
             {
@@ -22404,15 +22404,15 @@
             },
             {
               "value": 3,
+              "element": 450
+            },
+            {
+              "value": 3,
               "element": 454
             },
             {
               "value": 3,
               "element": 457
-            },
-            {
-              "value": 2,
-              "element": 450
             },
             {
               "value": 2,
@@ -22423,7 +22423,11 @@
               "element": 464
             },
             {
-              "value": -3,
+              "value": -1,
+              "element": 449
+            },
+            {
+              "value": -4,
               "element": 593
             }
           ]
@@ -22432,12 +22436,16 @@
           "identifier": "defensive_contribution",
           "a": [
             {
-              "value": 11,
+              "value": 12,
               "element": 13
             },
             {
-              "value": 7,
+              "value": 9,
               "element": 16
+            },
+            {
+              "value": 7,
+              "element": 31
             },
             {
               "value": 6,
@@ -22446,10 +22454,6 @@
             {
               "value": 6,
               "element": 26
-            },
-            {
-              "value": 6,
-              "element": 31
             },
             {
               "value": 5,
@@ -22465,15 +22469,15 @@
             },
             {
               "value": 4,
+              "element": 15
+            },
+            {
+              "value": 4,
               "element": 557
             },
             {
               "value": 3,
               "element": 7
-            },
-            {
-              "value": 3,
-              "element": 15
             },
             {
               "value": 2,
