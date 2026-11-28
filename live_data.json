@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-27T19:53:23Z",
+  "lastUpdated": "2026-11-28T02:15:48Z",
   "currentGw": 12,
   "eventStatuses": {
     "1": {
@@ -139,7 +139,7 @@
           "bonus_added": false,
           "date": "2026-11-27",
           "event": 12,
-          "points": ""
+          "points": "p"
         },
         {
           "bonus_added": false,
@@ -1187,7 +1187,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "4.9",
+      "now_cost": "4.8",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -1403,7 +1403,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "4.4",
+      "now_cost": "4.3",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -1529,7 +1529,7 @@
       "team_name": "Aston Villa",
       "team_id": 2,
       "event_points": 0,
-      "now_cost": "5.7",
+      "now_cost": "5.6",
       "opponent": "IPS",
       "opponent_short": "IPS",
       "difficulty": 2,
@@ -2483,7 +2483,7 @@
       "team_name": "Brentford",
       "team_id": 4,
       "event_points": 0,
-      "now_cost": "6.1",
+      "now_cost": "6.0",
       "opponent": "MUN",
       "opponent_short": "MUN",
       "difficulty": 3,
@@ -2807,7 +2807,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "4.7",
+      "now_cost": "4.8",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
@@ -3041,7 +3041,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "6.3",
+      "now_cost": "6.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
@@ -3311,7 +3311,7 @@
       "team_name": "Brighton",
       "team_id": 5,
       "event_points": 0,
-      "now_cost": "5.3",
+      "now_cost": "5.4",
       "opponent": "NEW",
       "opponent_short": "NEW",
       "difficulty": 3,
@@ -3472,14 +3472,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "40": {
       "id": 40,
@@ -3490,14 +3490,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 2,
       "now_cost": "8.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "101": {
       "id": 101,
@@ -3508,14 +3508,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "136": {
       "id": 136,
@@ -3526,14 +3526,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.8",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "140": {
       "id": 140,
@@ -3550,8 +3550,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "141": {
       "id": 141,
@@ -3568,8 +3568,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "142": {
       "id": 142,
@@ -3586,8 +3586,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "143": {
       "id": 143,
@@ -3604,8 +3604,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "144": {
       "id": 144,
@@ -3622,8 +3622,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "145": {
       "id": 145,
@@ -3634,14 +3634,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": -1,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 55,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "146": {
       "id": 146,
@@ -3658,8 +3658,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "148": {
       "id": 148,
@@ -3676,8 +3676,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "149": {
       "id": 149,
@@ -3688,14 +3688,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 34,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "150": {
       "id": 150,
@@ -3712,8 +3712,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "151": {
       "id": 151,
@@ -3724,14 +3724,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 84,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "152": {
       "id": 152,
@@ -3742,14 +3742,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "154": {
       "id": 154,
@@ -3760,14 +3760,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
-      "now_cost": "9.8",
+      "event_points": 2,
+      "now_cost": "9.7",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "156": {
       "id": 156,
@@ -3778,14 +3778,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 9,
       "now_cost": "6.6",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "157": {
       "id": 157,
@@ -3802,8 +3802,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "158": {
       "id": 158,
@@ -3820,8 +3820,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "159": {
       "id": 159,
@@ -3832,14 +3832,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.3",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "161": {
       "id": 161,
@@ -3850,14 +3850,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.0",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "163": {
       "id": 163,
@@ -3874,8 +3874,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "164": {
       "id": 164,
@@ -3886,14 +3886,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.2",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 5,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "165": {
       "id": 165,
@@ -3905,13 +3905,13 @@
       "team_name": "Chelsea",
       "team_id": 6,
       "event_points": 0,
-      "now_cost": "7.6",
+      "now_cost": "7.5",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "168": {
       "id": 168,
@@ -3928,8 +3928,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "169": {
       "id": 169,
@@ -3946,8 +3946,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "170": {
       "id": 170,
@@ -3958,14 +3958,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 12,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 45,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "200": {
       "id": 200,
@@ -3982,8 +3982,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "560": {
       "id": 560,
@@ -4000,8 +4000,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "561": {
       "id": 561,
@@ -4018,8 +4018,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "568": {
       "id": 568,
@@ -4036,8 +4036,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "583": {
       "id": 583,
@@ -4048,14 +4048,14 @@
       "team": "CHE",
       "team_name": "Chelsea",
       "team_id": 6,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.9",
       "opponent": "NFO",
       "opponent_short": "NFO",
       "difficulty": 2,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "662": {
       "id": 662,
@@ -4072,8 +4072,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "669": {
       "id": 669,
@@ -4090,8 +4090,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "670": {
       "id": 670,
@@ -4108,8 +4108,8 @@
       "opponent_short": "NFO",
       "difficulty": 2,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "91": {
       "id": 91,
@@ -4679,7 +4679,7 @@
       "team_name": "Coventry City",
       "team_id": 7,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -4733,7 +4733,7 @@
       "team_name": "Coventry City",
       "team_id": 7,
       "event_points": 0,
-      "now_cost": "4.0",
+      "now_cost": "3.9",
       "opponent": "LEE",
       "opponent_short": "LEE",
       "difficulty": 3,
@@ -5237,7 +5237,7 @@
       "team_name": "Crystal Palace",
       "team_id": 8,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "HUL",
       "opponent_short": "HUL",
       "difficulty": 2,
@@ -6155,7 +6155,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
@@ -6245,7 +6245,7 @@
       "team_name": "Fulham",
       "team_id": 10,
       "event_points": 0,
-      "now_cost": "5.8",
+      "now_cost": "5.7",
       "opponent": "BOU",
       "opponent_short": "BOU",
       "difficulty": 3,
@@ -7901,7 +7901,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.9",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -7937,7 +7937,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.6",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -8171,7 +8171,7 @@
       "team_name": "Leeds",
       "team_id": 13,
       "event_points": 0,
-      "now_cost": "6.0",
+      "now_cost": "6.1",
       "opponent": "COV",
       "opponent_short": "COV",
       "difficulty": 2,
@@ -8675,7 +8675,7 @@
       "team_name": "Liverpool",
       "team_id": 14,
       "event_points": 0,
-      "now_cost": "7.5",
+      "now_cost": "7.6",
       "opponent": "EVE",
       "opponent_short": "EVE",
       "difficulty": 3,
@@ -10277,7 +10277,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -10385,7 +10385,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "5.2",
+      "now_cost": "5.1",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -10619,7 +10619,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "5.9",
+      "now_cost": "5.8",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -10673,7 +10673,7 @@
       "team_name": "Newcastle",
       "team_id": 17,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "BHA",
       "opponent_short": "BHA",
       "difficulty": 4,
@@ -10852,14 +10852,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.3",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "201": {
       "id": 201,
@@ -10870,14 +10870,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.2",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "467": {
       "id": 467,
@@ -10888,14 +10888,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.0",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "468": {
       "id": 468,
@@ -10912,8 +10912,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "469": {
       "id": 469,
@@ -10924,14 +10924,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.8",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "470": {
       "id": 470,
@@ -10948,8 +10948,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "471": {
       "id": 471,
@@ -10960,14 +10960,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.4",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "472": {
       "id": 472,
@@ -10978,14 +10978,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 3,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "473": {
       "id": 473,
@@ -11002,8 +11002,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "474": {
       "id": 474,
@@ -11014,14 +11014,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "4.4",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "475": {
       "id": 475,
@@ -11038,8 +11038,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "476": {
       "id": 476,
@@ -11056,8 +11056,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "477": {
       "id": 477,
@@ -11074,8 +11074,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "478": {
       "id": 478,
@@ -11092,8 +11092,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "479": {
       "id": 479,
@@ -11110,8 +11110,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "480": {
       "id": 480,
@@ -11122,14 +11122,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 13,
       "now_cost": "7.8",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "482": {
       "id": 482,
@@ -11146,8 +11146,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "483": {
       "id": 483,
@@ -11158,14 +11158,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 18,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "484": {
       "id": 484,
@@ -11182,8 +11182,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "485": {
       "id": 485,
@@ -11200,8 +11200,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "486": {
       "id": 486,
@@ -11212,14 +11212,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 4,
       "now_cost": "5.5",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 90,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "487": {
       "id": 487,
@@ -11236,8 +11236,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "488": {
       "id": 488,
@@ -11249,13 +11249,13 @@
       "team_name": "Nott'm Forest",
       "team_id": 18,
       "event_points": 0,
-      "now_cost": "4.7",
+      "now_cost": "4.6",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "489": {
       "id": 489,
@@ -11266,14 +11266,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
-      "now_cost": "4.4",
+      "event_points": 1,
+      "now_cost": "4.3",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 1,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "490": {
       "id": 490,
@@ -11284,14 +11284,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 1,
       "now_cost": "5.6",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 6,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "491": {
       "id": 491,
@@ -11302,14 +11302,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 6,
       "now_cost": "5.6",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 71,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "493": {
       "id": 493,
@@ -11326,8 +11326,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "558": {
       "id": 558,
@@ -11338,14 +11338,14 @@
       "team": "NFO",
       "team_name": "Nott'm Forest",
       "team_id": 18,
-      "event_points": 0,
+      "event_points": 5,
       "now_cost": "4.9",
       "opponent": "CHE",
       "opponent_short": "CHE",
       "difficulty": 4,
-      "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "minutes": 83,
+      "match_status": "played",
+      "status_label": "✓ Played"
     },
     "581": {
       "id": 581,
@@ -11362,8 +11362,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "590": {
       "id": 590,
@@ -11380,8 +11380,8 @@
       "opponent_short": "CHE",
       "difficulty": 4,
       "minutes": 0,
-      "match_status": "yet_to_play",
-      "status_label": "⏳ Yet to Play"
+      "match_status": "dnp",
+      "status_label": "✕ DNP (0m)"
     },
     "112": {
       "id": 112,
@@ -12581,7 +12581,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -12635,7 +12635,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "5.4",
+      "now_cost": "5.3",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -12653,7 +12653,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "4.5",
+      "now_cost": "4.4",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -12671,7 +12671,7 @@
       "team_name": "Sunderland",
       "team_id": 20,
       "event_points": 0,
-      "now_cost": "4.8",
+      "now_cost": "4.7",
       "opponent": "TOT",
       "opponent_short": "TOT",
       "difficulty": 3,
@@ -19985,7 +19985,7 @@
       "25": 0,
       "26": 0,
       "27": 0,
-      "28": 0,
+      "28": 2,
       "29": 0,
       "30": 0,
       "31": 0,
@@ -19997,7 +19997,7 @@
       "37": 0,
       "38": 0,
       "39": 0,
-      "40": 0,
+      "40": 2,
       "41": 0,
       "42": 0,
       "43": 0,
@@ -20058,7 +20058,7 @@
       "98": 0,
       "99": 0,
       "100": 0,
-      "101": 0,
+      "101": 1,
       "102": 0,
       "103": 0,
       "104": 0,
@@ -20093,7 +20093,7 @@
       "133": 0,
       "134": 0,
       "135": 0,
-      "136": 0,
+      "136": 1,
       "137": 0,
       "138": 0,
       "139": 0,
@@ -20102,32 +20102,32 @@
       "142": 0,
       "143": 0,
       "144": 0,
-      "145": 0,
+      "145": -1,
       "146": 0,
       "147": 0,
       "148": 0,
-      "149": 0,
+      "149": 1,
       "150": 0,
-      "151": 0,
-      "152": 0,
+      "151": 1,
+      "152": 1,
       "153": 0,
-      "154": 0,
+      "154": 2,
       "155": 0,
-      "156": 0,
+      "156": 9,
       "157": 0,
       "158": 0,
-      "159": 0,
+      "159": 4,
       "160": 0,
-      "161": 0,
+      "161": 4,
       "162": 0,
       "163": 0,
-      "164": 0,
+      "164": 1,
       "165": 0,
       "166": 0,
-      "167": 0,
+      "167": 4,
       "168": 0,
       "169": 0,
-      "170": 0,
+      "170": 12,
       "171": 0,
       "172": 0,
       "173": 0,
@@ -20158,7 +20158,7 @@
       "198": 0,
       "199": 0,
       "200": 0,
-      "201": 0,
+      "201": 4,
       "202": 0,
       "203": 0,
       "204": 0,
@@ -20424,31 +20424,31 @@
       "464": 0,
       "465": 0,
       "466": 0,
-      "467": 0,
+      "467": 1,
       "468": 0,
-      "469": 0,
+      "469": 1,
       "470": 0,
-      "471": 0,
-      "472": 0,
+      "471": 1,
+      "472": 3,
       "473": 0,
-      "474": 0,
+      "474": 1,
       "475": 0,
       "476": 0,
       "477": 0,
       "478": 0,
       "479": 0,
-      "480": 0,
+      "480": 13,
       "481": 0,
       "482": 0,
-      "483": 0,
+      "483": 1,
       "484": 0,
       "485": 0,
-      "486": 0,
+      "486": 4,
       "487": 0,
       "488": 0,
-      "489": 0,
-      "490": 0,
-      "491": 0,
+      "489": 1,
+      "490": 1,
+      "491": 6,
       "492": 0,
       "493": 0,
       "494": 0,
@@ -20515,7 +20515,7 @@
       "555": 0,
       "556": 0,
       "557": 0,
-      "558": 0,
+      "558": 5,
       "559": 0,
       "560": 0,
       "561": 0,
@@ -20540,7 +20540,7 @@
       "580": 0,
       "581": 0,
       "582": 0,
-      "583": 0,
+      "583": 1,
       "584": 0,
       "585": 0,
       "586": 0,
@@ -20639,17 +20639,371 @@
       "code": 2645313,
       "event": 12,
       "finished": false,
-      "finished_provisional": false,
+      "finished_provisional": true,
       "id": 119,
       "kickoff_time": "2026-11-27T20:00:00Z",
-      "minutes": 0,
+      "minutes": 90,
       "provisional_start_time": false,
-      "started": false,
+      "started": true,
       "team_a": 6,
-      "team_a_score": null,
+      "team_a_score": 2,
       "team_h": 18,
-      "team_h_score": null,
-      "stats": [],
+      "team_h_score": 3,
+      "stats": [
+        {
+          "identifier": "goals_scored",
+          "a": [
+            {
+              "value": 2,
+              "element": 170
+            }
+          ],
+          "h": [
+            {
+              "value": 2,
+              "element": 480
+            },
+            {
+              "value": 1,
+              "element": 491
+            }
+          ]
+        },
+        {
+          "identifier": "assists",
+          "a": [
+            {
+              "value": 2,
+              "element": 156
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 167
+            },
+            {
+              "value": 1,
+              "element": 201
+            },
+            {
+              "value": 1,
+              "element": 558
+            }
+          ]
+        },
+        {
+          "identifier": "own_goals",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_saved",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "penalties_missed",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "yellow_cards",
+          "a": [
+            {
+              "value": 1,
+              "element": 101
+            },
+            {
+              "value": 1,
+              "element": 145
+            },
+            {
+              "value": 1,
+              "element": 156
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 167
+            },
+            {
+              "value": 1,
+              "element": 488
+            }
+          ]
+        },
+        {
+          "identifier": "red_cards",
+          "a": [],
+          "h": []
+        },
+        {
+          "identifier": "saves",
+          "a": [
+            {
+              "value": 4,
+              "element": 28
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 467
+            }
+          ]
+        },
+        {
+          "identifier": "bonus",
+          "a": [
+            {
+              "value": 3,
+              "element": 170
+            },
+            {
+              "value": 2,
+              "element": 156
+            }
+          ],
+          "h": [
+            {
+              "value": 1,
+              "element": 480
+            }
+          ]
+        },
+        {
+          "identifier": "bps",
+          "a": [
+            {
+              "value": 55,
+              "element": 170
+            },
+            {
+              "value": 42,
+              "element": 156
+            },
+            {
+              "value": 21,
+              "element": 159
+            },
+            {
+              "value": 16,
+              "element": 154
+            },
+            {
+              "value": 14,
+              "element": 161
+            },
+            {
+              "value": 10,
+              "element": 28
+            },
+            {
+              "value": 10,
+              "element": 40
+            },
+            {
+              "value": 10,
+              "element": 101
+            },
+            {
+              "value": 9,
+              "element": 151
+            },
+            {
+              "value": 5,
+              "element": 164
+            },
+            {
+              "value": 4,
+              "element": 149
+            },
+            {
+              "value": 3,
+              "element": 152
+            },
+            {
+              "value": 2,
+              "element": 136
+            },
+            {
+              "value": 1,
+              "element": 583
+            },
+            {
+              "value": -7,
+              "element": 145
+            }
+          ],
+          "h": [
+            {
+              "value": 39,
+              "element": 480
+            },
+            {
+              "value": 38,
+              "element": 491
+            },
+            {
+              "value": 27,
+              "element": 486
+            },
+            {
+              "value": 20,
+              "element": 558
+            },
+            {
+              "value": 19,
+              "element": 167
+            },
+            {
+              "value": 14,
+              "element": 474
+            },
+            {
+              "value": 10,
+              "element": 472
+            },
+            {
+              "value": 8,
+              "element": 201
+            },
+            {
+              "value": 8,
+              "element": 471
+            },
+            {
+              "value": 4,
+              "element": 483
+            },
+            {
+              "value": 3,
+              "element": 489
+            },
+            {
+              "value": 3,
+              "element": 490
+            },
+            {
+              "value": 2,
+              "element": 467
+            },
+            {
+              "value": 2,
+              "element": 469
+            },
+            {
+              "value": -1,
+              "element": 488
+            }
+          ]
+        },
+        {
+          "identifier": "defensive_contribution",
+          "a": [
+            {
+              "value": 18,
+              "element": 159
+            },
+            {
+              "value": 12,
+              "element": 161
+            },
+            {
+              "value": 8,
+              "element": 151
+            },
+            {
+              "value": 6,
+              "element": 101
+            },
+            {
+              "value": 6,
+              "element": 154
+            },
+            {
+              "value": 5,
+              "element": 583
+            },
+            {
+              "value": 4,
+              "element": 40
+            },
+            {
+              "value": 4,
+              "element": 145
+            },
+            {
+              "value": 4,
+              "element": 156
+            },
+            {
+              "value": 2,
+              "element": 149
+            },
+            {
+              "value": 1,
+              "element": 164
+            }
+          ],
+          "h": [
+            {
+              "value": 13,
+              "element": 486
+            },
+            {
+              "value": 10,
+              "element": 472
+            },
+            {
+              "value": 9,
+              "element": 471
+            },
+            {
+              "value": 8,
+              "element": 474
+            },
+            {
+              "value": 7,
+              "element": 491
+            },
+            {
+              "value": 7,
+              "element": 558
+            },
+            {
+              "value": 6,
+              "element": 167
+            },
+            {
+              "value": 6,
+              "element": 469
+            },
+            {
+              "value": 5,
+              "element": 483
+            },
+            {
+              "value": 4,
+              "element": 480
+            },
+            {
+              "value": 2,
+              "element": 201
+            },
+            {
+              "value": 2,
+              "element": 490
+            },
+            {
+              "value": 1,
+              "element": 488
+            }
+          ]
+        }
+      ],
       "team_h_difficulty": 4,
       "team_a_difficulty": 2,
       "pulse_id": 0
@@ -22616,13 +22970,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 592,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 5122381,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 594,
+          "rank": 3497822,
+          "rank_sort": 3894667,
+          "overall_rank": 5160969,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "46",
           "bank": 13,
           "value": 1022,
           "event_transfers": 0,
@@ -24371,13 +24725,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 645,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2415531,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 647,
+          "rank": 6261309,
+          "rank_sort": 6548550,
+          "overall_rank": 2448043,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "22",
           "bank": 3,
           "value": 1036,
           "event_transfers": 1,
@@ -26086,13 +26440,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 630,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3140895,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 4,
+          "total_points": 634,
+          "rank": 2974533,
+          "rank_sort": 3034755,
+          "overall_rank": 3079066,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "27",
           "bank": 4,
           "value": 1022,
           "event_transfers": 2,
@@ -27823,12 +28177,12 @@
         "entry_history": {
           "event": 12,
           "points": 0,
-          "total_points": 616,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 3863674,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "total_points": 612,
+          "rank": 10925093,
+          "rank_sort": 10968660,
+          "overall_rank": 4223052,
+          "percentile_rank": 100,
+          "overall_rank_percentage": "37",
           "bank": 10,
           "value": 1015,
           "event_transfers": 2,
@@ -29582,13 +29936,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 586,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 5423023,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 4,
+          "total_points": 590,
+          "rank": 2974533,
+          "rank_sort": 3034777,
+          "overall_rank": 5370458,
+          "percentile_rank": 30,
+          "overall_rank_percentage": "48",
           "bank": 5,
           "value": 1029,
           "event_transfers": 2,
@@ -31304,13 +31658,13 @@
         "active_chip": "3xc",
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 652,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2089354,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 654,
+          "rank": 3497822,
+          "rank_sort": 3893877,
+          "overall_rank": 2115340,
+          "percentile_rank": 35,
+          "overall_rank_percentage": "19",
           "bank": 1,
           "value": 1021,
           "event_transfers": 0,
@@ -33012,13 +33366,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 323,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 10719398,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 325,
+          "rank": 6261309,
+          "rank_sort": 6543523,
+          "overall_rank": 10717483,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "95",
           "bank": 113,
           "value": 1041,
           "event_transfers": 1,
@@ -34734,13 +35088,13 @@
         "active_chip": null,
         "entry_history": {
           "event": 12,
-          "points": 0,
-          "total_points": 644,
-          "rank": null,
-          "rank_sort": null,
-          "overall_rank": 2445444,
-          "percentile_rank": null,
-          "overall_rank_percentage": null,
+          "points": 2,
+          "total_points": 646,
+          "rank": 6261309,
+          "rank_sort": 6284108,
+          "overall_rank": 2479358,
+          "percentile_rank": 60,
+          "overall_rank_percentage": "22",
           "bank": 1,
           "value": 1022,
           "event_transfers": 1,
@@ -37959,13 +38313,13 @@
         {
           "gw": 12,
           "scores": {
-            "2019453": 0,
-            "2067578": 0,
-            "2023789": 0,
+            "2019453": 2,
+            "2067578": 2,
+            "2023789": 4,
             "2026160": 0,
-            "2023013": 0,
-            "2024611": 0,
-            "2026484": 0
+            "2023013": 2,
+            "2024611": 4,
+            "2026484": 2
           },
           "hits": {
             "2019453": 0,
@@ -38000,20 +38354,20 @@
             "2023789": 0,
             "2026160": 0,
             "2023013": 0,
-            "2024611": 0,
+            "2024611": 4,
             "2026484": 0
           },
           "chipsUsed": {
             "2019453": "3xc"
           },
           "seasonTotals": {
-            "2019453": 652,
-            "2067578": 645,
-            "2023789": 630,
-            "2026160": 616,
-            "2023013": 592,
-            "2024611": 586,
-            "2026484": 323
+            "2019453": 654,
+            "2067578": 647,
+            "2023789": 634,
+            "2026160": 612,
+            "2023013": 594,
+            "2024611": 590,
+            "2026484": 325
           }
         },
         {
@@ -38704,8 +39058,8 @@
         {
           "gw": 12,
           "scores": {
-            "2019453": 0,
-            "145847": 0
+            "2019453": 2,
+            "145847": 2
           },
           "hits": {
             "2019453": 0,
@@ -38727,8 +39081,8 @@
             "2019453": "3xc"
           },
           "seasonTotals": {
-            "2019453": 652,
-            "145847": 644
+            "2019453": 654,
+            "145847": 646
           }
         },
         {
